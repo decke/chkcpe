@@ -1,0 +1,91 @@
+name: Run CPE validations on FreeBSD Portstree
+on: push
+
+env:
+  CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Check out repository wiki
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+
+      - name: Check out FreeBSD Portstree
+        uses: actions/checkout@v2
+        with:
+          repository: freebsd/freebsd-ports
+          path: ports
+
+      - name: Fetch NVD CPE Dictionary
+        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > cpe.xml
+
+      - name: Install bmake
+        run: |
+          sudo apt-get update
+          sudo apt-get install bmake
+
+      - name: Prepare directories
+        run: mkdir logs reports
+
+      - name: Setup $RUNNER_TEMP as tmpfs
+        run: sudo mount -t tmpfs -o mode=1777 none $RUNNER_TEMP
+
+      - name: Build sqlite DB from XML
+        run: |
+          sqlite3 $RUNNER_TEMP/cpe.sqlite < schema.sql
+          ./cpe2sqlite cpe.xml $RUNNER_TEMP/cpe.sqlite
+          cp $RUNNER_TEMP/cpe.sqlite logs
+
+      - name: Run chkcpe
+        env:
+          MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
+          PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
+          CPEDB: /home/runner/work/_temp/cpe.sqlite
+          MAKE: /usr/bin/bmake
+          ARCH: amd64
+          OPSYS: FreeBSD
+          OSREL: 13.0
+          OSVERSION: 1300139
+          _OSRELEASE: 13.0-RELEASE
+          MAKE_JOBS_NUMBER: 1
+          CONFIGURE_MAX_CMD_LEN: 524288
+        run: ./chkcpe.sh -q archivers > logs/chkcpe.log
+
+      - name: Upload logfiles
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpe-logs
+          path: logs
+
+      - name: Generate markdown reports
+        run: |
+          cat logs/chkcpe.log | ./markify /dev/stdin "All Ports" > reports/all.md
+          cat logs/chkcpe.log | grep "INVALID" | ./markify /dev/stdin "CPE Status INVALID" > reports/invalid.md
+          cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify /dev/stdin "CPE Status VALID" > reports/valid.md
+          cat logs/chkcpe.log | grep "MISSING" | ./markify /dev/stdin "CPE Status MISSING" > reports/missing.md
+          cat logs/chkcpe.log | grep "UNKNOWN" | ./markify /dev/stdin "CPE Status UNKNOWN" > reports/unknown.md
+          cp -p reports/*.md wiki/
+          pwd
+          find wiki
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpe-reports
+          path: reports
+
+      - name: Upload reports to wiki
+        run: |
+          cd wiki
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Add changes" && git push
