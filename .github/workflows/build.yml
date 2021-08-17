@@ -15,12 +15,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - name: Check out repository wiki
-        uses: actions/checkout@v2
-        with:
-          repository: ${{ github.repository }}.wiki
-          path: wiki
-
       - name: Check out FreeBSD Portstree
         uses: actions/checkout@v2
         with:
@@ -75,7 +69,6 @@ jobs:
           cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify "CPE Status VALID" > reports/valid.md
           cat logs/chkcpe.log | grep "MISSING" | ./markify "CPE Status MISSING" > reports/missing.md
           cat logs/chkcpe.log | grep "UNKNOWN" | ./markify "CPE Status UNKNOWN" > reports/unknown.md
-          cp -p reports/*.md wiki/
 
       - name: Upload reports
         uses: actions/upload-artifact@v2
@@ -83,8 +76,15 @@ jobs:
           name: cpe-reports
           path: reports
 
+      - name: Check out repository wiki
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+
       - name: Upload reports to wiki
         run: |
+          cp -p reports/*.md wiki/
           cd wiki
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
