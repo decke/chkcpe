@@ -15,11 +15,11 @@ chance for you to help!
 
 ## Are we there yet?
 
-| Status    | # Ports | Links                                                         |
-| --------- | ------: | ------------------------------------------------------------- |
-| `VALID`   |    1013 | [valid ports](https://github.com/decke/chkcpe/wiki/valid)     |
-| `INVALID` |     143 | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid) |
-| `MISSING` |    2676 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
-| `UNKNOWN` |   25845 | [unknown ports](https://github.com/decke/chkcpe/wiki/unknown) |
+| Status                                                   | # Ports | Links                                                         |
+| ---------------------------------------------------------| ------: | ------------------------------------------------------------- |
+| ![valid](https://img.shields.io/badge/valid-brightgreen) |    1013 | [valid ports](https://github.com/decke/chkcpe/wiki/valid)     |
+| ![invalid](https://img.shields.io/badge/invalid-red)     |     143 | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid) |
+| ![missing](https://img.shields.io/badge/missing-orange)  |    2676 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)    |   25845 | [unknown ports](https://github.com/decke/chkcpe/wiki/unknown) |
 
 Last updated: August 17, 2021
