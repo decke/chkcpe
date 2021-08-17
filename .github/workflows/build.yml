@@ -1,6 +1,6 @@
 name: Run CPE validations on FreeBSD Portstree
 on:
-  push
+  push:
   schedule:
     # ever day at 5:30 UTC
     - cron: '30 5 * * *'
