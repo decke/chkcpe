@@ -6,6 +6,13 @@ $title = "CPE Status";
 if(isset($argv[1]))
    $title = $argv[1];
 
+$statusmap = array(
+   'valid'   => 'brightgreen',
+   'invalid' => 'red',
+   'missing' => 'orange',
+   'unknown' => 'grey'
+);
+
 printf("# %s\n", $title);
 printf("\n");
 printf("Date: %s\n", date(DATE_RFC850));
@@ -26,8 +33,13 @@ for($i=1; ($line = fgets(STDIN)) !== false; $i++)
    }
 
    list($port, $maintainer, $status, $comment) = array_map('trim', $parts);
+   $status = strtolower($status);
+   $color = 'black';
 
-   printf("| [%s](https://freshports.org/%s) | %s | `%s` | %s |\n",
-      $port, $port, $maintainer, $status, $comment);
+   if(isset($statusmap[$status]))
+      $color = $statusmap[$status];
+
+   printf("| [%s](https://freshports.org/%s) | %s | ![%s](https://img.shields.io/badge/%s-%s) | %s |\n",
+      $port, $port, $maintainer, $status, $status, $color, $comment);
 }
 
