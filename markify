@@ -1,17 +1,33 @@
-#!/bin/bash
+#!/usr/bin/env php
+<?php
 
-printf "# %s\n" "${2:-CPE Status}"
-printf "\n"
-printf "Date: %s\n" "`date`"
-printf "\n"
-printf "| Port | Maintainer | Status | Comment |\n"
-printf "|--|--|--|--|\n"
+$title = "CPE Status";
 
-while read line
-do
-  IFS=$'\t' read -r PORT MAINTAINER STATUS COMMENT <<< "$line"
+if(isset($argv[1]))
+   $title = $argv[1];
 
-  printf "| [%s](https://freshports.org/%s) | %s | `%s` | %s |\n" \
-    $PORT $PORT $MAINTAINER $STATUS "$COMMENT"
-done < "${1:-/dev/stdin}"
+printf("# %s\n", $title);
+printf("\n");
+printf("Date: %s\n", date(DATE_RFC850));
+printf("\n");
+printf("| Port | Maintainer | Status | Comment |\n");
+printf("|--|--|--|--|\n");
+
+for($i=1; ($line = fgets(STDIN)) !== false; $i++)
+{
+   if(strlen(trim($line)) < 1)
+      continue;
+
+   $parts = explode("\t", $line);
+
+   if(count($parts) != 4){
+      fwrite(STDERR, "Invalid line ".$i."\n");
+      continue;
+   }
+
+   list($port, $maintainer, $status, $comment) = array_map('trim', $parts);
+
+   printf("| [%s](https://freshports.org/%s) | %s | `%s` | %s |\n",
+      $port, $port, $maintainer, $status, $comment);
+}
 
