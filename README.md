@@ -15,11 +15,11 @@ chance for you to help!
 
 ## Are we there yet?
 
-| Status    | # Ports | Links                                       |
-| --------- | ------: | ------------------------------------------- |
-| `VALID`   |    1013 | [valid ports](/decke/chkcpe/wiki/valid)     |
-| `INVALID` |     143 | [invalid ports](/decke/chkcpe/wiki/invalid) |
-| `MISSING` |    2676 | [missing ports](/decke/chkcpe/wiki/missing) |
-| `UNKNOWN` |   25845 | [unknown ports](/decke/chkcpe/wiki/unknown) |
+| Status    | # Ports | Links                                                         |
+| --------- | ------: | ------------------------------------------------------------- |
+| `VALID`   |    1013 | [valid ports](https://github.com/decke/chkcpe/wiki/valid)     |
+| `INVALID` |     143 | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid) |
+| `MISSING` |    2676 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
+| `UNKNOWN` |   25845 | [unknown ports](https://github.com/decke/chkcpe/wiki/unknown) |
 
 Last updated: August 17, 2021
