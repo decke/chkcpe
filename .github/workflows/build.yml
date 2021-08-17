@@ -2,8 +2,7 @@ name: Run CPE validations on FreeBSD Portstree
 on:
   push:
   schedule:
-    # ever day at 5:30 UTC
-    - cron: '30 5 * * *'
+    - cron: '30 3 * * 1'
 
 env:
   CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
