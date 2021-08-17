@@ -106,7 +106,7 @@ for category in ${CATEGORIES}; do
 
             if [ ${dbcpefound} -gt 0 ]; then
                 cpestatus="VALID"
-                cpemsg="found ${dbcpefound} vulnerabilities"
+                cpemsg="found ${dbcpefound} CPE entries"
             else
                 cpestatus="INVALID"
                 cpemsg="Vendor:Product ${portcpevendor}:${portcpeproduct} not found in DB"

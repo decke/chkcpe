@@ -11,17 +11,7 @@ while read line
 do
   IFS=$'\t' read -r PORT MAINTAINER STATUS COMMENT <<< "$line"
 
-  COLOR="black"
-
-  if [ "$STATUS" = "VALID" ]; then
-    COLOR="green"
-  elif [ "$STATUS" = "INVALID" ]; then
-    COLOR="red"
-  elif [ "$STATUS" = "MISSING" ]; then
-    COLOR="orange"
-  fi
-
-  printf "| [%s](https://freshports.org/%s) | %s | <font style='color:%s;'>%s</font> | %s |\n" \
-    $PORT $PORT $MAINTAINER $COLOR $STATUS "$COMMENT"
+  printf "| [%s](https://freshports.org/%s) | %s | `%s` | %s |\n" \
+    $PORT $PORT $MAINTAINER $STATUS "$COMMENT"
 done < "${1:-/dev/stdin}"
 
