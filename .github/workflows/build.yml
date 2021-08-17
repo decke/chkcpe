@@ -1,5 +1,9 @@
 name: Run CPE validations on FreeBSD Portstree
-on: push
+on:
+  push
+  schedule:
+    # ever day at 5:30 UTC
+    - cron: '30 5 * * *'
 
 env:
   CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
@@ -57,7 +61,7 @@ jobs:
           _OSRELEASE: 13.0-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
-        run: ./chkcpe.sh -q archivers > logs/chkcpe.log
+        run: ./chkcpe.sh -q > logs/chkcpe.log
 
       - name: Upload logfiles
         uses: actions/upload-artifact@v2
@@ -67,14 +71,12 @@ jobs:
 
       - name: Generate markdown reports
         run: |
-          cat logs/chkcpe.log | ./markify /dev/stdin "All Ports" > reports/all.md
-          cat logs/chkcpe.log | grep "INVALID" | ./markify /dev/stdin "CPE Status INVALID" > reports/invalid.md
-          cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify /dev/stdin "CPE Status VALID" > reports/valid.md
-          cat logs/chkcpe.log | grep "MISSING" | ./markify /dev/stdin "CPE Status MISSING" > reports/missing.md
-          cat logs/chkcpe.log | grep "UNKNOWN" | ./markify /dev/stdin "CPE Status UNKNOWN" > reports/unknown.md
+          cat logs/chkcpe.log | ./markify "All Ports" > reports/all.md
+          cat logs/chkcpe.log | grep "INVALID" | ./markify "CPE Status INVALID" > reports/invalid.md
+          cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify "CPE Status VALID" > reports/valid.md
+          cat logs/chkcpe.log | grep "MISSING" | ./markify "CPE Status MISSING" > reports/missing.md
+          cat logs/chkcpe.log | grep "UNKNOWN" | ./markify "CPE Status UNKNOWN" > reports/unknown.md
           cp -p reports/*.md wiki/
-          pwd
-          find wiki
 
       - name: Upload reports
         uses: actions/upload-artifact@v2
