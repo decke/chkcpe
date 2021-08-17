@@ -118,7 +118,7 @@ for category in ${CATEGORIES}; do
                 cpestatus="UNKNOWN"
             else
                 cpestatus="MISSING"
-                cpemsg="Candidates: ${dbcpecandidates}"
+                cpemsg="${dbcpecandidates}"
             fi
         fi
 
