@@ -94,13 +94,15 @@ for category in ${CATEGORIES}; do
         cpestatus=""
         cpemsg=""
 
-        portname=`${MAKE} -VPORTNAME:tl | sed 's/\([^A-z0-9]\)/\\\1/g'`
-        portmaintainer=`${MAKE} -VMAINTAINER`
-        portcpestr=`${MAKE} -VCPE_STR`
+        portname=`${MAKE} -VPORTNAME:tl 2>/dev/null || true`
+        portmaintainer=`${MAKE} -VMAINTAINER 2>/dev/null || true`
+        portcpestr=`${MAKE} -VCPE_STR 2>/dev/null || true`
 
         if [ ! -z "${portcpestr}" ]; then
-            portcpeproduct=`${MAKE} -VCPE_PRODUCT | sed 's/\([^A-z0-9]\)/\\\1/g'`
-            portcpevendor=`${MAKE} -VCPE_VENDOR | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portcpeproduct=`${MAKE} -VCPE_PRODUCT 2>/dev/null || true`
+            portcpeproduct=`echo ${portcpeproduct} | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portcpevendor=`${MAKE} -VCPE_VENDOR 2>/dev/null || true`
+            portcpevendor=`echo ${portcpevendor} | sed 's/\([^A-z0-9]\)/\\\1/g'`
 
             dbcpefound=`sqlite3 ${CPEDB} "SELECT COUNT(*) FROM categorized_cpes WHERE product = '${portcpeproduct}' AND vendor = '${portcpevendor}'"`
 
@@ -112,6 +114,8 @@ for category in ${CATEGORIES}; do
                 cpemsg="Vendor ${portcpevendor} Product ${portcpeproduct} not found in DB"
             fi
         else
+            portname=`echo ${portname} | sed 's/\([^A-z0-9]\)/\\\1/g'`
+
             dbcpecandidates=`sqlite3 ${CPEDB} "SELECT GROUP_CONCAT(vendor || ':' || product) FROM (SELECT vendor, product FROM categorized_cpes WHERE product = '${portname}' GROUP BY vendor)"`
 
             if [ -z "${dbcpecandidates}" ]; then
