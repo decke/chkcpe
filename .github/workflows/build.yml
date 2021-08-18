@@ -5,7 +5,7 @@ on:
     - cron: '0 2 * * *'
 
 env:
-  CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
+  GO_CPE_DICT_BIN: https://people.freebsd.org/~decke/cpe/go-cpe-dictionary/go-cpe-dictionary-v0.2.6-linux.xz
 
 jobs:
   build:
@@ -21,8 +21,9 @@ jobs:
           repository: freebsd/freebsd-ports
           path: ports
 
-      - name: Fetch NVD CPE Dictionary
-        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > cpe.xml
+      - name: Fetch go-cpe-dictionary
+        run: |
+          wget -qO - ${{ env.GO_CPE_DICT_BIN }} | xz -d -c > go-cpe-dictionary
 
       - name: Install bmake
         run: |
@@ -35,10 +36,9 @@ jobs:
       - name: Setup $RUNNER_TEMP as tmpfs
         run: sudo mount -t tmpfs -o mode=1777 none $RUNNER_TEMP
 
-      - name: Build sqlite DB from XML
+      - name: Build sqlite CPE DB
         run: |
-          sqlite3 $RUNNER_TEMP/cpe.sqlite < schema.sql
-          ./cpe2sqlite cpe.xml $RUNNER_TEMP/cpe.sqlite
+          ./go-cpe-dictionary fetchnvd --dbpath $RUNNER_TEMP/cpe.sqlite
           cp $RUNNER_TEMP/cpe.sqlite logs
 
       - name: Run chkcpe

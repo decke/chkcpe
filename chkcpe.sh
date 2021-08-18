@@ -102,17 +102,17 @@ for category in ${CATEGORIES}; do
             portcpeproduct=`${MAKE} -VCPE_PRODUCT 2>/dev/null || true`
             portcpevendor=`${MAKE} -VCPE_VENDOR 2>/dev/null || true`
 
-            dbcpefound=`sqlite3 ${CPEDB} "SELECT COUNT(*) FROM products, cpes WHERE product = '${portcpeproduct}' AND vendor = '${portcpevendor}' AND products.productid = cpes.productid"`
+            dbcpefound=`sqlite3 ${CPEDB} "SELECT COUNT(*) FROM categorized_cpes WHERE product = '${portcpeproduct}' AND vendor = '${portcpevendor}'"`
 
             if [ ${dbcpefound} -gt 0 ]; then
                 cpestatus="VALID"
                 cpemsg="found ${dbcpefound} CPE entries"
             else
                 cpestatus="INVALID"
-                cpemsg="Vendor:Product ${portcpevendor}:${portcpeproduct} not found in DB"
+                cpemsg="Vendor ${portcpevendor} Product ${portcpeproduct} not found in DB"
             fi
         else
-            dbcpecandidates=`sqlite3 ${CPEDB} "SELECT GROUP_CONCAT(vendor || ':' || product) FROM (SELECT vendor, product FROM products WHERE product = '${portname}' GROUP BY vendor)"`
+            dbcpecandidates=`sqlite3 ${CPEDB} "SELECT GROUP_CONCAT(vendor || ':' || product) FROM (SELECT vendor, product FROM categorized_cpes WHERE product = '${portname}' GROUP BY vendor)"`
 
             if [ -z "${dbcpecandidates}" ]; then
                 cpestatus="UNKNOWN"
