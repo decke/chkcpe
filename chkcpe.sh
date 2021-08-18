@@ -94,13 +94,13 @@ for category in ${CATEGORIES}; do
         cpestatus=""
         cpemsg=""
 
-        portname=`${MAKE} -VPORTNAME:tl 2>/dev/null || true`
-        portmaintainer=`${MAKE} -VMAINTAINER 2>/dev/null || true`
-        portcpestr=`${MAKE} -VCPE_STR 2>/dev/null || true`
+        portname=`${MAKE} -VPORTNAME:tl | sed 's/\([^A-z0-9]\)/\\\1/g'`
+        portmaintainer=`${MAKE} -VMAINTAINER`
+        portcpestr=`${MAKE} -VCPE_STR`
 
         if [ ! -z "${portcpestr}" ]; then
-            portcpeproduct=`${MAKE} -VCPE_PRODUCT 2>/dev/null || true`
-            portcpevendor=`${MAKE} -VCPE_VENDOR 2>/dev/null || true`
+            portcpeproduct=`${MAKE} -VCPE_PRODUCT | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portcpevendor=`${MAKE} -VCPE_VENDOR | sed 's/\([^A-z0-9]\)/\\\1/g'`
 
             dbcpefound=`sqlite3 ${CPEDB} "SELECT COUNT(*) FROM categorized_cpes WHERE product = '${portcpeproduct}' AND vendor = '${portcpevendor}'"`
 
