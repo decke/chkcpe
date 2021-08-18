@@ -2,7 +2,7 @@ name: Run CPE validations on FreeBSD Portstree
 on:
   push:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 2 * * *'
 
 env:
   CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
