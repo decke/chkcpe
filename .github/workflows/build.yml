@@ -3,6 +3,7 @@ on:
   push:
   schedule:
     - cron: '0 2 * * *'
+  workflow_dispatch:
 
 env:
   GO_CPE_DICT_BIN: https://people.freebsd.org/~decke/cpe/go-cpe-dictionary/go-cpe-dictionary-v0.2.6-linux.xz
