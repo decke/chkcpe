@@ -65,9 +65,8 @@ jobs:
 
       - name: Generate markdown reports
         run: |
-          cat logs/chkcpe.log | ./markify "All Ports" > reports/all.md
-          cat logs/chkcpe.log | grep "INVALID" | ./markify "CPE Status INVALID" > reports/invalid.md
           cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify "CPE Status VALID" > reports/valid.md
+          cat logs/chkcpe.log | grep "INVALID" | ./markify "CPE Status INVALID" > reports/invalid.md
           cat logs/chkcpe.log | grep "MISSING" | ./markify "CPE Status MISSING" > reports/missing.md
           cat logs/chkcpe.log | grep "UNKNOWN" | ./markify "CPE Status UNKNOWN" > reports/unknown.md
 
