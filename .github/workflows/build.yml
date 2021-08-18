@@ -24,6 +24,7 @@ jobs:
       - name: Fetch go-cpe-dictionary
         run: |
           wget -qO - ${{ env.GO_CPE_DICT_BIN }} | xz -d -c > go-cpe-dictionary
+          chmod +x go-cpe-dictionary
 
       - name: Install bmake
         run: |
