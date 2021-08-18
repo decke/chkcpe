@@ -41,6 +41,9 @@ jobs:
       - name: Build sqlite CPE DB
         run: |
           ./go-cpe-dictionary fetchnvd --dbpath $RUNNER_TEMP/cpe.sqlite
+          sqlite3 $RUNNER_TEMP/cpe.sqlite "UPDATE categorized_cpes SET vendor = REPLACE(vendor, '\', '')"
+          sqlite3 $RUNNER_TEMP/cpe.sqlite "UPDATE categorized_cpes SET product = REPLACE(product, '\', '')"
+          sqlite3 $RUNNER_TEMP/cpe.sqlite "UPDATE categorized_cpes SET version = REPLACE(version, '\', '')"
           cp $RUNNER_TEMP/cpe.sqlite logs
 
       - name: Run chkcpe
