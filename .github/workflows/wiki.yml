@@ -1,0 +1,45 @@
+name: Regenerate README.md
+on:
+  gollum:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Check out repository wiki
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}.wiki
+          path: wiki
+
+      - name: Prepare ENV variables
+        run: |
+          echo "VALID=$(tail -n +7 wiki/valid.md | wc -l)" >> $GITHUB_ENV
+          echo "INVALID=$(tail -n +7 wiki/invalid.md | wc -l)" >> $GITHUB_ENV
+          echo "MISSING=$(tail -n +7 wiki/missing.md | wc -l)" >> $GITHUB_ENV
+          echo "UNKNOWN=$(tail -n +7 wiki/unknown.md | wc -l)" >> $GITHUB_ENV
+          echo "LASTMOD=$(date)" >> $GITHUB_ENV
+
+      - name: Render README.md
+        uses: vafinvr/template-env-action@master
+        env:
+          VALID: ${{ env.VALID }}
+          INVALID: ${{ env.INVALID }}
+          MISSING: ${{ env.MISSING }}
+          UNKNOWN: ${{ env.UNKNOWN }}
+          LASTMOD: ${{ env.LASTMOD }}
+        with:
+          filename: TEMPLATE.md
+
+      - name: Commit changes to README.md
+        run: |
+          cp -p TEMPLATE.md README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "Update statistic numbers" && git push
