@@ -1,6 +1,8 @@
 name: Run CPE validations on FreeBSD Portstree
 on:
   push:
+    paths-ignore:
+      - '**.md'
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
