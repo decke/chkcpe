@@ -19,7 +19,7 @@ chance for you to help!
 | ---------------------------------------------------------| ------: | ------------------------------------------------------------- |
 | ![valid](https://img.shields.io/badge/valid-brightgreen) |    1043 | [valid ports](https://github.com/decke/chkcpe/wiki/valid)     |
 | ![invalid](https://img.shields.io/badge/invalid-red)     |     108 | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid) |
-| ![missing](https://img.shields.io/badge/missing-orange)  |    3335 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)    |   25190 |  |
+| ![missing](https://img.shields.io/badge/missing-orange)  |    3336 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)    |   25191 |  |
 
-Last updated: 18-Aug-21 12:31:27 UTC
+Last updated: Thursday, 19-Aug-21 09:28:29 UTC
