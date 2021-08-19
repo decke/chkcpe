@@ -100,9 +100,9 @@ for category in ${CATEGORIES}; do
 
         if [ ! -z "${portcpestr}" ]; then
             portcpeproduct=`${MAKE} -VCPE_PRODUCT 2>/dev/null || true`
-            portcpeproduct=`echo ${portcpeproduct} | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portcpeproduct=`echo ${portcpeproduct} | sed 's/\([^A-z0-9]\)/\\\\\1/g'`
             portcpevendor=`${MAKE} -VCPE_VENDOR 2>/dev/null || true`
-            portcpevendor=`echo ${portcpevendor} | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portcpevendor=`echo ${portcpevendor} | sed 's/\([^A-z0-9]\)/\\\\\1/g'`
 
             dbcpefound=`sqlite3 ${CPEDB} "SELECT COUNT(*) FROM categorized_cpes WHERE product = '${portcpeproduct}' AND vendor = '${portcpevendor}'"`
 
@@ -114,7 +114,7 @@ for category in ${CATEGORIES}; do
                 cpemsg="Vendor ${portcpevendor} Product ${portcpeproduct} not found in DB"
             fi
         else
-            portname=`echo ${portname} | sed 's/\([^A-z0-9]\)/\\\1/g'`
+            portname=`echo ${portname} | sed 's/\([^A-z0-9]\)/\\\\\1/g'`
 
             dbcpecandidates=`sqlite3 ${CPEDB} "SELECT GROUP_CONCAT(vendor || ':' || product) FROM (SELECT vendor, product FROM categorized_cpes WHERE product = '${portname}' GROUP BY vendor)"`
 
