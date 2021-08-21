@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup $GITHUB_WORKSPACE as tmpfs
+        run: sudo mount -t tmpfs -o mode=1777 none $GITHUB_WORKSPACE
+
       - name: Check out repository code
         uses: actions/checkout@v2
 
@@ -37,19 +40,15 @@ jobs:
       - name: Prepare directories
         run: mkdir logs reports
 
-      - name: Setup $RUNNER_TEMP as tmpfs
-        run: sudo mount -t tmpfs -o mode=1777 none $RUNNER_TEMP
-
       - name: Build sqlite CPE DB
         run: |
-          ./go-cpe-dictionary fetchnvd --dbpath $RUNNER_TEMP/cpe.sqlite
-          cp $RUNNER_TEMP/cpe.sqlite logs
+          ./go-cpe-dictionary fetchnvd --dbpath logs/cpe.sqlite
 
       - name: Run chkcpe
         env:
           MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
-          CPEDB: /home/runner/work/_temp/cpe.sqlite
+          CPEDB: /home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
