@@ -15,9 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup $GITHUB_WORKSPACE as tmpfs
-        run: sudo mount -t tmpfs -o mode=1777 none $GITHUB_WORKSPACE
-
       - name: Check out repository code
         uses: actions/checkout@v2
 
