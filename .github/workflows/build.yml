@@ -54,7 +54,7 @@ jobs:
           _OSRELEASE: 13.0-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
-        run: ./chkcpe.sh -q > logs/chkcpe.log
+        run: ./chkcpe > logs/chkcpe.log
 
       - name: Upload logfiles
         uses: actions/upload-artifact@v2

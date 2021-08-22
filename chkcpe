@@ -1,0 +1,104 @@
+#!/usr/bin/env php
+<?php
+
+function escapeCPE($str){
+   return preg_replace('/([^a-zA-Z0-9])/', '\\\\$1', $str);
+}
+
+$PORTSDIR = '/usr/ports';
+$CPEDB = 'cpe.sqlite';
+$MAKE = '/usr/bin/make';
+
+if(getenv('PORTSDIR'))
+   $PORTSDIR = getenv('PORTSDIR');
+
+if(getenv('CPEDB'))
+   $CPEDB = getenv('CPEDB');
+
+if(getenv('MAKE'))
+   $MAKE = getenv('MAKE');
+
+$db = new \PDO('sqlite:'.$CPEDB);
+$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$db->exec('PRAGMA foreign_keys = ON;');
+$db->exec('PRAGMA encoding = "UTF-8";');
+
+chdir($PORTSDIR);
+
+foreach(scandir('.') as $category)
+{
+   if(!is_dir($category) || $category[0] == '.' || in_array($category, ['Mk', 'Templates', 'Tools', 'distfiles', 'packages']))
+      continue;
+
+   foreach(scandir($category) as $port)
+   {
+      $origin = $category.'/'.$port;
+
+      if(!is_dir($origin) || $port[0] == '.')
+         continue;
+
+      $output = [];
+      $resultcode = null;
+      exec("$MAKE -C $origin -VPORTNAME:tl -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT", $output, $resultcode);
+
+      if($resultcode != 0){
+         
+         continue;
+      }
+
+      $port = [
+         'origin' => $origin,
+         'portname' => $output[0],
+         'maintainer' => $output[1],
+         'cpe_str' => $output[2],
+         'cpe_vendor' => $output[3],
+         'cpe_product' => $output[4]
+      ];
+
+      if($port['cpe_str'] != '')
+      {
+          $stmt = $db->prepare('SELECT COUNT(*) FROM categorized_cpes WHERE vendor = ? AND product = ?');
+          if(!$stmt->execute([escapeCPE($port['cpe_vendor']), escapeCPE($port['cpe_product'])])){
+             throw new \Exception('DB Error');
+          }
+
+          $row = $stmt->fetch(\PDO::FETCH_NUM);
+          if(!is_array($row)) {
+             throw new \Exception('DB Error');
+          }
+
+          if($row[0] > 0){
+             $port['status'] = 'VALID';
+             $port['msg'] = 'found '.$row[0].' CPE entries';
+          } else {
+             $port['status'] = 'INVALID';
+             $port['msg'] = 'Vendor '.$port['cpe_vendor'].' Product '.$port['cpe_product'].' not found in DB';
+          }
+      }
+      else
+      {
+          $stmt = $db->prepare('SELECT vendor, product FROM categorized_cpes WHERE product = ? GROUP BY vendor');
+          if(!$stmt->execute([strtolower(escapeCPE($port['portname']))])){
+             throw new \Exception('DB Error');
+          }
+
+          while($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+             $port['candidates'][] = $row['vendor'].':'.$row['product'];
+          }
+
+          if(isset($port['candidates']))
+          {
+             $port['status'] = 'MISSING';
+             $port['msg'] = implode(', ', $port['candidates']);
+          }
+          else
+          {
+             $port['status'] = 'UNKNOWN';
+             $port['msg'] = '';
+          }
+      }
+
+      printf("%-45s\t%-30s\t%s\t%s\n", $port['origin'], $port['maintainer'], $port['status'], $port['msg']);
+   }
+}
+
