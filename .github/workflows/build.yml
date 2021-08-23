@@ -35,7 +35,7 @@ jobs:
           sudo apt-get install bmake
 
       - name: Prepare directories
-        run: mkdir logs reports
+        run: mkdir logs
 
       - name: Build sqlite CPE DB
         run: |
@@ -45,6 +45,7 @@ jobs:
         env:
           MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
+          LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
           CPEDB: /home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
           MAKE: /usr/bin/bmake
           ARCH: amd64
@@ -54,26 +55,13 @@ jobs:
           _OSRELEASE: 13.0-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
-        run: ./chkcpe > logs/chkcpe.log
+        run: ./chkcpe
 
       - name: Upload logfiles
         uses: actions/upload-artifact@v2
         with:
           name: cpe-logs
           path: logs
-
-      - name: Generate markdown reports
-        run: |
-          cat logs/chkcpe.log | grep -v "INVALID" | grep "VALID" | ./markify "CPE Status VALID" > reports/valid.md
-          cat logs/chkcpe.log | grep "INVALID" | ./markify "CPE Status INVALID" > reports/invalid.md
-          cat logs/chkcpe.log | grep "MISSING" | ./markify "CPE Status MISSING" > reports/missing.md
-          cat logs/chkcpe.log | grep "UNKNOWN" | ./markify "CPE Status UNKNOWN" > reports/unknown.md
-
-      - name: Upload reports
-        uses: actions/upload-artifact@v2
-        with:
-          name: cpe-reports
-          path: reports
 
       - name: Check out repository wiki
         uses: actions/checkout@v2
@@ -83,7 +71,7 @@ jobs:
 
       - name: Upload reports to wiki
         run: |
-          cp -p reports/*.md wiki/
+          cp -p logs/*.md wiki/
           cd wiki
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"

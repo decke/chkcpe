@@ -5,12 +5,75 @@ function escapeCPE($str){
    return preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
 }
 
+function writeMarkdownLog($status = null, $port = null){
+   static $fpcache = [];
+
+   $statusmap = array(
+      'valid'   => 'brightgreen',
+      'invalid' => 'red',
+      'missing' => 'orange',
+      'unknown' => 'grey'
+   );
+
+   if($status == null && $port == null)
+   {
+      foreach($fpcache as $fp)
+      {
+         $footer = "\n";
+
+         fwrite($fp, $footer);
+         fflush($fp);
+         fclose($fp);
+      }
+
+      $fpcache = [];
+      return true;
+   }
+
+   $status = strtolower($status);
+
+   if(!isset($fpcache[$status]))
+   {
+      $header = '';
+      $header .= sprintf("# %s\n", $status);
+      $header .= sprintf("\n");
+      $header .= sprintf("Date: %s\n", date(DATE_RFC850));
+      $header .= sprintf("\n");
+      $header .= sprintf("| Port | Maintainer | Status | Comment |\n");
+      $header .= sprintf("|--|--|--|--|\n");
+
+      $logfile = $GLOBALS['LOGSDIR'].DIRECTORY_SEPARATOR.strtolower($status).'.md';
+
+      $fpcache[$status] = fopen($logfile, 'w');
+      if($fpcache[$status] === false)
+         die('Could not open logfile '.$logfile."\n");
+
+      fwrite($fpcache[$status], $header);
+   }
+
+   $color = 'black';
+
+   if(isset($statusmap[$status]))
+      $color = $statusmap[$status];
+
+   $content = sprintf("| [%s](https://freshports.org/%s) | %s | ![%s](https://img.shields.io/badge/%s-%s) | %s |\n",
+      $port['origin'], $port['origin'], $port['maintainer'], $status, $status, $color, $port['msg']);
+
+   fwrite($fpcache[$status], $content);
+
+   return true;
+}
+
 $PORTSDIR = '/usr/ports';
-$CPEDB = 'cpe.sqlite';
+$LOGSDIR = getcwd().'/logs';
+$CPEDB = getcwd().'/cpe.sqlite';
 $MAKE = '/usr/bin/make';
 
 if(getenv('PORTSDIR'))
    $PORTSDIR = getenv('PORTSDIR');
+
+if(getenv('LOGSDIR'))
+   $LOGSDIR = getenv('LOGSDIR');
 
 if(getenv('CPEDB'))
    $CPEDB = getenv('CPEDB');
@@ -24,6 +87,7 @@ $db->exec('PRAGMA foreign_keys = ON;');
 $db->exec('PRAGMA encoding = "UTF-8";');
 
 chdir($PORTSDIR);
+$stats = ['all' => 0];
 
 foreach(scandir('.') as $category)
 {
@@ -98,7 +162,21 @@ foreach(scandir('.') as $category)
           }
       }
 
-      printf("%-45s\t%-30s\t%s\t%s\n", $port['origin'], $port['maintainer'], $port['status'], $port['msg']);
+      writeMarkdownLog($port['status'], $port);
+
+      if(!isset($stats[$port['status']]))
+          $stats[$port['status']] = 0;
+
+      $stats[$port['status']]++;
+      $stats['all']++;
+
+      if($stats['all'] % 100 == 0)
+          printf("%d ...\n", $stats['all']);
    }
 }
 
+writeMarkdownLog();
+
+foreach($stats as $status => $count){
+   printf("%-10s %5d\n", $status, $count);
+}
