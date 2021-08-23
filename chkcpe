@@ -2,7 +2,7 @@
 <?php
 
 function escapeCPE($str){
-   return preg_replace('/([^a-zA-Z0-9])/', '\\\\$1', $str);
+   return preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
 }
 
 $PORTSDIR = '/usr/ports';
