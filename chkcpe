@@ -35,8 +35,6 @@ function writeMarkdownLog($status = null, $port = null){
    if(!isset($fpcache[$status]))
    {
       $header = '';
-      $header .= sprintf("# %s\n", $status);
-      $header .= sprintf("\n");
       $header .= sprintf("Date: %s\n", date(DATE_RFC850));
       $header .= sprintf("\n");
       $header .= sprintf("| Port | Maintainer | Status | Comment |\n");
