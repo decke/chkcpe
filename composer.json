@@ -8,7 +8,7 @@
       "ext-pdo_sqlite": "*",
       "php": ">=7.4"
    },
-   "require-dev":
+   "require-dev": {
       "ext-tokenizer": "*"
    },
    "autoload": {
