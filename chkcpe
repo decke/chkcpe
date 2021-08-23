@@ -1,12 +1,24 @@
 #!/usr/bin/env php
 <?php
+declare(strict_types=1);
 
-function escapeCPE($str)
+/**
+ * @param string $str
+ */
+function escapeCPE(string $str): string
 {
-    return preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
+    $res = preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
+    if($res === null)
+        die('Could not escape string'."\n");
+
+    return $res;
 }
 
-function writeMarkdownLog($status = null, $port = null)
+/**
+ * @param ?string $status
+ * @param ?array<string, mixed> $port
+ */
+function writeMarkdownLog(?string $status = null, ?array $port = null): bool
 {
     static $fpcache = [];
 
@@ -17,7 +29,7 @@ function writeMarkdownLog($status = null, $port = null)
       'unknown' => 'grey'
    );
 
-    if ($status == null && $port == null) {
+    if ($status == null || $port == null) {
         foreach ($fpcache as $fp) {
             $footer = "\n";
 
@@ -71,26 +83,23 @@ function writeMarkdownLog($status = null, $port = null)
     return true;
 }
 
-$PORTSDIR = '/usr/ports';
-$LOGSDIR = getcwd().'/logs';
-$CPEDB = getcwd().'/cpe.sqlite';
-$MAKE = '/usr/bin/make';
+$PORTSDIR = getenv('PORTSDIR');
+$LOGSDIR = getenv('LOGSDIR');
+$CPEDB = getenv('CPEDB');
+$MAKE = getenv('MAKE');
 
-if (getenv('PORTSDIR')) {
-    $PORTSDIR = getenv('PORTSDIR');
-}
+if($PORTSDIR == null)
+    $PORTSDIR = '/usr/ports';
 
-if (getenv('LOGSDIR')) {
-    $LOGSDIR = getenv('LOGSDIR');
-}
+if($LOGSDIR == null)
+    $LOGSDIR = getcwd().'/logs';
 
-if (getenv('CPEDB')) {
-    $CPEDB = getenv('CPEDB');
-}
+if($CPEDB == null)
+    $CPEDB = getcwd().'/cpe.sqlite';
 
-if (getenv('MAKE')) {
-    $MAKE = getenv('MAKE');
-}
+if($MAKE == null)
+    $MAKE = '/usr/bin/make';
+
 
 $db = new \PDO('sqlite:'.$CPEDB);
 $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
@@ -100,12 +109,21 @@ $db->exec('PRAGMA encoding = "UTF-8";');
 chdir($PORTSDIR);
 $stats = ['all' => 0];
 
-foreach (scandir('.') as $category) {
+$categories = scandir('.');
+
+if($categories === false)
+    die('scandir() failed'."\n");
+
+foreach ($categories as $category) {
     if (!is_dir($category) || $category[0] == '.' || in_array($category, ['Mk', 'Templates', 'Tools', 'distfiles', 'packages'])) {
         continue;
     }
 
-    foreach (scandir($category) as $port) {
+    $ports = scandir($category);
+    if($ports === false)
+        die('scandir() failed'."\n");
+
+    foreach ($ports as $port) {
         $origin = $category.'/'.$port;
 
         if (!is_dir($origin) || $port[0] == '.') {

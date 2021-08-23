@@ -1,0 +1,19 @@
+{
+   "name": "decke/chkcpe",
+   "description": "CPE validations for FreeBSD ports",
+   "homepage": "https://github.com/decke/chkcpe",
+   "license": "BSD-2-Clause",
+   "require": {
+      "ext-PDO": "*",
+      "ext-pdo_sqlite": "*",
+      "php": ">=7.4"
+   },
+   "require-dev":
+      "ext-tokenizer": "*"
+   },
+   "autoload": {
+      "psr-0": {
+         "CheckCpe\\": "lib"
+      }
+   }
+}
