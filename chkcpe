@@ -1,65 +1,74 @@
 #!/usr/bin/env php
 <?php
 
-function escapeCPE($str){
-   return preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
+function escapeCPE($str)
+{
+    return preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
 }
 
-function writeMarkdownLog($status = null, $port = null){
-   static $fpcache = [];
+function writeMarkdownLog($status = null, $port = null)
+{
+    static $fpcache = [];
 
-   $statusmap = array(
+    $statusmap = array(
       'valid'   => 'brightgreen',
       'invalid' => 'red',
       'missing' => 'orange',
       'unknown' => 'grey'
    );
 
-   if($status == null && $port == null)
-   {
-      foreach($fpcache as $fp)
-      {
-         $footer = "\n";
+    if ($status == null && $port == null) {
+        foreach ($fpcache as $fp) {
+            $footer = "\n";
 
-         fwrite($fp, $footer);
-         fflush($fp);
-         fclose($fp);
-      }
+            fwrite($fp, $footer);
+            fflush($fp);
+            fclose($fp);
+        }
 
-      $fpcache = [];
-      return true;
-   }
+        $fpcache = [];
+        return true;
+    }
 
-   $status = strtolower($status);
+    $status = strtolower($status);
 
-   if(!isset($fpcache[$status]))
-   {
-      $header = '';
-      $header .= sprintf("Date: %s\n", date(DATE_RFC850));
-      $header .= sprintf("\n");
-      $header .= sprintf("| Port | Maintainer | Status | Comment |\n");
-      $header .= sprintf("|--|--|--|--|\n");
+    if (!isset($fpcache[$status])) {
+        $header = '';
+        $header .= sprintf("Date: %s\n", date(DATE_RFC850));
+        $header .= sprintf("\n");
+        $header .= sprintf("| Port | Maintainer | Status | Comment |\n");
+        $header .= sprintf("|--|--|--|--|\n");
 
-      $logfile = $GLOBALS['LOGSDIR'].DIRECTORY_SEPARATOR.strtolower($status).'.md';
+        $logfile = $GLOBALS['LOGSDIR'].DIRECTORY_SEPARATOR.strtolower($status).'.md';
 
-      $fpcache[$status] = fopen($logfile, 'w');
-      if($fpcache[$status] === false)
-         die('Could not open logfile '.$logfile."\n");
+        $fpcache[$status] = fopen($logfile, 'w');
+        if ($fpcache[$status] === false) {
+            die('Could not open logfile '.$logfile."\n");
+        }
 
-      fwrite($fpcache[$status], $header);
-   }
+        fwrite($fpcache[$status], $header);
+    }
 
-   $color = 'black';
+    $color = 'black';
 
-   if(isset($statusmap[$status]))
-      $color = $statusmap[$status];
+    if (isset($statusmap[$status])) {
+        $color = $statusmap[$status];
+    }
 
-   $content = sprintf("| [%s](https://freshports.org/%s) | %s | ![%s](https://img.shields.io/badge/%s-%s) | %s |\n",
-      $port['origin'], $port['origin'], $port['maintainer'], $status, $status, $color, $port['msg']);
+    $content = sprintf(
+        "| [%s](https://freshports.org/%s) | %s | ![%s](https://img.shields.io/badge/%s-%s) | %s |\n",
+        $port['origin'],
+        $port['origin'],
+        $port['maintainer'],
+        $status,
+        $status,
+        $color,
+        $port['msg']
+    );
 
-   fwrite($fpcache[$status], $content);
+    fwrite($fpcache[$status], $content);
 
-   return true;
+    return true;
 }
 
 $PORTSDIR = '/usr/ports';
@@ -67,17 +76,21 @@ $LOGSDIR = getcwd().'/logs';
 $CPEDB = getcwd().'/cpe.sqlite';
 $MAKE = '/usr/bin/make';
 
-if(getenv('PORTSDIR'))
-   $PORTSDIR = getenv('PORTSDIR');
+if (getenv('PORTSDIR')) {
+    $PORTSDIR = getenv('PORTSDIR');
+}
 
-if(getenv('LOGSDIR'))
-   $LOGSDIR = getenv('LOGSDIR');
+if (getenv('LOGSDIR')) {
+    $LOGSDIR = getenv('LOGSDIR');
+}
 
-if(getenv('CPEDB'))
-   $CPEDB = getenv('CPEDB');
+if (getenv('CPEDB')) {
+    $CPEDB = getenv('CPEDB');
+}
 
-if(getenv('MAKE'))
-   $MAKE = getenv('MAKE');
+if (getenv('MAKE')) {
+    $MAKE = getenv('MAKE');
+}
 
 $db = new \PDO('sqlite:'.$CPEDB);
 $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
@@ -87,28 +100,27 @@ $db->exec('PRAGMA encoding = "UTF-8";');
 chdir($PORTSDIR);
 $stats = ['all' => 0];
 
-foreach(scandir('.') as $category)
-{
-   if(!is_dir($category) || $category[0] == '.' || in_array($category, ['Mk', 'Templates', 'Tools', 'distfiles', 'packages']))
-      continue;
+foreach (scandir('.') as $category) {
+    if (!is_dir($category) || $category[0] == '.' || in_array($category, ['Mk', 'Templates', 'Tools', 'distfiles', 'packages'])) {
+        continue;
+    }
 
-   foreach(scandir($category) as $port)
-   {
-      $origin = $category.'/'.$port;
+    foreach (scandir($category) as $port) {
+        $origin = $category.'/'.$port;
 
-      if(!is_dir($origin) || $port[0] == '.')
-         continue;
+        if (!is_dir($origin) || $port[0] == '.') {
+            continue;
+        }
 
-      $output = [];
-      $resultcode = null;
-      exec("$MAKE -C $origin -VPORTNAME:tl -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT", $output, $resultcode);
+        $output = [];
+        $resultcode = null;
+        exec("$MAKE -C $origin -VPORTNAME:tl -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT", $output, $resultcode);
 
-      if($resultcode != 0){
-         
-         continue;
-      }
+        if ($resultcode != 0) {
+            continue;
+        }
 
-      $port = [
+        $port = [
          'origin' => $origin,
          'portname' => $output[0],
          'maintainer' => $output[1],
@@ -117,64 +129,60 @@ foreach(scandir('.') as $category)
          'cpe_product' => $output[4]
       ];
 
-      if($port['cpe_str'] != '')
-      {
-          $stmt = $db->prepare('SELECT COUNT(*) FROM categorized_cpes WHERE vendor = ? AND product = ?');
-          if(!$stmt->execute([escapeCPE($port['cpe_vendor']), escapeCPE($port['cpe_product'])])){
-             throw new \Exception('DB Error');
-          }
+        if ($port['cpe_str'] != '') {
+            $stmt = $db->prepare('SELECT COUNT(*) FROM categorized_cpes WHERE vendor = ? AND product = ?');
+            if (!$stmt->execute([escapeCPE($port['cpe_vendor']), escapeCPE($port['cpe_product'])])) {
+                throw new \Exception('DB Error');
+            }
 
-          $row = $stmt->fetch(\PDO::FETCH_NUM);
-          if(!is_array($row)) {
-             throw new \Exception('DB Error');
-          }
+            $row = $stmt->fetch(\PDO::FETCH_NUM);
+            if (!is_array($row)) {
+                throw new \Exception('DB Error');
+            }
 
-          if($row[0] > 0){
-             $port['status'] = 'VALID';
-             $port['msg'] = 'found '.$row[0].' CPE entries';
-          } else {
-             $port['status'] = 'INVALID';
-             $port['msg'] = 'Vendor '.$port['cpe_vendor'].' Product '.$port['cpe_product'].' not found in DB';
-          }
-      }
-      else
-      {
-          $stmt = $db->prepare('SELECT vendor, product FROM categorized_cpes WHERE product = ? GROUP BY vendor');
-          if(!$stmt->execute([strtolower(escapeCPE($port['portname']))])){
-             throw new \Exception('DB Error');
-          }
+            if ($row[0] > 0) {
+                $port['status'] = 'VALID';
+                $port['msg'] = 'found '.$row[0].' CPE entries';
+            } else {
+                $port['status'] = 'INVALID';
+                $port['msg'] = 'Vendor '.$port['cpe_vendor'].' Product '.$port['cpe_product'].' not found in DB';
+            }
+        } else {
+            $stmt = $db->prepare('SELECT vendor, product FROM categorized_cpes WHERE product = ? GROUP BY vendor');
+            if (!$stmt->execute([strtolower(escapeCPE($port['portname']))])) {
+                throw new \Exception('DB Error');
+            }
 
-          while($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
-             $port['candidates'][] = $row['vendor'].':'.$row['product'];
-          }
+            while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+                $port['candidates'][] = $row['vendor'].':'.$row['product'];
+            }
 
-          if(isset($port['candidates']))
-          {
-             $port['status'] = 'MISSING';
-             $port['msg'] = implode(', ', $port['candidates']);
-          }
-          else
-          {
-             $port['status'] = 'UNKNOWN';
-             $port['msg'] = '';
-          }
-      }
+            if (isset($port['candidates'])) {
+                $port['status'] = 'MISSING';
+                $port['msg'] = implode(', ', $port['candidates']);
+            } else {
+                $port['status'] = 'UNKNOWN';
+                $port['msg'] = '';
+            }
+        }
 
-      writeMarkdownLog($port['status'], $port);
+        writeMarkdownLog($port['status'], $port);
 
-      if(!isset($stats[$port['status']]))
-          $stats[$port['status']] = 0;
+        if (!isset($stats[$port['status']])) {
+            $stats[$port['status']] = 0;
+        }
 
-      $stats[$port['status']]++;
-      $stats['all']++;
+        $stats[$port['status']]++;
+        $stats['all']++;
 
-      if($stats['all'] % 100 == 0)
-          printf("%d ...\n", $stats['all']);
-   }
+        if ($stats['all'] % 100 == 0) {
+            printf("%d ...\n", $stats['all']);
+        }
+    }
 }
 
 writeMarkdownLog();
 
-foreach($stats as $status => $count){
-   printf("%-10s %5d\n", $status, $count);
+foreach ($stats as $status => $count) {
+    printf("%-10s %5d\n", $status, $count);
 }
