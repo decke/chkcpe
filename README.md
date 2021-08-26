@@ -22,4 +22,4 @@ chance for you to help!
 | ![missing](https://img.shields.io/badge/missing-orange)  | 2833 | [missing ports](https://github.com/decke/chkcpe/wiki/missing) |
 | ![unknown](https://img.shields.io/badge/unknown-grey)    | 25731 |  |
 
-Last updated: Thu Aug 26 18:38:14 UTC 2021
+Last updated: Thu Aug 26 20:14:22 UTC 2021
