@@ -40,10 +40,15 @@ class Runner
                 }
 
                 $origin = $category->getFilename().'/'.$portname->getFilename();
-                $this->allports[$origin] = new Port($origin);
+                try {
+                    $this->allports[$origin] = new Port($origin);
 
-                if (++$cnt % 1000 == 0) {
-                    Logger::info('Scanned '.$cnt.' ports');
+                    if (++$cnt % 1000 == 0) {
+                       Logger::info('Scanned '.$cnt.' ports');
+                    }
+                }
+                catch(\Exception $e) {
+                    Logger::error($e->getMessage());
                 }
             }
         }
