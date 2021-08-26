@@ -29,6 +29,12 @@ jobs:
           wget -qO - ${{ env.GO_CPE_DICT_BIN }} | xz -d -c > go-cpe-dictionary
           chmod +x go-cpe-dictionary
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          tools: composer
+
       - name: Install bmake
         run: |
           sudo apt-get update
