@@ -45,10 +45,6 @@ class Runner
                 if (++$cnt % 1000 == 0) {
                     Logger::info('Scanned '.$cnt.' ports');
                 }
-
-                if ($cnt > 100) {
-                    break;
-                }
             }
         }
 

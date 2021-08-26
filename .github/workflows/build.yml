@@ -79,7 +79,7 @@ jobs:
 
       - name: Upload reports to wiki
         run: |
-          cp -p env logs/*.md wiki/
+          cp -p logs/env logs/*.md wiki/
           cd wiki
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
