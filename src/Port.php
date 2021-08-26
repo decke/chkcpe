@@ -95,6 +95,11 @@ class Port
         return $this->cpe_str;
     }
 
+    public function getCPE(): Product
+    {
+        return new Product($this->cpe_vendor, $this->cpe_product);
+    }
+
     public function getCPEVendor(): string
     {
         return $this->cpe_vendor;

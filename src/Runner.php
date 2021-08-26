@@ -44,10 +44,9 @@ class Runner
                     $this->allports[$origin] = new Port($origin);
 
                     if (++$cnt % 1000 == 0) {
-                       Logger::info('Scanned '.$cnt.' ports');
+                        Logger::info('Scanned '.$cnt.' ports');
                     }
-                }
-                catch(\Exception $e) {
+                } catch (\Exception $e) {
                     Logger::error($e->getMessage());
                 }
             }
@@ -64,7 +63,8 @@ class Runner
 
         foreach ($this->allports as $port) {
             if ($port->getCPEStr() != '') {
-                $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
+                $cpe = $port->getCPE();
+                $product = $dictionary->findProduct($cpe->getEscapedVendor(), $cpe->getEscapedProduct());
                 if ($product === null) {
                     $port->setCPEStatus(Status::INVALID);
                 } else {
