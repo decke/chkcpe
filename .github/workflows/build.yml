@@ -52,7 +52,7 @@ jobs:
           MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
           LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
-          CPEDB: /home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
+          CPEDB: sqlite:/home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
