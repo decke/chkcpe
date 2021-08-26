@@ -19,10 +19,10 @@ jobs:
 
       - name: Prepare ENV variables
         run: |
-          echo "VALID=$(tail -n +6 wiki/valid.md | wc -l)" >> $GITHUB_ENV
-          echo "INVALID=$(tail -n +6 wiki/invalid.md | wc -l)" >> $GITHUB_ENV
-          echo "MISSING=$(tail -n +6 wiki/missing.md | wc -l)" >> $GITHUB_ENV
-          echo "UNKNOWN=$(tail -n +6 wiki/unknown.md | wc -l)" >> $GITHUB_ENV
+          echo "VALID=$(cat wiki/env | grep ^VALID | cut -d= -f2)" >> $GITHUB_ENV
+          echo "INVALID=$(cat wiki/env | grep INVALID | cut -d= -f2)" >> $GITHUB_ENV
+          echo "MISSING=$(cat wiki/env | grep MISSING | cut -d= -f2)" >> $GITHUB_ENV
+          echo "UNKNOWN=$(cat wiki/env | grep UNKNOWN | cut -d= -f2)" >> $GITHUB_ENV
           echo "LASTMOD=$(date)" >> $GITHUB_ENV
 
       - name: Render README.md

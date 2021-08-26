@@ -55,7 +55,7 @@ jobs:
           _OSRELEASE: 13.0-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
-        run: ./chkcpe
+        run: ./bin/chkcpe
 
       - name: Upload logfiles
         uses: actions/upload-artifact@v2
@@ -71,7 +71,7 @@ jobs:
 
       - name: Upload reports to wiki
         run: |
-          cp -p logs/*.md wiki/
+          cp -p env logs/*.md wiki/
           cd wiki
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
