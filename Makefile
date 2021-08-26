@@ -10,7 +10,7 @@ vendor:
 
 test: vendor
 	php-cs-fixer list-files
-	phpstan analyse -l max chkcpe
+	phpstan analyse -l max bin src
 
 fix:
 	php-cs-fixer fix

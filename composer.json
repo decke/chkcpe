@@ -11,9 +11,12 @@
    "require-dev": {
       "ext-tokenizer": "*"
    },
+   "bin": [
+      "bin/chkcpe"
+   ],
    "autoload": {
-      "psr-0": {
-         "CheckCpe\\": "lib"
+      "psr-4": {
+         "CheckCpe\\": "src/"
       }
    }
 }

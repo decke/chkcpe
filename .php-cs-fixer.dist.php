@@ -2,7 +2,6 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
-    ->name('chkcpe')
 ;
 
 $config = new PhpCsFixer\Config();

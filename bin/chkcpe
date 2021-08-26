@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use CheckCpe\Util\Logger;
+
+Logger::start();
+
+$runner = new CheckCpe\Runner();
+
+if($runner->run())
+    exit(0);
+
+exit(1);
