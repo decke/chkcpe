@@ -43,8 +43,8 @@ class Runner
 
                 $origin = $category->getFilename().'/'.$portname->getFilename();
                 try {
-                    $this->allports[$origin] = new Port($origin);
                     $cnt++;
+                    $this->allports[$origin] = new Port($origin);
 
                     if ($cnt % 1000 == 0) {
                         Logger::info('Scanned '.$cnt.' ports');
