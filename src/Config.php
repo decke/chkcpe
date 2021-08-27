@@ -83,15 +83,53 @@ class Config
      */
     public static function getPriorityData(): array
     {
-        $priofile = Config::getDataDir().'/portpriority.json';
+        $file = Config::getDataDir().'/portpriority.json';
 
-        if (!file_exists($priofile)) {
-            throw new \Exception('Priority file '.$priofile.' not found!');
+        if (!file_exists($file)) {
+            throw new \Exception('Data file '.$file.' not found!');
         }
 
-        $content = file_get_contents($priofile);
+        $content = file_get_contents($file);
         if ($content === false) {
-            throw new \Exception('Could not read '.$priofile);
+            throw new \Exception('Could not read '.$file);
+        }
+
+        return json_decode($content, true);
+    }
+
+    /**
+     * @return array<string,string>
+     */
+    public static function getAddMatchData(): array
+    {
+        $file = Config::getDataDir().'/cpeaddmatch.json';
+
+        if (!file_exists($file)) {
+            throw new \Exception('Data file '.$file.' not found!');
+        }
+
+        $content = file_get_contents($file);
+        if ($content === false) {
+            throw new \Exception('Could not read '.$file);
+        }
+
+        return json_decode($content, true);
+    }
+
+    /**
+     * @return array<string,array<string>>
+     */
+    public static function getFalseMatchData(): array
+    {
+        $file = Config::getDataDir().'/cpefalsematch.json';
+
+        if (!file_exists($file)) {
+            throw new \Exception('Data file '.$file.' not found!');
+        }
+
+        $content = file_get_contents($file);
+        if ($content === false) {
+            throw new \Exception('Could not read '.$file);
         }
 
         return json_decode($content, true);

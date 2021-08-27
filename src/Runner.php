@@ -65,17 +65,33 @@ class Runner
         Logger::info('Comparing with CPE Dictionary ...');
 
         $dictionary = new Dictionary(Config::getDbHandle());
+        $addmatch = Config::getAddMatchData();
+        $falsematch = Config::getFalseMatchData();
 
         foreach ($this->allports as $port) {
             if ($port->getCPEStr() != '') {
                 $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
+                $product = null;
                 if ($product === null) {
-                    $port->setCPEStatus(Status::INVALID);
+                    if (isset($addmatch[$port->getOrigin()]) &&
+                        $addmatch[$port->getOrigin()] == $port->getCPEVendor().':'.$port->getCPEProduct()) {
+                        Logger::info('Validated CPE for '.$port->getOrigin().' via local overwrite');
+                        $port->setCPEStatus(Status::VALID);
+                    } else {
+                        $port->setCPEStatus(Status::INVALID);
+                    }
                 } else {
                     $port->setCPEStatus(Status::VALID);
                 }
             } else {
                 foreach ($dictionary->findProductsByProductname($port->getPortname()) as $product) {
+                    if (isset($falsematch[$port->getOrigin()])) {
+                        if (in_array($product, $falsematch[$port->getOrigin()])) {
+                            Logger::info('Ignoring false match for '.$port->getOrigin());
+                            continue;
+                        }
+                    }
+
                     $port->addCPECandidate($product);
                     $port->setCPEStatus(Status::MISSING);
                 }
