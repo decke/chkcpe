@@ -51,6 +51,7 @@ jobs:
         env:
           MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
+          DATADIR: /home/runner/work/chkcpe/chkcpe/data
           LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
           CPEDB: sqlite:/home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
           MAKE: /usr/bin/bmake
