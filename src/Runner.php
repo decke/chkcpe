@@ -90,13 +90,24 @@ class Runner
         $generators[Status::MISSING] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 
+        $generators['easy'] = new WeightedMarkdownGenerator('Easy', Config::getPriorityData());
         $generators['important'] = new WeightedMarkdownGenerator('Important Ports', Config::getPriorityData());
 
         foreach ($this->allports as $port) {
+            // Status
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
             }
 
+            // Easy
+            if ($port->getCPEStatus() == Status::MISSING) {
+                $candidates = $port->getCPECandidates();
+                if (count($candidates) == 1) {
+                    $generators['easy'] == $port;
+                }
+            }
+
+            // Important
             if ($port->getCPEStatus() == Status::INVALID || $port->getCPEStatus() == Status::MISSING) {
                 $generators['important']->addPort($port);
             }

@@ -17,10 +17,15 @@ chance for you to help!
 
 | Status                                                    | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![important](https://img.shields.io/badge/important-blue) | ${IMPORTANT} | [important ports(https://github.com/decke/chkcpe/wiki/important) |
 | ![valid](https://img.shields.io/badge/valid-brightgreen)  | ${VALID}     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
 | ![invalid](https://img.shields.io/badge/invalid-red)      | ${INVALID}   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
 | ![missing](https://img.shields.io/badge/missing-orange)   | ${MISSING}   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
 | ![unknown](https://img.shields.io/badge/unknown-grey)     | ${UNKNOWN}   | |
+
+
+| Lists ordered by priority                                 | # Ports      | Links                                                            |
+| ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | ${EASY}      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![important](https://img.shields.io/badge/important-blue) | ${IMPORTANT} | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
 Last updated: ${LASTMOD}

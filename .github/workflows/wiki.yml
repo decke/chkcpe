@@ -23,6 +23,7 @@ jobs:
           echo "INVALID=$(cat wiki/env | grep INVALID | cut -d= -f2)" >> $GITHUB_ENV
           echo "MISSING=$(cat wiki/env | grep MISSING | cut -d= -f2)" >> $GITHUB_ENV
           echo "UNKNOWN=$(cat wiki/env | grep UNKNOWN | cut -d= -f2)" >> $GITHUB_ENV
+          echo "EASY=$(cat wiki/env | grep EASY | cut -d= -f2)" >> $GITHUB_ENV
           echo "IMPORTANT=$(cat wiki/env | grep IMPORTANT | cut -d= -f2)" >> $GITHUB_ENV
           echo "LASTMOD=$(date)" >> $GITHUB_ENV
 
@@ -33,6 +34,7 @@ jobs:
           INVALID: ${{ env.INVALID }}
           MISSING: ${{ env.MISSING }}
           UNKNOWN: ${{ env.UNKNOWN }}
+          EASY: ${{ env.EASY }}
           IMPORTANT: ${{ env.IMPORTANT }}
           LASTMOD: ${{ env.LASTMOD }}
         with:
