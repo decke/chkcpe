@@ -1,0 +1,5 @@
+{
+    "arabic/libreoffice": [ "libreoffice:libreoffice" ],
+    "archivers/R-cran-zip": [ "info-zip:zip", "info-zip_project:zip", "zip_project:zip" ],
+    "astro/p5-GPS": [ "fujitsu:gps" ]
+}
