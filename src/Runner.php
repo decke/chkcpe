@@ -19,6 +19,7 @@ class Runner
     public function run(): bool
     {
         $cnt = 0;
+        $failed = 0;
         Logger::info('Scanning Portstree ...');
 
         $categories = new \FilesystemIterator(Config::getPortsDir());
@@ -42,17 +43,20 @@ class Runner
                 $origin = $category->getFilename().'/'.$portname->getFilename();
                 try {
                     $this->allports[$origin] = new Port($origin);
+                    $cnt++;
 
-                    if (++$cnt % 1000 == 0) {
+                    if ($cnt % 1000 == 0) {
                         Logger::info('Scanned '.$cnt.' ports');
                     }
                 } catch (\Exception $e) {
                     Logger::error($e->getMessage());
+                    $failed++;
                 }
             }
         }
 
-        Logger::info('Found '.count($this->allports).' ports');
+        Logger::info('Scanned '.$cnt.' ports');
+        Logger::info('Failed to scan '.$failed.' ports');
 
         ksort($this->allports);
 
@@ -63,8 +67,7 @@ class Runner
 
         foreach ($this->allports as $port) {
             if ($port->getCPEStr() != '') {
-                $cpe = $port->getCPE();
-                $product = $dictionary->findProduct($cpe->getEscapedVendor(), $cpe->getEscapedProduct());
+                $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
                 if ($product === null) {
                     $port->setCPEStatus(Status::INVALID);
                 } else {
@@ -75,10 +78,6 @@ class Runner
                     $port->addCPECandidate($product);
                     $port->setCPEStatus(Status::MISSING);
                 }
-            }
-
-            if (++$cnt % 1000 == 0) {
-                Logger::info('Compared '.$cnt.' ports');
             }
         }
 

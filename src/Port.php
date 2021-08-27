@@ -48,6 +48,10 @@ class Port
             throw new \Exception('Could not extract data from port '.$this->origin);
         }
 
+        if (count($output) != 5) {
+            throw new \Exception('Port '.$this->origin.' returned unexpected output');
+        }
+
         $this->portname = $output[0];
         $this->maintainer = $output[1];
         $this->cpe_str = $output[2];

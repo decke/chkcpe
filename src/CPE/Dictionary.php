@@ -18,6 +18,8 @@ class Dictionary
      */
     public function findProductsByProductname(string $product): array
     {
+        $product = Product::escape(strtolower($product));
+
         $stmt = $this->handle->prepare('SELECT vendor, product FROM categorized_cpes WHERE product = ? GROUP BY vendor');
         if (!$stmt->execute([$product])) {
             throw new \Exception('DB Error');
