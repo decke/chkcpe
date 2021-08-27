@@ -71,7 +71,6 @@ class Runner
         foreach ($this->allports as $port) {
             if ($port->getCPEStr() != '') {
                 $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
-                $product = null;
                 if ($product === null) {
                     if (isset($addmatch[$port->getOrigin()]) &&
                         $addmatch[$port->getOrigin()] == $port->getCPEVendor().':'.$port->getCPEProduct()) {
