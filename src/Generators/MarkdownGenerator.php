@@ -70,10 +70,10 @@ class MarkdownGenerator extends Generator
              case Status::MISSING:
                  $msg = '';
                  foreach ($port->getCPECandidates() as $prod) {
-                     $msg .= $prod->getVendor().':'.$prod->getProduct().' ,';
+                     $msg .= $prod.' ';
                  }
 
-                 return substr($msg, 0, -2);
+                 return substr($msg, 0, -1);
 
              default:
                  return '';
