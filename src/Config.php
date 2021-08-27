@@ -77,4 +77,23 @@ class Config
 
         return self::$handle;
     }
+
+    /**
+     * @return array<string, int>
+     */
+    public static function getPriorityData(): array
+    {
+        $priofile = Config::getDataDir().'/portpriority.json';
+
+        if (!file_exists($priofile)) {
+            throw new \Exception('Priority file '.$priofile.' not found!');
+        }
+
+        $content = file_get_contents($priofile);
+        if ($content === false) {
+            throw new \Exception('Could not read '.$priofile);
+        }
+
+        return json_decode($content, true);
+    }
 }

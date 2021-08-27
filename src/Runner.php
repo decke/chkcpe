@@ -7,6 +7,7 @@ namespace CheckCpe;
 use CheckCpe\CPE\Dictionary;
 use CheckCpe\CPE\Status;
 use CheckCpe\Generators\MarkdownGenerator;
+use CheckCpe\Generators\WeightedMarkdownGenerator;
 use CheckCpe\Util\Logger;
 
 class Runner
@@ -89,9 +90,15 @@ class Runner
         $generators[Status::MISSING] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 
+        $generators['important'] = new WeightedMarkdownGenerator('Important Ports', Config::getPriorityData());
+
         foreach ($this->allports as $port) {
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
+            }
+
+            if ($port->getCPEStatus() == Status::INVALID || $port->getCPEStatus() == Status::MISSING) {
+                $generators['important']->addPort($port);
             }
         }
 
