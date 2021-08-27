@@ -103,7 +103,7 @@ class Runner
             if ($port->getCPEStatus() == Status::MISSING) {
                 $candidates = $port->getCPECandidates();
                 if (count($candidates) == 1) {
-                    $generators['easy'] == $port;
+                    $generators['easy']->addPort($port);
                 }
             }
 
