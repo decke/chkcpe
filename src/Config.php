@@ -11,6 +11,7 @@ class Config
 {
     protected static string $portsdir = '/usr/ports';
     protected static string $logsdir = 'logs';
+    protected static string $datadir = 'data';
     protected static string $makebin = '/usr/bin/make';
     protected static string $datasource = 'sqlite:data/cpe.sqlite';
     protected static ?\PDO $handle = null;
@@ -33,6 +34,16 @@ class Config
         }
 
         return self::$logsdir;
+    }
+
+    public static function getDataDir(): string
+    {
+        $data = getenv('DATADIR');
+        if ($data !== false) {
+            self::$datadir = $data;
+        }
+
+        return self::$datadir;
     }
 
     public static function getMakeBin(): string
