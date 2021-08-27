@@ -25,7 +25,7 @@ chance for you to help!
 
 | Lists ordered by priority                                 | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    |       | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 0      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
 | ![important](https://img.shields.io/badge/important-blue) | 3428 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Fri Aug 27 09:58:50 UTC 2021
+Last updated: Fri Aug 27 10:33:26 UTC 2021
