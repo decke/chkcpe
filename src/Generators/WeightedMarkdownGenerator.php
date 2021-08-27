@@ -26,10 +26,10 @@ class WeightedMarkdownGenerator extends MarkdownGenerator
     public function addPort(Port $port): bool
     {
         $origin = $port->getOrigin();
-        $key = '00000-'.$origin;
+        $key = '9999-'.$origin;
 
         if (isset($this->priority[$origin])) {
-            $key = sprintf('%05d-%s', $this->priority[$origin], $origin);
+            $key = sprintf('%04d-%s', 9999-$this->priority[$origin], $origin);
         }
 
         if (isset($this->ports[$key])) {
