@@ -1,5 +1,14 @@
 {
     "arabic/libreoffice": [ "libreoffice:libreoffice" ],
     "archivers/R-cran-zip": [ "info-zip:zip", "info-zip_project:zip", "zip_project:zip" ],
-    "astro/p5-GPS": [ "fujitsu:gps" ]
+    "astro/p5-GPS": [ "fujitsu:gps" ],
+    "devel/gorm": [ "gorm:gorm" ],
+    "devel/msgpack": [ "msgpack:msgpack" ],
+    "devel/py-minio": [ "minio/minio" ],
+    "devel/py-msgpack": [ "msgpack:msgpack" ],
+    "editors/libreoffice-en_GB": [ "libreoffice:libreoffice" ],
+    "graphics/ansilove": [ "ansilove:ansilove" ],
+    "lang/erlang-wx": [ "erlang:erlang" ],
+    "net/avahi-header": [ "avahi:avahi" ],
+    "security/pidgin-encryption": [ "pidgin:pidgin" ]
 }
