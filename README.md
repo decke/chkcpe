@@ -17,15 +17,15 @@ chance for you to help!
 
 | Status                                                    | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1317     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1379     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
 | ![invalid](https://img.shields.io/badge/invalid-red)      | 72   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
-| ![missing](https://img.shields.io/badge/missing-orange)   | 3094   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
+| ![missing](https://img.shields.io/badge/missing-orange)   | 3032   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
 | ![unknown](https://img.shields.io/badge/unknown-grey)     | 25238   | |
 
 
 | Lists ordered by priority                                 | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 468      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
-| ![important](https://img.shields.io/badge/important-blue) | 3166 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 407      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![important](https://img.shields.io/badge/important-blue) | 3104 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Tue Aug 31 20:17:51 UTC 2021
+Last updated: Wed Sep  1 02:54:01 UTC 2021
