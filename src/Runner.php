@@ -15,13 +15,14 @@ class Runner
     /**
      * @var array<string,Port>
      */
-    protected array $allports = [];
+    protected array $allports;
 
     public function run(): bool
     {
-        Logger::info('Searching Ports ...');
+        $cnt = 0;
+        $failed = 0;
+        Logger::info('Scanning Portstree ...');
 
-        $origins = [];
         $categories = new \FilesystemIterator(Config::getPortsDir());
 
         foreach ($categories as $category) {
@@ -40,34 +41,27 @@ class Runner
                     continue;
                 }
 
-                $origins[] = $category->getFilename().'/'.$portname->getFilename();
+                $origin = $category->getFilename().'/'.$portname->getFilename();
+                try {
+                    $cnt++;
+                    $this->allports[$origin] = new Port($origin);
+
+                    if ($cnt % 1000 == 0) {
+                        Logger::info('Scanned '.$cnt.' ports');
+                    }
+                } catch (\Exception $e) {
+                    Logger::error($e->getMessage());
+                    $failed++;
+                }
             }
         }
 
-        Logger::info('Found '.count($origins).' ports');
+        Logger::info('Scanned '.$cnt.' ports');
+        Logger::info('Failed to scan '.$failed.' ports');
 
-        // Scanning ports (parallel)
-        $pool = new \Amp\Parallel\Worker\DefaultPool(16);
+        ksort($this->allports);
 
-        try {
-            $ports = \Amp\Promise\wait(\Amp\ParallelFunctions\parallelMap($origins, function ($origin) {
-                return new Port($origin);
-            }, $pool));
-
-            foreach ($ports as $port) {
-                $this->allports[$port->getOrigin()] = $port;
-            }
-
-            unset($ports);
-            ksort($this->allports);
-        } catch (\Amp\MultiReasonException $e) {
-            foreach ($e->getReasons() as $r) {
-                Logger::warning($r->getMessage());
-            }
-        }
-
-        Logger::info('Scanned '.count($this->allports).' ports');
-
+        $cnt = 0;
         Logger::info('Comparing with CPE Dictionary ...');
 
         $dictionary = new Dictionary(Config::getDbHandle());
