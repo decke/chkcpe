@@ -1,3 +1,9 @@
 {
-    "devel/libasr": "openbsd:libasr"
+    "dns/libasr": "openbsd:libasr",
+    "dns/libasr-devel": "openbsd:libasr",
+    "mail/spfmilter": "acme:spfmilter",
+    "net/ocserv": "infradead:ocserv",
+    "net/py-sbws": "torproject:sbws",
+    "net-mgmt/virt-viewer": "redhat:virt-viewer",
+    "security/obfs4proxy-tor": "torproject:obfs4proxy"
 }

@@ -3,6 +3,7 @@
     "archivers/R-cran-zip": [ "info-zip:zip", "info-zip_project:zip", "zip_project:zip" ],
     "astro/p5-GPS": [ "fujitsu:gps" ],
     "devel/gorm": [ "gorm:gorm" ],
+    "devel/pickle": [ "pickle:pickle" ],
     "devel/msgpack": [ "msgpack:msgpack" ],
     "devel/py-minio": [ "minio/minio" ],
     "devel/py-msgpack": [ "msgpack:msgpack" ],
