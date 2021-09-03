@@ -47,7 +47,7 @@ class Runner
         Logger::info('Found '.count($origins).' ports');
 
         // Scanning ports (parallel)
-        $pool = new \Amp\Parallel\Worker\DefaultPool(8);
+        $pool = new \Amp\Parallel\Worker\DefaultPool(16);
 
         try {
             $ports = \Amp\Promise\wait(\Amp\ParallelFunctions\parallelMap($origins, function ($origin) {
