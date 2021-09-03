@@ -15,14 +15,14 @@ class Runner
     /**
      * @var array<string,Port>
      */
-    protected array $allports;
+    protected array $allports = [];
 
     public function run(): bool
     {
-        $cnt = 0;
-        $failed = 0;
-        Logger::info('Scanning Portstree ...');
+        Logger::info('Finding ports ...');
 
+        $cnt = 0;
+        $origins = '';
         $categories = new \FilesystemIterator(Config::getPortsDir());
 
         foreach ($categories as $category) {
@@ -41,27 +41,52 @@ class Runner
                     continue;
                 }
 
-                $origin = $category->getFilename().'/'.$portname->getFilename();
-                try {
-                    $cnt++;
-                    $this->allports[$origin] = new Port($origin);
-
-                    if ($cnt % 1000 == 0) {
-                        Logger::info('Scanned '.$cnt.' ports');
-                    }
-                } catch (\Exception $e) {
-                    Logger::error($e->getMessage());
-                    $failed++;
-                }
+                $origins .= $category->getFilename().'/'.$portname->getFilename()."\n";
+                $cnt++;
             }
         }
 
-        Logger::info('Scanned '.$cnt.' ports');
-        Logger::info('Failed to scan '.$failed.' ports');
+        Logger::info('Found '.$cnt.' ports');
+
+        $tmpfile = tempnam('/tmp', 'chkcpe');
+        if ($tmpfile === false) {
+            throw new \Exception('Could not create tempfile');
+        }
+
+        file_put_contents($tmpfile, $origins);
+
+        // Parallel scanning
+        $cnt = 0;
+        $portsdir = Config::getPortsDir();
+
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $fp = popen($cmd, 'r');
+        while ($fp != null && !feof($fp)) {
+            $line = fread($fp, 4096);
+            if (!$line) {
+                Logger::info('Skipping invalid output');
+                continue;
+            }
+
+            $parts = explode("\n", $line);
+            if (count($parts) != 7) {
+                Logger::info('Skipping invalid output');
+                continue;
+            }
+
+            $parts[0] = substr($parts[0], strlen($portsdir)+1);
+
+            $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4], $parts[5]);
+
+            if (++$cnt % 1000 == 0) {
+                Logger::info('Scanned '.$cnt.' ports');
+            }
+        }
 
         ksort($this->allports);
 
-        $cnt = 0;
+        Logger::info('Scanned '.count($this->allports).' ports');
+
         Logger::info('Comparing with CPE Dictionary ...');
 
         $dictionary = new Dictionary(Config::getDbHandle());

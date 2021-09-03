@@ -23,42 +23,14 @@ class Port
      */
     protected array $cpe_candidates;
 
-    public function __construct(string $origin)
+    public function __construct(string $origin, string $portname, string $maintainer, string $cpe_str, string $cpe_vendor, string $cpe_product)
     {
         $this->origin = $origin;
-
-        $this->load();
-    }
-
-    protected function load(): bool
-    {
-        $portdir = Config::getPortsDir().'/'.$this->origin;
-
-        if (!is_dir($portdir)) {
-            throw new \Exception('Port directory '.$portdir.' does not exist!');
-        }
-
-        $output = [];
-        $resultcode = null;
-
-        $cmd = sprintf('%s -C %s -VPORTNAME -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT', Config::getMakeBin(), $portdir);
-        exec($cmd, $output, $resultcode);
-
-        if ($resultcode != 0) {
-            throw new \Exception('Could not extract data from port '.$this->origin);
-        }
-
-        if (count($output) != 5) {
-            throw new \Exception('Port '.$this->origin.' returned unexpected output');
-        }
-
-        $this->portname = $output[0];
-        $this->maintainer = $output[1];
-        $this->cpe_str = $output[2];
-        $this->cpe_vendor = $output[3];
-        $this->cpe_product = $output[4];
-
-        return true;
+        $this->portname = $portname;
+        $this->maintainer = $maintainer;
+        $this->cpe_str = $cpe_str;
+        $this->cpe_vendor = $cpe_vendor;
+        $this->cpe_product = $cpe_product;
     }
 
     public function getOrigin(): string

@@ -23,6 +23,11 @@ class Config
             self::$portsdir = $ports;
         }
 
+        $ports = realpath(self::$portsdir);
+        if ($ports !== false) {
+            self::$portsdir = $ports;
+        }
+
         return self::$portsdir;
     }
 

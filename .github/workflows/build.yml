@@ -40,6 +40,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install bmake
 
+      - name: Install parallel
+        run: |
+          sudo apt-get install parallel
+
       - name: Prepare directories
         run: mkdir logs
 
