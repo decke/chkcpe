@@ -11,8 +11,8 @@ class Product
 
     public function __construct(string $vendor, string $product)
     {
-        $this->vendor = strtr(strtolower($vendor), '\\', '');
-        $this->product = strtr(strtolower($product), '\\', '');
+        $this->vendor = $vendor;
+        $this->product = $product;
     }
 
     public function getVendor(): string
