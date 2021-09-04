@@ -1,9 +1,12 @@
 {
+    "devel/sonar-scanner-cli": "sonarsource:sonar-scanner-cli",
+    "devel/sonarqube-ant-task": "sonarsource:sonarqube-ant-task",
     "dns/libasr": "openbsd:libasr",
     "dns/libasr-devel": "openbsd:libasr",
     "mail/spfmilter": "acme:spfmilter",
     "net/ocserv": "infradead:ocserv",
     "net/py-sbws": "torproject:sbws",
     "net-mgmt/virt-viewer": "redhat:virt-viewer",
-    "security/obfs4proxy-tor": "torproject:obfs4proxy"
+    "security/obfs4proxy-tor": "torproject:obfs4proxy",
+    "sysutils/py-ansible-runner": "redhat:ansible-runner"
 }
