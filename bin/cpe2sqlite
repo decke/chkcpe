@@ -6,41 +6,12 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use CheckCpe\Config;
 use CheckCpe\Util\Logger;
+use CheckCpe\CPE\Dictionary;
 
 Logger::start();
 
 if($argc != 2)
    die("Usage: cpe2sqlite cpe-dictionary.xml\n");
-
-function getProductId($db, $vendor, $product)
-{
-   $stmt = $db->prepare('SELECT productid FROM products WHERE vendor = ? AND product = ?');
-   if(!$stmt->execute(array($vendor, $product))) {
-	  return -1;
-   }
-
-   if($row = $stmt->fetch(\PDO::FETCH_NUM)) {
-	  return (int)$row[0];
-   }
-
-   $stmt = $db->prepare('INSERT INTO products (vendor, product) VALUES (?, ?)');
-   if($stmt->execute(array($vendor, $product))){
-	  return (int)$db->lastInsertId();
-   }
-
-   return -1;
-}
-
-function addCPE($db, $productid, $cpefs)
-{
-   $stmt = $db->prepare('INSERT INTO cpes (productid, cpefs) VALUES (?, ?)');
-   if($stmt->execute(array($productid, $cpefs))){
-	  return (int)$db->lastInsertId();
-   }
-   
-   return -1;
-}
-
 
 $xml = simplexml_load_file($argv[1]);
 
@@ -48,6 +19,10 @@ $db = Config::getDbHandle();
 $db->exec('DELETE FROM cpes');
 $db->exec('DELETE FROM products');
 $db->exec('VACUUM;');
+
+$dictionary = new Dictionary($db);
+
+$cnt = 0;
 
 foreach ($xml->{'cpe-item'} as $cpe)
 {
@@ -66,12 +41,12 @@ foreach ($xml->{'cpe-item'} as $cpe)
    $cpe_fs = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
 
    if(strlen($cpe_fs) < 1)
-	  continue;
+      continue;
 
    $cpe_fs_parts = explode(':', $cpe_fs);
 
    if(count($cpe_fs_parts) < 6)
-	  continue;
+      continue;
 
    $cpe_std = $cpe_fs_parts[1];
    $cpe_part = $cpe_fs_parts[2];
@@ -80,13 +55,14 @@ foreach ($xml->{'cpe-item'} as $cpe)
    $cpe_version = $cpe_fs_parts[5];
 
    if($cpe_std != '2.3')
-	  continue;
+      continue;
 
-   $productid = getProductId($db, $cpe_vendor, $cpe_product);
-   if($productid < 0)
-	  die('getProductId() failed');
+   if(!$dictionary->addCPEFSEntry($cpe_vendor, $cpe_product, $cpe_fs)) {
+      Logger:warning('Could not add CPE Entry '.$cpe_fs);
+      continue;
+   }
 
-   $cpeid = addCPE($db, $productid, $cpe_fs);
-   if($cpeid < 0)
-	  die('addCPE() failed');
+   if (++$cnt % 10000 == 0) {
+      Logger::info('Added '.$cnt.' CPE entries');
+   }
 }
