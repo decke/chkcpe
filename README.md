@@ -17,15 +17,15 @@ chance for you to help!
 
 | Status                                                    | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 0     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
-| ![invalid](https://img.shields.io/badge/invalid-red)      | 0   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
-| ![missing](https://img.shields.io/badge/missing-orange)   | 0   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
-| ![unknown](https://img.shields.io/badge/unknown-grey)     | 0   | |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1234     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
+| ![invalid](https://img.shields.io/badge/invalid-red)      | 253   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
+| ![missing](https://img.shields.io/badge/missing-orange)   | 2239   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
+| ![unknown](https://img.shields.io/badge/unknown-grey)     | 25991   | |
 
 
 | Lists ordered by priority                                 | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 0      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
-| ![important](https://img.shields.io/badge/important-blue) | 0 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 274      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![important](https://img.shields.io/badge/important-blue) | 2492 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Wed Sep  8 11:50:43 UTC 2021
+Last updated: Wed Sep  8 12:37:48 UTC 2021
