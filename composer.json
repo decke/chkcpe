@@ -6,6 +6,7 @@
    "require": {
       "ext-PDO": "*",
       "ext-pdo_sqlite": "*",
+      "ext-simplexml": "*",
       "php": ">=7.4"
    },
    "require-dev": {

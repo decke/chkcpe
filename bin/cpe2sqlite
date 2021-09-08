@@ -1,0 +1,97 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use CheckCpe\Util\Logger;
+
+Logger::start();
+
+if($argc < 3)
+   die("Usage: cpe2sqlite cpe-dictionary.xml cpe.db\n");
+
+define('CPE_DICT', $argv[1]);
+define('CPE_DB', 'sqlite:'.$argv[2]);
+
+function getProductId($db, $vendor, $product)
+{
+   $stmt = $db->prepare('SELECT productid FROM products WHERE vendor = ? AND product = ?');
+   if(!$stmt->execute(array($vendor, $product))) {
+	  return -1;
+   }
+
+   if($row = $stmt->fetch(\PDO::FETCH_NUM)) {
+	  return (int)$row[0];
+   }
+
+   $stmt = $db->prepare('INSERT INTO products (vendor, product) VALUES (?, ?)');
+   if($stmt->execute(array($vendor, $product))){
+	  return (int)$db->lastInsertId();
+   }
+
+   return -1;
+}
+
+function addCPE($db, $productid, $cpefs)
+{
+   $stmt = $db->prepare('INSERT INTO cpes (productid, cpefs) VALUES (?, ?)');
+   if($stmt->execute(array($productid, $cpefs))){
+	  return (int)$db->lastInsertId();
+   }
+   
+   return -1;
+}
+
+
+$xml = simplexml_load_file(CPE_DICT);
+
+$db = new \PDO(CPE_DB);
+$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+$db->exec('PRAGMA foreign_keys = ON;');
+$db->exec('PRAGMA encoding = "UTF-8";');
+$db->exec('DELETE FROM cpes');
+$db->exec('DELETE FROM products');
+$db->exec('VACUUM;');
+
+foreach ($xml->{'cpe-item'} as $cpe)
+{
+   /*
+    <cpe-item name="cpe:/a:abrt_project:abrt:1.0.7">
+     <title xml:lang="en-US">ABRT Project ABRT 1.0.7</title>
+     <references>
+      <reference href="https://github.com/abrt/abrt">Project</reference>
+      <reference href="https://github.com/abrt/abrt/releases">Version</reference>
+     </references>
+     <cpe-23:cpe23-item name="cpe:2.3:a:abrt_project:abrt:1.0.7:*:*:*:*:*:*:*"/>
+    </cpe-item>
+   */
+
+   $cpe_title = $cpe->title;
+   $cpe_fs = $cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
+
+   if(strlen($cpe_fs) < 1)
+	  continue;
+
+   $cpe_fs_parts = explode(':', $cpe_fs);
+
+   if(count($cpe_fs_parts) < 6)
+	  continue;
+
+   $cpe_std = $cpe_fs_parts[1];
+   $cpe_part = $cpe_fs_parts[2];
+   $cpe_vendor = $cpe_fs_parts[3];
+   $cpe_product = $cpe_fs_parts[4];
+   $cpe_version = $cpe_fs_parts[5];
+
+   if($cpe_std != '2.3')
+	  continue;
+
+   $productid = getProductId($db, $cpe_vendor, $cpe_product);
+   if($productid < 0)
+	  die('getProductId() failed');
+
+   $cpeid = addCPE($db, $productid, $cpe_fs);
+   if($cpeid < 0)
+	  die('addCPE() failed');
+}

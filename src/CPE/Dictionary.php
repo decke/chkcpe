@@ -20,7 +20,7 @@ class Dictionary
     {
         $product = Product::escape(strtolower($product));
 
-        $stmt = $this->handle->prepare('SELECT vendor, product FROM categorized_cpes WHERE product = ? GROUP BY vendor');
+        $stmt = $this->handle->prepare('SELECT vendor, product FROM products WHERE product = ? GROUP BY vendor');
         if (!$stmt->execute([$product])) {
             throw new \Exception('DB Error');
         }
@@ -38,7 +38,7 @@ class Dictionary
     {
         $product = new Product($vendor, $product);
 
-        $stmt = $this->handle->prepare('SELECT vendor, product FROM categorized_cpes WHERE vendor = ? AND product = ? GROUP BY vendor, product');
+        $stmt = $this->handle->prepare('SELECT vendor, product FROM products WHERE vendor = ? AND product = ? GROUP BY vendor, product');
         if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct()])) {
             throw new \Exception('DB Error');
         }

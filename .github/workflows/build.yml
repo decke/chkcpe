@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  GO_CPE_DICT_BIN: https://people.freebsd.org/~decke/cpe/go-cpe-dictionary/go-cpe-dictionary-v0.2.6-linux.xz
+  CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
 
 jobs:
   build:
@@ -24,10 +24,8 @@ jobs:
           repository: freebsd/freebsd-ports
           path: ports
 
-      - name: Fetch go-cpe-dictionary
-        run: |
-          wget -qO - ${{ env.GO_CPE_DICT_BIN }} | xz -d -c > go-cpe-dictionary
-          chmod +x go-cpe-dictionary
+      - name: Fetch NVD CPE Dictionary
+        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/cpe.xml
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -44,20 +42,25 @@ jobs:
         run: |
           sudo apt-get install parallel
 
+      - name: Install Composer dependencies
+        run: |
+          composer install
+
       - name: Prepare directories
         run: mkdir logs
 
-      - name: Build sqlite CPE DB
+      - name: Build sqlite CPE DB from XML
         run: |
-          ./go-cpe-dictionary fetchnvd --dbpath logs/cpe.sqlite
+          sqlite3 logs/cpe.sqlite < data/schema.sql
+          ./bin/cpe2sqlite data/cpe.xml logs/cpe.sqlite
 
       - name: Run chkcpe
         env:
           MAKESYSPATH: .../share/mk:/home/runner/work/chkcpe/chkcpe/share/mk:/usr/share/mk
-          PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
-          DATADIR: /home/runner/work/chkcpe/chkcpe/data
-          LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
-          CPEDB: sqlite:/home/runner/work/chkcpe/chkcpe/logs/cpe.sqlite
+          PORTSDIR: ports
+          DATADIR: data
+          LOGSDIR: logs
+          CPEDB: sqlite:logs/cpe.sqlite
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
@@ -67,7 +70,6 @@ jobs:
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
         run: |
-          composer install
           ./bin/chkcpe
 
       - name: Upload logfiles
