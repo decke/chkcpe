@@ -1,7 +1,7 @@
 # chkcpe
 
 The [FreeBSD Portstree](https://cgit.freebsd.org/ports) is a collection of build recipes
-and metadata for more than 46k 3rd party projects and the source for binary packages on
+and metadata for more than 30.000 3rd party projects and the source for binary packages on
 FreeBSD, DragonflyBSD and derivatives.
 
 This is an attempt to populate all ports with CPE data. The lists are automatically
