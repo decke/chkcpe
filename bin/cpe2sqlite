@@ -64,5 +64,6 @@ foreach ($xml->{'cpe-item'} as $cpe)
 
    if (++$cnt % 10000 == 0) {
       Logger::info('Added '.$cnt.' CPE entries');
+      $db->exec('COMMIT;');
    }
 }
