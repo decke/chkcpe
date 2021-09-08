@@ -2,6 +2,7 @@
     "arabic/libreoffice": [ "libreoffice:libreoffice" ],
     "archivers/R-cran-zip": [ "info-zip:zip", "info-zip_project:zip", "zip_project:zip" ],
     "astro/p5-GPS": [ "fujitsu:gps" ],
+    "audio/nas": [ "qnap:nas" ],
     "devel/gorm": [ "gorm:gorm" ],
     "devel/pickle": [ "pickle:pickle" ],
     "devel/msgpack": [ "msgpack:msgpack" ],
@@ -9,7 +10,11 @@
     "devel/py-msgpack": [ "msgpack:msgpack" ],
     "editors/libreoffice-en_GB": [ "libreoffice:libreoffice" ],
     "graphics/ansilove": [ "ansilove:ansilove" ],
+    "graphics/gimp": [ "gimp:gimp", "gnu:gimp" ],
+    "graphics/libwmf": [ "wvware:libwmf" ],
     "lang/erlang-wx": [ "erlang:erlang" ],
+    "lang/python": [ "python:python" ],
     "net/avahi-header": [ "avahi:avahi" ],
-    "security/pidgin-encryption": [ "pidgin:pidgin" ]
+    "security/pidgin-encryption": [ "pidgin:pidgin" ],
+    "x11-wm/xfce4": [ "xfce:xfce" ]
 }
