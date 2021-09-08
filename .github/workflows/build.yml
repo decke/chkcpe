@@ -61,6 +61,7 @@ jobs:
           CPEDB: sqlite:logs/cpe.sqlite
         if: steps.cpe-db.output.cache-hit != 'true'
         run: |
+          rm -f logs/cpe.sqlite
           sqlite3 logs/cpe.sqlite < data/schema.sql
           ./bin/cpe2sqlite data/cpe.xml
 
