@@ -19,6 +19,7 @@ $db = Config::getDbHandle();
 $db->exec('DELETE FROM cpes');
 $db->exec('DELETE FROM products');
 $db->exec('VACUUM;');
+$db->exec('BEGIN TRANSACTION;');
 
 $dictionary = new Dictionary($db);
 
@@ -65,5 +66,8 @@ foreach ($xml->{'cpe-item'} as $cpe)
    if (++$cnt % 10000 == 0) {
       Logger::info('Added '.$cnt.' CPE entries');
       $db->exec('COMMIT;');
+      $db->exec('BEGIN TRANSACTION;');
    }
 }
+
+$db->exec('COMMIT;');
