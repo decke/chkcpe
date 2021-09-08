@@ -63,7 +63,7 @@ foreach ($xml->{'cpe-item'} as $cpe)
    */
 
    $cpe_title = $cpe->title;
-   $cpe_fs = $cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
+   $cpe_fs = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
 
    if(strlen($cpe_fs) < 1)
 	  continue;
