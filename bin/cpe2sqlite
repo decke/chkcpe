@@ -4,15 +4,13 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use CheckCpe\Config;
 use CheckCpe\Util\Logger;
 
 Logger::start();
 
-if($argc < 3)
-   die("Usage: cpe2sqlite cpe-dictionary.xml cpe.db\n");
-
-define('CPE_DICT', $argv[1]);
-define('CPE_DB', 'sqlite:'.$argv[2]);
+if($argc != 2)
+   die("Usage: cpe2sqlite cpe-dictionary.xml\n");
 
 function getProductId($db, $vendor, $product)
 {
@@ -44,12 +42,9 @@ function addCPE($db, $productid, $cpefs)
 }
 
 
-$xml = simplexml_load_file(CPE_DICT);
+$xml = simplexml_load_file($argv[1]);
 
-$db = new \PDO(CPE_DB);
-$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-$db->exec('PRAGMA foreign_keys = ON;');
-$db->exec('PRAGMA encoding = "UTF-8";');
+$db = Config::getDataSource();
 $db->exec('DELETE FROM cpes');
 $db->exec('DELETE FROM products');
 $db->exec('VACUUM;');

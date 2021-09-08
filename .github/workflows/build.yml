@@ -50,9 +50,11 @@ jobs:
         run: mkdir logs
 
       - name: Build sqlite CPE DB from XML
+        env:
+          CPEDB: sqlite:logs/cpe.sqlite
         run: |
           sqlite3 logs/cpe.sqlite < data/schema.sql
-          ./bin/cpe2sqlite data/cpe.xml logs/cpe.sqlite
+          ./bin/cpe2sqlite data/cpe.xml
 
       - name: Run chkcpe
         env:
