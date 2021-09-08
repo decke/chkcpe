@@ -49,9 +49,17 @@ jobs:
       - name: Prepare directories
         run: mkdir logs
 
+      - name: Cache CPE DB
+        id: cpedb
+        uses: actions/cache@v2
+        with:
+          path: logs/cpe.sqlite
+          key: ${{ runner.os }}-cpedb-${{ hashFiles('**/data/cpe.xml') }}
+
       - name: Build sqlite CPE DB from XML
         env:
           CPEDB: sqlite:logs/cpe.sqlite
+        if: steps.cpe-db.output.cache-hit != 'true'
         run: |
           sqlite3 logs/cpe.sqlite < data/schema.sql
           ./bin/cpe2sqlite data/cpe.xml
