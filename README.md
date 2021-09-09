@@ -1,12 +1,12 @@
 # chkcpe
 
 The [FreeBSD Portstree](https://cgit.freebsd.org/ports) is a collection of build recipes
-and metadata for more than 46k 3rd party projects and the source for binary packages on
+and metadata for more than 30.000 3rd party projects and the source for binary packages on
 FreeBSD, DragonflyBSD and derivatives.
 
-This is an attempt to populate all ports with CPE data. The lists are automatically
-updated once a day. If you are a FreeBSD Ports committer or Ports maintainer this is a
-chance for you to help!
+This is an attempt to populate as many ports as possible with CPE data. The lists are
+automatically updated once a day. If you are a FreeBSD Ports committer or Ports maintainer
+this is a chance for you to help!
 
 ### More information:
 * [https://wiki.freebsd.org/Ports/CPE](https://wiki.freebsd.org/Ports/CPE)
@@ -28,4 +28,4 @@ chance for you to help!
 | ![easy](https://img.shields.io/badge/easy-brightgreen)    | 272      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
 | ![important](https://img.shields.io/badge/important-blue) | 2426 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Thu Sep  9 02:40:47 UTC 2021
+Last updated: Thu Sep  9 06:32:54 UTC 2021
