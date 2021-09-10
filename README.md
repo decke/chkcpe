@@ -17,15 +17,15 @@ this is a chance for you to help!
 
 | Status                                                    | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1505     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1500     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
 | ![invalid](https://img.shields.io/badge/invalid-red)      | 0   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
-| ![missing](https://img.shields.io/badge/missing-orange)   | 2426   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
+| ![missing](https://img.shields.io/badge/missing-orange)   | 2425   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
 | ![unknown](https://img.shields.io/badge/unknown-grey)     | 25781   | |
 
 
 | Lists ordered by priority                                 | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 272      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
-| ![important](https://img.shields.io/badge/important-blue) | 2426 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 273      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![important](https://img.shields.io/badge/important-blue) | 2425 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Thu Sep  9 06:32:54 UTC 2021
+Last updated: Fri Sep 10 02:42:05 UTC 2021
