@@ -17,15 +17,15 @@ this is a chance for you to help!
 
 | Status                                                    | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1625     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)  | 1629     | [valid ports](https://github.com/decke/chkcpe/wiki/valid)        |
 | ![invalid](https://img.shields.io/badge/invalid-red)      | 0   | [invalid ports](https://github.com/decke/chkcpe/wiki/invalid)    |
-| ![missing](https://img.shields.io/badge/missing-orange)   | 2293   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
-| ![unknown](https://img.shields.io/badge/unknown-grey)     | 25798   | |
+| ![missing](https://img.shields.io/badge/missing-orange)   | 2296   | [missing ports](https://github.com/decke/chkcpe/wiki/missing)    |
+| ![unknown](https://img.shields.io/badge/unknown-grey)     | 25802   | |
 
 
 | Lists ordered by priority                                 | # Ports      | Links                                                            |
 | ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 225      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
-| ![important](https://img.shields.io/badge/important-blue) | 2293 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
+| ![easy](https://img.shields.io/badge/easy-brightgreen)    | 228      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
+| ![important](https://img.shields.io/badge/important-blue) | 2296 | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
-Last updated: Fri Sep 10 21:38:30 UTC 2021
+Last updated: Sat Sep 11 02:44:13 UTC 2021
