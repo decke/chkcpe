@@ -137,23 +137,12 @@ class Runner
         $generators[Status::CHECKNEEDED] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 
-        $generators['easy'] = new WeightedMarkdownGenerator('Easy', Config::getPriorityData());
         $generators['important'] = new WeightedMarkdownGenerator('Important Ports', Config::getPriorityData());
 
         foreach ($this->allports as $port) {
             // Status
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
-            }
-
-            // Easy
-            if ($port->getCPEStatus() == Status::CHECKNEEDED) {
-                $candidates = $port->getCPECandidates();
-                if (count($candidates) == 1) {
-                    if ($candidates[0]->getVendor() == $candidates[0]->getProduct()) {
-                        $generators['easy']->addPort($port);
-                    }
-                }
             }
 
             // Important

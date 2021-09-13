@@ -20,13 +20,7 @@ this is a chance for you to help!
 | ![valid](https://img.shields.io/badge/valid-brightgreen)        | ${VALID}       | [list](https://github.com/decke/chkcpe/wiki/valid)       |
 | ![invalid](https://img.shields.io/badge/invalid-red)            | ${INVALID}     | [list](https://github.com/decke/chkcpe/wiki/invalid)     |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)      | ${DEPRECATED}  | [list](https://github.com/decke/chkcpe/wiki/deprecated)  |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange) | ${CHECKNEEDED} | [list](https://github.com/decke/chkcpe/wiki/checkneeded) |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange) | ${CHECKNEEDED} | [list](https://github.com/decke/chkcpe/wiki/checkneeded) [important](https://github.com/decke/chkcpe/wiki/important) |
 | ![unknown](https://img.shields.io/badge/unknown-grey)           | ${UNKNOWN}     | |
-
-
-| Lists ordered by priority                                 | # Ports      | Links                                                            |
-| ----------------------------------------------------------| -----------: | ---------------------------------------------------------------- |
-| ![easy](https://img.shields.io/badge/easy-brightgreen)    | ${EASY}      | [easy ports](https://github.com/decke/chkcpe/wiki/easy)          |
-| ![important](https://img.shields.io/badge/important-blue) | ${IMPORTANT} | [important ports](https://github.com/decke/chkcpe/wiki/important)|
 
 Last updated: ${LASTMOD}
