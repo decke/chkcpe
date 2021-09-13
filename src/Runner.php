@@ -76,15 +76,10 @@ class Runner
 
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
-            try
-            {
+            try {
                 $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4]);
-            }
-            catch(\Exception $e)
-            {
-                Logger::error($e->getMessage());
-                var_dump($parts);
-
+            } catch (\Exception $e) {
+                Logger::error($e->getMessage().' ('.$parts[4].')');
                 throw $e;
             }
 
