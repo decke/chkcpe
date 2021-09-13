@@ -96,7 +96,7 @@ class Product
 
         $cpe_parts = explode(':', $cpe_fs);
 
-        if (count($cpe_parts) != 13) {
+        if (count($cpe_parts) != 12) {
             throw new \Exception('Invalid number of elements in CPE FS String ('.$cpe_fs.')');
         }
 
