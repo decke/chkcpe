@@ -7,6 +7,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use CheckCpe\Config;
 use CheckCpe\Util\Logger;
 use CheckCpe\CPE\Dictionary;
+use CheckCpe\CPE\Product;
 
 Logger::start();
 
@@ -41,34 +42,33 @@ foreach ($xml->{'cpe-item'} as $cpe)
     </cpe-item>
    */
 
-   $cpe_title = $cpe->title;
-   $cpe_deprecated = $cpe->attributes(null)->deprecated;
+   try
+   {
+      $cpe_title = $cpe->title;
+      $cpe_deprecated = $cpe->attributes(null)->deprecated;
+      $cpe_fs = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
 
-   if($cpe_deprecated == 'true')
-      continue;
+      $product = Product::CPEtoProduct($cpe_fs);
 
-   $cpe_fs = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
+      if($cpe_deprecated == 'true'){
+         $cpe_deprecated_by = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->{'deprecation'}->{'deprecated-by'}->attributes(null)->name;
 
-   if(strlen($cpe_fs) < 1)
-      continue;
+         $product->setDeprecatedBy(Product::CPEtoProduct($cpe_deprecated_by));
+      }
 
-   $cpe_fs_parts = explode(':', $cpe_fs);
+      if(!$dictionary->addProduct($product)) {
+         Logger::error('Could not add Product '.(string)$product);
+         continue;
+      }
 
-   if(count($cpe_fs_parts) < 6)
-      continue;
-
-   $cpe_std = $cpe_fs_parts[1];
-   $cpe_part = $cpe_fs_parts[2];
-   $cpe_vendor = $cpe_fs_parts[3];
-   $cpe_product = $cpe_fs_parts[4];
-   $cpe_version = $cpe_fs_parts[5];
-
-   if($cpe_std != '2.3')
-      continue;
-
-   if(!$dictionary->addCPEFSEntry($cpe_vendor, $cpe_product, $cpe_fs)) {
-      Logger:warning('Could not add CPE Entry '.$cpe_fs);
-      continue;
+      if(!$dictionary->addCPEFSEntry($cpe_fs)) {
+         Logger::error('Could not add CPE Entry '.$cpe_fs);
+         continue;
+      }
+   }
+   catch(\Exception $e)
+   {
+      Logger::error($e->getMessage());
    }
 
    if (++$cnt % 10000 == 0) {

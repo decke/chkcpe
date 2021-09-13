@@ -104,6 +104,8 @@ class Runner
                     } else {
                         $port->setCPEStatus(Status::INVALID);
                     }
+                } elseif ($product->isDeprecated()) {
+                    $port->setCPEStatus(Status::DEPRECATED);
                 } else {
                     $port->setCPEStatus(Status::VALID);
                 }
@@ -126,6 +128,7 @@ class Runner
 
         $generators = [];
         $generators[Status::VALID] = new MarkdownGenerator();
+        $generators[Status::DEPRECATED] = new MarkdownGenerator();
         $generators[Status::INVALID] = new MarkdownGenerator();
         $generators[Status::MISSING] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
@@ -150,8 +153,11 @@ class Runner
             }
 
             // Important
-            if ($port->getCPEStatus() == Status::INVALID || $port->getCPEStatus() == Status::MISSING) {
-                $generators['important']->addPort($port);
+            switch ($port->getCPEStatus()) {
+                case Status::DEPRECATED:
+                case Status::INVALID:
+                case Status::MISSING:
+                   $generators['important']->addPort($port);
             }
         }
 
