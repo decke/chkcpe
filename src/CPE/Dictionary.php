@@ -48,8 +48,8 @@ class Dictionary
             return null;
         }
 
-        if (strlen($row['deprecatedby']) > 0) {
-            $product->setDeprecatedBy(Product::fromString($row['deprecatedby']));
+        if (strlen($row->deprecatedby) > 0) {
+            $product->setDeprecatedBy(Product::fromString($row->deprecatedby));
         }
 
         return $product;
