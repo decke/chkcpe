@@ -14,6 +14,7 @@ class MarkdownGenerator extends Generator
      */
     protected array $colors = [
         Status::VALID => 'brightgreen',
+        Status::DEPRECATED => 'red',
         Status::INVALID => 'red',
         Status::MISSING => 'orange',
         Status::UNKNOWN => 'grey'
