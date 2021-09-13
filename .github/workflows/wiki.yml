@@ -20,6 +20,7 @@ jobs:
       - name: Prepare ENV variables
         run: |
           echo "VALID=$(cat wiki/env | grep ^VALID | cut -d= -f2)" >> $GITHUB_ENV
+          echo "DEPRECATED=$(cat wiki/env | grep ^DEPRECATED | cut -d= -f2)" >> $GITHUB_ENV
           echo "INVALID=$(cat wiki/env | grep INVALID | cut -d= -f2)" >> $GITHUB_ENV
           echo "MISSING=$(cat wiki/env | grep MISSING | cut -d= -f2)" >> $GITHUB_ENV
           echo "UNKNOWN=$(cat wiki/env | grep UNKNOWN | cut -d= -f2)" >> $GITHUB_ENV
@@ -31,6 +32,7 @@ jobs:
         uses: vafinvr/template-env-action@master
         env:
           VALID: ${{ env.VALID }}
+          DEPRECATED: ${{ env.DEPRECATED }}
           INVALID: ${{ env.INVALID }}
           MISSING: ${{ env.MISSING }}
           UNKNOWN: ${{ env.UNKNOWN }}
