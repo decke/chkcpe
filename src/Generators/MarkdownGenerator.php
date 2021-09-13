@@ -65,6 +65,14 @@ class MarkdownGenerator extends Generator
              case Status::VALID:
                  return 'found CPE';
 
+             case Status::DEPRECATED:
+                 $deprecatedby = $port->getCPE()->getDeprecatedBy();
+                 if ($deprecatedby === null) {
+                     return '';
+                 }
+
+                 return sprintf('Deprecated by Vendor %s Product %s', $deprecatedby->getVendor(), $deprecatedby->getProduct());
+
              case Status::INVALID:
                  return sprintf('Vendor %s Product %s not found in DB', $port->getCPEVendor(), $port->getCPEProduct());
 

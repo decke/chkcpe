@@ -59,7 +59,7 @@ class Runner
         $cnt = 0;
         $portsdir = Config::getPortsDir();
 
-        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VMAINTAINER -VCPE_STR -VCPE_VENDOR -VCPE_PRODUCT :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VCPE_VERSION -VMAINTAINER -VCPE_STR :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
             $line = fread($fp, 4096);
@@ -69,14 +69,14 @@ class Runner
             }
 
             $parts = explode("\n", $line);
-            if (count($parts) != 7) {
+            if (count($parts) != 6) {
                 Logger::info('Skipping invalid output');
                 continue;
             }
 
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
-            $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4], $parts[5]);
+            $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4]);
 
             if (++$cnt % 1000 == 0) {
                 Logger::info('Scanned '.$cnt.' ports');
@@ -96,6 +96,10 @@ class Runner
         foreach ($this->allports as $port) {
             if ($port->getCPEStr() != '') {
                 $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
+                if ($product != null) {
+                    $port->setCPE($product);
+                }
+
                 if ($product === null) {
                     if (isset($addmatch[$port->getOrigin()]) &&
                         $addmatch[$port->getOrigin()] == $port->getCPEVendor().':'.$port->getCPEProduct()) {

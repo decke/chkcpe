@@ -11,26 +11,27 @@ class Port
 {
     protected string $origin;
     protected string $portname;
+    protected string $version;
     protected string $maintainer;
     protected string $cpe_str;
-    protected string $cpe_vendor;
-    protected string $cpe_product;
 
+    protected Product $cpe;
     protected string $cpe_status = Status::UNKNOWN;
 
     /**
      * @var array<Product>
      */
-    protected array $cpe_candidates;
+    protected array $cpe_candidates = [];
 
-    public function __construct(string $origin, string $portname, string $maintainer, string $cpe_str, string $cpe_vendor, string $cpe_product)
+    public function __construct(string $origin, string $portname, string $version, string $maintainer, string $cpe_str)
     {
         $this->origin = $origin;
         $this->portname = $portname;
+        $this->version = $version;
         $this->maintainer = $maintainer;
         $this->cpe_str = $cpe_str;
-        $this->cpe_vendor = $cpe_vendor;
-        $this->cpe_product = $cpe_product;
+
+        $this->cpe = Product::CPEtoProduct($cpe_str);
     }
 
     public function getOrigin(): string
@@ -61,6 +62,11 @@ class Port
         return $this->portname;
     }
 
+    public function getVersion(): string
+    {
+        return $this->version;
+    }
+
     public function getMaintainer(): string
     {
         return $this->maintainer;
@@ -73,17 +79,23 @@ class Port
 
     public function getCPE(): Product
     {
-        return new Product($this->cpe_vendor, $this->cpe_product);
+        return $this->cpe;
+    }
+
+    public function setCPE(Product $cpe): bool
+    {
+        $this->cpe = $cpe;
+        return true;
     }
 
     public function getCPEVendor(): string
     {
-        return $this->cpe_vendor;
+        return $this->cpe->getVendor();
     }
 
     public function getCPEProduct(): string
     {
-        return $this->cpe_product;
+        return $this->cpe->getProduct();
     }
 
     public function getCPEStatus(): string
