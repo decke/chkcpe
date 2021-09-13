@@ -66,7 +66,12 @@ class MarkdownGenerator extends Generator
                  return 'found CPE';
 
              case Status::DEPRECATED:
-                 $deprecatedby = $port->getCPE()->getDeprecatedBy();
+                 $cpe = $port->getCPE();
+                 if ($cpe === null) {
+                     return '';
+                 }
+
+                 $deprecatedby = $cpe->getDeprecatedBy();
                  if ($deprecatedby === null) {
                      return '';
                  }

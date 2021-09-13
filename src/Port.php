@@ -15,7 +15,7 @@ class Port
     protected string $maintainer;
     protected string $cpe_str;
 
-    protected Product $cpe;
+    protected ?Product $cpe;
     protected string $cpe_status = Status::UNKNOWN;
 
     /**
@@ -31,7 +31,9 @@ class Port
         $this->maintainer = $maintainer;
         $this->cpe_str = $cpe_str;
 
-        $this->cpe = Product::CPEtoProduct($cpe_str);
+        if ($cpe_str != '') {
+            $this->cpe = Product::CPEtoProduct($cpe_str);
+        }
     }
 
     public function getOrigin(): string
@@ -77,7 +79,7 @@ class Port
         return $this->cpe_str;
     }
 
-    public function getCPE(): Product
+    public function getCPE(): ?Product
     {
         return $this->cpe;
     }
@@ -90,11 +92,19 @@ class Port
 
     public function getCPEVendor(): string
     {
+        if (is_null($this->cpe)) {
+            return '';
+        }
+
         return $this->cpe->getVendor();
     }
 
     public function getCPEProduct(): string
     {
+        if (is_null($this->cpe)) {
+            return '';
+        }
+
         return $this->cpe->getProduct();
     }
 
