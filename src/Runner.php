@@ -123,7 +123,7 @@ class Runner
                     }
 
                     $port->addCPECandidate($product);
-                    $port->setCPEStatus(Status::MISSING);
+                    $port->setCPEStatus(Status::CHECKNEEDED);
                 }
             }
         }
@@ -134,7 +134,7 @@ class Runner
         $generators[Status::VALID] = new MarkdownGenerator();
         $generators[Status::DEPRECATED] = new MarkdownGenerator();
         $generators[Status::INVALID] = new MarkdownGenerator();
-        $generators[Status::MISSING] = new MarkdownGenerator();
+        $generators[Status::CHECKNEEDED] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 
         $generators['easy'] = new WeightedMarkdownGenerator('Easy', Config::getPriorityData());
@@ -147,7 +147,7 @@ class Runner
             }
 
             // Easy
-            if ($port->getCPEStatus() == Status::MISSING) {
+            if ($port->getCPEStatus() == Status::CHECKNEEDED) {
                 $candidates = $port->getCPECandidates();
                 if (count($candidates) == 1) {
                     if ($candidates[0]->getVendor() == $candidates[0]->getProduct()) {
@@ -160,7 +160,7 @@ class Runner
             switch ($port->getCPEStatus()) {
                 case Status::DEPRECATED:
                 case Status::INVALID:
-                case Status::MISSING:
+                case Status::CHECKNEEDED:
                    $generators['important']->addPort($port);
             }
         }

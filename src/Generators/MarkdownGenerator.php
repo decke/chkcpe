@@ -16,7 +16,7 @@ class MarkdownGenerator extends Generator
         Status::VALID => 'brightgreen',
         Status::DEPRECATED => 'red',
         Status::INVALID => 'red',
-        Status::MISSING => 'orange',
+        Status::CHECKNEEDED => 'orange',
         Status::UNKNOWN => 'grey'
     ];
 
@@ -76,7 +76,7 @@ class MarkdownGenerator extends Generator
              case Status::INVALID:
                  return sprintf('Vendor %s Product %s not found in DB', $port->getCPEVendor(), $port->getCPEProduct());
 
-             case Status::MISSING:
+             case Status::CHECKNEEDED:
                  $msg = '';
                  foreach ($port->getCPECandidates() as $prod) {
                      $msg .= $prod.' ';
