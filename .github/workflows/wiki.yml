@@ -20,24 +20,20 @@ jobs:
       - name: Prepare ENV variables
         run: |
           echo "VALID=$(cat wiki/env | grep ^VALID | cut -d= -f2)" >> $GITHUB_ENV
-          echo "DEPRECATED=$(cat wiki/env | grep ^DEPRECATED | cut -d= -f2)" >> $GITHUB_ENV
           echo "INVALID=$(cat wiki/env | grep INVALID | cut -d= -f2)" >> $GITHUB_ENV
+          echo "DEPRECATED=$(cat wiki/env | grep ^DEPRECATED | cut -d= -f2)" >> $GITHUB_ENV
           echo "CHECKNEEDED=$(cat wiki/env | grep CHECKNEEDED | cut -d= -f2)" >> $GITHUB_ENV
           echo "UNKNOWN=$(cat wiki/env | grep UNKNOWN | cut -d= -f2)" >> $GITHUB_ENV
-          echo "EASY=$(cat wiki/env | grep EASY | cut -d= -f2)" >> $GITHUB_ENV
-          echo "IMPORTANT=$(cat wiki/env | grep IMPORTANT | cut -d= -f2)" >> $GITHUB_ENV
           echo "LASTMOD=$(date)" >> $GITHUB_ENV
 
       - name: Render README.md
         uses: vafinvr/template-env-action@master
         env:
           VALID: ${{ env.VALID }}
-          DEPRECATED: ${{ env.DEPRECATED }}
           INVALID: ${{ env.INVALID }}
+          DEPRECATED: ${{ env.DEPRECATED }}
           CHECKNEEDED: ${{ env.CHECKNEEDED }}
           UNKNOWN: ${{ env.UNKNOWN }}
-          EASY: ${{ env.EASY }}
-          IMPORTANT: ${{ env.IMPORTANT }}
           LASTMOD: ${{ env.LASTMOD }}
         with:
           filename: TEMPLATE.md
