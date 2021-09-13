@@ -79,8 +79,7 @@ class Runner
             try {
                 $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4]);
             } catch (\Exception $e) {
-                Logger::error($e->getMessage().' ('.$parts[4].')');
-                throw $e;
+                Logger::error($e->getMessage());
             }
 
             if (++$cnt % 1000 == 0) {
