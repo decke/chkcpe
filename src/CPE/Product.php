@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace CheckCpe\CPE;
 
 use PacificSec\CPE\Common\WellFormedName;
+use PacificSec\CPE\Naming\CPENameBinder;
 use PacificSec\CPE\Naming\CPENameUnbinder;
 
 class Product
@@ -115,7 +116,8 @@ class Product
 
     public function __toString(): string
     {
-        return (string)$this->cpe;
+        $bind = new CPENameBinder();
+        return $bind->bindToFS($this->cpe);
     }
 
     public static function escape(string $str): string

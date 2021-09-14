@@ -20,9 +20,7 @@ CREATE INDEX products_idx1 ON products (vendor);
 CREATE INDEX products_idx2 ON products (product);
 
 CREATE TABLE cpes (
-  cpeid INTEGER PRIMARY KEY NOT NULL,
   productid INTEGER NOT NULL,
-  version VARCHAR(255) NOT NULL,
   cpefs VARCHAR(255) NOT NULL,
   FOREIGN KEY(productid) REFERENCES products(productid)
 );

@@ -57,12 +57,7 @@ foreach ($xml->{'cpe-item'} as $cpe)
       }
 
       if(!$dictionary->addProduct($product)) {
-         Logger::error('Could not add Product '.(string)$product);
-         continue;
-      }
-
-      if(!$dictionary->addCPEFSEntry($cpe_fs)) {
-         Logger::error('Could not add CPE Entry '.$cpe_fs);
+         Logger::error('Could not add Product '.$cpe_fs);
          continue;
       }
    }

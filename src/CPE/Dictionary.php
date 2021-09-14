@@ -65,45 +65,39 @@ class Dictionary
         return $product;
     }
 
-    public function addProduct(Product $product): int
+    public function addProduct(Product $prd): bool
     {
         $deprecatedby = '';
 
-        if ($product->isDeprecated()) {
-            $deprecatedby = (string)$product->getDeprecatedBy();
+        if ($prd->isDeprecated()) {
+            $deprecatedby = (string)$prd->getDeprecatedBy();
         }
 
-        $stmt = $this->handle->prepare('INSERT INTO products (vendor, product, deprecatedby) VALUES (?, ?, ?)');
-        if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct(), $deprecatedby])) {
-            throw new \Exception('DB Error');
+        try {
+            $vendor = $prd->getEscapedVendor();
+            $product = $prd->getEscapedProduct();
+        } catch (\TypeError) {
+            return false;
         }
-
-        return (int)$this->handle->lastInsertId();
-    }
-
-    public function addCPEFSEntry(string $cpefs): bool
-    {
-        $product = new Product($cpefs);
 
         $stmt = $this->handle->prepare('SELECT productid FROM products WHERE vendor = ? AND product = ?');
-        if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct()])) {
+        if (!$stmt->execute([$vendor, $product])) {
             throw new \Exception('DB Error');
         }
 
         if (($row = $stmt->fetch(\PDO::FETCH_NUM)) === false) {
-            $productid = $this->addProduct($product);
+            $stmt = $this->handle->prepare('INSERT INTO products (vendor, product, deprecatedby) VALUES (?, ?, ?)');
+            if (!$stmt->execute([$vendor, $product, $deprecatedby])) {
+                throw new \Exception('DB Error');
+            }
+
+            $productid = (int)$this->handle->lastInsertId();
         } else {
             $productid = (int)$row[0];
         }
 
-        try {
-            $version = $product->getVersion();
-        } catch (\TypeError) {
-            $version = '';
-        }
-
-        $stmt = $this->handle->prepare('INSERT INTO cpes (productid, version, cpefs) VALUES (?, ?, ?)');
-        if (!$stmt->execute([$productid, $version, $cpefs])) {
+        $stmt = $this->handle->prepare('INSERT INTO cpes (productid, cpefs) VALUES (?, ?)');
+        if (!$stmt->execute([$productid, (string)$prd])) {
             throw new \Exception('DB Error');
         }
 
