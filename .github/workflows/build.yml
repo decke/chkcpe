@@ -24,6 +24,9 @@ jobs:
           repository: freebsd/freebsd-ports
           path: ports
 
+      - name: Patch portstree
+        run: cp share/Uses/*.mk ports/Mk/Uses/
+
       - name: Fetch NVD CPE Dictionary
         run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/cpe.xml
 
