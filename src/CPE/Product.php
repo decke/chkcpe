@@ -96,7 +96,7 @@ class Product
 
         $cpe_parts = explode(':', $cpe_fs);
 
-        if (count($cpe_parts) != 12) {
+        if (count($cpe_parts) < 6) {
             throw new \Exception('Invalid number of elements in CPE FS String ('.$cpe_fs.')');
         }
 
@@ -110,25 +110,33 @@ class Product
             throw new \Exception('Invalid CPE Standard ('.$cpe_std.')');
         }
 
+        if ($cpe_part != 'a') {
+            throw new \Exception('Invalid CPE Part ('.$cpe_part.')');
+        }
+
         return new Product($cpe_vendor, $cpe_product, $cpe_version);
     }
 
-    public static function CPEURLtoProduct(string $cpe_url): Product
+    public static function CPEURItoProduct(string $cpe_uri): Product
     {
-        if (substr($cpe_url, 0, 4) != 'cpe:') {
-            throw new \Exception('Invalid CPE URL String ('.$cpe_url.')');
+        if (substr($cpe_uri, 0, 4) != 'cpe:') {
+            throw new \Exception('Invalid CPE URI String ('.$cpe_uri.')');
         }
 
-        $cpe_parts = explode(':', $cpe_url);
+        $cpe_parts = explode(':', $cpe_uri);
 
-        if (count($cpe_parts) != 5) {
-            throw new \Exception('Invalid number of elements in CPE URL String ('.$cpe_url.')');
+        if (count($cpe_parts) < 5) {
+            throw new \Exception('Invalid number of elements in CPE URI String ('.$cpe_uri.')');
         }
 
         $cpe_part = $cpe_parts[1];
         $cpe_vendor = $cpe_parts[2];
         $cpe_product = $cpe_parts[3];
         $cpe_version = $cpe_parts[4];
+
+        if ($cpe_part != '/a') {
+            throw new \Exception('Invalid CPE Part ('.$cpe_part.')');
+        }
 
         return new Product($cpe_vendor, $cpe_product, $cpe_version);
     }
