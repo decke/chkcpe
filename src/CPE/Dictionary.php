@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace CheckCpe\CPE;
 
+use PacificSec\CPE\Common\WellFormedName;
+
 class Dictionary
 {
     protected \PDO $handle;
@@ -28,7 +30,11 @@ class Dictionary
         $candidates = [];
 
         while ($row = $stmt->fetch(\PDO::FETCH_OBJ)) {
-            $candidates[] = new Product($row->vendor, $row->product);
+            $wfn = new WellFormedName();
+            $wfn->set('vendor', $row->vendor);
+            $wfn->set('product', $row->product);
+
+            $candidates[] = new Product($wfn);
         }
 
         return $candidates;
@@ -36,7 +42,11 @@ class Dictionary
 
     public function findProduct(string $vendor, string $product): ?Product
     {
-        $product = new Product($vendor, $product);
+        $wfn = new WellFormedName();
+        $wfn->set('vendor', $vendor);
+        $wfn->set('product', $product);
+
+        $product = new Product($wfn);
 
         $stmt = $this->handle->prepare('SELECT vendor, product, deprecatedby FROM products WHERE vendor = ? AND product = ? GROUP BY vendor, product');
         if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct()])) {
@@ -49,7 +59,7 @@ class Dictionary
         }
 
         if (strlen($row->deprecatedby) > 0) {
-            $product->setDeprecatedBy(Product::fromString($row->deprecatedby));
+            $product->setDeprecatedBy(new Product($row->deprecatedby));
         }
 
         return $product;
@@ -73,7 +83,7 @@ class Dictionary
 
     public function addCPEFSEntry(string $cpefs): bool
     {
-        $product = Product::CPEtoProduct($cpefs);
+        $product = new Product($cpefs);
 
         $stmt = $this->handle->prepare('SELECT productid FROM products WHERE vendor = ? AND product = ?');
         if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct()])) {
@@ -86,8 +96,14 @@ class Dictionary
             $productid = (int)$row[0];
         }
 
+        try {
+            $version = $product->getVersion();
+        } catch (\TypeError) {
+            $version = '';
+        }
+
         $stmt = $this->handle->prepare('INSERT INTO cpes (productid, version, cpefs) VALUES (?, ?, ?)');
-        if (!$stmt->execute([$productid, $product->getVersion(), $cpefs])) {
+        if (!$stmt->execute([$productid, $version, $cpefs])) {
             throw new \Exception('DB Error');
         }
 

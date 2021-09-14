@@ -48,12 +48,12 @@ foreach ($xml->{'cpe-item'} as $cpe)
       $cpe_deprecated = $cpe->attributes(null)->deprecated;
       $cpe_fs = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->attributes(null)->name;
 
-      $product = Product::CPEtoProduct($cpe_fs);
+      $product = new Product($cpe_fs);
 
       if($cpe_deprecated == 'true'){
          $cpe_deprecated_by = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->{'deprecation'}->{'deprecated-by'}->attributes(null)->name;
 
-         $product->setDeprecatedBy(Product::CPEtoProduct($cpe_deprecated_by));
+         $product->setDeprecatedBy(new Product($cpe_deprecated_by));
       }
 
       if(!$dictionary->addProduct($product)) {

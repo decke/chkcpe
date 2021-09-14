@@ -32,7 +32,7 @@ class Port
         $this->cpe_str = $cpe_str;
 
         if ($cpe_str != '') {
-            $this->cpe = Product::CPEtoProduct($cpe_str);
+            $this->cpe = new Product($cpe_str);
         }
     }
 

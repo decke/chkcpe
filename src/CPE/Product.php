@@ -4,33 +4,82 @@ declare(strict_types=1);
 
 namespace CheckCpe\CPE;
 
+use PacificSec\CPE\Common\WellFormedName;
+use PacificSec\CPE\Naming\CPENameUnbinder;
+
 class Product
 {
-    protected string $vendor;
-    protected string $product;
-    protected string $version;
+    protected WellFormedName $cpe;
     protected ?Product $deprecated_by = null;
 
-    public function __construct(string $vendor, string $product, string $version = '*')
+    public function __construct(string|WellFormedName $cpe)
     {
-        $this->vendor = $vendor;
-        $this->product = $product;
-        $this->version = $version;
+        if (is_string($cpe)) {
+            $unbinder = new CPENameUnbinder();
+
+            if (substr($cpe, 0, 5) == 'cpe:/') {
+                $this->cpe = $unbinder->unbindURI($cpe);
+            } else {
+                $this->cpe = $unbinder->unbindFS($cpe);
+            }
+        } elseif ($cpe instanceof WellFormedName) {
+            $this->cpe = $cpe;
+        }
+    }
+
+    public function getPart(): string
+    {
+        return $this->cpe->get('part');
     }
 
     public function getVendor(): string
     {
-        return $this->vendor;
+        return $this->cpe->get('vendor');
     }
 
     public function getProduct(): string
     {
-        return $this->product;
+        return $this->cpe->get('product');
     }
 
     public function getVersion(): string
     {
-        return $this->version;
+        return $this->cpe->get('version');
+    }
+
+    public function getUpdate(): string
+    {
+        return $this->cpe->get('update');
+    }
+
+    public function getEdition(): string
+    {
+        return $this->cpe->get('edition');
+    }
+
+    public function getLanguage(): string
+    {
+        return $this->cpe->get('language');
+    }
+
+    public function getSwEdition(): string
+    {
+        return $this->cpe->get('sw_edition');
+    }
+
+    public function getTargetSW(): string
+    {
+        return $this->cpe->get('target_sw');
+    }
+
+    public function getTargetHW(): string
+    {
+        return $this->cpe->get('target_hw');
+    }
+
+    public function getOther(): string
+    {
+        return $this->cpe->get('other');
     }
 
     public function setDeprecatedBy(Product $product): bool
@@ -56,17 +105,17 @@ class Product
 
     public function getEscapedVendor(): string
     {
-        return self::escape($this->vendor);
+        return self::escape($this->getVendor());
     }
 
     public function getEscapedProduct(): string
     {
-        return self::escape($this->product);
+        return self::escape($this->getProduct());
     }
 
     public function __toString(): string
     {
-        return $this->vendor.':'.$this->product;
+        return (string)$this->cpe;
     }
 
     public static function escape(string $str): string
@@ -82,95 +131,5 @@ class Product
     public static function unescape(string $str): string
     {
         return str_replace('\\', '', $str);
-    }
-
-    /**
-     * @return array<int, string>
-     */
-    public static function splitEscaped(string $delimiter, string $str): array
-    {
-        $escape_char = '\\';
-        $marker = "\0\0-tmp-\0\0";
-
-        if (empty($delimiter)) {
-            throw new \ValueError('delimiter cannot be empty');
-        }
-
-        $str = str_replace($escape_char.$delimiter, $marker, $str);
-
-        $parts = explode($delimiter, $str);
-
-        foreach ($parts as &$val) {
-            $val = str_replace($marker, $escape_char.$delimiter, $val);
-        }
-
-        return $parts;
-    }
-
-    public static function fromString(string $cpe): Product
-    {
-        $cpe_parts = self::splitEscaped(':', $cpe);
-
-        if (count($cpe_parts) != 2) {
-            throw new \Exception('Invalid number of elements in CPE String ('.$cpe.')');
-        }
-
-        $cpe_vendor = $cpe_parts[0];
-        $cpe_product = $cpe_parts[1];
-
-        return new Product($cpe_vendor, $cpe_product);
-    }
-
-    public static function CPEtoProduct(string $cpe_fs): Product
-    {
-        if (substr($cpe_fs, 0, 4) != 'cpe:') {
-            throw new \Exception('Invalid CPE String ('.$cpe_fs.')');
-        }
-
-        $cpe_parts = self::splitEscaped(':', $cpe_fs);
-
-        if (count($cpe_parts) < 6) {
-            throw new \Exception('Invalid number of elements in CPE FS String ('.$cpe_fs.')');
-        }
-
-        $cpe_std = $cpe_parts[1];
-        $cpe_part = $cpe_parts[2];
-        $cpe_vendor = self::unescape($cpe_parts[3]);
-        $cpe_product = self::unescape($cpe_parts[4]);
-        $cpe_version = self::unescape($cpe_parts[5]);
-
-        if ($cpe_std != '2.3') {
-            throw new \Exception('Invalid CPE Standard ('.$cpe_std.')');
-        }
-
-        if ($cpe_part != 'a') {
-            throw new \Exception('Invalid CPE Part ('.$cpe_part.')');
-        }
-
-        return new Product($cpe_vendor, $cpe_product, $cpe_version);
-    }
-
-    public static function CPEURItoProduct(string $cpe_uri): Product
-    {
-        if (substr($cpe_uri, 0, 4) != 'cpe:') {
-            throw new \Exception('Invalid CPE URI String ('.$cpe_uri.')');
-        }
-
-        $cpe_parts = self::splitEscaped(':', $cpe_uri);
-
-        if (count($cpe_parts) < 5) {
-            throw new \Exception('Invalid number of elements in CPE URI String ('.$cpe_uri.')');
-        }
-
-        $cpe_part = $cpe_parts[1];
-        $cpe_vendor = self::unescape($cpe_parts[2]);
-        $cpe_product = self::unescape($cpe_parts[3]);
-        $cpe_version = self::unescape($cpe_parts[4]);
-
-        if ($cpe_part != '/a') {
-            throw new \Exception('Invalid CPE Part ('.$cpe_part.')');
-        }
-
-        return new Product($cpe_vendor, $cpe_product, $cpe_version);
     }
 }

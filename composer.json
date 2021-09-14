@@ -4,10 +4,11 @@
    "homepage": "https://github.com/decke/chkcpe",
    "license": "BSD-2-Clause",
    "require": {
+      "pacificsec/cpe": "^1.0",
       "ext-PDO": "*",
       "ext-pdo_sqlite": "*",
       "ext-simplexml": "*",
-      "php": ">=7.4"
+      "php": ">=8.0"
    },
    "require-dev": {
       "ext-tokenizer": "*"
