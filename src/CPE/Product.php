@@ -74,9 +74,33 @@ class Product
         return $res;
     }
 
+    public static function unescape(string $str): string
+    {
+        return str_replace('\\', '', $str);
+    }
+
+    /**
+     * @return array<string>
+     */
+    public static function splitEscaped(string $delimiter, string $str): array
+    {
+        $escape_char = '\\';
+        $marker = "\0\0-tmp-\0\0";
+
+        $str = str_replace($escape_char.$delimiter, $marker, $str);
+
+        $parts = explode($delimiter, $str);
+
+        foreach ($parts as &$val) {
+            $val = str_replace($marker, $escape_char.$delimiter, $val);
+        }
+
+        return $parts;
+    }
+
     public static function fromString(string $cpe): Product
     {
-        $cpe_parts = explode(':', $cpe);
+        $cpe_parts = self::splitEscaped(':', $cpe);
 
         if (count($cpe_parts) != 2) {
             throw new \Exception('Invalid number of elements in CPE String ('.$cpe.')');
@@ -94,7 +118,7 @@ class Product
             throw new \Exception('Invalid CPE String ('.$cpe_fs.')');
         }
 
-        $cpe_parts = explode(':', $cpe_fs);
+        $cpe_parts = self::splitEscaped(':', $cpe_fs);
 
         if (count($cpe_parts) < 6) {
             throw new \Exception('Invalid number of elements in CPE FS String ('.$cpe_fs.')');
@@ -102,9 +126,9 @@ class Product
 
         $cpe_std = $cpe_parts[1];
         $cpe_part = $cpe_parts[2];
-        $cpe_vendor = $cpe_parts[3];
-        $cpe_product = $cpe_parts[4];
-        $cpe_version = $cpe_parts[5];
+        $cpe_vendor = self::unescape($cpe_parts[3]);
+        $cpe_product = self::unescape($cpe_parts[4]);
+        $cpe_version = self::unescape($cpe_parts[5]);
 
         if ($cpe_std != '2.3') {
             throw new \Exception('Invalid CPE Standard ('.$cpe_std.')');
@@ -123,16 +147,16 @@ class Product
             throw new \Exception('Invalid CPE URI String ('.$cpe_uri.')');
         }
 
-        $cpe_parts = explode(':', $cpe_uri);
+        $cpe_parts = self::splitEscaped(':', $cpe_uri);
 
         if (count($cpe_parts) < 5) {
             throw new \Exception('Invalid number of elements in CPE URI String ('.$cpe_uri.')');
         }
 
         $cpe_part = $cpe_parts[1];
-        $cpe_vendor = $cpe_parts[2];
-        $cpe_product = $cpe_parts[3];
-        $cpe_version = $cpe_parts[4];
+        $cpe_vendor = self::unescape($cpe_parts[2]);
+        $cpe_product = self::unescape($cpe_parts[3]);
+        $cpe_version = self::unescape($cpe_parts[4]);
 
         if ($cpe_part != '/a') {
             throw new \Exception('Invalid CPE Part ('.$cpe_part.')');
