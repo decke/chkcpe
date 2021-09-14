@@ -87,6 +87,10 @@ class Product
         $escape_char = '\\';
         $marker = "\0\0-tmp-\0\0";
 
+        if (empty($delimiter)) {
+            throw new \ValueError('delimiter cannot be empty');
+        }
+
         $str = str_replace($escape_char.$delimiter, $marker, $str);
 
         $parts = explode($delimiter, $str);
