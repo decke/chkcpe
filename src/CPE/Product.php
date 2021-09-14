@@ -80,7 +80,7 @@ class Product
     }
 
     /**
-     * @return array<string>
+     * @return array<int, string>
      */
     public static function splitEscaped(string $delimiter, string $str): array
     {
