@@ -25,5 +25,6 @@
     "security/courier-authlib": [ "debian:courier-authlib" ],
     "security/pidgin-encryption": [ "pidgin:pidgin" ],
     "sysutils/flock": [ "flock:flock" ],
+    "www/fancybox": [ "colorlib:fancybox", "fancybox_project:fancybox" ],
     "x11-wm/xfce4": [ "xfce:xfce" ]
 }
