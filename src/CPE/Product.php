@@ -35,6 +35,11 @@ class Product
 
     public function setDeprecatedBy(Product $product): bool
     {
+        // recursive deprecation exists in the CPE Dictionary but it's nonsense
+        if ($this->getVendor() == $product->getVendor() && $this->getProduct() == $product->getProduct()) {
+            return false;
+        }
+
         $this->deprecated_by = $product;
         return true;
     }
