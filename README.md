@@ -17,10 +17,10 @@ this is a chance for you to help!
 
 | Status                                                          | # Ports        | Links                                                    |
 | ----------------------------------------------------------------| -------------: | -------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)        | 1588       | [list](https://github.com/decke/chkcpe/wiki/valid)       |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)        | 1591       | [list](https://github.com/decke/chkcpe/wiki/valid)       |
 | ![invalid](https://img.shields.io/badge/invalid-red)            | 2     | [list](https://github.com/decke/chkcpe/wiki/invalid)     |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)      | 64  | [list](https://github.com/decke/chkcpe/wiki/deprecated)  |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange) | 2215 | [list](https://github.com/decke/chkcpe/wiki/checkneeded) [important](https://github.com/decke/chkcpe/wiki/important) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)           | 25844     | |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange) | 2227 | [list](https://github.com/decke/chkcpe/wiki/checkneeded) [important](https://github.com/decke/chkcpe/wiki/important) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)           | 25851     | |
 
-Last updated: Tue Sep 14 08:35:40 UTC 2021
+Last updated: Tue Sep 14 09:24:59 UTC 2021
