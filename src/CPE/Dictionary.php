@@ -20,7 +20,7 @@ class Dictionary
      */
     public function findProductsByProductname(string $product): array
     {
-        $product = Product::escape(strtolower($product));
+        $product = strtolower($product);
 
         $stmt = $this->handle->prepare('SELECT vendor, product FROM products WHERE product = ? AND deprecatedby = ? GROUP BY vendor');
         if (!$stmt->execute([$product, ''])) {
@@ -43,13 +43,13 @@ class Dictionary
     public function findProduct(string $vendor, string $product): ?Product
     {
         $wfn = new WellFormedName();
-        $wfn->set('vendor', $vendor);
-        $wfn->set('product', $product);
+        $wfn->set('vendor', strtolower($vendor));
+        $wfn->set('product', strtolower($product));
 
         $product = new Product($wfn);
 
         $stmt = $this->handle->prepare('SELECT vendor, product, deprecatedby FROM products WHERE vendor = ? AND product = ? GROUP BY vendor, product');
-        if (!$stmt->execute([$product->getEscapedVendor(), $product->getEscapedProduct()])) {
+        if (!$stmt->execute([$product->getVendor(), $product->getProduct()])) {
             throw new \Exception('DB Error');
         }
 
@@ -74,8 +74,8 @@ class Dictionary
         }
 
         try {
-            $vendor = $prd->getEscapedVendor();
-            $product = $prd->getEscapedProduct();
+            $vendor = $prd->getVendor();
+            $product = $prd->getProduct();
         } catch (\TypeError) {
             return false;
         }
