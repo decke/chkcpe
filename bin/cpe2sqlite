@@ -50,6 +50,10 @@ foreach ($xml->{'cpe-item'} as $cpe)
 
       $product = new Product($cpe_fs);
 
+      if($product->getPart() != 'a'){
+         continue;
+      }
+
       if($cpe_deprecated == 'true'){
          $cpe_deprecated_by = (string)$cpe->children('cpe-23', TRUE)->{'cpe23-item'}->{'deprecation'}->{'deprecated-by'}->attributes(null)->name;
 
@@ -57,13 +61,13 @@ foreach ($xml->{'cpe-item'} as $cpe)
       }
 
       if(!$dictionary->addProduct($product)) {
-         Logger::error('Could not add Product '.$cpe_fs);
+         Logger::warning('Could not add Product '.$cpe_fs);
          continue;
       }
    }
    catch(\Exception $e)
    {
-      Logger::error($e->getMessage());
+      Logger::warning($e->getMessage());
    }
 
    if (++$cnt % 10000 == 0) {
