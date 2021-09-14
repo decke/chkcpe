@@ -59,7 +59,7 @@ class Runner
         $cnt = 0;
         $portsdir = Config::getPortsDir();
 
-        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VCPE_VERSION -VMAINTAINER -VCPE_STR :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VCPE_VERSION -VMAINTAINER -VCPE_URI :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
             $line = fread($fp, 4096);
