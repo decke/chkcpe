@@ -25,7 +25,9 @@ jobs:
           path: ports
 
       - name: Patch portstree
-        run: cp share/Uses/*.mk ports/Mk/Uses/
+        run: |
+          cp share/*.mk ports/Mk/
+          cp share/Uses/*.mk ports/Mk/Uses/
 
       - name: Fetch NVD CPE Dictionary
         run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/official-cpe-dictionary_v2.3.xml
@@ -39,7 +41,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install bmake parallel
+          sudo apt-get install athena-jot bmake parallel
 
       - name: Install Composer dependencies
         run: |
