@@ -51,6 +51,7 @@ jobs:
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
           DATADIR: /home/runner/work/chkcpe/chkcpe/data
           LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
+          CHKCPEDB: sqlite:logs/chkcpe.db
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
