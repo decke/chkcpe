@@ -28,7 +28,7 @@ jobs:
         run: cp share/Uses/*.mk ports/Mk/Uses/
 
       - name: Fetch NVD CPE Dictionary
-        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/cpe.xml
+        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/official-cpe-dictionary_v2.3.xml
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -36,37 +36,14 @@ jobs:
           php-version: '8.0'
           tools: composer
 
-      - name: Install bmake
+      - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install bmake
-
-      - name: Install parallel
-        run: |
-          sudo apt-get install parallel
+          sudo apt-get install bmake parallel
 
       - name: Install Composer dependencies
         run: |
           composer install
-
-      - name: Prepare directories
-        run: mkdir logs
-
-      - name: Cache CPE DB
-        id: cpedb
-        uses: actions/cache@v2
-        with:
-          path: logs/cpe.sqlite
-          key: ${{ runner.os }}-cpedb-${{ hashFiles('**/data/cpe.xml') }}
-
-      - name: Build sqlite CPE DB from XML
-        env:
-          CPEDB: sqlite:logs/cpe.sqlite
-        if: steps.cpe-db.output.cache-hit != 'true'
-        run: |
-          rm -f logs/cpe.sqlite
-          sqlite3 logs/cpe.sqlite < data/schema.sql
-          ./bin/cpe2sqlite data/cpe.xml
 
       - name: Run chkcpe
         env:
@@ -74,7 +51,6 @@ jobs:
           PORTSDIR: /home/runner/work/chkcpe/chkcpe/ports
           DATADIR: /home/runner/work/chkcpe/chkcpe/data
           LOGSDIR: /home/runner/work/chkcpe/chkcpe/logs
-          CPEDB: sqlite:logs/cpe.sqlite
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
@@ -84,6 +60,8 @@ jobs:
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
         run: |
+          mkdir logs
+          sqlite3 logs/chkcpe.db < data/schema.sql
           ./bin/chkcpe
 
       - name: Upload logfiles

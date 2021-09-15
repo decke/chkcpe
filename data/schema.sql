@@ -1,7 +1,7 @@
---- CPE 2.3 DB
+--- chkcpe DB
 --- 
 --- create the initial database:
----  sqlite3 cpe23.db
+---  sqlite3 chkcpe.db
 ---  > .read schema.sql
 ---  > .q
 
@@ -26,5 +26,18 @@ CREATE TABLE cpes (
 );
 
 CREATE INDEX cpes_idx1 ON cpes (productid);
+
+CREATE TABLE ports (
+  origin VARCHAR(255) PRIMARY KEY NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  portdir VARCHAR(50) NOT NULL,
+  portname VARCHAR(255),
+  version VARCHAR(50),
+  maintainer VARCHAR(255),
+  cpeuri VARCHAR(255),
+  status VARCHAR(25)
+);
+
+CREATE INDEX ports_idx1 ON ports (status);
 
 COMMIT;

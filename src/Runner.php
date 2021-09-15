@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace CheckCpe;
 
 use CheckCpe\CPE\Dictionary;
+use CheckCpe\CPE\Product;
 use CheckCpe\CPE\Status;
 use CheckCpe\Generators\MarkdownGenerator;
 use CheckCpe\Generators\WeightedMarkdownGenerator;
@@ -12,17 +13,94 @@ use CheckCpe\Util\Logger;
 
 class Runner
 {
-    /**
-     * @var array<string,Port>
-     */
-    protected array $allports = [];
+    protected \PDO $handle;
 
-    public function run(): bool
+    public function __construct()
     {
+        $this->handle = Config::getDbHandle();
+    }
+
+    public function loadCPEData(): bool
+    {
+        $xml = simplexml_load_file(Config::getCPEDictionary());
+
+        if ($xml === false) {
+            throw new \Exception('Loading CPE Dictionary failed');
+        }
+
+        $this->handle->exec('DELETE FROM cpes');
+        $this->handle->exec('DELETE FROM products');
+        $this->handle->exec('VACUUM;');
+        $this->handle->beginTransaction();
+
+        $dictionary = new Dictionary($this->handle);
+
+        $cnt = 0;
+
+        foreach ($xml->{'cpe-item'} as $cpe) {
+            /*
+              <cpe-item name="cpe:/a:xiph:libvorbis:1.3.6" deprecated="true" deprecation_date="2019-10-17T15:10:18.580Z">
+                <title xml:lang="en-US">Xiph Libvorbis 1.3.6</title>
+                <references>
+                  <reference href="https://xiph.org/downloads/">Product</reference>
+                </references>
+                <cpe-23:cpe23-item name="cpe:2.3:a:xiph:libvorbis:1.3.6:*:*:*:*:*:*:*">
+                  <cpe-23:deprecation date="2019-10-17T11:10:18.580-04:00">
+                    <cpe-23:deprecated-by name="cpe:2.3:a:xiph.org:libvorbis:1.3.6:*:*:*:*:*:*:*" type="NAME_CORRECTION"/>
+                  </cpe-23:deprecation>
+                </cpe-23:cpe23-item>
+              </cpe-item>
+            */
+
+            $cpe_title = $cpe->title;
+            $cpe_deprecated = $cpe->attributes(null)->deprecated;
+            $cpe_fs = (string)$cpe->children('cpe-23', true)->{'cpe23-item'}->attributes(null)->name;
+
+            try {
+                $product = new Product($cpe_fs);
+
+                if ($product->getPart() != 'a') {
+                    continue;
+                }
+
+                if ($cpe_deprecated == 'true') {
+                    $cpe_deprecated_by = (string)$cpe->children('cpe-23', true)->{'cpe23-item'}->{'deprecation'}->
+                        {'deprecated-by'}->attributes(null)->name;
+
+                    $product->setDeprecatedBy(new Product($cpe_deprecated_by));
+                }
+
+                if (!$dictionary->addProduct($product)) {
+                    Logger::warning('Could not add Product '.$cpe_fs);
+                    continue;
+                }
+            } catch (\Exception $e) {
+                Logger::warning('Could not process CPE entry: '.$cpe_fs.' because '.$e->getMessage());
+            }
+
+            if (++$cnt % 10000 == 0) {
+                Logger::info('Added '.$cnt.' CPE entries');
+                $this->handle->commit();
+                $this->handle->beginTransaction();
+            }
+        }
+
+        $this->handle->commit();
+
+        return true;
+    }
+
+    public function findPorts(): bool
+    {
+        $this->handle->exec('DELETE FROM ports');
+        $this->handle->exec('VACUUM;');
+        $this->handle->beginTransaction();
+
+        $stmt = $this->handle->prepare('INSERT INTO ports (origin, category, portdir, status) VALUES (?, ?, ?, ?)');
+
         Logger::info('Finding ports ...');
 
         $cnt = 0;
-        $origins = '';
         $categories = new \FilesystemIterator(Config::getPortsDir());
 
         foreach ($categories as $category) {
@@ -41,12 +119,33 @@ class Runner
                     continue;
                 }
 
-                $origins .= $category->getFilename().'/'.$portname->getFilename()."\n";
+                $origin = $category->getFilename().'/'.$portname->getFilename();
+
+                if (!$stmt->execute([$origin, $category->getFilename(), $portname->getFilename(), Status::NEW])) {
+                    throw new \Exception('DB Error');
+                }
+
                 $cnt++;
             }
         }
 
+        $this->handle->commit();
+
         Logger::info('Found '.$cnt.' ports');
+
+        return true;
+    }
+
+    public function scanPorts(): bool
+    {
+        $this->handle->beginTransaction();
+        $stmt = $this->handle->prepare('UPDATE ports SET portname = ?, version = ?, maintainer = ?, cpeuri = ?, status = ? WHERE origin = ?');
+
+        // write list of origins to tmpfile
+        $origins = '';
+        foreach ($this->loadPorts(Status::NEW) as $origin => $port) {
+            $origins .= $origin."\n";
+        }
 
         $tmpfile = tempnam('/tmp', 'chkcpe');
         if ($tmpfile === false) {
@@ -59,7 +158,7 @@ class Runner
         $cnt = 0;
         $portsdir = Config::getPortsDir();
 
-        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VCPE_VERSION -VMAINTAINER -VCPE_URI :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VCPE_URI :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
             $line = fread($fp, 4096);
@@ -70,14 +169,16 @@ class Runner
 
             $parts = explode("\n", $line);
             if (count($parts) != 6) {
-                Logger::info('Skipping invalid output');
+                Logger::info('Skipping invalid output for directory '.$parts[0].' ('.count($parts).' lines, expected 6)');
                 continue;
             }
 
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
             try {
-                $this->allports[$parts[0]] = new Port($parts[0], $parts[1], $parts[2], $parts[3], $parts[4]);
+                if (!$stmt->execute([$parts[1], $parts[2], $parts[3], $parts[4], Status::SCANNED, $parts[0]])) {
+                    throw new \Exception('DB Error');
+                }
             } catch (\Exception $e) {
                 Logger::warning($e->getMessage());
             }
@@ -87,9 +188,17 @@ class Runner
             }
         }
 
-        ksort($this->allports);
+        $this->handle->commit();
 
-        Logger::info('Scanned '.count($this->allports).' ports');
+        Logger::info('Scanned '.$cnt.' ports');
+
+        return true;
+    }
+
+    public function comparePortsWithDictionary(): bool
+    {
+        $this->handle->beginTransaction();
+        $stmt = $this->handle->prepare('UPDATE ports SET status = ? WHERE origin = ?');
 
         Logger::info('Comparing with CPE Dictionary ...');
 
@@ -97,7 +206,7 @@ class Runner
         $addmatch = Config::getAddMatchData();
         $falsematch = Config::getFalseMatchData();
 
-        foreach ($this->allports as $port) {
+        foreach ($this->loadPorts(Status::SCANNED) as $port) {
             if ($port->getCPEStr() != '') {
                 $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
                 if ($product != null) {
@@ -130,8 +239,19 @@ class Runner
                     $port->setCPEStatus(Status::CHECKNEEDED);
                 }
             }
+
+            if (!$stmt->execute([$port->getCPEStatus(), $port->getOrigin()])) {
+                throw new \Exception('DB Error');
+            }
+
+            // TODO: candidates in DB speichern
         }
 
+        return true;
+    }
+
+    public function generateReports(): bool
+    {
         Logger::info('Generating Markdown Reports ...');
 
         $generators = [];
@@ -143,7 +263,7 @@ class Runner
 
         $generators['important'] = new WeightedMarkdownGenerator('Important Ports', Config::getPriorityData());
 
-        foreach ($this->allports as $port) {
+        foreach ($this->loadPorts() as $port) {
             // Status
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
@@ -177,5 +297,55 @@ class Runner
         }
 
         return true;
+    }
+
+    public function run(): bool
+    {
+        if (!$this->loadCPEData()) {
+            Logger::error('Loading CPE Dictionary failed');
+            return false;
+        }
+
+        if (!$this->findPorts()) {
+            Logger::error('Finding ports failed');
+            return false;
+        }
+
+        if (!$this->scanPorts()) {
+            Logger::error('Scanning ports failed');
+            return false;
+        }
+
+        if (!$this->comparePortsWithDictionary()) {
+            Logger::error('Comparing ports with CPE Dictionary failed');
+            return false;
+        }
+
+        if (!$this->generateReports()) {
+            Logger::error('Generating Reports failed');
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return array<string,Port>
+     */
+    protected function loadPorts(string $status = '', string $category = ''): array
+    {
+        $stmt = $this->handle->prepare('SELECT origin, portname, version, maintainer, cpeuri, status FROM ports WHERE (status = ? OR ? = \'\') AND (category = ? OR ? = \'\') ORDER BY origin');
+
+        if (!$stmt->execute([$status, $status, $category, $category])) {
+            throw new \Exception('DB Error');
+        }
+
+        $ports = [];
+
+        while ($row = $stmt->fetchObject()) {
+            $ports[(string)$row->origin] = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+        }
+
+        return $ports;
     }
 }

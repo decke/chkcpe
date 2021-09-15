@@ -6,6 +6,8 @@ namespace CheckCpe\CPE;
 
 class Status
 {
+    public const NEW = 'new';
+    public const SCANNED = 'scanned';
     public const VALID = 'valid';
     public const DEPRECATED = 'deprecated';
     public const INVALID = 'invalid';

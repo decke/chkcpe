@@ -16,20 +16,21 @@ class Port
     protected string $cpe_str;
 
     protected ?Product $cpe;
-    protected string $cpe_status = Status::UNKNOWN;
+    protected string $cpe_status;
 
     /**
      * @var array<Product>
      */
     protected array $cpe_candidates = [];
 
-    public function __construct(string $origin, string $portname, string $version, string $maintainer, string $cpe_str)
+    public function __construct(string $origin, string $portname, string $version, string $maintainer, string $cpe_str, string $cpe_status = Status::UNKNOWN)
     {
         $this->origin = $origin;
         $this->portname = $portname;
         $this->version = $version;
         $this->maintainer = $maintainer;
         $this->cpe_str = $cpe_str;
+        $this->cpe_status = $cpe_status;
 
         if ($cpe_str != '') {
             $this->cpe = new Product($cpe_str);

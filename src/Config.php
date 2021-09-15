@@ -13,7 +13,8 @@ class Config
     protected static string $logsdir = 'logs';
     protected static string $datadir = 'data';
     protected static string $makebin = '/usr/bin/make';
-    protected static string $datasource = 'sqlite:data/cpe.sqlite';
+    protected static string $datasource = 'sqlite:data/chkcpe.db';
+    protected static string $cpedictionary = 'data/official-cpe-dictionary_v2.3.xml';
     protected static ?\PDO $handle = null;
 
     public static function getPortsDir(): string
@@ -63,12 +64,22 @@ class Config
 
     public static function getDataSource(): string
     {
-        $ds = getenv('CPEDB');
+        $ds = getenv('CHKCPEDB');
         if ($ds !== false) {
             self::$datasource = $ds;
         }
 
         return self::$datasource;
+    }
+
+    public static function getCPEDictionary(): string
+    {
+        $cpedictionary = getenv('CPEDICTIONARY');
+        if ($cpedictionary !== false) {
+            self::$cpedictionary = $cpedictionary;
+        }
+
+        return self::$cpedictionary;
     }
 
     public static function getDbHandle(): \PDO
