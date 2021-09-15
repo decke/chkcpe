@@ -46,23 +46,23 @@ class Dictionary
         $wfn->set('vendor', strtolower($vendor));
         $wfn->set('product', strtolower($product));
 
-        $product = new Product($wfn);
+        $prd = new Product($wfn);
 
-        $stmt = $this->handle->prepare('SELECT vendor, product, deprecatedby FROM products WHERE vendor = ? AND product = ? GROUP BY vendor, product');
-        if (!$stmt->execute([$product->getVendor(), $product->getProduct()])) {
+        $stmt = $this->handle->prepare('SELECT vendor, product, deprecatedby FROM products WHERE vendor = ? AND product = ?');
+        if (!$stmt->execute([$prd->getVendor(), $prd->getProduct()])) {
             throw new \Exception('DB Error');
         }
 
-        $row = $stmt->fetch(\PDO::FETCH_OBJ);
+        $row = $stmt->fetch(\PDO::FETCH_NUM);
         if ($row === false) {
             return null;
         }
 
-        if (strlen($row->deprecatedby) > 0) {
-            $product->setDeprecatedBy(new Product($row->deprecatedby));
+        if (strlen($row[2]) > 0) {
+            $prd->setDeprecatedBy(new Product((string)$row[2]));
         }
 
-        return $product;
+        return $prd;
     }
 
     public function addProduct(Product $prd): bool
