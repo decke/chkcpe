@@ -20,9 +20,9 @@ this is a chance for you to help!
 | ![valid](https://img.shields.io/badge/valid-brightgreen)            | 1540         | [list](https://github.com/decke/chkcpe/wiki/valid)         |
 | ![invalid](https://img.shields.io/badge/invalid-red)                | 107       | [list](https://github.com/decke/chkcpe/wiki/invalid)       |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | 0    | [list](https://github.com/decke/chkcpe/wiki/deprecated)    |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 2019   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 2021   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | 0 | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26052       | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26062       | |
 | ![inconsistent](https://img.shields.io/badge/inconsistent-grey)     | 0  | [list](https://github.com/decke/chkcpe/wiki/inconsistent)  |
 
-Last updated: Wed Sep 15 18:52:58 UTC 2021
+Last updated: Wed Sep 15 19:11:22 UTC 2021
