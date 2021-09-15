@@ -9,7 +9,6 @@ class Status
     // temporary
     public const NEW = 'new';
     public const SCANNED = 'scanned';
-    public const INCONSISTENT = 'inconsistent';
 
     public const VALID = 'valid';
     public const INVALID = 'invalid';

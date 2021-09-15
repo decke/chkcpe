@@ -23,6 +23,5 @@ this is a chance for you to help!
 | ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | ${CHECKNEEDED}   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | ${READYTOCOMMIT} | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
 | ![unknown](https://img.shields.io/badge/unknown-grey)               | ${UNKNOWN}       | |
-| ![inconsistent](https://img.shields.io/badge/inconsistent-grey)     | ${INCONSISTENT}  | [list](https://github.com/decke/chkcpe/wiki/inconsistent)  |
 
 Last updated: ${LASTMOD}

@@ -260,14 +260,10 @@ class Runner
         $generators[Status::CHECKNEEDED] = new WeightedMarkdownGenerator('Check needed', Config::getPriorityData());
         $generators[Status::READYTOCOMMIT] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
-        $generators[Status::INCONSISTENT] = new MarkdownGenerator();
 
         foreach ($this->loadPorts() as $port) {
-            // Status
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
-            } else {
-                $generators[Status::INCONSISTENT]->addPort($port);
             }
         }
 
