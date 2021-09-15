@@ -35,7 +35,7 @@ class Logger
 
     protected static function log(string $level, string $msg): void
     {
-        printf("[%s][%s] %s\n", self::getRuntime(), $level, $msg);
+        printf("%s [%s] %s\n", $level, self::getRuntime(), $msg);
     }
 
     protected static function getRuntime(): string
@@ -46,20 +46,6 @@ class Logger
 
         $time = ((microtime(true) - self::$startTime) * 1000);
 
-        if ($time > 60000) {
-            $mins = floor($time / 60000);
-            $secs = round((($time % 60000) / 1000), 2);
-            $time = $mins.' mins';
-
-            if ($secs !== 0) {
-                $time .= ', '.$secs.' secs';
-            }
-        } elseif ($time > 1000) {
-            $time = round(($time / 1000), 2).' secs';
-        } else {
-            $time = round($time).' ms';
-        }
-
-        return $time;
+        return sprintf('%02d:%05.02f', floor($time/60000), ($time % 60000)/1000);
     }
 }
