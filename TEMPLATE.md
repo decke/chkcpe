@@ -15,12 +15,14 @@ this is a chance for you to help!
 
 ## Are we there yet?
 
-| Status                                                          | # Ports        | Links                                                    |
-| ----------------------------------------------------------------| -------------: | -------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)        | ${VALID}       | [list](https://github.com/decke/chkcpe/wiki/valid)       |
-| ![invalid](https://img.shields.io/badge/invalid-red)            | ${INVALID}     | [list](https://github.com/decke/chkcpe/wiki/invalid)     |
-| ![deprecated](https://img.shields.io/badge/deprecated-red)      | ${DEPRECATED}  | [list](https://github.com/decke/chkcpe/wiki/deprecated)  |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange) | ${CHECKNEEDED} | [list](https://github.com/decke/chkcpe/wiki/checkneeded) [important](https://github.com/decke/chkcpe/wiki/important) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)           | ${UNKNOWN}     | |
+| Status                                                              | # Ports          | Links                                                      |
+| --------------------------------------------------------------------| ---------------: | ---------------------------------------------------------- |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)            | ${VALID}         | [list](https://github.com/decke/chkcpe/wiki/valid)         |
+| ![invalid](https://img.shields.io/badge/invalid-red)                | ${INVALID}       | [list](https://github.com/decke/chkcpe/wiki/invalid)       |
+| ![deprecated](https://img.shields.io/badge/deprecated-red)          | ${DEPRECATED}    | [list](https://github.com/decke/chkcpe/wiki/deprecated)    |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | ${CHECKNEEDED}   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
+| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | ${READYTOCOMMIT} | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | ${UNKNOWN}       | |
+| ![inconsistent](https://img.shields.io/badge/inconsistent-grey)     | ${INCONSISTENT}  | [list](https://github.com/decke/chkcpe/wiki/inconsistent)  |
 
 Last updated: ${LASTMOD}

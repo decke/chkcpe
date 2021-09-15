@@ -14,9 +14,10 @@ class MarkdownGenerator extends Generator
      */
     protected array $colors = [
         Status::VALID => 'brightgreen',
-        Status::DEPRECATED => 'red',
         Status::INVALID => 'red',
+        Status::DEPRECATED => 'red',
         Status::CHECKNEEDED => 'orange',
+        Status::READYTOCOMMIT => 'orange',
         Status::UNKNOWN => 'grey'
     ];
 
@@ -65,6 +66,9 @@ class MarkdownGenerator extends Generator
              case Status::VALID:
                  return 'found CPE';
 
+             case Status::INVALID:
+                 return sprintf('Vendor %s Product %s not found in DB', $port->getCPEVendor(), $port->getCPEProduct());
+
              case Status::DEPRECATED:
                  $cpe = $port->getCPE();
                  if ($cpe === null) {
@@ -78,16 +82,9 @@ class MarkdownGenerator extends Generator
 
                  return sprintf('Deprecated by Vendor %s Product %s', $deprecatedby->getVendor(), $deprecatedby->getProduct());
 
-             case Status::INVALID:
-                 return sprintf('Vendor %s Product %s not found in DB', $port->getCPEVendor(), $port->getCPEProduct());
-
              case Status::CHECKNEEDED:
-                 $msg = '';
-                 foreach ($port->getCPECandidates() as $prod) {
-                     $msg .= $prod.' ';
-                 }
-
-                 return substr($msg, 0, -1);
+             case Status::READYTOCOMMIT:
+                 return join(' ', $port->getCPECandidates());
 
              default:
                  return '';

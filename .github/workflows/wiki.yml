@@ -21,9 +21,11 @@ jobs:
         run: |
           echo "VALID=$(cat wiki/env | grep ^VALID | cut -d= -f2)" >> $GITHUB_ENV
           echo "INVALID=$(cat wiki/env | grep INVALID | cut -d= -f2)" >> $GITHUB_ENV
-          echo "DEPRECATED=$(cat wiki/env | grep ^DEPRECATED | cut -d= -f2)" >> $GITHUB_ENV
+          echo "DEPRECATED=$(cat wiki/env | grep DEPRECATED | cut -d= -f2)" >> $GITHUB_ENV
           echo "CHECKNEEDED=$(cat wiki/env | grep CHECKNEEDED | cut -d= -f2)" >> $GITHUB_ENV
+          echo "READYTOCOMMIT=$(cat wiki/env | grep READYTOCOMMIT | cut -d= -f2)" >> $GITHUB_ENV
           echo "UNKNOWN=$(cat wiki/env | grep UNKNOWN | cut -d= -f2)" >> $GITHUB_ENV
+          echo "INCONSISTENT=$(cat wiki/env | grep INCONSISTENT | cut -d= -f2)" >> $GITHUB_ENV
           echo "LASTMOD=$(date)" >> $GITHUB_ENV
 
       - name: Render README.md
@@ -33,7 +35,9 @@ jobs:
           INVALID: ${{ env.INVALID }}
           DEPRECATED: ${{ env.DEPRECATED }}
           CHECKNEEDED: ${{ env.CHECKNEEDED }}
+          READYTOCOMMIT: ${{ env.READYTOCOMMIT }}
           UNKNOWN: ${{ env.UNKNOWN }}
+          INCONSISTENT: ${{ env.INCONSISTENT }}
           LASTMOD: ${{ env.LASTMOD }}
         with:
           filename: TEMPLATE.md

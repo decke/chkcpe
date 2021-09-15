@@ -204,6 +204,8 @@ class Runner
         $falsematch = Config::getFalseMatchData();
 
         foreach ($this->loadPorts(Status::SCANNED) as $port) {
+            $port->setCPEStatus(Status::UNKNOWN);
+
             if ($port->getCPEStr() != '') {
                 $product = $dictionary->findProduct($port->getCPEVendor(), $port->getCPEProduct());
                 if ($product != null) {
@@ -253,25 +255,19 @@ class Runner
 
         $generators = [];
         $generators[Status::VALID] = new MarkdownGenerator();
-        $generators[Status::DEPRECATED] = new MarkdownGenerator();
         $generators[Status::INVALID] = new MarkdownGenerator();
-        $generators[Status::CHECKNEEDED] = new MarkdownGenerator();
+        $generators[Status::DEPRECATED] = new MarkdownGenerator();
+        $generators[Status::CHECKNEEDED] = new WeightedMarkdownGenerator('Check needed', Config::getPriorityData());
+        $generators[Status::READYTOCOMMIT] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
-
-        $generators['important'] = new WeightedMarkdownGenerator('Important Ports', Config::getPriorityData());
+        $generators[Status::INCONSISTENT] = new MarkdownGenerator();
 
         foreach ($this->loadPorts() as $port) {
             // Status
             if (isset($generators[$port->getCPEStatus()])) {
                 $generators[$port->getCPEStatus()]->addPort($port);
-            }
-
-            // Important
-            switch ($port->getCPEStatus()) {
-                case Status::DEPRECATED:
-                case Status::INVALID:
-                case Status::CHECKNEEDED:
-                   $generators['important']->addPort($port);
+            } else {
+                $generators[Status::INCONSISTENT]->addPort($port);
             }
         }
 
