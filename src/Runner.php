@@ -142,10 +142,7 @@ class Runner
         $stmt = $this->handle->prepare('UPDATE ports SET portname = ?, version = ?, maintainer = ?, cpeuri = ?, status = ? WHERE origin = ?');
 
         // write list of origins to tmpfile
-        $origins = '';
-        foreach ($this->listPorts(Status::NEW) as $origin => $port) {
-            $origins .= $origin."\n";
-        }
+        $origins = join("\n", $this->listPorts(Status::NEW));
 
         $tmpfile = tempnam('/tmp', 'chkcpe');
         if ($tmpfile === false) {
