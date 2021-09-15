@@ -143,7 +143,7 @@ class Runner
 
         // write list of origins to tmpfile
         $origins = '';
-        foreach ($this->loadPorts(Status::NEW) as $origin => $port) {
+        foreach ($this->listPorts(Status::NEW) as $origin => $port) {
             $origins .= $origin."\n";
         }
 
@@ -344,6 +344,26 @@ class Runner
 
         while ($row = $stmt->fetchObject()) {
             $ports[(string)$row->origin] = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+        }
+
+        return $ports;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function listPorts(string $status = '', string $category = ''): array
+    {
+        $stmt = $this->handle->prepare('SELECT origin FROM ports WHERE (status = ? OR ? = \'\') AND (category = ? OR ? = \'\') ORDER BY origin');
+
+        if (!$stmt->execute([$status, $status, $category, $category])) {
+            throw new \Exception('DB Error');
+        }
+
+        $ports = [];
+
+        while ($row = $stmt->fetchObject()) {
+            $ports[] = (string)$row->origin;
         }
 
         return $ports;
