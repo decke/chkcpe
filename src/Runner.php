@@ -343,7 +343,7 @@ class Runner
             try {
                 $ports[(string)$row->origin] = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
             } catch (\Exception $e) {
-                Logger:warning('Ignoring port '.$row->origin.' because of '.$e->getMessage());
+                Logger::warning('Ignoring port '.$row->origin.' because of '.$e->getMessage());
             }
         }
 
