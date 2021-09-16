@@ -252,6 +252,8 @@ class Runner
             }
         }
 
+        $this->handle->commit();
+
         return true;
     }
 
