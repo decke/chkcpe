@@ -41,8 +41,13 @@ abstract class Generator
 
         $content = $this->getHeader();
 
+        $limit = 1000;
         foreach ($this->ports as $port) {
             $content .= $this->render($port);
+
+            if ($limit-- < 1) {
+                break;
+            }
         }
 
         $content .= $this->getFooter();
