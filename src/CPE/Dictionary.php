@@ -31,6 +31,7 @@ class Dictionary
 
         while ($row = $stmt->fetch(\PDO::FETCH_OBJ)) {
             $wfn = new WellFormedName();
+            $wfn->set('part', 'a');
             $wfn->set('vendor', $row->vendor);
             $wfn->set('product', $row->product);
 
@@ -43,6 +44,7 @@ class Dictionary
     public function findProduct(string $vendor, string $product): ?Product
     {
         $wfn = new WellFormedName();
+        $wfn->set('part', 'a');
         $wfn->set('vendor', strtolower($vendor));
         $wfn->set('product', strtolower($product));
 
