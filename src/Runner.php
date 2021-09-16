@@ -311,6 +311,12 @@ class Runner
             return false;
         }
 
+        // retry scanning for the ports that failed at first attempt
+        if (!$this->scanPorts()) {
+            Logger::error('Scanning ports failed');
+            return false;
+        }
+
         if (!$this->comparePortsWithDictionary()) {
             Logger::error('Comparing ports with CPE Dictionary failed');
             return false;
