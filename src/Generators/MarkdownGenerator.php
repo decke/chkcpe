@@ -84,7 +84,13 @@ class MarkdownGenerator extends Generator
 
              case Status::CHECKNEEDED:
              case Status::READYTOCOMMIT:
-                 return join(' ', $port->getCPECandidates());
+                 $msg = '';
+
+                 foreach ($port->getCPECandidates() as $product) {
+                     $msg .= $product.' ';
+                 }
+
+                 return rtrim($msg);
 
              default:
                  return '';
