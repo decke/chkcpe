@@ -70,8 +70,8 @@ jobs:
       - name: Upload logfiles
         uses: actions/upload-artifact@v2
         with:
-          name: cpe-logs
-          path: logs
+          name: chkcpe.db
+          path: logs/chkcpe.db
 
       - name: Check out repository wiki
         uses: actions/checkout@v2
