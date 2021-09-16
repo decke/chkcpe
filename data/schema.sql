@@ -40,4 +40,11 @@ CREATE TABLE ports (
 
 CREATE INDEX ports_idx1 ON ports (status);
 
+CREATE TABLE candidates (
+  origin VARCHAR(255) NOT NULL,
+  cpeuri VARCHAR(255)
+);
+
+CREATE INDEX candidates_idx1 ON candidates (origin);
+
 COMMIT;

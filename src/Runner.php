@@ -93,6 +93,7 @@ class Runner
     public function findPorts(): bool
     {
         $this->handle->exec('DELETE FROM ports');
+        $this->handle->exec('DELETE FROM candidates');
         $this->handle->exec('VACUUM;');
         $this->handle->beginTransaction();
 
@@ -196,6 +197,7 @@ class Runner
     {
         $this->handle->beginTransaction();
         $stmt = $this->handle->prepare('UPDATE ports SET status = ? WHERE origin = ?');
+        $stmt_cnd = $this->handle->prepare('INSERT INTO candidates VALUES (?, ?)');
 
         Logger::info('Comparing with CPE Dictionary ...');
 
@@ -243,7 +245,11 @@ class Runner
                 throw new \Exception('DB Error');
             }
 
-            // TODO: candidates in DB speichern
+            foreach ($port->getCPECandidates() as $candidate) {
+                if (!$stmt_cnd->execute([$port->getOrigin(), (string)$candidate])) {
+                    throw new \Exception('DB Error');
+                }
+            }
         }
 
         return true;
@@ -333,7 +339,18 @@ class Runner
 
         while ($row = $stmt->fetchObject()) {
             try {
-                $ports[(string)$row->origin] = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+                $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+
+                $stmt_cnd = $this->handle->prepare('SELECT cpeuri FROM candidates WHERE origin = ?');
+                if (!$stmt_cnd->execute([$port->getOrigin()])) {
+                    throw new \Exception('DB Error');
+                }
+
+                while ($candidate = $stmt_cnd->fetchObject()) {
+                    $port->addCPECandidate(new Product($candidate->cpeuri));
+                }
+
+                $ports[$port->getOrigin()] = $port;
             } catch (\TypeError $e) {
                 ;
             } catch (\Exception $e) {
