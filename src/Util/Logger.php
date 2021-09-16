@@ -35,7 +35,7 @@ class Logger
 
     protected static function log(string $level, string $msg): void
     {
-        printf("%s [%s] %s\n", $level, self::getRuntime(), $msg);
+        printf("[%s] [%s] %s\n", self::getRuntime(), ucfirst($level), $msg);
     }
 
     protected static function getRuntime(): string
