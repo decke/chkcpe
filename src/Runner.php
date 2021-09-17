@@ -325,7 +325,7 @@ class Runner
     /**
      * @return array<string,Port>
      */
-    protected function loadPorts(string $status = '', string $category = ''): array
+    public function loadPorts(string $status = '', string $category = ''): array
     {
         $ports = [];
 
@@ -341,7 +341,7 @@ class Runner
             } catch (\TypeError) {
                 ;
             } catch (\Exception $e) {
-                Logger::warning('Ignoring port '.$row->origin.' because of '.$e->getMessage());
+                Logger::warning('Ignoring port '.$origin.' because of '.$e->getMessage());
             }
         }
 
@@ -351,7 +351,7 @@ class Runner
     /**
      * @return array<string>
      */
-    protected function listPorts(string $status = '', string $category = ''): array
+    public function listPorts(string $status = '', string $category = ''): array
     {
         $stmt = $this->handle->prepare('SELECT origin FROM ports WHERE (status = ? OR ? = \'\') AND (category = ? OR ? = \'\') ORDER BY origin');
 

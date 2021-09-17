@@ -43,6 +43,16 @@ $app->get('/', function ($request, $response) {
     return $view->render($response, 'index.html');
 });
 
+$app->get('/list/{status}', function ($request, $response, $args) {
+    $runner = new Runner();
+
+    $view = Twig::fromRequest($request);
+    return $view->render($response, 'list.html', [
+        'status' => $args['status'],
+        'ports' => $runner->loadPorts($args['status'])
+    ]);
+});
+
 $app->run();
 
 exit(0);
