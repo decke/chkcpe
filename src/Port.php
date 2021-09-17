@@ -120,6 +120,11 @@ class Port
         return true;
     }
 
+    public function getColor(): string
+    {
+        return Status::getColor($this->cpe_status);
+    }
+
     public function addCPECandidate(Product $candidate): bool
     {
         $this->cpe_candidates[] = $candidate;

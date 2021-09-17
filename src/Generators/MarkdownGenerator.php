@@ -9,18 +9,6 @@ use CheckCpe\CPE\Status;
 
 class MarkdownGenerator extends Generator
 {
-    /**
-     * @var array<string,string>
-     */
-    protected array $colors = [
-        Status::VALID => 'brightgreen',
-        Status::INVALID => 'red',
-        Status::DEPRECATED => 'red',
-        Status::CHECKNEEDED => 'orange',
-        Status::READYTOCOMMIT => 'orange',
-        Status::UNKNOWN => 'grey'
-    ];
-
     protected function getHeader(): string
     {
         $header = '';
@@ -46,18 +34,9 @@ class MarkdownGenerator extends Generator
             $port->getMaintainer(),
             $port->getCPEStatus(),
             $port->getCPEStatus(),
-            $this->genColor($port),
+            $port->getColor(),
             $this->genMessage($port)
         );
-    }
-
-    protected function genColor(Port $port): string
-    {
-        if (isset($this->colors[$port->getCPEStatus()])) {
-            return $this->colors[$port->getCPEStatus()];
-        }
-
-        return 'black';
     }
 
     protected function genMessage(Port $port): string

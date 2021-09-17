@@ -3,7 +3,7 @@
 <div class="container">
 
   <h1 class="title is-2">{{ status }}</h1>
-  <h2 class="title is-3">{{ ports|length }} ports</h2>
+  <h2 class="title is-4">{{ ports|length }} ports</h2>
 
   <table class="table is-striped is-bordered is-hoverable is-fullwidth">
     <thead>
@@ -24,18 +24,18 @@
             <a href="mailto:{{ port.maintainer }}">{{ port.maintainer }}</a>
           </td>
           <td>
-            <img src="https://img.shields.io/badge/{{ port.cpestatus }}-black"></img>
+            <img src="https://img.shields.io/badge/{{ port.cpestatus }}-{{ port.color }}"></img>
           </td>
           <td>
             {% if port.cpestatus == "valid" %}
-              found CPE {{ port.cpe }}
+              found CPE {{ port.cpe.vendor }}:{{ port.cpe.product }}
             {% elseif port.cpestatus == "invalid" %}
               Vendor {{ port.cpevendor }} Product {{ port.cpeproduct }} not found in DB
             {% elseif port.cpestatus == "deprecated" %}
               Deprecated by Vendor {{ port.cpe.deprecatedby.vendor }} Product {{ port.cpe.deprecatedby.product }}
             {% elseif port.cpestatus == "checkneeded" or port.cpestatus == "readytocommit" %}
               {% for candidate in port.cpecandidates %}
-                {{ candidate }}
+                {{ candidate.vendor }}:{{ candidate.product }}<br>
               {% endfor %}
             {% endif %}
           </td>

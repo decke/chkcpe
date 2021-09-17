@@ -106,8 +106,19 @@ class Product
 
     public function __toString(): string
     {
+        return $this->getFS();
+    }
+
+    public function getFS(): string
+    {
         $bind = new CPENameBinder();
         return $bind->bindToFS($this->cpe);
+    }
+
+    public function getURI(): string
+    {
+        $bind = new CPENameBinder();
+        return $bind->bindToURI($this->cpe);
     }
 
     public function compareTo(Product $product): int

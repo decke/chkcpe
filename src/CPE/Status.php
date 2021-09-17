@@ -16,4 +16,22 @@ class Status
     public const CHECKNEEDED = 'checkneeded';
     public const READYTOCOMMIT = 'readytocommit';
     public const UNKNOWN = 'unknown';
+
+    public static function getColor(string $status): string
+    {
+        $colors = [
+            self::VALID => 'brightgreen',
+            self::INVALID => 'red',
+            self::DEPRECATED => 'red',
+            self::CHECKNEEDED => 'orange',
+            self::READYTOCOMMIT => 'orange',
+            self::UNKNOWN => 'grey'
+        ];
+
+        if (isset($colors[$status])) {
+            return $colors[$status];
+        }
+
+        return 'black';
+    }
 }
