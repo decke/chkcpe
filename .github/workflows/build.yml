@@ -41,11 +41,10 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install athena-jot bmake parallel
+          sudo apt-get install athena-jot bmake sassc parallel
 
-      - name: Install Composer dependencies
-        run: |
-          composer install
+      - name: Build chkcpe
+        run: make
 
       - name: Run chkcpe
         env:

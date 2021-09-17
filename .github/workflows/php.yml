@@ -18,8 +18,13 @@ jobs:
         php-version: ${{ matrix.php-versions }}
         tools: php-cs-fixer, phpstan
 
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install sassc
+
     - name: Build
       run: make
 
-    - name: Test
+    - name: Run Tests
       run: make test
