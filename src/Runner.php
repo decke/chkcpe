@@ -340,6 +340,8 @@ class Runner
                 $ports[$origin] = $port;
             } catch (\TypeError) {
                 ;
+            } catch (\Exception $e) {
+                Logger::warning('Ignoring port '.$row->origin.' because of '.$e->getMessage());
             }
         }
 
