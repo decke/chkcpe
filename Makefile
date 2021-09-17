@@ -2,17 +2,21 @@ all: build
 
 clean:
 	rm -rf vendor
-
-build: vendor
+	make -C css clean
 
 vendor:
 	composer install
 
-test: vendor
-	php-cs-fixer list-files
-	phpstan analyse -l max bin src
+build: vendor
+	make -C css
 
-fix:
+test: vendor
+	phpstan analyse -l max index.php bin src
+
+lint:
 	php-cs-fixer fix
 
-.PHONY: all clean build test fix
+run-server:
+	php -S localhost:9000 index.php
+
+.PHONY: all clean build test lint run-server
