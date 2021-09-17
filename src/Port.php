@@ -133,4 +133,57 @@ class Port
     {
         return $this->cpe_candidates;
     }
+
+    public static function loadFromDB(string $origin): ?Port
+    {
+        $handle = Config::getDbHandle();
+
+        $stmt = $handle->prepare('SELECT origin, portname, version, maintainer, cpeuri, status FROM ports WHERE origin = ?');
+        if (!$stmt->execute([$origin])) {
+            throw new \Exception('DB Error');
+        }
+
+        $row = $stmt->fetchObject();
+        if (!$row) {
+            return null;
+        }
+
+        $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+
+        $stmt_candidates = $handle->prepare('SELECT cpeuri FROM candidates WHERE origin = ?');
+        if (!$stmt_candidates->execute([$port->getOrigin()])) {
+            throw new \Exception('DB Error');
+        }
+
+        while ($candidate = $stmt_candidates->fetchObject()) {
+            $port->addCPECandidate(new Product($candidate->cpeuri));
+        }
+
+        return $port;
+    }
+
+    public function saveToDB(): bool
+    {
+        $handle = Config::getDbHandle();
+
+        $stmt = $handle->prepare('UPDATE ports SET status = ? WHERE origin = ?');
+        if (!$stmt->execute([$this->getCPEStatus(), $this->getOrigin()])) {
+            throw new \Exception('DB Error');
+        }
+
+        $stmt = $handle->prepare('DELETE FROM candidates WHERE origin = ?');
+        if (!$stmt->execute([$this->getOrigin()])) {
+            throw new \Exception('DB Error');
+        }
+
+        $stmt = $handle->prepare('INSERT INTO candidates (origin, cpeuri) VALUES (?, ?)');
+
+        foreach ($this->getCPECandidates() as $candidate) {
+            if (!$stmt->execute([$this->getOrigin(), (string)$candidate])) {
+                throw new \Exception('DB Error');
+            }
+        }
+
+        return true;
+    }
 }

@@ -109,4 +109,9 @@ class Product
         $bind = new CPENameBinder();
         return $bind->bindToFS($this->cpe);
     }
+
+    public function compareTo(Product $product): int
+    {
+        return strcmp($this->getVendor().':'.$this->getProduct(), $product->getVendor().':'.$product->getProduct());
+    }
 }

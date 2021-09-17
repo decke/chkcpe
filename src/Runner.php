@@ -196,8 +196,6 @@ class Runner
     public function comparePortsWithDictionary(): bool
     {
         $this->handle->beginTransaction();
-        $stmt = $this->handle->prepare('UPDATE ports SET status = ? WHERE origin = ?');
-        $stmt_cnd = $this->handle->prepare('INSERT INTO candidates VALUES (?, ?)');
 
         Logger::info('Comparing with CPE Dictionary ...');
 
@@ -241,15 +239,7 @@ class Runner
                 }
             }
 
-            if (!$stmt->execute([$port->getCPEStatus(), $port->getOrigin()])) {
-                throw new \Exception('DB Error');
-            }
-
-            foreach ($port->getCPECandidates() as $candidate) {
-                if (!$stmt_cnd->execute([$port->getOrigin(), (string)$candidate])) {
-                    throw new \Exception('DB Error');
-                }
-            }
+            $port->saveToDB();
         }
 
         $this->handle->commit();
@@ -337,32 +327,19 @@ class Runner
      */
     protected function loadPorts(string $status = '', string $category = ''): array
     {
-        $stmt = $this->handle->prepare('SELECT origin, portname, version, maintainer, cpeuri, status FROM ports WHERE (status = ? OR ? = \'\') AND (category = ? OR ? = \'\') ORDER BY origin');
-
-        if (!$stmt->execute([$status, $status, $category, $category])) {
-            throw new \Exception('DB Error');
-        }
-
         $ports = [];
 
-        while ($row = $stmt->fetchObject()) {
+        foreach ($this->listPorts($status, $category) as $origin) {
             try {
-                $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+                $port = Port::loadFromDb($origin);
 
-                $stmt_cnd = $this->handle->prepare('SELECT cpeuri FROM candidates WHERE origin = ?');
-                if (!$stmt_cnd->execute([$port->getOrigin()])) {
-                    throw new \Exception('DB Error');
+                if ($port === null) {
+                    continue;
                 }
 
-                while ($candidate = $stmt_cnd->fetchObject()) {
-                    $port->addCPECandidate(new Product($candidate->cpeuri));
-                }
-
-                $ports[$port->getOrigin()] = $port;
-            } catch (\TypeError $e) {
+                $ports[$origin] = $port;
+            } catch (\TypeError) {
                 ;
-            } catch (\Exception $e) {
-                Logger::warning('Ignoring port '.$row->origin.' because of '.$e->getMessage());
             }
         }
 
