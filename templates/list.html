@@ -18,7 +18,7 @@
       {% for port in ports %}
         <tr>
           <td>
-            <a href="/port/{{ port.origin }}/">{{ port.origin }}</a>
+            <a href="/{{ port.origin }}">{{ port.origin }}</a>
           </td>
           <td>
             <a href="mailto:{{ port.maintainer }}">{{ port.maintainer }}</a>

@@ -53,6 +53,18 @@ $app->get('/list/{status}', function ($request, $response, $args) {
     ]);
 });
 
+$app->get('/{category}/{portname}', function ($request, $response, $args) {
+    $port = Port::loadFromDB($args['category'].'/'.$args['portname']);
+    if ($port === null) {
+        return $response->withStatus(302)->withHeader('Location', '/');
+    }
+
+    $view = Twig::fromRequest($request);
+    return $view->render($response, 'details.html', [
+        'port' => $port
+    ]);
+});
+
 $app->run();
 
 exit(0);

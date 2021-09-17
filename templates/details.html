@@ -1,0 +1,101 @@
+{% include('_header.html') %}
+
+<div class="container">
+
+  <div class="columns is-marginless">
+    <div class="column">
+
+      <div class="block">
+        <span class="title">{{ port.origin }}</span>
+        <img src="https://img.shields.io/badge/{{ port.cpestatus }}-{{ port.color }}">
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+                
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag is-light">version</span>
+              <span class="tag is-light is-info">{{ port.version }}</span>
+            </div>
+            <div class="tags has-addons">
+              <span class="tag is-light">maintainer</span>
+              <span class="tag is-light is-info">{{ port.maintainer }}</span>
+            </div>
+
+            {% if port.cpestr %}
+              <div class="tags has-addons">
+                <span class="tag is-light">cpe-str</span>
+                <span class="tag is-light is-info">{{ port.cpestr }}</span>
+              </div>
+            {% endif %}
+          </div>
+
+          <hr>
+
+          <div class="field is-grouped is-grouped-multiline">
+            <a href="https://freshports.org/{{ port.origin }}" class="tag is-light is-info" target="_blank">freshports</a> &nbsp; &nbsp; 
+
+            {% if port.cpestr %}
+              <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ port.cpe.vendor }}:{{port.cpe.product }}" class="tag is-light is-info" target="_blank">NVD CPE Dictionary</a> &nbsp; &nbsp;
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <h4 class="title is-4">Candidates</h4>
+
+      <div class="block">
+        <div class="columns is-marginless">
+
+        {% for candidate in port.cpecandidates %}
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <span class="tag is-light">vendor</span>
+                    <span class="tag is-light is-info">{{ candidate.vendor }}</span>
+                  </div>
+                  <div class="tags has-addons">
+                    <span class="tag is-light">product</span>
+                    <span class="tag is-light is-info">{{ candidate.product }}</span>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="field is-grouped is-grouped-multiline">
+                  <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ candidate.vendor }}:{{ candidate.product }}" class="tag is-light is-i
+nfo" target="_blank">NVD CPE Dictionary</a> &nbsp; &nbsp;
+                </div>
+
+                <hr>
+
+                {% for cpe in candidate.getAllCPEs %}
+                  <div class="tags has-addons">
+                    <span class="tag is-light is-info">{{ cpe }}</span>
+                  </div>
+                {% endfor %}
+
+              </div>
+            </div>
+          </div>
+
+        {% else %}
+          <div class="column">
+            <i>none</i>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% include('_footer.html') %}
+

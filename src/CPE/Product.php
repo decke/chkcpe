@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CheckCpe\CPE;
 
+use CheckCpe\Config;
 use PacificSec\CPE\Common\WellFormedName;
 use PacificSec\CPE\Naming\CPENameBinder;
 use PacificSec\CPE\Naming\CPENameUnbinder;
@@ -124,5 +125,26 @@ class Product
     public function compareTo(Product $product): int
     {
         return strcmp($this->getVendor().':'.$this->getProduct(), $product->getVendor().':'.$product->getProduct());
+    }
+
+    /**
+     * @return array<Product>
+     */
+    public function getAllCPEs(): array
+    {
+        $handle = Config::getDbHandle();
+
+        $stmt = $handle->prepare('SELECT cpefs FROM cpes, products WHERE cpes.productid = products.productid AND vendor = ? AND product = ?');
+        if (!$stmt->execute([$this->getVendor(), $this->getProduct()])) {
+            throw new \Exception('DB Error');
+        }
+
+        $cpes = [];
+
+        while ($cpe = $stmt->fetchObject()) {
+            $cpes[] = new Product($cpe->cpefs);
+        }
+
+        return $cpes;
     }
 }
