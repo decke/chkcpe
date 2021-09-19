@@ -229,7 +229,11 @@ class Runner
                 $nomatch = [];
                 if ($overlay->exists($port->getOrigin(), 'nomatch')) {
                     foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
-                        $nomatch[] = new Product($cpe);
+                        try {
+                            $nomatch[] = new Product($cpe);
+                        } catch (\Exception $e) {
+                            Logger::warning('Invalid nomatch CPE string for port '.$port->getOrigin().' : '.$cpe);
+                        }
                     }
                 }
 
