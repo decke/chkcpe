@@ -200,8 +200,7 @@ class Runner
         Logger::info('Comparing with CPE Dictionary ...');
 
         $dictionary = new Dictionary(Config::getDbHandle());
-        $addmatch = Config::getAddMatchData();
-        $falsematch = Config::getFalseMatchData();
+        $overlay = Config::getOverlay();
 
         foreach ($this->loadPorts(Status::SCANNED) as $port) {
             $port->setCPEStatus(Status::UNKNOWN);
@@ -213,9 +212,10 @@ class Runner
                 }
 
                 if ($product === null) {
-                    if (isset($addmatch[$port->getOrigin()]) &&
-                        $addmatch[$port->getOrigin()] == $port->getCPEVendor().':'.$port->getCPEProduct()) {
-                        Logger::info('Validated CPE for '.$port->getOrigin().' via local overwrite');
+                    if ($overlay->exists($port->getOrigin(), 'custommatch')) {
+                        $product = new Product($overlay->get($port->getOrigin(), 'custommatch'));
+                        $port->setCPE($product);
+
                         $port->setCPEStatus(Status::VALID);
                     } else {
                         $port->setCPEStatus(Status::INVALID);
@@ -226,11 +226,18 @@ class Runner
                     $port->setCPEStatus(Status::VALID);
                 }
             } else {
+                $nomatch = [];
+                if ($overlay->exists($port->getOrigin(), 'nomatch')) {
+                    foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
+                        $nomatch[] = new Product($cpe);
+                    }
+                }
+
                 foreach ($dictionary->findProductsByProductname($port->getPortname()) as $product) {
-                    if (isset($falsematch[$port->getOrigin()])) {
-                        if (in_array($product, $falsematch[$port->getOrigin()])) {
+                    foreach ($nomatch as $prod) {
+                        if ($prod->compareTo($product)) {
                             Logger::info('Ignoring false match for '.$port->getOrigin());
-                            continue;
+                            continue 2;
                         }
                     }
 
@@ -255,7 +262,7 @@ class Runner
         $generators[Status::VALID] = new MarkdownGenerator();
         $generators[Status::INVALID] = new MarkdownGenerator();
         $generators[Status::DEPRECATED] = new MarkdownGenerator();
-        $generators[Status::CHECKNEEDED] = new WeightedMarkdownGenerator('Check needed', Config::getPriorityData());
+        $generators[Status::CHECKNEEDED] = new WeightedMarkdownGenerator();
         $generators[Status::READYTOCOMMIT] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 

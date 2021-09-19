@@ -15,7 +15,9 @@ class Config
     protected static string $makebin = '/usr/bin/make';
     protected static string $datasource = 'sqlite:data/chkcpe.db';
     protected static string $cpedictionary = 'data/official-cpe-dictionary_v2.3.xml';
+    protected static string $overlayfile = 'data/overlay.json';
     protected static ?\PDO $handle = null;
+    protected static ?Overlay $overlay = null;
 
     public static function getPortsDir(): string
     {
@@ -82,6 +84,16 @@ class Config
         return self::$cpedictionary;
     }
 
+    public static function getOverlayFile(): string
+    {
+        $overlayfile = getenv('OVERLAYFILE');
+        if ($overlayfile !== false) {
+            self::$overlayfile = $overlayfile;
+        }
+
+        return self::$overlayfile;
+    }
+
     public static function getDbHandle(): \PDO
     {
         if (self::$handle === null) {
@@ -94,60 +106,12 @@ class Config
         return self::$handle;
     }
 
-    /**
-     * @return array<string, int>
-     */
-    public static function getPriorityData(): array
+    public static function getOverlay(): Overlay
     {
-        $file = Config::getDataDir().'/portpriority.json';
-
-        if (!file_exists($file)) {
-            throw new \Exception('Data file '.$file.' not found!');
+        if (self::$overlay === null) {
+            self::$overlay = new Overlay(self::getOverlayFile());
         }
 
-        $content = file_get_contents($file);
-        if ($content === false) {
-            throw new \Exception('Could not read '.$file);
-        }
-
-        return json_decode($content, true);
-    }
-
-    /**
-     * @return array<string,string>
-     */
-    public static function getAddMatchData(): array
-    {
-        $file = Config::getDataDir().'/cpeaddmatch.json';
-
-        if (!file_exists($file)) {
-            throw new \Exception('Data file '.$file.' not found!');
-        }
-
-        $content = file_get_contents($file);
-        if ($content === false) {
-            throw new \Exception('Could not read '.$file);
-        }
-
-        return json_decode($content, true);
-    }
-
-    /**
-     * @return array<string,array<string>>
-     */
-    public static function getFalseMatchData(): array
-    {
-        $file = Config::getDataDir().'/cpefalsematch.json';
-
-        if (!file_exists($file)) {
-            throw new \Exception('Data file '.$file.' not found!');
-        }
-
-        $content = file_get_contents($file);
-        if ($content === false) {
-            throw new \Exception('Could not read '.$file);
-        }
-
-        return json_decode($content, true);
+        return self::$overlay;
     }
 }

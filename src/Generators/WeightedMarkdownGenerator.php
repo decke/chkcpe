@@ -4,23 +4,21 @@ declare(strict_types=1);
 
 namespace CheckCpe\Generators;
 
+use CheckCpe\Config;
+use CheckCpe\Overlay;
 use CheckCpe\Port;
 
 class WeightedMarkdownGenerator extends MarkdownGenerator
 {
-    /**
-     * @var array<string, int>
-     */
-    protected array $priority = [];
+    private Overlay $overlay;
 
     /**
      * @param string $title
-     * @param array<string, int> $priority
      */
-    public function __construct(string $title = '', array $priority = [])
+    public function __construct(string $title = '')
     {
         $this->title = $title;
-        $this->priority = $priority;
+        $this->overlay = Config::getOverlay();
     }
 
     public function addPort(Port $port): bool
@@ -28,8 +26,9 @@ class WeightedMarkdownGenerator extends MarkdownGenerator
         $origin = $port->getOrigin();
         $key = '9999-'.$origin;
 
-        if (isset($this->priority[$origin])) {
-            $key = sprintf('%04d-%s', 9999-$this->priority[$origin], $origin);
+        if ($this->overlay->exists($origin, 'priority')) {
+            $priority = (int)$this->overlay->exists($origin, 'priority');
+            $key = sprintf('%04d-%s', 9999-$priority, $origin);
         }
 
         if (isset($this->ports[$key])) {

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace CheckCpe;
 
+use CheckCpe\CPE\Product;
+use CheckCpe\CPE\Status;
 use CheckCpe\Util\Logger;
 use Slim\Factory\AppFactory;
 use Slim\Views\Twig;
@@ -63,6 +65,78 @@ $app->get('/{category}/{portname}', function ($request, $response, $args) {
     return $view->render($response, 'details.html', [
         'port' => $port
     ]);
+});
+
+$app->get('/check', function ($request, $response, $args) {
+    $runner = new Runner();
+
+    $ports = $runner->loadPorts(Status::CHECKNEEDED);
+    $port = $ports[array_rand($ports)];
+
+    $view = Twig::fromRequest($request);
+    return $view->render($response, 'details.html', [
+        'port' => $port
+    ]);
+});
+
+$app->post('/check/match', function ($request, $response, $args) {
+    $params = $request->getParsedBody();
+
+    if (!isset($params['origin']) || !isset($params['cpe'])) {
+        return $response->withStatus(302)->withHeader('Location', '/');
+    }
+
+    $port = Port::loadFromDB($params['origin']);
+    if ($port === null) {
+        return $response->withStatus(302)->withHeader('Location', '/');
+    }
+
+    $product = new Product($params['cpe']);
+
+    $overlay = Config::getOverlay();
+    $overlay->loadFromFile();
+
+    $overlay->set($port->getOrigin(), 'confirmedmatch', (string)$product);
+
+    $overlay->saveToFile();
+
+    $port->setCPEStatus(Status::READYTOCOMMIT);
+    $port->saveToDB();
+
+    return $response->withStatus(302)->withHeader('Location', '/check');
+});
+
+$app->post('/check/nomatch', function ($request, $response, $args) {
+    $params = $request->getParsedBody();
+
+    if (!isset($params['origin']) || !isset($params['cpe'])) {
+        return $response->withStatus(302)->withHeader('Location', '/');
+    }
+
+    $port = Port::loadFromDB($params['origin']);
+    if ($port === null) {
+        return $response->withStatus(302)->withHeader('Location', '/?portunknown');
+    }
+
+    if (!isset($params['cpe'])) {
+        return $response->withStatus(302)->withHeader('Location', '/?cpemissing');
+    }
+
+    $product = new Product($params['cpe']);
+
+    $overlay = Config::getOverlay();
+    $overlay->loadFromFile();
+
+    $data = $overlay->get($port->getOrigin(), 'nomatch');
+
+    if (!in_array((string)$product, $data)) {
+        $data[] = (string)$product;
+
+        $overlay->set($port->getOrigin(), 'nomatch', $data);
+        $overlay->saveToFile();
+    }
+
+    return $response->withStatus(302)->withHeader('Location', '/check');
 });
 
 $app->run();

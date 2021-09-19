@@ -55,6 +55,20 @@
             <div class="card">
               <div class="card-content">
 
+                <div class="buttons">
+                  <form method="post" action="/check/match">
+                    <input type="hidden" name="origin" value="{{ port.origin }}">
+                    <input type="hidden" name="cpe" value="{{ candidate }}">
+                    <button class="button is-success mr-5">match</button>
+                  </form>
+
+                  <form method="post" action="/check/nomatch">
+                    <input type="hidden" name="origin" value="{{ port.origin }}">
+                    <input type="hidden" name="cpe" value="{{ candidate }}">
+                    <button class="button is-danger">nomatch</button>
+                  </form>
+                </div>
+
                 <div class="control">
                   <div class="tags has-addons">
                     <span class="tag is-light">vendor</span>
