@@ -97,6 +97,7 @@ $app->post('/check/match', function ($request, $response, $args) {
     $overlay->loadFromFile();
 
     $overlay->set($port->getOrigin(), 'confirmedmatch', (string)$product);
+    $overlay->unset($port->getOrigin(), 'nomatch');
 
     $overlay->saveToFile();
 
