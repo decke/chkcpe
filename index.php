@@ -129,6 +129,10 @@ $app->post('/check/nomatch', function ($request, $response, $args) {
 
     $data = $overlay->get($port->getOrigin(), 'nomatch');
 
+    if ($data === false) {
+        $data = [];
+    }
+
     if (!in_array((string)$product, $data)) {
         $data[] = (string)$product;
 
