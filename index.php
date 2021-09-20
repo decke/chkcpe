@@ -41,8 +41,29 @@ $twig = Twig::create(__DIR__.'/templates/', ['cache' => false]);
 $app->add(TwigMiddleware::create($app, $twig));
 
 $app->get('/', function ($request, $response) {
+    $runner = new Runner();
+
+    $lists = [
+        Status::VALID => [],
+        Status::INVALID => [],
+        Status::DEPRECATED => [],
+        Status::CHECKNEEDED => [],
+        Status::READYTOCOMMIT => [],
+        Status::UNKNOWN => []
+    ];
+
+    foreach ($lists as $key => $val) {
+        $lists[$key] = [
+            'status' => $key,
+            'color' => Status::getColor($key),
+            'cnt' => count($runner->listPorts($key))
+        ];
+    }
+
     $view = Twig::fromRequest($request);
-    return $view->render($response, 'index.html');
+    return $view->render($response, 'index.html', [
+        'lists' => $lists
+    ]);
 });
 
 $app->get('/list/{status}', function ($request, $response, $args) {

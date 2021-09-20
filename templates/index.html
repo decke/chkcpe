@@ -2,6 +2,29 @@
 
 <div class="container">
 
+  <h1 class="title is-2">chkcpe Status</h1>
+
+  <table class="table is-striped is-bordered is-hoverable">
+    <thead>
+      <tr>
+        <td>Status</td>
+        <td>Ports</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for list in lists %}
+        <tr>
+          <td>
+            <img src="https://img.shields.io/badge/{{ list.status }}-{{ list.color }}">
+          </td>
+          <td>
+            {{ list.cnt }}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 </div>
 
 {{ include('_footer.html') }}
