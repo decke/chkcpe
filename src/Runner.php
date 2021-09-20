@@ -226,10 +226,18 @@ class Runner
                     $port->setCPEStatus(Status::VALID);
                 }
             } else if ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
+                foreach ($port->getCPECandidates() as $candidate) {
+                    $port->removeCPECandidate($candidate);
+                }
+
                 $product = new Product($overlay->get($port->getOrigin(), 'confirmedmatch'));
-                $port->setCPE($product);
+                $port->addCPECandidate($product);
 
                 $port->setCPEStatus(Status::READYTOCOMMIT);
+
+                if ($product->isDeprecated()) {
+                    $port->setCPEStatus(Status::DEPRECATED);
+                }
             } else {
                 $nomatch = [];
                 if ($overlay->exists($port->getOrigin(), 'nomatch')) {
