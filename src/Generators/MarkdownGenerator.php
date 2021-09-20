@@ -66,7 +66,7 @@ class MarkdownGenerator extends Generator
                  $msg = '';
 
                  foreach ($port->getCPECandidates() as $product) {
-                     $msg .= $product.' ';
+                     $msg .= '`'.$product.'` ';
                  }
 
                  return rtrim($msg);
