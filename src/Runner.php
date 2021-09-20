@@ -226,7 +226,7 @@ class Runner
                     $port->setCPEStatus(Status::VALID);
                 }
             } else if ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
-                $product = new Product($overlay->exists($port->getOrigin(), 'confirmedmatch'));
+                $product = new Product($overlay->get($port->getOrigin(), 'confirmedmatch'));
                 $port->setCPE($product);
 
                 $port->setCPEStatus(Status::READYTOCOMMIT);
