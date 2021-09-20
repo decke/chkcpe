@@ -5,8 +5,8 @@ and metadata for more than 30.000 3rd party projects and the source for binary p
 FreeBSD, DragonflyBSD and derivatives.
 
 This is an attempt to populate as many ports as possible with CPE data. The lists are
-automatically updated once a day. If you are a FreeBSD Ports committer or Ports maintainer
-this is a chance for you to help!
+automatically updated once a day. If you are a FreeBSD Ports committer this is a chance
+for you to help!
 
 ### More information:
 * [https://wiki.freebsd.org/Ports/CPE](https://wiki.freebsd.org/Ports/CPE)
