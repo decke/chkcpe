@@ -141,6 +141,14 @@ $app->post('/check/nomatch', function ($request, $response, $args) {
         $overlay->saveToFile();
     }
 
+    $port->removeCPECandidate($product);
+
+    if (count($port->getCPECandidates()) < 1) {
+        $port->setCPEStatus(Status::UNKNOWN);
+    }
+
+    $port->saveToDB();
+
     return $response->withStatus(302)->withHeader('Location', '/check');
 });
 

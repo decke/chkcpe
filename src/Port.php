@@ -131,6 +131,18 @@ class Port
         return true;
     }
 
+    public function removeCPECandidate(Product $product): bool
+    {
+        foreach ($this->cpe_candidates as $key => $candidate) {
+            if ($candidate->compareTo($product)) {
+                unset($this->cpe_candidates[$key]);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     /**
      * @return array<Product>
      */
