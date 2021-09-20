@@ -78,7 +78,7 @@ $app->get('/gc', function ($request, $response) {
                 $overlay->unset($origin);
                 continue;
             }
-        } catch(\Exception $e) {
+        } catch (\Exception $e) {
             continue;
         }
 

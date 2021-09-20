@@ -225,7 +225,7 @@ class Runner
                 } else {
                     $port->setCPEStatus(Status::VALID);
                 }
-            } else if ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
+            } elseif ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
                 foreach ($port->getCPECandidates() as $candidate) {
                     $port->removeCPECandidate($candidate);
                 }
