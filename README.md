@@ -22,6 +22,6 @@ this is a chance for you to help!
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | 0    | [list](https://github.com/decke/chkcpe/wiki/deprecated)    |
 | ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 1932   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | 77 | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26112       | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26113       | |
 
-Last updated: Mon Sep 20 09:18:13 UTC 2021
+Last updated: Mon Sep 20 12:00:56 UTC 2021
