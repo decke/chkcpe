@@ -67,12 +67,34 @@ class Overlay
         return true;
     }
 
-    public function unset(string $origin, string $key): bool
+    public function unset(string $origin, string $key = ''): bool
     {
+        if ($key == '') {
+            if (isset($this->data[$origin])) {
+                unset($this->data[$origin]);
+            }
+
+            return true;
+        }
+
         if ($this->exists($origin, $key)) {
             unset($this->data[$origin][$key]);
         }
 
         return true;
+    }
+
+    /**
+     * @return array<string>
+     */
+    public function listPorts(): array
+    {
+        $ports = [];
+
+        foreach ($this->data as $origin => $data) {
+            $ports[] = $origin;
+        }
+
+        return $ports;
     }
 }

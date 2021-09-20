@@ -66,6 +66,33 @@ $app->get('/', function ($request, $response) {
     ]);
 });
 
+$app->get('/gc', function ($request, $response) {
+    $overlay = Config::getOverlay();
+    $overlay->loadFromFile();
+
+    foreach ($overlay->listPorts() as $origin) {
+        try {
+            $port = Port::loadFromDB($origin);
+
+            if ($port === null) {
+                $overlay->unset($origin);
+                continue;
+            }
+        } catch(\Exception $e) {
+            continue;
+        }
+
+        if ($port->getCPEStr() != '' && $port->getCPEStatus() == Status::VALID) {
+            $overlay->unset($port->getOrigin(), 'confirmedmatch');
+            $overlay->unset($port->getOrigin(), 'nomatch');
+        }
+    }
+
+    $overlay->saveToFile();
+
+    return $response->withStatus(302)->withHeader('Location', '/');
+});
+
 $app->get('/list/{status}', function ($request, $response, $args) {
     $runner = new Runner();
 

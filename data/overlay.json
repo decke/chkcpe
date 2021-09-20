@@ -3377,17 +3377,11 @@
     "dns\/bind9-devel": {
         "priority": 6
     },
-    "dns\/bind910": {
-        "priority": 5
-    },
     "dns\/bind911": {
         "priority": 32
     },
     "dns\/bind916": {
         "priority": 18
-    },
-    "dns\/bind99": {
-        "priority": 5
     },
     "dns\/c-ares": {
         "priority": 16
@@ -3705,9 +3699,6 @@
     "editors\/vim": {
         "priority": 347
     },
-    "editors\/vim-console": {
-        "priority": 10
-    },
     "emulators\/atari800": {
         "priority": 6,
         "custommatch": "cpe:2.3:a:atari800:atari800:*:*:*:*:*:*:*:*"
@@ -3742,9 +3733,6 @@
     },
     "emulators\/open-vm-tools": {
         "priority": 21
-    },
-    "emulators\/open-vm-tools-nox11": {
-        "priority": 5
     },
     "emulators\/qemu": {
         "priority": 61
