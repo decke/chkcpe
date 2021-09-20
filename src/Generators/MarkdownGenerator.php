@@ -43,7 +43,7 @@ class MarkdownGenerator extends Generator
     {
         switch ($port->getCPEStatus()) {
              case Status::VALID:
-                 return 'found CPE';
+                 return 'found CPE `'.$port->getCPEStr().'`';
 
              case Status::INVALID:
                  return sprintf('Vendor %s Product %s not found in DB', $port->getCPEVendor(), $port->getCPEProduct());
