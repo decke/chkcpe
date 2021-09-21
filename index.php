@@ -85,6 +85,10 @@ $app->get('/gc', function ($request, $response) {
         if ($port->getCPEStr() != '' && $port->getCPEStatus() == Status::VALID) {
             $overlay->unset($port->getOrigin(), 'confirmedmatch');
             $overlay->unset($port->getOrigin(), 'nomatch');
+
+            if (count($overlay->get($port->getOrigin())) < 1) {
+                $overlay->unset($port->getOrigin());
+            }
         }
     }
 

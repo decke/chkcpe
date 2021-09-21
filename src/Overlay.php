@@ -52,8 +52,16 @@ class Overlay
         return isset($this->data[$origin][$key]);
     }
 
-    public function get(string $origin, string $key): mixed
+    public function get(string $origin, string $key = ''): mixed
     {
+        if ($key == '') {
+            if (isset($this->data[$origin])) {
+                return $this->data[$origin];
+            }
+
+            return false;
+        }
+
         if ($this->exists($origin, $key)) {
             return $this->data[$origin][$key];
         }
