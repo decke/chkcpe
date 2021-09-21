@@ -191,6 +191,12 @@
     "archivers\/rpm4": {
         "priority": 10
     },
+    "archivers\/rubygem-rubyzip": {
+        "confirmedmatch": "cpe:2.3:a:rubyzip_project:rubyzip:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/rubygem-rubyzip13": {
+        "confirmedmatch": "cpe:2.3:a:rubyzip_project:rubyzip:*:*:*:*:*:*:*:*"
+    },
     "archivers\/rzip": {
         "priority": 8
     },
@@ -356,7 +362,8 @@
         "priority": 15
     },
     "audio\/clementine-player": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:clementine-player:clementine:*:*:*:*:*:*:*:*"
     },
     "audio\/cmus": {
         "priority": 8,
@@ -704,7 +711,10 @@
         "priority": 8
     },
     "audio\/sphinx": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:sphinxsearch:sphinx:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/splay": {
         "priority": 9
@@ -841,6 +851,9 @@
     "cad\/kicad": {
         "priority": 5
     },
+    "cad\/libredwg": {
+        "confirmedmatch": "cpe:2.3:a:gnu:libredwg:*:*:*:*:*:*:*:*"
+    },
     "cad\/pcb": {
         "priority": 6
     },
@@ -871,6 +884,11 @@
     },
     "chinese\/ttfm": {
         "priority": 14
+    },
+    "chinese\/wordpress-zh_CN": {
+        "nomatch": [
+            "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*"
+        ]
     },
     "comms\/atslog": {
         "priority": 5
@@ -921,6 +939,11 @@
     "converters\/chmview": {
         "priority": 8
     },
+    "converters\/cl-babel": {
+        "nomatch": [
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
+        ]
+    },
     "converters\/convmv": {
         "priority": 12
     },
@@ -950,6 +973,9 @@
     },
     "converters\/libutf-8": {
         "priority": 13
+    },
+    "converters\/linux-c7-fribidi": {
+        "confirmedmatch": "cpe:2.3:a:gnu:fribidi:*:*:*:*:*:*:*:*"
     },
     "converters\/mmencode": {
         "priority": 14
@@ -1252,6 +1278,9 @@
     "databases\/pear-DB": {
         "priority": 67
     },
+    "databases\/pear-Horde_Mongo": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mongo:*:*:*:*:*:*:*:*"
+    },
     "databases\/pear-MDB": {
         "priority": 5
     },
@@ -1495,6 +1524,11 @@
     "devel\/astyle": {
         "priority": 10
     },
+    "devel\/atlas": {
+        "nomatch": [
+            "cpe:2.3:a:apache:atlas:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/autobook": {
         "priority": 5
     },
@@ -1515,6 +1549,9 @@
     },
     "devel\/autotools": {
         "priority": 20
+    },
+    "devel\/bazel029": {
+        "confirmedmatch": "cpe:2.3:a:google:bazel:*:*:*:*:*:*:*:*"
     },
     "devel\/bglibs": {
         "priority": 5
@@ -1756,6 +1793,9 @@
     },
     "devel\/gmake": {
         "priority": 741
+    },
+    "devel\/gnulib": {
+        "confirmedmatch": "cpe:2.3:a:gnu:gnulib:*:*:*:*:*:*:*:*"
     },
     "devel\/gnustep": {
         "priority": 11
@@ -2025,7 +2065,8 @@
         "priority": 7
     },
     "devel\/log4j": {
-        "priority": 12
+        "priority": 12,
+        "confirmedmatch": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*"
     },
     "devel\/log4sh": {
         "custommatch": "cpe:2.3:a:log4sh:log4sh:*:*:*:*:*:*:*:*"
@@ -2254,7 +2295,10 @@
         "priority": 19
     },
     "devel\/p5-Curses": {
-        "priority": 20
+        "priority": 20,
+        "nomatch": [
+            "cpe:2.3:a:curses_project:curses:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/p5-Curses-Widgets": {
         "priority": 5
@@ -2876,6 +2920,12 @@
     "devel\/pear-HTML_Select_Common": {
         "priority": 5
     },
+    "devel\/pear-Horde_Prefs": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_prefs:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Tree": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_tree:*:*:*:*:*:*:*:*"
+    },
     "devel\/pear-I18N": {
         "priority": 7
     },
@@ -2959,6 +3009,11 @@
     },
     "devel\/py-click": {
         "priority": 5
+    },
+    "devel\/py-click6": {
+        "nomatch": [
+            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-cluster": {
         "nomatch": [
@@ -3077,7 +3132,8 @@
         "priority": 18
     },
     "devel\/py-twisted": {
-        "priority": 19
+        "priority": 19,
+        "confirmedmatch": "cpe:2.3:a:twistedmatrix:twisted:*:*:*:*:*:*:*:*"
     },
     "devel\/py-virtualenv": {
         "priority": 8
@@ -3232,6 +3288,11 @@
     "devel\/tcllib": {
         "priority": 30
     },
+    "devel\/tclthread": {
+        "nomatch": [
+            "cpe:2.3:a:thread_project:thread:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/tcltls": {
         "priority": 24
     },
@@ -3260,7 +3321,8 @@
         "priority": 5
     },
     "devel\/valgrind": {
-        "priority": 18
+        "priority": 18,
+        "confirmedmatch": "cpe:2.3:a:valgrind:valgrind:*:*:*:*:*:*:*:*"
     },
     "devel\/websvn": {
         "priority": 16
@@ -3505,6 +3567,11 @@
     "editors\/libreoffice": {
         "priority": 31
     },
+    "editors\/libreoffice-bs": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-cy": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
@@ -3516,6 +3583,11 @@
         ]
     },
     "editors\/libreoffice-en_ZA": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-es": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3556,6 +3628,11 @@
         ]
     },
     "editors\/libreoffice-ta": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-th": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3641,6 +3718,11 @@
     },
     "emulators\/gxemul": {
         "priority": 5
+    },
+    "emulators\/hercules": {
+        "nomatch": [
+            "cpe:2.3:a:citadel:hercules:*:*:*:*:*:*:*:*"
+        ]
     },
     "emulators\/i386-wine-devel": {
         "priority": 5
@@ -4191,6 +4273,11 @@
     "graphics\/gwenview": {
         "priority": 9
     },
+    "graphics\/ida": {
+        "nomatch": [
+            "cpe:2.3:a:hex-rays:ida:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/imlib2": {
         "priority": 127
     },
@@ -4652,6 +4739,11 @@
     "japanese\/FreeWnn-server": {
         "priority": 5
     },
+    "japanese\/a2ps": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:a2ps:*:*:*:*:*:*:*:*"
+        ]
+    },
     "japanese\/alias-fonts": {
         "priority": 7
     },
@@ -4811,6 +4903,11 @@
     "java\/phpeclipse": {
         "priority": 7
     },
+    "korean\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/clisp": {
         "priority": 15
     },
@@ -4892,6 +4989,9 @@
     },
     "lang\/guile": {
         "priority": 189
+    },
+    "lang\/guile2": {
+        "confirmedmatch": "cpe:2.3:a:gnu:guile:*:*:*:*:*:*:*:*"
     },
     "lang\/icc": {
         "priority": 14
@@ -5038,7 +5138,8 @@
         "priority": 19
     },
     "mail\/alpine": {
-        "priority": 24
+        "priority": 24,
+        "confirmedmatch": "cpe:2.3:a:alpine_project:alpine:*:*:*:*:*:*:*:*"
     },
     "mail\/anomy-sanitizer": {
         "priority": 7
@@ -5057,6 +5158,9 @@
     },
     "mail\/claws-mail": {
         "priority": 12
+    },
+    "mail\/claws-mail-vcalendar": {
+        "confirmedmatch": "cpe:2.3:a:claws-mail:vcalendar:*:*:*:*:*:*:*:*"
     },
     "mail\/cone": {
         "priority": 7
@@ -5114,7 +5218,10 @@
         "priority": 138
     },
     "mail\/exim-doc-html": {
-        "priority": 14
+        "priority": 14,
+        "nomatch": [
+            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/exim-doc-pdf": {
         "priority": 12
@@ -5236,6 +5343,9 @@
     },
     "mail\/mairix": {
         "priority": 6
+    },
+    "mail\/masqmail": {
+        "confirmedmatch": "cpe:2.3:a:marmaro:masqmail:*:*:*:*:*:*:*:*"
     },
     "mail\/mb2md": {
         "priority": 11
@@ -5391,7 +5501,8 @@
         "priority": 7
     },
     "mail\/perdition": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:horms:perdition:*:*:*:*:*:*:*:*"
     },
     "mail\/pflogsumm": {
         "priority": 35
@@ -5705,6 +5816,9 @@
     "math\/py-matplotlib": {
         "priority": 5
     },
+    "math\/py-networkx": {
+        "confirmedmatch": "cpe:2.3:a:python:networkx:*:*:*:*:*:*:*:*"
+    },
     "math\/py-numpy": {
         "priority": 9
     },
@@ -5760,6 +5874,9 @@
     "misc\/compat9x": {
         "priority": 9
     },
+    "misc\/concourse": {
+        "confirmedmatch": "cpe:2.3:a:pivotal_software:concourse:*:*:*:*:*:*:*:*"
+    },
     "misc\/cpuid": {
         "priority": 17
     },
@@ -5777,6 +5894,11 @@
     },
     "misc\/e2fsprogs-libuuid": {
         "priority": 29
+    },
+    "misc\/elixir-mime": {
+        "nomatch": [
+            "cpe:2.3:a:mime_project:mime:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/figlet": {
         "priority": 47
@@ -6433,10 +6555,14 @@
         "priority": 7
     },
     "net-mgmt\/netmask": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:netmask_project:netmask:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/nfdump": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:nfdump_project:nfdump:*:*:*:*:*:*:*:*"
     },
     "net-mgmt\/nfsen": {
         "priority": 9
@@ -6657,7 +6783,8 @@
         "priority": 12
     },
     "net\/bird": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:nic:bird:*:*:*:*:*:*:*:*"
     },
     "net\/bmon": {
         "priority": 19
@@ -6687,7 +6814,10 @@
         "priority": 6
     },
     "net\/dhcpdump": {
-        "priority": 12
+        "priority": 12,
+        "nomatch": [
+            "cpe:2.3:a:debian:dhcpdump:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/dhcping": {
         "priority": 12
@@ -6793,6 +6923,11 @@
     },
     "net\/ldapdiff": {
         "custommatch": "cpe:2.3:a:ldapdiff:ldapdiff:*:*:*:*:*:*:*:*"
+    },
+    "net\/ldapscripts": {
+        "nomatch": [
+            "cpe:2.3:a:debian:ldapscripts:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/ldapsdk": {
         "nomatch": [
@@ -7038,6 +7173,15 @@
     "net\/p5-perl-ldap": {
         "priority": 44
     },
+    "net\/pear-Horde_Kolab_Session": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_kolab_session:*:*:*:*:*:*:*:*"
+    },
+    "net\/pear-Horde_Rpc": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_rpc:*:*:*:*:*:*:*:*"
+    },
+    "net\/pear-Horde_Scribe": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_scribe:*:*:*:*:*:*:*:*"
+    },
     "net\/pear-Net_DIME": {
         "priority": 7
     },
@@ -7065,6 +7209,9 @@
     "net\/pipsecd": {
         "priority": 7
     },
+    "net\/pjsip": {
+        "confirmedmatch": "cpe:2.3:a:teluu:pjsip:*:*:*:*:*:*:*:*"
+    },
     "net\/poptop": {
         "priority": 23
     },
@@ -7086,8 +7233,14 @@
     "net\/py-speedtest-cli": {
         "priority": 7
     },
+    "net\/py-tweepy": {
+        "confirmedmatch": "cpe:2.3:a:josh_roesslein:tweepy:*:*:*:*:*:*:*:*"
+    },
     "net\/py-urllib3": {
         "priority": 13
+    },
+    "net\/pyrad": {
+        "confirmedmatch": "cpe:2.3:a:pyrad_project:pyrad:*:*:*:*:*:*:*:*"
     },
     "net\/qt5-network": {
         "priority": 7
@@ -7190,6 +7343,11 @@
     "net\/stone": {
         "priority": 5
     },
+    "net\/sup": {
+        "nomatch": [
+            "cpe:2.3:a:supmua:sup:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net\/svnup": {
         "priority": 9
     },
@@ -7273,6 +7431,9 @@
     },
     "net\/wakeonlan": {
         "priority": 17
+    },
+    "net\/wangle": {
+        "confirmedmatch": "cpe:2.3:a:facebook:wangle:*:*:*:*:*:*:*:*"
     },
     "net\/whois": {
         "priority": 8
@@ -7555,6 +7716,9 @@
     "print\/ghostscript9-agpl-x11": {
         "priority": 7
     },
+    "print\/ghostscript9-base": {
+        "confirmedmatch": "cpe:2.3:a:artifex:ghostscript:*:*:*:*:*:*:*:*"
+    },
     "print\/gimp-gutenprint": {
         "priority": 17
     },
@@ -7606,6 +7770,9 @@
     "print\/lilypond": {
         "priority": 5
     },
+    "print\/linux-c7-harfbuzz": {
+        "confirmedmatch": "cpe:2.3:a:harfbuzz_project:harfbuzz:*:*:*:*:*:*:*:*"
+    },
     "print\/lyx": {
         "priority": 31
     },
@@ -7623,6 +7790,11 @@
     },
     "print\/nenscript": {
         "priority": 5
+    },
+    "print\/p5-PostScript": {
+        "nomatch": [
+            "cpe:2.3:a:postscript_project:postscript:*:*:*:*:*:*:*:*"
+        ]
     },
     "print\/papersize-default-a4": {
         "priority": 5
@@ -7756,6 +7928,9 @@
     },
     "security\/bcwipe": {
         "priority": 14
+    },
+    "security\/boringssl": {
+        "confirmedmatch": "cpe:2.3:a:google:boringssl:*:*:*:*:*:*:*:*"
     },
     "security\/bruteforceblocker": {
         "priority": 6
@@ -8191,6 +8366,11 @@
     "security\/p5-GSSAPI": {
         "priority": 94
     },
+    "security\/p5-GnuPG": {
+        "nomatch": [
+            "cpe:2.3:a:gnupg:gnupg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/p5-GnuPG-Interface": {
         "priority": 12
     },
@@ -8312,6 +8492,9 @@
     },
     "security\/py-paramiko": {
         "priority": 9
+    },
+    "security\/py-paramiko1": {
+        "confirmedmatch": "cpe:2.3:a:paramiko:paramiko:*:*:*:*:*:*:*:*"
     },
     "security\/py-pycrypto": {
         "priority": 37
@@ -8802,6 +8985,9 @@
     "sysutils\/gnome_subr": {
         "priority": 77
     },
+    "sysutils\/go-wtf": {
+        "confirmedmatch": "cpe:2.3:a:wtfutil:wtf:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/gpart": {
         "priority": 10
     },
@@ -9070,7 +9256,8 @@
         "priority": 17
     },
     "sysutils\/py-supervisor": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:supervisord:supervisor:*:*:*:*:*:*:*:*"
     },
     "sysutils\/qjail": {
         "priority": 6
@@ -9469,6 +9656,9 @@
     "textproc\/libexttextcat": {
         "priority": 8
     },
+    "textproc\/libmwaw03": {
+        "confirmedmatch": "cpe:2.3:a:libmwaw_project:libmwaw:*:*:*:*:*:*:*:*"
+    },
     "textproc\/librevenge": {
         "priority": 5
     },
@@ -9802,10 +9992,16 @@
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
         ]
     },
+    "textproc\/py-nltk": {
+        "confirmedmatch": "cpe:2.3:a:nltk:nltk:*:*:*:*:*:*:*:*"
+    },
     "textproc\/py-pager": {
         "nomatch": [
             "cpe:2.3:a:yahoo:pager:*:*:*:*:*:*:*:*"
         ]
+    },
+    "textproc\/py-pikepdf": {
+        "confirmedmatch": "cpe:2.3:a:pikepdf_project:pikepdf:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-pygments": {
         "priority": 31
@@ -10100,6 +10296,9 @@
     "www\/hypermail": {
         "priority": 9
     },
+    "www\/janus": {
+        "confirmedmatch": "cpe:2.3:a:meetecho:janus:*:*:*:*:*:*:*:*"
+    },
     "www\/kannel": {
         "priority": 11
     },
@@ -10195,6 +10394,9 @@
     "www\/mod_security": {
         "priority": 36
     },
+    "www\/mod_wsgi4": {
+        "confirmedmatch": "cpe:2.3:a:modwsgi:mod_wsgi:*:*:*:*:*:*:*:*"
+    },
     "www\/moinmoin": {
         "priority": 15
     },
@@ -10209,6 +10411,9 @@
     },
     "www\/nextcloud": {
         "priority": 25
+    },
+    "www\/nextcloud-calendar": {
+        "confirmedmatch": "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*"
     },
     "www\/nginx": {
         "priority": 124
@@ -10450,10 +10655,14 @@
         "priority": 9
     },
     "www\/py-beaker": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:beakerbrowser:beaker:*:*:*:*:*:*:*:*"
     },
     "www\/py-beautifulsoup": {
         "priority": 6
+    },
+    "www\/py-bleach": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:bleach:*:*:*:*:*:*:*:*"
     },
     "www\/py-django": {
         "priority": 12
@@ -10467,6 +10676,9 @@
     "www\/py-requests-toolbelt": {
         "priority": 5
     },
+    "www\/py-tornado": {
+        "confirmedmatch": "cpe:2.3:a:tornadoweb:tornado:*:*:*:*:*:*:*:*"
+    },
     "www\/py-werkzeug": {
         "priority": 7
     },
@@ -10478,8 +10690,22 @@
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/rubygem-gon-rails5": {
+        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-jwt": {
+        "nomatch": [
+            "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-kaminari-rails52": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-passenger": {
         "priority": 8
+    },
+    "www\/rubygem-puma": {
+        "confirmedmatch": "cpe:2.3:a:puma:puma:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-rack": {
         "priority": 5
@@ -10495,6 +10721,9 @@
     },
     "www\/sitecopy": {
         "priority": 13
+    },
+    "www\/smarty3": {
+        "confirmedmatch": "cpe:2.3:a:smarty:smarty:*:*:*:*:*:*:*:*"
     },
     "www\/smb_auth": {
         "priority": 8
@@ -10524,6 +10753,9 @@
     "www\/suphp": {
         "priority": 14
     },
+    "www\/surf": {
+        "confirmedmatch": "cpe:2.3:a:suckless:surf:*:*:*:*:*:*:*:*"
+    },
     "www\/swiggle": {
         "priority": 5
     },
@@ -10543,7 +10775,10 @@
         "priority": 6
     },
     "www\/tidy-lib": {
-        "priority": 42
+        "priority": 42,
+        "nomatch": [
+            "cpe:2.3:a:htacg:tidy:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/tinyproxy": {
         "priority": 14
@@ -11488,6 +11723,9 @@
     "x11\/kde5": {
         "priority": 6
     },
+    "x11\/kitty": {
+        "confirmedmatch": "cpe:2.3:a:kitty_project:kitty:*:*:*:*:*:*:*:*"
+    },
     "x11\/libICE": {
         "priority": 106
     },
@@ -11579,7 +11817,8 @@
         "priority": 53
     },
     "x11\/libxkbcommon": {
-        "priority": 12
+        "priority": 12,
+        "confirmedmatch": "cpe:2.3:a:xkbcommon:libxkbcommon:*:*:*:*:*:*:*:*"
     },
     "x11\/libxkbfile": {
         "priority": 69
