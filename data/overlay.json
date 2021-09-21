@@ -65,6 +65,11 @@
     "archivers\/dzip": {
         "custommatch": "cpe:2.3:a:evan_wagner:dzip:*:*:*:*:*:*:*:*"
     },
+    "archivers\/erlang-snappy": {
+        "nomatch": [
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
+    },
     "archivers\/fastjar": {
         "priority": 10
     },
@@ -110,6 +115,11 @@
     },
     "archivers\/libzip": {
         "priority": 27
+    },
+    "archivers\/lua-zlib": {
+        "nomatch": [
+            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/lzma": {
         "priority": 8
@@ -491,6 +501,9 @@
     "audio\/liba52": {
         "priority": 172
     },
+    "audio\/libaacplus": {
+        "confirmedmatch": "cpe:2.3:a:libaacplus_project:libaacplus:*:*:*:*:*:*:*:*"
+    },
     "audio\/libamrnb": {
         "priority": 6
     },
@@ -529,6 +542,9 @@
     },
     "audio\/libmodplug": {
         "priority": 51
+    },
+    "audio\/libmp3splt": {
+        "confirmedmatch": "cpe:2.3:a:libmp3splt_project:libmp3splt:*:*:*:*:*:*:*:*"
     },
     "audio\/libogg": {
         "priority": 349
@@ -842,6 +858,9 @@
             "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
     },
+    "biology\/vcftools": {
+        "confirmedmatch": "cpe:2.3:a:vcftools_project:vcftools:*:*:*:*:*:*:*:*"
+    },
     "cad\/electric": {
         "priority": 5
     },
@@ -878,6 +897,11 @@
     },
     "chinese\/fcitx": {
         "priority": 5
+    },
+    "chinese\/libreoffice-zh_CN": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "chinese\/ttf2pt1": {
         "priority": 7
@@ -1080,8 +1104,14 @@
     "databases\/akonadi": {
         "priority": 10
     },
+    "databases\/cassandra3": {
+        "confirmedmatch": "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
+    },
     "databases\/cdb": {
         "priority": 17
+    },
+    "databases\/clickhouse": {
+        "confirmedmatch": "cpe:2.3:a:yandex:clickhouse:*:*:*:*:*:*:*:*"
     },
     "databases\/courier-authlib-mysql": {
         "priority": 20
@@ -1386,6 +1416,11 @@
     "databases\/ruby-bdb": {
         "priority": 187
     },
+    "databases\/rubygem-influxdb": {
+        "nomatch": [
+            "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/sqlite2": {
         "priority": 30
     },
@@ -1500,6 +1535,11 @@
     "devel\/ORBit2": {
         "priority": 258
     },
+    "devel\/R-cran-cli": {
+        "nomatch": [
+            "cpe:2.3:a:cli_project:cli:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/aegis": {
         "custommatch": "cpe:2.3:a:aegis:aegis:*:*:*:*:*:*:*:*"
     },
@@ -1549,6 +1589,9 @@
     },
     "devel\/autotools": {
         "priority": 20
+    },
+    "devel\/avro-c": {
+        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
     },
     "devel\/bazel029": {
         "confirmedmatch": "cpe:2.3:a:google:bazel:*:*:*:*:*:*:*:*"
@@ -1814,6 +1857,9 @@
     },
     "devel\/gobject-introspection": {
         "priority": 53
+    },
+    "devel\/godot": {
+        "confirmedmatch": "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
     },
     "devel\/goffice": {
         "priority": 17
@@ -2923,11 +2969,24 @@
     "devel\/pear-Horde_Prefs": {
         "confirmedmatch": "cpe:2.3:a:horde:horde_prefs:*:*:*:*:*:*:*:*"
     },
+    "devel\/pear-Horde_Timezone": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_timezone:*:*:*:*:*:*:*:*"
+    },
     "devel\/pear-Horde_Tree": {
         "confirmedmatch": "cpe:2.3:a:horde:horde_tree:*:*:*:*:*:*:*:*"
     },
     "devel\/pear-I18N": {
         "priority": 7
+    },
+    "devel\/pear-Symfony_Component_Console": {
+        "nomatch": [
+            "cpe:2.3:a:altiris:console:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/pear-Symfony_Component_Finder": {
+        "nomatch": [
+            "cpe:2.3:a:finder_project:finder:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/pear-XML_Parser": {
         "priority": 19
@@ -3113,6 +3172,11 @@
     "devel\/py-pyudev": {
         "priority": 5
     },
+    "devel\/py-qt5-help": {
+        "nomatch": [
+            "cpe:2.3:a:cuore:help:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-setuptools": {
         "priority": 55
     },
@@ -3226,6 +3290,11 @@
     "devel\/rubygem-hana": {
         "nomatch": [
             "cpe:2.3:a:sap:hana:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-json": {
+        "nomatch": [
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-json_pure": {
@@ -3592,12 +3661,22 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-gl": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-is": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
     "editors\/libreoffice-it": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-kab": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -4019,6 +4098,11 @@
     "games\/torcs": {
         "priority": 5
     },
+    "games\/tornado": {
+        "nomatch": [
+            "cpe:2.3:a:tornadoweb:tornado:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/tremulous": {
         "custommatch": "cpe:2.3:a:tremulous:tremulous:*:*:*:*:*:*:*:*"
     },
@@ -4103,6 +4187,11 @@
     },
     "graphics\/blender": {
         "priority": 21
+    },
+    "graphics\/blender-doc": {
+        "nomatch": [
+            "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/cairo": {
         "priority": 149
@@ -4795,6 +4884,9 @@
     "japanese\/namazu2": {
         "priority": 7
     },
+    "japanese\/nethack34": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
     "japanese\/nkf": {
         "priority": 29
     },
@@ -4916,6 +5008,16 @@
     },
     "lang\/cython": {
         "priority": 8
+    },
+    "lang\/dlang-tools": {
+        "nomatch": [
+            "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "lang\/elixir": {
+        "nomatch": [
+            "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
+        ]
     },
     "lang\/emacs-lisp-intro": {
         "priority": 6
@@ -5736,6 +5838,9 @@
     "math\/gmp": {
         "priority": 63
     },
+    "math\/gnubc": {
+        "confirmedmatch": "cpe:2.3:a:gnu:bc:*:*:*:*:*:*:*:*"
+    },
     "math\/gnumeric": {
         "priority": 43
     },
@@ -5807,6 +5912,11 @@
     },
     "math\/pari": {
         "priority": 7
+    },
+    "math\/pecl-stats2": {
+        "nomatch": [
+            "cpe:2.3:a:pvpgn:stats:*:*:*:*:*:*:*:*"
+        ]
     },
     "math\/py-ecos": {
         "nomatch": [
@@ -6090,6 +6200,9 @@
     "multimedia\/aom": {
         "priority": 6
     },
+    "multimedia\/atomicparsley": {
+        "confirmedmatch": "cpe:2.3:a:atomicparsley_project:atomicparsley:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/audacious": {
         "priority": 19
     },
@@ -6159,7 +6272,8 @@
         "priority": 6
     },
     "multimedia\/gstreamer1-plugins-good": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
     },
     "multimedia\/handbrake": {
         "priority": 24
@@ -7221,6 +7335,9 @@
     "net\/pvm": {
         "priority": 6
     },
+    "net\/py-miniupnpc": {
+        "confirmedmatch": "cpe:2.3:a:miniupnp_project:miniupnpc:*:*:*:*:*:*:*:*"
+    },
     "net\/py-pysocks": {
         "priority": 13
     },
@@ -7237,7 +7354,8 @@
         "confirmedmatch": "cpe:2.3:a:josh_roesslein:tweepy:*:*:*:*:*:*:*:*"
     },
     "net\/py-urllib3": {
-        "priority": 13
+        "priority": 13,
+        "confirmedmatch": "cpe:2.3:a:python:urllib3:*:*:*:*:*:*:*:*"
     },
     "net\/pyrad": {
         "confirmedmatch": "cpe:2.3:a:pyrad_project:pyrad:*:*:*:*:*:*:*:*"
@@ -7825,7 +7943,8 @@
         "priority": 9
     },
     "print\/qpdf": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:qpdf_project:qpdf:*:*:*:*:*:*:*:*"
     },
     "print\/rlpr": {
         "custommatch": "cpe:2.3:a:rlpr:rlpr:*:*:*:*:*:*:*:*"
@@ -8508,6 +8627,9 @@
     "security\/rkhunter": {
         "priority": 32
     },
+    "security\/rubygem-doorkeeper-rails50": {
+        "confirmedmatch": "cpe:2.3:a:doorkeeper_project:doorkeeper:*:*:*:*:*:*:*:*"
+    },
     "security\/samhain": {
         "priority": 15
     },
@@ -8746,6 +8868,9 @@
     },
     "sysutils\/autopsy": {
         "priority": 9
+    },
+    "sysutils\/backuppc-devel": {
+        "confirmedmatch": "cpe:2.3:a:craig_barratt:backuppc:*:*:*:*:*:*:*:*"
     },
     "sysutils\/bacula11-docs": {
         "nomatch": [
@@ -9482,6 +9607,11 @@
     "sysutils\/zxfer": {
         "priority": 8
     },
+    "textproc\/R-cran-markdown": {
+        "nomatch": [
+            "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/agrep": {
         "priority": 20
     },
@@ -9513,7 +9643,10 @@
         "priority": 7
     },
     "textproc\/crimson": {
-        "priority": 19
+        "priority": 19,
+        "nomatch": [
+            "cpe:2.3:a:redlion:crimson:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/dict": {
         "priority": 19
@@ -9688,6 +9821,9 @@
     },
     "textproc\/libyaml": {
         "priority": 31
+    },
+    "textproc\/linux-c7-aspell": {
+        "confirmedmatch": "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
     },
     "textproc\/linuxdoc": {
         "priority": 148
@@ -9934,6 +10070,12 @@
         "priority": 19,
         "custommatch": "cpe:2.3:a:pdftohtml:pdftohtml:*:*:*:*:*:*:*:*"
     },
+    "textproc\/pear-Horde_SpellChecker": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_spellchecker:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Xml_Element": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_xml_element:*:*:*:*:*:*:*:*"
+    },
     "textproc\/php74-ctype": {
         "priority": 7
     },
@@ -10167,6 +10309,9 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/adguardhome": {
+        "confirmedmatch": "cpe:2.3:a:adguard:adguardhome:*:*:*:*:*:*:*:*"
+    },
     "www\/adzap": {
         "priority": 13
     },
@@ -10349,6 +10494,11 @@
     "www\/mini_httpd": {
         "priority": 6
     },
+    "www\/mirrorselect": {
+        "nomatch": [
+            "cpe:2.3:a:gentoo:mirrorselect:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/mnogosearch": {
         "priority": 18
     },
@@ -10414,6 +10564,9 @@
     },
     "www\/nextcloud-calendar": {
         "confirmedmatch": "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*"
+    },
+    "www\/nextcloud-deck": {
+        "confirmedmatch": "cpe:2.3:a:nextcloud:deck:*:*:*:*:*:*:*:*"
     },
     "www\/nginx": {
         "priority": 124
@@ -10620,6 +10773,12 @@
     "www\/pear-HTTP_Request": {
         "priority": 17
     },
+    "www\/pear-Horde_SessionHandler": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_sessionhandler:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-twig": {
+        "confirmedmatch": "cpe:2.3:a:symfony:twig:*:*:*:*:*:*:*:*"
+    },
     "www\/php74-opcache": {
         "priority": 5
     },
@@ -10664,6 +10823,9 @@
     "www\/py-bleach": {
         "confirmedmatch": "cpe:2.3:a:mozilla:bleach:*:*:*:*:*:*:*:*"
     },
+    "www\/py-bottle": {
+        "confirmedmatch": "cpe:2.3:a:bottlepy:bottle:*:*:*:*:*:*:*:*"
+    },
     "www\/py-django": {
         "priority": 12
     },
@@ -10694,6 +10856,11 @@
         "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-jwt": {
+        "nomatch": [
+            "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-jwt21": {
         "nomatch": [
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
         ]
@@ -11463,6 +11630,9 @@
     "x11-toolkits\/libwnck": {
         "priority": 138
     },
+    "x11-toolkits\/linux-c7-qt-x11": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
     "x11-toolkits\/ocaml-lablgtk2": {
         "priority": 5
     },
@@ -11505,6 +11675,11 @@
     "x11-toolkits\/rubygem-poppler": {
         "nomatch": [
             "cpe:2.3:a:freedesktop:poppler:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/rubygem-vte": {
+        "nomatch": [
+            "cpe:2.3:a:nalin_dahyabhai:vte:*:*:*:*:*:*:*:*"
         ]
     },
     "x11-toolkits\/scintilla": {
