@@ -329,6 +329,9 @@
     "astro\/xplanet": {
         "priority": 18
     },
+    "audio\/aacplusenc": {
+        "confirmedmatch": "cpe:2.3:a:aacplusenc_project:aacplusenc:*:*:*:*:*:*:*:*"
+    },
     "audio\/abcde": {
         "priority": 19
     },
@@ -1540,6 +1543,11 @@
             "cpe:2.3:a:cli_project:cli:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/R-cran-ini": {
+        "nomatch": [
+            "cpe:2.3:a:ini_project:ini:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/aegis": {
         "custommatch": "cpe:2.3:a:aegis:aegis:*:*:*:*:*:*:*:*"
     },
@@ -1944,7 +1952,8 @@
         "priority": 7
     },
     "devel\/libdaemon": {
-        "priority": 68
+        "priority": 68,
+        "confirmedmatch": "cpe:2.3:a:libdaemon_project:libdaemon:*:*:*:*:*:*:*:*"
     },
     "devel\/libdevq": {
         "priority": 11
@@ -2032,6 +2041,9 @@
     },
     "devel\/libpdel": {
         "priority": 8
+    },
+    "devel\/libpeas": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libpeas:*:*:*:*:*:*:*:*"
     },
     "devel\/libpthread-stubs": {
         "priority": 90
@@ -3306,6 +3318,11 @@
     "devel\/rubygem-rake": {
         "priority": 16
     },
+    "devel\/rubygem-unicode": {
+        "nomatch": [
+            "cpe:2.3:a:unicode_project:unicode:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/scons": {
         "priority": 46
     },
@@ -3657,6 +3674,11 @@
         ]
     },
     "editors\/libreoffice-es": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-et": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -4148,6 +4170,11 @@
     "german\/ding": {
         "priority": 7
     },
+    "german\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "german\/webalizer2": {
         "priority": 20
     },
@@ -4493,6 +4520,12 @@
     "graphics\/libwpg03": {
         "priority": 5
     },
+    "graphics\/linux-c7-cairo": {
+        "confirmedmatch": "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/linux-c7-cairo-gobject": {
+        "confirmedmatch": "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*"
+    },
     "graphics\/mapserver": {
         "priority": 5
     },
@@ -4629,6 +4662,9 @@
     },
     "graphics\/py-cairo": {
         "priority": 59
+    },
+    "graphics\/py-cairosvg": {
+        "confirmedmatch": "cpe:2.3:a:courtbouillon:cairosvg:*:*:*:*:*:*:*:*"
     },
     "graphics\/py-imagesize": {
         "priority": 9
@@ -4882,7 +4918,8 @@
         "priority": 11
     },
     "japanese\/namazu2": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:namazu:namazu:*:*:*:*:*:*:*:*"
     },
     "japanese\/nethack34": {
         "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
@@ -5932,6 +5969,11 @@
     "math\/py-numpy": {
         "priority": 9
     },
+    "math\/rapid": {
+        "nomatch": [
+            "cpe:2.3:a:pinnaclesys:rapid:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/suitesparse": {
         "priority": 7
     },
@@ -6292,7 +6334,8 @@
         "priority": 12
     },
     "multimedia\/libbluray": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:videolan:libbluray:*:*:*:*:*:*:*:*"
     },
     "multimedia\/libdca": {
         "priority": 46
@@ -8201,6 +8244,11 @@
     },
     "security\/hydra": {
         "priority": 9
+    },
+    "security\/i2pd": {
+        "nomatch": [
+            "cpe:2.3:a:i2pd:i2pd:*:*:*:*:*:*:*:*"
+        ]
     },
     "security\/ipfmeta": {
         "priority": 5
@@ -10321,6 +10369,9 @@
     "www\/apache24": {
         "priority": 72
     },
+    "www\/aria2": {
+        "confirmedmatch": "cpe:2.3:a:aria2_project:aria2:*:*:*:*:*:*:*:*"
+    },
     "www\/awstats": {
         "priority": 108
     },
@@ -10338,6 +10389,11 @@
     },
     "www\/calamaris": {
         "priority": 16
+    },
+    "www\/castor": {
+        "nomatch": [
+            "cpe:2.3:a:castor_project:castor:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/cgi-lib": {
         "priority": 6
@@ -10536,7 +10592,8 @@
         "priority": 5
     },
     "www\/mod_rpaf2": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:thomas_eibner:mod_rpaf:*:*:*:*:*:*:*:*"
     },
     "www\/mod_scgi": {
         "priority": 8
@@ -10842,7 +10899,13 @@
         "confirmedmatch": "cpe:2.3:a:tornadoweb:tornado:*:*:*:*:*:*:*:*"
     },
     "www\/py-werkzeug": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:palletsprojects:werkzeug:*:*:*:*:*:*:*:*"
+    },
+    "www\/qt5-websockets": {
+        "nomatch": [
+            "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/reportmagic": {
         "priority": 12
@@ -10867,6 +10930,11 @@
     },
     "www\/rubygem-kaminari-rails52": {
         "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-oembed": {
+        "nomatch": [
+            "cpe:2.3:a:oembed_project:oembed:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/rubygem-passenger": {
         "priority": 8
@@ -12072,6 +12140,9 @@
     },
     "x11\/startup-notification": {
         "priority": 201
+    },
+    "x11\/terminology": {
+        "confirmedmatch": "cpe:2.3:a:enlightenment:terminology:*:*:*:*:*:*:*:*"
     },
     "x11\/tilda": {
         "priority": 6
