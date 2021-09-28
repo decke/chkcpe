@@ -201,12 +201,6 @@
     "archivers\/rpm4": {
         "priority": 10
     },
-    "archivers\/rubygem-rubyzip": {
-        "confirmedmatch": "cpe:2.3:a:rubyzip_project:rubyzip:*:*:*:*:*:*:*:*"
-    },
-    "archivers\/rubygem-rubyzip13": {
-        "confirmedmatch": "cpe:2.3:a:rubyzip_project:rubyzip:*:*:*:*:*:*:*:*"
-    },
     "archivers\/rzip": {
         "priority": 8
     },
@@ -329,9 +323,6 @@
     "astro\/xplanet": {
         "priority": 18
     },
-    "audio\/aacplusenc": {
-        "confirmedmatch": "cpe:2.3:a:aacplusenc_project:aacplusenc:*:*:*:*:*:*:*:*"
-    },
     "audio\/abcde": {
         "priority": 19
     },
@@ -375,8 +366,7 @@
         "priority": 15
     },
     "audio\/clementine-player": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:clementine-player:clementine:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "audio\/cmus": {
         "priority": 8,
@@ -504,9 +494,6 @@
     "audio\/liba52": {
         "priority": 172
     },
-    "audio\/libaacplus": {
-        "confirmedmatch": "cpe:2.3:a:libaacplus_project:libaacplus:*:*:*:*:*:*:*:*"
-    },
     "audio\/libamrnb": {
         "priority": 6
     },
@@ -545,9 +532,6 @@
     },
     "audio\/libmodplug": {
         "priority": 51
-    },
-    "audio\/libmp3splt": {
-        "confirmedmatch": "cpe:2.3:a:libmp3splt_project:libmp3splt:*:*:*:*:*:*:*:*"
     },
     "audio\/libogg": {
         "priority": 349
@@ -861,9 +845,6 @@
             "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
     },
-    "biology\/vcftools": {
-        "confirmedmatch": "cpe:2.3:a:vcftools_project:vcftools:*:*:*:*:*:*:*:*"
-    },
     "cad\/electric": {
         "priority": 5
     },
@@ -872,9 +853,6 @@
     },
     "cad\/kicad": {
         "priority": 5
-    },
-    "cad\/libredwg": {
-        "confirmedmatch": "cpe:2.3:a:gnu:libredwg:*:*:*:*:*:*:*:*"
     },
     "cad\/pcb": {
         "priority": 6
@@ -1001,9 +979,6 @@
     "converters\/libutf-8": {
         "priority": 13
     },
-    "converters\/linux-c7-fribidi": {
-        "confirmedmatch": "cpe:2.3:a:gnu:fribidi:*:*:*:*:*:*:*:*"
-    },
     "converters\/mmencode": {
         "priority": 14
     },
@@ -1098,23 +1073,14 @@
     "converters\/uulib": {
         "priority": 110
     },
-    "databases\/R-cran-RMySQL": {
-        "confirmedmatch": "cpe:2.3:a:r-consortium:rmysql:*:*:*:*:*:*:*:*"
-    },
     "databases\/adodb": {
         "priority": 27
     },
     "databases\/akonadi": {
         "priority": 10
     },
-    "databases\/cassandra3": {
-        "confirmedmatch": "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
-    },
     "databases\/cdb": {
         "priority": 17
-    },
-    "databases\/clickhouse": {
-        "confirmedmatch": "cpe:2.3:a:yandex:clickhouse:*:*:*:*:*:*:*:*"
     },
     "databases\/courier-authlib-mysql": {
         "priority": 20
@@ -1310,9 +1276,6 @@
     },
     "databases\/pear-DB": {
         "priority": 67
-    },
-    "databases\/pear-Horde_Mongo": {
-        "confirmedmatch": "cpe:2.3:a:horde:horde_mongo:*:*:*:*:*:*:*:*"
     },
     "databases\/pear-MDB": {
         "priority": 5
@@ -1598,12 +1561,6 @@
     "devel\/autotools": {
         "priority": 20
     },
-    "devel\/avro-c": {
-        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
-    },
-    "devel\/bazel029": {
-        "confirmedmatch": "cpe:2.3:a:google:bazel:*:*:*:*:*:*:*:*"
-    },
     "devel\/bglibs": {
         "priority": 5
     },
@@ -1845,9 +1802,6 @@
     "devel\/gmake": {
         "priority": 741
     },
-    "devel\/gnulib": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gnulib:*:*:*:*:*:*:*:*"
-    },
     "devel\/gnustep": {
         "priority": 11
     },
@@ -1865,9 +1819,6 @@
     },
     "devel\/gobject-introspection": {
         "priority": 53
-    },
-    "devel\/godot": {
-        "confirmedmatch": "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
     },
     "devel\/goffice": {
         "priority": 17
@@ -3407,8 +3358,7 @@
         "priority": 5
     },
     "devel\/valgrind": {
-        "priority": 18,
-        "confirmedmatch": "cpe:2.3:a:valgrind:valgrind:*:*:*:*:*:*:*:*"
+        "priority": 18
     },
     "devel\/websvn": {
         "priority": 16
@@ -5277,8 +5227,7 @@
         "priority": 19
     },
     "mail\/alpine": {
-        "priority": 24,
-        "confirmedmatch": "cpe:2.3:a:alpine_project:alpine:*:*:*:*:*:*:*:*"
+        "priority": 24
     },
     "mail\/anomy-sanitizer": {
         "priority": 7
@@ -5875,9 +5824,6 @@
     "math\/gmp": {
         "priority": 63
     },
-    "math\/gnubc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:bc:*:*:*:*:*:*:*:*"
-    },
     "math\/gnumeric": {
         "priority": 43
     },
@@ -6334,8 +6280,7 @@
         "priority": 12
     },
     "multimedia\/libbluray": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:videolan:libbluray:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "multimedia\/libdca": {
         "priority": 46
@@ -6940,8 +6885,7 @@
         "priority": 12
     },
     "net\/bird": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:nic:bird:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "net\/bmon": {
         "priority": 19
@@ -8091,9 +8035,6 @@
     "security\/bcwipe": {
         "priority": 14
     },
-    "security\/boringssl": {
-        "confirmedmatch": "cpe:2.3:a:google:boringssl:*:*:*:*:*:*:*:*"
-    },
     "security\/bruteforceblocker": {
         "priority": 6
     },
@@ -8660,9 +8601,6 @@
     "security\/py-paramiko": {
         "priority": 9
     },
-    "security\/py-paramiko1": {
-        "confirmedmatch": "cpe:2.3:a:paramiko:paramiko:*:*:*:*:*:*:*:*"
-    },
     "security\/py-pycrypto": {
         "priority": 37
     },
@@ -9157,9 +9095,6 @@
     },
     "sysutils\/gnome_subr": {
         "priority": 77
-    },
-    "sysutils\/go-wtf": {
-        "confirmedmatch": "cpe:2.3:a:wtfutil:wtf:*:*:*:*:*:*:*:*"
     },
     "sysutils\/gpart": {
         "priority": 10
@@ -10957,9 +10892,6 @@
     "www\/sitecopy": {
         "priority": 13
     },
-    "www\/smarty3": {
-        "confirmedmatch": "cpe:2.3:a:smarty:smarty:*:*:*:*:*:*:*:*"
-    },
     "www\/smb_auth": {
         "priority": 8
     },
@@ -11698,9 +11630,6 @@
     "x11-toolkits\/libwnck": {
         "priority": 138
     },
-    "x11-toolkits\/linux-c7-qt-x11": {
-        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
-    },
     "x11-toolkits\/ocaml-lablgtk2": {
         "priority": 5
     },
@@ -12060,8 +11989,7 @@
         "priority": 53
     },
     "x11\/libxkbcommon": {
-        "priority": 12,
-        "confirmedmatch": "cpe:2.3:a:xkbcommon:libxkbcommon:*:*:*:*:*:*:*:*"
+        "priority": 12
     },
     "x11\/libxkbfile": {
         "priority": 69
@@ -12140,9 +12068,6 @@
     },
     "x11\/startup-notification": {
         "priority": 201
-    },
-    "x11\/terminology": {
-        "confirmedmatch": "cpe:2.3:a:enlightenment:terminology:*:*:*:*:*:*:*:*"
     },
     "x11\/tilda": {
         "priority": 6
