@@ -41,16 +41,21 @@ abstract class Generator
 
         $content = $this->getHeader();
 
-        $limit = 1000;
+        $limit = 2000;
+        $count = 0;
         foreach ($this->ports as $port) {
             $content .= $this->render($port);
 
-            if ($limit-- < 1) {
+            if (++$count > $limit) {
                 break;
             }
         }
 
         $content .= $this->getFooter();
+
+        if ($count >= $limit) {
+            $content .= sprintf("\n %d more ports", count($this->ports)-$limit);
+        }
 
         if (file_put_contents($file, $content) === false) {
             return false;
