@@ -20,8 +20,8 @@ for you to help!
 | ![valid](https://img.shields.io/badge/valid-brightgreen)            | 1840         | [list](https://github.com/decke/chkcpe/wiki/valid)         |
 | ![invalid](https://img.shields.io/badge/invalid-red)                | 2       | [list](https://github.com/decke/chkcpe/wiki/invalid)       |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | 0    | [list](https://github.com/decke/chkcpe/wiki/deprecated)    |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 1809   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 1810   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | 35 | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26141       | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26144       | |
 
-Last updated: Thu Sep 30 10:04:07 UTC 2021
+Last updated: Thu Sep 30 15:36:11 UTC 2021
