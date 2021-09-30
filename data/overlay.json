@@ -2064,6 +2064,9 @@
             "cpe:2.3:a:lightning-viz:lightning:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/linux-c7-libunwind": {
+        "confirmedmatch": "cpe:2.3:a:libunwind_project:libunwind:*:*:*:*:*:*:*:*"
+    },
     "devel\/llvm": {
         "priority": 8,
         "nomatch": [
@@ -3102,6 +3105,11 @@
     },
     "devel\/py-pbr": {
         "priority": 7
+    },
+    "devel\/py-pebble": {
+        "nomatch": [
+            "cpe:2.3:a:simon_brown:pebble:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-pip": {
         "priority": 15
@@ -7855,7 +7863,8 @@
         "priority": 45
     },
     "print\/latex2rtf": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:latex2rtf_project:latex2rtf:*:*:*:*:*:*:*:*"
     },
     "print\/libijs": {
         "priority": 151
@@ -10880,6 +10889,9 @@
     "www\/rubygem-rack": {
         "priority": 5
     },
+    "www\/rubygem-rack15": {
+        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-redcloth": {
         "priority": 5
     },
@@ -11166,6 +11178,9 @@
     },
     "x11-fm\/xfe": {
         "priority": 16
+    },
+    "x11-fonts\/agave": {
+        "confirmedmatch": "cpe:2.3:a:anomali:agave:*:*:*:*:*:*:*:*"
     },
     "x11-fonts\/artwiz-aleczapka": {
         "priority": 7
