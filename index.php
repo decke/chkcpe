@@ -120,10 +120,19 @@ $app->get('/{category}/{portname}', function ($request, $response, $args) {
 });
 
 $app->get('/check', function ($request, $response, $args) {
-    $runner = new Runner();
+    $params = $request->getQueryParams();
 
-    $ports = $runner->loadPorts(Status::CHECKNEEDED);
-    $port = $ports[array_rand($ports)];
+    if (isset($params['origin'])) {
+        $port = Port::loadFromDB($params['origin']);
+
+        if ($port === null) {
+            return $response->withStatus(302)->withHeader('Location', '/');
+        }
+    } else {
+        $runner = new Runner();
+        $ports = $runner->loadPorts(Status::CHECKNEEDED);
+        $port = $ports[array_rand($ports)];
+    }
 
     $view = Twig::fromRequest($request);
     return $view->render($response, 'details.html', [
@@ -193,13 +202,15 @@ $app->post('/check/nomatch', function ($request, $response, $args) {
         $overlay->saveToFile();
     }
 
-    $port->removeCPECandidate($product);
-
     if (count($port->getCPECandidates()) < 1) {
         $port->setCPEStatus(Status::UNKNOWN);
     }
 
     $port->saveToDB();
+
+    if ($port->getCPEStatus() != Status::UNKNOWN) {
+        return $response->withStatus(302)->withHeader('Location', '/check?origin='.$port->getOrigin());
+    }
 
     return $response->withStatus(302)->withHeader('Location', '/check');
 });
