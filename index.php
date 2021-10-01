@@ -129,9 +129,25 @@ $app->get('/check', function ($request, $response, $args) {
             return $response->withStatus(302)->withHeader('Location', '/');
         }
     } else {
+        $overlay = Config::getOverlay();
+        $overlay->loadFromFile();
         $runner = new Runner();
-        $ports = $runner->loadPorts(Status::CHECKNEEDED);
-        $port = $ports[array_rand($ports)];
+        $ports = [];
+
+        foreach ($runner->loadPorts(Status::CHECKNEEDED) as $port) {
+            $key = '9999-'.$port->getOrigin();
+
+            if ($overlay->exists($port->getOrigin(), 'priority')) {
+                $priority = (int)$overlay->get($port->getOrigin(), 'priority');
+                $key = sprintf('%04d-%s', 9999-$priority, $port->getOrigin());
+            }
+
+            $ports[$key] = $port;
+        }
+
+        ksort($ports);
+
+        $port = array_shift($ports);
     }
 
     $view = Twig::fromRequest($request);
