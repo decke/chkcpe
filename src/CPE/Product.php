@@ -84,6 +84,16 @@ class Product
         return $this->cpe->get('other');
     }
 
+    public function getVendorUnescaped(): string
+    {
+        return self::unescape($this->getVendor());
+    }
+
+    public function getProductUnescaped(): string
+    {
+        return self::unescape($this->getProduct());
+    }
+
     public function setDeprecatedBy(Product $product): bool
     {
         // recursive deprecation exists in the CPE Dictionary but it's nonsense
@@ -146,5 +156,10 @@ class Product
         }
 
         return $cpes;
+    }
+
+    public static function unescape(string $str): string
+    {
+        return str_replace('\\', '', $str);
     }
 }

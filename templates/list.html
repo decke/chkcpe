@@ -28,14 +28,14 @@
           </td>
           <td>
             {% if port.cpestatus == "valid" %}
-              found CPE {{ port.cpe.vendor }}:{{ port.cpe.product }}
+              found CPE {{ port.cpe.vendorunescaped }}:{{ port.cpe.productunescaped }}
             {% elseif port.cpestatus == "invalid" %}
               Vendor {{ port.cpevendor }} Product {{ port.cpeproduct }} not found in DB
             {% elseif port.cpestatus == "deprecated" %}
-              Deprecated by Vendor {{ port.cpe.deprecatedby.vendor }} Product {{ port.cpe.deprecatedby.product }}
+              Deprecated by Vendor {{ port.cpe.deprecatedby.vendorunescaped }} Product {{ port.cpe.deprecatedby.productunescaped }}
             {% elseif port.cpestatus == "checkneeded" or port.cpestatus == "readytocommit" %}
               {% for candidate in port.cpecandidates %}
-                {{ candidate.vendor }}:{{ candidate.product }}<br>
+                {{ candidate.vendorunescaped }}:{{ candidate.productunescaped }}<br>
               {% endfor %}
             {% endif %}
           </td>

@@ -37,7 +37,7 @@
             <a href="https://freshports.org/{{ port.origin }}" class="tag is-info mr-5" target="_blank">freshports</a>
 
             {% if port.cpestr %}
-              <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ port.cpe.vendor }}:{{port.cpe.product }}" class="tag is-light is-info" target="_blank">NVD CPE Dictionary</a> &nbsp; &nbsp;
+              <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ port.cpe.vendorunescaped }}:{{ port.cpe.productunescaped }}" class="tag is-light is-info" target="_blank">NVD CPE Dictionary</a> &nbsp; &nbsp;
             {% endif %}
           </div>
         </div>
@@ -72,20 +72,20 @@
                 <div class="control">
                   <div class="tags has-addons">
                     <span class="tag is-light">vendor</span>
-                    <span class="tag is-light is-info">{{ candidate.vendor }}</span>
+                    <span class="tag is-light is-info">{{ candidate.vendorunescaped }}</span>
                   </div>
                   <div class="tags has-addons">
                     <span class="tag is-light">product</span>
-                    <span class="tag is-light is-info">{{ candidate.product }}</span>
+                    <span class="tag is-light is-info">{{ candidate.productunescaped }}</span>
                   </div>
                 </div>
 
                 <hr>
 
                 <div class="field is-grouped is-grouped-multiline">
-                  <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ candidate.vendor }}:{{ candidate.product }}" class="tag is-info mr-4" target="_blank">NVD CPE Dictionary</a>
+                  <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ candidate.vendorunescaped }}:{{ candidate.productunescaped }}" class="tag is-info mr-4" target="_blank">NVD CPE Dictionary</a>
 
-                  <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&isCpeNameSearch=true&seach_type=all&query=cpe:2.3:a:{{ candidate.vendor }}:{{ candidate.product }}:*:*:*:*:*:*:*:*" class="tag is-warning" target="_blank">CVEs</a>
+                  <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&isCpeNameSearch=true&seach_type=all&query=cpe:2.3:a:{{ candidate.vendorunescaped }}:{{ candidate.productunescaped }}:*:*:*:*:*:*:*:*" class="tag is-warning" target="_blank">CVEs</a>
                 </div>
 
                 <hr>
