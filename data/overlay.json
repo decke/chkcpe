@@ -20,6 +20,11 @@
     "accessibility\/speech-dispatcher": {
         "priority": 7
     },
+    "arabic\/aspell": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
     "arabic\/libreoffice": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
@@ -214,7 +219,10 @@
         "priority": 14
     },
     "archivers\/star": {
-        "priority": 10
+        "priority": 10,
+        "nomatch": [
+            "cpe:2.3:a:iris:star:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/stuffit": {
         "priority": 13
@@ -232,7 +240,8 @@
         "priority": 43
     },
     "archivers\/unadf": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:unadf_project:unadf:*:*:*:*:*:*:*:*"
     },
     "archivers\/unalz": {
         "custommatch": "cpe:2.3:a:unalz:unalz:*:*:*:*:*:*:*:*"
@@ -262,7 +271,8 @@
         "priority": 63
     },
     "archivers\/upx": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:upx_project:upx:*:*:*:*:*:*:*:*"
     },
     "archivers\/xarchiver": {
         "priority": 5
@@ -286,7 +296,8 @@
         "priority": 9
     },
     "astro\/cfitsio": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:nasa:cfitsio:*:*:*:*:*:*:*:*"
     },
     "astro\/google-earth": {
         "priority": 18
@@ -351,7 +362,10 @@
         "priority": 5
     },
     "audio\/beep": {
-        "priority": 10
+        "priority": 10,
+        "nomatch": [
+            "cpe:2.3:a:beep_project:beep:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/cd-discid": {
         "priority": 15
@@ -556,7 +570,10 @@
         "priority": 345
     },
     "audio\/mac": {
-        "priority": 10
+        "priority": 10,
+        "nomatch": [
+            "cpe:2.3:a:jenkins:mac:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/madplay": {
         "priority": 42
@@ -805,7 +822,8 @@
         "priority": 34
     },
     "benchmarks\/iperf3": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:iperf_project:iperf:*:*:*:*:*:*:*:*"
     },
     "benchmarks\/lmbench": {
         "priority": 6
@@ -880,6 +898,11 @@
         "priority": 5
     },
     "chinese\/libreoffice-zh_CN": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "chinese\/libreoffice-zh_TW": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -1701,7 +1724,8 @@
         "confirmedmatch": "cpe:2.3:a:freebsd:cvsweb:*:*:*:*:*:*:*:*"
     },
     "devel\/cvsweb3": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:freebsd:cvsweb:*:*:*:*:*:*:*:*"
     },
     "devel\/cxref": {
         "priority": 7
@@ -1825,7 +1849,8 @@
         "priority": 37
     },
     "devel\/global": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:gnu:global:*:*:*:*:*:*:*:*"
     },
     "devel\/gmake": {
         "priority": 741
@@ -3280,7 +3305,12 @@
         "priority": 6
     },
     "devel\/qt5-core": {
-        "priority": 10
+        "priority": 10,
+        "nomatch": [
+            "cpe:2.3:a:mobileiron:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:api-platform:core:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/qt5-dbus": {
         "priority": 8,
@@ -3673,12 +3703,112 @@
     "editors\/libreoffice": {
         "priority": 31
     },
+    "editors\/libreoffice-af": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-am": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-as": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ast": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-be": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-bg": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-bn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-bn_IN": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-bo": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-br": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-brx": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-bs": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-ca": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ca_valencia": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ckb": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-cs": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-cy": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-da": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-dgo": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-dsb": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-dz": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-el": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3693,6 +3823,11 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-eo": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-es": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
@@ -3703,7 +3838,72 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-eu": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-fa": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-fi": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-fur": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-fy": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ga": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-gd": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-gl": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-gu": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-gug": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-hi": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-hr": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-hsb": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-i18n": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3723,7 +3923,42 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-ka": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-kab": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-kk": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-km": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-kmr_Latn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-kn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-kok": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ks": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3733,7 +3968,47 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-lo": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-lt": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-lv": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-mai": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-mk": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ml": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-mn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-mni": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-mr": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3743,7 +4018,37 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-nb": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ne": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-nl": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-nn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-nr": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-nso": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-oc": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3753,7 +4058,112 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-or": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-pa_IN": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ro": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-rw": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sa_IN": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sat": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sd": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-si": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sid": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sk": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sl": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sq": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sr": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sr_Latn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ss": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-st": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sv": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-sw_TZ": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-szl": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-ta": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-te": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-tg": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3763,7 +4173,52 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/libreoffice-tn": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/libreoffice-tr": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ts": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-tt": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ug": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-uz": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-ve": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-vec": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-xh": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/libreoffice-zu": {
         "nomatch": [
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
@@ -3927,7 +4382,15 @@
         ]
     },
     "french\/aspell": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "french\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "ftp\/axel": {
         "priority": 13,
@@ -4201,7 +4664,10 @@
         "custommatch": "cpe:2.3:a:xshisen:xshisen:*:*:*:*:*:*:*:*"
     },
     "german\/aspell": {
-        "priority": 9
+        "priority": 9,
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
     },
     "german\/dict": {
         "priority": 7
@@ -4822,8 +5288,28 @@
     "graphics\/zgv": {
         "priority": 5
     },
+    "hebrew\/aspell": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
     "hebrew\/hspell": {
         "priority": 6
+    },
+    "hebrew\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "hungarian\/aspell": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "hungarian\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "irc\/bitchx": {
         "priority": 82,
@@ -4942,6 +5428,11 @@
         "priority": 23,
         "nomatch": [
             "cpe:2.3:a:gnu:less:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "japanese\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
     "japanese\/libslang": {
@@ -6467,7 +6958,8 @@
         "priority": 9
     },
     "multimedia\/mediainfo": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:mediaarea:mediainfo:*:*:*:*:*:*:*:*"
     },
     "multimedia\/mencoder": {
         "priority": 15
@@ -7250,7 +7742,8 @@
         "priority": 7
     },
     "net\/mpd5": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
     },
     "net\/mtr": {
         "priority": 95
@@ -7684,7 +8177,8 @@
         "priority": 15
     },
     "net\/x11vnc": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:x11vnc_project:x11vnc:*:*:*:*:*:*:*:*"
     },
     "net\/xmlrpc-c": {
         "priority": 6
@@ -7776,10 +8270,18 @@
         "priority": 7
     },
     "polish\/aspell": {
-        "priority": 9
+        "priority": 9,
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
     },
     "polish\/libgadu": {
         "priority": 12
+    },
+    "polish\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "polish\/webalizer2": {
         "priority": 6
@@ -7868,6 +8370,21 @@
     },
     "ports-mgmt\/synth": {
         "priority": 11
+    },
+    "portuguese\/aspell-pt_BR": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "portuguese\/aspell-pt_PT": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "portuguese\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "portuguese\/libreoffice-pt_BR": {
         "nomatch": [
@@ -8046,7 +8563,8 @@
         "priority": 14
     },
     "print\/py-reportlab": {
-        "priority": 9
+        "priority": 9,
+        "confirmedmatch": "cpe:2.3:a:reportlab:reportlab:*:*:*:*:*:*:*:*"
     },
     "print\/qpdf": {
         "priority": 7
@@ -8058,7 +8576,8 @@
         "priority": 5
     },
     "print\/t1utils": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:t1utils_project:t1utils:*:*:*:*:*:*:*:*"
     },
     "print\/tex-basic-engines": {
         "priority": 6
@@ -8094,7 +8613,15 @@
         "priority": 5
     },
     "russian\/aspell": {
-        "priority": 9
+        "priority": 9,
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "russian\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
     },
     "russian\/xcode": {
         "priority": 5
@@ -10428,8 +10955,23 @@
     "textproc\/xmlto": {
         "priority": 24
     },
+    "ukrainian\/aspell": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "ukrainian\/libreoffice": {
+        "nomatch": [
+            "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
+        ]
+    },
     "ukrainian\/webalizer": {
         "priority": 8
+    },
+    "vietnamese\/aspell": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+        ]
     },
     "vietnamese\/libreoffice": {
         "nomatch": [
@@ -10455,7 +10997,8 @@
         "priority": 7
     },
     "www\/cadaver": {
-        "priority": 11
+        "priority": 11,
+        "confirmedmatch": "cpe:2.3:a:webdav:cadaver:*:*:*:*:*:*:*:*"
     },
     "www\/caddy": {
         "priority": 7
@@ -10886,7 +11429,8 @@
         "priority": 35
     },
     "www\/p5-libapreq2": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:apache:libapreq2:*:*:*:*:*:*:*:*"
     },
     "www\/p5-libwww": {
         "priority": 283
@@ -10923,7 +11467,8 @@
         "priority": 5
     },
     "www\/polipo": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:polipo_project:polipo:*:*:*:*:*:*:*:*"
     },
     "www\/pound": {
         "priority": 8
@@ -11600,7 +12145,10 @@
         "priority": 8
     },
     "x11-themes\/gnome-icons-crystal": {
-        "priority": 10
+        "priority": 10,
+        "nomatch": [
+            "cpe:2.3:a:nuuo:crystal:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11-themes\/gnome-icons-gentoo-test": {
         "priority": 8
@@ -11777,7 +12325,8 @@
         "priority": 5
     },
     "x11-toolkits\/plib": {
-        "priority": 10
+        "priority": 10,
+        "confirmedmatch": "cpe:2.3:a:plib_project:plib:*:*:*:*:*:*:*:*"
     },
     "x11-toolkits\/py-tkinter": {
         "priority": 89
