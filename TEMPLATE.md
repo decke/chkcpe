@@ -16,7 +16,7 @@ for you to help!
 ## Are we there yet?
 
 | Status                                                              | # Ports                                                                |
-| --------------------------------------------------------------------| ---------------------------------------------------------------------- |
+| --------------------------------------------------------------------| ---------------------------------------------------------------------: |
 | ![valid](https://img.shields.io/badge/valid-brightgreen)            | [${VALID}](https://github.com/decke/chkcpe/wiki/valid)                 |
 | ![invalid](https://img.shields.io/badge/invalid-red)                | [${INVALID}](https://github.com/decke/chkcpe/wiki/invalid)             |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | [${DEPRECATED}](https://github.com/decke/chkcpe/wiki/deprecated)       |
