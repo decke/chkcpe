@@ -24,7 +24,13 @@
             <a href="mailto:{{ port.maintainer }}">{{ port.maintainer }}</a>
           </td>
           <td>
+            {% if port.cpestatus == "checkneeded" %}
+              <a href="/check?origin={{ port.origin }}">
+            {% endif %}
             <img src="https://img.shields.io/badge/{{ port.cpestatus }}-{{ port.color }}"></img>
+            {% if port.cpestatus == "checkneeded" %}
+              </a>
+            {% endif %}
           </td>
           <td>
             {% if port.cpestatus == "valid" %}
