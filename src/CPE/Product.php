@@ -122,9 +122,9 @@ class Product
         return $bind->bindToURI($this->cpe);
     }
 
-    public function compareTo(Product $product): int
+    public function compareTo(Product $product): bool
     {
-        return strcmp($this->getVendor().':'.$this->getProduct(), $product->getVendor().':'.$product->getProduct());
+        return (strcmp($this->getVendor().':'.$this->getProduct(), $product->getVendor().':'.$product->getProduct()) == 0);
     }
 
     /**
