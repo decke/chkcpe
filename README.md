@@ -15,13 +15,13 @@ for you to help!
 
 ## Are we there yet?
 
-| Status                                                              | # Ports          | Links                                                      |
-| --------------------------------------------------------------------| ---------------: | ---------------------------------------------------------- |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)            | 1870         | [list](https://github.com/decke/chkcpe/wiki/valid)         |
-| ![invalid](https://img.shields.io/badge/invalid-red)                | 2       | [list](https://github.com/decke/chkcpe/wiki/invalid)       |
-| ![deprecated](https://img.shields.io/badge/deprecated-red)          | 0    | [list](https://github.com/decke/chkcpe/wiki/deprecated)    |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | 1801   | [list](https://github.com/decke/chkcpe/wiki/checkneeded)   |
-| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | 6 | [list](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26140       | |
+| Status                                                              | # Ports                                                                |
+| --------------------------------------------------------------------| ---------------------------------------------------------------------- |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [1870](https://github.com/decke/chkcpe/wiki/valid)                 |
+| ![invalid](https://img.shields.io/badge/invalid-red)                | [2](https://github.com/decke/chkcpe/wiki/invalid)             |
+| ![deprecated](https://img.shields.io/badge/deprecated-red)          | [0](https://github.com/decke/chkcpe/wiki/deprecated)       |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [1801](https://github.com/decke/chkcpe/wiki/checkneeded)     |
+| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [6](https://github.com/decke/chkcpe/wiki/readytocommit) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 26140 | |
 
-Last updated: Fri Oct  1 02:57:18 UTC 2021
+Last updated: Fri Oct  1 04:10:39 UTC 2021
