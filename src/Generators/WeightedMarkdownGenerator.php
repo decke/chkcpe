@@ -27,7 +27,7 @@ class WeightedMarkdownGenerator extends MarkdownGenerator
         $key = '9999-'.$origin;
 
         if ($this->overlay->exists($origin, 'priority')) {
-            $priority = (int)$this->overlay->exists($origin, 'priority');
+            $priority = (int)$this->overlay->get($origin, 'priority');
             $key = sprintf('%04d-%s', 9999-$priority, $origin);
         }
 
