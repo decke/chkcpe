@@ -3265,7 +3265,8 @@
         "priority": 5
     },
     "devel\/py-lxml": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:lxml:lxml:*:*:*:*:*:*:*:*"
     },
     "devel\/py-minio": {
         "nomatch": [
@@ -3375,7 +3376,10 @@
         "priority": 16
     },
     "devel\/pydbus-common": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/pygobject3-common": {
         "priority": 8
@@ -3421,7 +3425,8 @@
         "priority": 5
     },
     "devel\/radare2": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:radare:radare2:*:*:*:*:*:*:*:*"
     },
     "devel\/re2": {
         "priority": 8
@@ -4837,7 +4842,8 @@
         "priority": 23
     },
     "graphics\/clutter": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:clutter_project:clutter:*:*:*:*:*:*:*:*"
     },
     "graphics\/colord": {
         "priority": 13
@@ -4934,7 +4940,8 @@
         "priority": 37
     },
     "graphics\/gifsicle": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:gifsicle_project:gifsicle:*:*:*:*:*:*:*:*"
     },
     "graphics\/gimageview": {
         "priority": 7
@@ -5179,7 +5186,11 @@
         "priority": 5
     },
     "graphics\/p5-Cairo": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:cairo:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/p5-GD": {
         "priority": 68
@@ -5330,7 +5341,8 @@
         "custommatch": "cpe:2.3:a:svgalib:svgalib:*:*:*:*:*:*:*:*"
     },
     "graphics\/swftools": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:swftools:swftools:*:*:*:*:*:*:*:*"
     },
     "graphics\/synaesthesia": {
         "custommatch": "cpe:2.3:a:synaesthesia:synaesthesia:*:*:*:*:*:*:*:*"
@@ -5449,7 +5461,10 @@
         "custommatch": "cpe:2.3:a:ezbounce:ezbounce:*:*:*:*:*:*:*:*"
     },
     "irc\/irc": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:jenkins:irc:*:*:*:*:*:*:*:*"
+        ]
     },
     "irc\/ircII": {
         "priority": 31
@@ -5895,7 +5910,8 @@
         "priority": 12
     },
     "lang\/scheme48": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:s48:scheme48:*:*:*:*:*:*:*:*"
     },
     "lang\/scm": {
         "priority": 7
@@ -6020,7 +6036,10 @@
         ]
     },
     "mail\/exim-doc-postscript": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/exim-ldap2": {
         "priority": 14
@@ -6092,7 +6111,8 @@
         ]
     },
     "mail\/imapfilter": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:imapfilter_project:imapfilter:*:*:*:*:*:*:*:*"
     },
     "mail\/imapsync": {
         "priority": 14
@@ -6113,7 +6133,8 @@
         "priority": 32
     },
     "mail\/libetpan": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:libetpan_project:libetpan:*:*:*:*:*:*:*:*"
     },
     "mail\/libspf": {
         "custommatch": "cpe:2.3:a:libspf:libspf:*:*:*:*:*:*:*:*"
@@ -6182,7 +6203,10 @@
         "custommatch": "cpe:2.3:a:nocc:nocc:*:*:*:*:*:*:*:*"
     },
     "mail\/nullmailer": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:gentoo:nullmailer:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/opendkim": {
         "priority": 18
@@ -6859,7 +6883,10 @@
         "priority": 7
     },
     "misc\/sword": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:ireadercity:sword:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/team": {
         "priority": 6
@@ -6980,7 +7007,8 @@
         "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
     },
     "multimedia\/gstreamer1-plugins-bad": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:gstreamer:gstreamer:*:*:*:*:*:*:*:*"
     },
     "multimedia\/gstreamer1-plugins-good": {
         "priority": 5,
@@ -7037,7 +7065,8 @@
         "priority": 140
     },
     "multimedia\/libmtp": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:libmtp_project:libmtp:*:*:*:*:*:*:*:*"
     },
     "multimedia\/libquicktime": {
         "priority": 13
@@ -7738,7 +7767,8 @@
         "priority": 5
     },
     "net\/isc-dhcp44-server": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:isc:dhcp:*:*:*:*:*:*:*:*"
     },
     "net\/istgt": {
         "priority": 6
@@ -7840,7 +7870,8 @@
         "confirmedmatch": "cpe:2.3:a:minidlna_project:minidlna:*:*:*:*:*:*:*:*"
     },
     "net\/miniupnpc": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:miniupnp_project:miniupnpc:*:*:*:*:*:*:*:*"
     },
     "net\/miniupnpd": {
         "priority": 5
@@ -7852,7 +7883,8 @@
         "priority": 21
     },
     "net\/mosquitto": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:eclipse:mosquitto:*:*:*:*:*:*:*:*"
     },
     "net\/mpd5": {
         "priority": 9,
@@ -8084,7 +8116,11 @@
         "priority": 13
     },
     "net\/qt5-network": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:fidelissecurity:network:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hp:network:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/quagga": {
         "priority": 24
@@ -8200,7 +8236,8 @@
         "priority": 28
     },
     "net\/tac_plus4": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:cisco:tac_plus:*:*:*:*:*:*:*:*"
     },
     "net\/tcpcat": {
         "priority": 7
@@ -8902,7 +8939,8 @@
         "priority": 75
     },
     "security\/doas": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:doas_project:doas:*:*:*:*:*:*:*:*"
     },
     "security\/dropbear": {
         "priority": 5
@@ -9344,7 +9382,8 @@
         ]
     },
     "security\/pgpdump": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:pgpdump_project:pgpdump:*:*:*:*:*:*:*:*"
     },
     "security\/pgpgpg": {
         "priority": 12
@@ -9401,7 +9440,10 @@
         "priority": 14
     },
     "security\/py-gnupg": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:gnupg:gnupg:*:*:*:*:*:*:*:*"
+        ]
     },
     "security\/py-josepy": {
         "priority": 6
@@ -9532,7 +9574,8 @@
         "priority": 7
     },
     "security\/vault": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*"
     },
     "security\/vlock": {
         "priority": 14
@@ -9741,7 +9784,10 @@
         "priority": 11
     },
     "sysutils\/consolekit2": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:consolekit_project:consolekit:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/consul": {
         "priority": 5
@@ -9790,7 +9836,8 @@
         "priority": 81
     },
     "sysutils\/dtc": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:dtc_project:dtc:*:*:*:*:*:*:*:*"
     },
     "sysutils\/dunst": {
         "priority": 6
@@ -9812,7 +9859,8 @@
         "priority": 39
     },
     "sysutils\/exfat-utils": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:exfat_project:exfat:*:*:*:*:*:*:*:*"
     },
     "sysutils\/ezjail": {
         "priority": 41
@@ -9862,10 +9910,12 @@
         "priority": 6
     },
     "sysutils\/fusefs-encfs": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:encfs_project:encfs:*:*:*:*:*:*:*:*"
     },
     "sysutils\/fusefs-exfat": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:exfat_project:exfat:*:*:*:*:*:*:*:*"
     },
     "sysutils\/fusefs-libs": {
         "priority": 34
@@ -10020,7 +10070,10 @@
         "priority": 10
     },
     "sysutils\/logwatch": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:alterpoint:logwatch:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/lsof": {
         "priority": 214
@@ -10090,7 +10143,10 @@
         "priority": 42
     },
     "sysutils\/nvclock": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:gentoo:nvclock:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/obliterate": {
         "priority": 9
@@ -10220,7 +10276,10 @@
         "priority": 34
     },
     "sysutils\/rename": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:rename_project:rename:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/restic": {
         "priority": 6
@@ -10269,7 +10328,10 @@
         "priority": 5
     },
     "sysutils\/spiped": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:docker:spiped:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/stow": {
         "priority": 5
@@ -10305,7 +10367,8 @@
         "priority": 6
     },
     "sysutils\/tenshi": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:inversepath:tenshi:*:*:*:*:*:*:*:*"
     },
     "sysutils\/terraform": {
         "priority": 6
@@ -11168,7 +11231,8 @@
         "confirmedmatch": "cpe:2.3:a:webdav:cadaver:*:*:*:*:*:*:*:*"
     },
     "www\/caddy": {
-        "priority": 7
+        "priority": 7,
+        "confirmedmatch": "cpe:2.3:a:caddyserver:caddy:*:*:*:*:*:*:*:*"
     },
     "www\/calamaris": {
         "priority": 16
@@ -12514,7 +12578,11 @@
         "priority": 7
     },
     "x11-toolkits\/qt5-widgets": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:widgets_project:widgets:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:yahoo:widgets:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11-toolkits\/rep-gtk2": {
         "priority": 27
