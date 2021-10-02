@@ -426,6 +426,12 @@
     "audio\/espeak": {
         "priority": 12
     },
+    "audio\/etcd": {
+        "nomatch": [
+            "cpe:2.3:a:etcd:etcd:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:etcd:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/faac": {
         "priority": 50
     },
@@ -978,6 +984,12 @@
     },
     "comms\/p5-Device-SerialPort": {
         "priority": 6
+    },
+    "comms\/pear-Horde_ActiveSync": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_activesync:*:*:*:*:*:*:*:*"
+    },
+    "comms\/pear-Horde_SyncMl": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_syncml:*:*:*:*:*:*:*:*"
     },
     "comms\/spandsp": {
         "priority": 8
@@ -1537,7 +1549,10 @@
         "priority": 6
     },
     "deskutils\/ical": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:apple:ical:*:*:*:*:*:*:*:*"
+        ]
     },
     "deskutils\/kchmviewer": {
         "priority": 8
@@ -3056,7 +3071,10 @@
         "priority": 5
     },
     "devel\/pear-I18N": {
-        "priority": 7
+        "priority": 7,
+        "nomatch": [
+            "cpe:2.3:a:i18n_project:i18n:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/pear-Symfony_Component_Console": {
         "nomatch": [
