@@ -1346,6 +1346,15 @@
     "databases\/pear-DB": {
         "priority": 67
     },
+    "databases\/pear-Horde_Db": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_db:*:*:*:*:*:*:*:*"
+    },
+    "databases\/pear-Horde_HashTable": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_hashtable:*:*:*:*:*:*:*:*"
+    },
+    "databases\/pear-Horde_Imsp": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_imsp:*:*:*:*:*:*:*:*"
+    },
     "databases\/pear-MDB": {
         "priority": 5
     },
@@ -3070,6 +3079,96 @@
     "devel\/pear-HTML_Select_Common": {
         "priority": 5
     },
+    "devel\/pear-Horde_Alarm": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_alarm:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Autoloader": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_autoloader:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Autoloader_Cache": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_autoloader_cache:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Cache": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_cache:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Constraint": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_constraint:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Controller": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_controller:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Core": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_core:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Data": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_data:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Date": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_date:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Exception": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_exception:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_History": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_history:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Icalendar": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_icalendar:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Injector": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_injector:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Itip": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_itip:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Lock": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_lock:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_LoginTasks": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_logintasks:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Notification": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_notification:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Queue": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_queue:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Role": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_role:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Scheduler": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_scheduler:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Serialize": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_serialize:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Stream": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_stream:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Stream_Filter": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_stream_filter:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Stream_Wrapper": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_stream_wrapper:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Support": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_support:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Thrift": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_thrift:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Token": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_token:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Translation": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_translation:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_Util": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_util:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pear-Horde_View": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_view:*:*:*:*:*:*:*:*"
+    },
     "devel\/pear-I18N": {
         "priority": 7,
         "nomatch": [
@@ -3714,6 +3813,9 @@
     "dns\/pdnsd": {
         "priority": 7,
         "custommatch": "cpe:2.3:a:pdnsd:pdnsd:*:*:*:*:*:*:*:*"
+    },
+    "dns\/pear-Horde_Idna": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_idna:*:*:*:*:*:*:*:*"
     },
     "dns\/powerdns": {
         "priority": 21,
@@ -5224,6 +5326,9 @@
     "graphics\/p5-Image-Size": {
         "priority": 35
     },
+    "graphics\/pear-Horde_Image": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_image:*:*:*:*:*:*:*:*"
+    },
     "graphics\/pear-Image_Color": {
         "priority": 7
     },
@@ -6306,6 +6411,30 @@
     },
     "mail\/p5-Mail-Tools": {
         "priority": 267
+    },
+    "mail\/pear-Horde_Imap_Client": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_imap_client:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Kolab_Storage": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_kolab_storage:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Mail": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mail:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Mail_Autoconfig": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mail_autoconfig:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Mapi": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mapi:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Mime": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mime:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Mime_Viewer": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_mime_viewer:*:*:*:*:*:*:*:*"
+    },
+    "mail\/pear-Horde_Smtp": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_smtp:*:*:*:*:*:*:*:*"
     },
     "mail\/pear-Mail": {
         "priority": 36,
@@ -8047,6 +8176,18 @@
     "net\/p5-perl-ldap": {
         "priority": 44
     },
+    "net\/pear-Horde_Kolab_Server": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_kolab_server:*:*:*:*:*:*:*:*"
+    },
+    "net\/pear-Horde_Ldap": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_ldap:*:*:*:*:*:*:*:*"
+    },
+    "net\/pear-Horde_Socket_Client": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_socket_client:*:*:*:*:*:*:*:*"
+    },
+    "net\/pear-Horde_Url": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_url:*:*:*:*:*:*:*:*"
+    },
     "net\/pear-Net_DIME": {
         "priority": 7
     },
@@ -9365,6 +9506,30 @@
     "security\/pear-Auth_SASL": {
         "priority": 35
     },
+    "security\/pear-Horde_Auth": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_auth:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Crypt": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_crypt:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Crypt_Blowfish": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_crypt_blowfish:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Group": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_group:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Oauth": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_oauth:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Perms": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_perms:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Secret": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_secret:*:*:*:*:*:*:*:*"
+    },
+    "security\/pear-Horde_Share": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_share:*:*:*:*:*:*:*:*"
+    },
     "security\/pecl-crypto": {
         "nomatch": [
             "cpe:2.3:a:erlang:crypto:*:*:*:*:*:*:*:*",
@@ -10194,6 +10359,9 @@
             "cpe:2.3:a:christos_zoulas:file:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/pear-Horde_Log": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_log:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/pear-Log": {
         "priority": 45
     },
@@ -10965,6 +11133,33 @@
         "priority": 19,
         "custommatch": "cpe:2.3:a:pdftohtml:pdftohtml:*:*:*:*:*:*:*:*"
     },
+    "textproc\/pear-Horde_CssMinify": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_cssminify:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_JavascriptMinify": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_javascriptminify:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Kolab_Format": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_kolab_format:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Pdf": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_pdf:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Text_Diff": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_text_diff:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Text_Filter": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_text_filter:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Text_Filter_Csstidy": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_text_filter_csstidy:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Text_Flowed": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_text_flowed:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/pear-Horde_Xml_Wbxml": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_xml_wbxml:*:*:*:*:*:*:*:*"
+    },
     "textproc\/php74-ctype": {
         "priority": 7
     },
@@ -11674,6 +11869,45 @@
         "nomatch": [
             "cpe:2.3:a:http_request_project:http_request:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/pear-Horde_Browser": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_browser:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Css_Parser": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_css_parser:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Dav": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_dav:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Editor": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_editor:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Feed": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_feed:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Form": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_form:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Http": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_http:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Routes": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_routes:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Service_Facebook": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_service_facebook:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Service_Gravatar": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_service_gravatar:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Service_Twitter": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_service_twitter:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Service_Weather": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_service_weather:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-Horde_Template": {
+        "confirmedmatch": "cpe:2.3:a:horde:horde_template:*:*:*:*:*:*:*:*"
     },
     "www\/pecl-http": {
         "nomatch": [
