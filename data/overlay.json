@@ -355,6 +355,11 @@
     "archivers\/xdms": {
         "priority": 6
     },
+    "archivers\/xmill": {
+        "nomatch": [
+            "cpe:2.3:a:att:xmill:*:*:*:*:*:*:*:*"
+        ]
+    },
     "archivers\/zip": {
         "priority": 445
     },
@@ -363,6 +368,9 @@
     },
     "archivers\/zstd": {
         "priority": 11
+    },
+    "archivers\/zutils": {
+        "confirmedmatch": "cpe:2.3:a:nongnu:zutils:*:*:*:*:*:*:*:*"
     },
     "astro\/boinc-setiathome": {
         "priority": 9
@@ -388,6 +396,11 @@
     },
     "astro\/openuniverse": {
         "priority": 5
+    },
+    "astro\/p5-Astro": {
+        "nomatch": [
+            "cpe:2.3:a:saxum2003:astro:*:*:*:*:*:*:*:*"
+        ]
     },
     "astro\/p5-GPS": {
         "nomatch": [
@@ -427,6 +440,11 @@
     "audio\/aqualung": {
         "custommatch": "cpe:2.3:a:aqualung:aqualung:*:*:*:*:*:*:*:*"
     },
+    "audio\/asterisk-flite": {
+        "nomatch": [
+            "cpe:2.3:a:cmu:flite:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/audacity": {
         "priority": 41
     },
@@ -440,6 +458,16 @@
         "priority": 10,
         "nomatch": [
             "cpe:2.3:a:beep_project:beep:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/cam": {
+        "nomatch": [
+            "cpe:2.3:a:nzxt:cam:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/cava": {
+        "nomatch": [
+            "cpe:2.3:a:emc:cava:*:*:*:*:*:*:*:*"
         ]
     },
     "audio\/cd-discid": {
@@ -553,8 +581,19 @@
     "audio\/gtkpod": {
         "priority": 13
     },
+    "audio\/harp": {
+        "nomatch": [
+            "cpe:2.3:a:npmjs:harp:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:harpjs:harp:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/icecast": {
         "priority": 11
+    },
+    "audio\/icecast-kh": {
+        "nomatch": [
+            "cpe:2.3:a:xiph:icecast:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/ices": {
         "priority": 5
@@ -589,6 +628,9 @@
     },
     "audio\/liba52": {
         "priority": 172
+    },
+    "audio\/libadplug": {
+        "confirmedmatch": "cpe:2.3:a:adplug_project:adplug:*:*:*:*:*:*:*:*"
     },
     "audio\/libamrnb": {
         "priority": 6
@@ -629,8 +671,14 @@
     "audio\/libmodplug": {
         "priority": 51
     },
+    "audio\/libmysofa": {
+        "confirmedmatch": "cpe:2.3:a:symonics:libmysofa:*:*:*:*:*:*:*:*"
+    },
     "audio\/libogg": {
         "priority": 349
+    },
+    "audio\/libopenmpt": {
+        "confirmedmatch": "cpe:2.3:a:openmpt:libopenmpt:*:*:*:*:*:*:*:*"
     },
     "audio\/libsamplerate": {
         "priority": 73
@@ -651,6 +699,31 @@
     "audio\/libvorbis": {
         "priority": 345
     },
+    "audio\/linux-c7-flac": {
+        "confirmedmatch": "cpe:2.3:a:flac_project:flac:*:*:*:*:*:*:*:*"
+    },
+    "audio\/linux-c7-libsndfile": {
+        "confirmedmatch": "cpe:2.3:a:libsndfile_project:libsndfile:*:*:*:*:*:*:*:*"
+    },
+    "audio\/linux-c7-libvorbis": {
+        "confirmedmatch": "cpe:2.3:a:xiph.org:libvorbis:*:*:*:*:*:*:*:*"
+    },
+    "audio\/linux-c7-pulseaudio-libs": {
+        "confirmedmatch": "cpe:2.3:a:pulseaudio:pulseaudio:*:*:*:*:*:*:*:*"
+    },
+    "audio\/linux-c7-pulseaudio-utils": {
+        "confirmedmatch": "cpe:2.3:a:pulseaudio:pulseaudio:*:*:*:*:*:*:*:*"
+    },
+    "audio\/listener": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:listener:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/lua-mpd": {
+        "nomatch": [
+            "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/mac": {
         "priority": 10,
         "nomatch": [
@@ -665,6 +738,12 @@
     },
     "audio\/mikmod": {
         "priority": 5
+    },
+    "audio\/milkytracker": {
+        "confirmedmatch": "cpe:2.3:a:milkytracker_project:milkytracker:*:*:*:*:*:*:*:*"
+    },
+    "audio\/miniaudio": {
+        "confirmedmatch": "cpe:2.3:a:miniaudio_project:miniaudio:*:*:*:*:*:*:*:*"
     },
     "audio\/mixer.app": {
         "priority": 5
@@ -701,6 +780,11 @@
     "audio\/mpg321": {
         "priority": 41
     },
+    "audio\/mps": {
+        "nomatch": [
+            "cpe:2.3:a:jetbrains:mps:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/mumble": {
         "priority": 6
     },
@@ -725,6 +809,9 @@
     },
     "audio\/normalize": {
         "priority": 29
+    },
+    "audio\/nosefart": {
+        "confirmedmatch": "cpe:2.3:a:nosefart_project:nosefart:*:*:*:*:*:*:*:*"
     },
     "audio\/openal-soft": {
         "priority": 5
@@ -756,10 +843,25 @@
     "audio\/p5-MP3-Info": {
         "priority": 28
     },
+    "audio\/p5-Shout": {
+        "nomatch": [
+            "cpe:2.3:a:shout_project:shout:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/p5-libvorbis": {
         "priority": 5,
         "nomatch": [
             "cpe:2.3:a:xiph.org:libvorbis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/picard": {
+        "nomatch": [
+            "cpe:2.3:a:picard_project:picard:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/pithos": {
+        "nomatch": [
+            "cpe:2.3:a:pithos_project:pithos:*:*:*:*:*:*:*:*"
         ]
     },
     "audio\/play": {
