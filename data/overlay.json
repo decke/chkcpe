@@ -103,6 +103,9 @@
     "archivers\/lha-ac": {
         "custommatch": "cpe:2.3:a:tsugio_okamoto:lha:*:*:*:*:*:*:*:*"
     },
+    "archivers\/lhasa": {
+        "confirmedmatch": "cpe:2.3:a:lhasa_project:lhasa:*:*:*:*:*:*:*:*"
+    },
     "archivers\/libarc": {
         "priority": 6
     },
@@ -126,7 +129,8 @@
     },
     "archivers\/lua-zlib": {
         "nomatch": [
-            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:gnu:zlib:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/lzma": {
@@ -146,6 +150,12 @@
     },
     "archivers\/nomarch": {
         "priority": 7
+    },
+    "archivers\/ocaml-zip": {
+        "nomatch": [
+            "cpe:2.3:a:zip_project:zip:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:info-zip_project:zip:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/p5-Archive-Extract": {
         "priority": 5
@@ -199,6 +209,16 @@
     "archivers\/php-horde_lz4": {
         "confirmedmatch": "cpe:2.3:a:horde:horde_lz4:*:*:*:*:*:*:*:*"
     },
+    "archivers\/php-lz4": {
+        "nomatch": [
+            "cpe:2.3:a:lz4_project:lz4:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/php-snappy": {
+        "nomatch": [
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
+    },
     "archivers\/php74-zip": {
         "priority": 6
     },
@@ -207,6 +227,14 @@
     },
     "archivers\/ppunpack": {
         "priority": 5
+    },
+    "archivers\/py-brotli": {
+        "confirmedmatch": "cpe:2.3:a:google:brotli:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/py-lz4": {
+        "nomatch": [
+            "cpe:2.3:a:lz4_project:lz4:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/py-zstandard": {
         "nomatch": [
@@ -222,6 +250,27 @@
     "archivers\/rpm4": {
         "priority": 10
     },
+    "archivers\/rubygem-libarchive": {
+        "nomatch": [
+            "cpe:2.3:a:libarchive:libarchive:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:freebsd:libarchive:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/rubygem-minitar": {
+        "nomatch": [
+            "cpe:2.3:a:minitar:minitar:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/rubygem-snappy": {
+        "nomatch": [
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/rvm": {
+        "nomatch": [
+            "cpe:2.3:a:rvm_project:rvm:*:*:*:*:*:*:*:*"
+        ]
+    },
     "archivers\/rzip": {
         "priority": 8,
         "confirmedmatch": "cpe:2.3:a:rzip_project:rzip:*:*:*:*:*:*:*:*"
@@ -234,6 +283,11 @@
     },
     "archivers\/snappy": {
         "priority": 14
+    },
+    "archivers\/snappy-java": {
+        "nomatch": [
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/star": {
         "priority": 10,
@@ -291,6 +345,9 @@
     "archivers\/upx": {
         "priority": 9,
         "confirmedmatch": "cpe:2.3:a:upx_project:upx:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/xar": {
+        "confirmedmatch": "cpe:2.3:a:xar_project:xar:*:*:*:*:*:*:*:*"
     },
     "archivers\/xarchiver": {
         "priority": 5
@@ -492,6 +549,105 @@
     },
     "audio\/gsm": {
         "priority": 83
+    },
+    "audio\/gstreamer1-plugins-a52dec": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-amrnb": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-amrwbdec": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-bs2b": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-cdparanoia": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-chromaprint": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-faac": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-faad": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-flac": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-flite": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-gme": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-gsm": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-jack": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-ladspa": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-lame": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-lv2": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-modplug": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-mpg123": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-musepack": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-ogg": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-openmpt": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-opus": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-pulse": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-shout2": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-sidplay": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-sndfile": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-soundtouch": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-speex": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-taglib": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-twolame": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-vorbis": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-wavpack": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
+    "audio\/gstreamer1-plugins-webrtcdsp": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
     },
     "audio\/gtkpod": {
         "priority": 13
@@ -700,7 +856,10 @@
         "priority": 28
     },
     "audio\/p5-libvorbis": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:xiph.org:libvorbis:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/play": {
         "priority": 9
@@ -955,6 +1114,9 @@
     "comms\/gnokii": {
         "priority": 22
     },
+    "comms\/gstreamer1-plugins-spandsp": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+    },
     "comms\/hylafax": {
         "priority": 24,
         "confirmedmatch": "cpe:2.3:a:hylafax:hylafax:*:*:*:*:*:*:*:*"
@@ -1206,7 +1368,10 @@
         "priority": 12
     },
     "databases\/mantis": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/mariadb103-server": {
         "priority": 5
@@ -1843,7 +2008,8 @@
         "priority": 196
     },
     "devel\/flyspray": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:flyspray:flyspray:*:*:*:*:*:*:*:*"
     },
     "devel\/forge": {
         "nomatch": [
@@ -3309,7 +3475,10 @@
         "priority": 20
     },
     "devel\/py-click": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-click6": {
         "nomatch": [
@@ -4509,7 +4678,8 @@
         ]
     },
     "emulators\/i386-wine-devel": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:winehq:wine:*:*:*:*:*:*:*:*"
     },
     "emulators\/mtools": {
         "priority": 60
@@ -5092,7 +5262,8 @@
         "priority": 109
     },
     "graphics\/gstreamer1-plugins-gl": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
     },
     "graphics\/gthumb": {
         "priority": 16,
@@ -5258,7 +5429,8 @@
         "priority": 64
     },
     "graphics\/mozjpeg": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:mozilla:mozjpeg:*:*:*:*:*:*:*:*"
     },
     "graphics\/mupdf": {
         "priority": 9
@@ -5285,7 +5457,8 @@
         "priority": 11
     },
     "graphics\/optipng": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:optipng_project:optipng:*:*:*:*:*:*:*:*"
     },
     "graphics\/p5-Cairo": {
         "priority": 6,
@@ -6201,7 +6374,8 @@
         ]
     },
     "mail\/heirloom-mailx": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:heirloom:mailx:*:*:*:*:*:*:*:*"
     },
     "mail\/horde-imp": {
         "priority": 11
@@ -7429,7 +7603,12 @@
         "priority": 13
     },
     "net-mgmt\/argus3": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:saflink:argus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:iceni:argus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:litronic:argus:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/argus3-clients": {
         "priority": 5
@@ -7857,7 +8036,10 @@
         "priority": 5
     },
     "net\/gopher": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:golangtc:gopher:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/gq": {
         "priority": 19
@@ -7943,7 +8125,8 @@
         "priority": 11
     },
     "net\/libmaxminddb": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:maxmind:libmaxminddb:*:*:*:*:*:*:*:*"
     },
     "net\/libmms": {
         "priority": 5
@@ -8304,7 +8487,10 @@
         "priority": 349
     },
     "net\/rtg": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:adrian_chadd:rtg:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/rubygem-grpc": {
         "confirmedmatch": "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
@@ -8492,7 +8678,8 @@
         "priority": 6
     },
     "net\/xrdp": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:neutrinolabs:xrdp:*:*:*:*:*:*:*:*"
     },
     "net\/yaz": {
         "priority": 12
@@ -8904,7 +9091,8 @@
         "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
     },
     "print\/texlive-full": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
     },
     "print\/texlive-texmf": {
         "priority": 8,
@@ -8935,7 +9123,10 @@
         ]
     },
     "russian\/xcode": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:apple:xcode:*:*:*:*:*:*:*:*"
+        ]
     },
     "science\/gramps": {
         "priority": 8
@@ -8948,7 +9139,8 @@
         "confirmedmatch": "cpe:2.3:a:hdfgroup:hdf5:*:*:*:*:*:*:*:*"
     },
     "science\/hdf5-18": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:hdfgroup:hdf5:*:*:*:*:*:*:*:*"
     },
     "science\/openbabel": {
         "priority": 11
@@ -9955,7 +10147,8 @@
         ]
     },
     "sysutils\/consul": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:hashicorp:consul:*:*:*:*:*:*:*:*"
     },
     "sysutils\/coreutils": {
         "priority": 73
@@ -10269,7 +10462,8 @@
         "priority": 9
     },
     "sysutils\/monitorix": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:fibranet:monitorix:*:*:*:*:*:*:*:*"
     },
     "sysutils\/most": {
         "priority": 13,
@@ -10459,7 +10653,8 @@
         "priority": 5
     },
     "sysutils\/rubygem-bundler": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:bundler:bundler:*:*:*:*:*:*:*:*"
     },
     "sysutils\/runit": {
         "priority": 9,
@@ -10481,7 +10676,10 @@
         "priority": 199
     },
     "sysutils\/sec": {
-        "priority": 5
+        "priority": 5,
+        "nomatch": [
+            "cpe:2.3:a:sec_project:sec:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/sleuthkit": {
         "priority": 22
@@ -10838,7 +11036,8 @@
         "priority": 168
     },
     "textproc\/jq": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:jq_project:jq:*:*:*:*:*:*:*:*"
     },
     "textproc\/kdiff3": {
         "priority": 9
@@ -10853,7 +11052,8 @@
         "priority": 43
     },
     "textproc\/libextractor": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:gnu:libextractor:*:*:*:*:*:*:*:*"
     },
     "textproc\/libexttextcat": {
         "priority": 8
@@ -10871,7 +11071,8 @@
         "priority": 5
     },
     "textproc\/libwpd010": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:libwpd_project:libwpd:*:*:*:*:*:*:*:*"
     },
     "textproc\/libwps": {
         "priority": 7
@@ -11231,7 +11432,8 @@
         "priority": 13
     },
     "textproc\/py-rdflib": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:rdflib_project:rdflib:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-snowballstemmer": {
         "priority": 13
@@ -11514,7 +11716,8 @@
         "priority": 9
     },
     "www\/gohugo": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:gohugo:hugo:*:*:*:*:*:*:*:*"
     },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
@@ -12017,13 +12220,15 @@
         "priority": 8
     },
     "www\/rubygem-rack": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-rack15": {
         "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-redcloth": {
-        "priority": 5
+        "priority": 5,
+        "confirmedmatch": "cpe:2.3:a:promptworks:redcloth:*:*:*:*:*:*:*:*"
     },
     "www\/sarg": {
         "priority": 25
@@ -12078,7 +12283,8 @@
         "priority": 95
     },
     "www\/tidy-devel": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:htacg:tidy:*:*:*:*:*:*:*:*"
     },
     "www\/tidy-lib": {
         "priority": 42,
@@ -12133,7 +12339,11 @@
         "priority": 7
     },
     "www\/webkit2-gtk3": {
-        "priority": 6
+        "priority": 6,
+        "nomatch": [
+            "cpe:2.3:a:apple:webkit:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:webkit:webkit:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/wordpress": {
         "priority": 45
@@ -12293,7 +12503,8 @@
         "priority": 38
     },
     "x11-fm\/pcmanfm": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:pcmanfm_project:pcmanfm:*:*:*:*:*:*:*:*"
     },
     "x11-fm\/rox-filer": {
         "priority": 25
@@ -13173,7 +13384,8 @@
         "custommatch": "cpe:2.3:a:mlterm:mlterm:*:*:*:*:*:*:*:*"
     },
     "x11\/mrxvt": {
-        "priority": 6
+        "priority": 6,
+        "confirmedmatch": "cpe:2.3:a:mrxvt_project:mrxvt:*:*:*:*:*:*:*:*"
     },
     "x11\/mrxvt-devel": {
         "priority": 5
