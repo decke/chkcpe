@@ -550,105 +550,6 @@
     "audio\/gsm": {
         "priority": 83
     },
-    "audio\/gstreamer1-plugins-a52dec": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-amrnb": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-amrwbdec": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-bs2b": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-cdparanoia": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-chromaprint": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-faac": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-faad": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-flac": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-flite": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-gme": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-gsm": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-jack": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-ladspa": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-lame": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-lv2": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-modplug": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-mpg123": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-musepack": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-ogg": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-openmpt": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-opus": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-pulse": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-shout2": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-sidplay": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-sndfile": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-soundtouch": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-speex": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-taglib": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-twolame": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-vorbis": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-wavpack": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
-    "audio\/gstreamer1-plugins-webrtcdsp": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
     "audio\/gtkpod": {
         "priority": 13
     },
@@ -1113,9 +1014,6 @@
     },
     "comms\/gnokii": {
         "priority": 22
-    },
-    "comms\/gstreamer1-plugins-spandsp": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
     },
     "comms\/hylafax": {
         "priority": 24,
@@ -5262,8 +5160,7 @@
         "priority": 109
     },
     "graphics\/gstreamer1-plugins-gl": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "graphics\/gthumb": {
         "priority": 16,
@@ -6010,9 +5907,6 @@
     "lang\/erlang": {
         "priority": 23,
         "custommatch": "cpe:2.3:a:erlang:erlang:*:*:*:*:*:*:*:*"
-    },
-    "lang\/erlang-runtime20": {
-        "custommatch": "cpe:2.3:a:erlang:erlang\/otp:*:*:*:*:*:*:*:*"
     },
     "lang\/erlang-runtime21": {
         "custommatch": "cpe:2.3:a:erlang:erlang\/otp:*:*:*:*:*:*:*:*"
@@ -7306,16 +7200,13 @@
         "priority": 5
     },
     "multimedia\/gstreamer1-plugins": {
-        "priority": 11,
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+        "priority": 11
     },
     "multimedia\/gstreamer1-plugins-bad": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:gstreamer:gstreamer:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "multimedia\/gstreamer1-plugins-good": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "multimedia\/handbrake": {
         "priority": 24
@@ -12339,11 +12230,7 @@
         "priority": 7
     },
     "www\/webkit2-gtk3": {
-        "priority": 6,
-        "nomatch": [
-            "cpe:2.3:a:apple:webkit:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:webkit:webkit:*:*:*:*:*:*:*:*"
-        ]
+        "priority": 6
     },
     "www\/wordpress": {
         "priority": 45
