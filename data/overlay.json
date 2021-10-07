@@ -6718,9 +6718,7 @@
     },
     "mail\/qpopper": {
         "priority": 85,
-        "nomatch": [
-            "cpe:2.3:a:debian:qpopper:*:*:*:*:*:*:*:*"
-        ]
+        "custommatch": "cpe:2.3:a:qualcomm:qpopper:*:*:*:*:*:*:*:*"
     },
     "mail\/queue-repair": {
         "priority": 5
@@ -10670,6 +10668,9 @@
     "sysutils\/screen": {
         "priority": 199
     },
+    "sysutils\/seatd": {
+        "custommatch": "cpe:2.3:a:seatd_project:seatd:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/sec": {
         "priority": 5,
         "nomatch": [
@@ -11108,6 +11109,9 @@
     },
     "textproc\/openjade": {
         "priority": 8
+    },
+    "textproc\/opensearch": {
+        "custommatch": "cpe:2.3:a:opensearch:opensearch:*:*:*:*:*:*:*:*"
     },
     "textproc\/opensp": {
         "priority": 35
