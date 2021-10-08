@@ -674,6 +674,11 @@
             "cpe:2.3:a:oracle:listener:*:*:*:*:*:*:*:*"
         ]
     },
+    "audio\/lms": {
+        "nomatch": [
+            "cpe:2.3:a:lms:lms:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/lua-mpd": {
         "nomatch": [
             "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
@@ -817,8 +822,21 @@
     "audio\/portaudio": {
         "priority": 86
     },
+    "audio\/prelude-lv2": {
+        "nomatch": [
+            "cpe:2.3:a:adobe:prelude:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/pulseaudio": {
         "priority": 18
+    },
+    "audio\/py-eyed3": {
+        "confirmedmatch": "cpe:2.3:a:travis_shirk:eyed3:*:*:*:*:*:*:*:*"
+    },
+    "audio\/py-mpd": {
+        "nomatch": [
+            "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/py-mutagen": {
         "priority": 5
@@ -835,11 +853,22 @@
     "audio\/rsynth": {
         "priority": 7
     },
+    "audio\/ruby-taglib": {
+        "nomatch": [
+            "cpe:2.3:a:scott_wheeler:taglib:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:taglib:taglib:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/sdl_mixer": {
         "priority": 74
     },
     "audio\/sdl_sound": {
         "priority": 6
+    },
+    "audio\/sherlock-lv2": {
+        "nomatch": [
+            "cpe:2.3:a:teledynedalsa:sherlock:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/sidplay": {
         "priority": 27
@@ -871,6 +900,11 @@
     },
     "audio\/splay": {
         "priority": 9
+    },
+    "audio\/stk": {
+        "nomatch": [
+            "cpe:2.3:a:agi:stk:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/streamripper": {
         "priority": 19,
@@ -909,6 +943,11 @@
     "audio\/vorbisgain": {
         "priority": 7
     },
+    "audio\/waon": {
+        "nomatch": [
+            "cpe:2.3:a:aeon:waon:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/waveplay": {
         "priority": 11
     },
@@ -917,6 +956,9 @@
     },
     "audio\/wavplay": {
         "priority": 29
+    },
+    "audio\/wildmidi": {
+        "confirmedmatch": "cpe:2.3:a:mindwerks:wildmidi:*:*:*:*:*:*:*:*"
     },
     "audio\/wmix": {
         "priority": 5
@@ -939,11 +981,19 @@
     "audio\/xmp": {
         "priority": 28
     },
+    "base\/gcc6": {
+        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
+    },
     "benchmarks\/bonnie": {
         "priority": 17
     },
     "benchmarks\/bonnie++": {
         "priority": 24
+    },
+    "benchmarks\/hey": {
+        "nomatch": [
+            "cpe:2.3:a:hey_project:hey:*:*:*:*:*:*:*:*"
+        ]
     },
     "benchmarks\/httperf": {
         "priority": 7
@@ -972,6 +1022,11 @@
     "benchmarks\/nuttcp": {
         "priority": 5
     },
+    "benchmarks\/py-locust": {
+        "nomatch": [
+            "cpe:2.3:a:locust:locust:*:*:*:*:*:*:*:*"
+        ]
+    },
     "benchmarks\/raidtest": {
         "priority": 7
     },
@@ -995,20 +1050,80 @@
             "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
     },
+    "biology\/diamond": {
+        "nomatch": [
+            "cpe:2.3:a:bit.diamonds:diamond:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:latticesemi:diamond:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/flash": {
+        "nomatch": [
+            "cpe:2.3:a:adobe:flash:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:macromedia:flash:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:amcharts:flash:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/libsbml": {
+        "nomatch": [
+            "cpe:2.3:a:libsbml_project:libsbml:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/migrate": {
+        "nomatch": [
+            "cpe:2.3:a:migrate_project:migrate:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/pear-merger": {
+        "nomatch": [
+            "cpe:2.3:a:php:pear:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/picard-tools": {
+        "nomatch": [
+            "cpe:2.3:a:picard_project:picard:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "biology\/star": {
+        "nomatch": [
+            "cpe:2.3:a:iris:star:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "cad\/PrusaSlicer": {
+        "confirmedmatch": "cpe:2.3:a:prusa3d:prusaslicer:*:*:*:*:*:*:*:*"
+    },
     "cad\/electric": {
         "priority": 5
     },
     "cad\/geda": {
         "priority": 7
     },
+    "cad\/impact": {
+        "nomatch": [
+            "cpe:2.3:a:nokia:impact:*:*:*:*:*:*:*:*"
+        ]
+    },
     "cad\/kicad": {
         "priority": 5
+    },
+    "cad\/libopencad": {
+        "confirmedmatch": "cpe:2.3:a:libopencad_project:libopencad:*:*:*:*:*:*:*:*"
+    },
+    "cad\/magic": {
+        "nomatch": [
+            "cpe:2.3:a:freedomscientific:magic:*:*:*:*:*:*:*:*"
+        ]
     },
     "cad\/pcb": {
         "priority": 6
     },
     "cad\/qcad": {
         "priority": 14
+    },
+    "cad\/spice": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:spice:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:spice_project:spice:*:*:*:*:*:*:*:*"
+        ]
     },
     "cad\/xcircuit": {
         "priority": 5
@@ -1039,6 +1154,26 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "chinese\/phpbb-tw": {
+        "nomatch": [
+            "cpe:2.3:a:phpbb:phpbb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "chinese\/phpbb3-tw": {
+        "nomatch": [
+            "cpe:2.3:a:phpbb:phpbb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "chinese\/scim-fcitx": {
+        "nomatch": [
+            "cpe:2.3:a:1password:scim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "chinese\/tin": {
+        "nomatch": [
+            "cpe:2.3:a:debian:tin:*:*:*:*:*:*:*:*"
+        ]
+    },
     "chinese\/ttf2pt1": {
         "priority": 7
     },
@@ -1046,6 +1181,11 @@
         "priority": 14
     },
     "chinese\/wordpress-zh_CN": {
+        "nomatch": [
+            "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "chinese\/wordpress-zh_TW": {
         "nomatch": [
             "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*"
         ]
@@ -1065,8 +1205,16 @@
     "comms\/kermit": {
         "priority": 25
     },
+    "comms\/libusbmuxd": {
+        "confirmedmatch": "cpe:2.3:a:libimobiledevice:libusbmuxd:*:*:*:*:*:*:*:*"
+    },
     "comms\/lirc": {
         "priority": 6
+    },
+    "comms\/locator": {
+        "nomatch": [
+            "cpe:2.3:a:joachim_ruhs:locator:*:*:*:*:*:*:*:*"
+        ]
     },
     "comms\/lrzsz": {
         "priority": 44
@@ -1087,6 +1235,14 @@
     "comms\/p5-Device-SerialPort": {
         "priority": 6
     },
+    "comms\/picocom": {
+        "confirmedmatch": "cpe:2.3:a:picocom_project:picocom:*:*:*:*:*:*:*:*"
+    },
+    "comms\/qt5-connectivity": {
+        "nomatch": [
+            "cpe:2.3:a:hummingbird:connectivity:*:*:*:*:*:*:*:*"
+        ]
+    },
     "comms\/spandsp": {
         "priority": 8
     },
@@ -1100,6 +1256,11 @@
         "priority": 8
     },
     "converters\/cl-babel": {
+        "nomatch": [
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "converters\/cl-babel-sbcl": {
         "nomatch": [
             "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
@@ -1133,6 +1294,11 @@
     },
     "converters\/libutf-8": {
         "priority": 13
+    },
+    "converters\/lua-json": {
+        "nomatch": [
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+        ]
     },
     "converters\/mmencode": {
         "priority": 14
@@ -1179,6 +1345,11 @@
     "converters\/p5-JSON-XS": {
         "priority": 9
     },
+    "converters\/p5-JSON1": {
+        "nomatch": [
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+        ]
+    },
     "converters\/p5-MIME-Base64": {
         "priority": 331
     },
@@ -1209,6 +1380,9 @@
     "converters\/psiconv": {
         "priority": 57
     },
+    "converters\/py-rencode": {
+        "confirmedmatch": "cpe:2.3:a:rencode_project:rencode:*:*:*:*:*:*:*:*"
+    },
     "converters\/recode": {
         "priority": 60,
         "nomatch": [
@@ -1234,11 +1408,34 @@
     "converters\/uulib": {
         "priority": 110
     },
+    "converters\/ytnef": {
+        "confirmedmatch": "cpe:2.3:a:ytnef_project:ytnef:*:*:*:*:*:*:*:*"
+    },
+    "databases\/R-cran-DBI": {
+        "nomatch": [
+            "cpe:2.3:a:perl:dbi:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/adminer": {
+        "confirmedmatch": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*"
+    },
     "databases\/adodb": {
         "priority": 27
     },
+    "databases\/adodb5": {
+        "confirmedmatch": "cpe:2.3:a:adodb_project:adodb:*:*:*:*:*:*:*:*"
+    },
     "databases\/akonadi": {
         "priority": 10
+    },
+    "databases\/arrow": {
+        "nomatch": [
+            "cpe:2.3:a:arrow-kt:arrow:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/c3p0": {
+        "confirmedmatch": "cpe:2.3:a:mchange:c3p0:*:*:*:*:*:*:*:*"
     },
     "databases\/cdb": {
         "priority": 17
@@ -1288,6 +1485,30 @@
     "databases\/libdbi": {
         "priority": 10
     },
+    "databases\/libgda5": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-bdb": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-jdbc": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-ldap": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-mdb": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-mysql": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-postgresql": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
+    "databases\/libgda5-ui": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
+    },
     "databases\/libiodbc": {
         "priority": 26
     },
@@ -1297,6 +1518,9 @@
     "databases\/libmemcached": {
         "priority": 9
     },
+    "databases\/libpg_query": {
+        "confirmedmatch": "cpe:2.3:a:libpg_query_project:libpg_query:*:*:*:*:*:*:*:*"
+    },
     "databases\/lmdb": {
         "priority": 12
     },
@@ -1304,6 +1528,11 @@
         "priority": 5,
         "nomatch": [
             "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/mariadb-connector-odbc": {
+        "nomatch": [
+            "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/mariadb103-server": {
@@ -1359,6 +1588,20 @@
     },
     "databases\/namazu2": {
         "priority": 6
+    },
+    "databases\/ocaml-mysql": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/p5-BSON": {
+        "nomatch": [
+            "cpe:2.3:a:bson_project:bson:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mongodb:bson:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/p5-BerkeleyDB": {
         "priority": 59
@@ -1426,10 +1669,30 @@
     "databases\/p5-MLDBM-Sync": {
         "priority": 5
     },
+    "databases\/p5-MongoDB": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:mongodb:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jenkins:mongodb:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mongodb:mongodb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/p5-Mongoose": {
+        "nomatch": [
+            "cpe:2.3:a:cesanta:mongoose:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mongoosejs:mongoose:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/p5-Pg": {
         "priority": 18,
         "nomatch": [
             "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/p5-Redis": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/p5-SQL-Abstract": {
@@ -1485,11 +1748,25 @@
     "databases\/percona-toolkit": {
         "priority": 5
     },
+    "databases\/pg_partman": {
+        "confirmedmatch": "cpe:2.3:a:pgxn:pg_partman:*:*:*:*:*:*:*:*"
+    },
     "databases\/pgaccess": {
         "priority": 8
     },
     "databases\/pgadmin3": {
         "priority": 17
+    },
+    "databases\/pgbouncer": {
+        "confirmedmatch": "cpe:2.3:a:pgbouncer:pgbouncer:*:*:*:*:*:*:*:*"
+    },
+    "databases\/pglogical": {
+        "confirmedmatch": "cpe:2.3:a:2ndquadrant:pglogical:*:*:*:*:*:*:*:*"
+    },
+    "databases\/php-tarantool": {
+        "nomatch": [
+            "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/php74-mysqli": {
         "priority": 5
@@ -1499,6 +1776,9 @@
     },
     "databases\/php74-pdo_mysql": {
         "priority": 5
+    },
+    "databases\/phpminiadmin": {
+        "confirmedmatch": "cpe:2.3:a:phpminiadmin_project:phpminiadmin:*:*:*:*:*:*:*:*"
     },
     "databases\/phpmyadmin": {
         "priority": 256
@@ -1544,25 +1824,102 @@
     "databases\/postgresql96-client": {
         "priority": 6
     },
+    "databases\/puppetdb6": {
+        "confirmedmatch": "cpe:2.3:a:puppet:puppetdb:*:*:*:*:*:*:*:*"
+    },
+    "databases\/puppetdb7": {
+        "confirmedmatch": "cpe:2.3:a:puppet:puppetdb:*:*:*:*:*:*:*:*"
+    },
+    "databases\/py-Elixir": {
+        "nomatch": [
+            "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-PyGreSQL": {
         "priority": 17
+    },
+    "databases\/py-asyncpg": {
+        "confirmedmatch": "cpe:2.3:a:magic:asyncpg:*:*:*:*:*:*:*:*"
     },
     "databases\/py-bsddb3": {
         "priority": 7
     },
+    "databases\/py-carbon": {
+        "nomatch": [
+            "cpe:2.3:a:wso2:carbon:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-couchdb": {
+        "nomatch": [
+            "cpe:2.3:a:apache:couchdb:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-gdbm": {
         "priority": 22
     },
+    "databases\/py-hiredis": {
+        "nomatch": [
+            "cpe:2.3:a:redis:hiredis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:hiredis:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-influxdb": {
         "nomatch": [
-            "cpe:2.3:a:eficode:influxdb:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:eficode:influxdb:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-motor": {
+        "nomatch": [
+            "cpe:2.3:a:motor_project:motor:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:magzter:motor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-postgresql": {
+        "nomatch": [
+            "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:anynines:postgresql:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-psycopg2": {
         "priority": 10
     },
+    "databases\/py-rb": {
+        "nomatch": [
+            "cpe:2.3:a:kimsq:rb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-redis": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-redis2": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-rrdtool": {
+        "nomatch": [
+            "cpe:2.3:a:rrdtool_project:rrdtool:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-sqlite3": {
         "priority": 32
+    },
+    "databases\/py-tarantool": {
+        "nomatch": [
+            "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-whisper": {
+        "nomatch": [
+            "cpe:2.3:a:whisper:whisper:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/qdbm": {
         "priority": 6,
@@ -1571,18 +1928,104 @@
     "databases\/qt5-sql": {
         "priority": 5
     },
+    "databases\/qt5-sqldrivers-mysql": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/recutils": {
+        "confirmedmatch": "cpe:2.3:a:gnu:recutils:*:*:*:*:*:*:*:*"
+    },
     "databases\/redis": {
         "priority": 21
+    },
+    "databases\/redis-devel": {
+        "confirmedmatch": "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
     },
     "databases\/rrdtool": {
         "priority": 49
     },
+    "databases\/rrdtool12": {
+        "confirmedmatch": "cpe:2.3:a:rrdtool_project:rrdtool:*:*:*:*:*:*:*:*"
+    },
     "databases\/ruby-bdb": {
         "priority": 187
     },
+    "databases\/rubygem-dbi": {
+        "nomatch": [
+            "cpe:2.3:a:perl:dbi:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-hiredis": {
+        "nomatch": [
+            "cpe:2.3:a:redislabs:hiredis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:hiredis:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-influxdb": {
         "nomatch": [
-            "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:eficode:influxdb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-marginalia": {
+        "confirmedmatch": "cpe:2.3:a:marginalia_project:marginalia:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-memcache": {
+        "nomatch": [
+            "cpe:2.3:a:memcache_project:memcache:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-mysql": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-pg": {
+        "nomatch": [
+            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-pg0": {
+        "nomatch": [
+            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-pg018": {
+        "nomatch": [
+            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-pghero": {
+        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-pghero-rails5": {
+        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-pghero-rails50": {
+        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-redis": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-tarantool": {
+        "nomatch": [
+            "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/soci": {
+        "nomatch": [
+            "cpe:2.3:a:soci_project:soci:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/sqlite2": {
@@ -1674,6 +2117,9 @@
     },
     "deskutils\/plan": {
         "priority": 5
+    },
+    "deskutils\/py-autokey": {
+        "confirmedmatch": "cpe:2.3:a:autokey_project:autokey:*:*:*:*:*:*:*:*"
     },
     "deskutils\/taskwarrior": {
         "priority": 5
@@ -3277,14 +3723,34 @@
             "cpe:2.3:a:pocoo:jinja2:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-arrow": {
+        "nomatch": [
+            "cpe:2.3:a:arrow-kt:arrow:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-asn1crypto": {
         "priority": 10
+    },
+    "devel\/py-avro": {
+        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
     },
     "devel\/py-babel": {
         "priority": 21
     },
+    "devel\/py-backports": {
+        "nomatch": [
+            "cpe:2.3:a:opensuse:backports:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:suse:backports:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-boto": {
         "priority": 6
+    },
+    "devel\/py-cdg": {
+        "nomatch": [
+            "cpe:2.3:a:esafenet:cdg:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-cffi": {
         "priority": 20
@@ -3305,11 +3771,26 @@
             "cpe:2.3:a:sun:cluster:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-codecov": {
+        "nomatch": [
+            "cpe:2.3:a:codecov:codecov:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-configargparse": {
         "priority": 9
     },
     "devel\/py-configobj": {
         "priority": 9
+    },
+    "devel\/py-daemon": {
+        "nomatch": [
+            "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-datadog": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:datadog:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-dateutil": {
         "priority": 11
@@ -3322,6 +3803,33 @@
     },
     "devel\/py-evdev": {
         "priority": 5
+    },
+    "devel\/py-fabric": {
+        "confirmedmatch": "cpe:2.3:a:fabfile:fabric:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-fam": {
+        "nomatch": [
+            "cpe:2.3:a:sgi:fam:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-filedepot": {
+        "nomatch": [
+            "cpe:2.3:a:blaine_lang:filedepot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-first": {
+        "nomatch": [
+            "cpe:2.3:a:first_project:first:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-flatbuffers": {
+        "confirmedmatch": "cpe:2.3:a:google:flatbuffers:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-flex": {
+        "nomatch": [
+            "cpe:2.3:a:flex_project:flex:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:apache:flex:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/py-freebsd": {
         "priority": 7,
@@ -5824,7 +6332,10 @@
     },
     "lang\/gcc": {
         "priority": 16,
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
+        ]
     },
     "lang\/gcc-ecj45": {
         "priority": 9
