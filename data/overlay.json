@@ -674,11 +674,6 @@
             "cpe:2.3:a:oracle:listener:*:*:*:*:*:*:*:*"
         ]
     },
-    "audio\/lms": {
-        "nomatch": [
-            "cpe:2.3:a:lms:lms:*:*:*:*:*:*:*:*"
-        ]
-    },
     "audio\/lua-mpd": {
         "nomatch": [
             "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
