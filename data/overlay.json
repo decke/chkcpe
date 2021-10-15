@@ -1624,7 +1624,8 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/p5-SQL-Abstract": {
@@ -1674,7 +1675,8 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/percona-toolkit": {
@@ -1804,14 +1806,16 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-redis2": {
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-rrdtool": {
@@ -1905,7 +1909,8 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/rubygem-tarantool": {
@@ -2505,7 +2510,20 @@
         "priority": 8
     },
     "devel\/git": {
-        "priority": 81
+        "priority": 81,
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-cvs": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-gui": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-p4": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-svn": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
     },
     "devel\/gitolite": {
         "priority": 9
@@ -4561,11 +4579,59 @@
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-mocha": {
+        "nomatch": [
+            "cpe:2.3:a:mochajs:mocha:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-msgpack": {
+        "nomatch": [
+            "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-multi_json": {
         "priority": 5
     },
+    "devel\/rubygem-netaddr": {
+        "confirmedmatch": "cpe:2.3:a:netaddr_project:netaddr:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-paperclip-rails5": {
+        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-paperclip-rails50": {
+        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-platform": {
+        "nomatch": [
+            "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pega:platform:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-rake": {
         "priority": 16
+    },
+    "devel\/rubygem-rice": {
+        "nomatch": [
+            "cpe:2.3:a:rice_project:rice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-rubocop": {
+        "confirmedmatch": "cpe:2.3:a:rubocop_project:rubocop:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-ruby_parser": {
+        "confirmedmatch": "cpe:2.3:a:ryan_davis:ruby_parser:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-set": {
+        "nomatch": [
+            "cpe:2.3:a:set_project:set:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-sidekiq": {
+        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-sidekiq5": {
+        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-unicode": {
         "nomatch": [
