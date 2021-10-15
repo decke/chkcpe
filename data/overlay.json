@@ -2697,13 +2697,13 @@
         "priority": 8
     },
     "devel\/git": {
-        "priority": 81
+        "confirmedmatch": "cpe:2.3:a:git_project:git:*:*:*:*:*:*:*:*"
     },
     "devel\/git-delta": {
         "confirmedmatch": "cpe:2.3:a:delta_project:delta:*:*:*:*:*:*:*:*"
     },
     "devel\/gitolite": {
-        "priority": 9
+        "confirmedmatch": "cpe:2.3:a:gitolite:gitolite:*:*:*:*:*:*:*:*"
     },
     "devel\/gittrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
@@ -2724,7 +2724,7 @@
         "priority": 741
     },
     "devel\/gnustep": {
-        "priority": 11
+        "confirmedmatch": "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
     },
     "devel\/gnustep-make": {
         "priority": 11
@@ -2762,7 +2762,7 @@
         ]
     },
     "devel\/gperf": {
-        "priority": 50
+        "confirmedmatch": "pe:2.3:a:gperftools_project:gperftools:*:*:*:*:*:*:*:*"
     },
     "devel\/gsettings-desktop-schemas": {
         "priority": 16
@@ -2771,7 +2771,7 @@
         "confirmedmatch": "cpe:2.3:a:genivia:gsoap:*:*:*:*:*:*:*:*"
     },
     "devel\/gtranslator": {
-        "priority": 8
+        "confirmedmatch": "cpe:2.3:a:gtranslate:google_language_translator:*:*:*:*:*:*:*:*"
     },
     "devel\/gvfs": {
         "priority": 26
@@ -2931,7 +2931,7 @@
         "priority": 7
     },
     "devel\/libevent": {
-        "priority": 68
+        "confirmedmatch": "cpe:2.3:a:libevent_project:libevent:*:*:*:*:*:*:*:*"
     },
     "devel\/libevt": {
         "confirmedmatch": "cpe:2.3:a:libevt_project:libevt:*:*:*:*:*:*:*:*"
