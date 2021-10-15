@@ -2762,7 +2762,7 @@
         ]
     },
     "devel\/gperf": {
-        "confirmedmatch": "pe:2.3:a:gperftools_project:gperftools:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:gperftools_project:gperftools:*:*:*:*:*:*:*:*"
     },
     "devel\/gsettings-desktop-schemas": {
         "priority": 16
