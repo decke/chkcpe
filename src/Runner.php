@@ -174,9 +174,9 @@ class Runner
 
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
-            $metaport = false;
+            $metaport = 0;
             if ($parts[5] == 'yes') {
-                $metaport = true;
+                $metaport = 1;
             }
 
             try {
