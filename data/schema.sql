@@ -35,6 +35,7 @@ CREATE TABLE ports (
   version VARCHAR(50),
   maintainer VARCHAR(255),
   cpeuri VARCHAR(255),
+  metaport INTEGER,
   status VARCHAR(25)
 );
 

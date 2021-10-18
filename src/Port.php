@@ -14,6 +14,7 @@ class Port
     protected string $version;
     protected string $maintainer;
     protected string $cpe_str;
+    protected bool $metaport;
 
     protected ?Product $cpe;
     protected string $cpe_status;
@@ -23,13 +24,14 @@ class Port
      */
     protected array $cpe_candidates = [];
 
-    public function __construct(string $origin, string $portname, string $version, string $maintainer, string $cpe_str, string $cpe_status = Status::UNKNOWN)
+    public function __construct(string $origin, string $portname, string $version, string $maintainer, string $cpe_str, bool $metaport, string $cpe_status = Status::UNKNOWN)
     {
         $this->origin = $origin;
         $this->portname = $portname;
         $this->version = $version;
         $this->maintainer = $maintainer;
         $this->cpe_str = $cpe_str;
+        $this->metaport = $metaport;
         $this->cpe_status = $cpe_status;
 
         if ($cpe_str != '') {
@@ -73,6 +75,11 @@ class Port
     public function getMaintainer(): string
     {
         return $this->maintainer;
+    }
+
+    public function isMetaport(): bool
+    {
+        return $this->metaport;
     }
 
     public function getCPEStr(): string
@@ -155,7 +162,7 @@ class Port
     {
         $handle = Config::getDbHandle();
 
-        $stmt = $handle->prepare('SELECT origin, portname, version, maintainer, cpeuri, status FROM ports WHERE origin = ?');
+        $stmt = $handle->prepare('SELECT origin, portname, version, maintainer, cpeuri, metaport, status FROM ports WHERE origin = ?');
         if (!$stmt->execute([$origin])) {
             throw new \Exception('DB Error');
         }
@@ -165,7 +172,7 @@ class Port
             return null;
         }
 
-        $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->status);
+        $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, $row->metaport, $row->status);
 
         $stmt_candidates = $handle->prepare('SELECT cpeuri FROM candidates WHERE origin = ?');
         if (!$stmt_candidates->execute([$port->getOrigin()])) {

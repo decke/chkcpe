@@ -140,7 +140,7 @@ class Runner
     public function scanPorts(): bool
     {
         $this->handle->beginTransaction();
-        $stmt = $this->handle->prepare('UPDATE ports SET portname = ?, version = ?, maintainer = ?, cpeuri = ?, status = ? WHERE origin = ?');
+        $stmt = $this->handle->prepare('UPDATE ports SET portname = ?, version = ?, maintainer = ?, cpeuri = ?, metaport = ?, status = ? WHERE origin = ?');
 
         // write list of origins to tmpfile
         $origins = join("\n", $this->listPorts(Status::NEW));
@@ -156,7 +156,7 @@ class Runner
         $cnt = 0;
         $portsdir = Config::getPortsDir();
 
-        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VCPE_STR :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VNO_MTREE -VCPE_STR :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
             $line = fread($fp, 4096);
@@ -166,15 +166,20 @@ class Runner
             }
 
             $parts = explode("\n", $line);
-            if (count($parts) != 6) {
+            if (count($parts) != 7) {
                 Logger::info('Skipping invalid output for directory '.$parts[0].' ('.count($parts).' lines, expected 6)');
                 continue;
             }
 
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
+            $metaport = false;
+            if ($parts[5] == 'yes') {
+                $metaport = true;
+            }
+
             try {
-                if (!$stmt->execute([$parts[1], $parts[2], $parts[3], $parts[4], Status::SCANNED, $parts[0]])) {
+                if (!$stmt->execute([$parts[1], $parts[2], $parts[3], $parts[4], $metaport, Status::SCANNED, $parts[0]])) {
                     throw new \Exception('DB Error');
                 }
             } catch (\Exception $e) {
@@ -222,6 +227,8 @@ class Runner
                     }
                 } elseif ($product->isDeprecated()) {
                     $port->setCPEStatus(Status::DEPRECATED);
+                } elseif ($port->isMetaport()) {
+                    $port->setCPEStatus(Status::INVALID);
                 } else {
                     $port->setCPEStatus(Status::VALID);
                 }
@@ -238,6 +245,8 @@ class Runner
                 if ($product->isDeprecated()) {
                     $port->setCPEStatus(Status::DEPRECATED);
                 }
+            } elseif ($port->isMetaport()) {
+                ;
             } else {
                 $nomatch = [];
                 if ($overlay->exists($port->getOrigin(), 'nomatch')) {
