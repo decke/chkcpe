@@ -4633,10 +4633,84 @@
     "devel\/rubygem-sidekiq5": {
         "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
     },
+    "devel\/rubygem-simple_form": {
+        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-simple_form-rails5": {
+        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-simple_form-rails50": {
+        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-slim": {
+        "nomatch": [
+            "cpe:2.3:a:berlios:slim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-sprockets": {
+        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-sprockets2": {
+        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-sprockets3": {
+        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-sync": {
+        "nomatch": [
+            "cpe:2.3:a:cloudme:sync:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:bittorrent:sync:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-sysinfo": {
+        "nomatch": [
+            "cpe:2.3:a:magnicomp:sysinfo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-thor": {
+        "nomatch": [
+            "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-thor0": {
+        "nomatch": [
+            "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-thrift": {
+        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-time": {
+        "nomatch": [
+            "cpe:2.3:a:time_project:time:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-unicode": {
         "nomatch": [
             "cpe:2.3:a:unicode_project:unicode:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/rubygem-useragent": {
+        "nomatch": [
+            "cpe:2.3:a:useragent_project:useragent:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-will_paginate": {
+        "confirmedmatch": "cpe:2.3:a:mislav_marohnic:will_paginate:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-zlib": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:zlib:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rvm": {
+        "nomatch": [
+            "cpe:2.3:a:rvm_project:rvm:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/samurai": {
+        "confirmedmatch": "cpe:2.3:a:samurai_project:samurai:*:*:*:*:*:*:*:*"
     },
     "devel\/scons": {
         "priority": 46
@@ -4650,8 +4724,26 @@
     "devel\/sdlmm": {
         "priority": 8
     },
+    "devel\/sfml": {
+        "nomatch": [
+            "cpe:2.3:a:sfml_project:sfml:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/sfml1": {
+        "nomatch": [
+            "cpe:2.3:a:sfml_project:sfml:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/silc-toolkit": {
         "priority": 14
+    },
+    "devel\/simdjson": {
+        "nomatch": [
+            "cpe:2.3:a:simdjson_project:simdjson:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/slf4j": {
+        "confirmedmatch": "cpe:2.3:a:qos:slf4j:*:*:*:*:*:*:*:*"
     },
     "devel\/sonar-scanner-cli": {
         "custommatch": "cpe:2.3:a:sonarsource:sonar\\-scanner\\-cli:*:*:*:*:*:*:*:*"
@@ -4659,8 +4751,24 @@
     "devel\/sonarqube-ant-task": {
         "custommatch": "cpe:2.3:a:sonarsource:sonarqube\\-ant\\-task:*:*:*:*:*:*:*:*"
     },
+    "devel\/spark": {
+        "confirmedmatch": "cpe:2.3:a:apache:spark:*:*:*:*:*:*:*:*"
+    },
     "devel\/splint": {
         "priority": 6
+    },
+    "devel\/st": {
+        "nomatch": [
+            "cpe:2.3:a:st_project:st:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/stack": {
+        "nomatch": [
+            "cpe:2.3:a:stack_project:stack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/stb": {
+        "confirmedmatch": "cpe:2.3:a:stb_project:stb:*:*:*:*:*:*:*:*"
     },
     "devel\/strace": {
         "priority": 45
@@ -4676,6 +4784,9 @@
     },
     "devel\/sysconftool": {
         "priority": 40
+    },
+    "devel\/sysfsutils": {
+        "confirmedmatch": "cpe:2.3:a:sysfsutils_project:sysfsutils:*:*:*:*:*:*:*:*"
     },
     "devel\/t1lib": {
         "priority": 329
