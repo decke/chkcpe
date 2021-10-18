@@ -825,9 +825,6 @@
     "audio\/pulseaudio": {
         "priority": 18
     },
-    "audio\/py-eyed3": {
-        "confirmedmatch": "cpe:2.3:a:travis_shirk:eyed3:*:*:*:*:*:*:*:*"
-    },
     "audio\/py-mpd": {
         "nomatch": [
             "cpe:2.3:a:mpd_project:mpd:*:*:*:*:*:*:*:*"
@@ -952,9 +949,6 @@
     "audio\/wavplay": {
         "priority": 29
     },
-    "audio\/wildmidi": {
-        "confirmedmatch": "cpe:2.3:a:mindwerks:wildmidi:*:*:*:*:*:*:*:*"
-    },
     "audio\/wmix": {
         "priority": 5
     },
@@ -975,9 +969,6 @@
     },
     "audio\/xmp": {
         "priority": 28
-    },
-    "base\/gcc6": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
     },
     "benchmarks\/bonnie": {
         "priority": 17
@@ -1083,9 +1074,6 @@
             "cpe:2.3:a:iris:star:*:*:*:*:*:*:*:*"
         ]
     },
-    "cad\/PrusaSlicer": {
-        "confirmedmatch": "cpe:2.3:a:prusa3d:prusaslicer:*:*:*:*:*:*:*:*"
-    },
     "cad\/electric": {
         "priority": 5
     },
@@ -1099,9 +1087,6 @@
     },
     "cad\/kicad": {
         "priority": 5
-    },
-    "cad\/libopencad": {
-        "confirmedmatch": "cpe:2.3:a:libopencad_project:libopencad:*:*:*:*:*:*:*:*"
     },
     "cad\/magic": {
         "nomatch": [
@@ -1200,9 +1185,6 @@
     "comms\/kermit": {
         "priority": 25
     },
-    "comms\/libusbmuxd": {
-        "confirmedmatch": "cpe:2.3:a:libimobiledevice:libusbmuxd:*:*:*:*:*:*:*:*"
-    },
     "comms\/lirc": {
         "priority": 6
     },
@@ -1229,9 +1211,6 @@
     },
     "comms\/p5-Device-SerialPort": {
         "priority": 6
-    },
-    "comms\/picocom": {
-        "confirmedmatch": "cpe:2.3:a:picocom_project:picocom:*:*:*:*:*:*:*:*"
     },
     "comms\/qt5-connectivity": {
         "nomatch": [
@@ -1375,9 +1354,6 @@
     "converters\/psiconv": {
         "priority": 57
     },
-    "converters\/py-rencode": {
-        "confirmedmatch": "cpe:2.3:a:rencode_project:rencode:*:*:*:*:*:*:*:*"
-    },
     "converters\/recode": {
         "priority": 60,
         "nomatch": [
@@ -1403,22 +1379,13 @@
     "converters\/uulib": {
         "priority": 110
     },
-    "converters\/ytnef": {
-        "confirmedmatch": "cpe:2.3:a:ytnef_project:ytnef:*:*:*:*:*:*:*:*"
-    },
     "databases\/R-cran-DBI": {
         "nomatch": [
             "cpe:2.3:a:perl:dbi:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/adminer": {
-        "confirmedmatch": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*"
-    },
     "databases\/adodb": {
         "priority": 27
-    },
-    "databases\/adodb5": {
-        "confirmedmatch": "cpe:2.3:a:adodb_project:adodb:*:*:*:*:*:*:*:*"
     },
     "databases\/akonadi": {
         "priority": 10
@@ -1428,9 +1395,6 @@
             "cpe:2.3:a:arrow-kt:arrow:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
         ]
-    },
-    "databases\/c3p0": {
-        "confirmedmatch": "cpe:2.3:a:mchange:c3p0:*:*:*:*:*:*:*:*"
     },
     "databases\/cdb": {
         "priority": 17
@@ -1480,30 +1444,6 @@
     "databases\/libdbi": {
         "priority": 10
     },
-    "databases\/libgda5": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-bdb": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-jdbc": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-ldap": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-mdb": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-mysql": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-postgresql": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
-    "databases\/libgda5-ui": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgda:*:*:*:*:*:*:*:*"
-    },
     "databases\/libiodbc": {
         "priority": 26
     },
@@ -1512,9 +1452,6 @@
     },
     "databases\/libmemcached": {
         "priority": 9
-    },
-    "databases\/libpg_query": {
-        "confirmedmatch": "cpe:2.3:a:libpg_query_project:libpg_query:*:*:*:*:*:*:*:*"
     },
     "databases\/lmdb": {
         "priority": 12
@@ -1687,7 +1624,8 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/p5-SQL-Abstract": {
@@ -1737,26 +1675,18 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/percona-toolkit": {
         "priority": 5
-    },
-    "databases\/pg_partman": {
-        "confirmedmatch": "cpe:2.3:a:pgxn:pg_partman:*:*:*:*:*:*:*:*"
     },
     "databases\/pgaccess": {
         "priority": 8
     },
     "databases\/pgadmin3": {
         "priority": 17
-    },
-    "databases\/pgbouncer": {
-        "confirmedmatch": "cpe:2.3:a:pgbouncer:pgbouncer:*:*:*:*:*:*:*:*"
-    },
-    "databases\/pglogical": {
-        "confirmedmatch": "cpe:2.3:a:2ndquadrant:pglogical:*:*:*:*:*:*:*:*"
     },
     "databases\/php-tarantool": {
         "nomatch": [
@@ -1771,9 +1701,6 @@
     },
     "databases\/php74-pdo_mysql": {
         "priority": 5
-    },
-    "databases\/phpminiadmin": {
-        "confirmedmatch": "cpe:2.3:a:phpminiadmin_project:phpminiadmin:*:*:*:*:*:*:*:*"
     },
     "databases\/phpmyadmin": {
         "priority": 256
@@ -1819,12 +1746,6 @@
     "databases\/postgresql96-client": {
         "priority": 6
     },
-    "databases\/puppetdb6": {
-        "confirmedmatch": "cpe:2.3:a:puppet:puppetdb:*:*:*:*:*:*:*:*"
-    },
-    "databases\/puppetdb7": {
-        "confirmedmatch": "cpe:2.3:a:puppet:puppetdb:*:*:*:*:*:*:*:*"
-    },
     "databases\/py-Elixir": {
         "nomatch": [
             "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
@@ -1832,9 +1753,6 @@
     },
     "databases\/py-PyGreSQL": {
         "priority": 17
-    },
-    "databases\/py-asyncpg": {
-        "confirmedmatch": "cpe:2.3:a:magic:asyncpg:*:*:*:*:*:*:*:*"
     },
     "databases\/py-bsddb3": {
         "priority": 7
@@ -1888,14 +1806,16 @@
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-redis2": {
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-rrdtool": {
@@ -1931,20 +1851,11 @@
             "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/recutils": {
-        "confirmedmatch": "cpe:2.3:a:gnu:recutils:*:*:*:*:*:*:*:*"
-    },
     "databases\/redis": {
         "priority": 21
     },
-    "databases\/redis-devel": {
-        "confirmedmatch": "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
-    },
     "databases\/rrdtool": {
         "priority": 49
-    },
-    "databases\/rrdtool12": {
-        "confirmedmatch": "cpe:2.3:a:rrdtool_project:rrdtool:*:*:*:*:*:*:*:*"
     },
     "databases\/ruby-bdb": {
         "priority": 187
@@ -1965,9 +1876,6 @@
             "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:eficode:influxdb:*:*:*:*:*:*:*:*"
         ]
-    },
-    "databases\/rubygem-marginalia": {
-        "confirmedmatch": "cpe:2.3:a:marginalia_project:marginalia:*:*:*:*:*:*:*:*"
     },
     "databases\/rubygem-memcache": {
         "nomatch": [
@@ -1997,20 +1905,12 @@
             "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/rubygem-pghero": {
-        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
-    },
-    "databases\/rubygem-pghero-rails5": {
-        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
-    },
-    "databases\/rubygem-pghero-rails50": {
-        "confirmedmatch": "cpe:2.3:a:pghero_project:pghero:*:*:*:*:*:*:*:*"
-    },
     "databases\/rubygem-redis": {
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/rubygem-tarantool": {
@@ -2022,9 +1922,6 @@
         "nomatch": [
             "cpe:2.3:a:soci_project:soci:*:*:*:*:*:*:*:*"
         ]
-    },
-    "databases\/sqlcipher": {
-        "confirmedmatch": "cpe:2.3:a:zetetic:sqlcipher:*:*:*:*:*:*:*:*"
     },
     "databases\/sqlite2": {
         "priority": 30
@@ -2052,9 +1949,6 @@
     },
     "databases\/xapian-core": {
         "priority": 7
-    },
-    "deskutils\/anydesk": {
-        "confirmedmatch": "cpe:2.3:a:anydesk:anydesk:*:*:*:*:*:*:*:*"
     },
     "deskutils\/basket": {
         "priority": 10
@@ -2112,9 +2006,6 @@
     "deskutils\/kchmviewer": {
         "priority": 8
     },
-    "deskutils\/kmail": {
-        "confirmedmatch": "cpe:2.3:a:kde:kmail:*:*:*:*:*:*:*:*"
-    },
     "deskutils\/maliit-framework": {
         "nomatch": [
             "cpe:2.3:a:themify:framework:*:*:*:*:*:*:*:*",
@@ -2143,9 +2034,6 @@
     },
     "deskutils\/plan": {
         "priority": 5
-    },
-    "deskutils\/py-autokey": {
-        "confirmedmatch": "cpe:2.3:a:autokey_project:autokey:*:*:*:*:*:*:*:*"
     },
     "deskutils\/synapse": {
         "nomatch": [
@@ -2185,12 +2073,6 @@
     },
     "deskutils\/xfce4-xkb-plugin": {
         "priority": 8
-    },
-    "deskutils\/zim": {
-        "confirmedmatch": "cpe:2.3:a:zim-wiki:zim:*:*:*:*:*:*:*:*"
-    },
-    "devel\/9base": {
-        "confirmedmatch": "cpe:2.3:a:9base_project:9base:*:*:*:*:*:*:*:*"
     },
     "devel\/ElectricFence": {
         "priority": 15
@@ -2244,9 +2126,6 @@
             "cpe:2.3:a:apache:whisker:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/aarch64-none-elf-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
     "devel\/aegis": {
         "custommatch": "cpe:2.3:a:aegis:aegis:*:*:*:*:*:*:*:*"
     },
@@ -2277,21 +2156,6 @@
     },
     "devel\/argp-standalone": {
         "priority": 15
-    },
-    "devel\/arm-elf-binutils": {
-        "confirmedmatch": "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
-    },
-    "devel\/arm-none-eabi-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/arm-none-eabi-gcc492": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/arm-none-eabi-newlib": {
-        "confirmedmatch": "cpe:2.3:a:newlib_project:newlib:*:*:*:*:*:*:*:*"
-    },
-    "devel\/artifactory": {
-        "confirmedmatch": "cpe:2.3:a:jfrog:artifactory:*:*:*:*:*:*:*:*"
     },
     "devel\/astyle": {
         "priority": 10
@@ -2327,18 +2191,6 @@
     "devel\/autotools": {
         "priority": 20
     },
-    "devel\/avr-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/avr-gdb": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gdb:*:*:*:*:*:*:*:*"
-    },
-    "devel\/avro": {
-        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
-    },
-    "devel\/axmldec": {
-        "confirmedmatch": "cpe:2.3:a:axmldec_project:axmldec:*:*:*:*:*:*:*:*"
-    },
     "devel\/bam": {
         "nomatch": [
             "cpe:2.3:a:bam_project:bam:*:*:*:*:*:*:*:*"
@@ -2354,17 +2206,11 @@
     "devel\/bglibs": {
         "priority": 5
     },
-    "devel\/binaryen": {
-        "confirmedmatch": "cpe:2.3:a:webassembly:binaryen:*:*:*:*:*:*:*:*"
-    },
     "devel\/binutils": {
         "priority": 51
     },
     "devel\/bison": {
         "priority": 501
-    },
-    "devel\/bit": {
-        "confirmedmatch": "cpe:2.3:a:bit_project:bit:*:*:*:*:*:*:*:*"
     },
     "devel\/boehm-gc": {
         "priority": 117
@@ -2378,12 +2224,6 @@
     "devel\/boost-python-libs": {
         "priority": 11
     },
-    "devel\/capstone3": {
-        "confirmedmatch": "cpe:2.3:a:capstone-engine:capstone:*:*:*:*:*:*:*:*"
-    },
-    "devel\/capstone4": {
-        "confirmedmatch": "cpe:2.3:a:capstone-engine:capstone:*:*:*:*:*:*:*:*"
-    },
     "devel\/ccache": {
         "priority": 41
     },
@@ -2392,9 +2232,6 @@
     },
     "devel\/cdk": {
         "priority": 6
-    },
-    "devel\/cereal": {
-        "confirmedmatch": "cpe:2.3:a:usc:cereal:*:*:*:*:*:*:*:*"
     },
     "devel\/cervisia": {
         "priority": 5
@@ -2479,9 +2316,6 @@
     "devel\/cvs": {
         "priority": 8
     },
-    "devel\/cvs-devel": {
-        "confirmedmatch": "cpe:2.3:a:gnu:cvs:*:*:*:*:*:*:*:*"
-    },
     "devel\/cvs2cl": {
         "priority": 10
     },
@@ -2565,12 +2399,6 @@
     "devel\/e2fsprogs-libss": {
         "priority": 5
     },
-    "devel\/electron12": {
-        "confirmedmatch": "cpe:2.3:a:electronjs:electron:*:*:*:*:*:*:*:*"
-    },
-    "devel\/elfutils": {
-        "confirmedmatch": "cpe:2.3:a:elfutils_project:elfutils:*:*:*:*:*:*:*:*"
-    },
     "devel\/elixir-apex": {
         "nomatch": [
             "cpe:2.3:a:oracle:apex:*:*:*:*:*:*:*:*"
@@ -2622,14 +2450,8 @@
     "devel\/fam": {
         "priority": 196
     },
-    "devel\/flatbuffers": {
-        "confirmedmatch": "cpe:2.3:a:google:flatbuffers:*:*:*:*:*:*:*:*"
-    },
     "devel\/flyspray": {
         "priority": 5
-    },
-    "devel\/folly": {
-        "confirmedmatch": "cpe:2.3:a:facebook:folly:*:*:*:*:*:*:*:*"
     },
     "devel\/forge": {
         "nomatch": [
@@ -2640,12 +2462,6 @@
         "nomatch": [
             "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/freebsd-gcc6": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/freebsd-gcc9": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
     },
     "devel\/g-wrap": {
         "priority": 27
@@ -2690,17 +2506,24 @@
     "devel\/gettext-tools": {
         "priority": 33
     },
-    "devel\/ghidra": {
-        "confirmedmatch": "cpe:2.3:a:nsa:ghidra:*:*:*:*:*:*:*:*"
-    },
     "devel\/gindent": {
         "priority": 8
     },
     "devel\/git": {
-        "confirmedmatch": "cpe:2.3:a:git_project:git:*:*:*:*:*:*:*:*"
+        "priority": 81,
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
     },
-    "devel\/git-delta": {
-        "confirmedmatch": "cpe:2.3:a:delta_project:delta:*:*:*:*:*:*:*:*"
+    "devel\/git-cvs": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-gui": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-p4": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-svn": {
+        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
     },
     "devel\/gitolite": {
         "confirmedmatch": "cpe:2.3:a:gitolite:gitolite:*:*:*:*:*:*:*:*"
@@ -2729,9 +2552,6 @@
     "devel\/gnustep-make": {
         "priority": 11
     },
-    "devel\/go-protobuf": {
-        "confirmedmatch": "cpe:2.3:a:golang:protobuf:*:*:*:*:*:*:*:*"
-    },
     "devel\/go-tools": {
         "nomatch": [
             "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*",
@@ -2744,17 +2564,8 @@
     "devel\/gobject-introspection": {
         "priority": 53
     },
-    "devel\/godot2": {
-        "confirmedmatch": "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
-    },
-    "devel\/godot2-tools": {
-        "confirmedmatch": "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
-    },
     "devel\/goffice": {
         "priority": 17
-    },
-    "devel\/gogs": {
-        "confirmedmatch": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*"
     },
     "devel\/gorm": {
         "nomatch": [
@@ -2767,32 +2578,11 @@
     "devel\/gsettings-desktop-schemas": {
         "priority": 16
     },
-    "devel\/gsoap": {
-        "confirmedmatch": "cpe:2.3:a:genivia:gsoap:*:*:*:*:*:*:*:*"
-    },
     "devel\/gtranslator": {
         "confirmedmatch": "cpe:2.3:a:gtranslate:google_language_translator:*:*:*:*:*:*:*:*"
     },
     "devel\/gvfs": {
         "priority": 26
-    },
-    "devel\/gwenhywfar": {
-        "confirmedmatch": "cpe:2.3:a:aquamaniac:gwenhywfar:*:*:*:*:*:*:*:*"
-    },
-    "devel\/gwenhywfar-fox16": {
-        "confirmedmatch": "cpe:2.3:a:aquamaniac:gwenhywfar:*:*:*:*:*:*:*:*"
-    },
-    "devel\/gwenhywfar-gtk2": {
-        "confirmedmatch": "cpe:2.3:a:aquamaniac:gwenhywfar:*:*:*:*:*:*:*:*"
-    },
-    "devel\/gwenhywfar-gtk3": {
-        "confirmedmatch": "cpe:2.3:a:aquamaniac:gwenhywfar:*:*:*:*:*:*:*:*"
-    },
-    "devel\/gwenhywfar-qt5": {
-        "confirmedmatch": "cpe:2.3:a:aquamaniac:gwenhywfar:*:*:*:*:*:*:*:*"
-    },
-    "devel\/horde-timeobjects": {
-        "confirmedmatch": "cpe:2.3:a:horde:timeobjects:*:*:*:*:*:*:*:*"
     },
     "devel\/hs-alex": {
         "nomatch": [
@@ -2808,9 +2598,6 @@
         "nomatch": [
             "cpe:2.3:a:python:hpack:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/hub": {
-        "confirmedmatch": "cpe:2.3:a:hub_project:hub:*:*:*:*:*:*:*:*"
     },
     "devel\/icu": {
         "priority": 88
@@ -2840,9 +2627,6 @@
             "cpe:2.3:a:jenkins:findbugs:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/jetbrains-goland": {
-        "confirmedmatch": "cpe:2.3:a:jetbrains:goland:*:*:*:*:*:*:*:*"
-    },
     "devel\/json-c": {
         "priority": 19
     },
@@ -2860,15 +2644,6 @@
     },
     "devel\/kdevelop": {
         "priority": 96
-    },
-    "devel\/kf5-kauth": {
-        "confirmedmatch": "cpe:2.3:a:kde:kauth:*:*:*:*:*:*:*:*"
-    },
-    "devel\/kf5-kconfig": {
-        "confirmedmatch": "cpe:2.3:a:kde:kconfig:*:*:*:*:*:*:*:*"
-    },
-    "devel\/kf5-kio": {
-        "confirmedmatch": "cpe:2.3:a:kde:kio:*:*:*:*:*:*:*:*"
     },
     "devel\/lemon": {
         "nomatch": [
@@ -2888,14 +2663,8 @@
     "devel\/libatomic_ops": {
         "priority": 11
     },
-    "devel\/libbson": {
-        "confirmedmatch": "cpe:2.3:a:mongodb:libbson:*:*:*:*:*:*:*:*"
-    },
     "devel\/libclc": {
         "priority": 7
-    },
-    "devel\/libconfuse": {
-        "confirmedmatch": "cpe:2.3:a:libconfuse_project:libconfuse:*:*:*:*:*:*:*:*"
     },
     "devel\/libdaemon": {
         "priority": 68
@@ -2906,9 +2675,6 @@
     "devel\/libdlmalloc": {
         "priority": 6
     },
-    "devel\/libdwarf": {
-        "confirmedmatch": "cpe:2.3:a:libdwarf_project:libdwarf:*:*:*:*:*:*:*:*"
-    },
     "devel\/libedit": {
         "priority": 38
     },
@@ -2917,12 +2683,6 @@
     },
     "devel\/libepoll-shim": {
         "priority": 8
-    },
-    "devel\/libesedb": {
-        "confirmedmatch": "cpe:2.3:a:libesedb_project:libesedb:*:*:*:*:*:*:*:*"
-    },
-    "devel\/libestr": {
-        "confirmedmatch": "cpe:2.3:a:adiscon:libestr:*:*:*:*:*:*:*:*"
     },
     "devel\/libev": {
         "priority": 10
@@ -2933,35 +2693,17 @@
     "devel\/libevent": {
         "confirmedmatch": "cpe:2.3:a:libevent_project:libevent:*:*:*:*:*:*:*:*"
     },
-    "devel\/libevt": {
-        "confirmedmatch": "cpe:2.3:a:libevt_project:libevt:*:*:*:*:*:*:*:*"
-    },
-    "devel\/libfastjson": {
-        "confirmedmatch": "cpe:2.3:a:rsyslog:libfastjson:*:*:*:*:*:*:*:*"
-    },
     "devel\/libffi": {
         "priority": 79
     },
-    "devel\/libfmt": {
-        "confirmedmatch": "cpe:2.3:a:fmt:fmt:*:*:*:*:*:*:*:*"
-    },
-    "devel\/libfsntfs": {
-        "confirmedmatch": "cpe:2.3:a:libfsntfs_project:libfsntfs:*:*:*:*:*:*:*:*"
-    },
     "devel\/libftdi": {
         "priority": 5
-    },
-    "devel\/libfwsi": {
-        "confirmedmatch": "cpe:2.3:a:libfwsi_project:libfwsi:*:*:*:*:*:*:*:*"
     },
     "devel\/libgdata": {
         "priority": 10
     },
     "devel\/libgee": {
         "priority": 11
-    },
-    "devel\/libgee06": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgee:*:*:*:*:*:*:*:*"
     },
     "devel\/libgetline": {
         "priority": 8
@@ -2984,9 +2726,6 @@
     "devel\/libgudev": {
         "priority": 6
     },
-    "devel\/libhtp": {
-        "confirmedmatch": "cpe:2.3:a:oisf:libhtp:*:*:*:*:*:*:*:*"
-    },
     "devel\/libical": {
         "priority": 24
     },
@@ -2996,17 +2735,8 @@
     "devel\/liblangtag": {
         "priority": 5
     },
-    "devel\/liblnk": {
-        "confirmedmatch": "cpe:2.3:a:liblnk_project:liblnk:*:*:*:*:*:*:*:*"
-    },
-    "devel\/liblogging": {
-        "confirmedmatch": "cpe:2.3:a:adiscon:liblogging:*:*:*:*:*:*:*:*"
-    },
     "devel\/libltdl": {
         "priority": 123
-    },
-    "devel\/libmimedir": {
-        "confirmedmatch": "cpe:2.3:a:libmimedir_project:libmimedir:*:*:*:*:*:*:*:*"
     },
     "devel\/libmtdev": {
         "priority": 5
@@ -3029,20 +2759,8 @@
     "devel\/libpdel": {
         "priority": 8
     },
-    "devel\/libpff": {
-        "confirmedmatch": "cpe:2.3:a:libpff_project:libpff:*:*:*:*:*:*:*:*"
-    },
-    "devel\/libplist": {
-        "confirmedmatch": "cpe:2.3:a:libimobiledevice:libplist:*:*:*:*:*:*:*:*"
-    },
     "devel\/libpthread-stubs": {
         "priority": 90
-    },
-    "devel\/libqb": {
-        "confirmedmatch": "cpe:2.3:a:clusterlabs:libqb:*:*:*:*:*:*:*:*"
-    },
-    "devel\/librelp": {
-        "confirmedmatch": "cpe:2.3:a:rsyslog:librelp:*:*:*:*:*:*:*:*"
     },
     "devel\/librest": {
         "priority": 5
@@ -3101,12 +2819,6 @@
     "devel\/libvolume_id": {
         "priority": 55
     },
-    "devel\/libvterm": {
-        "confirmedmatch": "cpe:2.3:a:leonerd:libvterm:*:*:*:*:*:*:*:*"
-    },
-    "devel\/libzookeeper": {
-        "confirmedmatch": "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
-    },
     "devel\/libzvbi": {
         "priority": 12
     },
@@ -3114,24 +2826,6 @@
         "nomatch": [
             "cpe:2.3:a:lightning-viz:lightning:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/linux-c7-elfutils-libelf": {
-        "confirmedmatch": "cpe:2.3:a:elfutils_project:elfutils:*:*:*:*:*:*:*:*"
-    },
-    "devel\/linux-c7-elfutils-libs": {
-        "confirmedmatch": "cpe:2.3:a:elfutils_project:elfutils:*:*:*:*:*:*:*:*"
-    },
-    "devel\/linux-c7-libgfortran": {
-        "confirmedmatch": "cpe:2.3:a:gnu:libgfortran:*:*:*:*:*:*:*:*"
-    },
-    "devel\/linux-c7-make": {
-        "confirmedmatch": "cpe:2.3:a:gnu:make:*:*:*:*:*:*:*:*"
-    },
-    "devel\/linux-c7-qt": {
-        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
-    },
-    "devel\/linux-c7-systemd-libs": {
-        "confirmedmatch": "cpe:2.3:a:freedesktop:systemd:*:*:*:*:*:*:*:*"
     },
     "devel\/llvm": {
         "priority": 8,
@@ -3206,18 +2900,6 @@
             "cpe:2.3:a:microsoft:directx:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/mingw32-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/mingw32-libffi": {
-        "confirmedmatch": "cpe:2.3:a:libffi_project:libffi:*:*:*:*:*:*:*:*"
-    },
-    "devel\/mingw32-libyaml": {
-        "confirmedmatch": "cpe:2.3:a:pyyaml:libyaml:*:*:*:*:*:*:*:*"
-    },
-    "devel\/mingw32-openssl": {
-        "confirmedmatch": "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*"
-    },
     "devel\/mm": {
         "priority": 131
     },
@@ -3228,12 +2910,6 @@
         "nomatch": [
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/msgpuck": {
-        "confirmedmatch": "cpe:2.3:a:tarantool:msgpuck:*:*:*:*:*:*:*:*"
-    },
-    "devel\/myrepos": {
-        "confirmedmatch": "cpe:2.3:a:myrepos_project:myrepos:*:*:*:*:*:*:*:*"
     },
     "devel\/nasm": {
         "priority": 305
@@ -3257,9 +2933,6 @@
         "nomatch": [
             "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/node-thrift": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
     },
     "devel\/npth": {
         "priority": 19
@@ -3315,9 +2988,6 @@
     },
     "devel\/opencl": {
         "priority": 6
-    },
-    "devel\/opengrok": {
-        "confirmedmatch": "cpe:2.3:a:oracle:opengrok:*:*:*:*:*:*:*:*"
     },
     "devel\/orc": {
         "priority": 33,
@@ -4265,12 +3935,6 @@
             "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/pear-geshi": {
-        "confirmedmatch": "cpe:2.3:a:qbnz:geshi:*:*:*:*:*:*:*:*"
-    },
-    "devel\/pear-htmlpurifier": {
-        "confirmedmatch": "cpe:2.3:a:htmlpurifier:htmlpurifier:*:*:*:*:*:*:*:*"
-    },
     "devel\/pecl-APCu": {
         "priority": 6
     },
@@ -4316,18 +3980,6 @@
             "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/phabricator": {
-        "confirmedmatch": "cpe:2.3:a:phacility:phabricator:*:*:*:*:*:*:*:*"
-    },
-    "devel\/php-composer": {
-        "confirmedmatch": "cpe:2.3:a:getcomposer:composer:*:*:*:*:*:*:*:*"
-    },
-    "devel\/php-composer2": {
-        "confirmedmatch": "cpe:2.3:a:getcomposer:composer:*:*:*:*:*:*:*:*"
-    },
-    "devel\/php-geshi": {
-        "confirmedmatch": "cpe:2.3:a:qbnz:geshi:*:*:*:*:*:*:*:*"
-    },
     "devel\/php74-json": {
         "priority": 7
     },
@@ -4359,24 +4011,6 @@
     "devel\/protobuf-c": {
         "priority": 5
     },
-    "devel\/psptoolchain-binutils": {
-        "confirmedmatch": "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
-    },
-    "devel\/psptoolchain-gcc-stage1": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/psptoolchain-gcc-stage2": {
-        "nomatch": [
-            "cpe:2.3:a:groups_communities_and_co_project:gcc:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/psptoolchain-gdb": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gdb:*:*:*:*:*:*:*:*"
-    },
-    "devel\/psptoolchain-newlib": {
-        "confirmedmatch": "cpe:2.3:a:newlib_project:newlib:*:*:*:*:*:*:*:*"
-    },
     "devel\/pth": {
         "priority": 182
     },
@@ -4388,9 +4022,6 @@
             "cpe:2.3:a:pocoo:jinja2:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-RPyC": {
-        "confirmedmatch": "cpe:2.3:a:rpyc_project:rpyc:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-arrow": {
         "nomatch": [
             "cpe:2.3:a:arrow-kt:arrow:*:*:*:*:*:*:*:*",
@@ -4399,9 +4030,6 @@
     },
     "devel\/py-asn1crypto": {
         "priority": 10
-    },
-    "devel\/py-avro": {
-        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
     },
     "devel\/py-babel": {
         "priority": 21
@@ -4415,16 +4043,10 @@
     "devel\/py-boto": {
         "priority": 6
     },
-    "devel\/py-capstone": {
-        "confirmedmatch": "cpe:2.3:a:capstone-engine:capstone:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-cdg": {
         "nomatch": [
             "cpe:2.3:a:esafenet:cdg:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-celery": {
-        "confirmedmatch": "cpe:2.3:a:celeryproject:celery:*:*:*:*:*:*:*:*"
     },
     "devel\/py-cffi": {
         "priority": 20
@@ -4475,17 +4097,8 @@
             "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-decorator": {
-        "confirmedmatch": "cpe:2.3:a:python:decorator:*:*:*:*:*:*:*:*"
-    },
-    "devel\/py-decorator4": {
-        "confirmedmatch": "cpe:2.3:a:python:decorator:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-evdev": {
         "priority": 5
-    },
-    "devel\/py-fabric": {
-        "confirmedmatch": "cpe:2.3:a:fabfile:fabric:*:*:*:*:*:*:*:*"
     },
     "devel\/py-fam": {
         "nomatch": [
@@ -4501,9 +4114,6 @@
         "nomatch": [
             "cpe:2.3:a:first_project:first:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-flatbuffers": {
-        "confirmedmatch": "cpe:2.3:a:google:flatbuffers:*:*:*:*:*:*:*:*"
     },
     "devel\/py-flex": {
         "nomatch": [
@@ -4551,21 +4161,6 @@
             "cpe:2.3:a:jenkins:jira:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:atlassian:jira:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-jsonpickle": {
-        "confirmedmatch": "cpe:2.3:a:jsonpickle_project:jsonpickle:*:*:*:*:*:*:*:*"
-    },
-    "devel\/py-keystonemiddleware": {
-        "confirmedmatch": "cpe:2.3:a:openstack:keystonemiddleware:*:*:*:*:*:*:*:*"
-    },
-    "devel\/py-libplist": {
-        "confirmedmatch": "cpe:2.3:a:libimobiledevice:libplist:*:*:*:*:*:*:*:*"
-    },
-    "devel\/py-libtaxii": {
-        "confirmedmatch": "cpe:2.3:a:libtaxii_project:libtaxii:*:*:*:*:*:*:*:*"
-    },
-    "devel\/py-libvirt": {
-        "confirmedmatch": "cpe:2.3:a:redhat:libvirt:*:*:*:*:*:*:*:*"
     },
     "devel\/py-lxml": {
         "priority": 7
@@ -4638,9 +4233,6 @@
             "cpe:2.3:a:vermontsystems:progress:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-protobuf": {
-        "confirmedmatch": "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-purl": {
         "nomatch": [
             "cpe:2.3:a:purl_project:purl:*:*:*:*:*:*:*:*"
@@ -4654,14 +4246,8 @@
     "devel\/py-pyasn1": {
         "priority": 8
     },
-    "devel\/py-pycadf": {
-        "confirmedmatch": "cpe:2.3:a:openstack:pycadf:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-pycparser": {
         "priority": 20
-    },
-    "devel\/py-pyinstaller": {
-        "confirmedmatch": "cpe:2.3:a:pyinstaller:pyinstaller:*:*:*:*:*:*:*:*"
     },
     "devel\/py-pyparsing": {
         "priority": 6
@@ -4706,9 +4292,6 @@
             "cpe:2.3:a:location_module_project:location:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-rply": {
-        "confirmedmatch": "cpe:2.3:a:python:rply:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-rush": {
         "nomatch": [
             "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
@@ -4737,9 +4320,6 @@
     "devel\/py-subversion": {
         "priority": 18
     },
-    "devel\/py-thrift": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-twilio": {
         "nomatch": [
             "cpe:2.3:a:twilio_project:twilio:*:*:*:*:*:*:*:*"
@@ -4748,9 +4328,6 @@
     "devel\/py-twisted": {
         "priority": 19
     },
-    "devel\/py-validators": {
-        "confirmedmatch": "cpe:2.3:a:validators_project:validators:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-virtualenv": {
         "priority": 8
     },
@@ -4758,9 +4335,6 @@
         "nomatch": [
             "cpe:2.3:a:marekkis:watermark:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-websockets": {
-        "confirmedmatch": "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*"
     },
     "devel\/py-xdg": {
         "priority": 15
@@ -4855,12 +4429,6 @@
     "devel\/radare2": {
         "priority": 6
     },
-    "devel\/rapidjson": {
-        "confirmedmatch": "cpe:2.3:a:tencent:rapidjson:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rbenv": {
-        "confirmedmatch": "cpe:2.3:a:rbenv_project:rbenv:*:*:*:*:*:*:*:*"
-    },
     "devel\/re2": {
         "priority": 8
     },
@@ -4870,47 +4438,14 @@
     "devel\/readline": {
         "priority": 57
     },
-    "devel\/rebar3": {
-        "confirmedmatch": "cpe:2.3:a:erlang:rebar3:*:*:*:*:*:*:*:*"
-    },
     "devel\/regexxer": {
         "priority": 8
-    },
-    "devel\/riscv32-unknown-elf-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/riscv64-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/riscv64-none-elf-gcc": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
     },
     "devel\/ruby-bsearch": {
         "priority": 6
     },
     "devel\/ruby-gems": {
         "priority": 37
-    },
-    "devel\/rubygem-activesupport4": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport5": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport50": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport52": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport60": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport61": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-activesupport613": {
-        "confirmedmatch": "cpe:2.3:a:activesupport_project:activesupport:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-akismet": {
         "nomatch": [
@@ -4921,9 +4456,6 @@
         "nomatch": [
             "cpe:2.3:a:attic_project:attic:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-avro": {
-        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-azure_key_vault": {
         "nomatch": [
@@ -4941,12 +4473,6 @@
             "cpe:2.3:a:suse:backports:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-bindata": {
-        "confirmedmatch": "cpe:2.3:a:bindata_project:bindata:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-bson": {
-        "confirmedmatch": "cpe:2.3:a:bson_project:bson:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-builder": {
         "priority": 6
     },
@@ -4954,9 +4480,6 @@
         "nomatch": [
             "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-cocaine": {
-        "confirmedmatch": "cpe:2.3:a:thoughtbot:cocaine:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-configuration": {
         "nomatch": [
@@ -4973,9 +4496,6 @@
             "cpe:2.3:a:openzeppelin:contracts:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-crack": {
-        "confirmedmatch": "cpe:2.3:a:john_nunemaker:crack:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-curses": {
         "nomatch": [
             "cpe:2.3:a:curses_project:curses:*:*:*:*:*:*:*:*"
@@ -4991,12 +4511,6 @@
         "nomatch": [
             "cpe:2.3:a:delegate:delegate:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-excon": {
-        "confirmedmatch": "cpe:2.3:a:excon_project:excon:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-fileutils": {
-        "confirmedmatch": "cpe:2.3:a:fileutils_project:fileutils:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-find": {
         "nomatch": [
@@ -5037,16 +4551,10 @@
             "cpe:2.3:a:cygwin:git:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-grape140": {
-        "confirmedmatch": "cpe:2.3:a:ruby-grape:grape:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-hana": {
         "nomatch": [
             "cpe:2.3:a:sap:hana:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-i18n": {
-        "confirmedmatch": "cpe:2.3:a:i18n_project:i18n:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-interact": {
         "nomatch": [
@@ -5071,11 +4579,59 @@
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-mocha": {
+        "nomatch": [
+            "cpe:2.3:a:mochajs:mocha:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-msgpack": {
+        "nomatch": [
+            "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-multi_json": {
         "priority": 5
     },
+    "devel\/rubygem-netaddr": {
+        "confirmedmatch": "cpe:2.3:a:netaddr_project:netaddr:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-paperclip-rails5": {
+        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-paperclip-rails50": {
+        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-platform": {
+        "nomatch": [
+            "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pega:platform:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-rake": {
         "priority": 16
+    },
+    "devel\/rubygem-rice": {
+        "nomatch": [
+            "cpe:2.3:a:rice_project:rice:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-rubocop": {
+        "confirmedmatch": "cpe:2.3:a:rubocop_project:rubocop:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-ruby_parser": {
+        "confirmedmatch": "cpe:2.3:a:ryan_davis:ruby_parser:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-set": {
+        "nomatch": [
+            "cpe:2.3:a:set_project:set:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-sidekiq": {
+        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-sidekiq5": {
+        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-unicode": {
         "nomatch": [
@@ -6926,9 +6482,6 @@
             "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*"
         ]
     },
-    "graphics\/py-gdal": {
-        "confirmedmatch": "cpe:2.3:a:osgeo:gdal:*:*:*:*:*:*:*:*"
-    },
     "graphics\/py-imageio": {
         "nomatch": [
             "cpe:2.3:a:apple:imageio:*:*:*:*:*:*:*:*"
@@ -7158,9 +6711,6 @@
         "nomatch": [
             "cpe:2.3:a:jenkins:irc:*:*:*:*:*:*:*:*"
         ]
-    },
-    "irc\/py-limnoria": {
-        "confirmedmatch": "cpe:2.3:a:limnoria_project:limnoria:*:*:*:*:*:*:*:*"
     },
     "irc\/scrollz": {
         "priority": 6
@@ -7431,11 +6981,7 @@
         "priority": 69
     },
     "lang\/gcc": {
-        "priority": 16,
-        "confirmedmatch": "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*",
-        "nomatch": [
-            "cpe:2.3:a:gnu:gcc:*:*:*:*:*:*:*:*"
-        ]
+        "priority": 16
     },
     "lang\/gcc-ecj45": {
         "priority": 9
@@ -8310,9 +7856,6 @@
             "cpe:2.3:a:pvpgn:stats:*:*:*:*:*:*:*:*"
         ]
     },
-    "math\/py-PuLP": {
-        "confirmedmatch": "cpe:2.3:a:pulpproject:pulp:*:*:*:*:*:*:*:*"
-    },
     "math\/py-deap": {
         "nomatch": [
             "cpe:2.3:a:deap_project:deap:*:*:*:*:*:*:*:*"
@@ -8328,9 +7871,6 @@
     },
     "math\/py-numpy": {
         "priority": 9
-    },
-    "math\/py-pandas": {
-        "confirmedmatch": "cpe:2.3:a:numfocus:pandas:*:*:*:*:*:*:*:*"
     },
     "math\/rapid": {
         "nomatch": [
@@ -8532,16 +8072,10 @@
     "misc\/pinfo": {
         "priority": 7
     },
-    "misc\/py-cinder": {
-        "confirmedmatch": "cpe:2.3:a:openstack:cinder:*:*:*:*:*:*:*:*"
-    },
     "misc\/py-halo": {
         "nomatch": [
             "cpe:2.3:a:halo:halo:*:*:*:*:*:*:*:*"
         ]
-    },
-    "misc\/py-tqdm": {
-        "confirmedmatch": "cpe:2.3:a:tqdm_project:tqdm:*:*:*:*:*:*:*:*"
     },
     "misc\/rfc": {
         "priority": 14
@@ -8836,9 +8370,6 @@
     "multimedia\/pwcbsd": {
         "priority": 9
     },
-    "multimedia\/py-gstreamer1": {
-        "confirmedmatch": "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*"
-    },
     "multimedia\/quodlibet": {
         "priority": 6
     },
@@ -8953,9 +8484,6 @@
         "nomatch": [
             "cpe:2.3:a:psi-plus:psi:*:*:*:*:*:*:*:*"
         ]
-    },
-    "net-im\/py-slixmpp": {
-        "confirmedmatch": "cpe:2.3:a:slixmpp_project:slixmpp:*:*:*:*:*:*:*:*"
     },
     "net-im\/telepathy-gabble": {
         "priority": 5
@@ -9519,8 +9047,7 @@
         "priority": 5
     },
     "net\/libnids": {
-        "priority": 23,
-        "confirmedmatch": "cpe:2.3:a:libnids_project:libnids:*:*:*:*:*:*:*:*"
+        "priority": 23
     },
     "net\/liboauth": {
         "priority": 6
@@ -9793,9 +9320,6 @@
     },
     "net\/pvm": {
         "priority": 6
-    },
-    "net\/py-eventlet": {
-        "confirmedmatch": "cpe:2.3:a:eventlet:eventlet:*:*:*:*:*:*:*:*"
     },
     "net\/py-ldap": {
         "nomatch": [
@@ -10360,8 +9884,7 @@
         "priority": 7
     },
     "print\/gimp-gutenprint": {
-        "priority": 17,
-        "confirmedmatch": "cpe:2.3:a:gutenprint_project:gutenprint:*:*:*:*:*:*:*:*"
+        "priority": 17
     },
     "print\/gsfonts": {
         "priority": 252
@@ -10370,8 +9893,7 @@
         "priority": 6
     },
     "print\/gutenprint": {
-        "priority": 21,
-        "confirmedmatch": "cpe:2.3:a:gutenprint_project:gutenprint:*:*:*:*:*:*:*:*"
+        "priority": 21
     },
     "print\/gv": {
         "priority": 87
@@ -10479,8 +10001,7 @@
         ]
     },
     "print\/py-reportlab": {
-        "priority": 9,
-        "confirmedmatch": "cpe:2.3:a:reportlab:reportlab:*:*:*:*:*:*:*:*"
+        "priority": 9
     },
     "print\/qpdf": {
         "priority": 7
@@ -10492,8 +10013,7 @@
         "priority": 5
     },
     "print\/t1utils": {
-        "priority": 10,
-        "confirmedmatch": "cpe:2.3:a:t1utils_project:t1utils:*:*:*:*:*:*:*:*"
+        "priority": 10
     },
     "print\/tex-basic-engines": {
         "priority": 6
@@ -10508,20 +10028,16 @@
         "priority": 53
     },
     "print\/texlive-base": {
-        "priority": 8,
-        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
+        "priority": 8
     },
     "print\/texlive-full": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "print\/texlive-texmf": {
-        "priority": 8,
-        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
+        "priority": 8
     },
     "print\/texlive-tlmgr": {
-        "priority": 8,
-        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
+        "priority": 8
     },
     "print\/transfig": {
         "priority": 34
@@ -10561,12 +10077,10 @@
         "priority": 19
     },
     "science\/hdf5": {
-        "priority": 9,
-        "confirmedmatch": "cpe:2.3:a:hdfgroup:hdf5:*:*:*:*:*:*:*:*"
+        "priority": 9
     },
     "science\/hdf5-18": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:hdfgroup:hdf5:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "science\/openbabel": {
         "priority": 11
@@ -10577,12 +10091,6 @@
             "cpe:2.3:a:microsoft:access:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:veritas:access:*:*:*:*:*:*:*:*"
         ]
-    },
-    "science\/py-pycsw": {
-        "confirmedmatch": "cpe:2.3:a:pycsw:pycsw:*:*:*:*:*:*:*:*"
-    },
-    "science\/py-tensorflow": {
-        "confirmedmatch": "cpe:2.3:a:google:tensorflow:*:*:*:*:*:*:*:*"
     },
     "security\/R-cran-credentials": {
         "nomatch": [
@@ -10711,8 +10219,7 @@
         "priority": 75
     },
     "security\/doas": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:doas_project:doas:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "security\/dropbear": {
         "priority": 5
@@ -10786,8 +10293,7 @@
         "priority": 5
     },
     "security\/heimdal": {
-        "priority": 18,
-        "confirmedmatch": "cpe:2.3:a:heimdal_project:heimdal:*:*:*:*:*:*:*:*"
+        "priority": 18
     },
     "security\/hydra": {
         "priority": 9,
@@ -10904,8 +10410,7 @@
         "priority": 7
     },
     "security\/makepasswd": {
-        "priority": 14,
-        "confirmedmatch": "cpe:2.3:a:makepasswd_project:makepasswd:*:*:*:*:*:*:*:*"
+        "priority": 14
     },
     "security\/mcrypt": {
         "priority": 21,
@@ -10927,8 +10432,7 @@
         "priority": 47
     },
     "security\/nikto": {
-        "priority": 21,
-        "confirmedmatch": "cpe:2.3:a:cirt.net:nikto:*:*:*:*:*:*:*:*"
+        "priority": 21
     },
     "security\/nmap": {
         "priority": 499
@@ -11170,8 +10674,7 @@
         ]
     },
     "security\/pgpdump": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:pgpdump_project:pgpdump:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "security\/pgpgpg": {
         "priority": 12
@@ -11214,9 +10717,6 @@
     "security\/py-acme": {
         "priority": 9
     },
-    "security\/py-asyncssh": {
-        "confirmedmatch": "cpe:2.3:a:asyncssh_project:asyncssh:*:*:*:*:*:*:*:*"
-    },
     "security\/py-certbot": {
         "priority": 19
     },
@@ -11224,8 +10724,7 @@
         "priority": 13
     },
     "security\/py-cryptography": {
-        "priority": 20,
-        "confirmedmatch": "cpe:2.3:a:cryptography_project:cryptography:*:*:*:*:*:*:*:*"
+        "priority": 20
     },
     "security\/py-fail2ban": {
         "priority": 14
@@ -11250,12 +10749,8 @@
             "cpe:2.3:a:mit:kerberos:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/py-keyring": {
-        "confirmedmatch": "cpe:2.3:a:python:keyring:*:*:*:*:*:*:*:*"
-    },
     "security\/py-m2crypto": {
-        "priority": 9,
-        "confirmedmatch": "cpe:2.3:a:m2crypto_project:m2crypto:*:*:*:*:*:*:*:*"
+        "priority": 9
     },
     "security\/py-openssl": {
         "priority": 35
@@ -11271,24 +10766,6 @@
     "security\/py-pycrypto": {
         "priority": 37
     },
-    "security\/py-pycryptodome": {
-        "confirmedmatch": "cpe:2.3:a:python:pycryptodome:*:*:*:*:*:*:*:*"
-    },
-    "security\/py-pycryptodomex": {
-        "confirmedmatch": "cpe:2.3:a:python:pycryptodome:*:*:*:*:*:*:*:*"
-    },
-    "security\/py-pysaml2": {
-        "confirmedmatch": "cpe:2.3:a:pysaml2_project:pysaml2:*:*:*:*:*:*:*:*"
-    },
-    "security\/py-pysaml24": {
-        "confirmedmatch": "cpe:2.3:a:pysaml2_project:pysaml2:*:*:*:*:*:*:*:*"
-    },
-    "security\/py-pysaml26": {
-        "confirmedmatch": "cpe:2.3:a:pysaml2_project:pysaml2:*:*:*:*:*:*:*:*"
-    },
-    "security\/py-rsa": {
-        "confirmedmatch": "cpe:2.3:a:python:rsa:*:*:*:*:*:*:*:*"
-    },
     "security\/py-safe": {
         "nomatch": [
             "cpe:2.3:a:f-secure:safe:*:*:*:*:*:*:*:*"
@@ -11300,23 +10777,16 @@
             "cpe:2.3:a:ssh:ssh:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/py-tlslite": {
-        "confirmedmatch": "cpe:2.3:a:tlslite_project:tlslite:*:*:*:*:*:*:*:*"
-    },
     "security\/py-xmlsec": {
         "nomatch": [
             "cpe:2.3:a:xmlsec_project:xmlsec:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/py-yara": {
-        "confirmedmatch": "cpe:2.3:a:virustotal:yara:*:*:*:*:*:*:*:*"
-    },
     "security\/racoon2": {
         "priority": 10
     },
     "security\/rhash": {
-        "priority": 16,
-        "confirmedmatch": "cpe:2.3:a:rhash_project:rhash:*:*:*:*:*:*:*:*"
+        "priority": 16
     },
     "security\/rkhunter": {
         "priority": 32
@@ -11417,15 +10887,13 @@
         "custommatch": "cpe:2.3:a:tripwire:tripwire:*:*:*:*:*:*:*:*"
     },
     "security\/trousers": {
-        "priority": 24,
-        "confirmedmatch": "cpe:2.3:a:trousers_project:trousers:*:*:*:*:*:*:*:*"
+        "priority": 24
     },
     "security\/truecrypt": {
         "priority": 7
     },
     "security\/vault": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "security\/vlock": {
         "priority": 14
@@ -11504,8 +10972,7 @@
         "priority": 50
     },
     "shells\/rc": {
-        "priority": 11,
-        "confirmedmatch": "cpe:2.3:a:rc_project:rc:*:*:*:*:*:*:*:*"
+        "priority": 11
     },
     "shells\/sash": {
         "priority": 9
@@ -11546,8 +11013,7 @@
         "custommatch": "cpe:2.3:a:apachetop:apachetop:*:*:*:*:*:*:*:*"
     },
     "sysutils\/apcupsd": {
-        "priority": 73,
-        "confirmedmatch": "cpe:2.3:a:apcupsd:apcupsd:*:*:*:*:*:*:*:*"
+        "priority": 73
     },
     "sysutils\/ascpu": {
         "priority": 5
@@ -11565,8 +11031,7 @@
         "priority": 5
     },
     "sysutils\/autopsy": {
-        "priority": 9,
-        "confirmedmatch": "cpe:2.3:a:sleuthkit:autopsy:*:*:*:*:*:*:*:*"
+        "priority": 9
     },
     "sysutils\/bacula11-docs": {
         "nomatch": [
@@ -11640,8 +11105,7 @@
         ]
     },
     "sysutils\/consul": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:hashicorp:consul:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "sysutils\/coreutils": {
         "priority": 73
@@ -11687,15 +11151,13 @@
         "priority": 81
     },
     "sysutils\/dtc": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:dtc_project:dtc:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "sysutils\/dunst": {
         "priority": 6
     },
     "sysutils\/duplicity": {
-        "priority": 9,
-        "confirmedmatch": "cpe:2.3:a:duplicity_project:duplicity:*:*:*:*:*:*:*:*"
+        "priority": 9
     },
     "sysutils\/dvd+rw-tools": {
         "priority": 94
@@ -11710,8 +11172,7 @@
         "priority": 39
     },
     "sysutils\/exfat-utils": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:exfat_project:exfat:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "sysutils\/ezjail": {
         "priority": 41
@@ -11720,8 +11181,7 @@
         "priority": 5
     },
     "sysutils\/file": {
-        "priority": 37,
-        "confirmedmatch": "cpe:2.3:a:file_project:file:*:*:*:*:*:*:*:*"
+        "priority": 37
     },
     "sysutils\/filelight": {
         "priority": 6
@@ -11761,12 +11221,10 @@
         "priority": 6
     },
     "sysutils\/fusefs-encfs": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:encfs_project:encfs:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "sysutils\/fusefs-exfat": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:exfat_project:exfat:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "sysutils\/fusefs-libs": {
         "priority": 34
@@ -11948,15 +11406,13 @@
         "priority": 5
     },
     "sysutils\/monit": {
-        "priority": 20,
-        "confirmedmatch": "cpe:2.3:a:mmonit:monit:*:*:*:*:*:*:*:*"
+        "priority": 20
     },
     "sysutils\/monitord": {
         "priority": 9
     },
     "sysutils\/monitorix": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:fibranet:monitorix:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "sysutils\/most": {
         "priority": 13,
@@ -12109,9 +11565,6 @@
     "sysutils\/py-ansible-runner": {
         "custommatch": "cpe:2.3:a:redhat:ansible\\-runner:*:*:*:*:*:*:*:*"
     },
-    "sysutils\/py-diffoscope": {
-        "confirmedmatch": "cpe:2.3:a:reproducible_builds:diffoscope:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/py-distro": {
         "priority": 5
     },
@@ -12126,17 +11579,13 @@
     "sysutils\/py-glances": {
         "priority": 5
     },
-    "sysutils\/py-mitogen": {
-        "confirmedmatch": "cpe:2.3:a:networkgenomics:mitogen:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/py-power": {
         "nomatch": [
             "cpe:2.3:a:elipse:power:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/py-psutil": {
-        "priority": 11,
-        "confirmedmatch": "cpe:2.3:a:psutil_project:psutil:*:*:*:*:*:*:*:*"
+        "priority": 11
     },
     "sysutils\/py-psutil121": {
         "nomatch": [
@@ -12179,8 +11628,7 @@
         "priority": 5
     },
     "sysutils\/rubygem-bundler": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:bundler:bundler:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "sysutils\/runit": {
         "priority": 9,
@@ -12262,8 +11710,7 @@
         "priority": 6
     },
     "sysutils\/tenshi": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:inversepath:tenshi:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "sysutils\/terraform": {
         "priority": 6
@@ -12421,8 +11868,7 @@
         "priority": 6
     },
     "textproc\/catdoc": {
-        "priority": 24,
-        "confirmedmatch": "cpe:2.3:a:fossies:catdoc:*:*:*:*:*:*:*:*"
+        "priority": 24
     },
     "textproc\/clucene": {
         "priority": 18
@@ -12505,8 +11951,7 @@
         ]
     },
     "textproc\/exempi": {
-        "priority": 11,
-        "confirmedmatch": "cpe:2.3:a:exempi_project:exempi:*:*:*:*:*:*:*:*"
+        "priority": 11
     },
     "textproc\/expat2": {
         "priority": 719
@@ -12515,8 +11960,7 @@
         "priority": 11
     },
     "textproc\/flex": {
-        "priority": 34,
-        "confirmedmatch": "cpe:2.3:a:flex_project:flex:*:*:*:*:*:*:*:*"
+        "priority": 34
     },
     "textproc\/fop": {
         "priority": 11
@@ -12543,8 +11987,7 @@
         ]
     },
     "textproc\/htdig": {
-        "priority": 19,
-        "confirmedmatch": "cpe:2.3:a:htdig_project:htdig:*:*:*:*:*:*:*:*"
+        "priority": 19
     },
     "textproc\/html": {
         "priority": 40
@@ -12553,12 +11996,10 @@
         "priority": 23
     },
     "textproc\/htmldoc": {
-        "priority": 13,
-        "confirmedmatch": "cpe:2.3:a:htmldoc_project:htmldoc:*:*:*:*:*:*:*:*"
+        "priority": 13
     },
     "textproc\/hunspell": {
-        "priority": 18,
-        "confirmedmatch": "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
+        "priority": 18
     },
     "textproc\/hyphen": {
         "priority": 13
@@ -12595,8 +12036,7 @@
         "priority": 168
     },
     "textproc\/jq": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:jq_project:jq:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "textproc\/kdiff3": {
         "priority": 9
@@ -12611,8 +12051,7 @@
         "priority": 43
     },
     "textproc\/libextractor": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:gnu:libextractor:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "textproc\/libexttextcat": {
         "priority": 8
@@ -12630,8 +12069,7 @@
         "priority": 5
     },
     "textproc\/libwpd010": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:libwpd_project:libwpd:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "textproc\/libwps": {
         "priority": 7
@@ -12941,18 +12379,8 @@
     "textproc\/py-docutils": {
         "priority": 36
     },
-    "textproc\/py-elasticsearch": {
-        "confirmedmatch": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/py-elasticsearch5": {
-        "confirmedmatch": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/py-elasticsearch6": {
-        "confirmedmatch": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
-    },
     "textproc\/py-feedparser": {
-        "priority": 12,
-        "confirmedmatch": "cpe:2.3:a:mark_pilgrim:feedparser:*:*:*:*:*:*:*:*"
+        "priority": 12
     },
     "textproc\/py-genshi": {
         "priority": 6
@@ -12979,22 +12407,10 @@
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
         ]
     },
-    "textproc\/py-mistune": {
-        "confirmedmatch": "cpe:2.3:a:mistune_project:mistune:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/py-openpyxl": {
-        "confirmedmatch": "cpe:2.3:a:python:openpyxl:*:*:*:*:*:*:*:*"
-    },
     "textproc\/py-pager": {
         "nomatch": [
             "cpe:2.3:a:yahoo:pager:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/py-parso": {
-        "confirmedmatch": "cpe:2.3:a:parso_project:parso:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/py-petl": {
-        "confirmedmatch": "cpe:2.3:a:petl_project:petl:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-pygments": {
         "priority": 31
@@ -13019,9 +12435,6 @@
     },
     "textproc\/py-sphinxcontrib-websupport": {
         "priority": 7
-    },
-    "textproc\/py-tablib": {
-        "confirmedmatch": "cpe:2.3:a:python:tablib:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-toml": {
         "priority": 5
@@ -13297,12 +12710,10 @@
         "priority": 7
     },
     "www\/cadaver": {
-        "priority": 11,
-        "confirmedmatch": "cpe:2.3:a:webdav:cadaver:*:*:*:*:*:*:*:*"
+        "priority": 11
     },
     "www\/caddy": {
-        "priority": 7,
-        "confirmedmatch": "cpe:2.3:a:caddyserver:caddy:*:*:*:*:*:*:*:*"
+        "priority": 7
     },
     "www\/calamaris": {
         "priority": 16
@@ -13389,8 +12800,7 @@
         "priority": 9
     },
     "www\/gohugo": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:gohugo:hugo:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
@@ -13525,8 +12935,7 @@
         "custommatch": "cpe:2.3:a:nanoblogger:nanoblogger:*:*:*:*:*:*:*:*"
     },
     "www\/neon": {
-        "priority": 118,
-        "confirmedmatch": "cpe:2.3:a:webdav:neon:*:*:*:*:*:*:*:*"
+        "priority": 118
     },
     "www\/netrik": {
         "custommatch": "cpe:2.3:a:netrik:netrik:*:*:*:*:*:*:*:*"
@@ -13746,8 +13155,7 @@
         "priority": 35
     },
     "www\/p5-libapreq2": {
-        "priority": 10,
-        "confirmedmatch": "cpe:2.3:a:apache:libapreq2:*:*:*:*:*:*:*:*"
+        "priority": 10
     },
     "www\/p5-libwww": {
         "priority": 283
@@ -13795,12 +13203,10 @@
         "priority": 5
     },
     "www\/polipo": {
-        "priority": 10,
-        "confirmedmatch": "cpe:2.3:a:polipo_project:polipo:*:*:*:*:*:*:*:*"
+        "priority": 10
     },
     "www\/pound": {
-        "priority": 8,
-        "confirmedmatch": "cpe:2.3:a:apsis:pound:*:*:*:*:*:*:*:*"
+        "priority": 8
     },
     "www\/privoxy": {
         "priority": 18
@@ -13812,9 +13218,6 @@
         "nomatch": [
             "cpe:2.3:a:getadblock:adblock:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/py-aiohttp": {
-        "confirmedmatch": "cpe:2.3:a:aiohttp_project:aiohttp:*:*:*:*:*:*:*:*"
     },
     "www\/py-beaker": {
         "priority": 7
@@ -13830,37 +13233,13 @@
     "www\/py-django": {
         "priority": 12
     },
-    "www\/py-fastapi": {
-        "confirmedmatch": "cpe:2.3:a:fastapi_project:fastapi:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-flask": {
-        "confirmedmatch": "cpe:2.3:a:palletsprojects:flask:*:*:*:*:*:*:*:*"
-    },
     "www\/py-formencode": {
         "priority": 5
-    },
-    "www\/py-gunicorn": {
-        "confirmedmatch": "cpe:2.3:a:gunicorn:gunicorn:*:*:*:*:*:*:*:*"
     },
     "www\/py-h2": {
         "nomatch": [
             "cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/py-horizon": {
-        "confirmedmatch": "cpe:2.3:a:openstack:horizon:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-hpack": {
-        "confirmedmatch": "cpe:2.3:a:python:hpack:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-html5lib": {
-        "confirmedmatch": "cpe:2.3:a:html5lib:html5lib:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-httplib2": {
-        "confirmedmatch": "cpe:2.3:a:httplib2_project:httplib2:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-hyper": {
-        "confirmedmatch": "cpe:2.3:a:python:hyper:*:*:*:*:*:*:*:*"
     },
     "www\/py-libsass": {
         "nomatch": [
@@ -13871,9 +13250,6 @@
         "nomatch": [
             "cpe:2.3:a:mechanize_project:mechanize:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/py-postorius": {
-        "confirmedmatch": "cpe:2.3:a:postorius_project:postorius:*:*:*:*:*:*:*:*"
     },
     "www\/py-qt5-webkit": {
         "nomatch": [
@@ -13888,8 +13264,7 @@
         ]
     },
     "www\/py-requests": {
-        "priority": 16,
-        "confirmedmatch": "cpe:2.3:a:python:requests:*:*:*:*:*:*:*:*"
+        "priority": 16
     },
     "www\/py-requests-toolbelt": {
         "priority": 5
@@ -13898,15 +13273,6 @@
         "nomatch": [
             "cpe:2.3:a:jenkins:selenium:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/py-uvicorn": {
-        "confirmedmatch": "cpe:2.3:a:encode:uvicorn:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-waitress": {
-        "confirmedmatch": "cpe:2.3:a:agendaless:waitress:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-webargs": {
-        "confirmedmatch": "cpe:2.3:a:webargs_project:webargs:*:*:*:*:*:*:*:*"
     },
     "www\/py-werkzeug": {
         "priority": 7
@@ -13924,9 +13290,6 @@
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/rubygem-gon-rails5": {
-        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-jwt": {
         "nomatch": [
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
@@ -13937,9 +13300,6 @@
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/rubygem-kaminari-rails52": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-oembed": {
         "nomatch": [
             "cpe:2.3:a:oembed_project:oembed:*:*:*:*:*:*:*:*"
@@ -13949,15 +13309,10 @@
         "priority": 8
     },
     "www\/rubygem-rack": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-rack15": {
-        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "www\/rubygem-redcloth": {
-        "priority": 5,
-        "confirmedmatch": "cpe:2.3:a:promptworks:redcloth:*:*:*:*:*:*:*:*"
+        "priority": 5
     },
     "www\/sarg": {
         "priority": 25
@@ -14012,18 +13367,13 @@
         "priority": 95
     },
     "www\/tidy-devel": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:htacg:tidy:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "www\/tidy-lib": {
-        "priority": 42,
-        "nomatch": [
-            "cpe:2.3:a:htacg:tidy:*:*:*:*:*:*:*:*"
-        ]
+        "priority": 42
     },
     "www\/tinyproxy": {
-        "priority": 14,
-        "confirmedmatch": "cpe:2.3:a:tinyproxy_project:tinyproxy:*:*:*:*:*:*:*:*"
+        "priority": 14
     },
     "www\/tomcat7": {
         "priority": 8
@@ -14228,8 +13578,7 @@
         "priority": 38
     },
     "x11-fm\/pcmanfm": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:pcmanfm_project:pcmanfm:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "x11-fm\/rox-filer": {
         "priority": 25
@@ -14242,9 +13591,6 @@
     },
     "x11-fm\/xfe": {
         "priority": 16
-    },
-    "x11-fonts\/agave": {
-        "confirmedmatch": "cpe:2.3:a:anomali:agave:*:*:*:*:*:*:*:*"
     },
     "x11-fonts\/artwiz-aleczapka": {
         "priority": 7
@@ -14663,8 +14009,7 @@
         "priority": 321
     },
     "x11-toolkits\/gtk30": {
-        "priority": 17,
-        "confirmedmatch": "cpe:2.3:a:gnome:gtk:*:*:*:*:*:*:*:*"
+        "priority": 17
     },
     "x11-toolkits\/gtkglarea2": {
         "priority": 27
@@ -14743,8 +14088,7 @@
         "priority": 5
     },
     "x11-toolkits\/plib": {
-        "priority": 10,
-        "confirmedmatch": "cpe:2.3:a:plib_project:plib:*:*:*:*:*:*:*:*"
+        "priority": 10
     },
     "x11-toolkits\/py-fltk": {
         "nomatch": [
@@ -15125,8 +14469,7 @@
         "custommatch": "cpe:2.3:a:mlterm:mlterm:*:*:*:*:*:*:*:*"
     },
     "x11\/mrxvt": {
-        "priority": 6,
-        "confirmedmatch": "cpe:2.3:a:mrxvt_project:mrxvt:*:*:*:*:*:*:*:*"
+        "priority": 6
     },
     "x11\/mrxvt-devel": {
         "priority": 5
@@ -15176,8 +14519,7 @@
         "priority": 55
     },
     "x11\/slim": {
-        "priority": 12,
-        "confirmedmatch": "cpe:2.3:a:berlios:slim:*:*:*:*:*:*:*:*"
+        "priority": 12
     },
     "x11\/smproxy": {
         "priority": 52
