@@ -82,6 +82,11 @@ $app->get('/gc', function ($request, $response) {
             continue;
         }
 
+        if ($port->getCPEStatus() == Status::CHECKNEEDED && $overlay->exists($port->getOrigin(), 'confirmedmatch')) {
+            $port->setCPEStatus(Status::READYTOCOMMIT);
+            $port->saveToDB();
+        }
+
         if ($port->getCPEStr() != '' && in_array($port->getCPEStatus(), [Status::VALID, Status::CHECKNEEDED, Status::READYTOCOMMIT])) {
             $overlay->unset($port->getOrigin(), 'confirmedmatch');
             $overlay->unset($port->getOrigin(), 'nomatch');
