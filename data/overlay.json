@@ -4917,6 +4917,9 @@
     "dns\/ipcheck": {
         "priority": 8
     },
+    "dns\/kadnode": {
+        "confirmedmatch": "cpe:2.3:a:kadnode_project:kadnode:*:*:*:*:*:*:*:*"
+    },
     "dns\/ldns": {
         "priority": 18
     },
@@ -4931,6 +4934,9 @@
     },
     "dns\/libidn2": {
         "priority": 23
+    },
+    "dns\/libmicrodns": {
+        "confirmedmatch": "cpe:2.3:a:videolabs:libmicrodns:*:*:*:*:*:*:*:*"
     },
     "dns\/libpsl": {
         "priority": 6
@@ -4955,6 +4961,9 @@
     },
     "dns\/nss_mdns": {
         "priority": 7
+    },
+    "dns\/openresolv": {
+        "confirmedmatch": "cpe:2.3:a:openresolv_project:openresolv:*:*:*:*:*:*:*:*"
     },
     "dns\/p5-Net-DNS": {
         "priority": 211
@@ -5029,6 +5038,16 @@
     "editors\/bvi": {
         "priority": 7
     },
+    "editors\/deforaos-editor": {
+        "nomatch": [
+            "cpe:2.3:a:hidemaru:editor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "editors\/e3": {
+        "nomatch": [
+            "cpe:2.3:a:elipse:e3:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/emacs": {
         "priority": 99
     },
@@ -5046,6 +5065,12 @@
     },
     "editors\/ghex": {
         "priority": 18
+    },
+    "editors\/gobby": {
+        "confirmedmatch": "cpe:2.3:a:gobby_project:gobby:*:*:*:*:*:*:*:*"
+    },
+    "editors\/gummi": {
+        "confirmedmatch": "cpe:2.3:a:gummi_project:gummi:*:*:*:*:*:*:*:*"
     },
     "editors\/hexedit": {
         "priority": 12
@@ -5074,6 +5099,11 @@
     },
     "editors\/leafpad": {
         "priority": 6
+    },
+    "editors\/led": {
+        "nomatch": [
+            "cpe:2.3:a:latexeditor:led:*:*:*:*:*:*:*:*"
+        ]
     },
     "editors\/libreoffice": {
         "priority": 31
@@ -5625,6 +5655,11 @@
     "editors\/psgml": {
         "priority": 7
     },
+    "editors\/rubygem-neovim": {
+        "nomatch": [
+            "cpe:2.3:a:neovim:neovim:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/scite": {
         "priority": 14
     },
@@ -5633,6 +5668,11 @@
     },
     "editors\/slime": {
         "priority": 6
+    },
+    "editors\/ssed": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:sed:*:*:*:*:*:*:*:*"
+        ]
     },
     "editors\/texmacs": {
         "priority": 5
@@ -5680,6 +5720,14 @@
             "cpe:2.3:a:citadel:hercules:*:*:*:*:*:*:*:*"
         ]
     },
+    "emulators\/hugo": {
+        "nomatch": [
+            "cpe:2.3:a:gohugo:hugo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "emulators\/i386-wine": {
+        "confirmedmatch": "cpe:2.3:a:winehq:wine:*:*:*:*:*:*:*:*"
+    },
     "emulators\/i386-wine-devel": {
         "priority": 5
     },
@@ -5689,11 +5737,21 @@
     "emulators\/open-vm-tools": {
         "priority": 21
     },
+    "emulators\/py-unicorn": {
+        "nomatch": [
+            "cpe:2.3:a:django-unicorn:unicorn:*:*:*:*:*:*:*:*"
+        ]
+    },
     "emulators\/qemu": {
         "priority": 61
     },
     "emulators\/qemu-devel": {
         "priority": 12
+    },
+    "emulators\/qemu-guest-agent": {
+        "nomatch": [
+            "cpe:2.3:a:qemu:qemu:*:*:*:*:*:*:*:*"
+        ]
     },
     "emulators\/qemu-user-static": {
         "priority": 7
@@ -5709,6 +5767,11 @@
     },
     "emulators\/uae": {
         "priority": 11
+    },
+    "emulators\/unicorn": {
+        "nomatch": [
+            "cpe:2.3:a:django-unicorn:unicorn:*:*:*:*:*:*:*:*"
+        ]
     },
     "emulators\/vice": {
         "priority": 7
@@ -5731,6 +5794,9 @@
     "emulators\/zsnes": {
         "priority": 20
     },
+    "finance\/electrum": {
+        "confirmedmatch": "cpe:2.3:a:electrum:electrum:*:*:*:*:*:*:*:*"
+    },
     "finance\/gnucash": {
         "priority": 34,
         "custommatch": "cpe:2.3:a:gnucash:gnucash:*:*:*:*:*:*:*:*"
@@ -5740,6 +5806,12 @@
     },
     "finance\/grisbi": {
         "priority": 5
+    },
+    "finance\/ledger": {
+        "confirmedmatch": "cpe:2.3:a:ledger-cli:ledger:*:*:*:*:*:*:*:*"
+    },
+    "finance\/ledgersmb12": {
+        "confirmedmatch": "cpe:2.3:a:ledgersmb:ledgersmb:*:*:*:*:*:*:*:*"
     },
     "finance\/libofx": {
         "priority": 20
@@ -5762,6 +5834,11 @@
             "cpe:2.3:a:easydigitaldownloads:stripe:*:*:*:*:*:*:*:*"
         ]
     },
+    "finance\/rubygem-money": {
+        "nomatch": [
+            "cpe:2.3:a:microsoft:money:*:*:*:*:*:*:*:*"
+        ]
+    },
     "french\/aspell": {
         "priority": 7,
         "nomatch": [
@@ -5778,8 +5855,17 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "ftp\/R-cran-curl": {
+        "nomatch": [
+            "cpe:2.3:a:curl_project:curl:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*"
+        ]
+    },
     "ftp\/axel": {
         "priority": 13
+    },
+    "ftp\/bftpd": {
+        "confirmedmatch": "cpe:2.3:a:bftpd_project:bftpd:*:*:*:*:*:*:*:*"
     },
     "ftp\/bsdftpd-ssl": {
         "priority": 8
@@ -5795,6 +5881,11 @@
     },
     "ftp\/ftpmirror": {
         "priority": 5
+    },
+    "ftp\/ftpsync": {
+        "nomatch": [
+            "cpe:2.3:a:debian:ftpsync:*:*:*:*:*:*:*:*"
+        ]
     },
     "ftp\/gftp": {
         "priority": 48
@@ -5842,6 +5933,12 @@
     "ftp\/pure-ftpd": {
         "priority": 111
     },
+    "ftp\/rexx-curl": {
+        "nomatch": [
+            "cpe:2.3:a:curl_project:curl:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*"
+        ]
+    },
     "ftp\/smbftpd": {
         "custommatch": "cpe:2.3:a:smbftpd:smbftpd:*:*:*:*:*:*:*:*"
     },
@@ -5867,6 +5964,17 @@
         "priority": 6,
         "custommatch": "cpe:2.3:a:0verkill:0verkill:*:*:*:*:*:*:*:*"
     },
+    "games\/alephone-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/an": {
+        "nomatch": [
+            "cpe:2.3:a:weban:an:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/atomix": {
         "priority": 9
     },
@@ -5890,14 +5998,52 @@
     "games\/crafty": {
         "priority": 12
     },
+    "games\/crimson": {
+        "nomatch": [
+            "cpe:2.3:a:redlion:crimson:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/cube": {
         "priority": 6
     },
     "games\/doom": {
         "priority": 6
     },
+    "games\/doom-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/eboard": {
         "priority": 6
+    },
+    "games\/edge": {
+        "nomatch": [
+            "cpe:2.3:a:microsoft:edge:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:commvault:edge:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:aveva:edge:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:adonisjs:edge:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/el-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/endgame-singularity": {
+        "nomatch": [
+            "cpe:2.3:a:sylabs:singularity:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/epiphany-game": {
+        "nomatch": [
+            "cpe:2.3:a:gnome:epiphany:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/falconseye": {
+        "confirmedmatch": "cpe:2.3:a:falconseye_project:falconseye:*:*:*:*:*:*:*:*"
     },
     "games\/flightgear": {
         "priority": 9
@@ -5905,8 +6051,23 @@
     "games\/freeciv": {
         "priority": 13
     },
+    "games\/freedroidrpg": {
+        "confirmedmatch": "cpe:2.3:a:freedroid:freedroidrpg:*:*:*:*:*:*:*:*"
+    },
+    "games\/fretsonfire-data": {
+        "nomatch": [
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/frotz": {
         "priority": 6
+    },
+    "games\/glest-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
     },
     "games\/gnome-games": {
         "priority": 11
@@ -5922,6 +6083,17 @@
     },
     "games\/heretic": {
         "priority": 5
+    },
+    "games\/ioquake3": {
+        "confirmedmatch": "cpe:2.3:a:ioquake3:ioquake3:*:*:*:*:*:*:*:*"
+    },
+    "games\/ioquake3-server": {
+        "confirmedmatch": "cpe:2.3:a:ioquake3:ioquake3:*:*:*:*:*:*:*:*"
+    },
+    "games\/jigsaw": {
+        "nomatch": [
+            "cpe:2.3:a:w3:jigsaw:*:*:*:*:*:*:*:*"
+        ]
     },
     "games\/jzip": {
         "nomatch": [
@@ -5948,6 +6120,12 @@
     },
     "games\/ninix-aya": {
         "priority": 6
+    },
+    "games\/openarena-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
     },
     "games\/openbor": {
         "custommatch": "cpe:2.3:a:openbor:openbor:*:*:*:*:*:*:*:*"
@@ -5979,6 +6157,27 @@
             "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/quake-source": {
+        "nomatch": [
+            "cpe:2.3:a:valvesoftware:source:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/quake2-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/quake2-matrix": {
+        "nomatch": [
+            "cpe:2.3:a:squiz:matrix:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/quake2-source": {
+        "nomatch": [
+            "cpe:2.3:a:valvesoftware:source:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/quake3": {
         "priority": 7
     },
@@ -5991,6 +6190,18 @@
     },
     "games\/quakeforge": {
         "priority": 8
+    },
+    "games\/retroarch": {
+        "confirmedmatch": "cpe:2.3:a:libretro:retroarch:*:*:*:*:*:*:*:*"
+    },
+    "games\/robocode": {
+        "confirmedmatch": "cpe:2.3:a:robocode_project:robocode:*:*:*:*:*:*:*:*"
+    },
+    "games\/robocode-naval": {
+        "confirmedmatch": "cpe:2.3:a:robocode_project:robocode:*:*:*:*:*:*:*:*"
+    },
+    "games\/runelite": {
+        "confirmedmatch": "cpe:2.3:a:runelite:runelite:*:*:*:*:*:*:*:*"
     },
     "games\/sauerbraten": {
         "custommatch": "cpe:2.3:a:sauerbraten:sauerbraten:*:*:*:*:*:*:*:*"
@@ -6007,6 +6218,21 @@
     "games\/sl": {
         "priority": 5
     },
+    "games\/spider": {
+        "nomatch": [
+            "cpe:2.3:a:apexoo:spider:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/tesseract": {
+        "nomatch": [
+            "cpe:2.3:a:tesseract_project:tesseract:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/tesseract-data": {
+        "nomatch": [
+            "cpe:2.3:a:tesseract_project:tesseract:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/torcs": {
         "priority": 5
     },
@@ -6020,6 +6246,18 @@
     },
     "games\/tuxracer": {
         "priority": 9
+    },
+    "games\/ufoai-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "games\/urbanterror-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
     },
     "games\/vavoom": {
         "custommatch": "cpe:2.3:a:vavoom:vavoom:*:*:*:*:*:*:*:*"
@@ -6054,11 +6292,19 @@
     "games\/xshisen": {
         "custommatch": "cpe:2.3:a:xshisen:xshisen:*:*:*:*:*:*:*:*"
     },
+    "games\/zoom": {
+        "nomatch": [
+            "cpe:2.3:a:zoom:zoom:*:*:*:*:*:*:*:*"
+        ]
+    },
     "german\/aspell": {
         "priority": 9,
         "nomatch": [
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
         ]
+    },
+    "german\/bugzilla44": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*"
     },
     "german\/dict": {
         "priority": 7
