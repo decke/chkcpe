@@ -156,6 +156,7 @@ class Runner
         $cnt = 0;
         $portsdir = Config::getPortsDir();
 
+        $expected_lines = 7;
         $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VNO_MTREE -VCPE_STR :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
@@ -166,8 +167,8 @@ class Runner
             }
 
             $parts = explode("\n", $line);
-            if (count($parts) != 7) {
-                Logger::info('Skipping invalid output for directory '.$parts[0].' ('.count($parts).' lines, expected 6)');
+            if (count($parts) != $expected_lines) {
+                Logger::info('Skipping invalid output for directory '.$parts[0].' ('.count($parts).' lines, expected '.$expected_lines.')');
                 continue;
             }
 
