@@ -4125,6 +4125,11 @@
             "cpe:2.3:a:navarino:infinity:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-inflect": {
+        "nomatch": [
+            "cpe:2.3:a:inflect_project:inflect:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-installer": {
         "nomatch": [
             "cpe:2.3:a:nero:installer:*:*:*:*:*:*:*:*",
@@ -4757,6 +4762,9 @@
     "devel\/tbb": {
         "priority": 7
     },
+    "devel\/tclap": {
+        "confirmedmatch": "cpe:2.3:a:tclap_project:tclap:*:*:*:*:*:*:*:*"
+    },
     "devel\/tcllib": {
         "priority": 30
     },
@@ -4777,6 +4785,15 @@
     "devel\/tex-web2c": {
         "priority": 7
     },
+    "devel\/thrift": {
+        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
+    },
+    "devel\/thrift-c_glib": {
+        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
+    },
+    "devel\/thrift-cpp": {
+        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
+    },
     "devel\/tkcvs": {
         "priority": 9
     },
@@ -4795,6 +4812,15 @@
     "devel\/valgrind": {
         "priority": 18
     },
+    "devel\/valgrind-devel": {
+        "confirmedmatch": "cpe:2.3:a:valgrind:valgrind:*:*:*:*:*:*:*:*"
+    },
+    "devel\/wasm3": {
+        "confirmedmatch": "cpe:2.3:a:wasm3_project:wasm3:*:*:*:*:*:*:*:*"
+    },
+    "devel\/websocketpp": {
+        "confirmedmatch": "cpe:2.3:a:zaphoyd:websocketpp:*:*:*:*:*:*:*:*"
+    },
     "devel\/websvn": {
         "priority": 16
     },
@@ -4803,6 +4829,9 @@
     },
     "devel\/xdg-utils": {
         "priority": 38
+    },
+    "devel\/xmltooling": {
+        "confirmedmatch": "cpe:2.3:a:xmltooling_project:xmltooling:*:*:*:*:*:*:*:*"
     },
     "devel\/xorg-macros": {
         "priority": 55
@@ -4818,6 +4847,9 @@
     },
     "devel\/yasm": {
         "priority": 49
+    },
+    "devel\/zookeeper": {
+        "confirmedmatch": "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
     },
     "devel\/zziplib": {
         "priority": 77
@@ -4875,6 +4907,9 @@
     },
     "dns\/fpdns": {
         "priority": 11
+    },
+    "dns\/hesiod": {
+        "confirmedmatch": "cpe:2.3:a:hesiod_project:hesiod:*:*:*:*:*:*:*:*"
     },
     "dns\/idnkit": {
         "priority": 19
