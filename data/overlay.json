@@ -2510,23 +2510,7 @@
         "priority": 8
     },
     "devel\/git": {
-        "priority": 81,
-        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
-    },
-    "devel\/git-cvs": {
-        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
-    },
-    "devel\/git-gui": {
-        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
-    },
-    "devel\/git-p4": {
-        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
-    },
-    "devel\/git-svn": {
-        "confirmedmatch": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*"
-    },
-    "devel\/gitolite": {
-        "confirmedmatch": "cpe:2.3:a:gitolite:gitolite:*:*:*:*:*:*:*:*"
+        "priority": 81
     },
     "devel\/gittrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
@@ -2689,9 +2673,6 @@
     },
     "devel\/libevdev": {
         "priority": 7
-    },
-    "devel\/libevent": {
-        "confirmedmatch": "cpe:2.3:a:libevent_project:libevent:*:*:*:*:*:*:*:*"
     },
     "devel\/libffi": {
         "priority": 79
@@ -4592,15 +4573,6 @@
     "devel\/rubygem-multi_json": {
         "priority": 5
     },
-    "devel\/rubygem-netaddr": {
-        "confirmedmatch": "cpe:2.3:a:netaddr_project:netaddr:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-paperclip-rails5": {
-        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-paperclip-rails50": {
-        "confirmedmatch": "cpe:2.3:a:thoughtbot:paperclip:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-platform": {
         "nomatch": [
             "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
@@ -4616,22 +4588,10 @@
             "cpe:2.3:a:rice_project:rice:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-rubocop": {
-        "confirmedmatch": "cpe:2.3:a:rubocop_project:rubocop:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-ruby_parser": {
-        "confirmedmatch": "cpe:2.3:a:ryan_davis:ruby_parser:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-set": {
         "nomatch": [
             "cpe:2.3:a:set_project:set:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-sidekiq": {
-        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-sidekiq5": {
-        "confirmedmatch": "cpe:2.3:a:contribsys:sidekiq:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-simple_form": {
         "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
@@ -8828,9 +8788,6 @@
     },
     "net-mgmt\/telegraf": {
         "priority": 11
-    },
-    "net-mgmt\/unifi5": {
-        "priority": 71
     },
     "net-mgmt\/unifi6": {
         "priority": 20
