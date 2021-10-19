@@ -6345,6 +6345,9 @@
     "graphics\/aalib": {
         "priority": 284
     },
+    "graphics\/agg": {
+        "confirmedmatch": "cpe:2.3:a:antigrain:agg:*:*:*:*:*:*:*:*"
+    },
     "graphics\/ansilove": {
         "nomatch": [
             "cpe:2.3:a:ansilove:ansilove:*:*:*:*:*:*:*:*"
@@ -6372,6 +6375,9 @@
             "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/blender-lts28": {
+        "confirmedmatch": "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*"
+    },
     "graphics\/cairo": {
         "priority": 149
     },
@@ -6387,8 +6393,16 @@
     "graphics\/darktable": {
         "priority": 9
     },
+    "graphics\/dcmtk": {
+        "confirmedmatch": "cpe:2.3:a:offis:dcmtk:*:*:*:*:*:*:*:*"
+    },
     "graphics\/dcraw": {
         "priority": 18
+    },
+    "graphics\/deegree-wms": {
+        "nomatch": [
+            "cpe:2.3:a:wms_project:wms:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/devil": {
         "priority": 6
@@ -6440,6 +6454,9 @@
     },
     "graphics\/freeglut": {
         "priority": 18
+    },
+    "graphics\/freeimage": {
+        "confirmedmatch": "cpe:2.3:a:freeimage_project:freeimage:*:*:*:*:*:*:*:*"
     },
     "graphics\/frei0r": {
         "priority": 17
@@ -6541,6 +6558,9 @@
     "graphics\/gwenview": {
         "priority": 9
     },
+    "graphics\/icoutils": {
+        "confirmedmatch": "cpe:2.3:a:icoutils_project:icoutils:*:*:*:*:*:*:*:*"
+    },
     "graphics\/ida": {
         "nomatch": [
             "cpe:2.3:a:hex-rays:ida:*:*:*:*:*:*:*:*"
@@ -6566,6 +6586,9 @@
     },
     "graphics\/jpeg-turbo": {
         "priority": 27
+    },
+    "graphics\/jpegoptim": {
+        "confirmedmatch": "cpe:2.3:a:jpegoptim_project:jpegoptim:*:*:*:*:*:*:*:*"
     },
     "graphics\/jpgtn": {
         "priority": 6
@@ -6594,6 +6617,12 @@
     "graphics\/libart_lgpl": {
         "priority": 70
     },
+    "graphics\/libavif": {
+        "confirmedmatch": "cpe:2.3:a:aomedia:libavif:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/libbpg": {
+        "confirmedmatch": "cpe:2.3:a:libbpg_project:libbpg:*:*:*:*:*:*:*:*"
+    },
     "graphics\/libcaca": {
         "priority": 22
     },
@@ -6605,6 +6634,9 @@
     },
     "graphics\/libdrm": {
         "priority": 141
+    },
+    "graphics\/libemf": {
+        "confirmedmatch": "cpe:2.3:a:libemf_project:libemf:*:*:*:*:*:*:*:*"
     },
     "graphics\/libepoxy": {
         "priority": 9
@@ -6624,6 +6656,15 @@
     "graphics\/libgphoto2": {
         "priority": 74
     },
+    "graphics\/libgxps": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgxps:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/libheif": {
+        "confirmedmatch": "cpe:2.3:a:struktur:libheif:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/libjxl": {
+        "confirmedmatch": "cpe:2.3:a:libjxl_project:libjxl:*:*:*:*:*:*:*:*"
+    },
     "graphics\/libkipi": {
         "priority": 10
     },
@@ -6633,8 +6674,17 @@
     "graphics\/libmng": {
         "priority": 326
     },
+    "graphics\/libnsbmp": {
+        "confirmedmatch": "cpe:2.3:a:netsurf-browser:libnsbmp:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/libnsgif": {
+        "confirmedmatch": "cpe:2.3:a:netsurf-browser:libnsgif:*:*:*:*:*:*:*:*"
+    },
     "graphics\/libopenraw": {
         "priority": 9
+    },
+    "graphics\/libpano13": {
+        "confirmedmatch": "cpe:2.3:a:libpano13_project:libpano13:*:*:*:*:*:*:*:*"
     },
     "graphics\/libpotrace": {
         "priority": 7
@@ -6647,6 +6697,12 @@
     },
     "graphics\/librsvg2": {
         "priority": 192
+    },
+    "graphics\/librsvg2-rust": {
+        "confirmedmatch": "cpe:2.3:a:gnome:librsvg:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/libsixel": {
+        "confirmedmatch": "cpe:2.3:a:libsixel_project:libsixel:*:*:*:*:*:*:*:*"
     },
     "graphics\/libspiro": {
         "priority": 14
@@ -6669,17 +6725,30 @@
     "graphics\/libwpg03": {
         "priority": 5
     },
+    "graphics\/magnum": {
+        "nomatch": [
+            "cpe:2.3:a:openstack:magnum:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/mapserver": {
         "priority": 5
     },
     "graphics\/mesa-demos": {
         "priority": 18
     },
+    "graphics\/mesa-devel": {
+        "confirmedmatch": "cpe:2.3:a:mesa3d:mesa:*:*:*:*:*:*:*:*"
+    },
     "graphics\/mesa-dri": {
         "priority": 8
     },
     "graphics\/mesa-libs": {
         "priority": 12
+    },
+    "graphics\/milton": {
+        "nomatch": [
+            "cpe:2.3:a:milton:milton:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/ming": {
         "priority": 64
@@ -6690,8 +6759,14 @@
     "graphics\/mupdf": {
         "priority": 9
     },
+    "graphics\/nanosvg": {
+        "confirmedmatch": "cpe:2.3:a:nanosvg_project:nanosvg:*:*:*:*:*:*:*:*"
+    },
     "graphics\/netpbm": {
         "priority": 199
+    },
+    "graphics\/nip2": {
+        "confirmedmatch": "cpe:2.3:a:nip2_project:nip2:*:*:*:*:*:*:*:*"
     },
     "graphics\/ocaml-lablgl": {
         "priority": 21
@@ -6701,6 +6776,9 @@
     },
     "graphics\/opencv": {
         "priority": 8
+    },
+    "graphics\/openexr": {
+        "confirmedmatch": "cpe:2.3:a:openexr:openexr:*:*:*:*:*:*:*:*"
     },
     "graphics\/opengl-man": {
         "priority": 6
@@ -6794,6 +6872,17 @@
     "graphics\/php74-gd": {
         "priority": 15
     },
+    "graphics\/pixie": {
+        "nomatch": [
+            "cpe:2.3:a:pixie_project:pixie:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:lucidcrew:pixie:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/plasma-kmod": {
+        "nomatch": [
+            "cpe:2.3:a:kde:plasma:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/plotutils": {
         "priority": 19
     },
@@ -6803,11 +6892,20 @@
     "graphics\/png2html": {
         "priority": 7
     },
+    "graphics\/pngcheck": {
+        "confirmedmatch": "cpe:2.3:a:libpng:pngcheck:*:*:*:*:*:*:*:*"
+    },
     "graphics\/pngcrush": {
         "priority": 16
     },
     "graphics\/pngrewrite": {
         "priority": 6
+    },
+    "graphics\/pngwriter": {
+        "confirmedmatch": "cpe:2.3:a:pngwriter_project:pngwriter:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/podofo": {
+        "confirmedmatch": "cpe:2.3:a:podofo_project:podofo:*:*:*:*:*:*:*:*"
     },
     "graphics\/poppler": {
         "priority": 70
@@ -6821,11 +6919,19 @@
     "graphics\/poppler-utils": {
         "priority": 11
     },
+    "graphics\/preview": {
+        "nomatch": [
+            "cpe:2.3:a:apple:preview:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/proj": {
         "priority": 9
     },
     "graphics\/pstoedit": {
         "priority": 11
+    },
+    "graphics\/ptex": {
+        "confirmedmatch": "cpe:2.3:a:disneyanimation:ptex:*:*:*:*:*:*:*:*"
     },
     "graphics\/py-cairo": {
         "priority": 59,
@@ -6858,14 +6964,56 @@
     "graphics\/qiv": {
         "priority": 17
     },
+    "graphics\/qt5-3d": {
+        "nomatch": [
+            "cpe:2.3:a:foxitsoftware:3d:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/qt5-svg": {
         "priority": 5
+    },
+    "graphics\/qt5-wayland": {
+        "nomatch": [
+            "cpe:2.3:a:wayland:wayland:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/radiance": {
         "custommatch": "cpe:2.3:a:radiance:radiance:*:*:*:*:*:*:*:*"
     },
     "graphics\/ristretto": {
         "priority": 8
+    },
+    "graphics\/rubygem-cairo": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:cairo:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/rubygem-captcha": {
+        "nomatch": [
+            "cpe:2.3:a:bestwebsoft:captcha:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/rubygem-clutter": {
+        "nomatch": [
+            "cpe:2.3:a:clutter_project:clutter:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/rubygem-dragonfly": {
+        "nomatch": [
+            "cpe:2.3:a:dragonfly_project:dragonfly:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/rubygem-pdfkit": {
+        "confirmedmatch": "cpe:2.3:a:pdfkit_project:pdfkit:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/sage": {
+        "nomatch": [
+            "cpe:2.3:a:sage-mozdev:sage:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/sam2p": {
+        "confirmedmatch": "cpe:2.3:a:sam2p_project:sam2p:*:*:*:*:*:*:*:*"
     },
     "graphics\/sane-backends": {
         "priority": 65
@@ -6885,8 +7033,16 @@
     "graphics\/sdl_ttf": {
         "priority": 36
     },
+    "graphics\/shotwell": {
+        "confirmedmatch": "cpe:2.3:a:gnome:shotwell:*:*:*:*:*:*:*:*"
+    },
     "graphics\/skanlite": {
         "priority": 5
+    },
+    "graphics\/svg2png": {
+        "nomatch": [
+            "cpe:2.3:a:svg2png_project:svg2png:*:*:*:*:*:*:*:*"
+        ]
     },
     "graphics\/svgalib": {
         "priority": 230,
@@ -6925,8 +7081,16 @@
     "graphics\/webp": {
         "priority": 32
     },
+    "graphics\/wings": {
+        "nomatch": [
+            "cpe:2.3:a:pterodactyl:wings:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/wmicons": {
         "priority": 73
+    },
+    "graphics\/xcftools": {
+        "confirmedmatch": "cpe:2.3:a:xcftools_project:xcftools:*:*:*:*:*:*:*:*"
     },
     "graphics\/xfig": {
         "priority": 28
@@ -6953,6 +7117,9 @@
     "graphics\/xzgv": {
         "priority": 17,
         "custommatch": "cpe:2.3:a:xzgv:xzgv:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/yed": {
+        "confirmedmatch": "cpe:2.3:a:yworks:yed:*:*:*:*:*:*:*:*"
     },
     "graphics\/zathura": {
         "priority": 7
@@ -7020,6 +7187,9 @@
         "priority": 6,
         "custommatch": "cpe:2.3:a:ezbounce:ezbounce:*:*:*:*:*:*:*:*"
     },
+    "irc\/hexchat": {
+        "confirmedmatch": "cpe:2.3:a:hexchat_project:hexchat:*:*:*:*:*:*:*:*"
+    },
     "irc\/irc": {
         "priority": 6,
         "nomatch": [
@@ -7052,6 +7222,11 @@
     },
     "irc\/ngircd": {
         "priority": 5
+    },
+    "irc\/ninja": {
+        "nomatch": [
+            "cpe:2.3:a:visualshortcodes:ninja:*:*:*:*:*:*:*:*"
+        ]
     },
     "irc\/p5-POE-Component-IRC": {
         "priority": 8
@@ -7090,11 +7265,25 @@
             "cpe:2.3:a:gnu:a2ps:*:*:*:*:*:*:*:*"
         ]
     },
+    "japanese\/ack": {
+        "nomatch": [
+            "cpe:2.3:a:beyondgrep:ack:*:*:*:*:*:*:*:*"
+        ]
+    },
     "japanese\/alias-fonts": {
         "priority": 7
     },
     "japanese\/anthy": {
         "priority": 8
+    },
+    "japanese\/bugzilla44": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*"
+    },
+    "japanese\/bugzilla50": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*"
+    },
+    "japanese\/chasen-base": {
+        "confirmedmatch": "cpe:2.3:a:naist.jp:chasen:*:*:*:*:*:*:*:*"
     },
     "japanese\/eterm": {
         "priority": 5
@@ -7110,6 +7299,12 @@
     },
     "japanese\/kakasi": {
         "priority": 12
+    },
+    "japanese\/kon2-14dot": {
+        "confirmedmatch": "cpe:2.3:a:ishikawa_mutsumi:kon2:*:*:*:*:*:*:*:*"
+    },
+    "japanese\/kon2-16dot": {
+        "confirmedmatch": "cpe:2.3:a:ishikawa_mutsumi:kon2:*:*:*:*:*:*:*:*"
     },
     "japanese\/kterm": {
         "priority": 12
@@ -7146,6 +7341,9 @@
     "japanese\/mutt-devel": {
         "priority": 11
     },
+    "japanese\/namazu": {
+        "confirmedmatch": "cpe:2.3:a:namazu:namazu:*:*:*:*:*:*:*:*"
+    },
     "japanese\/namazu2": {
         "priority": 7
     },
@@ -7173,6 +7371,11 @@
     "japanese\/tdiary": {
         "custommatch": "cpe:2.3:a:tdiary:tdiary:*:*:*:*:*:*:*:*"
     },
+    "japanese\/tex-ptex": {
+        "nomatch": [
+            "cpe:2.3:a:disneyanimation:ptex:*:*:*:*:*:*:*:*"
+        ]
+    },
     "japanese\/w3m": {
         "priority": 7
     },
@@ -7188,8 +7391,18 @@
     "java\/eclipse": {
         "priority": 62
     },
+    "java\/eclipse-EPIC": {
+        "nomatch": [
+            "cpe:2.3:a:organizedthemes:epic:*:*:*:*:*:*:*:*"
+        ]
+    },
     "java\/eclipse-cdt": {
         "priority": 10
+    },
+    "java\/eclipse-findbugs": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:findbugs:*:*:*:*:*:*:*:*"
+        ]
     },
     "java\/icedtea-web": {
         "priority": 6
@@ -7248,6 +7461,12 @@
             "cpe:2.3:a:jenkins:junit:*:*:*:*:*:*:*:*"
         ]
     },
+    "java\/linux-oracle-jdk18": {
+        "confirmedmatch": "cpe:2.3:a:oracle:jdk:*:*:*:*:*:*:*:*"
+    },
+    "java\/linux-oracle-jre18": {
+        "confirmedmatch": "cpe:2.3:a:oracle:jre:*:*:*:*:*:*:*:*"
+    },
     "java\/netbeans": {
         "priority": 21
     },
@@ -7273,21 +7492,40 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "lang\/asn1c": {
+        "confirmedmatch": "cpe:2.3:a:asn1c_project:asn1c:*:*:*:*:*:*:*:*"
+    },
+    "lang\/cim": {
+        "nomatch": [
+            "cpe:2.3:a:cim_project:cim:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/clisp": {
         "priority": 15
     },
     "lang\/cmucl": {
         "priority": 9
     },
+    "lang\/crystal": {
+        "nomatch": [
+            "cpe:2.3:a:nuuo:crystal:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/cython": {
         "priority": 8
     },
     "lang\/dlang-tools": {
         "nomatch": [
-            "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:irfanview:tools:*:*:*:*:*:*:*:*"
         ]
     },
     "lang\/elixir": {
+        "nomatch": [
+            "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "lang\/elixir-devel": {
         "nomatch": [
             "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
         ]
@@ -7325,6 +7563,11 @@
     "lang\/fpc": {
         "priority": 9
     },
+    "lang\/fpc-docs": {
+        "nomatch": [
+            "cpe:2.3:a:docker:docs:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/gauche": {
         "priority": 7,
         "custommatch": "cpe:2.3:a:gauche:gauche:*:*:*:*:*:*:*:*"
@@ -7359,8 +7602,17 @@
     "lang\/gprolog": {
         "priority": 5
     },
+    "lang\/gravity": {
+        "confirmedmatch": "cpe:2.3:a:creolabs:gravity:*:*:*:*:*:*:*:*"
+    },
+    "lang\/groovy": {
+        "confirmedmatch": "cpe:2.3:a:apache:groovy:*:*:*:*:*:*:*:*"
+    },
     "lang\/guile": {
         "priority": 189
+    },
+    "lang\/guile1": {
+        "confirmedmatch": "cpe:2.3:a:gnu:guile:*:*:*:*:*:*:*:*"
     },
     "lang\/icc": {
         "priority": 14
@@ -7370,6 +7622,14 @@
     },
     "lang\/itcl": {
         "priority": 8
+    },
+    "lang\/jython": {
+        "confirmedmatch": "cpe:2.3:a:python:jython:*:*:*:*:*:*:*:*"
+    },
+    "lang\/kotlin": {
+        "nomatch": [
+            "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*"
+        ]
     },
     "lang\/librep": {
         "priority": 60
@@ -7386,6 +7646,9 @@
     "lang\/luajit": {
         "priority": 11
     },
+    "lang\/luajit-openresty": {
+        "confirmedmatch": "cpe:2.3:a:luajit:luajit:*:*:*:*:*:*:*:*"
+    },
     "lang\/mawk": {
         "priority": 7
     },
@@ -7395,11 +7658,19 @@
     "lang\/mono": {
         "priority": 62
     },
+    "lang\/mujs": {
+        "confirmedmatch": "cpe:2.3:a:artifex:mujs:*:*:*:*:*:*:*:*"
+    },
     "lang\/ocaml": {
         "priority": 62
     },
     "lang\/ocaml-nox11": {
         "priority": 8
+    },
+    "lang\/onyx": {
+        "nomatch": [
+            "cpe:2.3:a:plesk:onyx:*:*:*:*:*:*:*:*"
+        ]
     },
     "lang\/p5-Error": {
         "priority": 96
@@ -7441,6 +7712,9 @@
     },
     "lang\/php80": {
         "priority": 5
+    },
+    "lang\/picoc": {
+        "confirmedmatch": "cpe:2.3:a:picoc_project:picoc:*:*:*:*:*:*:*:*"
     },
     "lang\/python": {
         "priority": 544,
