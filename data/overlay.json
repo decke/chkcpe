@@ -2798,9 +2798,7 @@
         "priority": 12
     },
     "devel\/lightning": {
-        "nomatch": [
-            "cpe:2.3:a:lightning-viz:lightning:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:gnu:lightning:*:*:*:*:*:*:*:*"
     },
     "devel\/llvm": {
         "priority": 8,
@@ -6593,6 +6591,18 @@
     "graphics\/libwpg03": {
         "priority": 5
     },
+    "graphics\/linux-c7-graphite2": {
+        "confirmedmatch": "cpe:2.3:a:sil:graphite2:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/linux-c7-jasper": {
+        "confirmedmatch": "cpe:2.3:a:jasper_project:jasper:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/linux-c7-png": {
+        "confirmedmatch": "cpe:2.3:a:libpng:libpng:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/linux-c7-sdl_image": {
+        "confirmedmatch": "cpe:2.3:a:libsdl:sdl_image:*:*:*:*:*:*:*:*"
+    },
     "graphics\/magnum": {
         "nomatch": [
             "cpe:2.3:a:openstack:magnum:*:*:*:*:*:*:*:*"
@@ -7461,6 +7471,21 @@
     "lang\/ghc": {
         "priority": 23
     },
+    "lang\/gnatcross-binutils-aarch64": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "lang\/gnatdroid-binutils": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "lang\/gnatdroid-binutils-x86": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/gnustep-base": {
         "priority": 11
     },
@@ -8200,6 +8225,11 @@
     "mail\/qmail-remove": {
         "priority": 8
     },
+    "mail\/qmail-spamcontrol": {
+        "nomatch": [
+            "cpe:2.3:a:qmail_project:qmail:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/qmail-tls": {
         "priority": 16
     },
@@ -8711,6 +8741,11 @@
     },
     "misc\/dnetc": {
         "priority": 23
+    },
+    "misc\/dtach": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:dtach:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/e2fsprogs-libblkid": {
         "priority": 5
@@ -9643,6 +9678,9 @@
     "net-mgmt\/rancid3": {
         "priority": 5
     },
+    "net-mgmt\/routers2": {
+        "confirmedmatch": "cpe:2.3:a:routers2_project:routers2:*:*:*:*:*:*:*:*"
+    },
     "net-mgmt\/sipcalc": {
         "priority": 6
     },
@@ -9675,6 +9713,11 @@
     },
     "net-mgmt\/wifimgr": {
         "priority": 8
+    },
+    "net-mgmt\/wmi-client": {
+        "nomatch": [
+            "cpe:2.3:a:nvidia:wmi:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/zabbix5-agent": {
         "priority": 5
@@ -9820,6 +9863,9 @@
     "net\/bounce": {
         "priority": 10
     },
+    "net\/ceph14": {
+        "confirmedmatch": "cpe:2.3:a:linuxfoundation:ceph:*:*:*:*:*:*:*:*"
+    },
     "net\/citrix_ica": {
         "priority": 10
     },
@@ -9829,6 +9875,9 @@
     "net\/courier-authlib-ldap": {
         "priority": 12
     },
+    "net\/csync2": {
+        "confirmedmatch": "cpe:2.3:a:linbit:csync2:*:*:*:*:*:*:*:*"
+    },
     "net\/dante": {
         "priority": 14
     },
@@ -9837,6 +9886,11 @@
     },
     "net\/dhcp6": {
         "priority": 6
+    },
+    "net\/dhcpd": {
+        "nomatch": [
+            "cpe:2.3:a:isc:dhcpd:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/dhcpdump": {
         "priority": 12,
@@ -9850,8 +9904,19 @@
     "net\/dictd": {
         "priority": 7
     },
+    "net\/drive": {
+        "nomatch": [
+            "cpe:2.3:a:google:drive:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:synology:drive:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net\/echoping": {
         "priority": 10
+    },
+    "net\/flower": {
+        "nomatch": [
+            "cpe:2.3:a:flower_project:flower:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/fping": {
         "priority": 97
@@ -9874,6 +9939,9 @@
     "net\/glib-networking": {
         "priority": 15
     },
+    "net\/glusterfs": {
+        "confirmedmatch": "cpe:2.3:a:gluster:glusterfs:*:*:*:*:*:*:*:*"
+    },
     "net\/gnet2": {
         "priority": 34
     },
@@ -9895,8 +9963,14 @@
     "net\/gq": {
         "priority": 19
     },
+    "net\/grilo": {
+        "confirmedmatch": "cpe:2.3:a:gnome:grilo:*:*:*:*:*:*:*:*"
+    },
     "net\/gtk-vnc": {
         "priority": 5
+    },
+    "net\/gupnp": {
+        "confirmedmatch": "cpe:2.3:a:gnome:gupnp:*:*:*:*:*:*:*:*"
     },
     "net\/haproxy": {
         "priority": 22
@@ -9939,8 +10013,22 @@
             "cpe:2.3:a:redhat:jgroups:*:*:*:*:*:*:*:*"
         ]
     },
+    "net\/jose": {
+        "nomatch": [
+            "cpe:2.3:a:jose_project:jose:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/jsch": {
+        "confirmedmatch": "cpe:2.3:a:jcraft:jsch:*:*:*:*:*:*:*:*"
+    },
     "net\/jwhois": {
         "priority": 12
+    },
+    "net\/kafka": {
+        "confirmedmatch": "cpe:2.3:a:apache:kafka:*:*:*:*:*:*:*:*"
+    },
+    "net\/keycloak": {
+        "confirmedmatch": "cpe:2.3:a:redhat:keycloak:*:*:*:*:*:*:*:*"
     },
     "net\/l2tpd": {
         "priority": 8,
