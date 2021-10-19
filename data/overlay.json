@@ -2556,14 +2556,8 @@
             "cpe:2.3:a:gorm:gorm:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/gperf": {
-        "confirmedmatch": "cpe:2.3:a:gperftools_project:gperftools:*:*:*:*:*:*:*:*"
-    },
     "devel\/gsettings-desktop-schemas": {
         "priority": 16
-    },
-    "devel\/gtranslator": {
-        "confirmedmatch": "cpe:2.3:a:gtranslate:google_language_translator:*:*:*:*:*:*:*:*"
     },
     "devel\/gvfs": {
         "priority": 26
@@ -4598,28 +4592,10 @@
             "cpe:2.3:a:set_project:set:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-simple_form": {
-        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-simple_form-rails5": {
-        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-simple_form-rails50": {
-        "confirmedmatch": "cpe:2.3:a:plataformatec:simple_form:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-slim": {
         "nomatch": [
             "cpe:2.3:a:berlios:slim:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-sprockets": {
-        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-sprockets2": {
-        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
-    },
-    "devel\/rubygem-sprockets3": {
-        "confirmedmatch": "cpe:2.3:a:sprockets_project:sprockets:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-sync": {
         "nomatch": [
@@ -4642,9 +4618,6 @@
             "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-thrift": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-time": {
         "nomatch": [
             "cpe:2.3:a:time_project:time:*:*:*:*:*:*:*:*"
@@ -4660,9 +4633,6 @@
             "cpe:2.3:a:useragent_project:useragent:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-will_paginate": {
-        "confirmedmatch": "cpe:2.3:a:mislav_marohnic:will_paginate:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-zlib": {
         "nomatch": [
             "cpe:2.3:a:gnu:zlib:*:*:*:*:*:*:*:*",
@@ -4673,9 +4643,6 @@
         "nomatch": [
             "cpe:2.3:a:rvm_project:rvm:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/samurai": {
-        "confirmedmatch": "cpe:2.3:a:samurai_project:samurai:*:*:*:*:*:*:*:*"
     },
     "devel\/scons": {
         "priority": 46
@@ -4707,17 +4674,11 @@
             "cpe:2.3:a:simdjson_project:simdjson:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/slf4j": {
-        "confirmedmatch": "cpe:2.3:a:qos:slf4j:*:*:*:*:*:*:*:*"
-    },
     "devel\/sonar-scanner-cli": {
         "custommatch": "cpe:2.3:a:sonarsource:sonar\\-scanner\\-cli:*:*:*:*:*:*:*:*"
     },
     "devel\/sonarqube-ant-task": {
         "custommatch": "cpe:2.3:a:sonarsource:sonarqube\\-ant\\-task:*:*:*:*:*:*:*:*"
-    },
-    "devel\/spark": {
-        "confirmedmatch": "cpe:2.3:a:apache:spark:*:*:*:*:*:*:*:*"
     },
     "devel\/splint": {
         "priority": 6
@@ -4731,9 +4692,6 @@
         "nomatch": [
             "cpe:2.3:a:stack_project:stack:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/stb": {
-        "confirmedmatch": "cpe:2.3:a:stb_project:stb:*:*:*:*:*:*:*:*"
     },
     "devel\/strace": {
         "priority": 45
@@ -4750,9 +4708,6 @@
     "devel\/sysconftool": {
         "priority": 40
     },
-    "devel\/sysfsutils": {
-        "confirmedmatch": "cpe:2.3:a:sysfsutils_project:sysfsutils:*:*:*:*:*:*:*:*"
-    },
     "devel\/t1lib": {
         "priority": 329
     },
@@ -4761,9 +4716,6 @@
     },
     "devel\/tbb": {
         "priority": 7
-    },
-    "devel\/tclap": {
-        "confirmedmatch": "cpe:2.3:a:tclap_project:tclap:*:*:*:*:*:*:*:*"
     },
     "devel\/tcllib": {
         "priority": 30
@@ -4785,15 +4737,6 @@
     "devel\/tex-web2c": {
         "priority": 7
     },
-    "devel\/thrift": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
-    },
-    "devel\/thrift-c_glib": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
-    },
-    "devel\/thrift-cpp": {
-        "confirmedmatch": "cpe:2.3:a:apache:thrift:*:*:*:*:*:*:*:*"
-    },
     "devel\/tkcvs": {
         "priority": 9
     },
@@ -4812,15 +4755,6 @@
     "devel\/valgrind": {
         "priority": 18
     },
-    "devel\/valgrind-devel": {
-        "confirmedmatch": "cpe:2.3:a:valgrind:valgrind:*:*:*:*:*:*:*:*"
-    },
-    "devel\/wasm3": {
-        "confirmedmatch": "cpe:2.3:a:wasm3_project:wasm3:*:*:*:*:*:*:*:*"
-    },
-    "devel\/websocketpp": {
-        "confirmedmatch": "cpe:2.3:a:zaphoyd:websocketpp:*:*:*:*:*:*:*:*"
-    },
     "devel\/websvn": {
         "priority": 16
     },
@@ -4829,9 +4763,6 @@
     },
     "devel\/xdg-utils": {
         "priority": 38
-    },
-    "devel\/xmltooling": {
-        "confirmedmatch": "cpe:2.3:a:xmltooling_project:xmltooling:*:*:*:*:*:*:*:*"
     },
     "devel\/xorg-macros": {
         "priority": 55
@@ -4847,9 +4778,6 @@
     },
     "devel\/yasm": {
         "priority": 49
-    },
-    "devel\/zookeeper": {
-        "confirmedmatch": "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
     },
     "devel\/zziplib": {
         "priority": 77
@@ -4908,17 +4836,11 @@
     "dns\/fpdns": {
         "priority": 11
     },
-    "dns\/hesiod": {
-        "confirmedmatch": "cpe:2.3:a:hesiod_project:hesiod:*:*:*:*:*:*:*:*"
-    },
     "dns\/idnkit": {
         "priority": 19
     },
     "dns\/ipcheck": {
         "priority": 8
-    },
-    "dns\/kadnode": {
-        "confirmedmatch": "cpe:2.3:a:kadnode_project:kadnode:*:*:*:*:*:*:*:*"
     },
     "dns\/ldns": {
         "priority": 18
@@ -4934,9 +4856,6 @@
     },
     "dns\/libidn2": {
         "priority": 23
-    },
-    "dns\/libmicrodns": {
-        "confirmedmatch": "cpe:2.3:a:videolabs:libmicrodns:*:*:*:*:*:*:*:*"
     },
     "dns\/libpsl": {
         "priority": 6
@@ -4961,9 +4880,6 @@
     },
     "dns\/nss_mdns": {
         "priority": 7
-    },
-    "dns\/openresolv": {
-        "confirmedmatch": "cpe:2.3:a:openresolv_project:openresolv:*:*:*:*:*:*:*:*"
     },
     "dns\/p5-Net-DNS": {
         "priority": 211
@@ -5065,12 +4981,6 @@
     },
     "editors\/ghex": {
         "priority": 18
-    },
-    "editors\/gobby": {
-        "confirmedmatch": "cpe:2.3:a:gobby_project:gobby:*:*:*:*:*:*:*:*"
-    },
-    "editors\/gummi": {
-        "confirmedmatch": "cpe:2.3:a:gummi_project:gummi:*:*:*:*:*:*:*:*"
     },
     "editors\/hexedit": {
         "priority": 12
@@ -5725,9 +5635,6 @@
             "cpe:2.3:a:gohugo:hugo:*:*:*:*:*:*:*:*"
         ]
     },
-    "emulators\/i386-wine": {
-        "confirmedmatch": "cpe:2.3:a:winehq:wine:*:*:*:*:*:*:*:*"
-    },
     "emulators\/i386-wine-devel": {
         "priority": 5
     },
@@ -5794,9 +5701,6 @@
     "emulators\/zsnes": {
         "priority": 20
     },
-    "finance\/electrum": {
-        "confirmedmatch": "cpe:2.3:a:electrum:electrum:*:*:*:*:*:*:*:*"
-    },
     "finance\/gnucash": {
         "priority": 34,
         "custommatch": "cpe:2.3:a:gnucash:gnucash:*:*:*:*:*:*:*:*"
@@ -5806,12 +5710,6 @@
     },
     "finance\/grisbi": {
         "priority": 5
-    },
-    "finance\/ledger": {
-        "confirmedmatch": "cpe:2.3:a:ledger-cli:ledger:*:*:*:*:*:*:*:*"
-    },
-    "finance\/ledgersmb12": {
-        "confirmedmatch": "cpe:2.3:a:ledgersmb:ledgersmb:*:*:*:*:*:*:*:*"
     },
     "finance\/libofx": {
         "priority": 20
@@ -5863,9 +5761,6 @@
     },
     "ftp\/axel": {
         "priority": 13
-    },
-    "ftp\/bftpd": {
-        "confirmedmatch": "cpe:2.3:a:bftpd_project:bftpd:*:*:*:*:*:*:*:*"
     },
     "ftp\/bsdftpd-ssl": {
         "priority": 8
@@ -6042,17 +5937,11 @@
             "cpe:2.3:a:gnome:epiphany:*:*:*:*:*:*:*:*"
         ]
     },
-    "games\/falconseye": {
-        "confirmedmatch": "cpe:2.3:a:falconseye_project:falconseye:*:*:*:*:*:*:*:*"
-    },
     "games\/flightgear": {
         "priority": 9
     },
     "games\/freeciv": {
         "priority": 13
-    },
-    "games\/freedroidrpg": {
-        "confirmedmatch": "cpe:2.3:a:freedroid:freedroidrpg:*:*:*:*:*:*:*:*"
     },
     "games\/fretsonfire-data": {
         "nomatch": [
@@ -6083,12 +5972,6 @@
     },
     "games\/heretic": {
         "priority": 5
-    },
-    "games\/ioquake3": {
-        "confirmedmatch": "cpe:2.3:a:ioquake3:ioquake3:*:*:*:*:*:*:*:*"
-    },
-    "games\/ioquake3-server": {
-        "confirmedmatch": "cpe:2.3:a:ioquake3:ioquake3:*:*:*:*:*:*:*:*"
     },
     "games\/jigsaw": {
         "nomatch": [
@@ -6191,18 +6074,6 @@
     "games\/quakeforge": {
         "priority": 8
     },
-    "games\/retroarch": {
-        "confirmedmatch": "cpe:2.3:a:libretro:retroarch:*:*:*:*:*:*:*:*"
-    },
-    "games\/robocode": {
-        "confirmedmatch": "cpe:2.3:a:robocode_project:robocode:*:*:*:*:*:*:*:*"
-    },
-    "games\/robocode-naval": {
-        "confirmedmatch": "cpe:2.3:a:robocode_project:robocode:*:*:*:*:*:*:*:*"
-    },
-    "games\/runelite": {
-        "confirmedmatch": "cpe:2.3:a:runelite:runelite:*:*:*:*:*:*:*:*"
-    },
     "games\/sauerbraten": {
         "custommatch": "cpe:2.3:a:sauerbraten:sauerbraten:*:*:*:*:*:*:*:*"
     },
@@ -6302,9 +6173,6 @@
         "nomatch": [
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
         ]
-    },
-    "german\/bugzilla44": {
-        "confirmedmatch": "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*"
     },
     "german\/dict": {
         "priority": 7
