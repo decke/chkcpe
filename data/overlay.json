@@ -7611,11 +7611,26 @@
     "lang\/python38": {
         "priority": 14
     },
+    "lang\/quickjs": {
+        "confirmedmatch": "cpe:2.3:a:quickjs_project:quickjs:*:*:*:*:*:*:*:*"
+    },
+    "lang\/racket": {
+        "confirmedmatch": "cpe:2.3:a:racket-lang:racket:*:*:*:*:*:*:*:*"
+    },
+    "lang\/racket-minimal": {
+        "confirmedmatch": "cpe:2.3:a:racket-lang:racket:*:*:*:*:*:*:*:*"
+    },
     "lang\/rust": {
         "priority": 13
     },
+    "lang\/rust-bootstrap": {
+        "confirmedmatch": "cpe:2.3:a:rust-lang:rust:*:*:*:*:*:*:*:*"
+    },
     "lang\/sbcl": {
         "priority": 12
+    },
+    "lang\/scala": {
+        "confirmedmatch": "cpe:2.3:a:scala-lang:scala:*:*:*:*:*:*:*:*"
     },
     "lang\/scheme48": {
         "priority": 6
@@ -7631,6 +7646,9 @@
     },
     "lang\/smalltalk": {
         "priority": 6
+    },
+    "lang\/solidity": {
+        "confirmedmatch": "cpe:2.3:a:soliditylang:solidity:*:*:*:*:*:*:*:*"
     },
     "lang\/swi-pl": {
         "priority": 5
@@ -7659,6 +7677,20 @@
     "mail\/anomy-sanitizer": {
         "priority": 7
     },
+    "mail\/antivirus-milter": {
+        "nomatch": [
+            "cpe:2.3:a:avast:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:avira:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:bitdefender:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:comodo:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jiangmin:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:k7computing:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pcprotect:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:symantec:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:trendmicro:antivirus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:trustix:antivirus:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/autorespond": {
         "priority": 23
     },
@@ -7673,6 +7705,21 @@
     },
     "mail\/claws-mail": {
         "priority": 12
+    },
+    "mail\/claws-mail-bogofilter": {
+        "nomatch": [
+            "cpe:2.3:a:bogofilter_project:bogofilter:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/claws-mail-perl": {
+        "nomatch": [
+            "cpe:2.3:a:perl:perl:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/claws-mail-spamassassin": {
+        "nomatch": [
+            "cpe:2.3:a:apache:spamassassin:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/cone": {
         "priority": 7
@@ -7700,6 +7747,11 @@
     },
     "mail\/dcc-dccd": {
         "priority": 52
+    },
+    "mail\/deforaos-mailer": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:mailer:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/dovecot": {
         "priority": 158
@@ -7778,6 +7830,9 @@
     "mail\/fetchmail": {
         "priority": 205
     },
+    "mail\/geary": {
+        "confirmedmatch": "cpe:2.3:a:gnome:geary:*:*:*:*:*:*:*:*"
+    },
     "mail\/gmime2": {
         "priority": 14
     },
@@ -7809,6 +7864,11 @@
     },
     "mail\/horde-turba": {
         "priority": 6
+    },
+    "mail\/im": {
+        "nomatch": [
+            "cpe:2.3:a:im_project:im:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/imap-uw": {
         "priority": 110,
@@ -7849,6 +7909,13 @@
     "mail\/libsrs2": {
         "priority": 9
     },
+    "mail\/lookout": {
+        "nomatch": [
+            "cpe:2.3:a:lookout:lookout:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:lookoutsoftware:lookout:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ni:lookout:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/maildrop": {
         "priority": 63,
         "custommatch": "cpe:2.3:a:maildrop:maildrop:*:*:*:*:*:*:*:*"
@@ -7859,8 +7926,20 @@
     "mail\/mailman": {
         "priority": 98
     },
+    "mail\/mailman3": {
+        "confirmedmatch": "cpe:2.3:a:gnu:mailman:*:*:*:*:*:*:*:*"
+    },
     "mail\/mailscanner": {
         "priority": 23
+    },
+    "mail\/mailutils": {
+        "confirmedmatch": "cpe:2.3:a:gnu:mailutils:*:*:*:*:*:*:*:*"
+    },
+    "mail\/mailx": {
+        "nomatch": [
+            "cpe:2.3:a:heirloom:mailx:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:sgi:mailx:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/mairix": {
         "priority": 6
@@ -7898,6 +7977,16 @@
     "mail\/nbsmtp": {
         "custommatch": "cpe:2.3:a:nbsmtp:nbsmtp:*:*:*:*:*:*:*:*"
     },
+    "mail\/nextcloud-mail": {
+        "nomatch": [
+            "cpe:2.3:a:apple:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:basercms:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:claws-mail:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:egain:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mail_project:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:zetacomponents:mail:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/nmh": {
         "priority": 16
     },
@@ -7912,6 +8001,9 @@
     },
     "mail\/opendkim": {
         "priority": 18
+    },
+    "mail\/opendmarc": {
+        "confirmedmatch": "cpe:2.3:a:trusteddomain:opendmarc:*:*:*:*:*:*:*:*"
     },
     "mail\/opensmtpd": {
         "priority": 10
@@ -8078,6 +8170,9 @@
         "priority": 32,
         "custommatch": "cpe:2.3:a:postgrey:postgrey:*:*:*:*:*:*:*:*"
     },
+    "mail\/postsrsd": {
+        "confirmedmatch": "cpe:2.3:a:postsrsd_project:postsrsd:*:*:*:*:*:*:*:*"
+    },
     "mail\/procmail": {
         "priority": 240
     },
@@ -8136,20 +8231,46 @@
     "mail\/roundcube": {
         "priority": 70
     },
+    "mail\/roundcube-calendar-kolab": {
+        "nomatch": [
+            "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/roundcube-contextmenu": {
         "priority": 5
     },
     "mail\/rspamd": {
         "priority": 18
     },
+    "mail\/rspamd-devel": {
+        "confirmedmatch": "cpe:2.3:a:rspamd_project:rspamd:*:*:*:*:*:*:*:*"
+    },
+    "mail\/rubygem-mail": {
+        "confirmedmatch": "cpe:2.3:a:mail_project:mail:*:*:*:*:*:*:*:*"
+    },
     "mail\/sendmail": {
         "priority": 114
+    },
+    "mail\/sentinel": {
+        "nomatch": [
+            "cpe:2.3:a:hashicorp:sentinel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:microfocus:sentinel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:trioniclabs:sentinel:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/serialmail": {
         "priority": 5
     },
     "mail\/sma": {
         "priority": 8
+    },
+    "mail\/smtp-cli": {
+        "nomatch": [
+            "cpe:2.3:a:bestwebsoft:smtp:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:citadel:smtp:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/spamass-milter": {
         "priority": 37
@@ -8187,8 +8308,20 @@
     "mail\/squirrelmail-compatibility-plugin": {
         "priority": 8
     },
+    "mail\/squirrelmail-notes-plugin": {
+        "nomatch": [
+            "cpe:2.3:a:samsung:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ibm:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hcltech:notes:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/squirrelmail-quota_usage-plugin": {
         "priority": 6
+    },
+    "mail\/squirrelmail-websearch-plugin": {
+        "nomatch": [
+            "cpe:2.3:a:novell:web_search:*:*:*:*:*:*:*:*"
+        ]
     },
     "mail\/sqwebmail": {
         "priority": 32
@@ -8217,6 +8350,9 @@
     "mail\/vqadmin": {
         "priority": 12
     },
+    "mail\/websieve": {
+        "confirmedmatch": "cpe:2.3:a:websieve_project:websieve:*:*:*:*:*:*:*:*"
+    },
     "mail\/wmbiff": {
         "priority": 8
     },
@@ -8229,6 +8365,53 @@
             "cpe:2.3:a:opensuse:backports:*:*:*:*:*:*:*:*"
         ]
     },
+    "math\/R-cran-gmp": {
+        "nomatch": [
+            "cpe:2.3:a:gmplib:gmp:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-igraph": {
+        "nomatch": [
+            "cpe:2.3:a:igraph:igraph:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-lava": {
+        "nomatch": [
+            "cpe:2.3:a:linaro:lava:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-magic": {
+        "nomatch": [
+            "cpe:2.3:a:freedomscientific:magic:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-numbers": {
+        "nomatch": [
+            "cpe:2.3:a:apple:numbers:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-proxy": {
+        "nomatch": [
+            "cpe:2.3:a:analogx:proxy:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-survey": {
+        "nomatch": [
+            "cpe:2.3:a:autodesk:survey:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:checkbox:survey:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:otrs:survey:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-zoo": {
+        "nomatch": [
+            "cpe:2.3:a:zoo_project:zoo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/armadillo": {
+        "nomatch": [
+            "cpe:2.3:a:u.s._army_cerdec:armadillo:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/atlas": {
         "priority": 13,
         "nomatch": [
@@ -8238,14 +8421,32 @@
     "math\/blas": {
         "priority": 12
     },
+    "math\/blaze": {
+        "nomatch": [
+            "cpe:2.3:a:typelevel:blaze:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/btor2tools": {
+        "confirmedmatch": "cpe:2.3:a:btor2tools_project:btor2tools:*:*:*:*:*:*:*:*"
+    },
     "math\/calc": {
         "priority": 14
     },
     "math\/cln": {
         "priority": 13
     },
+    "math\/cm": {
+        "nomatch": [
+            "cpe:2.3:a:cm_project:cm:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/djbfft": {
         "priority": 162
+    },
+    "math\/ecos": {
+        "nomatch": [
+            "cpe:2.3:a:silver-peak:ecos:*:*:*:*:*:*:*:*"
+        ]
     },
     "math\/eigen2": {
         "priority": 6
@@ -8261,6 +8462,11 @@
     },
     "math\/fftw3-float": {
         "priority": 19
+    },
+    "math\/form": {
+        "nomatch": [
+            "cpe:2.3:a:neos:form:*:*:*:*:*:*:*:*"
+        ]
     },
     "math\/galculator": {
         "priority": 5
@@ -8279,8 +8485,16 @@
     "math\/gnuplot": {
         "priority": 60
     },
+    "math\/gnuplot-tex-extras": {
+        "confirmedmatch": "cpe:2.3:a:gnuplot:gnuplot:*:*:*:*:*:*:*:*"
+    },
     "math\/grace": {
         "priority": 5
+    },
+    "math\/gravity": {
+        "nomatch": [
+            "cpe:2.3:a:creolabs:gravity:*:*:*:*:*:*:*:*"
+        ]
     },
     "math\/gsl": {
         "priority": 32
@@ -8288,11 +8502,30 @@
     "math\/hexcalc": {
         "priority": 5
     },
+    "math\/igraph": {
+        "confirmedmatch": "cpe:2.3:a:igraph:igraph:*:*:*:*:*:*:*:*"
+    },
     "math\/lapack": {
         "priority": 19
     },
+    "math\/lean": {
+        "nomatch": [
+            "cpe:2.3:a:quantconnect:lean:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/lemon": {
+        "nomatch": [
+            "cpe:2.3:a:mossle:lemon:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/libqalculate": {
         "priority": 12
+    },
+    "math\/libxls": {
+        "confirmedmatch": "cpe:2.3:a:libxls_project:libxls:*:*:*:*:*:*:*:*"
+    },
+    "math\/libxsmm": {
+        "confirmedmatch": "cpe:2.3:a:libxsmm_project:libxsmm:*:*:*:*:*:*:*:*"
     },
     "math\/lp_solve": {
         "priority": 8
@@ -8371,14 +8604,47 @@
             "cpe:2.3:a:pinnaclesys:rapid:*:*:*:*:*:*:*:*"
         ]
     },
+    "math\/rubygem-matrix": {
+        "nomatch": [
+            "cpe:2.3:a:squiz:matrix:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/sage": {
+        "nomatch": [
+            "cpe:2.3:a:sage-mozdev:sage:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/spectra": {
+        "nomatch": [
+            "cpe:2.3:a:sectona:spectra:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/suitesparse": {
         "priority": 7
+    },
+    "math\/suitesparse-mongoose": {
+        "nomatch": [
+            "cpe:2.3:a:mongoosejs:mongoose:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:cesanta:mongoose:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/symphony": {
+        "nomatch": [
+            "cpe:2.3:a:b3log:symphony:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:getsymphony:symphony:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:senstar:symphony:*:*:*:*:*:*:*:*"
+        ]
     },
     "math\/units": {
         "priority": 6
     },
     "math\/xplot": {
         "priority": 5
+    },
+    "misc\/R-cran-mime": {
+        "nomatch": [
+            "cpe:2.3:a:mime_project:mime:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/amanda-client": {
         "priority": 13
@@ -8392,8 +8658,19 @@
     "misc\/bibletime": {
         "priority": 6
     },
+    "misc\/boxes": {
+        "nomatch": [
+            "cpe:2.3:a:boxes_project:boxes:*:*:*:*:*:*:*:*"
+        ]
+    },
     "misc\/buffer": {
         "priority": 16
+    },
+    "misc\/chef": {
+        "nomatch": [
+            "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:opscode:chef:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/chmlib": {
         "priority": 35,
@@ -8458,6 +8735,11 @@
     "misc\/firestring": {
         "priority": 6
     },
+    "misc\/flag": {
+        "nomatch": [
+            "cpe:2.3:a:flag_module_project:flag:*:*:*:*:*:*:*:*"
+        ]
+    },
     "misc\/fortune-mod-bofh": {
         "priority": 12
     },
@@ -8506,8 +8788,17 @@
     "misc\/jargon": {
         "priority": 8
     },
+    "misc\/libcomps": {
+        "confirmedmatch": "cpe:2.3:a:rpm:libcomps:*:*:*:*:*:*:*:*"
+    },
     "misc\/libpri": {
         "priority": 7
+    },
+    "misc\/librepo": {
+        "confirmedmatch": "cpe:2.3:a:redhat:librepo:*:*:*:*:*:*:*:*"
+    },
+    "misc\/libsolv": {
+        "confirmedmatch": "cpe:2.3:a:opensuse:libsolv:*:*:*:*:*:*:*:*"
     },
     "misc\/localedata": {
         "priority": 54
@@ -8536,8 +8827,18 @@
     "misc\/mmv": {
         "priority": 11
     },
+    "misc\/orion": {
+        "nomatch": [
+            "cpe:2.3:a:orion_project:orion:*:*:*:*:*:*:*:*"
+        ]
+    },
     "misc\/ossp-uuid": {
         "priority": 5
+    },
+    "misc\/otter": {
+        "nomatch": [
+            "cpe:2.3:a:inedo:otter:*:*:*:*:*:*:*:*"
+        ]
     },
     "misc\/p5-Array-Compare": {
         "priority": 10
@@ -8615,6 +8916,16 @@
     "misc\/usbids": {
         "priority": 7
     },
+    "misc\/vera": {
+        "nomatch": [
+            "cpe:2.3:a:vikisolutions:vera:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "misc\/viz": {
+        "nomatch": [
+            "cpe:2.3:a:autodesk:viz:*:*:*:*:*:*:*:*"
+        ]
+    },
     "misc\/xd-rust": {
         "nomatch": [
             "cpe:2.3:a:adobe:xd:*:*:*:*:*:*:*:*"
@@ -8641,6 +8952,9 @@
     "misc\/zoneinfo": {
         "priority": 16
     },
+    "multimedia\/Bento4": {
+        "confirmedmatch": "cpe:2.3:a:axiosys:bento4:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/acidrip": {
         "priority": 6
     },
@@ -8664,6 +8978,11 @@
             "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
         ]
     },
+    "multimedia\/celluloid-devel": {
+        "nomatch": [
+            "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
+        ]
+    },
     "multimedia\/cheese": {
         "priority": 5
     },
@@ -8672,6 +8991,12 @@
     },
     "multimedia\/dav1d": {
         "priority": 6
+    },
+    "multimedia\/deforaos-player": {
+        "nomatch": [
+            "cpe:2.3:a:divx:player:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vmware:player:*:*:*:*:*:*:*:*"
+        ]
     },
     "multimedia\/dirac": {
         "priority": 8
@@ -8798,6 +9123,11 @@
         "priority": 94,
         "custommatch": "cpe:2.3:a:xine:xine\\-lib:*:*:*:*:*:*:*:*"
     },
+    "multimedia\/linux-tsmuxer": {
+        "nomatch": [
+            "cpe:2.3:a:tsmuxer_project:tsmuxer:*:*:*:*:*:*:*:*"
+        ]
+    },
     "multimedia\/lsdvd": {
         "priority": 9
     },
@@ -8810,8 +9140,17 @@
     "multimedia\/mjpegtools": {
         "priority": 27
     },
+    "multimedia\/mkclean": {
+        "confirmedmatch": "cpe:2.3:a:matroska:mkclean:*:*:*:*:*:*:*:*"
+    },
+    "multimedia\/mkvalidator": {
+        "confirmedmatch": "cpe:2.3:a:matroska:mkvalidator:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/mkvtoolnix": {
         "priority": 15
+    },
+    "multimedia\/motion": {
+        "confirmedmatch": "cpe:2.3:a:motion_project:motion:*:*:*:*:*:*:*:*"
     },
     "multimedia\/mp4v2": {
         "priority": 14
@@ -8870,14 +9209,36 @@
     "multimedia\/rtmpdump": {
         "priority": 12
     },
+    "multimedia\/rubygem-gstreamer": {
+        "nomatch": [
+            "cpe:2.3:a:gstreamer_project:gstreamer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:gstreamer:gstreamer:*:*:*:*:*:*:*:*"
+        ]
+    },
     "multimedia\/schroedinger": {
         "priority": 26
+    },
+    "multimedia\/shotcut": {
+        "confirmedmatch": "cpe:2.3:a:meltytech:shotcut:*:*:*:*:*:*:*:*"
     },
     "multimedia\/smpeg": {
         "priority": 64
     },
+    "multimedia\/snappy": {
+        "nomatch": [
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "multimedia\/spigot": {
+        "nomatch": [
+            "cpe:2.3:a:getbukkit:spigot:*:*:*:*:*:*:*:*"
+        ]
+    },
     "multimedia\/tautulli": {
         "priority": 7
+    },
+    "multimedia\/tinyobjloader": {
+        "confirmedmatch": "cpe:2.3:a:tinyobjloader_project:tinyobjloader:*:*:*:*:*:*:*:*"
     },
     "multimedia\/totem": {
         "priority": 27
@@ -8934,17 +9295,28 @@
         "priority": 5,
         "custommatch": "cpe:2.3:a:centerim:centerim:*:*:*:*:*:*:*:*"
     },
+    "net-im\/dino": {
+        "confirmedmatch": "cpe:2.3:a:dino:dino:*:*:*:*:*:*:*:*"
+    },
     "net-im\/ejabberd": {
         "priority": 20
     },
     "net-im\/finch": {
         "priority": 6
     },
+    "net-im\/fractal": {
+        "confirmedmatch": "cpe:2.3:a:gnome:fractal:*:*:*:*:*:*:*:*"
+    },
     "net-im\/gajim": {
         "priority": 7
     },
     "net-im\/jabberd": {
         "priority": 12
+    },
+    "net-im\/jitsi-videobridge": {
+        "nomatch": [
+            "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-im\/kopete": {
         "priority": 12
@@ -8955,11 +9327,30 @@
     "net-im\/libpurple": {
         "priority": 15
     },
+    "net-im\/licq": {
+        "nomatch": [
+            "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/licq-icq": {
+        "nomatch": [
+            "cpe:2.3:a:icq:icq:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/licq-jabber": {
+        "nomatch": [
+            "cpe:2.3:a:adobe:jabber:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:cisco:jabber:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net-im\/loudmouth": {
         "priority": 12
     },
     "net-im\/meanwhile": {
         "priority": 9
+    },
+    "net-im\/nextcloud-talk": {
+        "confirmedmatch": "cpe:2.3:a:nextcloud:talk:*:*:*:*:*:*:*:*"
     },
     "net-im\/openfire": {
         "priority": 17
@@ -8970,6 +9361,14 @@
     "net-im\/pidgin": {
         "priority": 29
     },
+    "net-im\/pidgin-libnotify": {
+        "nomatch": [
+            "cpe:2.3:a:libnotify_project:libnotify:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/profanity": {
+        "confirmedmatch": "cpe:2.3:a:profanity_project:profanity:*:*:*:*:*:*:*:*"
+    },
     "net-im\/prosody": {
         "priority": 9
     },
@@ -8977,6 +9376,16 @@
         "priority": 12,
         "nomatch": [
             "cpe:2.3:a:psi-plus:psi:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/rubygem-hipchat": {
+        "nomatch": [
+            "cpe:2.3:a:atlassian:hipchat:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/rubygem-tinder": {
+        "nomatch": [
+            "cpe:2.3:a:tinder:tinder:*:*:*:*:*:*:*:*"
         ]
     },
     "net-im\/telepathy-gabble": {
@@ -8993,6 +9402,17 @@
     },
     "net-im\/telepathy-qt": {
         "priority": 6
+    },
+    "net-im\/tkabber": {
+        "confirmedmatch": "cpe:2.3:a:tkabber_project:tkabber:*:*:*:*:*:*:*:*"
+    },
+    "net-im\/zoom": {
+        "confirmedmatch": "cpe:2.3:a:zoom:zoom:*:*:*:*:*:*:*:*"
+    },
+    "net-mgmt\/aggregate": {
+        "nomatch": [
+            "cpe:2.3:a:tibbo:aggregate:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/aircrack-ng": {
         "priority": 13
@@ -9017,6 +9437,9 @@
     "net-mgmt\/bandwidthd": {
         "priority": 9
     },
+    "net-mgmt\/blackbox_exporter": {
+        "confirmedmatch": "cpe:2.3:a:prometheus:blackbox_exporter:*:*:*:*:*:*:*:*"
+    },
     "net-mgmt\/bsnmp-ucd": {
         "priority": 5
     },
@@ -9032,8 +9455,14 @@
     "net-mgmt\/collectd5": {
         "priority": 13
     },
+    "net-mgmt\/coovachilli": {
+        "confirmedmatch": "cpe:2.3:a:coovachilli_project:coovachilli:*:*:*:*:*:*:*:*"
+    },
     "net-mgmt\/cricket": {
         "priority": 10
+    },
+    "net-mgmt\/crmsh": {
+        "confirmedmatch": "cpe:2.3:a:clusterlabs:crmsh:*:*:*:*:*:*:*:*"
     },
     "net-mgmt\/darkstat": {
         "priority": 13
@@ -9049,6 +9478,18 @@
     },
     "net-mgmt\/flowd": {
         "priority": 9
+    },
+    "net-mgmt\/glpi-plugins-fusioninventory-server": {
+        "nomatch": [
+            "cpe:2.3:a:bitwarden:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:icewarp:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:microfocus:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:microsoft:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:octopus:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tomedo:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:traccar:server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vmware:server:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/grepcidr": {
         "priority": 5
@@ -9071,14 +9512,25 @@
     "net-mgmt\/kismet": {
         "priority": 22
     },
+    "net-mgmt\/lg": {
+        "confirmedmatch": "cpe:2.3:a:lg_project:lg:*:*:*:*:*:*:*:*"
+    },
     "net-mgmt\/librenms": {
         "priority": 6
     },
     "net-mgmt\/libsmi": {
         "priority": 12
     },
+    "net-mgmt\/lldpd": {
+        "confirmedmatch": "cpe:2.3:a:lldpd_project:lldpd:*:*:*:*:*:*:*:*"
+    },
     "net-mgmt\/mbrowse": {
         "priority": 6
+    },
+    "net-mgmt\/metronome": {
+        "nomatch": [
+            "cpe:2.3:a:lightwitch:metronome:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-mgmt\/monitoring-plugins": {
         "priority": 5
