@@ -157,7 +157,7 @@ class Runner
         $portsdir = Config::getPortsDir();
 
         $expected_lines = 7;
-        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VCPE_STR -VNO_MTREE :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
+        $cmd = sprintf('parallel %s -C %s/{} -V.CURDIR -VPORTNAME -VPORTVERSION -VMAINTAINER -VCPE_STR -VUSES :::: %s', Config::getMakeBin(), $portsdir, $tmpfile);
         $fp = popen($cmd, 'r');
         while ($fp != null && !feof($fp)) {
             $line = fread($fp, 4096);
@@ -175,7 +175,7 @@ class Runner
             $parts[0] = substr($parts[0], strlen($portsdir)+1);
 
             $metaport = 0;
-            if ($parts[5] == 'yes') {
+            if (strpos($parts[5], 'metaport') !== false) {
                 $metaport = 1;
             }
 
