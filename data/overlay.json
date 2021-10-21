@@ -9759,6 +9759,9 @@
     "net\/libdnet": {
         "priority": 38
     },
+    "net\/libgrss": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgrss:*:*:*:*:*:*:*:*"
+    },
     "net\/libgweather": {
         "priority": 11
     },
@@ -9783,6 +9786,9 @@
     "net\/liboauth": {
         "priority": 6
     },
+    "net\/liboping": {
+        "confirmedmatch": "cpe:2.3:a:noping:liboping:*:*:*:*:*:*:*:*"
+    },
     "net\/libpcap": {
         "priority": 19
     },
@@ -9794,6 +9800,12 @@
     },
     "net\/libvncserver": {
         "priority": 20
+    },
+    "net\/libyang": {
+        "confirmedmatch": "cpe:2.3:a:cesnet:libyang:*:*:*:*:*:*:*:*"
+    },
+    "net\/libzapojit": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libzapojit:*:*:*:*:*:*:*:*"
     },
     "net\/libzmq4": {
         "priority": 5
@@ -9811,8 +9823,14 @@
     "net\/mDNSResponder": {
         "priority": 93
     },
+    "net\/messagelib": {
+        "confirmedmatch": "cpe:2.3:a:kde:messagelib:*:*:*:*:*:*:*:*"
+    },
     "net\/minidlna": {
         "priority": 12
+    },
+    "net\/minissdpd": {
+        "confirmedmatch": "cpe:2.3:a:miniupnp_project:minissdpd:*:*:*:*:*:*:*:*"
     },
     "net\/miniupnpc": {
         "priority": 7
@@ -9832,14 +9850,26 @@
     "net\/mpd5": {
         "priority": 9
     },
+    "net\/mrouted": {
+        "confirmedmatch": "cpe:2.3:a:troglobit:mrouted:*:*:*:*:*:*:*:*"
+    },
     "net\/mtr": {
         "priority": 95
     },
     "net\/mtr-nox11": {
         "priority": 8
     },
+    "net\/mvfst": {
+        "confirmedmatch": "cpe:2.3:a:facebook:mvfst:*:*:*:*:*:*:*:*"
+    },
+    "net\/nbd-server": {
+        "confirmedmatch": "cpe:2.3:a:wouter_verhelst:nbd:*:*:*:*:*:*:*:*"
+    },
     "net\/nc": {
         "priority": 14
+    },
+    "net\/ndpi": {
+        "confirmedmatch": "cpe:2.3:a:ntop:ndpi:*:*:*:*:*:*:*:*"
     },
     "net\/netatalk3": {
         "priority": 8
@@ -9871,11 +9901,19 @@
     "net\/ntraceroute": {
         "priority": 5
     },
+    "net\/nusoap": {
+        "confirmedmatch": "cpe:2.3:a:nusoap_project:nusoap:*:*:*:*:*:*:*:*"
+    },
     "net\/nylon": {
         "priority": 6
     },
     "net\/ocserv": {
         "custommatch": "cpe:2.3:a:infradead:ocserv:*:*:*:*:*:*:*:*"
+    },
+    "net\/onedrive": {
+        "nomatch": [
+            "cpe:2.3:a:microsoft:onedrive:*:*:*:*:*:*:*:*"
+        ]
     },
     "net\/opal": {
         "priority": 8
@@ -9999,6 +10037,12 @@
     "net\/p5-perl-ldap": {
         "priority": 44
     },
+    "net\/pacemaker1": {
+        "confirmedmatch": "cpe:2.3:a:clusterlabs:pacemaker:*:*:*:*:*:*:*:*"
+    },
+    "net\/pacemaker2": {
+        "confirmedmatch": "cpe:2.3:a:clusterlabs:pacemaker:*:*:*:*:*:*:*:*"
+    },
     "net\/pear-Net_DIME": {
         "priority": 7
     },
@@ -10020,6 +10064,9 @@
     "net\/pear-SOAP": {
         "priority": 11
     },
+    "net\/pear-Services_Twitter": {
+        "confirmedmatch": "cpe:2.3:a:services_twitter_group:services_twitter:*:*:*:*:*:*:*:*"
+    },
     "net\/pecl-mosquitto": {
         "nomatch": [
             "cpe:2.3:a:eclipse:mosquitto:*:*:*:*:*:*:*:*"
@@ -10037,8 +10084,14 @@
             "cpe:2.3:a:radius_extension_project:radius:*:*:*:*:*:*:*:*"
         ]
     },
+    "net\/pen": {
+        "confirmedmatch": "cpe:2.3:a:pen_project:pen:*:*:*:*:*:*:*:*"
+    },
     "net\/phpldapadmin": {
         "priority": 31
+    },
+    "net\/pichi": {
+        "confirmedmatch": "cpe:2.3:a:pichi_project:pichi:*:*:*:*:*:*:*:*"
     },
     "net\/pipsecd": {
         "priority": 7
@@ -10138,6 +10191,9 @@
     "net\/relayd": {
         "priority": 7
     },
+    "net\/repeater": {
+        "confirmedmatch": "cpe:2.3:a:ultravnc:repeater:*:*:*:*:*:*:*:*"
+    },
     "net\/rinetd": {
         "custommatch": "cpe:2.3:a:rinetd:rinetd:*:*:*:*:*:*:*:*"
     },
@@ -10153,14 +10209,53 @@
             "cpe:2.3:a:adrian_chadd:rtg:*:*:*:*:*:*:*:*"
         ]
     },
+    "net\/rubygem-grpc124": {
+        "nomatch": [
+            "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net\/rubygem-grpc130": {
         "nomatch": [
             "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
         ]
     },
+    "net\/rubygem-mqtt": {
+        "nomatch": [
+            "cpe:2.3:a:mqtt:mqtt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/rubygem-oauth": {
+        "nomatch": [
+            "cpe:2.3:a:atlassian:oauth:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net\/rubygem-openid_connect": {
         "nomatch": [
             "cpe:2.3:a:openid:openid_connect:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/rubygem-private_address_check": {
+        "confirmedmatch": "cpe:2.3:a:private_address_check_project:private_address_check:*:*:*:*:*:*:*:*"
+    },
+    "net\/rubygem-proxifier": {
+        "nomatch": [
+            "cpe:2.3:a:proxifier:proxifier:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/rubygem-rsync": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:rsync:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:rsync:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samba:rsync:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/rubygem-tweetstream": {
+        "confirmedmatch": "cpe:2.3:a:tweetstream_project:tweetstream:*:*:*:*:*:*:*:*"
+    },
+    "net\/rubygem-twitter": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:twitter:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:twitter:twitter:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/samba412": {
@@ -10178,6 +10273,9 @@
     "net\/seda": {
         "priority": 6
     },
+    "net\/serveez": {
+        "confirmedmatch": "cpe:2.3:a:gnu:serveez:*:*:*:*:*:*:*:*"
+    },
     "net\/serviio": {
         "priority": 12
     },
@@ -10186,6 +10284,12 @@
     },
     "net\/sipsak": {
         "priority": 7
+    },
+    "net\/smb4k": {
+        "confirmedmatch": "cpe:2.3:a:smb4k_project:smb4k:*:*:*:*:*:*:*:*"
+    },
+    "net\/smcroute": {
+        "confirmedmatch": "cpe:2.3:a:troglobit:smcroute:*:*:*:*:*:*:*:*"
     },
     "net\/sniffit": {
         "priority": 20
@@ -10264,6 +10368,9 @@
     "net\/tinyfugue": {
         "priority": 14
     },
+    "net\/traefik": {
+        "confirmedmatch": "cpe:2.3:a:traefik:traefik:*:*:*:*:*:*:*:*"
+    },
     "net\/trafshow": {
         "priority": 125
     },
@@ -10284,6 +10391,9 @@
     },
     "net\/unison": {
         "priority": 29
+    },
+    "net\/vde": {
+        "confirmedmatch": "cpe:2.3:a:vde_project:vde:*:*:*:*:*:*:*:*"
     },
     "net\/vino": {
         "priority": 30
@@ -10333,6 +10443,9 @@
     "net\/xrdp": {
         "priority": 5
     },
+    "net\/xrdp-devel": {
+        "confirmedmatch": "cpe:2.3:a:neutrinolabs:xrdp:*:*:*:*:*:*:*:*"
+    },
     "net\/yaz": {
         "priority": 12
     },
@@ -10344,6 +10457,11 @@
     },
     "news\/cnews": {
         "priority": 6
+    },
+    "news\/diablo": {
+        "nomatch": [
+            "cpe:2.3:a:openstack:diablo:*:*:*:*:*:*:*:*"
+        ]
     },
     "news\/ifmail": {
         "priority": 7
@@ -10426,6 +10544,9 @@
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
+    },
+    "polish\/kadu": {
+        "confirmedmatch": "cpe:2.3:a:kadu:kadu:*:*:*:*:*:*:*:*"
     },
     "polish\/libgadu": {
         "priority": 12
@@ -10587,6 +10708,9 @@
     "print\/fontforge": {
         "priority": 16
     },
+    "print\/foo2zjs": {
+        "confirmedmatch": "cpe:2.3:a:rkkda:foo2zjs:*:*:*:*:*:*:*:*"
+    },
     "print\/foomatic-db": {
         "priority": 24
     },
@@ -10607,6 +10731,12 @@
     },
     "print\/freetype2": {
         "priority": 678
+    },
+    "print\/ghostscript7-commfont": {
+        "nomatch": [
+            "cpe:2.3:a:artifex:ghostscript:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ghostscript:ghostscript:*:*:*:*:*:*:*:*"
+        ]
     },
     "print\/ghostscript9-agpl-base": {
         "priority": 14
@@ -10665,6 +10795,9 @@
     "print\/lilypond": {
         "priority": 5
     },
+    "print\/linux-c7-cups-libs": {
+        "confirmedmatch": "cpe:2.3:a:cups:cups:*:*:*:*:*:*:*:*"
+    },
     "print\/lyx": {
         "priority": 31
     },
@@ -10698,6 +10831,9 @@
     },
     "print\/pcal": {
         "custommatch": "cpe:2.3:a:pcal:pcal:*:*:*:*:*:*:*:*"
+    },
+    "print\/pdfbox": {
+        "confirmedmatch": "cpe:2.3:a:apache:pdfbox:*:*:*:*:*:*:*:*"
     },
     "print\/pdflib": {
         "priority": 184
@@ -10761,11 +10897,19 @@
     "print\/texlive-base": {
         "priority": 8
     },
+    "print\/texlive-docs": {
+        "nomatch": [
+            "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
+        ]
+    },
     "print\/texlive-full": {
         "priority": 5
     },
     "print\/texlive-texmf": {
         "priority": 8
+    },
+    "print\/texlive-texmf-source": {
+        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
     },
     "print\/texlive-tlmgr": {
         "priority": 8
@@ -10785,6 +10929,12 @@
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
         ]
     },
+    "russian\/bugzilla44": {
+        "nomatch": [
+            "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jenkins:bugzilla:*:*:*:*:*:*:*:*"
+        ]
+    },
     "russian\/hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
@@ -10799,6 +10949,16 @@
         "priority": 5,
         "nomatch": [
             "cpe:2.3:a:apple:xcode:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "science\/antioch": {
+        "nomatch": [
+            "cpe:2.3:a:para:antioch:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "science\/clipper": {
+        "nomatch": [
+            "cpe:2.3:a:clipper_project:clipper:*:*:*:*:*:*:*:*"
         ]
     },
     "science\/gramps": {
@@ -10823,13 +10983,31 @@
             "cpe:2.3:a:veritas:access:*:*:*:*:*:*:*:*"
         ]
     },
+    "science\/vmd": {
+        "nomatch": [
+            "cpe:2.3:a:vmd_project:vmd:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/R-cran-credentials": {
         "nomatch": [
             "cpe:2.3:a:jenkins:credentials:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/R-cran-openssl": {
+        "nomatch": [
+            "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:openssl_project:openssl:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:openssl:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:openssl:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/acme.sh": {
         "priority": 5
+    },
+    "security\/aescrypt": {
+        "nomatch": [
+            "cpe:2.3:a:aescrypt_project:aescrypt:*:*:*:*:*:*:*:*"
+        ]
     },
     "security\/aide": {
         "priority": 34,
@@ -10858,8 +11036,16 @@
     "security\/arirang": {
         "priority": 6
     },
+    "security\/authenticator": {
+        "nomatch": [
+            "cpe:2.3:a:google:authenticator:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/autossh": {
         "priority": 5
+    },
+    "security\/axTLS": {
+        "confirmedmatch": "cpe:2.3:a:axtls_project:axtls:*:*:*:*:*:*:*:*"
     },
     "security\/barnyard2": {
         "priority": 5
@@ -10873,8 +11059,17 @@
     "security\/bcwipe": {
         "priority": 14
     },
+    "security\/botan110": {
+        "confirmedmatch": "cpe:2.3:a:botan_project:botan:*:*:*:*:*:*:*:*"
+    },
+    "security\/botan2": {
+        "confirmedmatch": "cpe:2.3:a:botan_project:botan:*:*:*:*:*:*:*:*"
+    },
     "security\/bruteforceblocker": {
         "priority": 6
+    },
+    "security\/bzrtp": {
+        "confirmedmatch": "cpe:2.3:a:bzrtp_project:bzrtp:*:*:*:*:*:*:*:*"
     },
     "security\/ca_root_nss": {
         "priority": 143
@@ -10933,6 +11128,9 @@
     "security\/cryptopp": {
         "custommatch": "cpe:2.3:a:cryptopp:crypto++:*:*:*:*:*:*:*:*"
     },
+    "security\/cyberchef": {
+        "confirmedmatch": "cpe:2.3:a:gchq:cyberchef:*:*:*:*:*:*:*:*"
+    },
     "security\/cyrus-sasl2": {
         "priority": 262
     },
@@ -10969,6 +11167,11 @@
             "cpe:2.3:a:jose_project:jose:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/erlang-jose": {
+        "nomatch": [
+            "cpe:2.3:a:jose_project:jose:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/f-prot": {
         "priority": 20
     },
@@ -10980,6 +11183,9 @@
     },
     "security\/fcrackzip": {
         "priority": 6
+    },
+    "security\/fizz": {
+        "confirmedmatch": "cpe:2.3:a:facebook:fizz:*:*:*:*:*:*:*:*"
     },
     "security\/fragroute": {
         "priority": 7
@@ -10998,6 +11204,9 @@
     },
     "security\/gcr": {
         "priority": 8
+    },
+    "security\/gitjacker": {
+        "confirmedmatch": "cpe:2.3:a:gitjacker_project:gitjacker:*:*:*:*:*:*:*:*"
     },
     "security\/gnome-keyring": {
         "priority": 33
@@ -11033,6 +11242,9 @@
             "cpe:2.3:a:ory:hydra:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/i2p": {
+        "confirmedmatch": "cpe:2.3:a:geti2p:i2p:*:*:*:*:*:*:*:*"
+    },
     "security\/i2pd": {
         "nomatch": [
             "cpe:2.3:a:i2pd:i2pd:*:*:*:*:*:*:*:*"
@@ -11053,6 +11265,9 @@
     },
     "security\/keepass": {
         "priority": 5
+    },
+    "security\/keepass-plugin-keepassrpc": {
+        "confirmedmatch": "cpe:2.3:a:kee:keepassrpc:*:*:*:*:*:*:*:*"
     },
     "security\/keychain": {
         "priority": 25
@@ -11134,6 +11349,24 @@
     "security\/libtasn1": {
         "priority": 95
     },
+    "security\/libtomcrypt": {
+        "confirmedmatch": "cpe:2.3:a:libtom:libtomcrypt:*:*:*:*:*:*:*:*"
+    },
+    "security\/linux-c7-gnutls": {
+        "confirmedmatch": "cpe:2.3:a:gnu:gnutls:*:*:*:*:*:*:*:*"
+    },
+    "security\/linux-c7-libgcrypt": {
+        "confirmedmatch": "cpe:2.3:a:gnupg:libgcrypt:*:*:*:*:*:*:*:*"
+    },
+    "security\/linux-c7-nettle": {
+        "confirmedmatch": "cpe:2.3:a:nettle_project:nettle:*:*:*:*:*:*:*:*"
+    },
+    "security\/linux-c7-nss": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:nss:*:*:*:*:*:*:*:*"
+    },
+    "security\/linux-c7-trousers": {
+        "confirmedmatch": "cpe:2.3:a:trousers_project:trousers:*:*:*:*:*:*:*:*"
+    },
     "security\/logcheck": {
         "priority": 49
     },
@@ -11159,6 +11392,12 @@
     "security\/mindterm-binary": {
         "priority": 6
     },
+    "security\/munge": {
+        "confirmedmatch": "cpe:2.3:a:opensuse:munge:*:*:*:*:*:*:*:*"
+    },
+    "security\/nebula": {
+        "confirmedmatch": "cpe:2.3:a:slack:nebula:*:*:*:*:*:*:*:*"
+    },
     "security\/nettle": {
         "priority": 47
     },
@@ -11171,6 +11410,9 @@
     "security\/nss": {
         "priority": 182
     },
+    "security\/nss_compat_ossl": {
+        "confirmedmatch": "cpe:2.3:a:nss_compat_ossl_project:nss_compat_ossl:*:*:*:*:*:*:*:*"
+    },
     "security\/obfs4proxy-tor": {
         "custommatch": "cpe:2.3:a:torproject:obfs4proxy:*:*:*:*:*:*:*:*"
     },
@@ -11182,6 +11424,9 @@
     },
     "security\/oinkmaster": {
         "priority": 25
+    },
+    "security\/openfortivpn": {
+        "confirmedmatch": "cpe:2.3:a:openfortivpn_project:openfortivpn:*:*:*:*:*:*:*:*"
     },
     "security\/openssh-askpass": {
         "priority": 41
