@@ -11428,6 +11428,12 @@
     "security\/openfortivpn": {
         "confirmedmatch": "cpe:2.3:a:openfortivpn_project:openfortivpn:*:*:*:*:*:*:*:*"
     },
+    "security\/opensaml": {
+        "confirmedmatch": "cpe:2.3:a:shibboleth:opensaml:*:*:*:*:*:*:*:*"
+    },
+    "security\/opensc": {
+        "confirmedmatch": "cpe:2.3:a:opensc_project:opensc:*:*:*:*:*:*:*:*"
+    },
     "security\/openssh-askpass": {
         "priority": 41
     },
@@ -11627,6 +11633,11 @@
     "security\/pam_pwdfile": {
         "priority": 10
     },
+    "security\/pbc": {
+        "nomatch": [
+            "cpe:2.3:a:pbc_project:pbc:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/pear-Auth": {
         "priority": 36
     },
@@ -11646,7 +11657,8 @@
     },
     "security\/pecl-ssh2": {
         "nomatch": [
-            "cpe:2.3:a:ssh:ssh2:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ssh:ssh2:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ssh2_project:ssh2:*:*:*:*:*:*:*:*"
         ]
     },
     "security\/pgpdump": {
@@ -11761,11 +11773,44 @@
     "security\/racoon2": {
         "priority": 10
     },
+    "security\/razorback-api": {
+        "nomatch": [
+            "cpe:2.3:a:karotz:api:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "security\/razorback-virusTotal": {
+        "nomatch": [
+            "cpe:2.3:a:virustotal:virustotal:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/rhash": {
         "priority": 16
     },
     "security\/rkhunter": {
         "priority": 32
+    },
+    "security\/rubygem-doorkeeper": {
+        "confirmedmatch": "cpe:2.3:a:doorkeeper_project:doorkeeper:*:*:*:*:*:*:*:*"
+    },
+    "security\/rubygem-gpgme": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:gpgme:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:gnupg:gpgme:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "security\/rubygem-nexpose": {
+        "nomatch": [
+            "cpe:2.3:a:rapid7:nexpose:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "security\/rubygem-omniauth": {
+        "confirmedmatch": "cpe:2.3:a:omniauth:omniauth:*:*:*:*:*:*:*:*"
+    },
+    "security\/rubygem-omniauth1": {
+        "confirmedmatch": "cpe:2.3:a:omniauth:omniauth:*:*:*:*:*:*:*:*"
+    },
+    "security\/rubygem-openssl": {
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:openssl:*:*:*:*:*:*:*:*"
     },
     "security\/samhain": {
         "priority": 15
@@ -11787,6 +11832,11 @@
     },
     "security\/sniff": {
         "priority": 21
+    },
+    "security\/snoopy": {
+        "nomatch": [
+            "cpe:2.3:a:snoopy_project:snoopy:*:*:*:*:*:*:*:*"
+        ]
     },
     "security\/snort": {
         "priority": 139
@@ -11818,6 +11868,9 @@
     "security\/sssd": {
         "priority": 6
     },
+    "security\/steghide": {
+        "confirmedmatch": "cpe:2.3:a:steghide_project:steghide:*:*:*:*:*:*:*:*"
+    },
     "security\/strobe": {
         "priority": 11
     },
@@ -11835,6 +11888,11 @@
     },
     "security\/suricata": {
         "priority": 11
+    },
+    "security\/teleport": {
+        "nomatch": [
+            "cpe:2.3:a:tp4a:teleport:*:*:*:*:*:*:*:*"
+        ]
     },
     "security\/testssl.sh": {
         "priority": 5
@@ -11871,6 +11929,9 @@
     "security\/vault": {
         "priority": 7
     },
+    "security\/veracrypt": {
+        "confirmedmatch": "cpe:2.3:a:idrix:veracrypt:*:*:*:*:*:*:*:*"
+    },
     "security\/vlock": {
         "priority": 14
     },
@@ -11885,6 +11946,9 @@
     },
     "security\/webfwlog": {
         "custommatch": "cpe:2.3:a:webfwlog:webfwlog:*:*:*:*:*:*:*:*"
+    },
+    "security\/whatweb": {
+        "confirmedmatch": "cpe:2.3:a:morningstarsecurity:whatweb:*:*:*:*:*:*:*:*"
     },
     "security\/wipe": {
         "priority": 9
@@ -11906,6 +11970,9 @@
     },
     "security\/yafic": {
         "priority": 5
+    },
+    "security\/yara": {
+        "confirmedmatch": "cpe:2.3:a:virustotal:yara:*:*:*:*:*:*:*:*"
     },
     "security\/ykpers": {
         "priority": 6
@@ -11929,6 +11996,9 @@
     "shells\/dash": {
         "custommatch": "cpe:2.3:a:dash:dash:*:*:*:*:*:*:*:*"
     },
+    "shells\/elvish": {
+        "confirmedmatch": "cpe:2.3:a:elv:elvish:*:*:*:*:*:*:*:*"
+    },
     "shells\/es": {
         "priority": 5
     },
@@ -11949,6 +12019,9 @@
     },
     "shells\/rc": {
         "priority": 11
+    },
+    "shells\/rush": {
+        "confirmedmatch": "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
     },
     "shells\/sash": {
         "priority": 9
@@ -11975,6 +12048,14 @@
     "sysutils\/LPRngTool": {
         "priority": 7
     },
+    "sysutils\/R-cran-ps": {
+        "nomatch": [
+            "cpe:2.3:a:umbraengineering:ps:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/afflib": {
+        "confirmedmatch": "cpe:2.3:a:afflib_project:afflib:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/afio": {
         "priority": 8
     },
@@ -11983,6 +12064,21 @@
     },
     "sysutils\/ansible": {
         "priority": 23
+    },
+    "sysutils\/ansible-kld": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jenkins:ansible:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/ansible-sysrc": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:ansible:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/apache-mesos": {
+        "confirmedmatch": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*"
     },
     "sysutils\/apachetop": {
         "priority": 25,
@@ -12003,6 +12099,9 @@
             "cpe:2.3:a:atop_project:atop:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/autojump": {
+        "confirmedmatch": "cpe:2.3:a:autojump_project:autojump:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/automount": {
         "priority": 5
     },
@@ -12012,6 +12111,16 @@
     "sysutils\/bacula11-docs": {
         "nomatch": [
             "cpe:2.3:a:bacula:bacula:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/bacula9-docs": {
+        "nomatch": [
+            "cpe:2.3:a:bacula:bacula:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/bastille": {
+        "nomatch": [
+            "cpe:2.3:a:hp:bastille:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/bchunk": {
@@ -12031,6 +12140,15 @@
     },
     "sysutils\/bsdstats": {
         "priority": 44
+    },
+    "sysutils\/burp": {
+        "confirmedmatch": "cpe:2.3:a:burp_project:burp:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/burp-devel": {
+        "confirmedmatch": "cpe:2.3:a:burp_project:burp:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/calamares": {
+        "confirmedmatch": "cpe:2.3:a:calamares:calamares:*:*:*:*:*:*:*:*"
     },
     "sysutils\/catfish": {
         "custommatch": "cpe:2.3:a:catfish_project:catfish:*:*:*:*:*:*:*:*"
@@ -12092,6 +12210,9 @@
     "sysutils\/cpuburn": {
         "priority": 12
     },
+    "sysutils\/cronic": {
+        "confirmedmatch": "cpe:2.3:a:cronic_project:cronic:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/cronolog": {
         "priority": 26
     },
@@ -12123,8 +12244,14 @@
     "sysutils\/disktype": {
         "priority": 7
     },
+    "sysutils\/dmg2img": {
+        "confirmedmatch": "cpe:2.3:a:dmg2img_project:dmg2img:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/dmidecode": {
         "priority": 81
+    },
+    "sysutils\/docker": {
+        "confirmedmatch": "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
     },
     "sysutils\/dtc": {
         "priority": 6
@@ -12144,6 +12271,9 @@
     "sysutils\/e2fsprogs": {
         "priority": 37
     },
+    "sysutils\/edk2": {
+        "confirmedmatch": "cpe:2.3:a:tianocore:edk2:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/eject": {
         "priority": 39
     },
@@ -12152,6 +12282,9 @@
     },
     "sysutils\/ezjail": {
         "priority": 41
+    },
+    "sysutils\/facter": {
+        "confirmedmatch": "cpe:2.3:a:puppet:facter:*:*:*:*:*:*:*:*"
     },
     "sysutils\/fdupes": {
         "priority": 5
@@ -12173,6 +12306,11 @@
         "priority": 8,
         "nomatch": [
             "cpe:2.3:a:flock:flock:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/flog": {
+        "nomatch": [
+            "cpe:2.3:a:flog_project:flog:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/foremost": {
@@ -12263,6 +12401,9 @@
     "sysutils\/gsmartcontrol": {
         "priority": 6
     },
+    "sysutils\/hardlink": {
+        "confirmedmatch": "cpe:2.3:a:hardlink_project:hardlink:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/healthd": {
         "priority": 37
     },
@@ -12308,6 +12449,11 @@
     },
     "sysutils\/krename": {
         "priority": 15
+    },
+    "sysutils\/lava": {
+        "nomatch": [
+            "cpe:2.3:a:linaro:lava:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/lcdproc": {
         "priority": 5
@@ -12366,11 +12512,17 @@
     "sysutils\/ltrace": {
         "priority": 13
     },
+    "sysutils\/lxterminal": {
+        "confirmedmatch": "cpe:2.3:a:lxterminal_project:lxterminal:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/magicrescue": {
         "priority": 7
     },
     "sysutils\/mcelog": {
         "priority": 5
+    },
+    "sysutils\/mcollective": {
+        "confirmedmatch": "cpe:2.3:a:puppet:mcollective:*:*:*:*:*:*:*:*"
     },
     "sysutils\/megacli": {
         "priority": 6
@@ -12380,6 +12532,12 @@
     },
     "sysutils\/memtest86+": {
         "priority": 5
+    },
+    "sysutils\/memtester": {
+        "confirmedmatch": "cpe:2.3:a:pryopus:memtester:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/minikube": {
+        "confirmedmatch": "cpe:2.3:a:kubernetes:minikube:*:*:*:*:*:*:*:*"
     },
     "sysutils\/monit": {
         "priority": 20
@@ -12423,6 +12581,9 @@
     "sysutils\/no-login": {
         "priority": 12
     },
+    "sysutils\/nomad": {
+        "confirmedmatch": "cpe:2.3:a:hashicorp:nomad:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/nut": {
         "priority": 42
     },
@@ -12464,6 +12625,12 @@
         "nomatch": [
             "cpe:2.3:a:user_project:user:*:*:*:*:*:*:*:*"
         ]
+    },
+    "sysutils\/packer": {
+        "confirmedmatch": "cpe:2.3:a:hashicorp:packer:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/pacman": {
+        "confirmedmatch": "cpe:2.3:a:pacman_project:pacman:*:*:*:*:*:*:*:*"
     },
     "sysutils\/panicmail": {
         "priority": 10
@@ -12603,12 +12770,56 @@
     "sysutils\/rtty": {
         "priority": 5
     },
+    "sysutils\/rubygem-backup": {
+        "nomatch": [
+            "cpe:2.3:a:cloudberrylab:backup:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:comodo:backup:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:unitrends:backup:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/rubygem-bolt": {
+        "nomatch": [
+            "cpe:2.3:a:boltcms:bolt:*:*:*:*:*:*:*:*"
+        ]
+    },
     "sysutils\/rubygem-bundler": {
         "priority": 5
+    },
+    "sysutils\/rubygem-bundler1": {
+        "confirmedmatch": "cpe:2.3:a:bundler:bundler:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-chef": {
+        "confirmedmatch": "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-chef15": {
+        "confirmedmatch": "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-facter": {
+        "confirmedmatch": "cpe:2.3:a:puppet:facter:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-fluentd": {
+        "confirmedmatch": "cpe:2.3:a:fluentd:fluentd:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-hammer_cli": {
+        "confirmedmatch": "cpe:2.3:a:theforeman:hammer_cli:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rubygem-hiera": {
+        "confirmedmatch": "cpe:2.3:a:puppet:hiera:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rundeck2": {
+        "confirmedmatch": "cpe:2.3:a:pagerduty:rundeck:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rundeck3": {
+        "confirmedmatch": "cpe:2.3:a:pagerduty:rundeck:*:*:*:*:*:*:*:*"
     },
     "sysutils\/runit": {
         "priority": 9,
         "custommatch": "cpe:2.3:a:runit:runit:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/rush": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/safecat": {
         "priority": 8
@@ -12634,8 +12845,31 @@
             "cpe:2.3:a:sec_project:sec:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/serf": {
+        "nomatch": [
+            "cpe:2.3:a:serf_project:serf:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/shim": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:shim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/slack": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:slack:*:*:*:*:*:*:*:*"
+        ]
+    },
     "sysutils\/sleuthkit": {
         "priority": 22
+    },
+    "sysutils\/slurm-wlm": {
+        "confirmedmatch": "cpe:2.3:a:schedmd:slurm:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/smart": {
+        "nomatch": [
+            "cpe:2.3:a:nonghyup:smart:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/smartmontools": {
         "priority": 139
@@ -12676,6 +12910,11 @@
             "cpe:2.3:a:magnicomp:sysinfo:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/syslinux": {
+        "nomatch": [
+            "cpe:2.3:a:gentoo:syslinux:*:*:*:*:*:*:*:*"
+        ]
+    },
     "sysutils\/syslog-ng": {
         "priority": 41
     },
@@ -12697,17 +12936,28 @@
     "sysutils\/thefish": {
         "priority": 17
     },
+    "sysutils\/tmpreaper": {
+        "confirmedmatch": "cpe:2.3:a:debian:tmpreaper:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/tmpwatch": {
         "priority": 8
     },
     "sysutils\/tmux": {
         "priority": 63
     },
+    "sysutils\/tmux23": {
+        "confirmedmatch": "cpe:2.3:a:tmux_project:tmux:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/tracker": {
         "priority": 6
     },
     "sysutils\/tree": {
         "priority": 23
+    },
+    "sysutils\/triton": {
+        "nomatch": [
+            "cpe:2.3:a:websense:triton:*:*:*:*:*:*:*:*"
+        ]
     },
     "sysutils\/ttyload": {
         "priority": 7
@@ -12720,6 +12970,9 @@
     },
     "sysutils\/ucspi-tcp": {
         "priority": 96
+    },
+    "sysutils\/udfclient": {
+        "confirmedmatch": "cpe:2.3:a:13thmonkey:udfclient:*:*:*:*:*:*:*:*"
     },
     "sysutils\/uhidd": {
         "priority": 5
@@ -12738,6 +12991,9 @@
     },
     "sysutils\/usermin": {
         "priority": 30
+    },
+    "sysutils\/vagrant": {
+        "confirmedmatch": "cpe:2.3:a:hashicorp:vagrant:*:*:*:*:*:*:*:*"
     },
     "sysutils\/virtualmin": {
         "priority": 11
@@ -12802,6 +13058,9 @@
     "sysutils\/xvidcap": {
         "priority": 8
     },
+    "sysutils\/yadm": {
+        "confirmedmatch": "cpe:2.3:a:yadm_project:yadm:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/zfs-snapshot-mgmt": {
         "priority": 5
     },
@@ -12817,9 +13076,19 @@
     "sysutils\/zxfer": {
         "priority": 8
     },
+    "textproc\/R-cran-commonmark": {
+        "nomatch": [
+            "cpe:2.3:a:thephpleague:commonmark:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/R-cran-markdown": {
         "nomatch": [
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/R-cran-rio": {
+        "nomatch": [
+            "cpe:2.3:a:rio_project:rio:*:*:*:*:*:*:*:*"
         ]
     },
     "textproc\/agrep": {
@@ -12828,17 +13097,44 @@
     "textproc\/antiword": {
         "priority": 41
     },
+    "textproc\/artha": {
+        "confirmedmatch": "cpe:2.3:a:artha_project:artha:*:*:*:*:*:*:*:*"
+    },
     "textproc\/asciidoc": {
         "priority": 22
     },
     "textproc\/aspell": {
         "priority": 359
     },
+    "textproc\/aspell-ispell": {
+        "confirmedmatch": "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/atom": {
+        "nomatch": [
+            "cpe:2.3:a:atom_project:atom:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/augeas": {
         "priority": 5
     },
+    "textproc\/bat": {
+        "confirmedmatch": "cpe:2.3:a:bat_project:bat:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/bib2html": {
+        "nomatch": [
+            "cpe:2.3:a:bib2html_project:bib2html:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/bibutils": {
+        "confirmedmatch": "cpe:2.3:a:bibutils_project:bibutils:*:*:*:*:*:*:*:*"
+    },
     "textproc\/bsddiff": {
         "priority": 5
+    },
+    "textproc\/bsdgrep": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:grep:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/c2html": {
         "priority": 6
@@ -12895,6 +13191,9 @@
     },
     "textproc\/docproj": {
         "priority": 23
+    },
+    "textproc\/dom4j": {
+        "confirmedmatch": "cpe:2.3:a:dom4j_project:dom4j:*:*:*:*:*:*:*:*"
     },
     "textproc\/dsssl-docbook-modular": {
         "priority": 54
