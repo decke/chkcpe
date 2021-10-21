@@ -13231,6 +13231,14 @@
     "textproc\/expat2": {
         "priority": 719
     },
+    "textproc\/ezxml": {
+        "confirmedmatch": "cpe:2.3:a:ezxml_project:ezxml:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/fex": {
+        "nomatch": [
+            "cpe:2.3:a:ulli_horlacher:fex:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/fixrtf": {
         "priority": 11
     },
@@ -13239,6 +13247,9 @@
     },
     "textproc\/fop": {
         "priority": 11
+    },
+    "textproc\/freexl": {
+        "confirmedmatch": "cpe:2.3:a:freexl_project:freexl:*:*:*:*:*:*:*:*"
     },
     "textproc\/gdome2": {
         "priority": 6
@@ -13254,6 +13265,11 @@
     },
     "textproc\/gtkspell": {
         "priority": 30
+    },
+    "textproc\/halibut": {
+        "nomatch": [
+            "cpe:2.3:a:octopus:halibut:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/highlight": {
         "priority": 8,
@@ -13316,6 +13332,12 @@
     "textproc\/kdiff3": {
         "priority": 9
     },
+    "textproc\/kibana6": {
+        "confirmedmatch": "cpe:2.3:a:elastic:kibana:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/kibana7": {
+        "confirmedmatch": "cpe:2.3:a:elastic:kibana:*:*:*:*:*:*:*:*"
+    },
     "textproc\/latex2html": {
         "priority": 14
     },
@@ -13333,6 +13355,12 @@
     },
     "textproc\/librevenge": {
         "priority": 5
+    },
+    "textproc\/libsass": {
+        "confirmedmatch": "cpe:2.3:a:sass-lang:libsass:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/libstaroffice": {
+        "confirmedmatch": "cpe:2.3:a:libstaroffice_project:libstaroffice:*:*:*:*:*:*:*:*"
     },
     "textproc\/libtre": {
         "priority": 12
@@ -13361,14 +13389,45 @@
     "textproc\/libyaml": {
         "priority": 31
     },
+    "textproc\/linux-c7-libcroco": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libcroco:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/linux-c7-libxml2": {
+        "confirmedmatch": "cpe:2.3:a:xmlsoft:libxml2:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/linux-c7-libxslt": {
+        "confirmedmatch": "cpe:2.3:a:xmlsoft:libxslt:*:*:*:*:*:*:*:*"
+    },
     "textproc\/linuxdoc": {
         "priority": 148
+    },
+    "textproc\/lookatme": {
+        "confirmedmatch": "cpe:2.3:a:lookatme_project:lookatme:*:*:*:*:*:*:*:*"
     },
     "textproc\/man2html": {
         "priority": 63
     },
+    "textproc\/markdown": {
+        "nomatch": [
+            "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/md4c": {
+        "confirmedmatch": "cpe:2.3:a:md4c_project:md4c:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/mdbook": {
+        "confirmedmatch": "cpe:2.3:a:rust-lang:mdbook:*:*:*:*:*:*:*:*"
+    },
     "textproc\/meld": {
         "priority": 21
+    },
+    "textproc\/miller": {
+        "confirmedmatch": "cpe:2.3:a:johnkerl:miller:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/minify": {
+        "nomatch": [
+            "cpe:2.3:a:fastvelocity:minify:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/minixmlto": {
         "priority": 7
@@ -13380,12 +13439,23 @@
         "priority": 7,
         "custommatch": "cpe:2.3:a:modlogan:modlogan:*:*:*:*:*:*:*:*"
     },
+    "textproc\/mxml": {
+        "nomatch": [
+            "cpe:2.3:a:intel:mxml:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/mythes": {
         "priority": 9
     },
     "textproc\/nl-hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/ocaml-text": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:text:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:golang:text:*:*:*:*:*:*:*:*"
         ]
     },
     "textproc\/openjade": {
@@ -13615,6 +13685,9 @@
     "textproc\/par": {
         "priority": 8
     },
+    "textproc\/pdfresurrect": {
+        "confirmedmatch": "cpe:2.3:a:pdfresurrect_project:pdfresurrect:*:*:*:*:*:*:*:*"
+    },
     "textproc\/pdftohtml": {
         "priority": 19,
         "custommatch": "cpe:2.3:a:pdftohtml:pdftohtml:*:*:*:*:*:*:*:*"
@@ -13639,6 +13712,21 @@
     },
     "textproc\/po4a": {
         "custommatch": "cpe:2.3:a:po4a:po4a:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/popup": {
+        "nomatch": [
+            "cpe:2.3:a:pharos:popup:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:supsystic:popup:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/popup-stacks": {
+        "nomatch": [
+            "cpe:2.3:a:supsystic:popup:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pharos:popup:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/pugixml": {
+        "confirmedmatch": "cpe:2.3:a:pugixml_project:pugixml:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-CommonMark": {
         "nomatch": [
@@ -13682,6 +13770,9 @@
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
         ]
     },
+    "textproc\/py-mkdocs": {
+        "confirmedmatch": "cpe:2.3:a:mkdocs:mkdocs:*:*:*:*:*:*:*:*"
+    },
     "textproc\/py-pager": {
         "nomatch": [
             "cpe:2.3:a:yahoo:pager:*:*:*:*:*:*:*:*"
@@ -13717,6 +13808,11 @@
     "textproc\/qt5-xml": {
         "priority": 6
     },
+    "textproc\/rand": {
+        "nomatch": [
+            "cpe:2.3:a:rand_project:rand:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/raptor": {
         "priority": 13
     },
@@ -13732,6 +13828,9 @@
     "textproc\/redland": {
         "priority": 20
     },
+    "textproc\/ripgrep": {
+        "confirmedmatch": "cpe:2.3:a:ripgrep_project:ripgrep:*:*:*:*:*:*:*:*"
+    },
     "textproc\/ripole": {
         "priority": 8
     },
@@ -13742,6 +13841,75 @@
     },
     "textproc\/ruby-rdtool": {
         "priority": 5
+    },
+    "textproc\/rubygem-asciidoctor": {
+        "nomatch": [
+            "cpe:2.3:a:asciidoctor:asciidoctor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-compass": {
+        "nomatch": [
+            "cpe:2.3:a:mongodb:compass:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:act:compass:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-elasticsearch": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-elasticsearch6": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-ini": {
+        "nomatch": [
+            "cpe:2.3:a:ini_project:ini:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-kramdown": {
+        "confirmedmatch": "cpe:2.3:a:kramdown_project:kramdown:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-kramdown1": {
+        "confirmedmatch": "cpe:2.3:a:kramdown_project:kramdown:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-loofah": {
+        "confirmedmatch": "cpe:2.3:a:loofah_project:loofah:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-multi_xml": {
+        "confirmedmatch": "cpe:2.3:a:erik_michaels-ober:multi_xml:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-nokogiri": {
+        "confirmedmatch": "cpe:2.3:a:nokogiri:nokogiri:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-nokogiri18": {
+        "confirmedmatch": "cpe:2.3:a:nokogiri:nokogiri:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-ox": {
+        "confirmedmatch": "cpe:2.3:a:ox_project:ox:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-redcarpet": {
+        "confirmedmatch": "cpe:2.3:a:redcarpet_project:redcarpet:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-sanitize": {
+        "confirmedmatch": "cpe:2.3:a:sanitize_project:sanitize:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-sanitize20": {
+        "confirmedmatch": "cpe:2.3:a:sanitize_project:sanitize:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/rubygem-text": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:text:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:golang:text:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/rubygem-yard": {
+        "confirmedmatch": "cpe:2.3:a:yardoc:yard:*:*:*:*:*:*:*:*"
     },
     "textproc\/sablotron": {
         "priority": 68
@@ -13763,6 +13931,9 @@
     },
     "textproc\/sgrep2": {
         "priority": 5
+    },
+    "textproc\/sigil": {
+        "confirmedmatch": "cpe:2.3:a:sigil-ebook:sigil:*:*:*:*:*:*:*:*"
     },
     "textproc\/sk-hunspell": {
         "nomatch": [
@@ -13824,6 +13995,9 @@
     "textproc\/tinyxml": {
         "priority": 5
     },
+    "textproc\/tinyxml2": {
+        "confirmedmatch": "cpe:2.3:a:tinyxml2_project:tinyxml2:*:*:*:*:*:*:*:*"
+    },
     "textproc\/tk-hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
@@ -13876,6 +14050,11 @@
     "textproc\/webcpp": {
         "priority": 12
     },
+    "textproc\/website": {
+        "nomatch": [
+            "cpe:2.3:a:yarnpkg:website:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/word2x": {
         "priority": 8
     },
@@ -13923,10 +14102,16 @@
     "textproc\/xmlto": {
         "priority": 24
     },
+    "textproc\/xstream": {
+        "confirmedmatch": "cpe:2.3:a:xstream_project:xstream:*:*:*:*:*:*:*:*"
+    },
     "textproc\/yi-hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
+    },
+    "textproc\/yodl": {
+        "confirmedmatch": "cpe:2.3:a:yodl_project:yodl:*:*:*:*:*:*:*:*"
     },
     "textproc\/zu-hunspell": {
         "nomatch": [
@@ -13966,6 +14151,11 @@
             "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/R-cran-webshot": {
+        "nomatch": [
+            "cpe:2.3:a:phpspot:webshot:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/adzap": {
         "priority": 13
     },
@@ -13975,11 +14165,26 @@
     "www\/apache24": {
         "priority": 72
     },
+    "www\/authelia": {
+        "confirmedmatch": "cpe:2.3:a:authelia:authelia:*:*:*:*:*:*:*:*"
+    },
     "www\/awstats": {
         "priority": 108
     },
+    "www\/bareos-webui": {
+        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
+    },
+    "www\/bareos18-webui": {
+        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
+    },
+    "www\/bareos19-webui": {
+        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
+    },
     "www\/bluefish": {
         "priority": 46
+    },
+    "www\/bolt": {
+        "confirmedmatch": "cpe:2.3:a:boltcms:bolt:*:*:*:*:*:*:*:*"
     },
     "www\/c-icap": {
         "priority": 7
@@ -14010,6 +14215,9 @@
     "www\/chromium": {
         "priority": 49
     },
+    "www\/civetweb": {
+        "confirmedmatch": "cpe:2.3:a:civetweb_project:civetweb:*:*:*:*:*:*:*:*"
+    },
     "www\/coppermine": {
         "priority": 6
     },
@@ -14026,6 +14234,9 @@
         "priority": 5,
         "custommatch": "cpe:2.3:a:dillo:dillo:*:*:*:*:*:*:*:*"
     },
+    "www\/dojo": {
+        "confirmedmatch": "cpe:2.3:a:linuxfoundation:dojo:*:*:*:*:*:*:*:*"
+    },
     "www\/dokuwiki": {
         "priority": 19
     },
@@ -14035,8 +14246,16 @@
     "www\/emacs-w3m": {
         "priority": 9
     },
+    "www\/envoy": {
+        "confirmedmatch": "cpe:2.3:a:envoyproxy:envoy:*:*:*:*:*:*:*:*"
+    },
     "www\/epiphany": {
         "priority": 70
+    },
+    "www\/erlang-mochiweb-basho": {
+        "nomatch": [
+            "cpe:2.3:a:mochiweb_project:mochiweb:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/fancybox": {
         "nomatch": [
@@ -14062,6 +14281,11 @@
     "www\/gallery2": {
         "priority": 32
     },
+    "www\/gatling": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:gatling:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/geolizer": {
         "priority": 6
     },
@@ -14071,14 +14295,36 @@
     "www\/gitlab-ce": {
         "priority": 9
     },
+    "www\/glassfish": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/glassfish4": {
+        "confirmedmatch": "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
+    },
     "www\/gnome-user-share": {
         "priority": 9
     },
     "www\/gohugo": {
         "priority": 6
     },
+    "www\/grails": {
+        "nomatch": [
+            "cpe:2.3:a:gopivotal:grails:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:grails:grails:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
+    },
+    "www\/grr": {
+        "nomatch": [
+            "cpe:2.3:a:devome:grr:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/hiawatha": {
+        "confirmedmatch": "cpe:2.3:a:hiawatha-webserver:hiawatha:*:*:*:*:*:*:*:*"
     },
     "www\/horde-base": {
         "priority": 12,
@@ -14100,8 +14346,28 @@
     "www\/hypermail": {
         "priority": 9
     },
+    "www\/interchange": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:interchange:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/jetty8": {
+        "confirmedmatch": "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+    },
+    "www\/jetty9": {
+        "confirmedmatch": "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
+    },
+    "www\/kanboard": {
+        "confirmedmatch": "cpe:2.3:a:kanboard:kanboard:*:*:*:*:*:*:*:*"
+    },
     "www\/kannel": {
         "priority": 11
+    },
+    "www\/kohana": {
+        "confirmedmatch": "cpe:2.3:a:kohanaframework:kohana:*:*:*:*:*:*:*:*"
+    },
+    "www\/libapreq2": {
+        "confirmedmatch": "cpe:2.3:a:apache:libapreq2:*:*:*:*:*:*:*:*"
     },
     "www\/libnghttp2": {
         "priority": 17
@@ -14124,6 +14390,9 @@
         "nomatch": [
             "cpe:2.3:a:twibright:links:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/linux-c7-qtwebkit": {
+        "confirmedmatch": "cpe:2.3:a:qt:qtwebkit:*:*:*:*:*:*:*:*"
     },
     "www\/linux-opera": {
         "priority": 86
@@ -14170,6 +14439,9 @@
     "www\/mod_auth_pgsql2": {
         "priority": 7
     },
+    "www\/mod_authnz_external24": {
+        "confirmedmatch": "cpe:2.3:a:mod_authnz_external_project:mod_authnz_external:*:*:*:*:*:*:*:*"
+    },
     "www\/mod_dav_svn": {
         "priority": 5
     },
@@ -14181,6 +14453,9 @@
     },
     "www\/mod_fcgid": {
         "priority": 8
+    },
+    "www\/mod_gnutls": {
+        "confirmedmatch": "cpe:2.3:a:mod_gnutls_project:mod_gnutls:*:*:*:*:*:*:*:*"
     },
     "www\/mod_jk": {
         "priority": 21
@@ -14206,6 +14481,9 @@
     "www\/moinmoin": {
         "priority": 15
     },
+    "www\/mongoose": {
+        "confirmedmatch": "cpe:2.3:a:cesanta:mongoose:*:*:*:*:*:*:*:*"
+    },
     "www\/nanoblogger": {
         "custommatch": "cpe:2.3:a:nanoblogger:nanoblogger:*:*:*:*:*:*:*:*"
     },
@@ -14215,8 +14493,28 @@
     "www\/netrik": {
         "custommatch": "cpe:2.3:a:netrik:netrik:*:*:*:*:*:*:*:*"
     },
+    "www\/netsurf": {
+        "confirmedmatch": "cpe:2.3:a:netsurf-browser:netsurf:*:*:*:*:*:*:*:*"
+    },
     "www\/nextcloud": {
         "priority": 25
+    },
+    "www\/nextcloud-contacts": {
+        "confirmedmatch": "cpe:2.3:a:nextcloud:contacts:*:*:*:*:*:*:*:*"
+    },
+    "www\/nextcloud-forms": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:forms:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:madeit:forms:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:forms_project:forms:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/nextcloud-notes": {
+        "nomatch": [
+            "cpe:2.3:a:hcltech:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ibm:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:notes:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/nginx": {
         "priority": 124
@@ -14245,6 +14543,9 @@
     },
     "www\/obhttpd": {
         "priority": 5
+    },
+    "www\/osticket": {
+        "confirmedmatch": "cpe:2.3:a:enhancesoft:osticket:*:*:*:*:*:*:*:*"
     },
     "www\/otrs": {
         "priority": 5
@@ -14438,10 +14739,31 @@
     "www\/paros": {
         "custommatch": "cpe:2.3:a:paros:paros:*:*:*:*:*:*:*:*"
     },
+    "www\/pear-HTML_AJAX": {
+        "confirmedmatch": "cpe:2.3:a:pear:html_ajax:*:*:*:*:*:*:*:*"
+    },
+    "www\/pear-HTTP": {
+        "nomatch": [
+            "cpe:2.3:a:dart:http:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hyper:http:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/pear-HTTP_Request": {
         "priority": 17,
         "nomatch": [
             "cpe:2.3:a:http_request_project:http_request:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/pear-HTTP_Server": {
+        "nomatch": [
+            "cpe:2.3:a:akka:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hp:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:http_server_project:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ibm:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:novell:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:oracle:http_server:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:treck:http_server:*:*:*:*:*:*:*:*"
         ]
     },
     "www\/pecl-http": {
@@ -14486,8 +14808,14 @@
     "www\/privoxy": {
         "priority": 18
     },
+    "www\/proxygen": {
+        "confirmedmatch": "cpe:2.3:a:facebook:proxygen:*:*:*:*:*:*:*:*"
+    },
     "www\/publicfile": {
         "priority": 9
+    },
+    "www\/punbb": {
+        "confirmedmatch": "cpe:2.3:a:gnu:punbb:*:*:*:*:*:*:*:*"
     },
     "www\/py-adblock": {
         "nomatch": [
@@ -14552,17 +14880,106 @@
     "www\/py-werkzeug": {
         "priority": 7
     },
+    "www\/pydio-cells": {
+        "confirmedmatch": "cpe:2.3:a:pydio:cells:*:*:*:*:*:*:*:*"
+    },
+    "www\/qt5-webkit": {
+        "nomatch": [
+            "cpe:2.3:a:apple:webkit:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:webkit:webkit:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/qt5-websockets": {
         "nomatch": [
-            "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:myks:websockets:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/quark": {
+        "nomatch": [
+            "cpe:2.3:a:comelz:quark:*:*:*:*:*:*:*:*"
         ]
     },
     "www\/reportmagic": {
         "priority": 12
     },
+    "www\/resin3": {
+        "confirmedmatch": "cpe:2.3:a:caucho:resin:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-addressable": {
+        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-addressable23": {
+        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-addressable25": {
+        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-browser": {
+        "nomatch": [
+            "cpe:2.3:a:aol:browser:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:brave:browser:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:die-netzmacher:browser:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:parity:browser:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-carrierwave": {
+        "confirmedmatch": "cpe:2.3:a:carrierwave_project:carrierwave:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-faraday": {
+        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-faraday0": {
+        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-faraday14": {
+        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-fcgi": {
         "nomatch": [
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-geminabox": {
+        "confirmedmatch": "cpe:2.3:a:geminabox_project:geminabox:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-gollum": {
+        "confirmedmatch": "cpe:2.3:a:gollum_project:gollum:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-gon-rails50": {
+        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-gon-rails60": {
+        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-gon-rails61": {
+        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-http": {
+        "nomatch": [
+            "cpe:2.3:a:dart:http:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hyper:http:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-http3": {
+        "nomatch": [
+            "cpe:2.3:a:dart:http:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hyper:http:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-http4": {
+        "nomatch": [
+            "cpe:2.3:a:dart:http:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hyper:http:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-httparty": {
+        "confirmedmatch": "cpe:2.3:a:john_nunemaker:httparty:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-httpclient": {
+        "nomatch": [
+            "cpe:2.3:a:apache:httpclient:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:sensiolabs:httpclient:*:*:*:*:*:*:*:*"
         ]
     },
     "www\/rubygem-jwt": {
@@ -14575,6 +14992,32 @@
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/rubygem-kaminari": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-kaminari-rails4": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-kaminari-rails5": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-kaminari-rails50": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-kaminari-rails60": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-kaminari-rails61": {
+        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-less": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:less:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-mechanize": {
+        "confirmedmatch": "cpe:2.3:a:mechanize_project:mechanize:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-oembed": {
         "nomatch": [
             "cpe:2.3:a:oembed_project:oembed:*:*:*:*:*:*:*:*"
@@ -14586,14 +15029,48 @@
     "www\/rubygem-rack": {
         "priority": 5
     },
+    "www\/rubygem-rack16": {
+        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-rack20": {
+        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-rbovirt": {
+        "confirmedmatch": "cpe:2.3:a:amos_benari:rbovirt:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-redcloth": {
         "priority": 5
+    },
+    "www\/rubygem-sinatra": {
+        "confirmedmatch": "cpe:2.3:a:sinatrarb:sinatra:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-sinatra1": {
+        "confirmedmatch": "cpe:2.3:a:sinatrarb:sinatra:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-smashing": {
+        "confirmedmatch": "cpe:2.3:a:smashing_project:smashing:*:*:*:*:*:*:*:*"
+    },
+    "www\/rubygem-unicorn": {
+        "nomatch": [
+            "cpe:2.3:a:django-unicorn:unicorn:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/rubygem-websocket": {
+        "nomatch": [
+            "cpe:2.3:a:gorillatoolkit:websocket:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/sakai": {
+        "confirmedmatch": "cpe:2.3:a:sakailms:sakai:*:*:*:*:*:*:*:*"
     },
     "www\/sarg": {
         "priority": 25
     },
     "www\/serf": {
         "priority": 30
+    },
+    "www\/shellinabox": {
+        "confirmedmatch": "cpe:2.3:a:shellinabox_project:shellinabox:*:*:*:*:*:*:*:*"
     },
     "www\/sitecopy": {
         "priority": 13
@@ -14603,6 +15080,12 @@
     },
     "www\/snarf": {
         "priority": 5
+    },
+    "www\/sogo": {
+        "confirmedmatch": "cpe:2.3:a:inverse:sogo:*:*:*:*:*:*:*:*"
+    },
+    "www\/sogo-activesync": {
+        "confirmedmatch": "cpe:2.3:a:inverse:sogo:*:*:*:*:*:*:*:*"
     },
     "www\/spawn-fcgi": {
         "priority": 9
@@ -14653,6 +15136,9 @@
     "www\/tomcat7": {
         "priority": 8
     },
+    "www\/trac-devel": {
+        "confirmedmatch": "cpe:2.3:a:edgewall:trac:*:*:*:*:*:*:*:*"
+    },
     "www\/transmission-web": {
         "priority": 24
     },
@@ -14664,6 +15150,9 @@
     },
     "www\/twiki": {
         "priority": 15
+    },
+    "www\/uwebsockets": {
+        "confirmedmatch": "cpe:2.3:a:uwebsockets_project:uwebsockets:*:*:*:*:*:*:*:*"
     },
     "www\/uwsgi": {
         "priority": 11
@@ -14701,6 +15190,12 @@
     "www\/wwwoffle": {
         "priority": 6,
         "custommatch": "cpe:2.3:a:wwwoffle:wwwoffle:*:*:*:*:*:*:*:*"
+    },
+    "www\/yarn": {
+        "confirmedmatch": "cpe:2.3:a:yarnpkg:yarn:*:*:*:*:*:*:*:*"
+    },
+    "www\/yarn-node14": {
+        "confirmedmatch": "cpe:2.3:a:yarnpkg:yarn:*:*:*:*:*:*:*:*"
     },
     "www\/youtube_dl": {
         "priority": 19
@@ -14839,6 +15334,12 @@
     },
     "x11-drivers\/xorg-drivers": {
         "priority": 52
+    },
+    "x11-fm\/dolphin": {
+        "nomatch": [
+            "cpe:2.3:a:changyou:dolphin:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:boonex:dolphin:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11-fm\/filerunner": {
         "priority": 7
@@ -15250,6 +15751,11 @@
     "x11-themes\/metacity-themes": {
         "priority": 5
     },
+    "x11-themes\/plasma5-breeze": {
+        "nomatch": [
+            "cpe:2.3:a:macromedia:breeze:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11-themes\/qtcurve-gtk2": {
         "priority": 5
     },
@@ -15285,6 +15791,9 @@
     },
     "x11-toolkits\/gtk30": {
         "priority": 17
+    },
+    "x11-toolkits\/gtk40": {
+        "confirmedmatch": "cpe:2.3:a:gnome:gtk:*:*:*:*:*:*:*:*"
     },
     "x11-toolkits\/gtkglarea2": {
         "priority": 27
@@ -15332,6 +15841,9 @@
     },
     "x11-toolkits\/libwnck": {
         "priority": 138
+    },
+    "x11-toolkits\/linux-c7-pango": {
+        "confirmedmatch": "cpe:2.3:a:gnome:pango:*:*:*:*:*:*:*:*"
     },
     "x11-toolkits\/ocaml-lablgtk2": {
         "priority": 5
@@ -15428,6 +15940,11 @@
     "x11-toolkits\/vte": {
         "priority": 112
     },
+    "x11-toolkits\/vte3": {
+        "nomatch": [
+            "cpe:2.3:a:nalin_dahyabhai:vte:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11-toolkits\/wxgtk28": {
         "priority": 7
     },
@@ -15510,6 +16027,11 @@
     "x11-wm\/openbox": {
         "priority": 23
     },
+    "x11-wm\/pager": {
+        "nomatch": [
+            "cpe:2.3:a:yahoo:pager:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11-wm\/ratpoison": {
         "priority": 8
     },
@@ -15578,11 +16100,27 @@
             "cpe:2.3:a:bitmap_project:bitmap:*:*:*:*:*:*:*:*"
         ]
     },
+    "x11\/cinnamon": {
+        "confirmedmatch": "cpe:2.3:a:linuxmint:cinnamon:*:*:*:*:*:*:*:*"
+    },
     "x11\/dmenu": {
         "priority": 6
     },
+    "x11\/docker-tray": {
+        "nomatch": [
+            "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jenkins:docker:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redhat:docker:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:synology:docker:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11\/editres": {
         "priority": 27
+    },
+    "x11\/elementary-terminal": {
+        "nomatch": [
+            "cpe:2.3:a:apple:terminal:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11\/eterm": {
         "priority": 77
@@ -15728,6 +16266,12 @@
     "x11\/libxshmfence": {
         "priority": 19
     },
+    "x11\/lightdm": {
+        "confirmedmatch": "cpe:2.3:a:lightdm_project:lightdm:*:*:*:*:*:*:*:*"
+    },
+    "x11\/linux-c7-libxkbcommon": {
+        "confirmedmatch": "cpe:2.3:a:xkbcommon:libxkbcommon:*:*:*:*:*:*:*:*"
+    },
     "x11\/listres": {
         "priority": 28
     },
@@ -15781,11 +16325,19 @@
     "x11\/rgb": {
         "priority": 37
     },
+    "x11\/runner": {
+        "nomatch": [
+            "cpe:2.3:a:gitlab:runner:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11\/rxvt-unicode": {
         "priority": 16
     },
     "x11\/scripts": {
         "priority": 27
+    },
+    "x11\/sddm": {
+        "confirmedmatch": "cpe:2.3:a:sddm_project:sddm:*:*:*:*:*:*:*:*"
     },
     "x11\/sessreg": {
         "priority": 53
@@ -15807,6 +16359,9 @@
     },
     "x11\/viewres": {
         "priority": 27
+    },
+    "x11\/virglrenderer": {
+        "confirmedmatch": "cpe:2.3:a:virglrenderer_project:virglrenderer:*:*:*:*:*:*:*:*"
     },
     "x11\/wdm": {
         "priority": 18
@@ -15840,6 +16395,11 @@
     },
     "x11\/xcalc": {
         "priority": 54
+    },
+    "x11\/xcb": {
+        "nomatch": [
+            "cpe:2.3:a:xcb_project:xcb:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11\/xcb-proto": {
         "priority": 63
@@ -15906,6 +16466,12 @@
     },
     "x11\/xfce4-conf": {
         "priority": 11
+    },
+    "x11\/xfce4-dashboard": {
+        "nomatch": [
+            "cpe:2.3:a:westerndigital:dashboard:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:glpi-project:dashboard:*:*:*:*:*:*:*:*"
+        ]
     },
     "x11\/xfce4-screenshooter-plugin": {
         "priority": 5
@@ -16056,6 +16622,9 @@
     },
     "x11\/xtrans": {
         "priority": 98
+    },
+    "x11\/xtrlock": {
+        "confirmedmatch": "cpe:2.3:a:xtrlock_project:xtrlock:*:*:*:*:*:*:*:*"
     },
     "x11\/xvidtune": {
         "priority": 27
