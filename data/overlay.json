@@ -2923,9 +2923,6 @@
     "graphics\/synaesthesia": {
         "custommatch": "cpe:2.3:a:synaesthesia:synaesthesia:*:*:*:*:*:*:*:*"
     },
-    "graphics\/tiff": {
-        "priority": 549
-    },
     "graphics\/wings": {
         "nomatch": [
             "cpe:2.3:a:pterodactyl:wings:*:*:*:*:*:*:*:*"
@@ -3662,9 +3659,6 @@
         "nomatch": [
             "cpe:2.3:a:tibbo:aggregate:*:*:*:*:*:*:*:*"
         ]
-    },
-    "net-mgmt\/aircrack-ng": {
-        "priority": 13
     },
     "net-mgmt\/argus3": {
         "nomatch": [
