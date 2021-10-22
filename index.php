@@ -90,10 +90,10 @@ $app->get('/gc', function ($request, $response) {
         if ($port->getCPEStr() != '' && in_array($port->getCPEStatus(), [Status::VALID, Status::CHECKNEEDED, Status::READYTOCOMMIT])) {
             $overlay->unset($port->getOrigin(), 'confirmedmatch');
             $overlay->unset($port->getOrigin(), 'nomatch');
+        }
 
-            if (count($overlay->get($port->getOrigin())) < 1) {
-                $overlay->unset($port->getOrigin());
-            }
+        if (count($overlay->get($port->getOrigin())) < 1) {
+            $overlay->unset($port->getOrigin());
         }
     }
 
@@ -140,14 +140,7 @@ $app->get('/check', function ($request, $response, $args) {
         $ports = [];
 
         foreach ($runner->loadPorts(Status::CHECKNEEDED) as $port) {
-            $key = '9999-'.$port->getOrigin();
-
-            if ($overlay->exists($port->getOrigin(), 'priority')) {
-                $priority = (int)$overlay->get($port->getOrigin(), 'priority');
-                $key = sprintf('%04d-%s', 9999-$priority, $port->getOrigin());
-            }
-
-            $ports[$key] = $port;
+            $ports[$port->getOrigin()] = $port;
         }
 
         ksort($ports);

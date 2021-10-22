@@ -8,7 +8,6 @@ use CheckCpe\CPE\Dictionary;
 use CheckCpe\CPE\Product;
 use CheckCpe\CPE\Status;
 use CheckCpe\Generators\MarkdownGenerator;
-use CheckCpe\Generators\WeightedMarkdownGenerator;
 use CheckCpe\Util\Logger;
 
 class Runner
@@ -289,7 +288,7 @@ class Runner
         $generators[Status::VALID] = new MarkdownGenerator();
         $generators[Status::INVALID] = new MarkdownGenerator();
         $generators[Status::DEPRECATED] = new MarkdownGenerator();
-        $generators[Status::CHECKNEEDED] = new WeightedMarkdownGenerator();
+        $generators[Status::CHECKNEEDED] = new MarkdownGenerator();
         $generators[Status::READYTOCOMMIT] = new MarkdownGenerator();
         $generators[Status::UNKNOWN] = new MarkdownGenerator();
 
