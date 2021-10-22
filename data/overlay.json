@@ -2619,11 +2619,17 @@
             "cpe:2.3:a:jzip:jzip:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/openarena": {
+        "custommatch": "cpe:2.3:a:openarena:openarena:*:*:*:*:*:*:*:*"
+    },
     "games\/openarena-data": {
         "nomatch": [
             "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
         ]
+    },
+    "games\/openarena-server": {
+        "custommatch": "cpe:2.3:a:openarena:openarena:*:*:*:*:*:*:*:*"
     },
     "games\/openbor": {
         "custommatch": "cpe:2.3:a:openbor:openbor:*:*:*:*:*:*:*:*"
