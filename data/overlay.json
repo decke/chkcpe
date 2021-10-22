@@ -961,9 +961,6 @@
     "devel\/gittrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
     },
-    "devel\/gnustep": {
-        "confirmedmatch": "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
-    },
     "devel\/go-tools": {
         "nomatch": [
             "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*",
