@@ -22,8 +22,8 @@ class Dictionary
     {
         $product = strtolower($product);
 
-        $stmt = $this->handle->prepare('SELECT vendor, product FROM products WHERE product LIKE ? AND deprecatedby = ? GROUP BY vendor');
-        if (!$stmt->execute(['%'.$product.'%', ''])) {
+        $stmt = $this->handle->prepare('SELECT vendor, product FROM products WHERE product = ? AND deprecatedby = ? GROUP BY vendor');
+        if (!$stmt->execute([$product, ''])) {
             throw new \Exception('DB Error');
         }
 
