@@ -9759,9 +9759,6 @@
     "net\/libdnet": {
         "priority": 38
     },
-    "net\/libgrss": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libgrss:*:*:*:*:*:*:*:*"
-    },
     "net\/libgweather": {
         "priority": 11
     },
@@ -9786,9 +9783,6 @@
     "net\/liboauth": {
         "priority": 6
     },
-    "net\/liboping": {
-        "confirmedmatch": "cpe:2.3:a:noping:liboping:*:*:*:*:*:*:*:*"
-    },
     "net\/libpcap": {
         "priority": 19
     },
@@ -9800,12 +9794,6 @@
     },
     "net\/libvncserver": {
         "priority": 20
-    },
-    "net\/libyang": {
-        "confirmedmatch": "cpe:2.3:a:cesnet:libyang:*:*:*:*:*:*:*:*"
-    },
-    "net\/libzapojit": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libzapojit:*:*:*:*:*:*:*:*"
     },
     "net\/libzmq4": {
         "priority": 5
@@ -9823,14 +9811,8 @@
     "net\/mDNSResponder": {
         "priority": 93
     },
-    "net\/messagelib": {
-        "confirmedmatch": "cpe:2.3:a:kde:messagelib:*:*:*:*:*:*:*:*"
-    },
     "net\/minidlna": {
         "priority": 12
-    },
-    "net\/minissdpd": {
-        "confirmedmatch": "cpe:2.3:a:miniupnp_project:minissdpd:*:*:*:*:*:*:*:*"
     },
     "net\/miniupnpc": {
         "priority": 7
@@ -9850,26 +9832,14 @@
     "net\/mpd5": {
         "priority": 9
     },
-    "net\/mrouted": {
-        "confirmedmatch": "cpe:2.3:a:troglobit:mrouted:*:*:*:*:*:*:*:*"
-    },
     "net\/mtr": {
         "priority": 95
     },
     "net\/mtr-nox11": {
         "priority": 8
     },
-    "net\/mvfst": {
-        "confirmedmatch": "cpe:2.3:a:facebook:mvfst:*:*:*:*:*:*:*:*"
-    },
-    "net\/nbd-server": {
-        "confirmedmatch": "cpe:2.3:a:wouter_verhelst:nbd:*:*:*:*:*:*:*:*"
-    },
     "net\/nc": {
         "priority": 14
-    },
-    "net\/ndpi": {
-        "confirmedmatch": "cpe:2.3:a:ntop:ndpi:*:*:*:*:*:*:*:*"
     },
     "net\/netatalk3": {
         "priority": 8
@@ -9900,9 +9870,6 @@
     },
     "net\/ntraceroute": {
         "priority": 5
-    },
-    "net\/nusoap": {
-        "confirmedmatch": "cpe:2.3:a:nusoap_project:nusoap:*:*:*:*:*:*:*:*"
     },
     "net\/nylon": {
         "priority": 6
@@ -10037,12 +10004,6 @@
     "net\/p5-perl-ldap": {
         "priority": 44
     },
-    "net\/pacemaker1": {
-        "confirmedmatch": "cpe:2.3:a:clusterlabs:pacemaker:*:*:*:*:*:*:*:*"
-    },
-    "net\/pacemaker2": {
-        "confirmedmatch": "cpe:2.3:a:clusterlabs:pacemaker:*:*:*:*:*:*:*:*"
-    },
     "net\/pear-Net_DIME": {
         "priority": 7
     },
@@ -10064,9 +10025,6 @@
     "net\/pear-SOAP": {
         "priority": 11
     },
-    "net\/pear-Services_Twitter": {
-        "confirmedmatch": "cpe:2.3:a:services_twitter_group:services_twitter:*:*:*:*:*:*:*:*"
-    },
     "net\/pecl-mosquitto": {
         "nomatch": [
             "cpe:2.3:a:eclipse:mosquitto:*:*:*:*:*:*:*:*"
@@ -10084,14 +10042,8 @@
             "cpe:2.3:a:radius_extension_project:radius:*:*:*:*:*:*:*:*"
         ]
     },
-    "net\/pen": {
-        "confirmedmatch": "cpe:2.3:a:pen_project:pen:*:*:*:*:*:*:*:*"
-    },
     "net\/phpldapadmin": {
         "priority": 31
-    },
-    "net\/pichi": {
-        "confirmedmatch": "cpe:2.3:a:pichi_project:pichi:*:*:*:*:*:*:*:*"
     },
     "net\/pipsecd": {
         "priority": 7
@@ -10191,9 +10143,6 @@
     "net\/relayd": {
         "priority": 7
     },
-    "net\/repeater": {
-        "confirmedmatch": "cpe:2.3:a:ultravnc:repeater:*:*:*:*:*:*:*:*"
-    },
     "net\/rinetd": {
         "custommatch": "cpe:2.3:a:rinetd:rinetd:*:*:*:*:*:*:*:*"
     },
@@ -10234,9 +10183,6 @@
             "cpe:2.3:a:openid:openid_connect:*:*:*:*:*:*:*:*"
         ]
     },
-    "net\/rubygem-private_address_check": {
-        "confirmedmatch": "cpe:2.3:a:private_address_check_project:private_address_check:*:*:*:*:*:*:*:*"
-    },
     "net\/rubygem-proxifier": {
         "nomatch": [
             "cpe:2.3:a:proxifier:proxifier:*:*:*:*:*:*:*:*"
@@ -10248,9 +10194,6 @@
             "cpe:2.3:a:redhat:rsync:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:samba:rsync:*:*:*:*:*:*:*:*"
         ]
-    },
-    "net\/rubygem-tweetstream": {
-        "confirmedmatch": "cpe:2.3:a:tweetstream_project:tweetstream:*:*:*:*:*:*:*:*"
     },
     "net\/rubygem-twitter": {
         "nomatch": [
@@ -10273,9 +10216,6 @@
     "net\/seda": {
         "priority": 6
     },
-    "net\/serveez": {
-        "confirmedmatch": "cpe:2.3:a:gnu:serveez:*:*:*:*:*:*:*:*"
-    },
     "net\/serviio": {
         "priority": 12
     },
@@ -10284,12 +10224,6 @@
     },
     "net\/sipsak": {
         "priority": 7
-    },
-    "net\/smb4k": {
-        "confirmedmatch": "cpe:2.3:a:smb4k_project:smb4k:*:*:*:*:*:*:*:*"
-    },
-    "net\/smcroute": {
-        "confirmedmatch": "cpe:2.3:a:troglobit:smcroute:*:*:*:*:*:*:*:*"
     },
     "net\/sniffit": {
         "priority": 20
@@ -10368,9 +10302,6 @@
     "net\/tinyfugue": {
         "priority": 14
     },
-    "net\/traefik": {
-        "confirmedmatch": "cpe:2.3:a:traefik:traefik:*:*:*:*:*:*:*:*"
-    },
     "net\/trafshow": {
         "priority": 125
     },
@@ -10391,9 +10322,6 @@
     },
     "net\/unison": {
         "priority": 29
-    },
-    "net\/vde": {
-        "confirmedmatch": "cpe:2.3:a:vde_project:vde:*:*:*:*:*:*:*:*"
     },
     "net\/vino": {
         "priority": 30
@@ -10442,9 +10370,6 @@
     },
     "net\/xrdp": {
         "priority": 5
-    },
-    "net\/xrdp-devel": {
-        "confirmedmatch": "cpe:2.3:a:neutrinolabs:xrdp:*:*:*:*:*:*:*:*"
     },
     "net\/yaz": {
         "priority": 12
@@ -10544,9 +10469,6 @@
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
-    },
-    "polish\/kadu": {
-        "confirmedmatch": "cpe:2.3:a:kadu:kadu:*:*:*:*:*:*:*:*"
     },
     "polish\/libgadu": {
         "priority": 12
@@ -10708,9 +10630,6 @@
     "print\/fontforge": {
         "priority": 16
     },
-    "print\/foo2zjs": {
-        "confirmedmatch": "cpe:2.3:a:rkkda:foo2zjs:*:*:*:*:*:*:*:*"
-    },
     "print\/foomatic-db": {
         "priority": 24
     },
@@ -10795,9 +10714,6 @@
     "print\/lilypond": {
         "priority": 5
     },
-    "print\/linux-c7-cups-libs": {
-        "confirmedmatch": "cpe:2.3:a:cups:cups:*:*:*:*:*:*:*:*"
-    },
     "print\/lyx": {
         "priority": 31
     },
@@ -10831,9 +10747,6 @@
     },
     "print\/pcal": {
         "custommatch": "cpe:2.3:a:pcal:pcal:*:*:*:*:*:*:*:*"
-    },
-    "print\/pdfbox": {
-        "confirmedmatch": "cpe:2.3:a:apache:pdfbox:*:*:*:*:*:*:*:*"
     },
     "print\/pdflib": {
         "priority": 184
@@ -10907,9 +10820,6 @@
     },
     "print\/texlive-texmf": {
         "priority": 8
-    },
-    "print\/texlive-texmf-source": {
-        "confirmedmatch": "cpe:2.3:a:tug:texlive:*:*:*:*:*:*:*:*"
     },
     "print\/texlive-tlmgr": {
         "priority": 8
@@ -11044,9 +10954,6 @@
     "security\/autossh": {
         "priority": 5
     },
-    "security\/axTLS": {
-        "confirmedmatch": "cpe:2.3:a:axtls_project:axtls:*:*:*:*:*:*:*:*"
-    },
     "security\/barnyard2": {
         "priority": 5
     },
@@ -11059,17 +10966,8 @@
     "security\/bcwipe": {
         "priority": 14
     },
-    "security\/botan110": {
-        "confirmedmatch": "cpe:2.3:a:botan_project:botan:*:*:*:*:*:*:*:*"
-    },
-    "security\/botan2": {
-        "confirmedmatch": "cpe:2.3:a:botan_project:botan:*:*:*:*:*:*:*:*"
-    },
     "security\/bruteforceblocker": {
         "priority": 6
-    },
-    "security\/bzrtp": {
-        "confirmedmatch": "cpe:2.3:a:bzrtp_project:bzrtp:*:*:*:*:*:*:*:*"
     },
     "security\/ca_root_nss": {
         "priority": 143
@@ -11128,9 +11026,6 @@
     "security\/cryptopp": {
         "custommatch": "cpe:2.3:a:cryptopp:crypto++:*:*:*:*:*:*:*:*"
     },
-    "security\/cyberchef": {
-        "confirmedmatch": "cpe:2.3:a:gchq:cyberchef:*:*:*:*:*:*:*:*"
-    },
     "security\/cyrus-sasl2": {
         "priority": 262
     },
@@ -11184,9 +11079,6 @@
     "security\/fcrackzip": {
         "priority": 6
     },
-    "security\/fizz": {
-        "confirmedmatch": "cpe:2.3:a:facebook:fizz:*:*:*:*:*:*:*:*"
-    },
     "security\/fragroute": {
         "priority": 7
     },
@@ -11204,9 +11096,6 @@
     },
     "security\/gcr": {
         "priority": 8
-    },
-    "security\/gitjacker": {
-        "confirmedmatch": "cpe:2.3:a:gitjacker_project:gitjacker:*:*:*:*:*:*:*:*"
     },
     "security\/gnome-keyring": {
         "priority": 33
@@ -11242,9 +11131,6 @@
             "cpe:2.3:a:ory:hydra:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/i2p": {
-        "confirmedmatch": "cpe:2.3:a:geti2p:i2p:*:*:*:*:*:*:*:*"
-    },
     "security\/i2pd": {
         "nomatch": [
             "cpe:2.3:a:i2pd:i2pd:*:*:*:*:*:*:*:*"
@@ -11265,9 +11151,6 @@
     },
     "security\/keepass": {
         "priority": 5
-    },
-    "security\/keepass-plugin-keepassrpc": {
-        "confirmedmatch": "cpe:2.3:a:kee:keepassrpc:*:*:*:*:*:*:*:*"
     },
     "security\/keychain": {
         "priority": 25
@@ -11349,24 +11232,6 @@
     "security\/libtasn1": {
         "priority": 95
     },
-    "security\/libtomcrypt": {
-        "confirmedmatch": "cpe:2.3:a:libtom:libtomcrypt:*:*:*:*:*:*:*:*"
-    },
-    "security\/linux-c7-gnutls": {
-        "confirmedmatch": "cpe:2.3:a:gnu:gnutls:*:*:*:*:*:*:*:*"
-    },
-    "security\/linux-c7-libgcrypt": {
-        "confirmedmatch": "cpe:2.3:a:gnupg:libgcrypt:*:*:*:*:*:*:*:*"
-    },
-    "security\/linux-c7-nettle": {
-        "confirmedmatch": "cpe:2.3:a:nettle_project:nettle:*:*:*:*:*:*:*:*"
-    },
-    "security\/linux-c7-nss": {
-        "confirmedmatch": "cpe:2.3:a:mozilla:nss:*:*:*:*:*:*:*:*"
-    },
-    "security\/linux-c7-trousers": {
-        "confirmedmatch": "cpe:2.3:a:trousers_project:trousers:*:*:*:*:*:*:*:*"
-    },
     "security\/logcheck": {
         "priority": 49
     },
@@ -11392,12 +11257,6 @@
     "security\/mindterm-binary": {
         "priority": 6
     },
-    "security\/munge": {
-        "confirmedmatch": "cpe:2.3:a:opensuse:munge:*:*:*:*:*:*:*:*"
-    },
-    "security\/nebula": {
-        "confirmedmatch": "cpe:2.3:a:slack:nebula:*:*:*:*:*:*:*:*"
-    },
     "security\/nettle": {
         "priority": 47
     },
@@ -11410,9 +11269,6 @@
     "security\/nss": {
         "priority": 182
     },
-    "security\/nss_compat_ossl": {
-        "confirmedmatch": "cpe:2.3:a:nss_compat_ossl_project:nss_compat_ossl:*:*:*:*:*:*:*:*"
-    },
     "security\/obfs4proxy-tor": {
         "custommatch": "cpe:2.3:a:torproject:obfs4proxy:*:*:*:*:*:*:*:*"
     },
@@ -11424,15 +11280,6 @@
     },
     "security\/oinkmaster": {
         "priority": 25
-    },
-    "security\/openfortivpn": {
-        "confirmedmatch": "cpe:2.3:a:openfortivpn_project:openfortivpn:*:*:*:*:*:*:*:*"
-    },
-    "security\/opensaml": {
-        "confirmedmatch": "cpe:2.3:a:shibboleth:opensaml:*:*:*:*:*:*:*:*"
-    },
-    "security\/opensc": {
-        "confirmedmatch": "cpe:2.3:a:opensc_project:opensc:*:*:*:*:*:*:*:*"
     },
     "security\/openssh-askpass": {
         "priority": 41
@@ -11789,9 +11636,6 @@
     "security\/rkhunter": {
         "priority": 32
     },
-    "security\/rubygem-doorkeeper": {
-        "confirmedmatch": "cpe:2.3:a:doorkeeper_project:doorkeeper:*:*:*:*:*:*:*:*"
-    },
     "security\/rubygem-gpgme": {
         "nomatch": [
             "cpe:2.3:a:gnu:gpgme:*:*:*:*:*:*:*:*",
@@ -11802,15 +11646,6 @@
         "nomatch": [
             "cpe:2.3:a:rapid7:nexpose:*:*:*:*:*:*:*:*"
         ]
-    },
-    "security\/rubygem-omniauth": {
-        "confirmedmatch": "cpe:2.3:a:omniauth:omniauth:*:*:*:*:*:*:*:*"
-    },
-    "security\/rubygem-omniauth1": {
-        "confirmedmatch": "cpe:2.3:a:omniauth:omniauth:*:*:*:*:*:*:*:*"
-    },
-    "security\/rubygem-openssl": {
-        "confirmedmatch": "cpe:2.3:a:ruby-lang:openssl:*:*:*:*:*:*:*:*"
     },
     "security\/samhain": {
         "priority": 15
@@ -11867,9 +11702,6 @@
     },
     "security\/sssd": {
         "priority": 6
-    },
-    "security\/steghide": {
-        "confirmedmatch": "cpe:2.3:a:steghide_project:steghide:*:*:*:*:*:*:*:*"
     },
     "security\/strobe": {
         "priority": 11
@@ -11929,9 +11761,6 @@
     "security\/vault": {
         "priority": 7
     },
-    "security\/veracrypt": {
-        "confirmedmatch": "cpe:2.3:a:idrix:veracrypt:*:*:*:*:*:*:*:*"
-    },
     "security\/vlock": {
         "priority": 14
     },
@@ -11946,9 +11775,6 @@
     },
     "security\/webfwlog": {
         "custommatch": "cpe:2.3:a:webfwlog:webfwlog:*:*:*:*:*:*:*:*"
-    },
-    "security\/whatweb": {
-        "confirmedmatch": "cpe:2.3:a:morningstarsecurity:whatweb:*:*:*:*:*:*:*:*"
     },
     "security\/wipe": {
         "priority": 9
@@ -11970,9 +11796,6 @@
     },
     "security\/yafic": {
         "priority": 5
-    },
-    "security\/yara": {
-        "confirmedmatch": "cpe:2.3:a:virustotal:yara:*:*:*:*:*:*:*:*"
     },
     "security\/ykpers": {
         "priority": 6
@@ -11996,9 +11819,6 @@
     "shells\/dash": {
         "custommatch": "cpe:2.3:a:dash:dash:*:*:*:*:*:*:*:*"
     },
-    "shells\/elvish": {
-        "confirmedmatch": "cpe:2.3:a:elv:elvish:*:*:*:*:*:*:*:*"
-    },
     "shells\/es": {
         "priority": 5
     },
@@ -12019,9 +11839,6 @@
     },
     "shells\/rc": {
         "priority": 11
-    },
-    "shells\/rush": {
-        "confirmedmatch": "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
     },
     "shells\/sash": {
         "priority": 9
@@ -12053,9 +11870,6 @@
             "cpe:2.3:a:umbraengineering:ps:*:*:*:*:*:*:*:*"
         ]
     },
-    "sysutils\/afflib": {
-        "confirmedmatch": "cpe:2.3:a:afflib_project:afflib:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/afio": {
         "priority": 8
     },
@@ -12077,9 +11891,6 @@
             "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*"
         ]
     },
-    "sysutils\/apache-mesos": {
-        "confirmedmatch": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/apachetop": {
         "priority": 25,
         "custommatch": "cpe:2.3:a:apachetop:apachetop:*:*:*:*:*:*:*:*"
@@ -12098,9 +11909,6 @@
         "nomatch": [
             "cpe:2.3:a:atop_project:atop:*:*:*:*:*:*:*:*"
         ]
-    },
-    "sysutils\/autojump": {
-        "confirmedmatch": "cpe:2.3:a:autojump_project:autojump:*:*:*:*:*:*:*:*"
     },
     "sysutils\/automount": {
         "priority": 5
@@ -12140,15 +11948,6 @@
     },
     "sysutils\/bsdstats": {
         "priority": 44
-    },
-    "sysutils\/burp": {
-        "confirmedmatch": "cpe:2.3:a:burp_project:burp:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/burp-devel": {
-        "confirmedmatch": "cpe:2.3:a:burp_project:burp:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/calamares": {
-        "confirmedmatch": "cpe:2.3:a:calamares:calamares:*:*:*:*:*:*:*:*"
     },
     "sysutils\/catfish": {
         "custommatch": "cpe:2.3:a:catfish_project:catfish:*:*:*:*:*:*:*:*"
@@ -12210,9 +12009,6 @@
     "sysutils\/cpuburn": {
         "priority": 12
     },
-    "sysutils\/cronic": {
-        "confirmedmatch": "cpe:2.3:a:cronic_project:cronic:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/cronolog": {
         "priority": 26
     },
@@ -12244,14 +12040,8 @@
     "sysutils\/disktype": {
         "priority": 7
     },
-    "sysutils\/dmg2img": {
-        "confirmedmatch": "cpe:2.3:a:dmg2img_project:dmg2img:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/dmidecode": {
         "priority": 81
-    },
-    "sysutils\/docker": {
-        "confirmedmatch": "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
     },
     "sysutils\/dtc": {
         "priority": 6
@@ -12271,9 +12061,6 @@
     "sysutils\/e2fsprogs": {
         "priority": 37
     },
-    "sysutils\/edk2": {
-        "confirmedmatch": "cpe:2.3:a:tianocore:edk2:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/eject": {
         "priority": 39
     },
@@ -12282,9 +12069,6 @@
     },
     "sysutils\/ezjail": {
         "priority": 41
-    },
-    "sysutils\/facter": {
-        "confirmedmatch": "cpe:2.3:a:puppet:facter:*:*:*:*:*:*:*:*"
     },
     "sysutils\/fdupes": {
         "priority": 5
@@ -12401,9 +12185,6 @@
     "sysutils\/gsmartcontrol": {
         "priority": 6
     },
-    "sysutils\/hardlink": {
-        "confirmedmatch": "cpe:2.3:a:hardlink_project:hardlink:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/healthd": {
         "priority": 37
     },
@@ -12512,17 +12293,11 @@
     "sysutils\/ltrace": {
         "priority": 13
     },
-    "sysutils\/lxterminal": {
-        "confirmedmatch": "cpe:2.3:a:lxterminal_project:lxterminal:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/magicrescue": {
         "priority": 7
     },
     "sysutils\/mcelog": {
         "priority": 5
-    },
-    "sysutils\/mcollective": {
-        "confirmedmatch": "cpe:2.3:a:puppet:mcollective:*:*:*:*:*:*:*:*"
     },
     "sysutils\/megacli": {
         "priority": 6
@@ -12532,12 +12307,6 @@
     },
     "sysutils\/memtest86+": {
         "priority": 5
-    },
-    "sysutils\/memtester": {
-        "confirmedmatch": "cpe:2.3:a:pryopus:memtester:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/minikube": {
-        "confirmedmatch": "cpe:2.3:a:kubernetes:minikube:*:*:*:*:*:*:*:*"
     },
     "sysutils\/monit": {
         "priority": 20
@@ -12581,9 +12350,6 @@
     "sysutils\/no-login": {
         "priority": 12
     },
-    "sysutils\/nomad": {
-        "confirmedmatch": "cpe:2.3:a:hashicorp:nomad:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/nut": {
         "priority": 42
     },
@@ -12625,12 +12391,6 @@
         "nomatch": [
             "cpe:2.3:a:user_project:user:*:*:*:*:*:*:*:*"
         ]
-    },
-    "sysutils\/packer": {
-        "confirmedmatch": "cpe:2.3:a:hashicorp:packer:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/pacman": {
-        "confirmedmatch": "cpe:2.3:a:pacman_project:pacman:*:*:*:*:*:*:*:*"
     },
     "sysutils\/panicmail": {
         "priority": 10
@@ -12785,33 +12545,6 @@
     "sysutils\/rubygem-bundler": {
         "priority": 5
     },
-    "sysutils\/rubygem-bundler1": {
-        "confirmedmatch": "cpe:2.3:a:bundler:bundler:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-chef": {
-        "confirmedmatch": "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-chef15": {
-        "confirmedmatch": "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-facter": {
-        "confirmedmatch": "cpe:2.3:a:puppet:facter:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-fluentd": {
-        "confirmedmatch": "cpe:2.3:a:fluentd:fluentd:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-hammer_cli": {
-        "confirmedmatch": "cpe:2.3:a:theforeman:hammer_cli:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rubygem-hiera": {
-        "confirmedmatch": "cpe:2.3:a:puppet:hiera:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rundeck2": {
-        "confirmedmatch": "cpe:2.3:a:pagerduty:rundeck:*:*:*:*:*:*:*:*"
-    },
-    "sysutils\/rundeck3": {
-        "confirmedmatch": "cpe:2.3:a:pagerduty:rundeck:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/runit": {
         "priority": 9,
         "custommatch": "cpe:2.3:a:runit:runit:*:*:*:*:*:*:*:*"
@@ -12862,9 +12595,6 @@
     },
     "sysutils\/sleuthkit": {
         "priority": 22
-    },
-    "sysutils\/slurm-wlm": {
-        "confirmedmatch": "cpe:2.3:a:schedmd:slurm:*:*:*:*:*:*:*:*"
     },
     "sysutils\/smart": {
         "nomatch": [
@@ -12936,17 +12666,11 @@
     "sysutils\/thefish": {
         "priority": 17
     },
-    "sysutils\/tmpreaper": {
-        "confirmedmatch": "cpe:2.3:a:debian:tmpreaper:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/tmpwatch": {
         "priority": 8
     },
     "sysutils\/tmux": {
         "priority": 63
-    },
-    "sysutils\/tmux23": {
-        "confirmedmatch": "cpe:2.3:a:tmux_project:tmux:*:*:*:*:*:*:*:*"
     },
     "sysutils\/tracker": {
         "priority": 6
@@ -12971,9 +12695,6 @@
     "sysutils\/ucspi-tcp": {
         "priority": 96
     },
-    "sysutils\/udfclient": {
-        "confirmedmatch": "cpe:2.3:a:13thmonkey:udfclient:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/uhidd": {
         "priority": 5
     },
@@ -12991,9 +12712,6 @@
     },
     "sysutils\/usermin": {
         "priority": 30
-    },
-    "sysutils\/vagrant": {
-        "confirmedmatch": "cpe:2.3:a:hashicorp:vagrant:*:*:*:*:*:*:*:*"
     },
     "sysutils\/virtualmin": {
         "priority": 11
@@ -13058,9 +12776,6 @@
     "sysutils\/xvidcap": {
         "priority": 8
     },
-    "sysutils\/yadm": {
-        "confirmedmatch": "cpe:2.3:a:yadm_project:yadm:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/zfs-snapshot-mgmt": {
         "priority": 5
     },
@@ -13097,17 +12812,11 @@
     "textproc\/antiword": {
         "priority": 41
     },
-    "textproc\/artha": {
-        "confirmedmatch": "cpe:2.3:a:artha_project:artha:*:*:*:*:*:*:*:*"
-    },
     "textproc\/asciidoc": {
         "priority": 22
     },
     "textproc\/aspell": {
         "priority": 359
-    },
-    "textproc\/aspell-ispell": {
-        "confirmedmatch": "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
     },
     "textproc\/atom": {
         "nomatch": [
@@ -13117,16 +12826,10 @@
     "textproc\/augeas": {
         "priority": 5
     },
-    "textproc\/bat": {
-        "confirmedmatch": "cpe:2.3:a:bat_project:bat:*:*:*:*:*:*:*:*"
-    },
     "textproc\/bib2html": {
         "nomatch": [
             "cpe:2.3:a:bib2html_project:bib2html:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/bibutils": {
-        "confirmedmatch": "cpe:2.3:a:bibutils_project:bibutils:*:*:*:*:*:*:*:*"
     },
     "textproc\/bsddiff": {
         "priority": 5
@@ -13192,9 +12895,6 @@
     "textproc\/docproj": {
         "priority": 23
     },
-    "textproc\/dom4j": {
-        "confirmedmatch": "cpe:2.3:a:dom4j_project:dom4j:*:*:*:*:*:*:*:*"
-    },
     "textproc\/dsssl-docbook-modular": {
         "priority": 54
     },
@@ -13231,9 +12931,6 @@
     "textproc\/expat2": {
         "priority": 719
     },
-    "textproc\/ezxml": {
-        "confirmedmatch": "cpe:2.3:a:ezxml_project:ezxml:*:*:*:*:*:*:*:*"
-    },
     "textproc\/fex": {
         "nomatch": [
             "cpe:2.3:a:ulli_horlacher:fex:*:*:*:*:*:*:*:*"
@@ -13247,9 +12944,6 @@
     },
     "textproc\/fop": {
         "priority": 11
-    },
-    "textproc\/freexl": {
-        "confirmedmatch": "cpe:2.3:a:freexl_project:freexl:*:*:*:*:*:*:*:*"
     },
     "textproc\/gdome2": {
         "priority": 6
@@ -13332,12 +13026,6 @@
     "textproc\/kdiff3": {
         "priority": 9
     },
-    "textproc\/kibana6": {
-        "confirmedmatch": "cpe:2.3:a:elastic:kibana:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/kibana7": {
-        "confirmedmatch": "cpe:2.3:a:elastic:kibana:*:*:*:*:*:*:*:*"
-    },
     "textproc\/latex2html": {
         "priority": 14
     },
@@ -13355,12 +13043,6 @@
     },
     "textproc\/librevenge": {
         "priority": 5
-    },
-    "textproc\/libsass": {
-        "confirmedmatch": "cpe:2.3:a:sass-lang:libsass:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/libstaroffice": {
-        "confirmedmatch": "cpe:2.3:a:libstaroffice_project:libstaroffice:*:*:*:*:*:*:*:*"
     },
     "textproc\/libtre": {
         "priority": 12
@@ -13389,20 +13071,8 @@
     "textproc\/libyaml": {
         "priority": 31
     },
-    "textproc\/linux-c7-libcroco": {
-        "confirmedmatch": "cpe:2.3:a:gnome:libcroco:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/linux-c7-libxml2": {
-        "confirmedmatch": "cpe:2.3:a:xmlsoft:libxml2:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/linux-c7-libxslt": {
-        "confirmedmatch": "cpe:2.3:a:xmlsoft:libxslt:*:*:*:*:*:*:*:*"
-    },
     "textproc\/linuxdoc": {
         "priority": 148
-    },
-    "textproc\/lookatme": {
-        "confirmedmatch": "cpe:2.3:a:lookatme_project:lookatme:*:*:*:*:*:*:*:*"
     },
     "textproc\/man2html": {
         "priority": 63
@@ -13412,17 +13082,8 @@
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
         ]
     },
-    "textproc\/md4c": {
-        "confirmedmatch": "cpe:2.3:a:md4c_project:md4c:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/mdbook": {
-        "confirmedmatch": "cpe:2.3:a:rust-lang:mdbook:*:*:*:*:*:*:*:*"
-    },
     "textproc\/meld": {
         "priority": 21
-    },
-    "textproc\/miller": {
-        "confirmedmatch": "cpe:2.3:a:johnkerl:miller:*:*:*:*:*:*:*:*"
     },
     "textproc\/minify": {
         "nomatch": [
@@ -13685,9 +13346,6 @@
     "textproc\/par": {
         "priority": 8
     },
-    "textproc\/pdfresurrect": {
-        "confirmedmatch": "cpe:2.3:a:pdfresurrect_project:pdfresurrect:*:*:*:*:*:*:*:*"
-    },
     "textproc\/pdftohtml": {
         "priority": 19,
         "custommatch": "cpe:2.3:a:pdftohtml:pdftohtml:*:*:*:*:*:*:*:*"
@@ -13724,9 +13382,6 @@
             "cpe:2.3:a:supsystic:popup:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:pharos:popup:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/pugixml": {
-        "confirmedmatch": "cpe:2.3:a:pugixml_project:pugixml:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-CommonMark": {
         "nomatch": [
@@ -13769,9 +13424,6 @@
         "nomatch": [
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/py-mkdocs": {
-        "confirmedmatch": "cpe:2.3:a:mkdocs:mkdocs:*:*:*:*:*:*:*:*"
     },
     "textproc\/py-pager": {
         "nomatch": [
@@ -13828,9 +13480,6 @@
     "textproc\/redland": {
         "priority": 20
     },
-    "textproc\/ripgrep": {
-        "confirmedmatch": "cpe:2.3:a:ripgrep_project:ripgrep:*:*:*:*:*:*:*:*"
-    },
     "textproc\/ripole": {
         "priority": 8
     },
@@ -13872,44 +13521,11 @@
             "cpe:2.3:a:ini_project:ini:*:*:*:*:*:*:*:*"
         ]
     },
-    "textproc\/rubygem-kramdown": {
-        "confirmedmatch": "cpe:2.3:a:kramdown_project:kramdown:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-kramdown1": {
-        "confirmedmatch": "cpe:2.3:a:kramdown_project:kramdown:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-loofah": {
-        "confirmedmatch": "cpe:2.3:a:loofah_project:loofah:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-multi_xml": {
-        "confirmedmatch": "cpe:2.3:a:erik_michaels-ober:multi_xml:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-nokogiri": {
-        "confirmedmatch": "cpe:2.3:a:nokogiri:nokogiri:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-nokogiri18": {
-        "confirmedmatch": "cpe:2.3:a:nokogiri:nokogiri:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-ox": {
-        "confirmedmatch": "cpe:2.3:a:ox_project:ox:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-redcarpet": {
-        "confirmedmatch": "cpe:2.3:a:redcarpet_project:redcarpet:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-sanitize": {
-        "confirmedmatch": "cpe:2.3:a:sanitize_project:sanitize:*:*:*:*:*:*:*:*"
-    },
-    "textproc\/rubygem-sanitize20": {
-        "confirmedmatch": "cpe:2.3:a:sanitize_project:sanitize:*:*:*:*:*:*:*:*"
-    },
     "textproc\/rubygem-text": {
         "nomatch": [
             "cpe:2.3:a:oracle:text:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:golang:text:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/rubygem-yard": {
-        "confirmedmatch": "cpe:2.3:a:yardoc:yard:*:*:*:*:*:*:*:*"
     },
     "textproc\/sablotron": {
         "priority": 68
@@ -13931,9 +13547,6 @@
     },
     "textproc\/sgrep2": {
         "priority": 5
-    },
-    "textproc\/sigil": {
-        "confirmedmatch": "cpe:2.3:a:sigil-ebook:sigil:*:*:*:*:*:*:*:*"
     },
     "textproc\/sk-hunspell": {
         "nomatch": [
@@ -13994,9 +13607,6 @@
     },
     "textproc\/tinyxml": {
         "priority": 5
-    },
-    "textproc\/tinyxml2": {
-        "confirmedmatch": "cpe:2.3:a:tinyxml2_project:tinyxml2:*:*:*:*:*:*:*:*"
     },
     "textproc\/tk-hunspell": {
         "nomatch": [
@@ -14102,16 +13712,10 @@
     "textproc\/xmlto": {
         "priority": 24
     },
-    "textproc\/xstream": {
-        "confirmedmatch": "cpe:2.3:a:xstream_project:xstream:*:*:*:*:*:*:*:*"
-    },
     "textproc\/yi-hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/yodl": {
-        "confirmedmatch": "cpe:2.3:a:yodl_project:yodl:*:*:*:*:*:*:*:*"
     },
     "textproc\/zu-hunspell": {
         "nomatch": [
@@ -14165,26 +13769,11 @@
     "www\/apache24": {
         "priority": 72
     },
-    "www\/authelia": {
-        "confirmedmatch": "cpe:2.3:a:authelia:authelia:*:*:*:*:*:*:*:*"
-    },
     "www\/awstats": {
         "priority": 108
     },
-    "www\/bareos-webui": {
-        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
-    },
-    "www\/bareos18-webui": {
-        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
-    },
-    "www\/bareos19-webui": {
-        "confirmedmatch": "cpe:2.3:a:bareos:bareos:*:*:*:*:*:*:*:*"
-    },
     "www\/bluefish": {
         "priority": 46
-    },
-    "www\/bolt": {
-        "confirmedmatch": "cpe:2.3:a:boltcms:bolt:*:*:*:*:*:*:*:*"
     },
     "www\/c-icap": {
         "priority": 7
@@ -14215,9 +13804,6 @@
     "www\/chromium": {
         "priority": 49
     },
-    "www\/civetweb": {
-        "confirmedmatch": "cpe:2.3:a:civetweb_project:civetweb:*:*:*:*:*:*:*:*"
-    },
     "www\/coppermine": {
         "priority": 6
     },
@@ -14234,9 +13820,6 @@
         "priority": 5,
         "custommatch": "cpe:2.3:a:dillo:dillo:*:*:*:*:*:*:*:*"
     },
-    "www\/dojo": {
-        "confirmedmatch": "cpe:2.3:a:linuxfoundation:dojo:*:*:*:*:*:*:*:*"
-    },
     "www\/dokuwiki": {
         "priority": 19
     },
@@ -14245,9 +13828,6 @@
     },
     "www\/emacs-w3m": {
         "priority": 9
-    },
-    "www\/envoy": {
-        "confirmedmatch": "cpe:2.3:a:envoyproxy:envoy:*:*:*:*:*:*:*:*"
     },
     "www\/epiphany": {
         "priority": 70
@@ -14300,9 +13880,6 @@
             "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/glassfish4": {
-        "confirmedmatch": "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
-    },
     "www\/gnome-user-share": {
         "priority": 9
     },
@@ -14322,9 +13899,6 @@
         "nomatch": [
             "cpe:2.3:a:devome:grr:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/hiawatha": {
-        "confirmedmatch": "cpe:2.3:a:hiawatha-webserver:hiawatha:*:*:*:*:*:*:*:*"
     },
     "www\/horde-base": {
         "priority": 12,
@@ -14351,23 +13925,8 @@
             "cpe:2.3:a:redhat:interchange:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/jetty8": {
-        "confirmedmatch": "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
-    },
-    "www\/jetty9": {
-        "confirmedmatch": "cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*"
-    },
-    "www\/kanboard": {
-        "confirmedmatch": "cpe:2.3:a:kanboard:kanboard:*:*:*:*:*:*:*:*"
-    },
     "www\/kannel": {
         "priority": 11
-    },
-    "www\/kohana": {
-        "confirmedmatch": "cpe:2.3:a:kohanaframework:kohana:*:*:*:*:*:*:*:*"
-    },
-    "www\/libapreq2": {
-        "confirmedmatch": "cpe:2.3:a:apache:libapreq2:*:*:*:*:*:*:*:*"
     },
     "www\/libnghttp2": {
         "priority": 17
@@ -14390,9 +13949,6 @@
         "nomatch": [
             "cpe:2.3:a:twibright:links:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/linux-c7-qtwebkit": {
-        "confirmedmatch": "cpe:2.3:a:qt:qtwebkit:*:*:*:*:*:*:*:*"
     },
     "www\/linux-opera": {
         "priority": 86
@@ -14439,9 +13995,6 @@
     "www\/mod_auth_pgsql2": {
         "priority": 7
     },
-    "www\/mod_authnz_external24": {
-        "confirmedmatch": "cpe:2.3:a:mod_authnz_external_project:mod_authnz_external:*:*:*:*:*:*:*:*"
-    },
     "www\/mod_dav_svn": {
         "priority": 5
     },
@@ -14453,9 +14006,6 @@
     },
     "www\/mod_fcgid": {
         "priority": 8
-    },
-    "www\/mod_gnutls": {
-        "confirmedmatch": "cpe:2.3:a:mod_gnutls_project:mod_gnutls:*:*:*:*:*:*:*:*"
     },
     "www\/mod_jk": {
         "priority": 21
@@ -14481,9 +14031,6 @@
     "www\/moinmoin": {
         "priority": 15
     },
-    "www\/mongoose": {
-        "confirmedmatch": "cpe:2.3:a:cesanta:mongoose:*:*:*:*:*:*:*:*"
-    },
     "www\/nanoblogger": {
         "custommatch": "cpe:2.3:a:nanoblogger:nanoblogger:*:*:*:*:*:*:*:*"
     },
@@ -14493,14 +14040,8 @@
     "www\/netrik": {
         "custommatch": "cpe:2.3:a:netrik:netrik:*:*:*:*:*:*:*:*"
     },
-    "www\/netsurf": {
-        "confirmedmatch": "cpe:2.3:a:netsurf-browser:netsurf:*:*:*:*:*:*:*:*"
-    },
     "www\/nextcloud": {
         "priority": 25
-    },
-    "www\/nextcloud-contacts": {
-        "confirmedmatch": "cpe:2.3:a:nextcloud:contacts:*:*:*:*:*:*:*:*"
     },
     "www\/nextcloud-forms": {
         "nomatch": [
@@ -14543,9 +14084,6 @@
     },
     "www\/obhttpd": {
         "priority": 5
-    },
-    "www\/osticket": {
-        "confirmedmatch": "cpe:2.3:a:enhancesoft:osticket:*:*:*:*:*:*:*:*"
     },
     "www\/otrs": {
         "priority": 5
@@ -14739,9 +14277,6 @@
     "www\/paros": {
         "custommatch": "cpe:2.3:a:paros:paros:*:*:*:*:*:*:*:*"
     },
-    "www\/pear-HTML_AJAX": {
-        "confirmedmatch": "cpe:2.3:a:pear:html_ajax:*:*:*:*:*:*:*:*"
-    },
     "www\/pear-HTTP": {
         "nomatch": [
             "cpe:2.3:a:dart:http:*:*:*:*:*:*:*:*",
@@ -14808,14 +14343,8 @@
     "www\/privoxy": {
         "priority": 18
     },
-    "www\/proxygen": {
-        "confirmedmatch": "cpe:2.3:a:facebook:proxygen:*:*:*:*:*:*:*:*"
-    },
     "www\/publicfile": {
         "priority": 9
-    },
-    "www\/punbb": {
-        "confirmedmatch": "cpe:2.3:a:gnu:punbb:*:*:*:*:*:*:*:*"
     },
     "www\/py-adblock": {
         "nomatch": [
@@ -14880,9 +14409,6 @@
     "www\/py-werkzeug": {
         "priority": 7
     },
-    "www\/pydio-cells": {
-        "confirmedmatch": "cpe:2.3:a:pydio:cells:*:*:*:*:*:*:*:*"
-    },
     "www\/qt5-webkit": {
         "nomatch": [
             "cpe:2.3:a:apple:webkit:*:*:*:*:*:*:*:*",
@@ -14903,18 +14429,6 @@
     "www\/reportmagic": {
         "priority": 12
     },
-    "www\/resin3": {
-        "confirmedmatch": "cpe:2.3:a:caucho:resin:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-addressable": {
-        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-addressable23": {
-        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-addressable25": {
-        "confirmedmatch": "cpe:2.3:a:addressable_project:addressable:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-browser": {
         "nomatch": [
             "cpe:2.3:a:aol:browser:*:*:*:*:*:*:*:*",
@@ -14923,37 +14437,10 @@
             "cpe:2.3:a:parity:browser:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/rubygem-carrierwave": {
-        "confirmedmatch": "cpe:2.3:a:carrierwave_project:carrierwave:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-faraday": {
-        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-faraday0": {
-        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-faraday14": {
-        "confirmedmatch": "cpe:2.3:a:faraday_project:faraday:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-fcgi": {
         "nomatch": [
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/rubygem-geminabox": {
-        "confirmedmatch": "cpe:2.3:a:geminabox_project:geminabox:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-gollum": {
-        "confirmedmatch": "cpe:2.3:a:gollum_project:gollum:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-gon-rails50": {
-        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-gon-rails60": {
-        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-gon-rails61": {
-        "confirmedmatch": "cpe:2.3:a:gon_project:gon:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-http": {
         "nomatch": [
@@ -14973,9 +14460,6 @@
             "cpe:2.3:a:hyper:http:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/rubygem-httparty": {
-        "confirmedmatch": "cpe:2.3:a:john_nunemaker:httparty:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-httpclient": {
         "nomatch": [
             "cpe:2.3:a:apache:httpclient:*:*:*:*:*:*:*:*",
@@ -14992,31 +14476,10 @@
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/rubygem-kaminari": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-kaminari-rails4": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-kaminari-rails5": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-kaminari-rails50": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-kaminari-rails60": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-kaminari-rails61": {
-        "confirmedmatch": "cpe:2.3:a:kaminari_project:kaminari:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-less": {
         "nomatch": [
             "cpe:2.3:a:gnu:less:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/rubygem-mechanize": {
-        "confirmedmatch": "cpe:2.3:a:mechanize_project:mechanize:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-oembed": {
         "nomatch": [
@@ -15029,26 +14492,8 @@
     "www\/rubygem-rack": {
         "priority": 5
     },
-    "www\/rubygem-rack16": {
-        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-rack20": {
-        "confirmedmatch": "cpe:2.3:a:rack_project:rack:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-rbovirt": {
-        "confirmedmatch": "cpe:2.3:a:amos_benari:rbovirt:*:*:*:*:*:*:*:*"
-    },
     "www\/rubygem-redcloth": {
         "priority": 5
-    },
-    "www\/rubygem-sinatra": {
-        "confirmedmatch": "cpe:2.3:a:sinatrarb:sinatra:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-sinatra1": {
-        "confirmedmatch": "cpe:2.3:a:sinatrarb:sinatra:*:*:*:*:*:*:*:*"
-    },
-    "www\/rubygem-smashing": {
-        "confirmedmatch": "cpe:2.3:a:smashing_project:smashing:*:*:*:*:*:*:*:*"
     },
     "www\/rubygem-unicorn": {
         "nomatch": [
@@ -15060,17 +14505,11 @@
             "cpe:2.3:a:gorillatoolkit:websocket:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/sakai": {
-        "confirmedmatch": "cpe:2.3:a:sakailms:sakai:*:*:*:*:*:*:*:*"
-    },
     "www\/sarg": {
         "priority": 25
     },
     "www\/serf": {
         "priority": 30
-    },
-    "www\/shellinabox": {
-        "confirmedmatch": "cpe:2.3:a:shellinabox_project:shellinabox:*:*:*:*:*:*:*:*"
     },
     "www\/sitecopy": {
         "priority": 13
@@ -15080,12 +14519,6 @@
     },
     "www\/snarf": {
         "priority": 5
-    },
-    "www\/sogo": {
-        "confirmedmatch": "cpe:2.3:a:inverse:sogo:*:*:*:*:*:*:*:*"
-    },
-    "www\/sogo-activesync": {
-        "confirmedmatch": "cpe:2.3:a:inverse:sogo:*:*:*:*:*:*:*:*"
     },
     "www\/spawn-fcgi": {
         "priority": 9
@@ -15136,9 +14569,6 @@
     "www\/tomcat7": {
         "priority": 8
     },
-    "www\/trac-devel": {
-        "confirmedmatch": "cpe:2.3:a:edgewall:trac:*:*:*:*:*:*:*:*"
-    },
     "www\/transmission-web": {
         "priority": 24
     },
@@ -15150,9 +14580,6 @@
     },
     "www\/twiki": {
         "priority": 15
-    },
-    "www\/uwebsockets": {
-        "confirmedmatch": "cpe:2.3:a:uwebsockets_project:uwebsockets:*:*:*:*:*:*:*:*"
     },
     "www\/uwsgi": {
         "priority": 11
@@ -15190,12 +14617,6 @@
     "www\/wwwoffle": {
         "priority": 6,
         "custommatch": "cpe:2.3:a:wwwoffle:wwwoffle:*:*:*:*:*:*:*:*"
-    },
-    "www\/yarn": {
-        "confirmedmatch": "cpe:2.3:a:yarnpkg:yarn:*:*:*:*:*:*:*:*"
-    },
-    "www\/yarn-node14": {
-        "confirmedmatch": "cpe:2.3:a:yarnpkg:yarn:*:*:*:*:*:*:*:*"
     },
     "www\/youtube_dl": {
         "priority": 19
@@ -15792,9 +15213,6 @@
     "x11-toolkits\/gtk30": {
         "priority": 17
     },
-    "x11-toolkits\/gtk40": {
-        "confirmedmatch": "cpe:2.3:a:gnome:gtk:*:*:*:*:*:*:*:*"
-    },
     "x11-toolkits\/gtkglarea2": {
         "priority": 27
     },
@@ -15841,9 +15259,6 @@
     },
     "x11-toolkits\/libwnck": {
         "priority": 138
-    },
-    "x11-toolkits\/linux-c7-pango": {
-        "confirmedmatch": "cpe:2.3:a:gnome:pango:*:*:*:*:*:*:*:*"
     },
     "x11-toolkits\/ocaml-lablgtk2": {
         "priority": 5
@@ -16100,9 +15515,6 @@
             "cpe:2.3:a:bitmap_project:bitmap:*:*:*:*:*:*:*:*"
         ]
     },
-    "x11\/cinnamon": {
-        "confirmedmatch": "cpe:2.3:a:linuxmint:cinnamon:*:*:*:*:*:*:*:*"
-    },
     "x11\/dmenu": {
         "priority": 6
     },
@@ -16266,12 +15678,6 @@
     "x11\/libxshmfence": {
         "priority": 19
     },
-    "x11\/lightdm": {
-        "confirmedmatch": "cpe:2.3:a:lightdm_project:lightdm:*:*:*:*:*:*:*:*"
-    },
-    "x11\/linux-c7-libxkbcommon": {
-        "confirmedmatch": "cpe:2.3:a:xkbcommon:libxkbcommon:*:*:*:*:*:*:*:*"
-    },
     "x11\/listres": {
         "priority": 28
     },
@@ -16336,9 +15742,6 @@
     "x11\/scripts": {
         "priority": 27
     },
-    "x11\/sddm": {
-        "confirmedmatch": "cpe:2.3:a:sddm_project:sddm:*:*:*:*:*:*:*:*"
-    },
     "x11\/sessreg": {
         "priority": 53
     },
@@ -16359,9 +15762,6 @@
     },
     "x11\/viewres": {
         "priority": 27
-    },
-    "x11\/virglrenderer": {
-        "confirmedmatch": "cpe:2.3:a:virglrenderer_project:virglrenderer:*:*:*:*:*:*:*:*"
     },
     "x11\/wdm": {
         "priority": 18
@@ -16622,9 +16022,6 @@
     },
     "x11\/xtrans": {
         "priority": 98
-    },
-    "x11\/xtrlock": {
-        "confirmedmatch": "cpe:2.3:a:xtrlock_project:xtrlock:*:*:*:*:*:*:*:*"
     },
     "x11\/xvidtune": {
         "priority": 27
