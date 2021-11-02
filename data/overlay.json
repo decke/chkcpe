@@ -688,6 +688,14 @@
             "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-redis44": {
+        "nomatch": [
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-tarantool": {
         "nomatch": [
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
@@ -1369,6 +1377,11 @@
             "cpe:2.3:a:esafenet:cdg:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-clang": {
+        "nomatch": [
+            "cpe:2.3:a:llvm:clang:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-click": {
         "nomatch": [
             "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
@@ -1656,6 +1669,11 @@
         ]
     },
     "devel\/rubygem-contracts": {
+        "nomatch": [
+            "cpe:2.3:a:openzeppelin:contracts:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-contracts016": {
         "nomatch": [
             "cpe:2.3:a:openzeppelin:contracts:*:*:*:*:*:*:*:*"
         ]
@@ -3264,14 +3282,7 @@
         "custommatch": "cpe:2.3:a:nbsmtp:nbsmtp:*:*:*:*:*:*:*:*"
     },
     "mail\/nextcloud-mail": {
-        "nomatch": [
-            "cpe:2.3:a:apple:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:basercms:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:claws-mail:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:egain:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:mail_project:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:zetacomponents:mail:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:nextcloud:mail:*:*:*:*:*:*:*:*"
     },
     "mail\/nocc": {
         "custommatch": "cpe:2.3:a:nocc:nocc:*:*:*:*:*:*:*:*"
@@ -3288,7 +3299,8 @@
             "cpe:2.3:a:apple:mail:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:mail_project:mail:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:zetacomponents:mail:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:egain:mail:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:egain:mail:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nextcloud:mail:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/postgrey": {
@@ -4861,6 +4873,9 @@
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
+    },
+    "textproc\/tinyxml": {
+        "confirmedmatch": "cpe:2.3:a:tinyxml_project:tinyxml:*:*:*:*:*:*:*:*"
     },
     "textproc\/tk-hunspell": {
         "nomatch": [
