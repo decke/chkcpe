@@ -2561,6 +2561,9 @@
     "games\/0verkill": {
         "custommatch": "cpe:2.3:a:0verkill:0verkill:*:*:*:*:*:*:*:*"
     },
+    "games\/abuse_sdl": {
+        "custommatch": "cpe:2.3:a:abuse:abuse-sdl:*:*:*:*:*:*:*:*"
+    },
     "games\/alephone-data": {
         "nomatch": [
             "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
@@ -3259,6 +3262,9 @@
     "mail\/libspf": {
         "custommatch": "cpe:2.3:a:libspf:libspf:*:*:*:*:*:*:*:*"
     },
+    "mail\/libspf2": {
+        "custommatch": "cpe:2.3:a:libspf2:libspf2:*:*:*:*:*:*:*:*"
+    },
     "mail\/lookout": {
         "nomatch": [
             "cpe:2.3:a:lookout:lookout:*:*:*:*:*:*:*:*",
@@ -3698,6 +3704,9 @@
             "cpe:2.3:a:traccar:server:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:vmware:server:*:*:*:*:*:*:*:*"
         ]
+    },
+    "net-mgmt\/libsmi": {
+        "custommatch": "cpe:2.3:a:tu-braunschweig:libsmi:*:*:*:*:*:*:*:*"
     },
     "net-mgmt\/metronome": {
         "nomatch": [
