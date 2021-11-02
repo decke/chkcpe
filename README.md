@@ -1,12 +1,11 @@
 # chkcpe
 
 The [FreeBSD Portstree](https://cgit.freebsd.org/ports) is a collection of build recipes
-and metadata for more than 30.000 3rd party projects and the source for binary packages on
+and metadata for around 30.000 3rd party projects and the source for binary packages on
 FreeBSD, DragonflyBSD and derivatives.
 
 This is an attempt to populate as many ports as possible with CPE data. The lists are
-automatically updated once a day. If you are a FreeBSD Ports committer this is a chance
-for you to help!
+automatically updated once a day.
 
 ### More information:
 * [https://wiki.freebsd.org/Ports/CPE](https://wiki.freebsd.org/Ports/CPE)
@@ -17,11 +16,11 @@ for you to help!
 
 | Status                                                              | # Ports                                                                |
 | --------------------------------------------------------------------| ---------------------------------------------------------------------: |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2833](https://github.com/decke/chkcpe/wiki/valid)                 |
-| ![invalid](https://img.shields.io/badge/invalid-red)                | [3](https://github.com/decke/chkcpe/wiki/invalid)             |
-| ![deprecated](https://img.shields.io/badge/deprecated-red)          | [0](https://github.com/decke/chkcpe/wiki/deprecated)       |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [6](https://github.com/decke/chkcpe/wiki/checkneeded)     |
-| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [0](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 27080 | |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2831](https://github.com/decke/chkcpe/wiki/valid)                 |
+| ![invalid](https://img.shields.io/badge/invalid-red)                | [0](https://github.com/decke/chkcpe/wiki/invalid)             |
+| ![deprecated](https://img.shields.io/badge/deprecated-red)          | [5](https://github.com/decke/chkcpe/wiki/deprecated)       |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [0](https://github.com/decke/chkcpe/wiki/checkneeded)     |
+| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [2](https://github.com/decke/chkcpe/wiki/readytocommit) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 27085 | |
 
-Last updated: Tue Nov  2 02:52:40 UTC 2021
+Last updated: Tue Nov  2 13:12:45 UTC 2021
