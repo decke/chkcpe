@@ -9,7 +9,7 @@ class Overlay
     protected string $filename;
 
     /**
-     * @var array<string,array>
+     * @var array<string,mixed>
      */
     protected array $data;
 

@@ -337,7 +337,7 @@ class Runner
         }
 
         // retry scanning for the ports that failed at first attempt
-        if (!$this->scanPorts()) {
+        if ($this->scanPorts() != true) {
             Logger::error('Scanning ports failed');
             return false;
         }
