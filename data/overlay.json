@@ -857,9 +857,6 @@
             "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/clanlib": {
-        "custommatch": "cpe:2.3:a:clanlib:clanlib:*:*:*:*:*:*:*:*"
-    },
     "devel\/clanlib1": {
         "custommatch": "cpe:2.3:a:clanlib:clanlib:*:*:*:*:*:*:*:*"
     },
@@ -993,11 +990,6 @@
     "devel\/hs-hpack": {
         "nomatch": [
             "cpe:2.3:a:python:hpack:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/itext": {
-        "nomatch": [
-            "cpe:2.3:a:itextpdf:itext:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/java-findbugs": {
@@ -3082,11 +3074,6 @@
             "cpe:2.3:a:jikes_project:jikes:*:*:*:*:*:*:*:*"
         ]
     },
-    "java\/junit": {
-        "nomatch": [
-            "cpe:2.3:a:jenkins:junit:*:*:*:*:*:*:*:*"
-        ]
-    },
     "korean\/hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
@@ -3150,21 +3137,6 @@
     },
     "lang\/gauche": {
         "custommatch": "cpe:2.3:a:gauche:gauche:*:*:*:*:*:*:*:*"
-    },
-    "lang\/gnatcross-binutils-aarch64": {
-        "nomatch": [
-            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "lang\/gnatdroid-binutils": {
-        "nomatch": [
-            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "lang\/gnatdroid-binutils-x86": {
-        "nomatch": [
-            "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
-        ]
     },
     "lang\/kotlin": {
         "nomatch": [
@@ -3286,9 +3258,6 @@
     },
     "mail\/nbsmtp": {
         "custommatch": "cpe:2.3:a:nbsmtp:nbsmtp:*:*:*:*:*:*:*:*"
-    },
-    "mail\/nextcloud-mail": {
-        "confirmedmatch": "cpe:2.3:a:nextcloud:mail:*:*:*:*:*:*:*:*"
     },
     "mail\/nocc": {
         "custommatch": "cpe:2.3:a:nocc:nocc:*:*:*:*:*:*:*:*"
@@ -4109,12 +4078,6 @@
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
         ]
     },
-    "russian\/bugzilla44": {
-        "nomatch": [
-            "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:jenkins:bugzilla:*:*:*:*:*:*:*:*"
-        ]
-    },
     "russian\/hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
@@ -4802,12 +4765,6 @@
             "cpe:2.3:a:asciidoctor:asciidoctor:*:*:*:*:*:*:*:*"
         ]
     },
-    "textproc\/rubygem-compass": {
-        "nomatch": [
-            "cpe:2.3:a:mongodb:compass:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:act:compass:*:*:*:*:*:*:*:*"
-        ]
-    },
     "textproc\/rubygem-elasticsearch": {
         "nomatch": [
             "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
@@ -4882,9 +4839,6 @@
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/tinyxml": {
-        "confirmedmatch": "cpe:2.3:a:tinyxml_project:tinyxml:*:*:*:*:*:*:*:*"
     },
     "textproc\/tk-hunspell": {
         "nomatch": [
@@ -5004,12 +4958,6 @@
             "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/grails": {
-        "nomatch": [
-            "cpe:2.3:a:gopivotal:grails:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:grails:grails:*:*:*:*:*:*:*:*"
-        ]
-    },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
     },
@@ -5023,11 +4971,6 @@
     },
     "www\/horde-passwd": {
         "custommatch": "cpe:2.3:a:horde:passwd:*:*:*:*:*:*:*:*"
-    },
-    "www\/interchange": {
-        "nomatch": [
-            "cpe:2.3:a:redhat:interchange:*:*:*:*:*:*:*:*"
-        ]
     },
     "www\/libwww": {
         "custommatch": "cpe:2.3:a:w3c:libwww:*:*:*:*:*:*:*:*"
