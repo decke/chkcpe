@@ -3177,6 +3177,11 @@
             "cpe:2.3:a:bogofilter_project:bogofilter:*:*:*:*:*:*:*:*"
         ]
     },
+    "mail\/claws-mail-notification": {
+        "nomatch": [
+            "cpe:2.3:a:bracketspace:notification:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/claws-mail-perl": {
         "nomatch": [
             "cpe:2.3:a:perl:perl:*:*:*:*:*:*:*:*"
@@ -4034,6 +4039,9 @@
             "cpe:2.3:a:ghostscript:ghostscript:*:*:*:*:*:*:*:*"
         ]
     },
+    "print\/linux-jabref": {
+        "confirmedmatch": "cpe:2.3:a:jabref:jabref:*:*:*:*:*:*:*:*"
+    },
     "print\/p5-PDFLib": {
         "nomatch": [
             "cpe:2.3:a:pdflib:pdflib:*:*:*:*:*:*:*:*"
@@ -4362,13 +4370,15 @@
     "sysutils\/ansible-kld": {
         "nomatch": [
             "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:jenkins:ansible:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:jenkins:ansible:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:confluent:ansible:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/ansible-sysrc": {
         "nomatch": [
             "cpe:2.3:a:jenkins:ansible:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:confluent:ansible:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/apachetop": {
