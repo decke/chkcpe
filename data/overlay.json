@@ -262,6 +262,9 @@
     "audio\/sox": {
         "custommatch": "cpe:2.3:a:sox:sox:*:*:*:*:*:*:*:*"
     },
+    "audio\/speex": {
+        "confirmedmatch": "cpe:2.3:a:xiph:speex:*:*:*:*:*:*:*:*"
+    },
     "audio\/sphinx": {
         "nomatch": [
             "cpe:2.3:a:sphinxsearch:sphinx:*:*:*:*:*:*:*:*"
@@ -288,6 +291,11 @@
     "benchmarks\/py-locust": {
         "nomatch": [
             "cpe:2.3:a:locust:locust:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "benchmarks\/stream": {
+        "nomatch": [
+            "cpe:2.3:a:xwp:stream:*:*:*:*:*:*:*:*"
         ]
     },
     "biology\/babel": {
@@ -810,6 +818,16 @@
     "devel\/aegis": {
         "custommatch": "cpe:2.3:a:aegis:aegis:*:*:*:*:*:*:*:*"
     },
+    "devel\/allegro": {
+        "nomatch": [
+            "cpe:2.3:a:allegro:allegro:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/allegro5": {
+        "nomatch": [
+            "cpe:2.3:a:allegro:allegro:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/arcanist": {
         "nomatch": [
             "cpe:2.3:a:hujiang:arcanist:*:*:*:*:*:*:*:*"
@@ -1116,7 +1134,9 @@
     "devel\/p5-Agent": {
         "nomatch": [
             "cpe:2.3:a:mcafee:agent:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:leostream:agent:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:leostream:agent:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:acronis:agent:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:grafana:agent:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-Cache": {
@@ -1209,6 +1229,11 @@
     "devel\/p5-Spoon": {
         "nomatch": [
             "cpe:2.3:a:ingy:spoon:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-Stream": {
+        "nomatch": [
+            "cpe:2.3:a:xwp:stream:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-ToolSet": {
@@ -1337,6 +1362,11 @@
             "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/performance": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:performance:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/pickle": {
         "nomatch": [
             "cpe:2.3:a:pickle:pickle:*:*:*:*:*:*:*:*"
@@ -1384,6 +1414,11 @@
             "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-click7": {
+        "nomatch": [
+            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-cluster": {
         "nomatch": [
             "cpe:2.3:a:sun:cluster:*:*:*:*:*:*:*:*"
@@ -1398,6 +1433,9 @@
         "nomatch": [
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-dask": {
+        "confirmedmatch": "cpe:2.3:a:anaconda:dask:*:*:*:*:*:*:*:*"
     },
     "devel\/py-datadog": {
         "nomatch": [
@@ -1457,6 +1495,11 @@
             "cpe:2.3:a:atlassian:jira:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-jsonpointer": {
+        "nomatch": [
+            "cpe:2.3:a:jsonpointer_project:jsonpointer:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-magic": {
         "nomatch": [
             "cpe:2.3:a:freedomscientific:magic:*:*:*:*:*:*:*:*"
@@ -1477,6 +1520,9 @@
         "nomatch": [
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-nbdime": {
+        "confirmedmatch": "cpe:2.3:a:jupyter:nbdime:*:*:*:*:*:*:*:*"
     },
     "devel\/py-orca": {
         "nomatch": [
@@ -1681,6 +1727,11 @@
             "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-debug": {
+        "nomatch": [
+            "cpe:2.3:a:debug_project:debug:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-delegate": {
         "nomatch": [
             "cpe:2.3:a:delegate:delegate:*:*:*:*:*:*:*:*"
@@ -1782,6 +1833,11 @@
             "cpe:2.3:a:berlios:slim:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-stream": {
+        "nomatch": [
+            "cpe:2.3:a:xwp:stream:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-sync": {
         "nomatch": [
             "cpe:2.3:a:cloudme:sync:*:*:*:*:*:*:*:*",
@@ -1799,6 +1855,11 @@
         ]
     },
     "devel\/rubygem-thor0": {
+        "nomatch": [
+            "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-thor10": {
         "nomatch": [
             "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
         ]
@@ -1867,6 +1928,9 @@
         "nomatch": [
             "cpe:2.3:a:thread_project:thread:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/zydis": {
+        "confirmedmatch": "cpe:2.3:a:zyantific:zydis:*:*:*:*:*:*:*:*"
     },
     "dns\/dnrd": {
         "custommatch": "cpe:2.3:a:dnrd:dnrd:*:*:*:*:*:*:*:*"
@@ -2776,6 +2840,11 @@
             "cpe:2.3:a:ansilove:ansilove:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/barcode": {
+        "nomatch": [
+            "cpe:2.3:a:glpi-project:barcode:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/bitmap": {
         "nomatch": [
             "cpe:2.3:a:bitmap_project:bitmap:*:*:*:*:*:*:*:*"
@@ -2817,6 +2886,9 @@
         "nomatch": [
             "cpe:2.3:a:milton:milton:*:*:*:*:*:*:*:*"
         ]
+    },
+    "graphics\/nomacs": {
+        "confirmedmatch": "cpe:2.3:a:nomacs:nomacs:*:*:*:*:*:*:*:*"
     },
     "graphics\/p5-Cairo": {
         "nomatch": [
@@ -2901,6 +2973,9 @@
     },
     "graphics\/radiance": {
         "custommatch": "cpe:2.3:a:radiance:radiance:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/rawstudio": {
+        "confirmedmatch": "cpe:2.3:a:rawstudio:rawstudio:*:*:*:*:*:*:*:*"
     },
     "graphics\/rubygem-cairo": {
         "nomatch": [
@@ -3333,6 +3408,12 @@
         "nomatch": [
             "cpe:2.3:a:suse:backports:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:opensuse:backports:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-date": {
+        "nomatch": [
+            "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*"
         ]
     },
     "math\/R-cran-gmp": {
@@ -4399,6 +4480,9 @@
             "cpe:2.3:a:bacula:bacula:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/barrier": {
+        "confirmedmatch": "cpe:2.3:a:barrier_project:barrier:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/bastille": {
         "nomatch": [
             "cpe:2.3:a:hp:bastille:*:*:*:*:*:*:*:*"
@@ -4413,6 +4497,12 @@
         ]
     },
     "sysutils\/devcpu-data": {
+        "nomatch": [
+            "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/devcpu-data-amd": {
         "nomatch": [
             "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:drupal:data:*:*:*:*:*:*:*:*"
@@ -4522,6 +4612,9 @@
             "cpe:2.3:a:apache:ranger:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/racktables": {
+        "confirmedmatch": "cpe:2.3:a:racktables_project:racktables:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/rename": {
         "nomatch": [
             "cpe:2.3:a:rename_project:rename:*:*:*:*:*:*:*:*"
@@ -4595,9 +4688,19 @@
             "cpe:2.3:a:websense:triton:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/viddy": {
+        "nomatch": [
+            "cpe:2.3:a:viddy:viddy:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/R-cran-commonmark": {
         "nomatch": [
             "cpe:2.3:a:thephpleague:commonmark:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/R-cran-hunspell": {
+        "nomatch": [
+            "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
     },
     "textproc\/R-cran-markdown": {
@@ -4788,6 +4891,9 @@
             "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*"
         ]
+    },
+    "textproc\/rubygem-elasticsearch713": {
+        "confirmedmatch": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
     },
     "textproc\/rubygem-ini": {
         "nomatch": [
@@ -4989,6 +5095,9 @@
         "nomatch": [
             "cpe:2.3:a:twibright:links:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/llhttp": {
+        "confirmedmatch": "cpe:2.3:a:llhttp:llhttp:*:*:*:*:*:*:*:*"
     },
     "www\/man2web": {
         "custommatch": "cpe:2.3:a:man2web:man2web:*:*:*:*:*:*:*:*"
@@ -5223,6 +5332,11 @@
     },
     "www\/tdiary": {
         "custommatch": "cpe:2.3:a:tdiary:tdiary:*:*:*:*:*:*:*:*"
+    },
+    "www\/validator": {
+        "nomatch": [
+            "cpe:2.3:a:validator_project:validator:*:*:*:*:*:*:*:*"
+        ]
     },
     "www\/wwwoffle": {
         "custommatch": "cpe:2.3:a:wwwoffle:wwwoffle:*:*:*:*:*:*:*:*"
