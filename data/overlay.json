@@ -262,9 +262,6 @@
     "audio\/sox": {
         "custommatch": "cpe:2.3:a:sox:sox:*:*:*:*:*:*:*:*"
     },
-    "audio\/speex": {
-        "confirmedmatch": "cpe:2.3:a:xiph:speex:*:*:*:*:*:*:*:*"
-    },
     "audio\/sphinx": {
         "nomatch": [
             "cpe:2.3:a:sphinxsearch:sphinx:*:*:*:*:*:*:*:*"
@@ -1434,9 +1431,6 @@
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-dask": {
-        "confirmedmatch": "cpe:2.3:a:anaconda:dask:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-datadog": {
         "nomatch": [
             "cpe:2.3:a:jenkins:datadog:*:*:*:*:*:*:*:*"
@@ -1520,9 +1514,6 @@
         "nomatch": [
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-nbdime": {
-        "confirmedmatch": "cpe:2.3:a:jupyter:nbdime:*:*:*:*:*:*:*:*"
     },
     "devel\/py-orca": {
         "nomatch": [
@@ -1928,9 +1919,6 @@
         "nomatch": [
             "cpe:2.3:a:thread_project:thread:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/zydis": {
-        "confirmedmatch": "cpe:2.3:a:zyantific:zydis:*:*:*:*:*:*:*:*"
     },
     "dns\/dnrd": {
         "custommatch": "cpe:2.3:a:dnrd:dnrd:*:*:*:*:*:*:*:*"
@@ -2887,9 +2875,6 @@
             "cpe:2.3:a:milton:milton:*:*:*:*:*:*:*:*"
         ]
     },
-    "graphics\/nomacs": {
-        "confirmedmatch": "cpe:2.3:a:nomacs:nomacs:*:*:*:*:*:*:*:*"
-    },
     "graphics\/p5-Cairo": {
         "nomatch": [
             "cpe:2.3:a:cairographics:cairo:*:*:*:*:*:*:*:*",
@@ -2973,9 +2958,6 @@
     },
     "graphics\/radiance": {
         "custommatch": "cpe:2.3:a:radiance:radiance:*:*:*:*:*:*:*:*"
-    },
-    "graphics\/rawstudio": {
-        "confirmedmatch": "cpe:2.3:a:rawstudio:rawstudio:*:*:*:*:*:*:*:*"
     },
     "graphics\/rubygem-cairo": {
         "nomatch": [
@@ -3640,11 +3622,6 @@
             "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
         ]
     },
-    "multimedia\/celluloid-devel": {
-        "nomatch": [
-            "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
-        ]
-    },
     "multimedia\/deforaos-player": {
         "nomatch": [
             "cpe:2.3:a:divx:player:*:*:*:*:*:*:*:*",
@@ -4120,9 +4097,6 @@
             "cpe:2.3:a:ghostscript:ghostscript:*:*:*:*:*:*:*:*"
         ]
     },
-    "print\/linux-jabref": {
-        "confirmedmatch": "cpe:2.3:a:jabref:jabref:*:*:*:*:*:*:*:*"
-    },
     "print\/p5-PDFLib": {
         "nomatch": [
             "cpe:2.3:a:pdflib:pdflib:*:*:*:*:*:*:*:*"
@@ -4480,9 +4454,6 @@
             "cpe:2.3:a:bacula:bacula:*:*:*:*:*:*:*:*"
         ]
     },
-    "sysutils\/barrier": {
-        "confirmedmatch": "cpe:2.3:a:barrier_project:barrier:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/bastille": {
         "nomatch": [
             "cpe:2.3:a:hp:bastille:*:*:*:*:*:*:*:*"
@@ -4611,9 +4582,6 @@
         "nomatch": [
             "cpe:2.3:a:apache:ranger:*:*:*:*:*:*:*:*"
         ]
-    },
-    "sysutils\/racktables": {
-        "confirmedmatch": "cpe:2.3:a:racktables_project:racktables:*:*:*:*:*:*:*:*"
     },
     "sysutils\/rename": {
         "nomatch": [
@@ -5095,9 +5063,6 @@
         "nomatch": [
             "cpe:2.3:a:twibright:links:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/llhttp": {
-        "confirmedmatch": "cpe:2.3:a:llhttp:llhttp:*:*:*:*:*:*:*:*"
     },
     "www\/man2web": {
         "custommatch": "cpe:2.3:a:man2web:man2web:*:*:*:*:*:*:*:*"
