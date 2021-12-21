@@ -2684,6 +2684,11 @@
             "cpe:2.3:a:jzip:jzip:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/neo": {
+        "nomatch": [
+            "cpe:2.3:a:desknets:neo:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/openarena": {
         "custommatch": "cpe:2.3:a:openarena:openarena:*:*:*:*:*:*:*:*"
     },
@@ -3480,6 +3485,9 @@
             "cpe:2.3:a:creolabs:gravity:*:*:*:*:*:*:*:*"
         ]
     },
+    "math\/lapack": {
+        "confirmedmatch": "cpe:2.3:a:lapack_project:lapack:*:*:*:*:*:*:*:*"
+    },
     "math\/lean": {
         "nomatch": [
             "cpe:2.3:a:quantconnect:lean:*:*:*:*:*:*:*:*"
@@ -3489,6 +3497,9 @@
         "nomatch": [
             "cpe:2.3:a:mossle:lemon:*:*:*:*:*:*:*:*"
         ]
+    },
+    "math\/openblas": {
+        "confirmedmatch": "cpe:2.3:a:openblas_project:openblas:*:*:*:*:*:*:*:*"
     },
     "math\/pecl-stats2": {
         "nomatch": [
@@ -3707,6 +3718,9 @@
         "nomatch": [
             "cpe:2.3:a:tinder:tinder:*:*:*:*:*:*:*:*"
         ]
+    },
+    "net-im\/tox": {
+        "confirmedmatch": "cpe:2.3:a:digitalocean:toxcore:*:*:*:*:*:*:*:*"
     },
     "net-mgmt\/aggregate": {
         "nomatch": [
@@ -4278,6 +4292,9 @@
     },
     "security\/obfs4proxy-tor": {
         "custommatch": "cpe:2.3:a:torproject:obfs4proxy:*:*:*:*:*:*:*:*"
+    },
+    "security\/olm": {
+        "confirmedmatch": "cpe:2.3:a:matrix:olm:*:*:*:*:*:*:*:*"
     },
     "security\/p5-CSP": {
         "nomatch": [
@@ -5015,11 +5032,17 @@
             "cpe:2.3:a:castor_project:castor:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/cinny": {
+        "confirmedmatch": "cpe:2.3:a:cinny_project:cinny:*:*:*:*:*:*:*:*"
+    },
     "www\/dhttpd": {
         "custommatch": "cpe:2.3:a:dhttpd:dhttpd:*:*:*:*:*:*:*:*"
     },
     "www\/dillo2": {
         "custommatch": "cpe:2.3:a:dillo:dillo:*:*:*:*:*:*:*:*"
+    },
+    "www\/element-web": {
+        "confirmedmatch": "cpe:2.3:a:matrix:element:*:*:*:*:*:*:*:*"
     },
     "www\/erlang-mochiweb-basho": {
         "nomatch": [
