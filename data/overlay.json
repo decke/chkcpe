@@ -4405,7 +4405,7 @@
             "cpe:2.3:a:snoopy_project:snoopy:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/snowflake": {
+    "security\/snowflake-tor": {
         "custommatch": "cpe:2.3:a:torproject:snowflake:*:*:*:*:*:*:*:*"
     },
     "security\/teleport": {
