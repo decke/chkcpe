@@ -4878,7 +4878,11 @@
         ]
     },
     "textproc\/rubygem-elasticsearch713": {
-        "confirmedmatch": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
+        "nomatch": [
+            "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/rubygem-ini": {
         "nomatch": [
