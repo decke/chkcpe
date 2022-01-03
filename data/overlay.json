@@ -170,6 +170,11 @@
     "audio\/flac123": {
         "custommatch": "cpe:2.3:a:flac123:flac123:*:*:*:*:*:*:*:*"
     },
+    "audio\/gradio": {
+        "nomatch": [
+            "cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/harp": {
         "nomatch": [
             "cpe:2.3:a:npmjs:harp:*:*:*:*:*:*:*:*",
@@ -675,16 +680,6 @@
             "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/rubygem-pg0": {
-        "nomatch": [
-            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "databases\/rubygem-pg018": {
-        "nomatch": [
-            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
-        ]
-    },
     "databases\/rubygem-redis": {
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
@@ -872,9 +867,6 @@
             "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/clanlib1": {
-        "custommatch": "cpe:2.3:a:clanlib:clanlib:*:*:*:*:*:*:*:*"
-    },
     "devel\/cmake-doc": {
         "nomatch": [
             "cpe:2.3:a:cmake_project:cmake:*:*:*:*:*:*:*:*"
@@ -1019,6 +1011,9 @@
     },
     "devel\/libast": {
         "custommatch": "cpe:2.3:a:libast:libast:*:*:*:*:*:*:*:*"
+    },
+    "devel\/libedit": {
+        "confirmedmatch": "cpe:2.3:a:libedit_project:libedit:*:*:*:*:*:*:*:*"
     },
     "devel\/libnotify": {
         "nomatch": [
@@ -1753,11 +1748,6 @@
             "cpe:2.3:a:gnu:gettext:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-gettext32": {
-        "nomatch": [
-            "cpe:2.3:a:gnu:gettext:*:*:*:*:*:*:*:*"
-        ]
-    },
     "devel\/rubygem-git": {
         "nomatch": [
             "cpe:2.3:a:jenkins:git:*:*:*:*:*:*:*:*",
@@ -1791,6 +1781,9 @@
         "nomatch": [
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/rubygem-message_bus": {
+        "confirmedmatch": "cpe:2.3:a:discourse:message_bus:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-mocha": {
         "nomatch": [
@@ -2632,6 +2625,11 @@
             "cpe:2.3:a:redlion:crimson:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/digger-vgl": {
+        "nomatch": [
+            "cpe:2.3:a:kb:digger:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/doom-data": {
         "nomatch": [
             "cpe:2.3:a:alex_barth:data:*:*:*:*:*:*:*:*",
@@ -2906,6 +2904,11 @@
             "cpe:2.3:a:libming:ming:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/pecl-qrencode": {
+        "nomatch": [
+            "cpe:2.3:a:qrencode_project:qrencode:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/pecl-vips": {
         "nomatch": [
             "cpe:2.3:a:vips:vips:*:*:*:*:*:*:*:*"
@@ -2944,6 +2947,11 @@
     "graphics\/py-plotly": {
         "nomatch": [
             "cpe:2.3:a:plot:plotly:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/py-qrencode": {
+        "nomatch": [
+            "cpe:2.3:a:qrencode_project:qrencode:*:*:*:*:*:*:*:*"
         ]
     },
     "graphics\/py-spectra": {
@@ -3199,6 +3207,9 @@
     },
     "lang\/gauche": {
         "custommatch": "cpe:2.3:a:gauche:gauche:*:*:*:*:*:*:*:*"
+    },
+    "lang\/julia": {
+        "confirmedmatch": "cpe:2.3:a:julialang:julia:*:*:*:*:*:*:*:*"
     },
     "lang\/kotlin": {
         "nomatch": [
@@ -3485,8 +3496,8 @@
             "cpe:2.3:a:creolabs:gravity:*:*:*:*:*:*:*:*"
         ]
     },
-    "math\/lapack": {
-        "confirmedmatch": "cpe:2.3:a:lapack_project:lapack:*:*:*:*:*:*:*:*"
+    "math\/igraph": {
+        "confirmedmatch": "cpe:2.3:a:igraph:igraph:*:*:*:*:*:*:*:*"
     },
     "math\/lean": {
         "nomatch": [
@@ -3498,13 +3509,13 @@
             "cpe:2.3:a:mossle:lemon:*:*:*:*:*:*:*:*"
         ]
     },
-    "math\/openblas": {
-        "confirmedmatch": "cpe:2.3:a:openblas_project:openblas:*:*:*:*:*:*:*:*"
-    },
     "math\/pecl-stats2": {
         "nomatch": [
             "cpe:2.3:a:pvpgn:stats:*:*:*:*:*:*:*:*"
         ]
+    },
+    "math\/py-cvxopt": {
+        "confirmedmatch": "cpe:2.3:a:cvxopt_project:cvxopt:*:*:*:*:*:*:*:*"
     },
     "math\/py-deap": {
         "nomatch": [
@@ -3719,9 +3730,6 @@
             "cpe:2.3:a:tinder:tinder:*:*:*:*:*:*:*:*"
         ]
     },
-    "net-im\/tox": {
-        "confirmedmatch": "cpe:2.3:a:digitalocean:toxcore:*:*:*:*:*:*:*:*"
-    },
     "net-mgmt\/aggregate": {
         "nomatch": [
             "cpe:2.3:a:tibbo:aggregate:*:*:*:*:*:*:*:*"
@@ -3881,6 +3889,9 @@
             "cpe:2.3:a:pingidentity:ldapsdk:*:*:*:*:*:*:*:*"
         ]
     },
+    "net\/libslirp": {
+        "confirmedmatch": "cpe:2.3:a:libslirp_project:libslirp:*:*:*:*:*:*:*:*"
+    },
     "net\/liferea": {
         "custommatch": "cpe:2.3:a:liferea:liferea:*:*:*:*:*:*:*:*"
     },
@@ -3986,16 +3997,6 @@
     "net\/rtg": {
         "nomatch": [
             "cpe:2.3:a:adrian_chadd:rtg:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net\/rubygem-grpc124": {
-        "nomatch": [
-            "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net\/rubygem-grpc130": {
-        "nomatch": [
-            "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/rubygem-mqtt": {
@@ -4180,6 +4181,11 @@
             "cpe:2.3:a:clipper_project:clipper:*:*:*:*:*:*:*:*"
         ]
     },
+    "science\/latte": {
+        "nomatch": [
+            "cpe:2.3:a:nette:latte:*:*:*:*:*:*:*:*"
+        ]
+    },
     "science\/py-access": {
         "nomatch": [
             "cpe:2.3:a:bosch:access:*:*:*:*:*:*:*:*",
@@ -4287,14 +4293,14 @@
             "cpe:2.3:a:kleopatra_project:kleopatra:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/libpwquality": {
+        "confirmedmatch": "cpe:2.3:a:libpwquality_project:libpwquality:*:*:*:*:*:*:*:*"
+    },
     "security\/mcrypt": {
         "custommatch": "cpe:2.3:a:mcrypt:mcrypt:*:*:*:*:*:*:*:*"
     },
     "security\/obfs4proxy-tor": {
         "custommatch": "cpe:2.3:a:torproject:obfs4proxy:*:*:*:*:*:*:*:*"
-    },
-    "security\/olm": {
-        "confirmedmatch": "cpe:2.3:a:matrix:olm:*:*:*:*:*:*:*:*"
     },
     "security\/p5-CSP": {
         "nomatch": [
@@ -5039,17 +5045,11 @@
             "cpe:2.3:a:castor_project:castor:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/cinny": {
-        "confirmedmatch": "cpe:2.3:a:cinny_project:cinny:*:*:*:*:*:*:*:*"
-    },
     "www\/dhttpd": {
         "custommatch": "cpe:2.3:a:dhttpd:dhttpd:*:*:*:*:*:*:*:*"
     },
     "www\/dillo2": {
         "custommatch": "cpe:2.3:a:dillo:dillo:*:*:*:*:*:*:*:*"
-    },
-    "www\/element-web": {
-        "confirmedmatch": "cpe:2.3:a:matrix:element:*:*:*:*:*:*:*:*"
     },
     "www\/erlang-mochiweb-basho": {
         "nomatch": [
@@ -5127,6 +5127,9 @@
     },
     "www\/nspluginwrapper": {
         "custommatch": "cpe:2.3:a:nspluginwrapper:nspluginwrapper:*:*:*:*:*:*:*:*"
+    },
+    "www\/owncast": {
+        "confirmedmatch": "cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*"
     },
     "www\/p5-Ark": {
         "nomatch": [
@@ -5220,6 +5223,9 @@
         "nomatch": [
             "cpe:2.3:a:mechanize_project:mechanize:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/py-pyjwt": {
+        "confirmedmatch": "cpe:2.3:a:pyjwt_project:pyjwt:*:*:*:*:*:*:*:*"
     },
     "www\/py-qt5-webkit": {
         "nomatch": [
@@ -5328,6 +5334,9 @@
     "www\/tdiary": {
         "custommatch": "cpe:2.3:a:tdiary:tdiary:*:*:*:*:*:*:*:*"
     },
+    "www\/ulfius": {
+        "confirmedmatch": "cpe:2.3:a:ulfius_project:ulfius:*:*:*:*:*:*:*:*"
+    },
     "www\/validator": {
         "nomatch": [
             "cpe:2.3:a:validator_project:validator:*:*:*:*:*:*:*:*"
@@ -5397,11 +5406,6 @@
     "x11-toolkits\/rubygem-poppler": {
         "nomatch": [
             "cpe:2.3:a:freedesktop:poppler:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "x11-toolkits\/rubygem-vte": {
-        "nomatch": [
-            "cpe:2.3:a:nalin_dahyabhai:vte:*:*:*:*:*:*:*:*"
         ]
     },
     "x11-toolkits\/vte3": {
