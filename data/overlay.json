@@ -5342,6 +5342,9 @@
             "cpe:2.3:a:validator_project:validator:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/wt": {
+        "custommatch": "cpe:2.3:a:emweb:wt:*:*:*:*:*:*:*:*"
+    },
     "www\/wwwoffle": {
         "custommatch": "cpe:2.3:a:wwwoffle:wwwoffle:*:*:*:*:*:*:*:*"
     },
