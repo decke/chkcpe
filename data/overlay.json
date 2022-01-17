@@ -892,7 +892,8 @@
     "devel\/date": {
         "nomatch": [
             "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/delta": {
@@ -952,12 +953,14 @@
     },
     "devel\/forge": {
         "nomatch": [
-            "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digitalbazaar:forge:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/forge-devel": {
         "nomatch": [
-            "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digitalbazaar:forge:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/gauche-readline": {
@@ -1019,6 +1022,9 @@
         "nomatch": [
             "cpe:2.3:a:libnotify_project:libnotify:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/linux-c7-libaio": {
+        "confirmedmatch": "cpe:2.3:a:libaio_project:libaio:*:*:*:*:*:*:*:*"
     },
     "devel\/llvm": {
         "nomatch": [
@@ -1253,7 +1259,8 @@
     "devel\/pear-Date": {
         "nomatch": [
             "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pear-I18N": {
@@ -1505,6 +1512,11 @@
             "cpe:2.3:a:minio:minio:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-molecule": {
+        "nomatch": [
+            "cpe:2.3:a:nervos:molecule:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-msgpack": {
         "nomatch": [
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
@@ -1708,10 +1720,7 @@
         ]
     },
     "devel\/rubygem-date": {
-        "nomatch": [
-            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-debug": {
         "nomatch": [
@@ -1800,6 +1809,11 @@
             "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:pega:platform:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-readline": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:readline:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-rice": {
@@ -3411,7 +3425,8 @@
     "math\/R-cran-date": {
         "nomatch": [
             "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
         ]
     },
     "math\/R-cran-gmp": {
@@ -4040,6 +4055,9 @@
     "net\/tcpreen": {
         "custommatch": "cpe:2.3:a:tcpreen:tcpreen:*:*:*:*:*:*:*:*"
     },
+    "net\/tcpslice": {
+        "confirmedmatch": "cpe:2.3:a:tcpdump:tcpslice:*:*:*:*:*:*:*:*"
+    },
     "news\/diablo": {
         "nomatch": [
             "cpe:2.3:a:openstack:diablo:*:*:*:*:*:*:*:*"
@@ -4406,6 +4424,12 @@
             "cpe:2.3:a:rapid7:nexpose:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/rubygem-vault": {
+        "nomatch": [
+            "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tibco:vault:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/snoopy": {
         "nomatch": [
             "cpe:2.3:a:snoopy_project:snoopy:*:*:*:*:*:*:*:*"
@@ -4541,6 +4565,9 @@
         "nomatch": [
             "cpe:2.3:a:debian:most:*:*:*:*:*:*:*:*"
         ]
+    },
+    "sysutils\/nix": {
+        "confirmedmatch": "cpe:2.3:a:nix_project:nix:*:*:*:*:*:*:*:*"
     },
     "sysutils\/nvclock": {
         "nomatch": [
@@ -5136,6 +5163,11 @@
             "cpe:2.3:a:kde:ark:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/p5-CGI": {
+        "nomatch": [
+            "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/p5-FCGI": {
         "nomatch": [
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
@@ -5269,6 +5301,9 @@
             "cpe:2.3:a:parity:browser:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/rubygem-cgi": {
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-fcgi": {
         "nomatch": [
             "cpe:2.3:a:fastcgi:fcgi:*:*:*:*:*:*:*:*"
@@ -5357,6 +5392,11 @@
     "x11-fm\/krusader2": {
         "custommatch": "cpe:2.3:a:krusader:krusader:*:*:*:*:*:*:*:*"
     },
+    "x11-fm\/nemo": {
+        "nomatch": [
+            "cpe:2.3:a:nvidia:nemo:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11-fonts\/xfs": {
         "custommatch": "cpe:2.3:a:x\\.org:x_font_server:*:*:*:*:*:*:*:*"
     },
@@ -5366,6 +5406,11 @@
     "x11-themes\/gnome-icons-crystal": {
         "nomatch": [
             "cpe:2.3:a:nuuo:crystal:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-themes\/gnome-icons-iris": {
+        "nomatch": [
+            "cpe:2.3:a:iris-go:iris:*:*:*:*:*:*:*:*"
         ]
     },
     "x11-themes\/plasma5-breeze": {
