@@ -16,11 +16,11 @@ automatically updated once a day.
 
 | Status                                                              | # Ports                                                                |
 | --------------------------------------------------------------------| ---------------------------------------------------------------------: |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2856](https://github.com/decke/chkcpe/wiki/valid)                 |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2858](https://github.com/decke/chkcpe/wiki/valid)                 |
 | ![invalid](https://img.shields.io/badge/invalid-red)                | [0](https://github.com/decke/chkcpe/wiki/invalid)             |
-| ![deprecated](https://img.shields.io/badge/deprecated-red)          | [3](https://github.com/decke/chkcpe/wiki/deprecated)       |
+| ![deprecated](https://img.shields.io/badge/deprecated-red)          | [2](https://github.com/decke/chkcpe/wiki/deprecated)       |
 | ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [13](https://github.com/decke/chkcpe/wiki/checkneeded)     |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [5](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 27202 | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 27204 | |
 
-Last updated: Sat Feb  5 02:40:14 UTC 2022
+Last updated: Sun Feb  6 02:57:02 UTC 2022
