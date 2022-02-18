@@ -343,6 +343,12 @@
             "cpe:2.3:a:iris:star:*:*:*:*:*:*:*:*"
         ]
     },
+    "cad\/freecad": {
+        "confirmedmatch": "cpe:2.3:a:freecad_project:freecad:*:*:*:*:*:*:*:*"
+    },
+    "cad\/gerbv": {
+        "confirmedmatch": "cpe:2.3:a:gerbv_project:gerbv:*:*:*:*:*:*:*:*"
+    },
     "cad\/impact": {
         "nomatch": [
             "cpe:2.3:a:nokia:impact:*:*:*:*:*:*:*:*"
@@ -395,16 +401,6 @@
             "cpe:2.3:a:debian:tin:*:*:*:*:*:*:*:*"
         ]
     },
-    "chinese\/wordpress-zh_CN": {
-        "nomatch": [
-            "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "chinese\/wordpress-zh_TW": {
-        "nomatch": [
-            "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*"
-        ]
-    },
     "comms\/locator": {
         "nomatch": [
             "cpe:2.3:a:joachim_ruhs:locator:*:*:*:*:*:*:*:*"
@@ -438,10 +434,8 @@
             "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
     },
-    "converters\/p5-JSON1": {
-        "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
-        ]
+    "converters\/py-svglib": {
+        "confirmedmatch": "cpe:2.3:a:svglib_project:svglib:*:*:*:*:*:*:*:*"
     },
     "converters\/recode": {
         "nomatch": [
@@ -471,6 +465,9 @@
         "nomatch": [
             "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/mdbtools": {
+        "confirmedmatch": "cpe:2.3:a:mdbtools_project:mdbtools:*:*:*:*:*:*:*:*"
     },
     "databases\/ocaml-mysql": {
         "nomatch": [
@@ -852,6 +849,9 @@
             "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/bingrep": {
+        "confirmedmatch": "cpe:2.3:a:bingrep_project:bingrep:*:*:*:*:*:*:*:*"
+    },
     "devel\/cflow": {
         "nomatch": [
             "cpe:2.3:a:gnu:cflow:*:*:*:*:*:*:*:*"
@@ -1015,9 +1015,6 @@
     "devel\/libast": {
         "custommatch": "cpe:2.3:a:libast:libast:*:*:*:*:*:*:*:*"
     },
-    "devel\/libedit": {
-        "confirmedmatch": "cpe:2.3:a:libedit_project:libedit:*:*:*:*:*:*:*:*"
-    },
     "devel\/libnotify": {
         "nomatch": [
             "cpe:2.3:a:libnotify_project:libnotify:*:*:*:*:*:*:*:*"
@@ -1033,6 +1030,11 @@
     },
     "devel\/log4sh": {
         "custommatch": "cpe:2.3:a:log4sh:log4sh:*:*:*:*:*:*:*:*"
+    },
+    "devel\/loguru": {
+        "nomatch": [
+            "cpe:2.3:a:loguru_project:loguru:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/loki": {
         "nomatch": [
@@ -1408,11 +1410,6 @@
             "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-click6": {
-        "nomatch": [
-            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
-        ]
-    },
     "devel\/py-click7": {
         "nomatch": [
             "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
@@ -1471,7 +1468,8 @@
     },
     "devel\/py-infinity": {
         "nomatch": [
-            "cpe:2.3:a:navarino:infinity:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:navarino:infinity:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pega:infinity:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-inflect": {
@@ -1495,6 +1493,9 @@
         "nomatch": [
             "cpe:2.3:a:jsonpointer_project:jsonpointer:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-loguru": {
+        "confirmedmatch": "cpe:2.3:a:loguru_project:loguru:*:*:*:*:*:*:*:*"
     },
     "devel\/py-magic": {
         "nomatch": [
@@ -1562,34 +1563,6 @@
     "devel\/py-py": {
         "nomatch": [
             "cpe:2.3:a:pytest:py:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/py-qt5-core": {
-        "nomatch": [
-            "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:mobileiron:core:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:api-platform:core:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/py-qt5-dbus": {
-        "nomatch": [
-            "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/py-qt5-designer": {
-        "nomatch": [
-            "cpe:2.3:a:vaadin:designer:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/py-qt5-help": {
-        "nomatch": [
-            "cpe:2.3:a:cuore:help:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:helpproject:help:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/py-qt5-location": {
-        "nomatch": [
-            "cpe:2.3:a:location_module_project:location:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-rush": {
@@ -1791,9 +1764,6 @@
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-message_bus": {
-        "confirmedmatch": "cpe:2.3:a:discourse:message_bus:*:*:*:*:*:*:*:*"
-    },
     "devel\/rubygem-mocha": {
         "nomatch": [
             "cpe:2.3:a:mochajs:mocha:*:*:*:*:*:*:*:*"
@@ -1908,6 +1878,9 @@
     },
     "devel\/sonarqube-ant-task": {
         "custommatch": "cpe:2.3:a:sonarsource:sonarqube\\-ant\\-task:*:*:*:*:*:*:*:*"
+    },
+    "devel\/spin": {
+        "confirmedmatch": "cpe:2.3:a:spinroot:spin:*:*:*:*:*:*:*:*"
     },
     "devel\/st": {
         "nomatch": [
@@ -2860,6 +2833,14 @@
             "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/blender-lts29": {
+        "confirmedmatch": "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*"
+    },
+    "graphics\/camera": {
+        "nomatch": [
+            "cpe:2.3:a:samsung:camera:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/deegree-wms": {
         "nomatch": [
             "cpe:2.3:a:wms_project:wms:*:*:*:*:*:*:*:*"
@@ -2947,6 +2928,9 @@
             "cpe:2.3:a:apple:preview:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/proj": {
+        "confirmedmatch": "cpe:2.3:a:proj_project:proj:*:*:*:*:*:*:*:*"
+    },
     "graphics\/py-cairo": {
         "nomatch": [
             "cpe:2.3:a:redhat:cairo:*:*:*:*:*:*:*:*",
@@ -2982,9 +2966,6 @@
         "nomatch": [
             "cpe:2.3:a:wayland:wayland:*:*:*:*:*:*:*:*"
         ]
-    },
-    "graphics\/radiance": {
-        "custommatch": "cpe:2.3:a:radiance:radiance:*:*:*:*:*:*:*:*"
     },
     "graphics\/rubygem-cairo": {
         "nomatch": [
@@ -3222,9 +3203,6 @@
     "lang\/gauche": {
         "custommatch": "cpe:2.3:a:gauche:gauche:*:*:*:*:*:*:*:*"
     },
-    "lang\/julia": {
-        "confirmedmatch": "cpe:2.3:a:julialang:julia:*:*:*:*:*:*:*:*"
-    },
     "lang\/kotlin": {
         "nomatch": [
             "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*"
@@ -3321,6 +3299,11 @@
     "mail\/imap-uw": {
         "nomatch": [
             "cpe:2.3:a:cyrus:imap:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/lens": {
+        "nomatch": [
+            "cpe:2.3:a:mirantis:lens:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/libspf": {
@@ -3511,9 +3494,6 @@
             "cpe:2.3:a:creolabs:gravity:*:*:*:*:*:*:*:*"
         ]
     },
-    "math\/igraph": {
-        "confirmedmatch": "cpe:2.3:a:igraph:igraph:*:*:*:*:*:*:*:*"
-    },
     "math\/lean": {
         "nomatch": [
             "cpe:2.3:a:quantconnect:lean:*:*:*:*:*:*:*:*"
@@ -3528,9 +3508,6 @@
         "nomatch": [
             "cpe:2.3:a:pvpgn:stats:*:*:*:*:*:*:*:*"
         ]
-    },
-    "math\/py-cvxopt": {
-        "confirmedmatch": "cpe:2.3:a:cvxopt_project:cvxopt:*:*:*:*:*:*:*:*"
     },
     "math\/py-deap": {
         "nomatch": [
@@ -3654,6 +3631,9 @@
             "cpe:2.3:a:adobe:xd:*:*:*:*:*:*:*:*"
         ]
     },
+    "multimedia\/assimp": {
+        "confirmedmatch": "cpe:2.3:a:assimp:assimp:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/celluloid": {
         "nomatch": [
             "cpe:2.3:a:celluloidapp:celluloid:*:*:*:*:*:*:*:*"
@@ -3668,6 +3648,9 @@
     "multimedia\/kaffeine": {
         "custommatch": "cpe:2.3:a:kaffeine:kaffeine_player:*:*:*:*:*:*:*:*"
     },
+    "multimedia\/libde265": {
+        "confirmedmatch": "cpe:2.3:a:struktur:libde265:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/libxine": {
         "custommatch": "cpe:2.3:a:xine:xine\\-lib:*:*:*:*:*:*:*:*"
     },
@@ -3675,6 +3658,9 @@
         "nomatch": [
             "cpe:2.3:a:tsmuxer_project:tsmuxer:*:*:*:*:*:*:*:*"
         ]
+    },
+    "multimedia\/navidrome": {
+        "confirmedmatch": "cpe:2.3:a:navidrome:navidrome:*:*:*:*:*:*:*:*"
     },
     "multimedia\/rubygem-gstreamer": {
         "nomatch": [
@@ -3904,9 +3890,6 @@
             "cpe:2.3:a:pingidentity:ldapsdk:*:*:*:*:*:*:*:*"
         ]
     },
-    "net\/libslirp": {
-        "confirmedmatch": "cpe:2.3:a:libslirp_project:libslirp:*:*:*:*:*:*:*:*"
-    },
     "net\/liferea": {
         "custommatch": "cpe:2.3:a:liferea:liferea:*:*:*:*:*:*:*:*"
     },
@@ -3975,12 +3958,6 @@
     "net\/py-oauth": {
         "nomatch": [
             "cpe:2.3:a:atlassian:oauth:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net\/py-qt5-network": {
-        "nomatch": [
-            "cpe:2.3:a:fidelissecurity:network:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:hp:network:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/py-sbws": {
@@ -4310,9 +4287,6 @@
         "nomatch": [
             "cpe:2.3:a:kleopatra_project:kleopatra:*:*:*:*:*:*:*:*"
         ]
-    },
-    "security\/libpwquality": {
-        "confirmedmatch": "cpe:2.3:a:libpwquality_project:libpwquality:*:*:*:*:*:*:*:*"
     },
     "security\/mcrypt": {
         "custommatch": "cpe:2.3:a:mcrypt:mcrypt:*:*:*:*:*:*:*:*"
@@ -4759,6 +4733,9 @@
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
     },
+    "textproc\/diffutils": {
+        "confirmedmatch": "cpe:2.3:a:gnu:diffutils:*:*:*:*:*:*:*:*"
+    },
     "textproc\/elixir-sweet_xml": {
         "nomatch": [
             "cpe:2.3:a:kbrw:sweet_xml:*:*:*:*:*:*:*:*"
@@ -5121,6 +5098,11 @@
             "cpe:2.3:a:twibright:links:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/lux": {
+        "nomatch": [
+            "cpe:2.3:a:luxcore:lux:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/man2web": {
         "custommatch": "cpe:2.3:a:man2web:man2web:*:*:*:*:*:*:*:*"
     },
@@ -5154,9 +5136,6 @@
     },
     "www\/nspluginwrapper": {
         "custommatch": "cpe:2.3:a:nspluginwrapper:nspluginwrapper:*:*:*:*:*:*:*:*"
-    },
-    "www\/owncast": {
-        "confirmedmatch": "cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*"
     },
     "www\/p5-Ark": {
         "nomatch": [
@@ -5256,25 +5235,13 @@
             "cpe:2.3:a:mechanize_project:mechanize:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/py-pyjwt": {
-        "confirmedmatch": "cpe:2.3:a:pyjwt_project:pyjwt:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-qt5-webkit": {
-        "nomatch": [
-            "cpe:2.3:a:webkit:webkit:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:apple:webkit:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "www\/py-qt5-websockets": {
-        "nomatch": [
-            "cpe:2.3:a:myks:websockets:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*"
-        ]
-    },
     "www\/py-selenium": {
         "nomatch": [
             "cpe:2.3:a:jenkins:selenium:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/py-treq": {
+        "confirmedmatch": "cpe:2.3:a:twistedmatrix:treq:*:*:*:*:*:*:*:*"
     },
     "www\/qt5-webkit": {
         "nomatch": [
@@ -5369,9 +5336,6 @@
     "www\/tdiary": {
         "custommatch": "cpe:2.3:a:tdiary:tdiary:*:*:*:*:*:*:*:*"
     },
-    "www\/ulfius": {
-        "confirmedmatch": "cpe:2.3:a:ulfius_project:ulfius:*:*:*:*:*:*:*:*"
-    },
     "www\/validator": {
         "nomatch": [
             "cpe:2.3:a:validator_project:validator:*:*:*:*:*:*:*:*"
@@ -5432,12 +5396,6 @@
     "x11-toolkits\/py-fltk": {
         "nomatch": [
             "cpe:2.3:a:fltk_project:fltk:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "x11-toolkits\/py-qt5-widgets": {
-        "nomatch": [
-            "cpe:2.3:a:widgets_project:widgets:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:yahoo:widgets:*:*:*:*:*:*:*:*"
         ]
     },
     "x11-toolkits\/qt5-widgets": {
