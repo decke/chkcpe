@@ -456,6 +456,9 @@
             "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/liquibase": {
+        "confirmedmatch": "cpe:2.3:a:liquibase:liquibase:*:*:*:*:*:*:*:*"
+    },
     "databases\/mantis": {
         "nomatch": [
             "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
@@ -1007,6 +1010,15 @@
             "cpe:2.3:a:jenkins:findbugs:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/jetbrains-clion": {
+        "confirmedmatch": "cpe:2.3:a:jetbrains:clion:*:*:*:*:*:*:*:*"
+    },
+    "devel\/jetbrains-phpstorm": {
+        "confirmedmatch": "cpe:2.3:a:jetbrains:phpstorm:*:*:*:*:*:*:*:*"
+    },
+    "devel\/jetbrains-webstorm": {
+        "confirmedmatch": "cpe:2.3:a:jetbrains:webstorm:*:*:*:*:*:*:*:*"
+    },
     "devel\/lemon": {
         "nomatch": [
             "cpe:2.3:a:mossle:lemon:*:*:*:*:*:*:*:*"
@@ -1072,6 +1084,11 @@
     "devel\/msgpack": {
         "nomatch": [
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/mustache": {
+        "nomatch": [
+            "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/ninja": {
@@ -1341,6 +1358,11 @@
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/pecl-mustache": {
+        "nomatch": [
+            "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/pecl-protobuf": {
         "nomatch": [
             "cpe:2.3:a:golang:protobuf:*:*:*:*:*:*:*:*",
@@ -1466,6 +1488,11 @@
             "cpe:2.3:a:freebsd:freebsd:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-hatch": {
+        "nomatch": [
+            "cpe:2.3:a:alienwp:hatch:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-infinity": {
         "nomatch": [
             "cpe:2.3:a:navarino:infinity:*:*:*:*:*:*:*:*",
@@ -1481,6 +1508,12 @@
         "nomatch": [
             "cpe:2.3:a:nero:installer:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:apple:installer:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-installer03": {
+        "nomatch": [
+            "cpe:2.3:a:apple:installer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nero:installer:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-jira": {
@@ -1774,11 +1807,26 @@
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-mustache": {
+        "nomatch": [
+            "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-mustache0": {
+        "nomatch": [
+            "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-platform": {
         "nomatch": [
             "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:pega:platform:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-plist": {
+        "nomatch": [
+            "cpe:2.3:a:plist_project:plist:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-readline": {
@@ -1853,6 +1901,9 @@
             "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubymine": {
+        "confirmedmatch": "cpe:2.3:a:jetbrains:rubymine:*:*:*:*:*:*:*:*"
+    },
     "devel\/rvm": {
         "nomatch": [
             "cpe:2.3:a:rvm_project:rvm:*:*:*:*:*:*:*:*"
@@ -1925,10 +1976,19 @@
             "cpe:2.3:a:hidemaru:editor:*:*:*:*:*:*:*:*"
         ]
     },
+    "editors\/diamond": {
+        "nomatch": [
+            "cpe:2.3:a:latticesemi:diamond:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:bit.diamonds:diamond:*:*:*:*:*:*:*:*"
+        ]
+    },
     "editors\/e3": {
         "nomatch": [
             "cpe:2.3:a:elipse:e3:*:*:*:*:*:*:*:*"
         ]
+    },
+    "editors\/kate": {
+        "confirmedmatch": "cpe:2.3:a:kde:kate:*:*:*:*:*:*:*:*"
     },
     "editors\/kile": {
         "custommatch": "cpe:2.3:a:kile:kile:*:*:*:*:*:*:*:*"
@@ -2599,6 +2659,11 @@
             "cpe:2.3:a:weban:an:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/atomix": {
+        "nomatch": [
+            "cpe:2.3:a:atomix:atomix:*:*:*:*:*:*:*:*"
+        ]
+    },
     "games\/bass": {
         "nomatch": [
             "cpe:2.3:a:un4seen:bass:*:*:*:*:*:*:*:*"
@@ -2668,6 +2733,9 @@
         "nomatch": [
             "cpe:2.3:a:jzip:jzip:*:*:*:*:*:*:*:*"
         ]
+    },
+    "games\/minetest": {
+        "confirmedmatch": "cpe:2.3:a:minetest:minetest:*:*:*:*:*:*:*:*"
     },
     "games\/neo": {
         "nomatch": [
@@ -3895,6 +3963,9 @@
     },
     "net\/miredo": {
         "custommatch": "cpe:2.3:a:miredo:miredo:*:*:*:*:*:*:*:*"
+    },
+    "net\/nbdkit": {
+        "confirmedmatch": "cpe:2.3:a:nbdkit_project:nbdkit:*:*:*:*:*:*:*:*"
     },
     "net\/netcat": {
         "nomatch": [
@@ -5360,6 +5431,9 @@
         "nomatch": [
             "cpe:2.3:a:nvidia:nemo:*:*:*:*:*:*:*:*"
         ]
+    },
+    "x11-fonts\/pcf2bdf": {
+        "confirmedmatch": "cpe:2.3:a:pcf2bdf_project:pcf2bdf:*:*:*:*:*:*:*:*"
     },
     "x11-fonts\/xfs": {
         "custommatch": "cpe:2.3:a:x\\.org:x_font_server:*:*:*:*:*:*:*:*"
