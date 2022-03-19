@@ -4586,6 +4586,12 @@
             "cpe:2.3:a:microsoft:pslist:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/puppet6": {
+        "custommatch": "cpe:2.3:a:puppet:puppet:*:*:*:*:*:*:*:*"
+    },
+    "sysutils\/puppet7": {
+        "custommatch": "cpe:2.3:a:puppet:puppet:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/py-ansible-runner": {
         "custommatch": "cpe:2.3:a:redhat:ansible\\-runner:*:*:*:*:*:*:*:*"
     },
