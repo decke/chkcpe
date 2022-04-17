@@ -691,6 +691,9 @@
             "cpe:2.3:a:soci_project:soci:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/timescaledb": {
+        "confirmedmatch": "cpe:2.3:a:timescale:timescaledb:*:*:*:*:*:*:*:*"
+    },
     "deskutils\/calendar": {
         "nomatch": [
             "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*",
@@ -730,6 +733,11 @@
     },
     "deskutils\/phpicalendar": {
         "custommatch": "cpe:2.3:a:phpicalendar:phpicalendar:*:*:*:*:*:*:*:*"
+    },
+    "deskutils\/pinot": {
+        "nomatch": [
+            "cpe:2.3:a:apache:pinot:*:*:*:*:*:*:*:*"
+        ]
     },
     "deskutils\/synapse": {
         "nomatch": [
@@ -999,6 +1007,11 @@
     },
     "devel\/libast": {
         "custommatch": "cpe:2.3:a:libast:libast:*:*:*:*:*:*:*:*"
+    },
+    "devel\/libjitterentropy": {
+        "nomatch": [
+            "cpe:2.3:a:elektrobit:libjitterentropy:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/libnotify": {
         "nomatch": [
@@ -1432,6 +1445,11 @@
             "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-enlighten": {
+        "nomatch": [
+            "cpe:2.3:a:accesspressthemes:enlighten:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-fam": {
         "nomatch": [
             "cpe:2.3:a:sgi:fam:*:*:*:*:*:*:*:*"
@@ -1639,6 +1657,11 @@
     "devel\/rubygem-akismet": {
         "nomatch": [
             "cpe:2.3:a:automattic:akismet:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-async": {
+        "nomatch": [
+            "cpe:2.3:a:async_project:async:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-attic": {
@@ -2883,6 +2906,11 @@
             "cpe:2.3:a:hex-rays:ida:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/lux": {
+        "nomatch": [
+            "cpe:2.3:a:luxcore:lux:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/magnum": {
         "nomatch": [
             "cpe:2.3:a:openstack:magnum:*:*:*:*:*:*:*:*"
@@ -3235,6 +3263,11 @@
             "cpe:2.3:a:tcl:tcl:*:*:*:*:*:*:*:*"
         ]
     },
+    "lang\/pfe": {
+        "nomatch": [
+            "cpe:2.3:a:elektrobit:pfe:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/python": {
         "nomatch": [
             "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
@@ -3414,6 +3447,11 @@
     "mail\/squirrelmail-websearch-plugin": {
         "nomatch": [
             "cpe:2.3:a:novell:web_search:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-Amelia": {
+        "nomatch": [
+            "cpe:2.3:a:tms-outsource:amelia:*:*:*:*:*:*:*:*"
         ]
     },
     "math\/R-cran-backports": {
@@ -3845,6 +3883,9 @@
         "nomatch": [
             "cpe:2.3:a:avahi:avahi:*:*:*:*:*:*:*:*"
         ]
+    },
+    "net\/clash": {
+        "confirmedmatch": "cpe:2.3:a:clash_project:clash:*:*:*:*:*:*:*:*"
     },
     "net\/dhcpd": {
         "nomatch": [
@@ -4293,6 +4334,11 @@
             "cpe:2.3:a:kleopatra_project:kleopatra:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/libxcrypt": {
+        "nomatch": [
+            "cpe:2.3:a:elektrobit:libxcrypt:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/mcrypt": {
         "custommatch": "cpe:2.3:a:mcrypt:mcrypt:*:*:*:*:*:*:*:*"
     },
@@ -4634,6 +4680,9 @@
         "nomatch": [
             "cpe:2.3:a:boltcms:bolt:*:*:*:*:*:*:*:*"
         ]
+    },
+    "sysutils\/rubygem-smart_proxy_salt": {
+        "confirmedmatch": "cpe:2.3:a:theforeman:smart_proxy_salt:*:*:*:*:*:*:*:*"
     },
     "sysutils\/runit": {
         "custommatch": "cpe:2.3:a:runit:runit:*:*:*:*:*:*:*:*"
@@ -5142,6 +5191,9 @@
     "www\/nspluginwrapper": {
         "custommatch": "cpe:2.3:a:nspluginwrapper:nspluginwrapper:*:*:*:*:*:*:*:*"
     },
+    "www\/openresty": {
+        "confirmedmatch": "cpe:2.3:a:openresty:openresty:*:*:*:*:*:*:*:*"
+    },
     "www\/p5-Ark": {
         "nomatch": [
             "cpe:2.3:a:kde:ark:*:*:*:*:*:*:*:*"
@@ -5309,6 +5361,9 @@
             "cpe:2.3:a:jwt_project:jwt:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/rubygem-kubeclient": {
+        "confirmedmatch": "cpe:2.3:a:redhat:kubeclient:*:*:*:*:*:*:*:*"
+    },
     "www\/rubygem-less": {
         "nomatch": [
             "cpe:2.3:a:gnu:less:*:*:*:*:*:*:*:*"
@@ -5458,6 +5513,9 @@
             "cpe:2.3:a:apple:terminal:*:*:*:*:*:*:*:*"
         ]
     },
+    "x11\/guake": {
+        "confirmedmatch": "cpe:2.3:a:guake-project:guake:*:*:*:*:*:*:*:*"
+    },
     "x11\/mlterm": {
         "custommatch": "cpe:2.3:a:mlterm:mlterm:*:*:*:*:*:*:*:*"
     },
@@ -5473,6 +5531,12 @@
         "nomatch": [
             "cpe:2.3:a:gitlab:runner:*:*:*:*:*:*:*:*"
         ]
+    },
+    "x11\/swaylock": {
+        "confirmedmatch": "cpe:2.3:a:swayvm:swaylock:*:*:*:*:*:*:*:*"
+    },
+    "x11\/swaylock-effects": {
+        "confirmedmatch": "cpe:2.3:a:swayvm:swaylock:*:*:*:*:*:*:*:*"
     },
     "x11\/xcb": {
         "nomatch": [
