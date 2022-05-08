@@ -447,6 +447,9 @@
             "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/geoserver-mysql-plugin": {
+        "confirmedmatch": "cpe:2.3:a:osgeo:geoserver:*:*:*:*:*:*:*:*"
+    },
     "databases\/mantis": {
         "nomatch": [
             "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
@@ -463,6 +466,11 @@
             "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/ocaml-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/p5-BSON": {
@@ -609,6 +617,11 @@
             "cpe:2.3:a:rrdtool_project:rrdtool:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-tarantool": {
         "nomatch": [
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
@@ -628,6 +641,11 @@
             "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/qt5-sqldrivers-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/rubygem-dbi": {
@@ -681,6 +699,11 @@
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-tarantool": {
         "nomatch": [
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
@@ -689,6 +712,16 @@
     "databases\/soci": {
         "nomatch": [
             "cpe:2.3:a:soci_project:soci:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/tcl-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/calendar": {
@@ -2880,6 +2913,9 @@
             "cpe:2.3:a:samsung:camera:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/chafa": {
+        "confirmedmatch": "cpe:2.3:a:chafa_project:chafa:*:*:*:*:*:*:*:*"
+    },
     "graphics\/geoserver": {
         "custommatch": "cpe:2.3:a:geoserver:geoserver:*:*:*:*:*:*:*:*"
     },
@@ -3476,6 +3512,11 @@
     "math\/R-cran-magic": {
         "nomatch": [
             "cpe:2.3:a:freedomscientific:magic:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/R-cran-moments": {
+        "nomatch": [
+            "cpe:2.3:a:synology:moments:*:*:*:*:*:*:*:*"
         ]
     },
     "math\/R-cran-numbers": {
@@ -4392,15 +4433,12 @@
             "cpe:2.3:a:pgpdump_project:pgpdump:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/py-pwntools": {
+        "confirmedmatch": "cpe:2.3:a:pwntools_project:pwntools:*:*:*:*:*:*:*:*"
+    },
     "security\/py-safe": {
         "nomatch": [
             "cpe:2.3:a:f-secure:safe:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "security\/py-ssh": {
-        "nomatch": [
-            "cpe:2.3:a:jenkins:ssh:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:ssh:ssh:*:*:*:*:*:*:*:*"
         ]
     },
     "security\/py-xmlsec": {
@@ -4591,6 +4629,9 @@
             "cpe:2.3:a:christos_zoulas:file:*:*:*:*:*:*:*:*"
         ]
     },
+    "sysutils\/pesign": {
+        "confirmedmatch": "cpe:2.3:a:pesign_project:pesign:*:*:*:*:*:*:*:*"
+    },
     "sysutils\/pslist": {
         "nomatch": [
             "cpe:2.3:a:microsoft:pslist:*:*:*:*:*:*:*:*"
@@ -4725,6 +4766,9 @@
         "nomatch": [
             "cpe:2.3:a:rio_project:rio:*:*:*:*:*:*:*:*"
         ]
+    },
+    "textproc\/apache-xmlbeans": {
+        "confirmedmatch": "cpe:2.3:a:apache:xmlbeans:*:*:*:*:*:*:*:*"
     },
     "textproc\/atom": {
         "nomatch": [
@@ -5086,6 +5130,9 @@
             "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/glewlwyd": {
+        "confirmedmatch": "cpe:2.3:a:glewlwyd_project:glewlwyd:*:*:*:*:*:*:*:*"
+    },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
     },
@@ -5231,6 +5278,12 @@
         "nomatch": [
             "cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/py-httpx": {
+        "confirmedmatch": "cpe:2.3:a:encode:httpx:*:*:*:*:*:*:*:*"
+    },
+    "www\/py-httpx013": {
+        "confirmedmatch": "cpe:2.3:a:encode:httpx:*:*:*:*:*:*:*:*"
     },
     "www\/py-libsass": {
         "nomatch": [
