@@ -331,16 +331,10 @@ class Runner
             return false;
         }
 
-        if (!$this->scanPorts()) {
-            Logger::error('Scanning ports failed');
-            return false;
-        }
+        $this->scanPorts();
 
         // retry scanning for the ports that failed at first attempt
-        if ($this->scanPorts() != true) {
-            Logger::error('Scanning ports failed');
-            return false;
-        }
+        $this->scanPorts();
 
         if (!$this->comparePortsWithDictionary()) {
             Logger::error('Comparing ports with CPE Dictionary failed');
