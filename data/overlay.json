@@ -447,9 +447,6 @@
             "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/geoserver-mysql-plugin": {
-        "confirmedmatch": "cpe:2.3:a:osgeo:geoserver:*:*:*:*:*:*:*:*"
-    },
     "databases\/mantis": {
         "nomatch": [
             "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
@@ -2913,9 +2910,6 @@
             "cpe:2.3:a:samsung:camera:*:*:*:*:*:*:*:*"
         ]
     },
-    "graphics\/chafa": {
-        "confirmedmatch": "cpe:2.3:a:chafa_project:chafa:*:*:*:*:*:*:*:*"
-    },
     "graphics\/geoserver": {
         "custommatch": "cpe:2.3:a:geoserver:geoserver:*:*:*:*:*:*:*:*"
     },
@@ -4433,9 +4427,6 @@
             "cpe:2.3:a:pgpdump_project:pgpdump:*:*:*:*:*:*:*:*"
         ]
     },
-    "security\/py-pwntools": {
-        "confirmedmatch": "cpe:2.3:a:pwntools_project:pwntools:*:*:*:*:*:*:*:*"
-    },
     "security\/py-safe": {
         "nomatch": [
             "cpe:2.3:a:f-secure:safe:*:*:*:*:*:*:*:*"
@@ -4629,9 +4620,6 @@
             "cpe:2.3:a:christos_zoulas:file:*:*:*:*:*:*:*:*"
         ]
     },
-    "sysutils\/pesign": {
-        "confirmedmatch": "cpe:2.3:a:pesign_project:pesign:*:*:*:*:*:*:*:*"
-    },
     "sysutils\/pslist": {
         "nomatch": [
             "cpe:2.3:a:microsoft:pslist:*:*:*:*:*:*:*:*"
@@ -4766,9 +4754,6 @@
         "nomatch": [
             "cpe:2.3:a:rio_project:rio:*:*:*:*:*:*:*:*"
         ]
-    },
-    "textproc\/apache-xmlbeans": {
-        "confirmedmatch": "cpe:2.3:a:apache:xmlbeans:*:*:*:*:*:*:*:*"
     },
     "textproc\/atom": {
         "nomatch": [
@@ -5130,9 +5115,6 @@
             "cpe:2.3:a:oracle:glassfish:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/glewlwyd": {
-        "confirmedmatch": "cpe:2.3:a:glewlwyd_project:glewlwyd:*:*:*:*:*:*:*:*"
-    },
     "www\/gregarius": {
         "custommatch": "cpe:2.3:a:gregarius:gregarius:*:*:*:*:*:*:*:*"
     },
@@ -5278,12 +5260,6 @@
         "nomatch": [
             "cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*"
         ]
-    },
-    "www\/py-httpx": {
-        "confirmedmatch": "cpe:2.3:a:encode:httpx:*:*:*:*:*:*:*:*"
-    },
-    "www\/py-httpx013": {
-        "confirmedmatch": "cpe:2.3:a:encode:httpx:*:*:*:*:*:*:*:*"
     },
     "www\/py-libsass": {
         "nomatch": [
