@@ -1807,6 +1807,11 @@
             "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-json25": {
+        "nomatch": [
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-logger": {
         "nomatch": [
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
@@ -2932,11 +2937,6 @@
             "cpe:2.3:a:luxcore:lux:*:*:*:*:*:*:*:*"
         ]
     },
-    "graphics\/magnum": {
-        "nomatch": [
-            "cpe:2.3:a:openstack:magnum:*:*:*:*:*:*:*:*"
-        ]
-    },
     "graphics\/milton": {
         "nomatch": [
             "cpe:2.3:a:milton:milton:*:*:*:*:*:*:*:*"
@@ -2996,6 +2996,9 @@
         "nomatch": [
             "cpe:2.3:a:apple:preview:*:*:*:*:*:*:*:*"
         ]
+    },
+    "graphics\/py-OWSLib": {
+        "confirmedmatch": "cpe:2.3:a:github:owslib:*:*:*:*:*:*:*:*"
     },
     "graphics\/py-cairo": {
         "nomatch": [
@@ -3184,14 +3187,6 @@
             "cpe:2.3:a:sun:jdk:*:*:*:*:*:*:*:*"
         ]
     },
-    "java\/jdk12-doc": {
-        "nomatch": [
-            "cpe:2.3:a:hp:jdk:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:ibm:jdk:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:oracle:jdk:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:sun:jdk:*:*:*:*:*:*:*:*"
-        ]
-    },
     "java\/jdk8-doc": {
         "nomatch": [
             "cpe:2.3:a:hp:jdk:*:*:*:*:*:*:*:*",
@@ -3273,6 +3268,9 @@
         "nomatch": [
             "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*"
         ]
+    },
+    "lang\/njs": {
+        "confirmedmatch": "cpe:2.3:a:f5:njs:*:*:*:*:*:*:*:*"
     },
     "lang\/onyx": {
         "nomatch": [
@@ -3723,6 +3721,9 @@
             "cpe:2.3:a:vmware:player:*:*:*:*:*:*:*:*"
         ]
     },
+    "multimedia\/gpac-mp4box": {
+        "confirmedmatch": "cpe:2.3:a:gpac:mp4box:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/kaffeine": {
         "custommatch": "cpe:2.3:a:kaffeine:kaffeine_player:*:*:*:*:*:*:*:*"
     },
@@ -3761,6 +3762,11 @@
     },
     "net-im\/centerim": {
         "custommatch": "cpe:2.3:a:centerim:centerim:*:*:*:*:*:*:*:*"
+    },
+    "net-im\/jitsi-prosody-plugins": {
+        "nomatch": [
+            "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
+        ]
     },
     "net-im\/jitsi-videobridge": {
         "nomatch": [
@@ -3908,6 +3914,11 @@
     "net\/avahi-header": {
         "nomatch": [
             "cpe:2.3:a:avahi:avahi:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/charm": {
+        "nomatch": [
+            "cpe:2.3:a:charm:charm:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/dhcpd": {
@@ -4462,6 +4473,9 @@
     "security\/snowflake-tor": {
         "custommatch": "cpe:2.3:a:torproject:snowflake:*:*:*:*:*:*:*:*"
     },
+    "security\/tang": {
+        "confirmedmatch": "cpe:2.3:a:tang_project:tang:*:*:*:*:*:*:*:*"
+    },
     "security\/teleport": {
         "nomatch": [
             "cpe:2.3:a:tp4a:teleport:*:*:*:*:*:*:*:*"
@@ -4578,6 +4592,9 @@
         "nomatch": [
             "cpe:2.3:a:alterpoint:logwatch:*:*:*:*:*:*:*:*"
         ]
+    },
+    "sysutils\/loki": {
+        "confirmedmatch": "cpe:2.3:a:grafana:loki:*:*:*:*:*:*:*:*"
     },
     "sysutils\/most": {
         "nomatch": [
@@ -4873,6 +4890,11 @@
     "textproc\/py-CommonMark": {
         "nomatch": [
             "cpe:2.3:a:thephpleague:commonmark:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/py-docutils": {
+        "nomatch": [
+            "cpe:2.3:a:nim-lang:docutils:*:*:*:*:*:*:*:*"
         ]
     },
     "textproc\/py-hunspell": {
