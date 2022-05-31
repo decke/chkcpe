@@ -1807,11 +1807,6 @@
             "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-json25": {
-        "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
-        ]
-    },
     "devel\/rubygem-logger": {
         "nomatch": [
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
@@ -3269,9 +3264,6 @@
             "cpe:2.3:a:jetbrains:kotlin:*:*:*:*:*:*:*:*"
         ]
     },
-    "lang\/njs": {
-        "confirmedmatch": "cpe:2.3:a:f5:njs:*:*:*:*:*:*:*:*"
-    },
     "lang\/onyx": {
         "nomatch": [
             "cpe:2.3:a:plesk:onyx:*:*:*:*:*:*:*:*"
@@ -3762,11 +3754,6 @@
     },
     "net-im\/centerim": {
         "custommatch": "cpe:2.3:a:centerim:centerim:*:*:*:*:*:*:*:*"
-    },
-    "net-im\/jitsi-prosody-plugins": {
-        "nomatch": [
-            "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
-        ]
     },
     "net-im\/jitsi-videobridge": {
         "nomatch": [
@@ -4592,9 +4579,6 @@
         "nomatch": [
             "cpe:2.3:a:alterpoint:logwatch:*:*:*:*:*:*:*:*"
         ]
-    },
-    "sysutils\/loki": {
-        "confirmedmatch": "cpe:2.3:a:grafana:loki:*:*:*:*:*:*:*:*"
     },
     "sysutils\/most": {
         "nomatch": [
