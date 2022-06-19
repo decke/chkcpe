@@ -49,11 +49,13 @@ class MarkdownGenerator extends Generator
              case Status::DEPRECATED:
                  $cpe = $port->getCPE();
                  if ($cpe === null) {
+                     trigger_error('Cannot generate Deprecated message because CPE not found', E_USER_WARNING);
                      return '';
                  }
 
                  $deprecatedby = $cpe->getDeprecatedBy();
                  if ($deprecatedby === null) {
+                     trigger_error('Cannot generate Deprecated message because getDeprecatedBy() does not tell', E_USER_WARNING);
                      return '';
                  }
 
