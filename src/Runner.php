@@ -280,6 +280,75 @@ class Runner
         return true;
     }
 
+    public function comparePortsWithRepology(): bool
+    {
+        $this->handle->beginTransaction();
+        $overlay = Config::getOverlay();
+
+        Logger::info('Comparing with Repology Data ...');
+
+        foreach(file('data/repology.csv') as $line){
+            list($origin, $cpe_vendor, $cpe_product, $cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other) = explode(',', rtrim($line));
+            $cpestr = sprintf('cpe:2.3:a:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s',
+                $cpe_vendor, $cpe_product, '*', '*',$cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other);
+
+            Logger::info('Port '.$origin.' '.$cpestr);
+
+            try {
+                $port = Port::loadFromDB($origin);
+                if ($port === null)
+                    continue;
+
+                if ($port->isMetaport()) {
+                    continue;
+                }
+
+                if ($port->getCPEStr() == '') {
+                    $product = new Product($cpestr);
+
+                    $nomatch = [];
+                    if ($overlay->exists($port->getOrigin(), 'nomatch')) {
+                        foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
+                            try {
+                                $nomatch[] = new Product($cpe);
+                            } catch(\Exception $e) {
+                                Logger::warning('Invalid nomatch CPE string for port '.$port->getOrigin().' : '.$cpe);
+                            }
+                        }
+                    }
+
+                    foreach ($nomatch as $prod) {
+                        if ($prod->compareTo($product)) {
+                            Logger::info('Ignoring false match for '.$port->getOrigin());
+                            continue 2;
+                        }
+                    }
+
+                    $port->addCPECandidate($product);
+                    $port->setCPEStatus(Status::CHECKNEEDED);
+                }
+                else {
+                    $product = new Product($cpestr);
+
+                    if ($port->getCPE()->compareTo($product) === false) {
+                        Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$cpestr);
+                        $port->addCPECandidate($product);
+                        $port->setCPEStatus(Status::CHECKNEEDED);
+                    }
+                }
+            }
+            catch(\Exception $e){
+               Logger::error($e->getMessage());
+            }
+
+            $port->saveToDB();
+        }
+
+        $this->handle->commit();
+
+        return true;
+    }
+
     public function generateReports(): bool
     {
         Logger::info('Generating Markdown Reports ...');
@@ -338,6 +407,11 @@ class Runner
 
         if (!$this->comparePortsWithDictionary()) {
             Logger::error('Comparing ports with CPE Dictionary failed');
+            return false;
+        }
+
+        if(!$this->comparePortsWithRepology()) {
+            Logger::error('Comparing ports with Repology data failed');
             return false;
         }
 
