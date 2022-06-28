@@ -287,7 +287,14 @@ class Runner
 
         Logger::info('Comparing with Repology Data ...');
 
-        foreach(file('data/repology.csv') as $line){
+        $csvdata = file('data/repology.csv');
+
+        if ($csvdata === false) {
+            Logger::error('Repology CSV dump not found');
+            return false;
+        }
+
+        foreach($csvdata as $line){
             list($origin, $cpe_vendor, $cpe_product, $cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other) = explode(',', rtrim($line));
             $cpestr = sprintf('cpe:2.3:a:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s',
                 $cpe_vendor, $cpe_product, '*', '*',$cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other);
@@ -329,19 +336,19 @@ class Runner
                 }
                 else {
                     $product = new Product($cpestr);
-
-                    if ($port->getCPE()->compareTo($product) === false) {
+                    $cpe = $port->getCPE();
+                    if ($cpe !== null && $cpe->compareTo($product) === false) {
                         Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$cpestr);
                         $port->addCPECandidate($product);
                         $port->setCPEStatus(Status::CHECKNEEDED);
                     }
                 }
+
+                $port->saveToDB();
             }
             catch(\Exception $e){
                Logger::error($e->getMessage());
             }
-
-            $port->saveToDB();
         }
 
         $this->handle->commit();
