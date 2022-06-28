@@ -9,6 +9,7 @@ use CheckCpe\CPE\Product;
 use CheckCpe\CPE\Status;
 use CheckCpe\Generators\MarkdownGenerator;
 use CheckCpe\Util\Logger;
+use PacificSec\CPE\Common\WellFormedName;
 
 class Runner
 {
@@ -283,6 +284,8 @@ class Runner
     public function comparePortsWithRepology(): bool
     {
         $this->handle->beginTransaction();
+
+        $dictionary = new Dictionary(Config::getDbHandle());
         $overlay = Config::getOverlay();
 
         Logger::info('Comparing with Repology Data ...');
@@ -296,10 +299,12 @@ class Runner
 
         foreach($csvdata as $line){
             list($origin, $cpe_vendor, $cpe_product, $cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other) = explode(',', rtrim($line));
-            $cpestr = sprintf('cpe:2.3:a:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s',
-                $cpe_vendor, $cpe_product, '*', '*',$cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other);
+            $wfn = new WellFormedName();
+            $wfn->set('part', 'a');
+            $wfn->set('vendor', $cpe_vendor);
+            $wfn->set('product', $cpe_product);
 
-            Logger::info('Port '.$origin.' '.$cpestr);
+            Logger::info('Port '.$origin.' '.$wfn);
 
             try {
                 $port = Port::loadFromDB($origin);
@@ -310,9 +315,14 @@ class Runner
                     continue;
                 }
 
-                if ($port->getCPEStr() == '') {
-                    $product = new Product($cpestr);
+                $product = $dictionary->findProduct($cpe_vendor, $cpe_product);
 
+                if ($product === null) {
+                    Logger::warning('Unused CPE used by Repology for port '.$port->getOrigin().' : '.$wfn);
+                    $product = new Product($wfn);
+                }
+
+                if ($port->getCPEStr() == '') {
                     $nomatch = [];
                     if ($overlay->exists($port->getOrigin(), 'nomatch')) {
                         foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
@@ -335,12 +345,17 @@ class Runner
                     $port->setCPEStatus(Status::CHECKNEEDED);
                 }
                 else {
-                    $product = new Product($cpestr);
-                    $cpe = $port->getCPE();
-                    if ($cpe !== null && $cpe->compareTo($product) === false) {
-                        Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$cpestr);
-                        $port->addCPECandidate($product);
-                        $port->setCPEStatus(Status::CHECKNEEDED);
+                    if ($product->isDeprecated()) {
+                        Logger::warning('Repology uses deprecated CPE '.$wfn);
+                    }
+                    else {
+                        $cpe = $port->getCPE();
+
+                        if ($cpe !== null && $cpe->compareTo($product) === false) {
+                            Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$wfn);
+                            $port->addCPECandidate($product);
+                            $port->setCPEStatus(Status::CHECKNEEDED);
+                        }
                     }
                 }
 
