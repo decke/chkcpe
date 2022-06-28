@@ -301,8 +301,8 @@ class Runner
             list($origin, $cpe_vendor, $cpe_product, $cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other) = explode(',', rtrim($line));
             $wfn = new WellFormedName();
             $wfn->set('part', 'a');
-            $wfn->set('vendor', $cpe_vendor);
-            $wfn->set('product', $cpe_product);
+            $wfn->set('vendor', Product::escape($cpe_vendor));
+            $wfn->set('product', Product::escape($cpe_product));
 
             Logger::info('Port '.$origin.' '.$wfn);
 

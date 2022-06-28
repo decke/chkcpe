@@ -158,6 +158,16 @@ class Product
         return $cpes;
     }
 
+    public static function escape(string $str): string
+    {
+        $res = preg_replace('/([^_a-zA-Z0-9])/', '\\\\$1', $str);
+        if ($res === null) {
+            throw new \Exception('Could not escape String');
+        }
+
+        return $res;
+    }
+
     public static function unescape(string $str): string
     {
         return str_replace('\\', '', $str);
