@@ -1,4 +1,7 @@
 {
+    "accessibility\/caribou": {
+        "confirmedmatch": "cpe:2.3:a:gnome:caribou:*:*:*:*:*:*:*:*"
+    },
     "arabic\/aspell": {
         "nomatch": [
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
