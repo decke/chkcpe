@@ -19,11 +19,6 @@
     "archivers\/dzip": {
         "custommatch": "cpe:2.3:a:evan_wagner:dzip:*:*:*:*:*:*:*:*"
     },
-    "archivers\/erlang-snappy": {
-        "nomatch": [
-            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
-        ]
-    },
     "archivers\/ha": {
         "nomatch": [
             "cpe:2.3:a:linux-ha:ha:*:*:*:*:*:*:*:*"
@@ -939,23 +934,6 @@
             "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/elixir-apex": {
-        "nomatch": [
-            "cpe:2.3:a:oracle:apex:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/elixir-calendar": {
-        "nomatch": [
-            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/elixir-gettext": {
-        "nomatch": [
-            "cpe:2.3:a:gnu:gettext:*:*:*:*:*:*:*:*"
-        ]
-    },
     "devel\/elixir-hex": {
         "nomatch": [
             "cpe:2.3:a:hex:hex:*:*:*:*:*:*:*:*"
@@ -964,21 +942,6 @@
     "devel\/elixir-make": {
         "nomatch": [
             "cpe:2.3:a:gnu:make:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/elixir-plug": {
-        "nomatch": [
-            "cpe:2.3:a:plug_project:plug:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/elixir-quantum": {
-        "nomatch": [
-            "cpe:2.3:a:quantum:quantum:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "devel\/erlang-folsom": {
-        "nomatch": [
-            "cpe:2.3:a:openstack:folsom:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/forge": {
@@ -1125,9 +1088,6 @@
         "nomatch": [
             "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/nuitka": {
-        "confirmedmatch": "cpe:2.3:a:nuitka:nuitka:*:*:*:*:*:*:*:*"
     },
     "devel\/obby": {
         "nomatch": [
@@ -1486,9 +1446,6 @@
             "cpe:2.3:a:ballcat:codegen:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-cookiecutter": {
-        "confirmedmatch": "cpe:2.3:a:cookiecutter_project:cookiecutter:*:*:*:*:*:*:*:*"
-    },
     "devel\/py-daemon": {
         "nomatch": [
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
@@ -1671,11 +1628,6 @@
             "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/qbs": {
-        "nomatch": [
-            "cpe:2.3:a:qbs_project:qbs:*:*:*:*:*:*:*:*"
-        ]
-    },
     "devel\/qgit": {
         "custommatch": "cpe:2.3:a:qgit:qgit:*:*:*:*:*:*:*:*"
     },
@@ -1837,9 +1789,6 @@
         "nomatch": [
             "cpe:2.3:a:ibm:interact:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/rubygem-jmespath": {
-        "confirmedmatch": "cpe:2.3:a:jmespath_project:jmespath:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-json": {
         "nomatch": [
@@ -3698,11 +3647,6 @@
             "cpe:2.3:a:redhat:dtach:*:*:*:*:*:*:*:*"
         ]
     },
-    "misc\/elixir-mime": {
-        "nomatch": [
-            "cpe:2.3:a:mime_project:mime:*:*:*:*:*:*:*:*"
-        ]
-    },
     "misc\/flag": {
         "nomatch": [
             "cpe:2.3:a:flag_module_project:flag:*:*:*:*:*:*:*:*"
@@ -3811,22 +3755,6 @@
     "net-im\/jitsi-videobridge": {
         "nomatch": [
             "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net-im\/licq": {
-        "nomatch": [
-            "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net-im\/licq-icq": {
-        "nomatch": [
-            "cpe:2.3:a:icq:icq:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "net-im\/licq-jabber": {
-        "nomatch": [
-            "cpe:2.3:a:adobe:jabber:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:cisco:jabber:*:*:*:*:*:*:*:*"
         ]
     },
     "net-im\/pidgin-latex": {
@@ -4373,16 +4301,6 @@
     "security\/denyhosts": {
         "custommatch": "cpe:2.3:a:denyhosts:denyhosts:*:*:*:*:*:*:*:*"
     },
-    "security\/elixir-jose": {
-        "nomatch": [
-            "cpe:2.3:a:jose_project:jose:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "security\/erlang-jose": {
-        "nomatch": [
-            "cpe:2.3:a:jose_project:jose:*:*:*:*:*:*:*:*"
-        ]
-    },
     "security\/hydra": {
         "nomatch": [
             "cpe:2.3:a:hydra_project:hydra:*:*:*:*:*:*:*:*",
@@ -4836,11 +4754,6 @@
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
     },
-    "textproc\/elixir-sweet_xml": {
-        "nomatch": [
-            "cpe:2.3:a:kbrw:sweet_xml:*:*:*:*:*:*:*:*"
-        ]
-    },
     "textproc\/en-hunspell": {
         "nomatch": [
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
@@ -4991,13 +4904,6 @@
             "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*"
-        ]
-    },
-    "textproc\/rubygem-elasticsearch6": {
-        "nomatch": [
-            "cpe:2.3:a:anynines:elasticsearch:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:elasticsearch:elasticsearch:*:*:*:*:*:*:*:*"
         ]
     },
     "textproc\/rubygem-elasticsearch713": {
@@ -5159,19 +5065,11 @@
             "cpe:2.3:a:castor_project:castor:*:*:*:*:*:*:*:*"
         ]
     },
-    "www\/darkhttpd": {
-        "confirmedmatch": "cpe:2.3:a:darkhttpd_project:darkhttpd:*:*:*:*:*:*:*:*"
-    },
     "www\/dhttpd": {
         "custommatch": "cpe:2.3:a:dhttpd:dhttpd:*:*:*:*:*:*:*:*"
     },
     "www\/dillo2": {
         "custommatch": "cpe:2.3:a:dillo:dillo:*:*:*:*:*:*:*:*"
-    },
-    "www\/erlang-mochiweb-basho": {
-        "nomatch": [
-            "cpe:2.3:a:mochiweb_project:mochiweb:*:*:*:*:*:*:*:*"
-        ]
     },
     "www\/fancybox": {
         "nomatch": [
@@ -5563,9 +5461,6 @@
         "nomatch": [
             "cpe:2.3:a:apple:terminal:*:*:*:*:*:*:*:*"
         ]
-    },
-    "x11\/libinput": {
-        "confirmedmatch": "cpe:2.3:a:freedesktop:libinput:*:*:*:*:*:*:*:*"
     },
     "x11\/mlterm": {
         "custommatch": "cpe:2.3:a:mlterm:mlterm:*:*:*:*:*:*:*:*"
