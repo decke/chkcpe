@@ -172,6 +172,10 @@ class Port
             return null;
         }
 
+        if ($row->origin === null || $row->portname === null || $row->version === null || $row->maintainer === null) {
+            return null;
+        }
+
         $port = new Port($row->origin, $row->portname, $row->version, $row->maintainer, $row->cpeuri, (bool)$row->metaport, $row->status);
 
         $stmt_candidates = $handle->prepare('SELECT cpeuri FROM candidates WHERE origin = ?');
