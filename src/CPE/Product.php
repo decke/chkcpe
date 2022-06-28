@@ -41,7 +41,7 @@ class Product
 
     public function getProduct(): string
     {
-        return $this->cpe->get('product');
+        return (string)$this->cpe->get('product');
     }
 
     public function getVersion(): string
