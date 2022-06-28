@@ -685,6 +685,11 @@
             "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-pg13": {
+        "nomatch": [
+            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-redis": {
         "nomatch": [
             "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
@@ -1083,6 +1088,11 @@
             "cpe:2.3:a:libevent_project:libevent:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/lua-posix": {
+        "nomatch": [
+            "cpe:2.3:a:posix_project:posix:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/lua-stdlib": {
         "nomatch": [
             "cpe:2.3:a:puppet:stdlib:*:*:*:*:*:*:*:*"
@@ -1476,6 +1486,9 @@
             "cpe:2.3:a:ballcat:codegen:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-cookiecutter": {
+        "confirmedmatch": "cpe:2.3:a:cookiecutter_project:cookiecutter:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-daemon": {
         "nomatch": [
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
@@ -1631,6 +1644,11 @@
     "devel\/py-rush": {
         "nomatch": [
             "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-scheduler": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:scheduler:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-schema": {
@@ -3785,6 +3803,11 @@
     "net-im\/centerim": {
         "custommatch": "cpe:2.3:a:centerim:centerim:*:*:*:*:*:*:*:*"
     },
+    "net-im\/jitsi-srtp-native": {
+        "nomatch": [
+            "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net-im\/jitsi-videobridge": {
         "nomatch": [
             "cpe:2.3:a:jitsi:jitsi:*:*:*:*:*:*:*:*"
@@ -3804,6 +3827,11 @@
         "nomatch": [
             "cpe:2.3:a:adobe:jabber:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:cisco:jabber:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net-im\/pidgin-latex": {
+        "nomatch": [
+            "cpe:2.3:a:latex_project:latex:*:*:*:*:*:*:*:*"
         ]
     },
     "net-im\/pidgin-libnotify": {
@@ -4848,6 +4876,11 @@
             "cpe:2.3:a:hunspell_project:hunspell:*:*:*:*:*:*:*:*"
         ]
     },
+    "textproc\/latex-service": {
+        "nomatch": [
+            "cpe:2.3:a:latex_project:latex:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/markdown": {
         "nomatch": [
             "cpe:2.3:a:cebe:markdown:*:*:*:*:*:*:*:*"
@@ -5125,6 +5158,9 @@
         "nomatch": [
             "cpe:2.3:a:castor_project:castor:*:*:*:*:*:*:*:*"
         ]
+    },
+    "www\/darkhttpd": {
+        "confirmedmatch": "cpe:2.3:a:darkhttpd_project:darkhttpd:*:*:*:*:*:*:*:*"
     },
     "www\/dhttpd": {
         "custommatch": "cpe:2.3:a:dhttpd:dhttpd:*:*:*:*:*:*:*:*"
