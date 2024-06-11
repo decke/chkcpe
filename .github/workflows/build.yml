@@ -73,7 +73,7 @@ jobs:
           path: logs/chkcpe.db
 
       - name: Check out repository wiki
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}.wiki
           path: wiki
