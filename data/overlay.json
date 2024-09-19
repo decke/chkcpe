@@ -2,6 +2,14 @@
     "accessibility\/caribou": {
         "confirmedmatch": "cpe:2.3:a:gnome:caribou:*:*:*:*:*:*:*:*"
     },
+    "accessibility\/qt5-speech": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "accessibility\/qt6-speech": {
+        "nomatch": [
+            "cpe:2.3:a:philips:speech:*:*:*:*:*:*:*:*"
+        ]
+    },
     "arabic\/aspell": {
         "nomatch": [
             "cpe:2.3:a:gnu:aspell:*:*:*:*:*:*:*:*"
@@ -16,8 +24,12 @@
         "nomatch": [
             "cpe:2.3:a:info-zip:zip:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:info-zip_project:zip:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:zip_project:zip:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:zip_project:zip:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:marmelroy:zip:*:*:*:*:*:*:*:*"
         ]
+    },
+    "archivers\/bzip3": {
+        "confirmedmatch": "cpe:2.3:a:bzip3_project:bzip3:*:*:*:*:*:*:*:*"
     },
     "archivers\/dzip": {
         "custommatch": "cpe:2.3:a:evan_wagner:dzip:*:*:*:*:*:*:*:*"
