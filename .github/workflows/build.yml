@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  CPE_DICTIONARY https://nvd.nist.gov/feeds/json/cpe/2.0/nvdcpe-2.0.tar.gz
+  CPE_DICTIONARY: https://nvd.nist.gov/feeds/json/cpe/2.0/nvdcpe-2.0.tar.gz
 
 jobs:
   build:
