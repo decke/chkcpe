@@ -22,9 +22,9 @@ class Runner
 
     public function loadCPEData(): bool
     {
-        $xml = simplexml_load_file(Config::getCPEDictionary());
+        $files = glob(Config::getCPEDictionary());
 
-        if ($xml === false) {
+        if ($files === false) {
             throw new \Exception('Loading CPE Dictionary failed');
         }
 
@@ -35,53 +35,85 @@ class Runner
 
         $dictionary = new Dictionary($this->handle);
 
-        $cnt = 0;
+        foreach($files as $file) {
+            $raw = file_get_contents($file);
 
-        foreach ($xml->{'cpe-item'} as $cpe) {
-            /*
-              <cpe-item name="cpe:/a:xiph:libvorbis:1.3.6" deprecated="true" deprecation_date="2019-10-17T15:10:18.580Z">
-                <title xml:lang="en-US">Xiph Libvorbis 1.3.6</title>
-                <references>
-                  <reference href="https://xiph.org/downloads/">Product</reference>
-                </references>
-                <cpe-23:cpe23-item name="cpe:2.3:a:xiph:libvorbis:1.3.6:*:*:*:*:*:*:*">
-                  <cpe-23:deprecation date="2019-10-17T11:10:18.580-04:00">
-                    <cpe-23:deprecated-by name="cpe:2.3:a:xiph.org:libvorbis:1.3.6:*:*:*:*:*:*:*" type="NAME_CORRECTION"/>
-                  </cpe-23:deprecation>
-                </cpe-23:cpe23-item>
-              </cpe-item>
-            */
-
-            $cpe_title = $cpe->title;
-            $cpe_deprecated = $cpe->attributes(null)->deprecated;
-            $cpe_fs = (string)$cpe->children('cpe-23', true)->{'cpe23-item'}->attributes(null)->name;
-
-            try {
-                $product = new Product($cpe_fs);
-
-                if ($product->getPart() != 'a') {
-                    continue;
-                }
-
-                if ($cpe_deprecated == 'true') {
-                    $cpe_deprecated_by = (string)$cpe->children('cpe-23', true)->{'cpe23-item'}->{'deprecation'}->
-                        {'deprecated-by'}->attributes(null)->name;
-
-                    $product->setDeprecatedBy(new Product($cpe_deprecated_by));
-                }
-
-                if (!$dictionary->addProduct($product)) {
-                    Logger::warning('Could not add Product '.$cpe_fs);
-                    continue;
-                }
-            } catch (\Exception $e) {
-                Logger::warning('Could not process CPE entry: '.$cpe_fs.' because '.$e->getMessage());
+            if ($raw === false) {
+                throw new \Exception('Loading CPE Dictionary file '.$file.' failed');
             }
 
-            if (++$cnt % 10000 == 0) {
-                Logger::info('Added '.$cnt.' CPE entries');
-                $this->handle->commit();
-                $this->handle->beginTransaction();
+            $json = json_decode($raw);
+            unset($raw);
+
+            if ($json === null) {
+                throw new \Exception('Parsing CPE Dictionary file '.$file.' failed');
+	    }
+
+            $cnt = 0;
+
+            foreach ($json as $cpe) {
+                /*
+                  "cpe" : {
+                    "cpeName" : "cpe:2.3:a:cjson_project:cjson:1.7.17:*:*:*:*:*:*:*",
+                    "cpeNameId" : "51565535-1A24-4360-8549-49615C94076B",
+                    "created" : "2025-07-22T18:17:44.500",
+                    "deprecated" : true,
+                    "deprecatedBy" : [
+                       {
+                              "cpeName" : "cpe:2.3:a:davegamble:cjson:1.7.17:*:*:*:*:*:*:*",
+                              "cpeNameId" : "49D5BD61-5E58-4EDD-BA50-6D381F385448"
+                       }
+                    ],
+                    "lastModified" : "2025-07-22T18:19:00.813",
+                    "refs" : [
+                       {
+                              "ref" : "https://github.com/DaveGamble/cJSON",
+                              "type" : "Project"
+                       },
+                       {
+                              "ref" : "https://github.com/DaveGamble/cJSON/releases/tag/v0.0.0",
+                              "type" : "Vendor"
+                       }
+                    ],
+                    "titles" : [
+                       {
+                              "lang" : "en",
+                              "title" : "cJSON Project cJSON 1.7.17 "
+                       }
+                    ]
+                  }
+                */
+
+                $cpe_title = $cpe->titles[0]->title;
+                $cpe_deprecated = $cpe->deprecated;
+                $cpe_fs = $cpe->cpeName;
+
+                try {
+                    $product = new Product($cpe_fs);
+
+                    if ($product->getPart() != 'a') {
+                        continue;
+                    }
+
+                    if ($cpe_deprecated) {
+                        $cpe_deprecated_by = (string)$cpe->deprecatedBy[0]->cpeName;
+
+                        $product->setDeprecatedBy(new Product($cpe_deprecated_by));
+                    }
+
+                    if (!$dictionary->addProduct($product)) {
+                        Logger::warning('Could not add Product '.$cpe_fs);
+                        continue;
+                    }
+                } catch (\Exception $e) {
+                    Logger::warning('Could not process CPE entry: '.$cpe_fs.' because '.$e->getMessage());
+                }
+
+                if (++$cnt % 10000 == 0) {
+                    Logger::info('Added '.$cnt.' CPE entries');
+                    $this->handle->commit();
+                    $this->handle->beginTransaction();
+                }
             }
         }
 

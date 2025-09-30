@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  CPE_DICTIONARY: https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz
+  CPE_DICTIONARY https://nvd.nist.gov/feeds/json/cpe/2.0/nvdcpe-2.0.tar.gz
 
 jobs:
   build:
@@ -30,12 +30,12 @@ jobs:
           cp share/Uses/*.mk ports/Mk/Uses/
 
       - name: Fetch NVD CPE Dictionary
-        run: wget -qO - ${{ env.CPE_DICTIONARY }} | gunzip -c > data/official-cpe-dictionary_v2.3.xml
+        run: wget -qO - ${{ env.CPE_DICTIONARY }} | tar -xvf -C data/
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'
+          php-version: '8.2'
           tools: composer
 
       - name: Install system dependencies
@@ -56,9 +56,9 @@ jobs:
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
-          OSREL: 13.0
-          OSVERSION: 1300139
-          _OSRELEASE: 13.0-RELEASE
+          OSREL: 14.3
+          OSVERSION: 1403503
+          _OSRELEASE: 14.3-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
         run: |

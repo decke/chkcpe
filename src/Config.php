@@ -14,7 +14,7 @@ class Config
     protected static string $datadir = 'data';
     protected static string $makebin = '/usr/bin/make';
     protected static string $datasource = 'sqlite:data/chkcpe.db';
-    protected static string $cpedictionary = 'data/official-cpe-dictionary_v2.3.xml';
+    protected static string $cpedictionary = 'data/nvdcpe-2.0-chunks/*.json';
     protected static string $overlayfile = 'data/overlay.json';
     protected static ?\PDO $handle = null;
     protected static ?Overlay $overlay = null;

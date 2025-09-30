@@ -10,7 +10,6 @@
       "pacificsec/cpe": "^1.0",
       "ext-PDO": "*",
       "ext-pdo_sqlite": "*",
-      "ext-simplexml": "*",
       "php": ">=8.0"
    },
    "require-dev": {

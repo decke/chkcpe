@@ -11,7 +11,7 @@ build: vendor
 	make -C css
 
 test: vendor
-	phpstan analyse -l 8 index.php bin src
+	phpstan --memory-limit=256M analyse -l 8 index.php bin src
 
 lint:
 	php-cs-fixer fix
