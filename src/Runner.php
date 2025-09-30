@@ -35,12 +35,18 @@ class Runner
 
         $dictionary = new Dictionary($this->handle);
 
+        $cnt = 0;
+
         foreach ($files as $file) {
+            Logger::info('Loading CPE dictionary file '.$file);
+
             $raw = file_get_contents($file);
 
             if ($raw === false) {
                 throw new \Exception('Loading CPE Dictionary file '.$file.' failed');
             }
+
+            Logger::info('Parsing CPE dictionary file '.$file);
 
             $json = json_decode($raw);
             unset($raw);
@@ -49,9 +55,9 @@ class Runner
                 throw new \Exception('Parsing CPE Dictionary file '.$file.' failed');
             }
 
-            $cnt = 0;
+            Logger::info('Processing CPE dictionary file '.$file);
 
-            foreach ($json as $cpe) {
+            foreach ($json->products as $data) {
                 /*
                   "cpe" : {
                     "cpeName" : "cpe:2.3:a:cjson_project:cjson:1.7.17:*:*:*:*:*:*:*",
@@ -84,9 +90,9 @@ class Runner
                   }
                 */
 
-                $cpe_title = $cpe->titles[0]->title;
-                $cpe_deprecated = $cpe->deprecated;
-                $cpe_fs = $cpe->cpeName;
+                $cpe_title = $data->cpe->titles[0]->title;
+                $cpe_deprecated = $data->cpe->deprecated;
+                $cpe_fs = $data->cpe->cpeName;
 
                 try {
                     $product = new Product($cpe_fs);
@@ -96,7 +102,7 @@ class Runner
                     }
 
                     if ($cpe_deprecated) {
-                        $cpe_deprecated_by = (string)$cpe->deprecatedBy[0]->cpeName;
+                        $cpe_deprecated_by = (string)$data->cpe->deprecatedBy[0]->cpeName;
 
                         $product->setDeprecatedBy(new Product($cpe_deprecated_by));
                     }

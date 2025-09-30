@@ -1,10 +1,12 @@
-#!/usr/bin/env php memory_limit=512M
+#!/usr/bin/env php
 <?php
 declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
 use CheckCpe\Util\Logger;
+
+ini_set('memory_limit', '2048M');
 
 Logger::start();
 
