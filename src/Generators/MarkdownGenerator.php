@@ -42,37 +42,37 @@ class MarkdownGenerator extends Generator
     protected function genMessage(Port $port): string
     {
         switch ($port->getCPEStatus()) {
-             case Status::VALID:
-             case Status::INVALID:
-                 return '`'.$port->getCPEStr().'`';
+            case Status::VALID:
+            case Status::INVALID:
+                return '`'.$port->getCPEStr().'`';
 
-             case Status::DEPRECATED:
-                 $cpe = $port->getCPE();
-                 if ($cpe === null) {
-                     trigger_error('Cannot generate Deprecated message because CPE not found', E_USER_WARNING);
-                     return '';
-                 }
+            case Status::DEPRECATED:
+                $cpe = $port->getCPE();
+                if ($cpe === null) {
+                    trigger_error('Cannot generate Deprecated message because CPE not found', E_USER_WARNING);
+                    return '';
+                }
 
-                 $deprecatedby = $cpe->getDeprecatedBy();
-                 if ($deprecatedby === null) {
-                     trigger_error('Cannot generate Deprecated message because getDeprecatedBy() does not tell', E_USER_WARNING);
-                     return '';
-                 }
+                $deprecatedby = $cpe->getDeprecatedBy();
+                if ($deprecatedby === null) {
+                    trigger_error('Cannot generate Deprecated message because getDeprecatedBy() does not tell', E_USER_WARNING);
+                    return '';
+                }
 
-                 return sprintf('Deprecated by `%s`', $deprecatedby);
+                return sprintf('Deprecated by `%s`', $deprecatedby);
 
-             case Status::CHECKNEEDED:
-             case Status::READYTOCOMMIT:
-                 $msg = '';
+            case Status::CHECKNEEDED:
+            case Status::READYTOCOMMIT:
+                $msg = '';
 
-                 foreach ($port->getCPECandidates() as $product) {
-                     $msg .= '`'.$product.'` ';
-                 }
+                foreach ($port->getCPECandidates() as $product) {
+                    $msg .= '`'.$product.'` ';
+                }
 
-                 return rtrim($msg);
+                return rtrim($msg);
 
-             default:
-                 return '';
-         }
+            default:
+                return '';
+        }
     }
 }

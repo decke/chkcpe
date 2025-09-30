@@ -59,7 +59,7 @@ class Port
             return '';
         }
 
-        return substr($this->origin, $pos+1);
+        return substr($this->origin, $pos + 1);
     }
 
     public function getPortname(): string

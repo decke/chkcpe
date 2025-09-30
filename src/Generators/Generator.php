@@ -54,7 +54,7 @@ abstract class Generator
         $content .= $this->getFooter();
 
         if ($count >= $limit) {
-            $content .= sprintf("\n %d more ports", count($this->ports)-$limit);
+            $content .= sprintf("\n %d more ports", count($this->ports) - $limit);
         }
 
         if (file_put_contents($file, $content) === false) {

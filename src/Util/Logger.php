@@ -46,6 +46,6 @@ class Logger
 
         $time = ((microtime(true) - self::$startTime) * 1000);
 
-        return sprintf('%02d:%05.02f', floor($time/60000), ($time % 60000)/1000);
+        return sprintf('%02d:%05.02f', floor($time / 60000), ($time % 60000) / 1000);
     }
 }

@@ -35,7 +35,7 @@ class Runner
 
         $dictionary = new Dictionary($this->handle);
 
-        foreach($files as $file) {
+        foreach ($files as $file) {
             $raw = file_get_contents($file);
 
             if ($raw === false) {
@@ -47,7 +47,7 @@ class Runner
 
             if ($json === null) {
                 throw new \Exception('Parsing CPE Dictionary file '.$file.' failed');
-	    }
+            }
 
             $cnt = 0;
 
@@ -204,7 +204,7 @@ class Runner
                 continue;
             }
 
-            $parts[0] = substr($parts[0], strlen($portsdir)+1);
+            $parts[0] = substr($parts[0], strlen($portsdir) + 1);
 
             $metaport = 0;
             if (strpos($parts[5], 'metaport') !== false) {
@@ -329,7 +329,7 @@ class Runner
             return false;
         }
 
-        foreach($csvdata as $line){
+        foreach ($csvdata as $line) {
             list($origin, $cpe_vendor, $cpe_product, $cpe_edition, $cpe_lang, $cpe_sw_edition, $cpe_target_sw, $cpe_target_hw, $cpe_other) = explode(',', rtrim($line));
             $wfn = new WellFormedName();
             $wfn->set('part', 'a');
@@ -340,8 +340,9 @@ class Runner
 
             try {
                 $port = Port::loadFromDB($origin);
-                if ($port === null)
+                if ($port === null) {
                     continue;
+                }
 
                 if ($port->isMetaport()) {
                     continue;
@@ -360,7 +361,7 @@ class Runner
                         foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
                             try {
                                 $nomatch[] = new Product($cpe);
-                            } catch(\Exception $e) {
+                            } catch (\Exception $e) {
                                 Logger::warning('Invalid nomatch CPE string for port '.$port->getOrigin().' : '.$cpe);
                             }
                         }
@@ -375,12 +376,10 @@ class Runner
 
                     $port->addCPECandidate($product);
                     $port->setCPEStatus(Status::CHECKNEEDED);
-                }
-                else {
+                } else {
                     if ($product->isDeprecated()) {
                         Logger::warning('Repology uses deprecated CPE '.$wfn);
-                    }
-                    else {
+                    } else {
                         $cpe = $port->getCPE();
 
                         if ($cpe !== null && $cpe->compareTo($product) === false) {
@@ -392,9 +391,8 @@ class Runner
                 }
 
                 $port->saveToDB();
-            }
-            catch(\Exception $e){
-               Logger::error($e->getMessage());
+            } catch (\Exception $e) {
+                Logger::error($e->getMessage());
             }
         }
 
@@ -464,7 +462,7 @@ class Runner
             return false;
         }
 
-        if(!$this->comparePortsWithRepology()) {
+        if (!$this->comparePortsWithRepology()) {
             Logger::error('Comparing ports with Repology data failed');
             return false;
         }
