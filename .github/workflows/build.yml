@@ -30,7 +30,7 @@ jobs:
           cp share/Uses/*.mk ports/Mk/Uses/
 
       - name: Fetch NVD CPE Dictionary
-        run: wget -qO - ${{ env.CPE_DICTIONARY }} | tar -xvf -C data/
+        run: wget -qO - ${{ env.CPE_DICTIONARY }} | tar -C data/ -zxvf -
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
