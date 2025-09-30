@@ -38,15 +38,11 @@ class Runner
         $cnt = 0;
 
         foreach ($files as $file) {
-            Logger::info('Loading CPE dictionary file '.$file);
-
             $raw = file_get_contents($file);
 
             if ($raw === false) {
                 throw new \Exception('Loading CPE Dictionary file '.$file.' failed');
             }
-
-            Logger::info('Parsing CPE dictionary file '.$file);
 
             $json = json_decode($raw);
             unset($raw);
@@ -115,7 +111,7 @@ class Runner
                     Logger::warning('Could not process CPE entry: '.$cpe_fs.' because '.$e->getMessage());
                 }
 
-                if (++$cnt % 10000 == 0) {
+                if (++$cnt % 100000 == 0) {
                     Logger::info('Added '.$cnt.' CPE entries');
                     $this->handle->commit();
                     $this->handle->beginTransaction();
