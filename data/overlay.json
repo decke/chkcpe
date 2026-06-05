@@ -33,8 +33,21 @@
     "archivers\/apache-commons-compress": {
         "confirmedmatch": "cpe:2.3:a:apache:commons_compress:*:*:*:*:*:*:*:*"
     },
+    "archivers\/ark": {
+        "confirmedmatch": "cpe:2.3:a:kde:ark:*:*:*:*:*:*:*:*"
+    },
     "archivers\/dzip": {
         "custommatch": "cpe:2.3:a:evan_wagner:dzip:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/file-roller": {
+        "nomatch": [
+            "cpe:2.3:a:file_roller_project:file_roller:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/gzip": {
+        "nomatch": [
+            "cpe:2.3:a:gzip:gzip:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/ha": {
         "nomatch": [
@@ -47,18 +60,40 @@
     "archivers\/lha-ac": {
         "custommatch": "cpe:2.3:a:tsugio_okamoto:lha:*:*:*:*:*:*:*:*"
     },
+    "archivers\/libmspack": {
+        "nomatch": [
+            "cpe:2.3:a:cabextract:libmspack:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:kyzer:libmspack:*:*:*:*:*:*:*:*"
+        ]
+    },
     "archivers\/libunrar": {
         "confirmedmatch": "cpe:2.3:a:rarlab:unrar:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/libzip": {
+        "confirmedmatch": "cpe:2.3:a:libzip:libzip:*:*:*:*:*:*:*:*"
     },
     "archivers\/lua-zlib": {
         "nomatch": [
             "cpe:2.3:a:cloudflare:zlib:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:ruby-lang:zlib:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ruby-lang:zlib:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/lzo2": {
+        "nomatch": [
+            "cpe:2.3:a:lzo_project:lzo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/minizip": {
+        "nomatch": [
+            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/ocaml-zip": {
         "nomatch": [
-            "cpe:2.3:a:marmelroy:zip:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:marmelroy:zip:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:zip_project:zip:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:info-zip_project:zip:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/p5-Archive-Tar": {
@@ -90,7 +125,28 @@
     "archivers\/php-snappy": {
         "nomatch": [
             "cpe:2.3:a:knplabs:snappy:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:dain:snappy:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:dain:snappy:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/php82-bz2": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/php82-phar": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/php82-zip": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "archivers\/php82-zlib": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/py-lz4": {
@@ -123,7 +179,8 @@
     "archivers\/rubygem-snappy": {
         "nomatch": [
             "cpe:2.3:a:dain:snappy:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:knplabs:snappy:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:knplabs:snappy:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/rvm": {
@@ -134,7 +191,8 @@
     "archivers\/snappy-java": {
         "nomatch": [
             "cpe:2.3:a:knplabs:snappy:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:dain:snappy:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:dain:snappy:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:snappy:*:*:*:*:*:*:*:*"
         ]
     },
     "archivers\/star": {
@@ -147,6 +205,9 @@
     },
     "archivers\/unarj": {
         "confirmedmatch": "cpe:2.3:a:arjsoftware:unarj:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/unzip": {
+        "confirmedmatch": "cpe:2.3:a:unzip_project:unzip:*:*:*:*:*:*:*:*"
     },
     "archivers\/xmill": {
         "nomatch": [
@@ -166,12 +227,18 @@
     "astro\/p5-Astro": {
         "nomatch": [
             "cpe:2.3:a:astro:astro:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:sentry:astro:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:sentry:astro:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:saxum2003:astro:*:*:*:*:*:*:*:*"
         ]
     },
     "astro\/p5-GPS": {
         "nomatch": [
             "cpe:2.3:a:fujitsu:gps:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/amarok": {
+        "nomatch": [
+            "cpe:2.3:a:amarok:amarok:*:*:*:*:*:*:*:*"
         ]
     },
     "audio\/aqualung": {
@@ -203,10 +270,21 @@
     "audio\/cmus": {
         "custommatch": "cpe:2.3:a:cmus:cmus:*:*:*:*:*:*:*:*"
     },
+    "audio\/csound": {
+        "nomatch": [
+            "cpe:2.3:a:csound:csound:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/etcd": {
         "nomatch": [
             "cpe:2.3:a:etcd:etcd:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redhat:etcd:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/faad": {
+        "nomatch": [
+            "cpe:2.3:a:audiocoding:faad2:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:faad2_project:faad2:*:*:*:*:*:*:*:*"
         ]
     },
     "audio\/faust-lv2": {
@@ -225,6 +303,11 @@
             "cpe:2.3:a:cryoutcreations:fluida:*:*:*:*:*:*:*:*"
         ]
     },
+    "audio\/furnace": {
+        "nomatch": [
+            "cpe:2.3:a:tidearrow:furnace:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/gnome-metronome": {
         "nomatch": [
             "cpe:2.3:a:lightwitch:metronome:*:*:*:*:*:*:*:*"
@@ -241,11 +324,36 @@
             "cpe:2.3:a:shopify:hydrogen:*:*:*:*:*:*:*:*"
         ]
     },
+    "audio\/icecast": {
+        "nomatch": [
+            "cpe:2.3:a:icecast:icecast:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/id3lib": {
         "custommatch": "cpe:2.3:a:id3lib:id3lib:*:*:*:*:*:*:*:*"
     },
     "audio\/jack": {
         "confirmedmatch": "cpe:2.3:a:jackaudio:jack2:*:*:*:*:*:*:*:*"
+    },
+    "audio\/libadplug": {
+        "nomatch": [
+            "cpe:2.3:a:audacious_media_player_team:adplug:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/libgig": {
+        "nomatch": [
+            "cpe:2.3:a:libgig0:libgig:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/libid3tag": {
+        "nomatch": [
+            "cpe:2.3:a:underbit:libid3tag:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/libmikmod": {
+        "nomatch": [
+            "cpe:2.3:a:igno_saitz:libmikmod:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/libshout": {
         "custommatch": "cpe:2.3:a:libshout:libshout:*:*:*:*:*:*:*:*"
@@ -271,6 +379,11 @@
     "audio\/mikmod": {
         "nomatch": [
             "cpe:2.3:a:miod_vallat:mikmod:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/mpg321": {
+        "nomatch": [
+            "cpe:2.3:a:mpg321:mpg321:*:*:*:*:*:*:*:*"
         ]
     },
     "audio\/mps": {
@@ -349,6 +462,11 @@
     "audio\/streamripper": {
         "custommatch": "cpe:2.3:a:streamripper:streamripper:*:*:*:*:*:*:*:*"
     },
+    "audio\/taglib": {
+        "nomatch": [
+            "cpe:2.3:a:scott_wheeler:taglib:*:*:*:*:*:*:*:*"
+        ]
+    },
     "audio\/timidity++": {
         "confirmedmatch": "cpe:2.3:a:timidity\\+\\+_project:timidity\\+\\+:*:*:*:*:*:*:*:*"
     },
@@ -373,6 +491,11 @@
     "audio\/waon": {
         "nomatch": [
             "cpe:2.3:a:aeon:waon:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "audio\/wavpack": {
+        "nomatch": [
+            "cpe:2.3:a:wavpack_project:wavpack:*:*:*:*:*:*:*:*"
         ]
     },
     "benchmarks\/dhrystone": {
@@ -427,7 +550,8 @@
     },
     "biology\/babel": {
         "nomatch": [
-            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
     },
     "biology\/bifrost": {
@@ -468,6 +592,11 @@
             "cpe:2.3:a:iris:star:*:*:*:*:*:*:*:*"
         ]
     },
+    "cad\/freecad": {
+        "nomatch": [
+            "cpe:2.3:a:freecadweb:freecad:*:*:*:*:*:*:*:*"
+        ]
+    },
     "cad\/kicad": {
         "confirmedmatch": "cpe:2.3:a:kicad:eda:*:*:*:*:*:*:*:*"
     },
@@ -487,6 +616,11 @@
     },
     "chinese\/aterm": {
         "custommatch": "cpe:2.3:a:aterm:aterm:*:*:*:*:*:*:*:*"
+    },
+    "chinese\/bitchx": {
+        "nomatch": [
+            "cpe:2.3:a:colten_edwards:bitchx:*:*:*:*:*:*:*:*"
+        ]
     },
     "chinese\/libreoffice-zh_CN": {
         "nomatch": [
@@ -521,6 +655,16 @@
             "cpe:2.3:a:joachim_ruhs:locator:*:*:*:*:*:*:*:*"
         ]
     },
+    "comms\/mgetty+sendfax": {
+        "nomatch": [
+            "cpe:2.3:a:gert_doering:mgetty:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "comms\/minicom": {
+        "nomatch": [
+            "cpe:2.3:a:minicom:minicom:*:*:*:*:*:*:*:*"
+        ]
+    },
     "comms\/openobex": {
         "custommatch": "cpe:2.3:a:openobex:openobex:*:*:*:*:*:*:*:*"
     },
@@ -549,22 +693,57 @@
     },
     "converters\/cl-babel": {
         "nomatch": [
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "converters\/cl-babel-ccl": {
+        "nomatch": [
+            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "converters\/cl-babel-clisp": {
+        "nomatch": [
+            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
         ]
     },
     "converters\/cl-babel-sbcl": {
         "nomatch": [
-            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:pocoo:babel:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:babel:babel:*:*:*:*:*:*:*:*"
         ]
     },
     "converters\/lua-json": {
         "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:json_project:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tunnuz:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nlohmann:json:*:*:*:*:*:*:*:*"
         ]
+    },
+    "converters\/p5-Convert-ASN1": {
+        "confirmedmatch": "cpe:2.3:a:convert\\:\\:asn1_project:convert\\:\\:asn1:*:*:*:*:*:*:*:*"
     },
     "converters\/p5-JSON": {
         "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:json_project:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ruby-lang:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tunnuz:json:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nlohmann:json:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "converters\/php82-iconv": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "converters\/php82-mbstring": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "converters\/recode": {
@@ -663,6 +842,66 @@
     "databases\/php-tarantool": {
         "nomatch": [
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-dba": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-mysqli": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-odbc": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_dblib": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_firebird": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_mysql": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_odbc": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_pgsql": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pdo_sqlite": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-pgsql": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/php82-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/postgresql-jdbc": {
@@ -1423,6 +1662,56 @@
     "devel\/performance": {
         "nomatch": [
             "cpe:2.3:a:jenkins:performance:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-ffi": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-gettext": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-intl": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-pcntl": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-readline": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-shmop": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-sysvmsg": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-sysvsem": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-sysvshm": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php82-tokenizer": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pickle": {
@@ -2603,6 +2892,16 @@
     "ftp\/pavuk": {
         "custommatch": "cpe:2.3:a:pavuk:pavuk:*:*:*:*:*:*:*:*"
     },
+    "ftp\/php82-curl": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "ftp\/php82-ftp": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "ftp\/phpwebftp": {
         "custommatch": "cpe:2.3:a:phpwebftp:phpwebftp:*:*:*:*:*:*:*:*"
     },
@@ -2926,6 +3225,16 @@
     "graphics\/pfstools": {
         "custommatch": "cpe:2.3:a:pfstools:pfstools:*:*:*:*:*:*:*:*"
     },
+    "graphics\/php82-exif": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/php82-gd": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/pixie": {
         "nomatch": [
             "cpe:2.3:a:pixie_project:pixie:*:*:*:*:*:*:*:*",
@@ -3190,6 +3499,11 @@
             "cpe:2.3:a:elektrobit:pfe:*:*:*:*:*:*:*:*"
         ]
     },
+    "lang\/php82": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "lang\/python": {
         "nomatch": [
             "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
@@ -3315,6 +3629,11 @@
             "cpe:2.3:a:zetacomponents:mail:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:egain:mail:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:nextcloud:mail:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/php82-imap": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/postgrey": {
@@ -3468,6 +3787,16 @@
             "cpe:2.3:a:mossle:lemon:*:*:*:*:*:*:*:*"
         ]
     },
+    "math\/php82-bcmath": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "math\/php82-gmp": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "math\/py-deap": {
         "nomatch": [
             "cpe:2.3:a:deap_project:deap:*:*:*:*:*:*:*:*"
@@ -3538,6 +3867,11 @@
     "misc\/otter": {
         "nomatch": [
             "cpe:2.3:a:inedo:otter:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "misc\/php82-calendar": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "misc\/py-halo": {
@@ -3680,6 +4014,11 @@
             "cpe:2.3:a:zenoss:zenoss:*:*:*:*:*:*:*:*"
         ]
     },
+    "net-mgmt\/php82-snmp": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "net-mgmt\/virt-viewer": {
         "custommatch": "cpe:2.3:a:redhat:virt\\-viewer:*:*:*:*:*:*:*:*"
     },
@@ -3814,6 +4153,21 @@
             "cpe:2.3:a:gnu:radius:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:lucent:radius:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:radius_extension_project:radius:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/php82-ldap": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/php82-soap": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/php82-sockets": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/py-netaddr": {
@@ -4156,6 +4510,16 @@
             "cpe:2.3:a:ssh2_project:ssh2:*:*:*:*:*:*:*:*"
         ]
     },
+    "security\/php82-filter": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "security\/php82-sodium": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/pidgin-encryption": {
         "nomatch": [
             "cpe:2.3:a:pidgin:pidgin:*:*:*:*:*:*:*:*"
@@ -4344,6 +4708,16 @@
             "cpe:2.3:a:gentoo:file:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:file_project:file:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:christos_zoulas:file:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/php82-fileinfo": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/php82-posix": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/pslist": {
@@ -4549,6 +4923,51 @@
     },
     "textproc\/pdftohtml": {
         "custommatch": "cpe:2.3:a:pdftohtml:pdftohtml:*:*:*:*:*:*:*:*"
+    },
+    "textproc\/php82-ctype": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-dom": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-enchant": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-pspell": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-simplexml": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-xml": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-xmlreader": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-xmlwriter": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/php82-xsl": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
     },
     "textproc\/po4a": {
         "custommatch": "cpe:2.3:a:po4a:po4a:*:*:*:*:*:*:*:*"
@@ -4893,6 +5312,21 @@
     "www\/pecl-solr": {
         "nomatch": [
             "cpe:2.3:a:apache:solr:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/php82-opcache": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/php82-session": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/php82-tidy": {
+        "nomatch": [
+            "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
     "www\/phpsysinfo": {
