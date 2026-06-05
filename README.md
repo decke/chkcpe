@@ -16,11 +16,11 @@ automatically updated once a day.
 
 | Status                                                              | # Ports                                                                |
 | --------------------------------------------------------------------| ---------------------------------------------------------------------: |
-| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2449](https://github.com/decke/chkcpe/wiki/valid)                 |
-| ![invalid](https://img.shields.io/badge/invalid-red)                | [252](https://github.com/decke/chkcpe/wiki/invalid)             |
+| ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2593](https://github.com/decke/chkcpe/wiki/valid)                 |
+| ![invalid](https://img.shields.io/badge/invalid-red)                | [108](https://github.com/decke/chkcpe/wiki/invalid)             |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | [5](https://github.com/decke/chkcpe/wiki/deprecated)       |
-| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [2295](https://github.com/decke/chkcpe/wiki/checkneeded)     |
-| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [8](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 29514 | |
+| ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [1642](https://github.com/decke/chkcpe/wiki/checkneeded)     |
+| ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [0](https://github.com/decke/chkcpe/wiki/readytocommit) |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 30174 | |
 
-Last updated: Thu Jun  4 21:25:17 UTC 2026
+Last updated: Fri Jun  5 05:37:03 UTC 2026
