@@ -759,14 +759,56 @@
             "cpe:2.3:a:perl:dbi:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/mantis": {
+    "databases\/arrow-glib": {
+        "confirmedmatch": "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
+    },
+    "databases\/db": {
         "nomatch": [
-            "cpe:2.3:a:jenkins:mantis:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:oracle:berkeley_db:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/db5": {
+        "confirmedmatch": "cpe:2.3:a:oracle:berkeley_db:*:*:*:*:*:*:*:*"
+    },
+    "databases\/diesel": {
+        "confirmedmatch": "cpe:2.3:a:diesel:diesel:*:*:*:*:*:*:*:*"
+    },
+    "databases\/hiredis": {
+        "confirmedmatch": "cpe:2.3:a:redis:hiredis:*:*:*:*:*:*:*:*"
+    },
+    "databases\/immudb": {
+        "confirmedmatch": "cpe:2.3:a:codenotary:immudb:*:*:*:*:*:*:*:*"
+    },
+    "databases\/mantis": {
+        "confirmedmatch": "cpe:2.3:a:mantisbt:mantisbt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/mariadb-connector-c": {
+        "confirmedmatch": "cpe:2.3:a:mariadb:connector\\\/c:*:*:*:*:*:*:*:*"
     },
     "databases\/mariadb-connector-odbc": {
         "nomatch": [
             "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/memcached": {
+        "nomatch": [
+            "cpe:2.3:a:memcachedb:memcached:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/mongosh": {
+        "confirmedmatch": "cpe:2.3:a:mongodb:mongosh:*:*:*:*:*:*:*:*"
+    },
+    "databases\/mysql-connector-java51": {
+        "confirmedmatch": "cpe:2.3:a:oracle:mysql_connector\\\/j:*:*:*:*:*:*:*:*"
+    },
+    "databases\/mysql80-client": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/mysql80-server": {
+        "nomatch": [
+            "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/ocaml-mysql": {
@@ -786,6 +828,16 @@
         "nomatch": [
             "cpe:2.3:a:bson_project:bson:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:mongodb:bson:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/p5-DBI": {
+        "nomatch": [
+            "cpe:2.3:a:perl:database_interface:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/p5-Mango": {
+        "nomatch": [
+            "cpe:2.3:a:radixiot:mango:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/p5-MongoDB": {
@@ -820,9 +872,7 @@
         ]
     },
     "databases\/pecl-memcached": {
-        "nomatch": [
-            "cpe:2.3:a:memcached:memcached:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:php:memcached:*:*:*:*:*:*:*:*"
     },
     "databases\/pecl-mongodb": {
         "nomatch": [
@@ -837,6 +887,11 @@
             "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/percona-orchestrator": {
+        "nomatch": [
+            "cpe:2.3:a:uipath:orchestrator:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/php-tarantool": {
@@ -904,11 +959,13 @@
             "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
         ]
     },
-    "databases\/postgresql-jdbc": {
+    "databases\/phppgadmin": {
         "nomatch": [
-            "cpe:2.3:a:anynines:postgresql:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:phppgadmin:phppgadmin:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/postgresql-jdbc": {
+        "confirmedmatch": "cpe:2.3:a:postgresql:postgresql_jdbc_driver:*:*:*:*:*:*:*:*"
     },
     "databases\/postgresql-odbc": {
         "nomatch": [
@@ -916,15 +973,26 @@
             "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/postgresql-semver": {
+        "nomatch": [
+            "cpe:2.3:a:npmjs:semver:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-Elixir": {
         "nomatch": [
             "cpe:2.3:a:teamworktec:elixir:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-asyncmy": {
+        "confirmedmatch": "cpe:2.3:a:long2ice:asyncmy:*:*:*:*:*:*:*:*"
+    },
     "databases\/py-couchdb": {
         "nomatch": [
             "cpe:2.3:a:apache:couchdb:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/py-duckdb": {
+        "confirmedmatch": "cpe:2.3:a:duckdb:duckdb:*:*:*:*:*:*:*:*"
     },
     "databases\/py-hiredis": {
         "nomatch": [
@@ -938,17 +1006,37 @@
             "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-mariadb": {
+        "nomatch": [
+            "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-motor": {
         "nomatch": [
             "cpe:2.3:a:motor_project:motor:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:magzter:motor:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-mycli": {
+        "confirmedmatch": "cpe:2.3:a:dbcli:mycli:*:*:*:*:*:*:*:*"
+    },
+    "databases\/py-ormar": {
+        "confirmedmatch": "cpe:2.3:a:collerek:ormar:*:*:*:*:*:*:*:*"
+    },
     "databases\/py-postgresql": {
         "nomatch": [
             "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:anynines:postgresql:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/py-prisma": {
+        "nomatch": [
+            "cpe:2.3:a:axiomthemes:prisma:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:prisma:prisma:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-pymongo": {
+        "confirmedmatch": "cpe:2.3:a:mongodb:pymongo:*:*:*:*:*:*:*:*"
     },
     "databases\/py-rb": {
         "nomatch": [
@@ -971,6 +1059,22 @@
             "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-redis5": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-redis6": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/py-rrdtool": {
         "nomatch": [
             "cpe:2.3:a:rrdtool_project:rrdtool:*:*:*:*:*:*:*:*"
@@ -978,12 +1082,27 @@
     },
     "databases\/py-sqlite3": {
         "nomatch": [
-            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:python_software_foundation:python:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/py-sqlparse": {
+        "confirmedmatch": "cpe:2.3:a:sqlparse_project:sqlparse:*:*:*:*:*:*:*:*"
     },
     "databases\/py-tarantool": {
         "nomatch": [
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-unqlite": {
+        "nomatch": [
+            "cpe:2.3:a:tokuhirom:unqlite:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/py-valkey": {
+        "nomatch": [
+            "cpe:2.3:a:lfprojects:valkey:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/py-whisper": {
@@ -991,26 +1110,128 @@
             "cpe:2.3:a:whisper:whisper:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/py-xrootd": {
+        "nomatch": [
+            "cpe:2.3:a:xrootd:xrootd:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/qdbm": {
         "custommatch": "cpe:2.3:a:qdbm:qdbm:*:*:*:*:*:*:*:*"
     },
+    "databases\/qt5-sql": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
     "databases\/qt5-sqldrivers-mysql": {
-        "nomatch": [
-            "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:mysqljs:mysql:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:mysql_project:mysql:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:anynines:mysql:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/qt5-sqldrivers-odbc": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/qt5-sqldrivers-pgsql": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/qt5-sqldrivers-sqlite2": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
     },
     "databases\/qt5-sqldrivers-sqlite3": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/qt5-sqldrivers-tds": {
+        "confirmedmatch": "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+    },
+    "databases\/qt6-base_sqldriver": {
         "nomatch": [
-            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/redis": {
+        "confirmedmatch": "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
+    },
+    "databases\/redisbloom": {
+        "confirmedmatch": "cpe:2.3:a:redis:redisbloom:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord-session_store": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:active_record_session_store:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord4": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord5": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord50": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord52": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord60": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord61": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord70": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord71": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord72": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord80": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-activerecord81": {
+        "confirmedmatch": "cpe:2.3:a:activerecord_project:activerecord:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-dalli": {
+        "confirmedmatch": "cpe:2.3:a:dalli_project:dalli:*:*:*:*:*:*:*:*"
     },
     "databases\/rubygem-dbi": {
         "nomatch": [
             "cpe:2.3:a:perl:dbi:*:*:*:*:*:*:*:*"
         ]
+    },
+    "databases\/rubygem-globalid": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails5": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails50": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails52": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails60": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails61": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails70": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails71": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails72": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails80": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
+    },
+    "databases\/rubygem-globalid-rails81": {
+        "confirmedmatch": "cpe:2.3:a:rubyonrails:globalid:*:*:*:*:*:*:*:*"
     },
     "databases\/rubygem-hiredis": {
         "nomatch": [
@@ -1037,7 +1258,17 @@
             "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-mysql2": {
+        "nomatch": [
+            "cpe:2.3:a:sidorares:mysql2:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-pg": {
+        "nomatch": [
+            "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-pg-gitlab": {
         "nomatch": [
             "cpe:2.3:a:node-postgres:pg:*:*:*:*:*:*:*:*"
         ]
@@ -1050,7 +1281,20 @@
             "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-redis-gitlab": {
+        "nomatch": [
+            "cpe:2.3:a:anynines:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redis.js:redis:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
+        ]
+    },
     "databases\/rubygem-sqlite3": {
+        "nomatch": [
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/rubygem-sqlite31": {
         "nomatch": [
             "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
         ]
@@ -1060,23 +1304,66 @@
             "cpe:2.3:a:tarantool:tarantool:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/rubygem-trilogy": {
+        "confirmedmatch": "cpe:2.3:a:trilogy_project:trilogy:*:*:*:*:*:*:*:*"
+    },
     "databases\/tcl-sqlite3": {
         "nomatch": [
-            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ghost:sqlite3:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:sqlite:sqlite:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/valkey8": {
+        "confirmedmatch": "cpe:2.3:a:lfprojects:valkey:*:*:*:*:*:*:*:*"
+    },
+    "deskutils\/baobab": {
+        "nomatch": [
+            "cpe:2.3:a:baobab_project:baobab:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/calendar": {
         "nomatch": [
             "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:humhub:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:discourse:calendar:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "deskutils\/deforaos-notes": {
+        "nomatch": [
+            "cpe:2.3:a:samsung:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nextcloud:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ibm:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:hcltech:notes:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/elementary-calendar": {
         "nomatch": [
             "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:humhub:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:discourse:calendar:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "deskutils\/gnustep-wrapper": {
+        "nomatch": [
+            "cpe:2.3:a:msi:wrapper:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "deskutils\/havoc": {
+        "nomatch": [
+            "cpe:2.3:a:havocframework:havoc:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "deskutils\/health": {
+        "nomatch": [
+            "cpe:2.3:a:samsung:health:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/ical": {
@@ -1084,17 +1371,42 @@
             "cpe:2.3:a:apple:ical:*:*:*:*:*:*:*:*"
         ]
     },
+    "deskutils\/joplin-desktop": {
+        "confirmedmatch": "cpe:2.3:a:joplinapp:joplin:*:*:*:*:*:*:*:*"
+    },
+    "deskutils\/kdeconnect-kde": {
+        "confirmedmatch": "cpe:2.3:a:kde:kdeconnect:*:*:*:*:*:*:*:*"
+    },
+    "deskutils\/kmail": {
+        "nomatch": [
+            "cpe:2.3:a:kmail:kmail:*:*:*:*:*:*:*:*"
+        ]
+    },
     "deskutils\/maliit-framework": {
         "nomatch": [
             "cpe:2.3:a:themify:framework:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:schben:framework:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:laravel:framework:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:adive:framework:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:adive:framework:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:basticom:framework:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nuxt:framework:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:silverstripe:framework:*:*:*:*:*:*:*:*"
         ]
+    },
+    "deskutils\/nextcloudclient": {
+        "confirmedmatch": "cpe:2.3:a:nextcloud:desktop:*:*:*:*:*:*:*:*"
     },
     "deskutils\/note": {
         "nomatch": [
             "cpe:2.3:a:note_project:note:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "deskutils\/notes": {
+        "nomatch": [
+            "cpe:2.3:a:hcltech:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ibm:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nextcloud:notes:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:notes:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/phpicalendar": {
@@ -1105,11 +1417,15 @@
             "cpe:2.3:a:apache:pinot:*:*:*:*:*:*:*:*"
         ]
     },
+    "deskutils\/skim": {
+        "confirmedmatch": "cpe:2.3:a:skim-rs:skim:*:*:*:*:*:*:*:*"
+    },
     "deskutils\/synapse": {
         "nomatch": [
             "cpe:2.3:a:matrix:synapse:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:razer:synapse:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:apache:synapse:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:apache:synapse:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:element:synapse:*:*:*:*:*:*:*:*"
         ]
     },
     "deskutils\/toolboxkit": {
@@ -5548,6 +5864,21 @@
         "nomatch": [
             "cpe:2.3:a:apple:terminal:*:*:*:*:*:*:*:*"
         ]
+    },
+    "x11\/linux-nvidia-libs": {
+        "confirmedmatch": "cpe:2.3:a:nvidia:gpu_driver:*:*:*:*:*:*:*:*"
+    },
+    "x11\/linux-nvidia-libs-304": {
+        "confirmedmatch": "cpe:2.3:a:nvidia:gpu_driver:*:*:*:*:*:*:*:*"
+    },
+    "x11\/linux-nvidia-libs-340": {
+        "confirmedmatch": "cpe:2.3:a:nvidia:gpu_driver:*:*:*:*:*:*:*:*"
+    },
+    "x11\/linux-nvidia-libs-390": {
+        "confirmedmatch": "cpe:2.3:a:nvidia:gpu_driver:*:*:*:*:*:*:*:*"
+    },
+    "x11\/linux-nvidia-libs-470": {
+        "confirmedmatch": "cpe:2.3:a:nvidia:gpu_driver:*:*:*:*:*:*:*:*"
     },
     "x11\/mlterm": {
         "custommatch": "cpe:2.3:a:mlterm:mlterm:*:*:*:*:*:*:*:*"
