@@ -61,7 +61,7 @@ class Dictionary
         }
 
         if (strlen($row[2]) > 0) {
-            $prd->setDeprecatedBy(new Product((string)$row[2]));
+            $prd->setDeprecated(true, new Product((string)$row[2]));
         }
 
         return $prd;

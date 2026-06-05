@@ -12,6 +12,7 @@ use PacificSec\CPE\Naming\CPENameUnbinder;
 class Product
 {
     protected WellFormedName $cpe;
+    protected bool $deprecated = false;
     protected ?Product $deprecated_by = null;
 
     public function __construct(string|WellFormedName $cpe)
@@ -94,14 +95,17 @@ class Product
         return self::unescape($this->getProduct());
     }
 
-    public function setDeprecatedBy(Product $product): bool
+    public function setDeprecated(bool $deprecated, ?Product $product = null): bool
     {
-        // recursive deprecation exists in the CPE Dictionary but it's nonsense
-        if ($this->getVendor() == $product->getVendor() && $this->getProduct() == $product->getProduct()) {
-            return false;
+        if ($product !== null) {
+            // recursive deprecation exists in the CPE Dictionary but it's nonsense
+            if ($this->getVendor() == $product->getVendor() && $this->getProduct() == $product->getProduct()) {
+                return false;
+            }
+            $this->deprecated_by = $product;
         }
 
-        $this->deprecated_by = $product;
+        $this->deprecated = $deprecated;
         return true;
     }
 
@@ -112,7 +116,7 @@ class Product
 
     public function isDeprecated(): bool
     {
-        return !is_null($this->deprecated_by);
+        return $this->deprecated;
     }
 
     public function __toString(): string

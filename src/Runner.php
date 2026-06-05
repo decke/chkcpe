@@ -98,9 +98,14 @@ class Runner
                     }
 
                     if ($cpe_deprecated) {
-                        $cpe_deprecated_by = (string)$data->cpe->deprecatedBy[0]->cpeName;
+                        if (isset($data->cpe->deprecatedBy[0])) {
+                            $cpe_deprecated_by = (string)$data->cpe->deprecatedBy[0]->cpeName;
 
-                        $product->setDeprecatedBy(new Product($cpe_deprecated_by));
+                            $product->setDeprecated(true, new Product($cpe_deprecated_by));
+                        }
+                        else {
+                            $product->setDeprecated(true);
+                        }
                     }
 
                     if (!$dictionary->addProduct($product)) {
