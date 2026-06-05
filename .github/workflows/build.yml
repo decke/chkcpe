@@ -4,7 +4,7 @@ on:
     paths-ignore:
       - '**.md'
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 env:
@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Check out FreeBSD Portstree
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: freebsd/freebsd-ports
           path: ports
@@ -56,9 +56,9 @@ jobs:
           MAKE: /usr/bin/bmake
           ARCH: amd64
           OPSYS: FreeBSD
-          OSREL: 14.3
-          OSVERSION: 1403503
-          _OSRELEASE: 14.3-RELEASE
+          OSREL: 15.1
+          OSVERSION: 1501500
+          _OSRELEASE: 15.1-RELEASE
           MAKE_JOBS_NUMBER: 1
           CONFIGURE_MAX_CMD_LEN: 524288
         run: |
@@ -67,13 +67,13 @@ jobs:
           ./bin/chkcpe
 
       - name: Upload logfiles
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: chkcpe.db
           path: logs/chkcpe.db
 
       - name: Check out repository wiki
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ github.repository }}.wiki
           path: wiki
