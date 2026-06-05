@@ -1433,7 +1433,8 @@
             "cpe:2.3:a:hp:toolbox:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:jetbrains:toolbox:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:ncbi:toolbox:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:pc-doctor:toolbox:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:pc-doctor:toolbox:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:themedy:toolbox:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/R-cran-bit": {
@@ -1446,9 +1447,16 @@
             "cpe:2.3:a:caret:caret:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/R-cran-checkmate": {
+        "nomatch": [
+            "cpe:2.3:a:bluewavelabs:checkmate:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/R-cran-cli": {
         "nomatch": [
-            "cpe:2.3:a:cli_project:cli:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:cli_project:cli:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:github:cli:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nhost:cli:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/R-cran-crayon": {
@@ -1456,9 +1464,45 @@
             "cpe:2.3:a:crayon_project:crayon:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/R-cran-devtools": {
+        "nomatch": [
+            "cpe:2.3:a:nuxt:devtools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vuejs:devtools:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-evaluate": {
+        "nomatch": [
+            "cpe:2.3:a:evaluate_project:evaluate:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-filelock": {
+        "nomatch": [
+            "cpe:2.3:a:tox-dev:filelock:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-hms": {
+        "nomatch": [
+            "cpe:2.3:a:hms_project:hms:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/R-cran-ini": {
         "nomatch": [
             "cpe:2.3:a:ini_project:ini:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-kit": {
+        "nomatch": [
+            "cpe:2.3:a:svelte:kit:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-mockery": {
+        "nomatch": [
+            "cpe:2.3:a:mockery_project:mockery:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/R-cran-msm": {
+        "nomatch": [
+            "cpe:2.3:a:marvalglobal:msm:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/R-cran-progress": {
@@ -1477,20 +1521,46 @@
             "cpe:2.3:a:silverstripe:registry:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/R-cran-uuid": {
+        "nomatch": [
+            "cpe:2.3:a:satori:uuid:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:uuidjs:uuid:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/R-cran-whisker": {
         "nomatch": [
             "cpe:2.3:a:apache:whisker:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/allegro": {
+    "devel\/acme": {
         "nomatch": [
-            "cpe:2.3:a:allegro:allegro:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:netgate:acme:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/allegro5": {
+    "devel\/air-go": {
         "nomatch": [
-            "cpe:2.3:a:allegro:allegro:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:adobe:air:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/allegro": {
+        "confirmedmatch": "cpe:2.3:a:liballeg:allegro:*:*:*:*:*:*:*:*"
+    },
+    "devel\/allegro5": {
+        "confirmedmatch": "cpe:2.3:a:liballeg:allegro:*:*:*:*:*:*:*:*"
+    },
+    "devel\/android-tools": {
+        "nomatch": [
+            "cpe:2.3:a:google:android_debug_bridge:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/apache-commons-configuration": {
+        "confirmedmatch": "cpe:2.3:a:apache:commons_configuration:*:*:*:*:*:*:*:*"
+    },
+    "devel\/apache-orc": {
+        "confirmedmatch": "cpe:2.3:a:apache:orc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/apr1": {
+        "confirmedmatch": "cpe:2.3:a:apache:portable_runtime:*:*:*:*:*:*:*:*"
     },
     "devel\/arcanist": {
         "nomatch": [
@@ -1502,11 +1572,61 @@
             "cpe:2.3:a:hujiang:arcanist:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/atlantis": {
+        "confirmedmatch": "cpe:2.3:a:runatlantis:atlantis:*:*:*:*:*:*:*:*"
+    },
+    "devel\/benchmark": {
+        "nomatch": [
+            "cpe:2.3:a:tanium:benchmark:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/bennugd-core": {
         "nomatch": [
             "cpe:2.3:a:api-platform:core:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:mobileiron:core:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:onlyoffice:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:adonisjs:core:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/boehm-gc": {
+        "confirmedmatch": "cpe:2.3:a:bdwgc_project:bdwgc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/boehm-gc-threaded": {
+        "confirmedmatch": "cpe:2.3:a:bdwgc_project:bdwgc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/boost-docs": {
+        "nomatch": [
+            "cpe:2.3:a:boost:boost:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/boost-jam": {
+        "nomatch": [
+            "cpe:2.3:a:boost:boost:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/boost-libs": {
+        "confirmedmatch": "cpe:2.3:a:boost:boost:*:*:*:*:*:*:*:*"
+    },
+    "devel\/boost-python-libs": {
+        "nomatch": [
+            "cpe:2.3:a:boost:boost:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/brpc": {
+        "confirmedmatch": "cpe:2.3:a:apache:brpc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/camp": {
+        "nomatch": [
+            "cpe:2.3:a:camp_project:camp:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/cbang": {
+        "confirmedmatch": "cpe:2.3:a:cauldrondevelopment:cbang:*:*:*:*:*:*:*:*"
+    },
+    "devel\/cccc": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:cccc:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/cflow": {
@@ -1514,7 +1634,20 @@
             "cpe:2.3:a:gnu:cflow:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/cgit": {
+        "confirmedmatch": "cpe:2.3:a:cgit_project:cgit:*:*:*:*:*:*:*:*"
+    },
     "devel\/cl-infix": {
+        "nomatch": [
+            "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/cl-infix-ccl": {
+        "nomatch": [
+            "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/cl-infix-clisp": {
         "nomatch": [
             "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
         ]
@@ -1522,6 +1655,13 @@
     "devel\/cl-infix-sbcl": {
         "nomatch": [
             "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/cli": {
+        "nomatch": [
+            "cpe:2.3:a:nhost:cli:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:github:cli:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:cli_project:cli:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/cmake-doc": {
@@ -1534,14 +1674,32 @@
             "cpe:2.3:a:cmake_project:cmake:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/cmake-man": {
+        "nomatch": [
+            "cpe:2.3:a:cmake_project:cmake:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/containers": {
         "nomatch": [
             "cpe:2.3:a:bitnami:containers:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:containers_project:containers:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/cppcheck": {
+        "confirmedmatch": "cpe:2.3:a:cppchecksolutions:cppcheck:*:*:*:*:*:*:*:*"
+    },
     "devel\/cscope": {
         "custommatch": "cpe:2.3:a:cscope:cscope:*:*:*:*:*:*:*:*"
+    },
+    "devel\/cvs": {
+        "nomatch": [
+            "cpe:2.3:a:cvs:cvs:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/cvs-devel": {
+        "nomatch": [
+            "cpe:2.3:a:cvs:cvs:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/cvstrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
@@ -1551,6 +1709,14 @@
             "cpe:2.3:a:date_project:date:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/dbus": {
+        "confirmedmatch": "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
+    },
+    "devel\/dbus-tcl": {
+        "nomatch": [
+            "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/delta": {
@@ -1566,24 +1732,88 @@
             "cpe:2.3:a:gnu:binutils:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/etcd": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:etcd:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/etcd34": {
+        "nomatch": [
+            "cpe:2.3:a:redhat:etcd:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/evdev-proto": {
+        "nomatch": [
+            "cpe:2.3:a:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/fbthrift": {
+        "confirmedmatch": "cpe:2.3:a:facebook:thrift:*:*:*:*:*:*:*:*"
+    },
+    "devel\/flatcc": {
+        "confirmedmatch": "cpe:2.3:a:flatcc_project:flatcc:*:*:*:*:*:*:*:*"
+    },
     "devel\/forge": {
         "nomatch": [
             "cpe:2.3:a:digitalbazzar:forge:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:digitalbazaar:forge:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/fossil": {
+        "nomatch": [
+            "cpe:2.3:a:fossil_scm:fossil:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/fossology-nomos-standalone": {
+        "confirmedmatch": "cpe:2.3:a:linuxfoundation:fossology:*:*:*:*:*:*:*:*"
+    },
     "devel\/gauche-readline": {
         "nomatch": [
             "cpe:2.3:a:gnu:readline:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/gconf2": {
+        "confirmedmatch": "cpe:2.3:a:gnome:gconf:*:*:*:*:*:*:*:*"
     },
     "devel\/genie": {
         "nomatch": [
             "cpe:2.3:a:netgear:genie:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/git": {
+        "nomatch": [
+            "cpe:2.3:a:git_project:git:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/git-gui": {
+        "nomatch": [
+            "cpe:2.3:a:git_project:git:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/git-lfs": {
+        "confirmedmatch": "cpe:2.3:a:git_large_file_storage_project:git_large_file_storage:*:*:*:*:*:*:*:*"
+    },
+    "devel\/git-svn": {
+        "nomatch": [
+            "cpe:2.3:a:git_project:git:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/gitlab-runner": {
+        "confirmedmatch": "cpe:2.3:a:gitlab:runner:*:*:*:*:*:*:*:*"
+    },
+    "devel\/gitoxide": {
+        "confirmedmatch": "cpe:2.3:a:gitoxidelabs:gitoxide:*:*:*:*:*:*:*:*"
+    },
     "devel\/gittrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
+    },
+    "devel\/glade": {
+        "confirmedmatch": "cpe:2.3:a:gnome:glade:*:*:*:*:*:*:*:*"
+    },
+    "devel\/gnulib": {
+        "nomatch": [
+            "cpe:2.3:a:gnulib:gnulib:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/go-tools": {
         "nomatch": [
@@ -1591,10 +1821,48 @@
             "cpe:2.3:a:irfanview:tools:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/go-wire": {
+        "nomatch": [
+            "cpe:2.3:a:wire:wire:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:asynkron:wire:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/godot": {
+        "confirmedmatch": "cpe:2.3:a:godotengine:godot_engine:*:*:*:*:*:*:*:*"
+    },
+    "devel\/godot-tools": {
+        "nomatch": [
+            "cpe:2.3:a:godotengine:godot_engine:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/gogs": {
+        "nomatch": [
+            "cpe:2.3:a:gogits:gogs:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/gomigrate": {
+        "nomatch": [
+            "cpe:2.3:a:migrate_project:migrate:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/goreleaser": {
+        "confirmedmatch": "cpe:2.3:a:goreleaser:goreleaser:*:*:*:*:*:*:*:*"
+    },
     "devel\/gorm": {
         "nomatch": [
             "cpe:2.3:a:gorm:gorm:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/heimdall": {
+        "nomatch": [
+            "cpe:2.3:a:dadrus:heimdall:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/hivex": {
+        "confirmedmatch": "cpe:2.3:a:redhat:hivex:*:*:*:*:*:*:*:*"
+    },
+    "devel\/hotspot": {
+        "confirmedmatch": "cpe:2.3:a:kdab:hotspot:*:*:*:*:*:*:*:*"
     },
     "devel\/hs-alex": {
         "nomatch": [
@@ -1608,13 +1876,67 @@
     },
     "devel\/hs-hpack": {
         "nomatch": [
-            "cpe:2.3:a:python:hpack:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:python:hpack:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:golang:hpack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/hyperscan": {
+        "confirmedmatch": "cpe:2.3:a:intel:hyperscan:*:*:*:*:*:*:*:*"
+    },
+    "devel\/immer": {
+        "nomatch": [
+            "cpe:2.3:a:immer_project:immer:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/iniparser": {
+        "confirmedmatch": "cpe:2.3:a:ndevilla:iniparser:*:*:*:*:*:*:*:*"
+    },
+    "devel\/iscd-commons": {
+        "nomatch": [
+            "cpe:2.3:a:xwiki:commons:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:acquia:commons:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/java-findbugs": {
         "nomatch": [
             "cpe:2.3:a:jenkins:findbugs:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/jech-dht": {
+        "nomatch": [
+            "cpe:2.3:a:dht_project:dht:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/jetbrains-sqlite": {
+        "nomatch": [
+            "cpe:2.3:a:sqlite:sqlite:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/jline": {
+        "confirmedmatch": "cpe:2.3:a:jline:jline:*:*:*:*:*:*:*:*"
+    },
+    "devel\/juce": {
+        "nomatch": [
+            "cpe:2.3:a:juce:juce:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/kf5-kcoreaddons": {
+        "confirmedmatch": "cpe:2.3:a:kde:kcoreaddons:*:*:*:*:*:*:*:*"
+    },
+    "devel\/kf6-kauth": {
+        "confirmedmatch": "cpe:2.3:a:kde:kauth:*:*:*:*:*:*:*:*"
+    },
+    "devel\/kf6-kconfig": {
+        "confirmedmatch": "cpe:2.3:a:kde:kconfig:*:*:*:*:*:*:*:*"
+    },
+    "devel\/kf6-kcoreaddons": {
+        "confirmedmatch": "cpe:2.3:a:kde:kcoreaddons:*:*:*:*:*:*:*:*"
+    },
+    "devel\/kf6-kio": {
+        "confirmedmatch": "cpe:2.3:a:kde:kio:*:*:*:*:*:*:*:*"
+    },
+    "devel\/kf6-ktexteditor": {
+        "confirmedmatch": "cpe:2.3:a:kde:ktexteditor:*:*:*:*:*:*:*:*"
     },
     "devel\/lemon": {
         "nomatch": [
@@ -1624,20 +1946,124 @@
     "devel\/libast": {
         "custommatch": "cpe:2.3:a:libast:libast:*:*:*:*:*:*:*:*"
     },
+    "devel\/libbson": {
+        "nomatch": [
+            "cpe:2.3:a:mongodb:c_driver:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libcjson": {
+        "nomatch": [
+            "cpe:2.3:a:cjson_project:cjson:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libevent": {
+        "nomatch": [
+            "cpe:2.3:a:niels_provos:libevent:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libfastcommon": {
+        "confirmedmatch": "cpe:2.3:a:happyfish100:libfastcommon:*:*:*:*:*:*:*:*"
+    },
+    "devel\/libgdata": {
+        "confirmedmatch": "cpe:2.3:a:gnome:libgdata:*:*:*:*:*:*:*:*"
+    },
+    "devel\/libgit2": {
+        "nomatch": [
+            "cpe:2.3:a:libgit2_project:libgit2:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libgsf": {
+        "nomatch": [
+            "cpe:2.3:a:libgsf:libgsf:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libiec61850": {
+        "confirmedmatch": "cpe:2.3:a:mz-automation:libiec61850:*:*:*:*:*:*:*:*"
+    },
     "devel\/libjitterentropy": {
         "nomatch": [
             "cpe:2.3:a:elektrobit:libjitterentropy:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/libkiwix": {
+        "confirmedmatch": "cpe:2.3:a:kiwix:libkiwix:*:*:*:*:*:*:*:*"
+    },
+    "devel\/libkiwix13": {
+        "confirmedmatch": "cpe:2.3:a:kiwix:libkiwix:*:*:*:*:*:*:*:*"
     },
     "devel\/libnotify": {
         "nomatch": [
             "cpe:2.3:a:libnotify_project:libnotify:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/libosinfo": {
+        "confirmedmatch": "cpe:2.3:a:libosinfo:libosinfo:*:*:*:*:*:*:*:*"
+    },
+    "devel\/librest": {
+        "nomatch": [
+            "cpe:2.3:a:plone:rest:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libtextstyle": {
+        "nomatch": [
+            "cpe:2.3:a:gnu:gettext:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libuv": {
+        "nomatch": [
+            "cpe:2.3:a:libuv_project:libuv:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/libvirt": {
+        "nomatch": [
+            "cpe:2.3:a:libvirt:libvirt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/lief": {
+        "confirmedmatch": "cpe:2.3:a:lief-project:lief:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linenoise": {
+        "confirmedmatch": "cpe:2.3:a:antirez:linenoise:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linux-c7-devtools": {
+        "nomatch": [
+            "cpe:2.3:a:nuxt:devtools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vuejs:devtools:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/linux-c7-nspr": {
+        "confirmedmatch": "cpe:2.3:a:mozilla:netscape_portable_runtime:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linux-c7-qt": {
+        "nomatch": [
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/linux-c7-sdl12": {
+        "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linux-c7-sdl20": {
+        "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linux-rl9-devtools": {
+        "nomatch": [
+            "cpe:2.3:a:nuxt:devtools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vuejs:devtools:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/linux-rl9-libevent": {
+        "confirmedmatch": "cpe:2.3:a:libevent_project:libevent:*:*:*:*:*:*:*:*"
+    },
+    "devel\/linux-rl9-orc": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer:orc:*:*:*:*:*:*:*:*"
+    },
     "devel\/llvm": {
         "nomatch": [
             "cpe:2.3:a:llvm:llvm:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/log4cxx": {
+        "confirmedmatch": "cpe:2.3:a:apache:log4cxx:*:*:*:*:*:*:*:*"
     },
     "devel\/log4sh": {
         "custommatch": "cpe:2.3:a:log4sh:log4sh:*:*:*:*:*:*:*:*"
@@ -1649,7 +2075,13 @@
     },
     "devel\/lua-cjson": {
         "nomatch": [
-            "cpe:2.3:a:cjson_project:cjson:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:cjson_project:cjson:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:davegamble:cjson:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/lua-cjson-openresty": {
+        "nomatch": [
+            "cpe:2.3:a:davegamble:cjson:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/lua-gettext": {
@@ -1675,31 +2107,86 @@
     "devel\/m4": {
         "custommatch": "cpe:2.3:a:gnu:m4:*:*:*:*:*:*:*:*"
     },
+    "devel\/mongo-c-driver": {
+        "confirmedmatch": "cpe:2.3:a:mongodb:c_driver:*:*:*:*:*:*:*:*"
+    },
+    "devel\/msgpack-c": {
+        "nomatch": [
+            "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/msgpack-cxx": {
+        "nomatch": [
+            "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/muon": {
+        "nomatch": [
+            "cpe:2.3:a:muon_project:muon:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/mustache": {
         "nomatch": [
             "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/nanopb": {
+        "confirmedmatch": "cpe:2.3:a:nanopb_project:nanopb:*:*:*:*:*:*:*:*"
+    },
+    "devel\/ncurses": {
+        "nomatch": [
+            "cpe:2.3:a:ncurses_project:ncurses:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/nimble": {
+        "nomatch": [
+            "cpe:2.3:a:apache:nimble:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/ninja": {
         "nomatch": [
-            "cpe:2.3:a:visualshortcodes:ninja:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:visualshortcodes:ninja:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:itrsgroup:ninja:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ninjaframework:ninja:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/nlohmann-json": {
+        "confirmedmatch": "cpe:2.3:a:nlohmann:json:*:*:*:*:*:*:*:*"
+    },
+    "devel\/ocaml-base": {
         "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/ocaml-calendar": {
         "nomatch": [
             "cpe:2.3:a:synology:calendar:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:nextcloud:calendar:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:kieranoshea:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:humhub:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:google:calendar:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:discourse:calendar:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/ocaml-curses": {
+        "nomatch": [
+            "cpe:2.3:a:curses_project:curses:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/ocaml-extlib": {
         "nomatch": [
             "cpe:2.3:a:dan_kubb:extlib:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/ocaml-fmt": {
+        "nomatch": [
+            "cpe:2.3:a:fmt:fmt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/ocaml-logs": {
+        "nomatch": [
+            "cpe:2.3:a:ethercreative:logs:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/ocaml-magic": {
@@ -1712,6 +2199,11 @@
             "cpe:2.3:a:pcre:pcre:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/ocaml-pcre2": {
+        "nomatch": [
+            "cpe:2.3:a:pcre:pcre2:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/ocaml-react": {
         "nomatch": [
             "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*"
@@ -1722,14 +2214,25 @@
             "cpe:2.3:a:apache:ode:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/orc": {
+    "devel\/open62541": {
+        "confirmedmatch": "cpe:2.3:a:open62541:open62541:*:*:*:*:*:*:*:*"
+    },
+    "devel\/opencl": {
+        "confirmedmatch": "cpe:2.3:a:khronos:opencl:*:*:*:*:*:*:*:*"
+    },
+    "devel\/opentelemetry-proto": {
         "nomatch": [
-            "cpe:2.3:a:apache:orc:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:jenkins:opentelemetry:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:opentelemetry:opentelemetry:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/orc": {
+        "confirmedmatch": "cpe:2.3:a:gstreamer:orc:*:*:*:*:*:*:*:*"
     },
     "devel\/p4": {
         "nomatch": [
-            "cpe:2.3:a:jenkins:p4:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:jenkins:p4:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:p4_project:p4:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-Agent": {
@@ -1737,14 +2240,31 @@
             "cpe:2.3:a:mcafee:agent:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:leostream:agent:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:acronis:agent:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:grafana:agent:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:grafana:agent:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:xata:agent:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:trellix:agent:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:action1:agent:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/p5-App-cpanminus": {
+        "confirmedmatch": "cpe:2.3:a:app\\:\\:cpanminus_project:app\\:\\:cpanminus:*:*:*:*:*:*:*:*"
+    },
+    "devel\/p5-Avro": {
+        "confirmedmatch": "cpe:2.3:a:apache:avro:*:*:*:*:*:*:*:*"
+    },
+    "devel\/p5-CPAN-Checksums": {
+        "confirmedmatch": "cpe:2.3:a:cpan\\:\\:checksums_project:cpan\\:\\:checksums:*:*:*:*:*:*:*:*"
     },
     "devel\/p5-Cache": {
         "nomatch": [
             "cpe:2.3:a:intersystems:cache:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:doctrine-project:cache:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:cache_project:cache:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-Clone": {
+        "nomatch": [
+            "cpe:2.3:a:backupbliss:clone:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-Connector": {
@@ -1761,12 +2281,21 @@
         "nomatch": [
             "cpe:2.3:a:gnu:cvs:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:jenkins:cvs:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:php:cvs:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:php:cvs:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:distrotech:cvs:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-EV": {
         "nomatch": [
             "cpe:2.3:a:php-nuke:ev:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-File-Path": {
+        "confirmedmatch": "cpe:2.3:a:file\\:\\:path_project:file\\:\\:path:*:*:*:*:*:*:*:*"
+    },
+    "devel\/p5-Forest": {
+        "nomatch": [
+            "cpe:2.3:a:rymcu:forest:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-Gearman": {
@@ -1777,6 +2306,12 @@
     "devel\/p5-Glib": {
         "nomatch": [
             "cpe:2.3:a:gnome:glib:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-GraphQL": {
+        "nomatch": [
+            "cpe:2.3:a:graphql:graphql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:silverstripe:graphql:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-JQuery": {
@@ -1829,8 +2364,12 @@
     },
     "devel\/p5-Spoon": {
         "nomatch": [
-            "cpe:2.3:a:ingy:spoon:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ingy:spoon:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:spooncast:spoon:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/p5-Storable": {
+        "confirmedmatch": "cpe:2.3:a:nwclark:storable:*:*:*:*:*:*:*:*"
     },
     "devel\/p5-Stream": {
         "nomatch": [
@@ -1840,6 +2379,12 @@
     "devel\/p5-ToolSet": {
         "nomatch": [
             "cpe:2.3:a:solarwinds:toolset:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-UUID": {
+        "nomatch": [
+            "cpe:2.3:a:uuidjs:uuid:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:satori:uuid:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/p5-Workflow": {
@@ -1854,9 +2399,29 @@
             "cpe:2.3:a:compumedicsneuroscan:curry:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/p5-interface": {
+        "nomatch": [
+            "cpe:2.3:a:themehorse:interface:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/p5-pip": {
         "nomatch": [
             "cpe:2.3:a:pypa:pip:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/p5-subversion": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/pcre": {
+        "nomatch": [
+            "cpe:2.3:a:perl:pcre:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/pcre2": {
+        "nomatch": [
+            "cpe:2.3:a:pcre:pcre:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pear-Date": {
@@ -1868,7 +2433,8 @@
     },
     "devel\/pear-I18N": {
         "nomatch": [
-            "cpe:2.3:a:i18n_project:i18n:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:i18n_project:i18n:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:go-macaron:i18n:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pear-Pager": {
@@ -1887,7 +2453,9 @@
     },
     "devel\/pear-Symfony_Component_Console": {
         "nomatch": [
-            "cpe:2.3:a:altiris:console:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:altiris:console:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:minio:console:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:console_project:console:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pear-Symfony_Component_Finder": {
@@ -1909,7 +2477,8 @@
     },
     "devel\/pear-channel-symfony": {
         "nomatch": [
-            "cpe:2.3:a:sensiolabs:symfony:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:sensiolabs:symfony:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:auth0:symfony:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pear-channel-twig": {
@@ -1952,10 +2521,17 @@
             "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/pecl-opentelemetry": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:opentelemetry:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:opentelemetry:opentelemetry:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/pecl-protobuf": {
         "nomatch": [
             "cpe:2.3:a:golang:protobuf:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:protobuf:protobuf:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/pecl-swoole": {
@@ -1970,6 +2546,17 @@
             "cpe:2.3:a:logitech:sync:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/pecl-uuid": {
+        "nomatch": [
+            "cpe:2.3:a:satori:uuid:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:uuidjs:uuid:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/pecl-uv": {
+        "nomatch": [
+            "cpe:2.3:a:astral:uv:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/pecl-zookeeper": {
         "nomatch": [
             "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
@@ -1977,7 +2564,8 @@
     },
     "devel\/performance": {
         "nomatch": [
-            "cpe:2.3:a:jenkins:performance:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:jenkins:performance:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tanium:performance:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/php82-ffi": {
