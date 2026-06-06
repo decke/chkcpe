@@ -2568,6 +2568,19 @@
             "cpe:2.3:a:tanium:performance:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/phorgeit-arcanist": {
+        "nomatch": [
+            "cpe:2.3:a:hujiang:arcanist:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/phorgeit-arcanist-lib": {
+        "nomatch": [
+            "cpe:2.3:a:hujiang:arcanist:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/php-libawl": {
+        "confirmedmatch": "cpe:2.3:a:davical:andrew\\'s_web_libraries:*:*:*:*:*:*:*:*"
+    },
     "devel\/php82-ffi": {
         "nomatch": [
             "cpe:2.3:a:php_group:php:*:*:*:*:*:*:*:*"
@@ -2628,9 +2641,37 @@
             "cpe:2.3:a:kde:plasma:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/please": {
+        "nomatch": [
+            "cpe:2.3:a:edneville:please:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/protobuf-java": {
+        "nomatch": [
+            "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-Jinja2": {
+        "confirmedmatch": "cpe:2.3:a:palletsprojects:jinja:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-Jinja2-doc": {
         "nomatch": [
             "cpe:2.3:a:pocoo:jinja2:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-aniso8601": {
+        "nomatch": [
+            "cpe:2.3:a:aniso8601_project:aniso8601:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-aniso86016": {
+        "nomatch": [
+            "cpe:2.3:a:aniso8601_project:aniso8601:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-ariadne": {
+        "nomatch": [
+            "cpe:2.3:a:muze:ariadne:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-arrow": {
@@ -2639,11 +2680,70 @@
             "cpe:2.3:a:apache:arrow:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-atom": {
+        "nomatch": [
+            "cpe:2.3:a:atom_project:atom:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-attr": {
+        "nomatch": [
+            "cpe:2.3:a:attr_project:attr:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-attrs": {
+        "confirmedmatch": "cpe:2.3:a:attrs_project:attrs:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-backports": {
         "nomatch": [
             "cpe:2.3:a:opensuse:backports:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:suse:backports:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-bandit": {
+        "nomatch": [
+            "cpe:2.3:a:mtrudel:bandit:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-black": {
+        "confirmedmatch": "cpe:2.3:a:python:black:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-buildbot-console-view": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-buildbot-grid-view": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-buildbot-pkg": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-buildbot-waterfall-view": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-buildbot-worker": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-buildbot-www": {
+        "nomatch": [
+            "cpe:2.3:a:buildbot:buildbot:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-cbor": {
+        "nomatch": [
+            "cpe:2.3:a:peteroupc:cbor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-cbor2": {
+        "confirmedmatch": "cpe:2.3:a:agronholm:cbor2:*:*:*:*:*:*:*:*"
     },
     "devel\/py-cdg": {
         "nomatch": [
@@ -2652,18 +2752,18 @@
     },
     "devel\/py-clang": {
         "nomatch": [
-            "cpe:2.3:a:llvm:clang:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:llvm:clang:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:arm:clang:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-cleo": {
+        "confirmedmatch": "cpe:2.3:a:python-poetry:cleo:*:*:*:*:*:*:*:*"
     },
     "devel\/py-click": {
-        "nomatch": [
-            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:palletsprojects:click:*:*:*:*:*:*:*:*"
     },
     "devel\/py-click7": {
-        "nomatch": [
-            "cpe:2.3:a:click_project:click:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:palletsprojects:click:*:*:*:*:*:*:*:*"
     },
     "devel\/py-cluster": {
         "nomatch": [
@@ -2675,6 +2775,12 @@
             "cpe:2.3:a:ballcat:codegen:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-configobj": {
+        "confirmedmatch": "cpe:2.3:a:configobj_project:configobj:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-copier": {
+        "confirmedmatch": "cpe:2.3:a:copier-org:copier:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-daemon": {
         "nomatch": [
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
@@ -2685,19 +2791,44 @@
             "cpe:2.3:a:jenkins:datadog:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-datasette": {
+        "confirmedmatch": "cpe:2.3:a:datasette:datasette:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-dbus": {
         "nomatch": [
             "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-deepdiff": {
+        "confirmedmatch": "cpe:2.3:a:qluster:deepdiff:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-devtools": {
+        "nomatch": [
+            "cpe:2.3:a:vuejs:devtools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:nuxt:devtools:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-donfig": {
+        "confirmedmatch": "cpe:2.3:a:pytroll:donfig:*:*:*:*:*:*:*:*"
     },
     "devel\/py-enlighten": {
         "nomatch": [
             "cpe:2.3:a:accesspressthemes:enlighten:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-essentials": {
+        "nomatch": [
+            "cpe:2.3:a:nero:essentials:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-fam": {
         "nomatch": [
             "cpe:2.3:a:sgi:fam:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-fields": {
+        "nomatch": [
+            "cpe:2.3:a:teclib-edition:fields:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-filedepot": {
@@ -2713,7 +2844,8 @@
     "devel\/py-flex": {
         "nomatch": [
             "cpe:2.3:a:flex_project:flex:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:apache:flex:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:apache:flex:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:westes:flex:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-freebsd": {
@@ -2721,9 +2853,32 @@
             "cpe:2.3:a:freebsd:freebsd:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-geocoder": {
+        "nomatch": [
+            "cpe:2.3:a:rubygeocoder:geocoder:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-gitpython": {
+        "confirmedmatch": "cpe:2.3:a:gitpython_project:gitpython:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-grab": {
+        "nomatch": [
+            "cpe:2.3:a:dell:grab:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-hatch": {
         "nomatch": [
             "cpe:2.3:a:alienwp:hatch:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-hunter": {
+        "nomatch": [
+            "cpe:2.3:a:experian:hunter:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-icalendar": {
+        "nomatch": [
+            "cpe:2.3:a:icalendar_project:icalendar:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-infinity": {
@@ -2740,7 +2895,14 @@
     "devel\/py-installer": {
         "nomatch": [
             "cpe:2.3:a:nero:installer:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:apple:installer:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:apple:installer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:autodesk:installer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:modoboa:installer:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-janus": {
+        "nomatch": [
+            "cpe:2.3:a:meetecho:janus:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-jira": {
@@ -2752,6 +2914,14 @@
     "devel\/py-jmespath": {
         "nomatch": [
             "cpe:2.3:a:jmespath_project:jmespath:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-joblib": {
+        "confirmedmatch": "cpe:2.3:a:joblib_project:joblib:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-json5": {
+        "nomatch": [
+            "cpe:2.3:a:json5:json5:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-jsonpointer": {
