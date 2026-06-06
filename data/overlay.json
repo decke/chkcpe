@@ -33,9 +33,6 @@
     "archivers\/apache-commons-compress": {
         "confirmedmatch": "cpe:2.3:a:apache:commons_compress:*:*:*:*:*:*:*:*"
     },
-    "archivers\/ark": {
-        "confirmedmatch": "cpe:2.3:a:kde:ark:*:*:*:*:*:*:*:*"
-    },
     "archivers\/dzip": {
         "custommatch": "cpe:2.3:a:evan_wagner:dzip:*:*:*:*:*:*:*:*"
     },
@@ -68,9 +65,6 @@
     },
     "archivers\/libunrar": {
         "confirmedmatch": "cpe:2.3:a:rarlab:unrar:*:*:*:*:*:*:*:*"
-    },
-    "archivers\/libzip": {
-        "confirmedmatch": "cpe:2.3:a:libzip:libzip:*:*:*:*:*:*:*:*"
     },
     "archivers\/lua-zlib": {
         "nomatch": [
@@ -205,9 +199,6 @@
     },
     "archivers\/unarj": {
         "confirmedmatch": "cpe:2.3:a:arjsoftware:unarj:*:*:*:*:*:*:*:*"
-    },
-    "archivers\/unzip": {
-        "confirmedmatch": "cpe:2.3:a:unzip_project:unzip:*:*:*:*:*:*:*:*"
     },
     "archivers\/xmill": {
         "nomatch": [
@@ -773,9 +764,6 @@
     "databases\/diesel": {
         "confirmedmatch": "cpe:2.3:a:diesel:diesel:*:*:*:*:*:*:*:*"
     },
-    "databases\/hiredis": {
-        "confirmedmatch": "cpe:2.3:a:redis:hiredis:*:*:*:*:*:*:*:*"
-    },
     "databases\/immudb": {
         "confirmedmatch": "cpe:2.3:a:codenotary:immudb:*:*:*:*:*:*:*:*"
     },
@@ -797,9 +785,6 @@
     },
     "databases\/mongosh": {
         "confirmedmatch": "cpe:2.3:a:mongodb:mongosh:*:*:*:*:*:*:*:*"
-    },
-    "databases\/mysql-connector-java51": {
-        "confirmedmatch": "cpe:2.3:a:oracle:mysql_connector\\\/j:*:*:*:*:*:*:*:*"
     },
     "databases\/mysql80-client": {
         "nomatch": [
@@ -1143,9 +1128,6 @@
         "nomatch": [
             "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
-    },
-    "databases\/redis": {
-        "confirmedmatch": "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*"
     },
     "databases\/redisbloom": {
         "confirmedmatch": "cpe:2.3:a:redis:redisbloom:*:*:*:*:*:*:*:*"
@@ -1559,9 +1541,6 @@
     "devel\/apache-orc": {
         "confirmedmatch": "cpe:2.3:a:apache:orc:*:*:*:*:*:*:*:*"
     },
-    "devel\/apr1": {
-        "confirmedmatch": "cpe:2.3:a:apache:portable_runtime:*:*:*:*:*:*:*:*"
-    },
     "devel\/arcanist": {
         "nomatch": [
             "cpe:2.3:a:hujiang:arcanist:*:*:*:*:*:*:*:*"
@@ -1588,12 +1567,6 @@
             "cpe:2.3:a:onlyoffice:core:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:adonisjs:core:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/boehm-gc": {
-        "confirmedmatch": "cpe:2.3:a:bdwgc_project:bdwgc:*:*:*:*:*:*:*:*"
-    },
-    "devel\/boehm-gc-threaded": {
-        "confirmedmatch": "cpe:2.3:a:bdwgc_project:bdwgc:*:*:*:*:*:*:*:*"
     },
     "devel\/boost-docs": {
         "nomatch": [
@@ -1633,9 +1606,6 @@
         "nomatch": [
             "cpe:2.3:a:gnu:cflow:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/cgit": {
-        "confirmedmatch": "cpe:2.3:a:cgit_project:cgit:*:*:*:*:*:*:*:*"
     },
     "devel\/cl-infix": {
         "nomatch": [
@@ -1710,9 +1680,6 @@
             "cpe:2.3:a:karen_stevenson:date:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:ruby-lang:date:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/dbus": {
-        "confirmedmatch": "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
     },
     "devel\/dbus-tcl": {
         "nomatch": [
@@ -1826,9 +1793,6 @@
             "cpe:2.3:a:wire:wire:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:asynkron:wire:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/godot": {
-        "confirmedmatch": "cpe:2.3:a:godotengine:godot_engine:*:*:*:*:*:*:*:*"
     },
     "devel\/godot-tools": {
         "nomatch": [
@@ -2106,9 +2070,6 @@
     },
     "devel\/m4": {
         "custommatch": "cpe:2.3:a:gnu:m4:*:*:*:*:*:*:*:*"
-    },
-    "devel\/mongo-c-driver": {
-        "confirmedmatch": "cpe:2.3:a:mongodb:c_driver:*:*:*:*:*:*:*:*"
     },
     "devel\/msgpack-c": {
         "nomatch": [
@@ -2650,9 +2611,6 @@
         "nomatch": [
             "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
         ]
-    },
-    "devel\/py-Jinja2": {
-        "confirmedmatch": "cpe:2.3:a:palletsprojects:jinja:*:*:*:*:*:*:*:*"
     },
     "devel\/py-Jinja2-doc": {
         "nomatch": [
