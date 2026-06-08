@@ -58,13 +58,15 @@
         "custommatch": "cpe:2.3:a:tsugio_okamoto:lha:*:*:*:*:*:*:*:*"
     },
     "archivers\/libmspack": {
-        "nomatch": [
-            "cpe:2.3:a:cabextract:libmspack:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:kyzer:libmspack:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:kyzer:libmspack:*:*:*:*:*:*:*:*"
     },
     "archivers\/libunrar": {
         "confirmedmatch": "cpe:2.3:a:rarlab:unrar:*:*:*:*:*:*:*:*"
+    },
+    "archivers\/libzip": {
+        "nomatch": [
+            "cpe:2.3:a:nih:libzip:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/lua-zlib": {
         "nomatch": [
@@ -74,9 +76,7 @@
         ]
     },
     "archivers\/lzo2": {
-        "nomatch": [
-            "cpe:2.3:a:lzo_project:lzo:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:lzo_project:lzo:*:*:*:*:*:*:*:*"
     },
     "archivers\/minizip": {
         "nomatch": [
@@ -273,10 +273,7 @@
         ]
     },
     "audio\/faad": {
-        "nomatch": [
-            "cpe:2.3:a:audiocoding:faad2:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:faad2_project:faad2:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:faad2_project:faad2:*:*:*:*:*:*:*:*"
     },
     "audio\/faust-lv2": {
         "nomatch": [
@@ -758,6 +755,9 @@
             "cpe:2.3:a:oracle:berkeley_db:*:*:*:*:*:*:*:*"
         ]
     },
+    "databases\/db18": {
+        "confirmedmatch": "cpe:2.3:a:oracle:berkeley_db:*:*:*:*:*:*:*:*"
+    },
     "databases\/db5": {
         "confirmedmatch": "cpe:2.3:a:oracle:berkeley_db:*:*:*:*:*:*:*:*"
     },
@@ -792,9 +792,7 @@
         ]
     },
     "databases\/mysql80-server": {
-        "nomatch": [
-            "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*"
     },
     "databases\/ocaml-mysql": {
         "nomatch": [
@@ -1127,6 +1125,11 @@
     "databases\/qt6-base_sqldriver": {
         "nomatch": [
             "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "databases\/redis": {
+        "nomatch": [
+            "cpe:2.3:a:redislabs:redis:*:*:*:*:*:*:*:*"
         ]
     },
     "databases\/redisbloom": {
@@ -1607,6 +1610,12 @@
             "cpe:2.3:a:gnu:cflow:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/cgit": {
+        "nomatch": [
+            "cpe:2.3:a:lars_hjemli:cgit:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jason_a_donenfeld:cgit:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/cl-infix": {
         "nomatch": [
             "cpe:2.3:a:iceni:infix:*:*:*:*:*:*:*:*"
@@ -1794,9 +1803,15 @@
             "cpe:2.3:a:asynkron:wire:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/godot": {
+        "nomatch": [
+            "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/godot-tools": {
         "nomatch": [
-            "cpe:2.3:a:godotengine:godot_engine:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:godotengine:godot_engine:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:godotengine:godot:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/gogs": {
@@ -2884,13 +2899,34 @@
     },
     "devel\/py-jsonpointer": {
         "nomatch": [
-            "cpe:2.3:a:jsonpointer_project:jsonpointer:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:jsonpointer_project:jsonpointer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:janl:jsonpointer:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/py-magic": {
+    "devel\/py-jupyter": {
         "nomatch": [
-            "cpe:2.3:a:freedomscientific:magic:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:microsoft:jupyter:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-jupyter-server": {
+        "confirmedmatch": "cpe:2.3:a:jupyter:jupyter_server:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-jupyterlab": {
+        "confirmedmatch": "cpe:2.3:a:jupyter:jupyterlab:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-lief": {
+        "confirmedmatch": "cpe:2.3:a:lief-project:lief:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-lizard": {
+        "nomatch": [
+            "cpe:2.3:a:lizard_project:lizard:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-localstack": {
+        "confirmedmatch": "cpe:2.3:a:localstack:localstack:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-magic": {
+        "confirmedmatch": "cpe:2.3:a:file_project:file:*:*:*:*:*:*:*:*"
     },
     "devel\/py-mime": {
         "nomatch": [
@@ -2903,9 +2939,19 @@
             "cpe:2.3:a:minio:minio:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-mock": {
+        "nomatch": [
+            "cpe:2.3:a:rpm-software-management:mock:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-molecule": {
         "nomatch": [
             "cpe:2.3:a:nervos:molecule:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-monkeytype": {
+        "nomatch": [
+            "cpe:2.3:a:monkeytype:monkeytype:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-msgpack": {
