@@ -2019,7 +2019,7 @@
         ]
     },
     "devel\/linux-c7-sdl12": {
-        "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:libsdl:simple_directmedia_layer:*:*:*:*:*:*:*:*"
     },
     "devel\/linux-c7-sdl20": {
         "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*"
@@ -2959,6 +2959,26 @@
             "cpe:2.3:a:msgpack:msgpack:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-multipart": {
+        "nomatch": [
+            "cpe:2.3:a:konghq:multipart:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-munge": {
+        "nomatch": [
+            "cpe:2.3:a:opensuse:munge:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-nbconvert": {
+        "confirmedmatch": "cpe:2.3:a:jupyter:nbconvert:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-ninja": {
+        "nomatch": [
+            "cpe:2.3:a:visualshortcodes:ninja:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:ninjaframework:ninja:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:itrsgroup:ninja:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-orca": {
         "nomatch": [
             "cpe:2.3:a:spinnaker:orca:*:*:*:*:*:*:*:*",
@@ -2966,9 +2986,13 @@
             "cpe:2.3:a:gnome:orca:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-orjson": {
+        "confirmedmatch": "cpe:2.3:a:ijl:orjson:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-patch": {
         "nomatch": [
-            "cpe:2.3:a:gnu:patch:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:gnu:patch:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tanium:patch:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-pathtools": {
@@ -2976,15 +3000,28 @@
             "cpe:2.3:a:perl:pathtools:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-pdm": {
+        "confirmedmatch": "cpe:2.3:a:frostming:pdm:*:*:*:*:*:*:*:*"
+    },
     "devel\/py-pebble": {
         "nomatch": [
-            "cpe:2.3:a:simon_brown:pebble:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:simon_brown:pebble:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:canonical:pebble:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-phabricator": {
         "nomatch": [
             "cpe:2.3:a:phacility:phabricator:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/py-pipenv": {
+        "confirmedmatch": "cpe:2.3:a:pypa:pipenv:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-pipreqs": {
+        "confirmedmatch": "cpe:2.3:a:pipreqs_project:pipreqs:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-poetry": {
+        "confirmedmatch": "cpe:2.3:a:python-poetry:poetry:*:*:*:*:*:*:*:*"
     },
     "devel\/py-progress": {
         "nomatch": [
