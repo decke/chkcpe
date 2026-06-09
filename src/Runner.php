@@ -348,10 +348,12 @@ class Runner
             try {
                 $port = Port::loadFromDB($origin);
                 if ($port === null) {
+                    Logger::warning('Port with origin '.$origin.' not found.');
                     continue;
                 }
 
                 if ($port->isMetaport()) {
+                    Logger::warning('Port '.$port->getOrigin().' is a metaport. Ignoring.');
                     continue;
                 }
 
@@ -363,6 +365,8 @@ class Runner
                 }
 
                 if ($port->getCPEStr() == '') {
+                    Logger::warning('Port '.$port->getOrigin().' has no CPE_STR entry');
+
                     $nomatch = [];
                     if ($overlay->exists($port->getOrigin(), 'nomatch')) {
                         foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
@@ -375,9 +379,13 @@ class Runner
                     }
 
                     foreach ($nomatch as $prod) {
+                        Logger::info('nomatch entry compare '.$prod.' vs '.$product.' for port '.$port->getOrigin());
+
                         if ($prod->compareTo($product)) {
                             Logger::info('Ignoring false match for '.$port->getOrigin());
                             continue 2;
+                        } else {
+                            Logger::info('nomatch entry did not match '.$prod.' vs '.$product.' for port '.$port->getOrigin());
                         }
                     }
 
@@ -393,6 +401,8 @@ class Runner
                         $port->setCPEStatus(Status::CHECKNEEDED);
                     }
                 } else {
+                    Logger::warning('Port '.$port->getOrigin().' has a CPE_STR entry '.$port->getCPE());
+
                     if ($product->isDeprecated()) {
                         Logger::warning('Repology uses deprecated CPE '.$wfn);
                     } else {
