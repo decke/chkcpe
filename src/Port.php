@@ -132,9 +132,24 @@ class Port
         return Status::getColor($this->cpe_status);
     }
 
-    public function addCPECandidate(Product $candidate): bool
+    public function hasCPECandidate(Product $product): bool
     {
-        $this->cpe_candidates[] = $candidate;
+        foreach ($this->cpe_candidates as $key => $candidate) {
+            if ($candidate->compareTo($product)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function addCPECandidate(Product $product): bool
+    {
+        if ($this->hasCPECandidate($product)) {
+            return false;
+        }
+
+        $this->cpe_candidates[] = $product;
         return true;
     }
 
