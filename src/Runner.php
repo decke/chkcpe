@@ -381,8 +381,17 @@ class Runner
                         }
                     }
 
-                    $port->addCPECandidate($product);
-                    $port->setCPEStatus(Status::CHECKNEEDED);
+                    if ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
+                        $confirmedmatch = $overlay->get($port->getOrigin(), 'confirmedmatch');
+                        $match = new Product($confirmedmatch);
+
+                        if ($match->compareTo($product) === false) {
+                            Logger::warning('Confirmed match and Repology data differ for port '.$port->getOrigin().'. Ignoring Repology data.');
+                        }
+                    } else {
+                        $port->addCPECandidate($product);
+                        $port->setCPEStatus(Status::CHECKNEEDED);
+                    }
                 } else {
                     if ($product->isDeprecated()) {
                         Logger::warning('Repology uses deprecated CPE '.$wfn);
