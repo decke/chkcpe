@@ -58,7 +58,11 @@
         "custommatch": "cpe:2.3:a:tsugio_okamoto:lha:*:*:*:*:*:*:*:*"
     },
     "archivers\/libmspack": {
-        "confirmedmatch": "cpe:2.3:a:kyzer:libmspack:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:kyzer:libmspack:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:cabextract:libmspack:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:libmspack_project:libmspack:*:*:*:*:*:*:*:*"
+        ]
     },
     "archivers\/libunrar": {
         "confirmedmatch": "cpe:2.3:a:rarlab:unrar:*:*:*:*:*:*:*:*"
@@ -235,6 +239,9 @@
     "audio\/aqualung": {
         "custommatch": "cpe:2.3:a:aqualung:aqualung:*:*:*:*:*:*:*:*"
     },
+    "audio\/ardour": {
+        "confirmedmatch": "cpe:2.3:a:ardour:ardour:*:*:*:*:*:*:*:*"
+    },
     "audio\/asterisk-flite": {
         "nomatch": [
             "cpe:2.3:a:cmu:flite:*:*:*:*:*:*:*:*"
@@ -273,7 +280,10 @@
         ]
     },
     "audio\/faad": {
-        "confirmedmatch": "cpe:2.3:a:faad2_project:faad2:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:faad2_project:faad2:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:audiocoding:faad2:*:*:*:*:*:*:*:*"
+        ]
     },
     "audio\/faust-lv2": {
         "nomatch": [
@@ -631,7 +641,10 @@
         ]
     },
     "chinese\/tintin++": {
-        "confirmedmatch": "cpe:2.3:a:tintin\\+\\+_project:tintin\\+\\+:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:tintin\\+\\+_project:tintin\\+\\+:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:tintin:tintin\\\\\\+\\\\\\+:*:*:*:*:*:*:*:*"
+        ]
     },
     "comms\/deforaos-phone": {
         "nomatch": [
@@ -768,7 +781,10 @@
         "confirmedmatch": "cpe:2.3:a:codenotary:immudb:*:*:*:*:*:*:*:*"
     },
     "databases\/mantis": {
-        "confirmedmatch": "cpe:2.3:a:mantisbt:mantisbt:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:mantisbt:mantisbt:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:mantis:mantis:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/mariadb-connector-c": {
         "confirmedmatch": "cpe:2.3:a:mariadb:connector\\\/c:*:*:*:*:*:*:*:*"
@@ -792,7 +808,10 @@
         ]
     },
     "databases\/mysql80-server": {
-        "confirmedmatch": "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:oracle:mysql_server:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
+        ]
     },
     "databases\/ocaml-mysql": {
         "nomatch": [
@@ -2019,10 +2038,16 @@
         ]
     },
     "devel\/linux-c7-sdl12": {
-        "confirmedmatch": "cpe:2.3:a:libsdl:simple_directmedia_layer:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:libsdl:simple_directmedia_layer:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:libsdl:libsdl:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/linux-c7-sdl20": {
-        "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*"
+        "confirmedmatch": "cpe:2.3:a:libsdl:sdl:*:*:*:*:*:*:*:*",
+        "nomatch": [
+            "cpe:2.3:a:libsdl:libsdl:*:*:*:*:*:*:*:*"
+        ]
     },
     "devel\/linux-rl9-devtools": {
         "nomatch": [
@@ -3038,6 +3063,27 @@
             "cpe:2.3:a:pytest:py:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-pyasn1": {
+        "confirmedmatch": "cpe:2.3:a:pyasn1:pyasn1:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-pydantic2": {
+        "confirmedmatch": "cpe:2.3:a:pydantic:pydantic:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-pydash": {
+        "confirmedmatch": "cpe:2.3:a:derrickgilland:pydash:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-pyxdg": {
+        "confirmedmatch": "cpe:2.3:a:python:pyxdg:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-pyyaml": {
+        "confirmedmatch": "cpe:2.3:a:pyyaml:pyyaml:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-riot": {
+        "nomatch": [
+            "cpe:2.3:a:riot-os:riot:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:riot_project:riot:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-rush": {
         "nomatch": [
             "cpe:2.3:a:gnu:rush:*:*:*:*:*:*:*:*"
@@ -3050,7 +3096,49 @@
     },
     "devel\/py-schema": {
         "nomatch": [
-            "cpe:2.3:a:brainstormforce:schema:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:brainstormforce:schema:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:schema_project:schema:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-semver": {
+        "nomatch": [
+            "cpe:2.3:a:npmjs:semver:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-shapely": {
+        "nomatch": [
+            "cpe:2.3:a:colorlib:shapely:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-simpleeval": {
+        "confirmedmatch": "cpe:2.3:a:danthedeckie:simpleeval:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-spin": {
+        "nomatch": [
+            "cpe:2.3:a:spinroot:spin:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-sqlfluff": {
+        "confirmedmatch": "cpe:2.3:a:sqlfluff:sqlfluff:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-subversion": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-swig": {
+        "nomatch": [
+            "cpe:2.3:a:swig_project:swig:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-tables": {
+        "nomatch": [
+            "cpe:2.3:a:nextcloud:tables:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-tatsu": {
+        "nomatch": [
+            "cpe:2.3:a:brandexponents:tatsu:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/py-twilio": {
@@ -3058,9 +3146,40 @@
             "cpe:2.3:a:twilio_project:twilio:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/py-ujson": {
+        "confirmedmatch": "cpe:2.3:a:ultrajson_project:ultrajson:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-unearth": {
+        "confirmedmatch": "cpe:2.3:a:frostming:unearth:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-uv": {
+        "confirmedmatch": "cpe:2.3:a:astral:uv:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-virtualenv": {
+        "nomatch": [
+            "cpe:2.3:a:python:virtualenv:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-watermark": {
         "nomatch": [
             "cpe:2.3:a:marekkis:watermark:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/py-wheel": {
+        "confirmedmatch": "cpe:2.3:a:wheel_project:wheel:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-wheel044": {
+        "confirmedmatch": "cpe:2.3:a:wheel_project:wheel:*:*:*:*:*:*:*:*"
+    },
+    "devel\/py-wlc": {
+        "confirmedmatch": "cpe:2.3:a:weblate:wlc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/pycdc": {
+        "confirmedmatch": "cpe:2.3:a:pycdc_project:pycdc:*:*:*:*:*:*:*:*"
+    },
+    "devel\/qbs": {
+        "nomatch": [
+            "cpe:2.3:a:qbs_project:qbs:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qgit": {
@@ -3068,40 +3187,181 @@
     },
     "devel\/qt5-assistant": {
         "nomatch": [
-            "cpe:2.3:a:synology:assistant:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:synology:assistant:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:samsung:assistant:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:mimsoftware:assistant:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:fastlinemedia:assistant:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:uipath:assistant:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-buildtools": {
+        "nomatch": [
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-concurrent": {
+        "nomatch": [
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qt5-core": {
         "nomatch": [
             "cpe:2.3:a:mobileiron:core:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:ractf:core:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:api-platform:core:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:api-platform:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:adonisjs:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:onlyoffice:core:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qt5-dbus": {
         "nomatch": [
-            "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:freedesktop:dbus:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qt5-designer": {
         "nomatch": [
-            "cpe:2.3:a:vaadin:designer:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:vaadin:designer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:altium:designer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:stimulsoft:designer:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qt5-help": {
         "nomatch": [
             "cpe:2.3:a:cuore:help:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:helpproject:help:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:helpproject:help:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-linguist": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-linguisttools": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/qt5-location": {
         "nomatch": [
-            "cpe:2.3:a:location_module_project:location:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:location_module_project:location:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-qdbus": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-qdbusviewer": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-qdoc": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-qdoc-data": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-qmake": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-remoteobjects": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-script": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-scripttools": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-scxml": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-testlib": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt5-uitools": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt6-base": {
+        "nomatch": [
+            "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/quantum": {
         "nomatch": [
             "cpe:2.3:a:quantum:quantum:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/ruby-subversion": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-akismet": {
@@ -3364,6 +3624,16 @@
     "devel\/stack": {
         "nomatch": [
             "cpe:2.3:a:stack_project:stack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/subversion": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/subversion-lts": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/svntrac": {
@@ -4132,6 +4402,27 @@
             "cpe:2.3:a:desknets:neo:*:*:*:*:*:*:*:*"
         ]
     },
+    "games\/nethack32": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack33": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack33-nox11": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack34": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack34-nox11": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack36": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
+    "games\/nethack36-nox11": {
+        "confirmedmatch": "cpe:2.3:a:nethack:nethack:*:*:*:*:*:*:*:*"
+    },
     "games\/openarena": {
         "custommatch": "cpe:2.3:a:openarena:openarena:*:*:*:*:*:*:*:*"
     },
@@ -4381,6 +4672,11 @@
             "cpe:2.3:a:qrencode_project:qrencode:*:*:*:*:*:*:*:*"
         ]
     },
+    "graphics\/py-qt5-3d": {
+        "nomatch": [
+            "cpe:2.3:a:foxitsoftware:3d:*:*:*:*:*:*:*:*"
+        ]
+    },
     "graphics\/py-spectra": {
         "nomatch": [
             "cpe:2.3:a:sectona:spectra:*:*:*:*:*:*:*:*"
@@ -4388,12 +4684,53 @@
     },
     "graphics\/qt5-3d": {
         "nomatch": [
-            "cpe:2.3:a:foxitsoftware:3d:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:foxitsoftware:3d:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/qt5-graphicaleffects": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/qt5-imageformats": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/qt5-opengl": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/qt5-pixeltool": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "graphics\/qt5-svg": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "graphics\/qt5-wayland": {
         "nomatch": [
-            "cpe:2.3:a:wayland:wayland:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:wayland:wayland:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "graphics\/rubygem-cairo": {
@@ -4521,6 +4858,11 @@
             "cpe:2.3:a:jenkins:findbugs:*:*:*:*:*:*:*:*"
         ]
     },
+    "java\/java-subversion": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
     "java\/jdk11-doc": {
         "nomatch": [
             "cpe:2.3:a:hp:jdk:*:*:*:*:*:*:*:*",
@@ -4540,6 +4882,21 @@
     "java\/jikes": {
         "nomatch": [
             "cpe:2.3:a:jikes_project:jikes:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "java\/openjdk11": {
+        "nomatch": [
+            "cpe:2.3:a:sun:openjdk:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "java\/openjdk17": {
+        "nomatch": [
+            "cpe:2.3:a:sun:openjdk:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "java\/openjdk8": {
+        "nomatch": [
+            "cpe:2.3:a:sun:openjdk:*:*:*:*:*:*:*:*"
         ]
     },
     "korean\/hunspell": {
@@ -4669,19 +5026,57 @@
     "mail\/emil": {
         "custommatch": "cpe:2.3:a:emil:emil:*:*:*:*:*:*:*:*"
     },
+    "mail\/exim": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
     "mail\/exim-doc-html": {
         "nomatch": [
-            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/exim-doc-pdf": {
         "nomatch": [
-            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/exim-doc-postscript": {
         "nomatch": [
-            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:exim:exim:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-ldap2": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-monitor": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-mysql": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-postgresql": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-sa-exim": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "mail\/exim-sqlite": {
+        "nomatch": [
+            "cpe:2.3:a:university_of_cambridge:exim:*:*:*:*:*:*:*:*"
         ]
     },
     "mail\/exmh2": {
@@ -4994,6 +5389,27 @@
             "cpe:2.3:a:halo:halo:*:*:*:*:*:*:*:*"
         ]
     },
+    "misc\/qt5-doc": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "misc\/qt5-examples": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "misc\/qt5-l10n": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "misc\/rtfm": {
         "nomatch": [
             "cpe:2.3:a:bestpractical:rtfm:*:*:*:*:*:*:*:*"
@@ -5039,6 +5455,13 @@
     "multimedia\/linux-tsmuxer": {
         "nomatch": [
             "cpe:2.3:a:tsmuxer_project:tsmuxer:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "multimedia\/qt5-multimedia": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "multimedia\/rubygem-gstreamer": {
@@ -5141,6 +5564,18 @@
         "nomatch": [
             "cpe:2.3:a:nvidia:wmi:*:*:*:*:*:*:*:*"
         ]
+    },
+    "net-mgmt\/zabbix6-agent": {
+        "confirmedmatch": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*"
+    },
+    "net-mgmt\/zabbix6-frontend": {
+        "confirmedmatch": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*"
+    },
+    "net-mgmt\/zabbix6-proxy": {
+        "confirmedmatch": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*"
+    },
+    "net-mgmt\/zabbix6-server": {
+        "confirmedmatch": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*"
     },
     "net-p2p\/amule": {
         "custommatch": "cpe:2.3:a:amule:amule:*:*:*:*:*:*:*:*"
@@ -5317,7 +5752,18 @@
     "net\/qt5-network": {
         "nomatch": [
             "cpe:2.3:a:fidelissecurity:network:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:hp:network:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:hp:network:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:forkhq:network:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "net\/qt5-networkauth": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "net\/radiusclient": {
@@ -5453,6 +5899,13 @@
     },
     "print\/pstotext": {
         "custommatch": "cpe:2.3:a:pstotext:pstotext:*:*:*:*:*:*:*:*"
+    },
+    "print\/qt5-printsupport": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
     },
     "print\/rlpr": {
         "custommatch": "cpe:2.3:a:rlpr:rlpr:*:*:*:*:*:*:*:*"
@@ -5699,6 +6152,11 @@
     "security\/snowflake-tor": {
         "custommatch": "cpe:2.3:a:torproject:snowflake:*:*:*:*:*:*:*:*"
     },
+    "security\/subversion-gnome-keyring": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
     "security\/teleport": {
         "nomatch": [
             "cpe:2.3:a:tp4a:teleport:*:*:*:*:*:*:*:*"
@@ -5859,6 +6317,27 @@
     "sysutils\/py-ranger": {
         "nomatch": [
             "cpe:2.3:a:apache:ranger:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/qt5-qtdiag": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/qt5-qtpaths": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "sysutils\/qt5-qtplugininfo": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "sysutils\/rename": {
@@ -6128,6 +6607,20 @@
             "cpe:2.3:a:sphinxsearch:sphinx:*:*:*:*:*:*:*:*"
         ]
     },
+    "textproc\/qt5-xml": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "textproc\/qt5-xmlpatterns": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "textproc\/rand": {
         "nomatch": [
             "cpe:2.3:a:rand_project:rand:*:*:*:*:*:*:*:*"
@@ -6348,6 +6841,12 @@
             "cpe:2.3:a:gentoo:mirrorselect:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/mod_dav_svn": {
+        "nomatch": [
+            "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:apache:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/nanoblogger": {
         "custommatch": "cpe:2.3:a:nanoblogger:nanoblogger:*:*:*:*:*:*:*:*"
     },
@@ -6477,10 +6976,48 @@
             "cpe:2.3:a:jenkins:selenium:*:*:*:*:*:*:*:*"
         ]
     },
+    "www\/qt5-webchannel": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/qt5-webengine": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/qt5-webglplugin": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "www\/qt5-websockets": {
         "nomatch": [
             "cpe:2.3:a:websockets_project:websockets:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:myks:websockets:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:myks:websockets:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/qt5-websockets-qml": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "www\/qt5-webview": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "www\/quark": {
@@ -6608,10 +7145,90 @@
             "cpe:2.3:a:gnome:pango:*:*:*:*:*:*:*:*"
         ]
     },
+    "x11-toolkits\/qt5-charts": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-datavis3d": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-declarative": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-gamepad": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-gui": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-quick3d": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-quickcontrols": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-quickcontrols2": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-quicktimeline": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-uiplugin": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11-toolkits\/qt5-virtualkeyboard": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
     "x11-toolkits\/qt5-widgets": {
         "nomatch": [
             "cpe:2.3:a:widgets_project:widgets:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:yahoo:widgets:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:yahoo:widgets:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "x11-toolkits\/rubygem-pango": {
@@ -6700,6 +7317,20 @@
     "x11\/p5-Clipboard": {
         "nomatch": [
             "cpe:2.3:a:clipboard_project:clipboard:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11\/qt5-qev": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "x11\/qt5-x11extras": {
+        "nomatch": [
+            "cpe:2.3:a:digia:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qt:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:qt:qtsvg:*:*:*:*:*:*:*:*"
         ]
     },
     "x11\/runner": {
