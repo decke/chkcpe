@@ -3354,14 +3354,79 @@
             "cpe:2.3:a:gnustep:base:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/qt6-grpc": {
+        "nomatch": [
+            "cpe:2.3:a:grpc:grpc:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt6-location": {
+        "nomatch": [
+            "cpe:2.3:a:location_module_project:location:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/qt6-tools": {
+        "nomatch": [
+            "cpe:2.3:a:irfanview:tools:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:vmware:tools:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/quantum": {
         "nomatch": [
             "cpe:2.3:a:quantum:quantum:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/quill": {
+        "nomatch": [
+            "cpe:2.3:a:anchore:quill:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/raylib": {
+        "confirmedmatch": "cpe:2.3:a:raylib:raylib:*:*:*:*:*:*:*:*"
+    },
+    "devel\/reposilite": {
+        "confirmedmatch": "cpe:2.3:a:dzikoysk:reposilite:*:*:*:*:*:*:*:*"
+    },
+    "devel\/root": {
+        "confirmedmatch": "cpe:2.3:a:cern:root:*:*:*:*:*:*:*:*"
+    },
     "devel\/ruby-subversion": {
         "nomatch": [
             "cpe:2.3:a:subversion:subversion:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview4": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview5": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview50": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview52": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview60": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview61": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-actionview70": {
+        "nomatch": [
+            "cpe:2.3:a:rails:action_view:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-akismet": {
