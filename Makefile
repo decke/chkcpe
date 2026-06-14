@@ -5,7 +5,6 @@ clean:
 	make -C css clean
 
 vendor:
-	pkg install -q parallel sassc sqlite3
 	composer install
 
 build: vendor
