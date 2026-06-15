@@ -378,11 +378,13 @@ class Runner
                     } else {
                         $cpe = $port->getCPE();
 
-                        if ($cpe !== null && $overlay->matchCandidate($port->getOrigin(), $product)) {
-                            Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$wfn);
+                        if ($cpe !== null && $cpe->compareTo($product) === false) {
+                            if ($overlay->matchCandidate($port->getOrigin(), $product)) {
+                                Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$wfn);
 
-                            $port->addCPECandidate($product);
-                            $port->setCPEStatus(Status::CHECKNEEDED);
+                                $port->addCPECandidate($product);
+                                $port->setCPEStatus(Status::CHECKNEEDED);
+                            }
                         }
                     }
                 }

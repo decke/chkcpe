@@ -123,11 +123,9 @@ class Overlay
             $confirmedmatch = $this->get($origin, 'confirmedmatch');
             $prod = new Product($confirmedmatch);
 
-            if ($prod->compareTo($candidate) === false) {
+            if ($prod->compareTo($candidate)) {
                 return false;
             }
-
-            return true;
         }
 
         return true;
