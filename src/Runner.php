@@ -102,8 +102,7 @@ class Runner
                             $cpe_deprecated_by = (string)$data->cpe->deprecatedBy[0]->cpeName;
 
                             $product->setDeprecated(true, new Product($cpe_deprecated_by));
-                        }
-                        else {
+                        } else {
                             $product->setDeprecated(true);
                         }
                     }
@@ -367,36 +366,7 @@ class Runner
                 if ($port->getCPEStr() == '') {
                     Logger::warning('Port '.$port->getOrigin().' has no CPE_STR entry');
 
-                    $nomatch = [];
-                    if ($overlay->exists($port->getOrigin(), 'nomatch')) {
-                        foreach ($overlay->get($port->getOrigin(), 'nomatch') as $cpe) {
-                            try {
-                                $nomatch[] = new Product($cpe);
-                            } catch (\Exception $e) {
-                                Logger::warning('Invalid nomatch CPE string for port '.$port->getOrigin().' : '.$cpe);
-                            }
-                        }
-                    }
-
-                    foreach ($nomatch as $prod) {
-                        Logger::info('nomatch entry compare '.$prod.' vs '.$product.' for port '.$port->getOrigin());
-
-                        if ($prod->compareTo($product)) {
-                            Logger::info('Ignoring false match for '.$port->getOrigin());
-                            continue 2;
-                        } else {
-                            Logger::info('nomatch entry did not match '.$prod.' vs '.$product.' for port '.$port->getOrigin());
-                        }
-                    }
-
-                    if ($overlay->exists($port->getOrigin(), 'confirmedmatch')) {
-                        $confirmedmatch = $overlay->get($port->getOrigin(), 'confirmedmatch');
-                        $match = new Product($confirmedmatch);
-
-                        if ($match->compareTo($product) === false) {
-                            Logger::warning('Confirmed match and Repology data differ for port '.$port->getOrigin().'. Ignoring Repology data.');
-                        }
-                    } else {
+                    if ($overlay->matchCandidate($port->getOrigin(), $product)) {
                         $port->addCPECandidate($product);
                         $port->setCPEStatus(Status::CHECKNEEDED);
                     }
@@ -408,8 +378,9 @@ class Runner
                     } else {
                         $cpe = $port->getCPE();
 
-                        if ($cpe !== null && $cpe->compareTo($product) === false) {
+                        if ($cpe !== null && $overlay->matchCandidate($port->getOrigin(), $product)) {
                             Logger::warning('Repology has different CPE data for port '.$port->getOrigin().' : '.$port->getCPEStr().' != '.$wfn);
+
                             $port->addCPECandidate($product);
                             $port->setCPEStatus(Status::CHECKNEEDED);
                         }

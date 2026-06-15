@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace CheckCpe;
 
+use CheckCpe\CPE\Product;
+
 class Overlay
 {
     protected string $filename;
@@ -104,5 +106,30 @@ class Overlay
         }
 
         return $ports;
+    }
+
+    public function matchCandidate(string $origin, Product $candidate): bool
+    {
+        if ($this->exists($origin, 'nomatch')) {
+            foreach ($this->get($origin, 'nomatch') as $cpe) {
+                $prod = new Product($cpe);
+                if ($prod->compareTo($candidate)) {
+                    return false;
+                }
+            }
+        }
+
+        if ($this->exists($origin, 'confirmedmatch')) {
+            $confirmedmatch = $this->get($origin, 'confirmedmatch');
+            $prod = new Product($confirmedmatch);
+
+            if ($prod->compareTo($candidate) === false) {
+                return false;
+            }
+
+            return true;
+        }
+
+        return true;
     }
 }
