@@ -120,12 +120,7 @@ class Overlay
         }
 
         if ($this->exists($origin, 'confirmedmatch')) {
-            $confirmedmatch = $this->get($origin, 'confirmedmatch');
-            $prod = new Product($confirmedmatch);
-
-            if ($prod->compareTo($candidate)) {
-                return false;
-            }
+            return false;
         }
 
         return true;
