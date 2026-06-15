@@ -5514,6 +5514,9 @@
     "multimedia\/kaffeine": {
         "custommatch": "cpe:2.3:a:kaffeine:kaffeine_player:*:*:*:*:*:*:*:*"
     },
+    "multimedia\/libudfread": {
+        "custommatch": "cpe:2.3:a:videolan:libudfread:*:*:*:*:*:*:*:*"
+    },
     "multimedia\/libxine": {
         "custommatch": "cpe:2.3:a:xine:xine\\-lib:*:*:*:*:*:*:*:*"
     },
