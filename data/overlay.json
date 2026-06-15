@@ -2779,6 +2779,11 @@
     "devel\/py-copier": {
         "confirmedmatch": "cpe:2.3:a:copier-org:copier:*:*:*:*:*:*:*:*"
     },
+    "devel\/py-coverage": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:coverage:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/py-daemon": {
         "nomatch": [
             "cpe:2.3:a:ssh:daemon:*:*:*:*:*:*:*:*"
@@ -3439,10 +3444,23 @@
             "cpe:2.3:a:async_project:async:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-async-gitlab": {
+        "nomatch": [
+            "cpe:2.3:a:async_project:async:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-async212": {
+        "nomatch": [
+            "cpe:2.3:a:async_project:async:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-attic": {
         "nomatch": [
             "cpe:2.3:a:attic_project:attic:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/rubygem-azure_event_grid": {
+        "confirmedmatch": "cpe:2.3:a:microsoft:azure_event_grid:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-azure_key_vault": {
         "nomatch": [
@@ -3451,13 +3469,28 @@
     },
     "devel\/rubygem-azure_service_fabric": {
         "nomatch": [
-            "cpe:2.3:a:microsoft:azure_service_fabric:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:microsoft:azure_service_fabric:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:jenkins:azure_service_fabric:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-backports": {
         "nomatch": [
             "cpe:2.3:a:opensuse:backports:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:suse:backports:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-bson": {
+        "confirmedmatch": "cpe:2.3:a:mongodb:bson:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-builder": {
+        "nomatch": [
+            "cpe:2.3:a:todesktop:builder:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:themify:builder:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-cbor": {
+        "nomatch": [
+            "cpe:2.3:a:peteroupc:cbor:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-celluloid": {
@@ -3472,7 +3505,9 @@
     },
     "devel\/rubygem-console": {
         "nomatch": [
-            "cpe:2.3:a:altiris:console:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:altiris:console:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:console_project:console:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:minio:console:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-contracts": {
@@ -3490,9 +3525,15 @@
             "cpe:2.3:a:curses_project:curses:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-datadog": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:datadog:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-debug": {
         "nomatch": [
-            "cpe:2.3:a:debug_project:debug:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:debug_project:debug:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:soninow:debug:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-delegate": {
@@ -3500,9 +3541,15 @@
             "cpe:2.3:a:delegate:delegate:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-facets": {
+        "nomatch": [
+            "cpe:2.3:a:facets_project:facets:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-find": {
         "nomatch": [
-            "cpe:2.3:a:episerver:find:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:episerver:find:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:find_project:find:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-fog": {
@@ -3515,9 +3562,18 @@
             "cpe:2.3:a:theforeman:foreman:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-fugit": {
+        "confirmedmatch": "cpe:2.3:a:floraison:fugit:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-fugit-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:floraison:fugit:*:*:*:*:*:*:*:*"
+    },
     "devel\/rubygem-gems": {
+        "confirmedmatch": "cpe:2.3:a:rubygems:rubygems:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-generator": {
         "nomatch": [
-            "cpe:2.3:a:sgpsys:gems:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:generator_project:generator:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-gettext": {
@@ -3540,29 +3596,66 @@
             "cpe:2.3:a:jenkins:gitlab:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-google-protobuf": {
+        "confirmedmatch": "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-graphql": {
+        "nomatch": [
+            "cpe:2.3:a:silverstripe:graphql:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:graphql:graphql:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-hana": {
         "nomatch": [
             "cpe:2.3:a:sap:hana:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/rubygem-icalendar": {
+        "confirmedmatch": "cpe:2.3:a:icalendar_project:icalendar:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-icalendar-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:icalendar_project:icalendar:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-imagen": {
+        "nomatch": [
+            "cpe:2.3:a:percipientstudios:imagen:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/rubygem-interact": {
         "nomatch": [
-            "cpe:2.3:a:ibm:interact:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:ibm:interact:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:tanium:interact:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:interactsoftware:interact:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-json": {
-        "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:json:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-json-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:json:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-json1": {
-        "nomatch": [
-            "cpe:2.3:a:joyent:json:*:*:*:*:*:*:*:*"
-        ]
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:json:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-logger": {
         "nomatch": [
             "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-logger-gitlab": {
+        "nomatch": [
+            "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-logger15": {
+        "nomatch": [
+            "cpe:2.3:a:weechat:logger:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-metrics": {
+        "nomatch": [
+            "cpe:2.3:a:jenkins:metrics:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:kbase:metrics:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-mocha": {
@@ -3584,7 +3677,8 @@
         "nomatch": [
             "cpe:2.3:a:orchid:platform:*:*:*:*:*:*:*:*",
             "cpe:2.3:a:pega:platform:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:siren:platform:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:1e:platform:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-plist": {
@@ -3596,6 +3690,14 @@
         "nomatch": [
             "cpe:2.3:a:gnu:readline:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/rubygem-recaptcha": {
+        "nomatch": [
+            "cpe:2.3:a:recaptcha_project:recaptcha:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-resque": {
+        "confirmedmatch": "cpe:2.3:a:resque:resque:*:*:*:*:*:*:*:*"
     },
     "devel\/rubygem-rice": {
         "nomatch": [
@@ -3610,6 +3712,11 @@
     "devel\/rubygem-slim": {
         "nomatch": [
             "cpe:2.3:a:berlios:slim:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-storable": {
+        "nomatch": [
+            "cpe:2.3:a:nwclark:storable:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-stream": {
@@ -3639,9 +3746,27 @@
             "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-time": {
+    "devel\/rubygem-thor12": {
         "nomatch": [
-            "cpe:2.3:a:time_project:time:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-thor14": {
+        "nomatch": [
+            "cpe:2.3:a:heimdalsecurity:thor:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-time": {
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:time:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-tzinfo": {
+        "nomatch": [
+            "cpe:2.3:a:tzinfo_project:tzinfo:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-tzinfo1": {
+        "nomatch": [
+            "cpe:2.3:a:tzinfo_project:tzinfo:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/rubygem-unicode": {
@@ -3654,21 +3779,53 @@
             "cpe:2.3:a:useragent_project:useragent:*:*:*:*:*:*:*:*"
         ]
     },
-    "devel\/rubygem-zlib": {
+    "devel\/rubygem-uuid": {
         "nomatch": [
-            "cpe:2.3:a:gnu:zlib:*:*:*:*:*:*:*:*",
-            "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+            "cpe:2.3:a:satori:uuid:*:*:*:*:*:*:*:*",
+            "cpe:2.3:a:uuidjs:uuid:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/rubygem-view_component-rails-gitlab": {
+        "confirmedmatch": "cpe:2.3:a:viewcomponent:view_component:*:*:*:*:*:*:*:*"
+    },
+    "devel\/rubygem-xpath": {
+        "nomatch": [
+            "cpe:2.3:a:antchfx:xpath:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/rubygem-zlib": {
+        "confirmedmatch": "cpe:2.3:a:ruby-lang:zlib:*:*:*:*:*:*:*:*"
     },
     "devel\/rvm": {
         "nomatch": [
             "cpe:2.3:a:rvm_project:rvm:*:*:*:*:*:*:*:*"
         ]
     },
+    "devel\/sbt": {
+        "confirmedmatch": "cpe:2.3:a:scala.epfl:sbt:*:*:*:*:*:*:*:*"
+    },
+    "devel\/sdl12": {
+        "nomatch": [
+            "cpe:2.3:a:libsdl:libsdl:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/sdl20": {
+        "nomatch": [
+            "cpe:2.3:a:libsdl:libsdl:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/semver": {
+        "nomatch": [
+            "cpe:2.3:a:npmjs:semver:*:*:*:*:*:*:*:*"
+        ]
+    },
     "devel\/sfml": {
         "nomatch": [
             "cpe:2.3:a:sfml_project:sfml:*:*:*:*:*:*:*:*"
         ]
+    },
+    "devel\/shapelib": {
+        "confirmedmatch": "cpe:2.3:a:osgeo:shapelib:*:*:*:*:*:*:*:*"
     },
     "devel\/simdjson": {
         "nomatch": [
@@ -3681,6 +3838,9 @@
     "devel\/sonarqube-ant-task": {
         "custommatch": "cpe:2.3:a:sonarsource:sonarqube\\-ant\\-task:*:*:*:*:*:*:*:*"
     },
+    "devel\/spdlog": {
+        "confirmedmatch": "cpe:2.3:a:gabime:spdlog:*:*:*:*:*:*:*:*"
+    },
     "devel\/st": {
         "nomatch": [
             "cpe:2.3:a:st_project:st:*:*:*:*:*:*:*:*"
@@ -3689,6 +3849,21 @@
     "devel\/stack": {
         "nomatch": [
             "cpe:2.3:a:stack_project:stack:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/stb": {
+        "nomatch": [
+            "cpe:2.3:a:stb_vorbis_project:stb_vorbis:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/stdgenerator": {
+        "nomatch": [
+            "cpe:2.3:a:generator_project:generator:*:*:*:*:*:*:*:*"
+        ]
+    },
+    "devel\/styx": {
+        "nomatch": [
+            "cpe:2.3:a:hotels:styx:*:*:*:*:*:*:*:*"
         ]
     },
     "devel\/subversion": {
@@ -3703,6 +3878,17 @@
     },
     "devel\/svntrac": {
         "custommatch": "cpe:2.3:a:cvstrac:cvstrac:*:*:*:*:*:*:*:*"
+    },
+    "devel\/swig": {
+        "confirmedmatch": "cpe:2.3:a:swig_project:swig:*:*:*:*:*:*:*:*"
+    },
+    "devel\/swig40": {
+        "confirmedmatch": "cpe:2.3:a:swig_project:swig:*:*:*:*:*:*:*:*"
+    },
+    "devel\/tabby": {
+        "nomatch": [
+            "cpe:2.3:a:tabby:tabby:*:*:*:*:*:*:*:*"
+        ]
     },
     "dns\/pdnsd": {
         "custommatch": "cpe:2.3:a:pdnsd:pdnsd:*:*:*:*:*:*:*:*"
