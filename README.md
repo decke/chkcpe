@@ -21,6 +21,6 @@ automatically updated once a day.
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | [7](https://github.com/decke/chkcpe/wiki/deprecated)       |
 | ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [1002](https://github.com/decke/chkcpe/wiki/checkneeded)     |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [18](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 30474 | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 30479 | |
 
-Last updated: Sun Jun 21 02:54:17 UTC 2026
+Last updated: Mon Jun 22 02:55:54 UTC 2026
