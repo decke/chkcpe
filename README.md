@@ -17,10 +17,10 @@ automatically updated once a day.
 | Status                                                              | # Ports                                                                |
 | --------------------------------------------------------------------| ---------------------------------------------------------------------: |
 | ![valid](https://img.shields.io/badge/valid-brightgreen)            | [2994](https://github.com/decke/chkcpe/wiki/valid)                 |
-| ![invalid](https://img.shields.io/badge/invalid-red)                | [101](https://github.com/decke/chkcpe/wiki/invalid)             |
+| ![invalid](https://img.shields.io/badge/invalid-red)                | [102](https://github.com/decke/chkcpe/wiki/invalid)             |
 | ![deprecated](https://img.shields.io/badge/deprecated-red)          | [7](https://github.com/decke/chkcpe/wiki/deprecated)       |
 | ![checkneeded](https://img.shields.io/badge/checkneeded-orange)     | [1009](https://github.com/decke/chkcpe/wiki/checkneeded)     |
 | ![readytocommit](https://img.shields.io/badge/readytocommit-orange) | [18](https://github.com/decke/chkcpe/wiki/readytocommit) |
-| ![unknown](https://img.shields.io/badge/unknown-grey)               | 30555 | |
+| ![unknown](https://img.shields.io/badge/unknown-grey)               | 30559 | |
 
-Last updated: Mon Jul  6 02:42:08 UTC 2026
+Last updated: Tue Jul  7 02:17:50 UTC 2026
