@@ -36,6 +36,8 @@
           <div class="field is-grouped is-grouped-multiline">
             <a href="https://freshports.org/{{ port.origin }}" class="tag is-info mr-5" target="_blank">freshports</a>
 
+            <a href="https://app.opencve.io/vendors/?search={{ port.cpe.productunescaped }}" class="tag is-info mr-5" target="_blank">opencve</a>
+
             {% if port.cpestr %}
               <a href="https://nvd.nist.gov/products/cpe/search/results?namingFormat=2.3&keyword=cpe:2.3:a:{{ port.cpe.vendorunescaped }}:{{ port.cpe.productunescaped }}" class="tag is-light is-info" target="_blank">NVD CPE Dictionary</a> &nbsp; &nbsp;
             {% endif %}
