@@ -27,7 +27,6 @@ jobs:
       - name: Patch portstree
         run: |
           cp share/*.mk ports/Mk/
-          cp share/Uses/*.mk ports/Mk/Uses/
 
       - name: Fetch NVD CPE Dictionary
         run: wget -qO - ${{ env.CPE_DICTIONARY }} | tar -C data/ -zxvf -
